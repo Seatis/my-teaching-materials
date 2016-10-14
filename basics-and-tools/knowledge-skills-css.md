@@ -1,0 +1,55 @@
+# Knowledge & Skills
+*List the competences (knowledge and/or skills) that the participants are expected to master in this module.*
+ - Use an editor to create, open and modify files
+ - Internet:
+   - Explain the purpose of the internet related protocols: HTTP, HTTPS, IP, TCP
+   - Tell the magnitude of highest possible stored numbers in Bit and Byte related measures, eg: 2 Bytes -> 65k
+   - Explain how a DNS server works and its purpose
+   - Tell if an IP address is valid
+   - Explain what a router does
+   - Explain the mechanics of public key encryption
+   - Describe hacking methods, specifically: DDos, Virus, Phising, Backfor
+ - Use the Command Line to:
+   - Traverse directories
+   - Create, Copy, Move, Delete and Rename files and directories
+   - Modify the content of a file
+   - Know the basic command line usage of: `pwd`, `mkdir`, `rmdir`, `ls`, `cd`, `cp`, `mv`, `rm`, `touch`, `grep`, `echo`, `cat`, `sort`, `uniq`, `wc`
+   - Describe `stdout`, `stderr`, redirection with `|` and `>>`
+ - Have a basic understanding of Git (source control)
+   - Explain the purpose of a "Repository"
+   - Use STA stages of the git workflow, namely: add/remove, commit, push
+   - Use GitHub (collaborative features) and the git client
+ - Developer Tools in the Chrome browser:
+   - View a page's source
+   - Inspect an Element
+   - Modify HTML content
+   - Add (new), Toggle & Modify CSS properties
+ - HTML + CSS:
+   - Understand the purpose, and able to follow indentation guidelines
+   - Write valid HTML and CSS code
+   - Understand `Doctype`
+   - Use HTML tags: `<html>`, `<head>`, `<link>`, `<script>`, `<body>`, `<meta>`, `<title>`, `<h1>` - `<h6>`, `<p>`, `<a>`, `<img>`, `<article>`, `<aside>`, `<strong>`, `<em>`, `<span>`, `<div>`, `<header>`, `<main>`, `<aside>`,`<footer>`, `<section>`, `<ul>`, `<ol>`, `<li>`, `<dd>`, `<dt>`, `<pre>`, `<blockquote>`, `<hgroup>`, `<nav>`, `<q>`
+   - Explain the semantic meaning of tags
+   - Coloring backgrounds and fonts
+   - Creating Paddings, Borders and Margins
+   - Specify sizes
+   - Use background images
+   - Use Google web fonts
+   - Understand how Color codes work
+   - Understand class and id
+   - Explain Default browser styles
+   - Through CSS, able to select any element: Descendant, Multiple elements, Combined, Universal, Attribute, Child, Adjacent, Pseudo, first-child, last-child, nth-child, nth-type
+   - Understand how CSS resolves conflicts
+   - Explain:
+     - Cascading
+     - Inheritance
+     - What is meant by `Important`
+     - Specificity
+     - the Box model
+   - Know a selection of Shorthands
+   - Able to avoid code duplication
+   - Understand font styling
+   - The application of inline and block element
+
+## Demo description
+Understanding tools like git, command line, editor, kanban board, etc, building a simple HTML CV with CSS.
