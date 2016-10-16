@@ -1,15 +1,39 @@
 # Getting Started
+Get a feel of basic HTML and CSS while recreating a simple and nice Medium article design.
+Focus on text styling, basic layout and header image.
 
-Slides: https://docs.google.com/presentation/d/1sHYoSXT2s9gyMB0tDWTOehQpg7oCzA3l_LY-KjjVy9I/edit?usp=sharing
+## Objectives
+ - Using an editor
+ - Understanding how the browser opens a page
+ - Writing first HTML and CSS file
+ - Basic HTML structure
+ - CSS selector
+ - Indentation and formating
 
-## Tools
- - Google Chrome: https://www.google.com/chrome
- - Atom: https://atom.io/
- - Github: https://github.com/
- - Stack Overflow: http://stackoverflow.com/
- - MDN: https://developer.mozilla.org/en-US/
+## Materials & Resources
+### Environment
+ - Download and install [Atom](https://atom.io/)
+ - Download and install [Google Chrome](https://www.google.com/chrome)
+ - Register to [Github](https://github.com/)
 
-## Assignment Checklist
+### Trainning
+#### Internet
+| Material | Time |
+| [The Internet: Wires, cables, and WiFi](https://www.youtube.com/watch?v=iV-YqG70wbQ) | 6:40 |
+| [The Internet: IP addresses and DNS](https://www.youtube.com/watch?v=MwxMsaFFycg) | 6:44 |
+| [The Internet: Packets, routing, and reliability](https://www.youtube.com/watch?v=aD_yi5VjF78) | 6:25 |
+| [The Internet: HTTP and HTML](https://www.youtube.com/watch?v=1K64fWX5z4U) | 7:06 |
+| [The Internet: Encryption and public keys](https://www.youtube.com/watch?v=6-JjHa-qLPk) | 6:39 |
+| [The Internet: Cybersecurity and crime](https://www.youtube.com/watch?v=5k24We8pED8) | 5:01 |
+
+#### Computer
+| Material | Time |
+| [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
+| [Lecture 2: Hardware, Continued - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=-i23I4SMiVM) | 1:46:23 |
+| [Lecture 9: Programming - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=cZYnPHeRa4Q) | 1:45:37 |
+| [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
+
+## Material Review
  - Bit, Byte, MegaBit, MegaByte, KiloByte
  - Internet
  - Protocol
@@ -36,12 +60,14 @@ Slides: https://docs.google.com/presentation/d/1sHYoSXT2s9gyMB0tDWTOehQpg7oCzA3l
  - Phising
 
 ## Workshop
-Build a simple medium article.
+__Build a simple medium article.__
 https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp
 
-### Purpose of this workshop
-Get a feel of basic HTML and CSS while recreating a simple and nice Medium article design.
-Focus on text styling, basic layout and header image.
+Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p
+
+### Tools
+ - Stack Overflow: http://stackoverflow.com/
+ - MDN: https://developer.mozilla.org/en-US/
 
 ### Steps
  - __Plan your work.__
@@ -61,3 +87,16 @@ Focus on text styling, basic layout and header image.
  - __Add a header image.__
    Try adding an image tag. How do you make it full page wide?  
    Try adding the image as background-image instead.
+
+## Individual Workshop Review
+Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-css.md)
+
+ - Is the directory structure and the name of the files correct?
+ - Is the doctype present and valid?
+ - Are the `html`, `head` and `body` has the right structure?
+ - Is the semantic structuring good in the html file?
+ - Is the styling valid for the image, titles, and paragraphs?
+ - Are the color codes valid?
+ - Is there unnecessary code duplication?
+ - Is the indentation good in each file?
+
