@@ -1,23 +1,20 @@
 # The Command line & Git
 
 ## Materials & Resources
-Go through these tutorials:
-
  - https://www.codecademy.com/learn/learn-the-command-line
  - https://www.codecademy.com/learn/learn-git (__Note__ only review the first two sections: "Git Basic Workflow" and "How to Backtrack")
  - https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
- - Install Git on your system, visit this link:
-   - https://github.com/greenfox-velox/velox-syllabus/tree/master/week-01/3-command-line#please-install-git-on-your-system
 
-If you can:
- - Proceed to read the next 2 chapters of git and try this link https://try.github.io/
+Optional:
+ - Proceed to read the next 2 chapters of git
+ - try https://try.github.io/
 
-Any other questions, post them on a Trello card as a comment and in the morning we'll discuss.
+Any other questions? Post them on Trello and in the morning we'll discuss.
 
 ## Prepare your machine
- - Please install git on your system:
+ - Install git on your system:
   - Windows (*portable* is good however the *installed* version is better)
-    - Ensure you have the command-line, bash version also which you can find at 
+    - Ensure you have the command-line, bash version also which you can find at
     http://cmder.net/ or https://git-scm.com/download/win
   - Linux
     - `sudo apt-get install git` (Ubuntu)
@@ -28,7 +25,7 @@ Any other questions, post them on a Trello card as a comment and in the morning 
 ## Assignment Review
  - `cd`
  - `.` and `..`
-  - `pwd`
+ - `pwd`
  - `ls`
  - `touch`
  - `mkdir`
@@ -44,7 +41,7 @@ Any other questions, post them on a Trello card as a comment and in the morning 
  - `git` `init`, `clone`, `add`, `rm`, `commit`, `push`, `pull`, `remote`
 
 ## Workshop/Tasks for this day
-  - Try to work without using your mouse; only use it if there's no other way (try to force yourself to learn the control codes; this improves your productivity)
+  - Try to work without using your mouse; only use it if there's no other way (try to force yourself to learn the keyboard shortcuts; this improves your productivity)
   - Command-line
     - setup the environment
     - basic terminal operations

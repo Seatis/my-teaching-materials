@@ -5,15 +5,15 @@
 List the major competences (knowledge and/or skills) that the participants are expected to master in this module.
 
  - Using the Atom editor
- - Use the Command Line
- - Have a basic understanding of Git
- - Basics of Internet
+ - Using the Command Line
+ - Basic understanding of Git
+ - Basics of the Internet
  - Basics of computer architecture
  - Developer Tools in the Chrome browser
  - Basics of HTML and CSS
 
 ## Specializations
-Different classes are requiring different technical focuses, to achive smooth transition between modules for the participants.
+Different classes are requiring different technical focuses, to achieve smooth transition between modules for the participants.
 
 ### CSS Focus
 *Designed for web focused classes that are continuing with advanced HTML and CSS*
@@ -36,4 +36,3 @@ Different classes are requiring different technical focuses, to achive smooth tr
  - [Practical: Create your CV in HTML](cv)
 
 #### [Knowledge & Skills](knowledge-skills-cli.md)
-
