@@ -19,6 +19,7 @@ Focus on text styling, basic layout and header image.
 ### Trainning
 #### Internet
 | Material | Time |
+|:---------|-----:|
 | [The Internet: Wires, cables, and WiFi](https://www.youtube.com/watch?v=iV-YqG70wbQ) | 6:40 |
 | [The Internet: IP addresses and DNS](https://www.youtube.com/watch?v=MwxMsaFFycg) | 6:44 |
 | [The Internet: Packets, routing, and reliability](https://www.youtube.com/watch?v=aD_yi5VjF78) | 6:25 |
@@ -28,6 +29,7 @@ Focus on text styling, basic layout and header image.
 
 #### Computer
 | Material | Time |
+|:---------|-----:|
 | [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
 | [Lecture 2: Hardware, Continued - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=-i23I4SMiVM) | 1:46:23 |
 | [Lecture 9: Programming - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=cZYnPHeRa4Q) | 1:45:37 |
