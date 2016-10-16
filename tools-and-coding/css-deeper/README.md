@@ -1,4 +1,4 @@
-# Build Your own CV
+# Dig Deeper in CSS
 
 ## Materials for this day
 ### Advanced selectors
@@ -37,9 +37,6 @@
  - https://www.youtube.com/watch?v=0CkSJVl_g00
  - https://www.youtube.com/watch?v=Sj7Hs94uZjE
 
-### Elements
-Look after what is the `<blockquote>`, `<hgroup>`, `<nav>`, `<q>`
-
 ## Assignment Review
  - Multiple elements selector
  - Combine selectors
@@ -59,15 +56,3 @@ Look after what is the `<blockquote>`, `<hgroup>`, `<nav>`, `<q>`
  - inline element
  - inline-block
  - comments
-
- 
-## Project work
-[CV template](https://invis.io/X575YEGVU#/155416515_Greenfox-Anakins-Cv) to follow
-Try to make a build as similar as possible to the design.
-
-If you are ready:
- - create a copy
- - Modify the content to your CV
- - Build your own design
- - other [CV ideas](https://www.pinterest.com/hugabuga/cv-inspiration/) for the brave
-
