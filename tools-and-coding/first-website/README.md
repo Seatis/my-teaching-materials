@@ -36,6 +36,7 @@ Focus on text styling, basic layout and header image.
 | [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
 
 ## Material Review
+### Internet
  - Bit, Byte, MegaBit, MegaByte, KiloByte
  - Internet
  - Protocol
@@ -60,6 +61,32 @@ Focus on text styling, basic layout and header image.
  - Bot Net
  - DDos
  - Phising
+
+### Computer
+ - CPU
+ - RAM
+ - ROM
+ - ASCII
+ - GigaHz
+ - Bit
+ - Byte
+ - KiloByte
+ - HDD
+ - Thread
+ - Processor Core
+ - Programming Language
+ - Source Code
+ - Machine Code
+ - Compiler
+ - Memory Address
+ - Instruction
+ - Instruction Set
+ - Jump
+ - Input
+ - Output
+ - ALU
+ - Register
+ - BUS
 
 ## Workshop
 __Build a simple medium article.__
