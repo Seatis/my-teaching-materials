@@ -128,4 +128,6 @@ Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-
  - Are the color codes valid?
  - Is there unnecessary code duplication?
  - Is the indentation good in each file?
+ - Are the attributes valid on each tag?
+ - The code should not show errors here: https://validator.w3.org/
 
