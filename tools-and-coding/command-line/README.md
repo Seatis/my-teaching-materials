@@ -1,17 +1,20 @@
 # The Command line & Git
+Start to use the command line for running programs and manipulating files.
+Introduction to version control systems and Git.
+
+## Objectives
+ - Traversing in directories
+ - Copy, move, delete and modify Files
+ - Run commands and programs
+ - Understanding pipe
+ - Understanding the Basics of Git
+   - Staging
+   - Commit
+   - Push
+   - Cloning
 
 ## Materials & Resources
- - https://www.codecademy.com/learn/learn-the-command-line
- - https://www.codecademy.com/learn/learn-git (__Note__ only review the first two sections: "Git Basic Workflow" and "How to Backtrack")
- - https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-
-Optional:
- - Proceed to read the next 2 chapters of git
- - try https://try.github.io/
-
-Any other questions? Post them on Trello and in the morning we'll discuss.
-
-## Prepare your machine
+### Environment
  - Install git on your system:
   - Windows (*portable* is good however the *installed* version is better)
     - Ensure you have the command-line, bash version also which you can find at
@@ -22,7 +25,22 @@ Any other questions? Post them on Trello and in the morning we'll discuss.
   - Mac
     - http://git-scm.com/download/mac or `brew install git`
 
-## Assignment Review
+
+### Training
+| Material | Comment |
+|:---------|-----:|
+| [Code Academy Command Line](https://www.codecademy.com/learn/learn-the-command-line) |  |
+| [Code Academy Learn Git](https://www.codecademy.com/learn/learn-git) | (__Note__ only review the first two sections: "Git Basic Workflow" and "How to Backtrack") |
+| [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) | |
+
+### Optional
+*If you've got time and/or want to dig deeper, consider the following:*
+
+ - Proceed to read the next 2 chapters of git
+ - try https://try.github.io/
+
+
+## Material Review
  - `cd`
  - `.` and `..`
  - `pwd`
@@ -40,7 +58,7 @@ Any other questions? Post them on Trello and in the morning we'll discuss.
  - `sed`
  - `git` `init`, `clone`, `add`, `rm`, `commit`, `push`, `pull`, `remote`
 
-## Workshop/Tasks for this day
+## Workshop
   - Try to work without using your mouse; only use it if there's no other way (try to force yourself to learn the keyboard shortcuts; this improves your productivity)
   - Command-line
     - setup the environment
@@ -189,3 +207,7 @@ Create a new repo under your username at github called yourgithubusername.github
   - note, this is another repo, so you should include links in your main README.md
       - about the website
       - and the repository as well
+
+## Individual Workshop Review
+Please check if all files is published to GitHub
+
