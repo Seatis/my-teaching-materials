@@ -92,12 +92,11 @@ Introduction to version control systems and Git.
   - Create at least one file to every directory
 
 ---
-  - Fork this git repository: https://github.com/greenfox-velox/velox-syllabus
+  - Fork this git repository: https://github.com/greenfox-academy/git-lesson-repository.git
       - Visit the page
       - Fork it!
   - Clone your greenfox repository
       - `git clone <repository>`
-  - Change into week-01/3-command-line/ directory
 
 #### Manipulations
   - Change into the project directory
