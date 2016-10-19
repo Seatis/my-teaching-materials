@@ -6,15 +6,18 @@
    - Tell the magnitude of highest possible stored numbers in Bit and Byte related measures, eg: 2 Bytes -> 65k
    - Explain how a DNS server works and its purpose
    - Tell if an IP address is valid
-   - Explain what a router does
-   - Explain the mechanics of public key encryption
-   - Describe hacking methods, specifically: DDos, Virus, Phising, Backfor
+ - Computer:
+   - Explain how the CPU executes programs
+   - Understand memory addresses
+   - Explain the difference between Machine code and Source code
+   - Explain the difference between Comopiled languages and Interpreted Languages
  - Use the Command Line to:
    - Traverse directories
    - Create, Copy, Move, Delete and Rename files and directories
    - Modify the content of a file
    - Know the basic command line usage of: `pwd`, `mkdir`, `rmdir`, `ls`, `cd`, `cp`, `mv`, `rm`, `touch`, `grep`, `echo`, `cat`, `sort`, `uniq`, `wc`
    - Describe `stdout`, `stderr`, redirection with `|` and `>>`
+   - Running programs with input and output files and different arguments
  - Have a basic understanding of Git (source control)
    - Explain the purpose of a "Repository"
    - Use STA stages of the git workflow, namely: add/remove, commit, push
@@ -33,7 +36,6 @@
    - Coloring backgrounds and fonts
    - Creating Paddings, Borders and Margins
    - Specify sizes
-   - Use background images
    - Use Google web fonts
    - Understand how Color codes work
    - Understand class and id
@@ -43,7 +45,6 @@
    - Explain:
      - Cascading
      - Inheritance
-     - What is meant by `Important`
      - Specificity
      - the Box model
    - Know a selection of Shorthands
