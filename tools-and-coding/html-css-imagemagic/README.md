@@ -168,3 +168,4 @@ Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-
  - Are the `<ul>` and `<li>` elements valid?
  - Are there id duplications?
  - The code should not show errors here: https://validator.w3.org/
+ - Is the commit message meaningful?
