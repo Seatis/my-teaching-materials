@@ -130,7 +130,7 @@ Introduction to version control systems and Git.
 
 ---
   - create a repo on github
-      - under greenfox-velox organisation and the repo name should be your github username
+      - under your class organisation and the repo name should be your github username
   - clone it on your system using command line
   - your working directory should look like this
       - home
