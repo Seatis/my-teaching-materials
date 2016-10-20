@@ -131,6 +131,8 @@ Font size: 18 pixels
 ### Exercise 7
 ![seventh](7.jpg)
 
+Try to change the color of the blocks when the mouse is over it.
+
 Font size: 18 pixels
 
 ### Exercise 8
