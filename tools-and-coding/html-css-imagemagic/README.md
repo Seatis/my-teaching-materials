@@ -144,7 +144,7 @@ Font size: 18 pixels
  - Using image magic command line tool resize all images to be 200x200 pixels: http://www.imagemagick.org/Usage/resize/
 
 #### Create an animated gif
- - Create an animated gif: http://www.linux-magazine.com/Online/Blogs/Productivity-Sauce/Create-Animated-GIFs-with-ImageMagick
+ - Create an animated gif: https://www.tjhsst.edu/~dhyatt/supercomp/n401a.html
 
 #### ?
 
