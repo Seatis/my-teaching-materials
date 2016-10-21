@@ -19,7 +19,7 @@
 | [Binary Arithmetic 1: Binary Addition And Overflow](https://www.youtube.com/watch?v=W0w4-dFdBcM) | 3:53 |
 | [Binary Arithmetic 2: Sign Magnitude Representation](https://www.youtube.com/watch?v=3QnUhlnDCp0) | 5:01 |
 | [Binary Arithmetic 3: Subtraction With Sign Magnitude Representation](https://www.youtube.com/watch?v=4Nx1H-tH464) | 7:57 |
-| [Binary Arithmetic 4: Twos Complement Representation](https://www.youtube.com/watch?v=NS4WcaR5zm) | 7:13 |
+| [Binary Arithmetic 4: Twos Complement Representation](https://www.youtube.com/watch?v=NS4WcaR5zmE) | 7:13 |
 | [Binary Arithmetic 5: Comparing Sign Magnitude, Ones Complement, and Twos Complement](https://www.youtube.com/watch?v=HRUOp4IKu60) | 12:59 |
 | [Binary Arithmetic 6: Twos Complement Negation and Addition](https://www.youtube.com/watch?v=-46X79rX9B4) | 10:38 |
 | [Endianness: Bit and Byte Ordering](https://www.youtube.com/watch?v=rJf5qkwkMY4) | 7:06 |
