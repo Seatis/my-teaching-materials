@@ -74,6 +74,19 @@ Build these simple layouts in HTML and CSS
 
  - You can reuse the 1st exercise as background
 
+### Exercise 5
+![fifth exercise](5.png)
+
+ - Pay attention to the spacing, it will help you eventually
+ - The middle rectangle is intentionally off placed
+ - Try different approaches to center text in the rectangles
+
+### Exercise 6
+![fifth exercise](6-anim.gif)
+
+ - Header should be fixed at the top
+ - Use a class to highlight the active state in the navigation
+
 ## Individual Workshop Review
 Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-css.md)
 
