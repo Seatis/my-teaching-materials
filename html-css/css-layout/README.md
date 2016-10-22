@@ -1,60 +1,5 @@
-
-
-### Problem 1
-![first problem](1.jpg)
-
-### Problem 2
-![second problem](2.jpg)
-
- - It should be centered in the page.
- - It should have fixed width.
- - Consider the roles of the boxes:
-   - Aqua (light blue): Header
-   - Orange: Left sidebar (not main content)
-   - Red: Main Content
-   - Black: Fixed content on the bottom right of the Main content
-   - Purple: Right sidebar (not main content)
-   - Blue: Footer
-
-### Problem 3
-![third problem](2.jpg)
-
- - It should be wall to wall with fluid width.
- - The sidebars should have fixed with.
-
-### Problem 4
-![fourth problem](4.jpg)
-
- - You can reuse the 1st problem as background
-
-### Project
- - Open the page: [https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)](https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist))
- - Try to resize the browser window
- - Create a box for the:
-   - Header
-   - Main content
-   - Sidebar
-   - Footer
- - It should resize and work the same way as the original (Expect the resize of the sidebar, it can remain the same size)
-
-#### Nice to have:
- - Add the bigger components as boxes:
-   - Logo
-   - Navigations
-   - Search bar
-   - Infobox in the content
-   - Footer links
-
-
-
-
-# %CSS Layout%
-%Simple description about the workshop%
-
-## Objectives
- - %Objective that is reached by finishing the workshop 1%
- - %Objective that is reached by finishing the workshop 2%
- - %Objective that is reached by finishing the workshop 3%
+# CSS Layout
+Practice layout and positioning with CSS
 
 ## Materials & Resources
 - https://css-tricks.com/box-sizing/
@@ -101,8 +46,6 @@ Build these simple layouts in HTML and CSS
  - Use paint, gimp, or something similar to figure out the sizes and colors.
  - You can use any [lorem ipsum generator](http://mashable.com/2013/07/11/lorem-ipsum/#CMethzbNGkqX) for the texts, it is not necessary to have the same
  - Duck: ![duck](duck.png)
-
-%Description and code examples about the topic%
 
 ### Exercise 1
 ![first exercise](1.jpg)
