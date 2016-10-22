@@ -1,4 +1,4 @@
-# Dig Deeper in CSS
+# Computer science basics
 
 ## Materials & Resources
 ### Training
