@@ -4,7 +4,10 @@
 using namespace std;
 
 int main() {
-	int d = 125;
-	// please divide by 5 d's value
+	float w = 24;
+	int out = 0;
+	// if w is even increment out by one
 	return 0;
 }
+
+

@@ -4,7 +4,9 @@
 using namespace std;
 
 int main() {
-	string m = 'Apple';
-	//fill the m variable with its cotnent 4 times
+	string n = "The result is: ";
+	int a = 2;
+	int b = 3;
+	// write out n, a, b in the same line
 	return 0;
 }

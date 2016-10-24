@@ -50,16 +50,16 @@
 ## Material Review
  - constant, variable, datatype, keyword
  - int, float, char, bool
- - 'cin >>' and 'cout <<'
- - '//', '/* .. */'
- - '--i'/'++i' and 'i--'/'i++'
- - '+', '-', '*', '/', '%'
- - '+=', '-=', '*=', '/='
- - '==', '>', '>=', '<', '<=', '!='
- - '&&', '||', '!'
+ - `cin >>` and `cout <<`
+ - `//`, `/* .. */`
+ - `--i`/`++i` and `i--`/`i++`
+ - `+`, `-`, `*`, `/`, `%`
+ - `+=`, `-=`, `*=`, `/=`
+ - `==`, `>`, `>=`, `<`, `<=`, `!=`
+ - `&&`, `||`, `!`
  - if statement
  - nested if statement
- - '?:' ternary operator
+ - `?:` ternary operator
  - while loop
  - do while loop
  - for loop
@@ -136,9 +136,9 @@ txt = "alma" + "fa";
 ```
 
 #### Excercises
- - [12.cpp](workshop/13.cpp)
- - [13.cpp](workshop/14.cpp)
- - [14.cpp](workshop/15.cpp)
+ - [12.cpp](workshop/12.cpp)
+ - [13.cpp](workshop/13.cpp)
+ - [14.cpp](workshop/14.cpp)
 
 ### If
 ```c_cpp
@@ -169,14 +169,14 @@ txt = "alma" + "fa";
 ```
 
 #### Excercises
- - [15.cpp](workshop/21.cpp)
- - [16.cpp](workshop/22.cpp)
- - [17.cpp](workshop/23.cpp)
- - [18.cpp](workshop/24.cpp)
- - [19.cpp](workshop/25.cpp)
- - [20.cpp](workshop/27.cpp)
- - [21.cpp](workshop/29.cpp)
- - [22.cpp](workshop/30.cpp)
+ - [15.cpp](workshop/15.cpp)
+ - [16.cpp](workshop/16.cpp)
+ - [17.cpp](workshop/17.cpp)
+ - [18.cpp](workshop/18.cpp)
+ - [19.cpp](workshop/19.cpp)
+ - [20.cpp](workshop/20.cpp)
+ - [21.cpp](workshop/21.cpp)
+ - [22.cpp](workshop/22.cpp)
 
 
 ### While / Do - While / For
@@ -199,10 +199,10 @@ for (a = 0; a < 5; a++) {
 
 #### Excercises
 Please do the excercises with while && do-while && for
- - [23.cpp](workshop/31.cpp)
- - [24.cpp](workshop/32.cpp)
- - [25.cpp](workshop/33.cpp)
- - [26.cpp](workshop/34.cpp)
- - [27.cpp](workshop/35.cpp)
- - [28.cpp](workshop/36.cpp)
- - [29.cpp](workshop/37.cpp)
+ - [23.cpp](workshop/23.cpp)
+ - [24.cpp](workshop/24.cpp)
+ - [25.cpp](workshop/25.cpp)
+ - [26.cpp](workshop/26.cpp)
+ - [27.cpp](workshop/27.cpp)
+ - [28.cpp](workshop/28.cpp)
+ - [29.cpp](workshop/29.cpp)

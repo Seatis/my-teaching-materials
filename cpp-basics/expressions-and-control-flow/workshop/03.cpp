@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int c = 44
+	int c = 44;
 	// please double c's value
 	return 0;
 }

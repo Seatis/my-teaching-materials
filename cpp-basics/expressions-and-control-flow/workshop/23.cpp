@@ -4,9 +4,8 @@
 using namespace std;
 
 int main() {
-	float w = 24;
-	int out = 0;
-	// if w is even increment out by one
+	int ad = 6;
+	// print the numbers till ad from 0
 	return 0;
 }
 

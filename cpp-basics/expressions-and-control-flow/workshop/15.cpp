@@ -4,9 +4,8 @@
 using namespace std;
 
 int main() {
-	string n = "The result is: ";
-	string a = "55";
-	string b = "kg";
-	// concat the product of a and b to the n string
+	int u = 123;
+	// print 'Hooray!' if the number is bigger than 100
 	return 0;
 }
+

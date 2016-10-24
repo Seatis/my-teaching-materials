@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-	string x = "monkey";
-	# if the string is longer than 4 characters***
-	# print 'Long!' otherwise print 'Short!'
+	int ae = 4;
+	string text = "Gold";
+	// print content of the text variable ae times
 	return 0;
 }

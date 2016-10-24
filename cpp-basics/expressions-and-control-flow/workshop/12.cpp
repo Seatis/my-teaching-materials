@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int d = 125;
-	// please divide by 5 d's value
+	string m = 'Apple';
+	//fill the m variable with its cotnent 4 times
 	return 0;
 }
