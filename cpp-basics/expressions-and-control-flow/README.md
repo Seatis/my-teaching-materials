@@ -206,3 +206,17 @@ Please do the excercises with while && do-while && for
  - [27.cpp](workshop/27.cpp)
  - [28.cpp](workshop/28.cpp)
  - [29.cpp](workshop/29.cpp)
+
+## Individual Workshop Review
+Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
+
+ - Is the directory structure and the name of the files correct?
+ - Are the includes palced on the top of the files?
+ - Is the indentation good in each file?
+ - Is there unnecessary code?
+ - Can you find unnecessary code in comments?
+ - Is there unnecessary code duplication?
+ - Are there unnecessary empty blocks?
+ - Can you spot unused variables?
+ - Is the commit message meaningful?
+
