@@ -32,12 +32,81 @@
 | [Recursive Functions and Recursion](https://www.youtube.com/watch?v=bmTn2mkfxuE) | 5:12 |
 
 ## Material Review
- -
- - 
+ - Array
+ - Index
+ - Function
+ - Function paramerter
+ - `return`
+ - Inline function
+ - Scope
+ - Local variable
+ - `break`
+ - `continue`
+ - `switch`
+ - `sizeof`
+ - Recursion
 
 ## Workshop
- - 
- -
+### Arrays and sizeof
+```cpp
+int myArray = {1, 2, 3, 4, 5, 6};
+
+cout << myArray[3]; // 4
+
+myArray[1] = 15;
+
+double myDouble = 4.5;
+
+cout << sizeof(myDouble) // 8
+
+```
+ - [01.cpp](workshop/01.cpp)
+ - [02.cpp](workshop/02.cpp)
+ - [03.cpp](workshop/03.cpp)
+ - [04.cpp](workshop/04.cpp)
+ - [05.cpp](workshop/05.cpp)
+ - [06.cpp](workshop/06.cpp)
+ - [07.cpp](workshop/07.cpp)
+ - [08.cpp](workshop/08.cpp)
+
+### Functions
+```cpp
+void greet() {
+  cout << "Hello!";
+}
+
+int main() {
+  greet();
+}
+```
+
+```cpp
+void sayNumber(int number) {
+  cout << number;
+}
+
+int main() {
+  sayNumber(15);
+}
+```
+
+```cpp
+int add(int a, int b) {
+  return a + b;
+}
+
+int main() {
+  cout << add(1, 2);
+}
+```
+ - [09.cpp](workshop/09.cpp)
+ - [10.cpp](workshop/10.cpp)
+ - [11.cpp](workshop/11.cpp)
+ - [12.cpp](workshop/12.cpp)
+ - [13.cpp](workshop/13.cpp)
+ - [14.cpp](workshop/14.cpp)
+ - [15.cpp](workshop/15.cpp)
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
