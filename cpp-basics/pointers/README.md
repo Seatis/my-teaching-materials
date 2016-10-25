@@ -18,10 +18,10 @@
 | [C++ Part 52 - Reference Parameters](https://www.youtube.com/watch?v=X9-a-MiMwEI) | 5:43 |
 
 
-*The next videos are in C*
-Things to know about C++:
+#### The next videos are in C
+Things to know about C:
  - `#include<stdio.h>` is `#include<iostream>`
- - `cout &lt;&lt;` is `print`
+ - `cout <<` is `print`
 
 | Material | Time |
 |:---------|-----:|
