@@ -148,8 +148,6 @@ int main(int argc, char** argv){
 #### Exercises:
  - [09.cpp](workshop/09.cpp)
  - [10.cpp](workshop/10.cpp)
- - [11.cpp](workshop/11.cpp)
- - [12.cpp](workshop/12.cpp)
 
 #### Arrays and Pointers
 ```cpp
@@ -257,6 +255,10 @@ int main() {
   return 0;
 }
 ```
+
+#### Exercises:
+ - [11.cpp](workshop/11.cpp)
+ - [12.cpp](workshop/12.cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
