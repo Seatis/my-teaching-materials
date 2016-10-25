@@ -1,4 +1,4 @@
-# Functions and Arrays
+#Functions and Arrays
 *Meet the base elements of the C++ language by implementing small programs*
 
 ## Objectives
@@ -107,6 +107,10 @@ int main() {
  - [14.cpp](workshop/14.cpp)
  - [15.cpp](workshop/15.cpp)
  - [16.cpp](workshop/16.cpp)
+ - [17.cpp](workshop/17.cpp)
+ - [18.cpp](workshop/18.cpp)
+ - [19.cpp](workshop/19.cpp)
+ - [20.cpp](workshop/20.cpp)
 
 
 ## Individual Workshop Review
