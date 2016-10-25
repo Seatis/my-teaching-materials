@@ -106,6 +106,7 @@ int main() {
  - [13.cpp](workshop/13.cpp)
  - [14.cpp](workshop/14.cpp)
  - [15.cpp](workshop/15.cpp)
+ - [16.cpp](workshop/16.cpp)
 
 
 ## Individual Workshop Review
