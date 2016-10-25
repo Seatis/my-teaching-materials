@@ -1,4 +1,4 @@
-#Functions and Arrays
+#Pointers
 *Underestanding the basics and usage of pointers in C++*
 
 ## Objectives
