@@ -15,7 +15,7 @@ List the major competences (knowledge and/or skills) that the participants are e
 
 #### Schedule
  - [CSS Layout](css-layout)
- - [Forms](#)
- - [Advanced CSS Colors and styling](#), start the [Project: Wikipedia article](#)
+ - [Forms](forms)
+ - [Advanced CSS Colors and styling](advanced-css), [Tables](html-tables), and start the [Project: Wikipedia article](project-wikipedia)
  - [CSS Animation](#) and [Clean CSS](#)
  - [Semantics and Metadata](#)
