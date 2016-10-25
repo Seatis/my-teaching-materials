@@ -81,6 +81,67 @@ int main(int argc, char** argv){
 
 ```
 
+### Illustrating different modes of handing over variables to functions
+ ```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+void operateOnString(string *str){
+	cout << "Variable \"str\": "<<  str << endl;
+	cout << "Value of variable pointed to by variable \"str\" before operation: " << *str << endl;
+	*str += 'A';
+	cout << "Value of variable pointed to by variable \"str\" after operation: " << *str << endl;
+}
+
+string operateOnValue(string str2) {
+	cout << "Address of variable \"str2\": " << &str2 << endl;
+	str2 += 'A';
+	cout << "Value of variable \"str2\" after operation: " << str2 << endl;
+	return str2; 
+}
+
+void illustrateHandoverByValue(string str, string *str_original) {
+	cout << "Values of both arguments: \"str\": " << str << " \"str_original\": " << str_original << endl;
+	cout << "Values of the strings: \"str\": " << str << " \"str_original\": " << *str_original << endl;
+	cout << "Addresses of both strings: \"str\": " << &str << " \"str_original\": " << str_original << endl;
+	cout << "Are these addresses the same? ";
+	if(&str == str_original) {
+		cout << "true";
+	} else {
+		cout << "false";
+	}
+	cout << endl;
+} 
+
+
+int main(int argc, char** argv){
+	cout << "\n\n";
+	
+	cout << "Illustrating a function operating on an object handed over by it's address!" << endl;
+	string a = "kuty";
+	cout << "Address of variable \"a\": " << &a << endl;
+	operateOnString(&a);
+	cout << endl << endl;	
+
+	cout << "Illustrating a function operating on an object handed over by it's value!" << endl;
+	string b = "kuty";
+	cout << "Address of variable \"b\": " << &b << endl;
+	cout << operateOnValue(b) << endl;	
+	cout << endl << endl;
+	
+	cout << "Illustrating the difference between handing over a value or the object itself referenced by it's address!" << endl;
+	string c = "kuty";
+	cout << "Address of variable \"c\": " << &c << endl;
+	illustrateHandoverByValue(c, &c);
+	cout << endl << endl; 
+
+	return 0;
+}
+```
+
+
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
