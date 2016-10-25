@@ -7,11 +7,11 @@
  - Using pointers to pass arrays
  - Using pointers and void functions to operate on an array as opposed to returning a new one
  - Understanding the difference between heap and stack.
-  -- Scope and lifecycle of objects on heap and stack.
+   - Scope and lifecycle of objects on heap and stack.
  - Understanding and using pointer arithmethics (eg.: iterating over an array)
  - Special cases:
-  -- Character arrays
-  -- Void pointers
+   - Character arrays
+   - Void pointers
 
 ## Materials & Resources
 ### Training
