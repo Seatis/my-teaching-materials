@@ -61,25 +61,31 @@ Things to know about C:
 
 ## Workshop
 ### Addresses and values
- ```cpp
+```cpp
 #include <iostream>
 using namespace std;
 
 
 int main(int argc, char** argv){
-	int a = 42;
-	int *address_of_a = &a;
-	cout << "Type of variable \"a\": " << typeof(a) << endl;
-	cout << "Type of variable \"address_of_a\": " << typeof(address_of_a) << endl;
-	cout << "Value of variable \"a\": " << a << endl;
-	cout << "Value of pointer to variable \"a\": " << address_of_a << endl;
-	cout << "Value of variable referenced by pointer \"address_of_a\": " << *address_of_a << endl;
-	cout << "Address of variable \'a\': " << &a << endl;
+	int a = 42; // An integer type variable called "a" that stores 42 as a value
+	int *address_of_a = &a; // A pointer to integer type variable called "address_of_a" that stores the memory adress of the variable called "a"
+	cout << "Value of variable \"a\": " << a << endl; // Prints: Value of variable "a": 42
+	cout << "Value of pointer to variable \"a\": " << address_of_a << endl; // Prints: Value of pointer to variable "a": 0x7fff37922684
+	cout << "Value of variable referenced by pointer \"address_of_a\": " << *address_of_a << endl; // Prints: Value of variable referenced by pointer "address_of_a": 42
+	cout << "Address of variable \'a\': " << &a << endl; // Prints: Address of variable 'a': 0x7fff37922684
 	return 0;
-	
 }
-
 ```
+#### Exercises:
+
+ - [01.cpp](workshop/01.cpp)
+ - [02.cpp](workshop/02.cpp)
+ - [03.cpp](workshop/03.cpp)
+ - [04.cpp](workshop/04.cpp)
+ - [05.cpp](workshop/05.cpp)
+ - [06.cpp](workshop/06.cpp)
+ - [07.cpp](workshop/07.cpp)
+ - [08.cpp](workshop/08.cpp)
 
 ### Illustrating different modes of handing over variables to functions
  ```cpp
@@ -139,10 +145,8 @@ int main(int argc, char** argv){
 	return 0;
 }
 ```
-### Exercises:
-- [09.cpp](workshop/09.cpp)
-
-
+#### Exercises:
+ - [09.cpp](workshop/09.cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
