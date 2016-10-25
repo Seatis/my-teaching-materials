@@ -113,6 +113,8 @@ int main() {
  - [20.cpp](workshop/20.cpp)
  - [21.cpp](workshop/21.cpp)
  - [22.cpp](workshop/22.cpp)
+ - [23.cpp](workshop/23.cpp)
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
