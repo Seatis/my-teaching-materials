@@ -11,7 +11,7 @@ Build the [Margaret Hamilton Wikipedia page](https://en.wikipedia.org/wiki/Marga
 - Start to style these components (main colors, backgrounds, typography, paddings, borders and margins first)
 
 ### Optional details
-Only start to work on these details if you are ready with everything else. #These are not mandatory!#
+Only start to work on these details if you are ready with everything else. **These are not mandatory!**
 
 #### User icon
 ![user icon](1.jpg)
