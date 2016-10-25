@@ -147,6 +147,7 @@ int main(int argc, char** argv){
 ```
 #### Exercises:
  - [09.cpp](workshop/09.cpp)
+ - [10.cpp](workshop/10.cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
