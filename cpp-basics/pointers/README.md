@@ -151,6 +151,113 @@ int main(int argc, char** argv){
  - [11.cpp](workshop/11.cpp)
  - [12.cpp](workshop/12.cpp)
 
+#### Arrays and Pointers
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int double_using_array_notation(int array[], int length) {
+  for (int i = 0; i < length; ++i) {
+    array[i] *= 2;
+  }
+}
+
+int double_using_pointer_notation(int* array, int length) {
+  for (int i = 0; i < length; ++i) {
+    *array *= 2;
+    array += 1;
+  }
+}
+
+int double_using_mixed_notation(int* array, int length) {
+  for (int i = 0; i < length; ++i) {
+    array[i] *= 2;
+  }
+}
+
+void print_array(int array[], int length) {
+  for (int i = 0; i < 6; ++i) {
+    cout << array[i] << endl;
+  }
+}
+
+int main() {
+  int my_first_array[] = {1, 2, 3, 4, 5, 6};
+
+  double_using_array_notation(my_first_array, 6);
+  print_array(my_first_array, 6);
+
+  int my_second_array[] = {1, 2, 3, 4, 5, 6};
+  double_using_pointer_notation(my_second_array, 6);
+  print_array(my_second_array, 6);
+
+  int my_third_array[] = {1, 2, 3, 4, 5, 6};
+  double_using_mixed_notation(my_third_array, 6);
+  print_array(my_third_array, 6);
+
+  return 0;
+}
+```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int get_size(int array[]) {
+  cout << "Size of the array in the function: " << (sizeof(array) / sizeof(*array)) << endl; // Don't work this way :(
+}
+
+int main() {
+  int my_array[] = {1, 2, 3, 4, 5, 6};
+  int* pointer = &my_array[0];
+
+  cout << "Size of the array normaly: " << (sizeof(my_array) / sizeof(*my_array)) << endl; // prints 6
+
+  get_size(my_array);
+
+  cout << "Size of the array with pointer: " << (sizeof(pointer) / sizeof(*pointer)) << endl; // Don't work this way :(
+
+  cout << "First element: " << *pointer << endl; // prints 1
+
+  pointer += 4;
+
+  cout << "Fifth element: " << *pointer << endl; // prints 5
+  return 0;
+}
+```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int filter_even(int* input, int input_length, int* output) {
+  int output_index = 0;
+
+  for (int i = 0; i < input_length; ++i) {
+    if (input[i] % 2 == 0) {
+      output[output_index] = input[i];
+      output_index++;
+    }
+  }
+}
+
+int main() {
+  int my_array[] = {1, 2, 3, 4, 5, 6};
+  int my_empty_array[3];
+
+  filter_even(my_array, 6, my_empty_array);
+
+  for (int i = 0; i < 3; ++i) {
+    cout << my_empty_array[i] << endl;
+  }
+
+  return 0;
+}
+```
+
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
 
