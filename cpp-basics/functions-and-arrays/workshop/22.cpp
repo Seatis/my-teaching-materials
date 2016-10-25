@@ -9,7 +9,8 @@ using namespace std;
 //Create 5 arrays, each 10 long filled with integers.
 //Find the first and last occurrances of the integer: 14. And Print them out. If the array does not
 //include the integr You should say so in words.
-
+//The names of the functions should be "includes", "firstIndexOf", "lastIndexOf"
+//Decide what should the function return. Void? Bool? Int? Float? Char? 
 
 int main(int argc, char** argv){
 
