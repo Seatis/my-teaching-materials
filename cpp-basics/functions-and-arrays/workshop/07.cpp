@@ -8,5 +8,5 @@ int main() {
   double g2 = 12.345;
   // Tell if g1 is stored in more bytes than g2
 
-	return 0;
+  return 0;
 }

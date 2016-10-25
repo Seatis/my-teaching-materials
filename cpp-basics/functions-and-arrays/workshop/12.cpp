@@ -8,5 +8,5 @@ int main() {
   // write your own sum function
   // it should take an array and it's length
 
-	return 0;
+  return 0;
 }

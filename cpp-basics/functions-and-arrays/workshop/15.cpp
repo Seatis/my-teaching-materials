@@ -9,5 +9,5 @@ int main() {
   // and it returns the index of the given number in the array.
   // It should return -1 if did not find it. (linear search)
 
-	return 0;
+  return 0;
 }

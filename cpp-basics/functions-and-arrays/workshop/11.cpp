@@ -8,5 +8,5 @@ int main() {
   // write a function that gets a string as an input
   // and appends an 'a' character to its end
 
-	return 0;
+  return 0;
 }

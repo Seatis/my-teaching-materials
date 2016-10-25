@@ -8,5 +8,5 @@ int main() {
   // Write a function that takes ana array and its length returns the minimal element
   // in the array (your own min function)
 
-	return 0;
+  return 0;
 }
