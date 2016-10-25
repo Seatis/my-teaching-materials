@@ -60,7 +60,27 @@ Things to know about C:
  - Reference Parameters
 
 ## Workshop
- -
+### Addresses and values
+ ```cpp
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv){
+	int a = 42;
+	int *address_of_a = &a;
+	cout << "Type of variable \"a\": " << typeof(a) << endl;
+	cout << "Type of variable \"address_of_a\": " << typeof(address_of_a) << endl;
+	cout << "Value of variable \"a\": " << a << endl;
+	cout << "Value of pointer to variable \"a\": " << address_of_a << endl;
+	cout << "Value of variable referenced by pointer \"address_of_a\": " << *address_of_a << endl;
+	cout << "Address of variable \'a\': " << &a << endl;
+	return 0;
+	
+}
+
+```
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
