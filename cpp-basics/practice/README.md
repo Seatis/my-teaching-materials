@@ -16,7 +16,7 @@
 | [Const Keyword with Functions and Arrays in C++ with Example  CPP Programming Video Tutorials](https://www.youtube.com/watch?v=SVggWRRzPRE) | 6:46 |
 | [C++ Programming Tutorials: 13 Functions - Passing Variables by Value or Reference](https://www.youtube.com/watch?v=6U42W0A4ov4) | 22:23 |
 | [C++ Passing Parameter as Const Reference](https://www.youtube.com/watch?v=l3TarjDE4kE) | 14:26 |
-} [Type Casting in C++](https://www.youtube.com/watch?v=MzUjNtagISI) | 13:53 |
+| [Type Casting in C++](https://www.youtube.com/watch?v=MzUjNtagISI) | 13:53 |
 
 ## Material Review
  - casting
@@ -25,7 +25,7 @@
  - C++ string
  - C string
  - const pointer
- - const referenece
+ - const reference
 
 ## Workshop
 ### Warm up
