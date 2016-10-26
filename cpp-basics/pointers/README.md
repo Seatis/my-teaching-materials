@@ -260,7 +260,8 @@ int main() {
  - [11.cpp](workshop/11.cpp)
  - [12.cpp](workshop/12.cpp)
  - [13.cpp](workshop/13.cpp)
-
+![Nyammm!!!](./smaller.gif?raw=true "Szorgalmi")
+ - [14.cpp](workshop.14,cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
