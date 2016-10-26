@@ -36,6 +36,7 @@
  - Index
  - Function
  - Function paramerter
+ - Function prototype
  - `return`
  - Inline function
  - Scope
