@@ -1,7 +1,7 @@
 ## Project
 Palindome Kata
 The Kata has two part, the first one is mandatory for everybody, the second
-is just for students, who already know programming.
+two are just for students, who already know programming.
 
 ### 1st Part:
 Create a function that takes a string and creates a palindrome from it.
@@ -20,3 +20,8 @@ string output = SearchPalindromes("dog goat dad duck doodle never");
 
 cout << output << endl; // it prints: ['og go', ' dad ', 'd d', 'dood', 'eve']
 ```
+
+### 3rd Part:
+Create a function that list all prime palindrome numbers between 0 and 1000000 
+and stores it in an array, then prints the 3rd element of it this array in binary format. 
+
