@@ -148,9 +148,6 @@ boolean isTheSame = 5 == 5;
 - [Workshop11.java](workshop/Workshop11.java)
 - [Workshop12.java](workshop/Workshop12.java)
 - [Workshop13.java](workshop/Workshop13.java)
-- [Workshop14.java](workshop/Workshop14.java)
-- [Workshop15.java](workshop/Workshop15.java)
-- [Workshop16.java](workshop/Workshop16.java)
 
 
 #### Strings
@@ -246,6 +243,9 @@ System.out.println("     string with lots of spaces       ".trim());
 
 ##### Exercise
 *Exercises about Strings*
+- [Workshop14.java](workshop/Workshop14.java)
+- [Workshop15.java](workshop/Workshop15.java)
+- [Workshop16.java](workshop/Workshop16.java)
 - [Workshop17.java](workshop/Workshop17.java)
 - [Workshop18.java](workshop/Workshop18.java)
 - [Workshop19.java](workshop/Workshop19.java)
