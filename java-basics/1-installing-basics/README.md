@@ -57,6 +57,7 @@ System.out.println("Hello world!");
 ##### Exercise
 - Run a simple Hello World!
 - Change it to greet you instead of the World.
+- [Workshop01.java](workshop/Workshop01.java)
 
 ### Variables
 #### Numbers
@@ -115,6 +116,42 @@ ff /= 6; // ff = 4
 **
 #### Exercise
 *Exercises about simple types and numbers*
+- [Workshop02.java](workshop/Workshop02.java)
+- [Workshop03.java](workshop/Workshop03.java)
+- [Workshop04.java](workshop/Workshop04.java)
+- [Workshop05.java](workshop/Workshop05.java)
+- [Workshop06.java](workshop/Workshop06.java)
+
+#### Other datatypes
+- Boolean
+```java
+// Boolean (8 bit, 1 byte), true or false         
+Boolean trueCondition = Boolean.TRUE;    
+System.out.println(trueCondition); // true        
+
+boolean trueBool = true;
+boolean falseBool = false;
+
+boolean isBigger = 3 > 4;
+boolean isTheSame = 5 == 5;         
+```
+- Date (will cover later)
+- Objects (will cover later)
+
+
+##### Exercise
+*Exercises about other data types*
+- [Workshop07.java](workshop/Workshop07.java)
+- [Workshop08.java](workshop/Workshop08.java)
+- [Workshop09.java](workshop/Workshop09.java)
+- [Workshop10.java](workshop/Workshop10.java)
+- [Workshop11.java](workshop/Workshop11.java)
+- [Workshop12.java](workshop/Workshop12.java)
+- [Workshop13.java](workshop/Workshop13.java)
+- [Workshop14.java](workshop/Workshop14.java)
+- [Workshop15.java](workshop/Workshop15.java)
+- [Workshop16.java](workshop/Workshop16.java)
+
 
 #### Strings
  - char
@@ -209,20 +246,11 @@ System.out.println("     string with lots of spaces       ".trim());
 
 ##### Exercise
 *Exercises about Strings*
-
-#### Other datatypes
-- Boolean
-```java
-// Boolean (8 bit, 1 byte), true or false         
-Boolean trueCondition = Boolean.TRUE;             
-System.out.println(trueCondition); // true        
-```
-- Date (will cover later)
-- Objects (will cover later)
-
-
-##### Exercise
-*Exercises about other data types*
+- [Workshop17.java](workshop/Workshop17.java)
+- [Workshop18.java](workshop/Workshop18.java)
+- [Workshop19.java](workshop/Workshop19.java)
+- [Workshop20.java](workshop/Workshop20.java)
+- [Workshop21.java](workshop/Workshop21.java)
 
 
 ## Individual Workshop Review
