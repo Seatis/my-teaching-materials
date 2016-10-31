@@ -28,7 +28,7 @@ and gaining knowledge of the basic building blocks of Java.
 |[Deeper on how memory works (storing variables. Stack & Heap) (JCode.02)](https://www.youtube.com/watch?v=tUW2kIPY3is)|3:52|
 |[Official Java docs on Strings](http://docs.oracle.com/javase/8/docs/api/java/lang/String.html)||
 
-## Assignment Review
+## Material Review
 - variable
     - byte
     - int

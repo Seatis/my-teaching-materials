@@ -29,7 +29,7 @@ Lastly we show how you can extend a program to use external code (or objects &am
 ### Optional
 No optional for today :)
 
-## Assignment Review
+## Material Review
 
 
 ## Workshop
