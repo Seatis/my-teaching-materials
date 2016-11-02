@@ -28,6 +28,13 @@ Get into *real* programming, installing a development environment and then runni
 |[Clarifying JDK vs JRE and JVM, the components of Java (Prashun)](https://www.youtube.com/watch?v=yLkrw34VMNo) | 2:28|
 |[Creating a new project using IntelliJ (IDEA)](https://www.youtube.com/watch?v=L_jXj0XTwSg) | 6:43|
 
+### Nice To Know
+IntelliJ has some tools that complete entering values for you; and of course, various keyboard combinations for jumping about.  
+- [IntelliJ Reference card for keyboard shortcuts](https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf)
+- [Overview on autocompleting from IntelliJ](https://www.jetbrains.com/help/idea/2016.2/auto-completing-code.html)
+- [Example of a shortcut for a statement](https://www.reddit.com/r/IntelliJIDEA/comments/3jyle4/does_intellij_have_a_shortcut_for_systemoutprint/)
+
+
 ## Material Review
 - Java
 - IntelliJ IDEA
