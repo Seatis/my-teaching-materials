@@ -18,6 +18,7 @@
 | [Header Files in C++](https://www.youtube.com/watch?v=jz0k_uHbwnk) | 11:49 |
 | [Intro to C++: Structs](https://www.youtube.com/watch?v=DBQzxCHk9uI) | 21:31 |
 | [Pointers and Structs](https://www.youtube.com/watch?v=_1ybxs60-Sc) (until 4:21) | 4:21 |
+| [Lesson 18-Enumerations](https://www.youtube.com/watch?v=yA-bqGv-Q5Y) | 6:39 |
 
 ## Material Review
  - struct
@@ -28,6 +29,8 @@
  - `->`
  - `#define`
  - `#ifndef`
+ - `#endif`
+ - `enum`
 
 ## Workshop
 ```cpp
