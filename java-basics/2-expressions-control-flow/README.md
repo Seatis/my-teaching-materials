@@ -1,8 +1,7 @@
-# Module 03: Day 1 - Intro, Expressions & Control-Flow
-and gaining knowledge of the basic building blocks of Java.
+# Module 03: Day 1 (post installation) - Intro, Expressions & Control-Flow
+Having installed IntelliJ and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
 
 ## Objectives
-
 - Expressions
 - Control Flow
 - Some of the Java *Lingo*
