@@ -14,7 +14,7 @@ and gaining knowledge of the basic building blocks of Java.
 |:-------- |-----:|
 |[Variables, Math functions & Scanner class (Bana 02)](https://www.youtube.com/watch?v=yYN8u90MKCg)|17:05|
 |[Conditional statement (Bana 03)](https://www.youtube.com/watch?v=qZ2pb6BljLk)|13:10|
-|[Looping, collecting user input [with Scanner class] (Bana 04)](https://www.youtube.com/watch?v=efvZmFd1prA)|13:23|
+|[Looping, collecting user input with Scanner class (Bana 04)](https://www.youtube.com/watch?v=efvZmFd1prA)|13:23|
 |[Strings (mathtutordvd 07) - basic items](https://www.youtube.com/watch?v=r3DBIDyzLUI)|11:38|
 |[String resource on Java, specifically focused on strings](http://tutorials.jenkov.com/java/strings.html)||
 
@@ -29,13 +29,6 @@ and gaining knowledge of the basic building blocks of Java.
 |[Official Java docs on Strings](http://docs.oracle.com/javase/8/docs/api/java/lang/String.html)||
 
 ## Material Review
-- variable
-    - byte
-    - int
-    - float
-    - boolean
-    - char
-    - String
 - condition
 - loops: for, while
 - scanner

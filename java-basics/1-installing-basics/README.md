@@ -30,9 +30,23 @@ Get into *real* programming, installing a development environment and then runni
 
 ## Material Review
 - Java
+- IntelliJ IDEA
 - statement
+- variables
+    - declaration
+    - giving value
+    - byte
+    - int
+    - float
+    - boolean
+    - char
+    - String
+- difference between variable declaration and statements
 - println
 - Hello World
+- escape character
+- `"Java's stuff"` and `'stuff of Java'`
+- concatenation
 
 ## Workshop
 ### The Java environment
