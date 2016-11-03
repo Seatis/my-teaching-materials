@@ -1,4 +1,4 @@
-# Module 03: Day 2 - Array, Functions and Debugging
+# Module 03: #3 - Array, Functions and Debugging
 Expanding from the the primitive datatypes, computers also work with lists of data; one of the most basic is the *array*.  An array offers a way to process a list of items, apply rules repeatedly and collect a series of results.  We look at 1 and 2 dimensional arrays, and briefly touch on Lists (an alternative, related construct).
 
 As we are now conversant with the basic data types and flow, we introduce some tools that give us a way to figure out what is happening when a program runs and which we can use to find where a program does the __bad__ thing (that is to say, *does not do what we want it to do*).  
@@ -27,6 +27,7 @@ As we are now conversant with the basic data types and flow, we introduce some t
 
 ### Optional
 If unclear only.
+
 | Material | Time |
 |:-------- |-----:|
 |[Arrays & For Loop (LearningLad.29)](https://www.youtube.com/watch?v=UZOxpbtlVWg)|4:54|
