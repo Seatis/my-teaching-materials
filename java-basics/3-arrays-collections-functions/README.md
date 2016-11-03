@@ -33,7 +33,6 @@ If unclear only.
 |[Arrays & For Loop (LearningLad.29)](https://www.youtube.com/watch?v=UZOxpbtlVWg)|4:54|
 |[2 dimensional arrays (LearningLad.30)](https://www.youtube.com/watch?v=udHgmxK9oAI)|10:55|
 |[2 dimensional arrays, more (LearningLad.31)](https://www.youtube.com/watch?v=w40VcpGWHBM)|11:00|
-|[How to debug using IntelliJ](https://www.jetbrains.com/help/idea/2016.2/tutorial-debugging-your-first-java-application.html)||
 
 ## Material Review
 - Declaring
