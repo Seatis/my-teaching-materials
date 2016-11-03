@@ -18,22 +18,61 @@ As we are now conversant with the basic data types and flow, we introduce some t
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
 |[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-<!--|[Functions with Classes (Bana.08)](https://www.youtube.com/watch?v=rGlJiUO-dZA)| 16:48| -->
-<!--|[Arrays & For Loop](https://www.youtube.com/watch?v=_pUz-GJcdRU)| 21:00|-->
-|[Arrays & For Loop (LearningLad.29)](https://www.youtube.com/watch?v=UZOxpbtlVWg)|4:54|
-|[2 dimensional arrays (LearningLad.30)](https://www.youtube.com/watch?v=udHgmxK9oAI)|10:55|
-|[2 dimensional arrays, more (LearningLad.31)](https://www.youtube.com/watch?v=w40VcpGWHBM)|11:00|
+<!--- |[Functions with Classes (Bana.08)](https://www.youtube.com/watch?v=rGlJiUO-dZA)| 16:48|
+|[Arrays & For Loop](https://www.youtube.com/watch?v=_pUz-GJcdRU)| 21:00| -->
 |[Array Lists (related to Object, Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)| 11:07|
 |[Lists (with Arrays and data typed, NewBoston.04)](https://www.youtube.com/watch?v=jU5ACV5MucM)|7:16|
-|[How to debug using IntelliJ](https://www.jetbrains.com/help/idea/2016.2/tutorial-debugging-your-first-java-application.html)||
-|[Describing how one uses the debugger in IntelliJ](http://blog.javafortesters.com/2016/07/how-to-debug-java-with-intellij.html)||
+|[Using IntelliJ's Debugger (JavaForTesters YT and text)](http://blog.javafortesters.com/2016/07/how-to-debug-java-with-intellij.html)|08:47|
 
 
 ### Optional
-No optional for today :)
+If unclear only.
+| Material | Time |
+|:-------- |-----:|
+|[Arrays & For Loop (LearningLad.29)](https://www.youtube.com/watch?v=UZOxpbtlVWg)|4:54|
+|[2 dimensional arrays (LearningLad.30)](https://www.youtube.com/watch?v=udHgmxK9oAI)|10:55|
+|[2 dimensional arrays, more (LearningLad.31)](https://www.youtube.com/watch?v=w40VcpGWHBM)|11:00|
+|[How to debug using IntelliJ](https://www.jetbrains.com/help/idea/2016.2/tutorial-debugging-your-first-java-application.html)||
 
 ## Material Review
--
+- Declaring
+  - constants
+  - initial values of arrays `{}`
+  - `new` keyword
+- Functions
+  - void or return a value
+  - can be used to compartmentalise code (make more readable)
+  - have own variables
+  - take parameters
+- Arrays
+  - can be measured (have `length`)
+  - can be iterated through
+  - type definition (e.g. `Array<String>`)
+  - toString
+  - copyOf
+  - sort
+  - binarySearch
+  - foreach statement (e.g. `for(int row: numberArray) {System.out.print(row);}`)
+- ArrayLists
+  - means to *add* and *remove*
+  - addAll
+  - contains
+  - containsAll *comparing one Array with another*
+  - clear
+  - isEmpty
+- Iterator
+  - supports ArrayList
+  - hasNext
+  - associated with an ArrayList
+- List
+  - List&lt;String&gt;
+  - add
+  - foreach()
+  - size (not length)
+
+We also saw:
+- Object - brief notation
+- System.out.print__f__ and "s% " as the format by which to print
 
 ## Workshop
 
@@ -105,6 +144,9 @@ Review some of your previous programs to play around with the debugger.
 - Setting a break point and walk through the program
 - Inspecting a variable
 - Change a variable value
+- Try with an example that has a function (subroutine)
+- Run to the next breakpoint
+- Run to a point in the code
 Look at what happens with Loops, coming back to the same statement.
 
 ### Challenge Using Codewars
