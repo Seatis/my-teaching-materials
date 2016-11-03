@@ -73,7 +73,7 @@ If unclear only.
 
 We also saw:
 - Object - brief notation
-- System.out.print__f__ and "s% " as the format by which to print
+- System.out.printf and "s% " as the format by which to print
 
 ## Workshop
 
