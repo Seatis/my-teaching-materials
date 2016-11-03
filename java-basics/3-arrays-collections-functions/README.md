@@ -47,28 +47,12 @@ If unclear only.
 - Arrays
   - can be measured (have `length`)
   - can be iterated through
-  - type definition (e.g. `Array<String>`)
+  - type definition (e.g. `String[]`)
   - toString
   - copyOf
   - sort
   - binarySearch
   - foreach statement (e.g. `for(int row: numberArray) {System.out.print(row);}`)
-- ArrayLists
-  - means to *add* and *remove*
-  - addAll
-  - contains
-  - containsAll *comparing one Array with another*
-  - clear
-  - isEmpty
-- Iterator
-  - supports ArrayList
-  - hasNext
-  - associated with an ArrayList
-- List
-  - List&lt;String&gt;
-  - add
-  - foreach()
-  - size (not length)
 
 We also saw:
 - Object - brief notation
