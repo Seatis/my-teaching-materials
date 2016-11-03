@@ -17,11 +17,10 @@ Lastly we show how you can extend a program to use external code (or objects &am
 
 | Material | Time |
 |:-------- |-----:|
+|[What is an Array?](https://www.youtube.com/watch?v=NptnmWvkbTw) *It has some objects and stuff we haven't covered yet, but just focus on the idea here, not the specifics. Either this or HINDENGLISH ;)*|7:08|
+|[Introduction to Arrays](https://www.youtube.com/watch?v=L06uGnF4IpY)|7:25|
+|[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
 |[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
-|[Arrays (Bana.09) (before 08!)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-|[Functions with Classes (Bana.08)](https://www.youtube.com/watch?v=rGlJiUO-dZA)| 16:48|
-|[Arrays & For Loop](https://www.youtube.com/watch?v=_pUz-GJcdRU)| 21:00|
-|[Arrays (related to Object, Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)| 11:07|
 |[How to debug using IntelliJ](https://www.jetbrains.com/help/idea/2016.2/tutorial-debugging-your-first-java-application.html)||
 |[Describing how one uses the debugger in IntelliJ](http://blog.javafortesters.com/2016/07/how-to-debug-java-with-intellij.html)||
 
