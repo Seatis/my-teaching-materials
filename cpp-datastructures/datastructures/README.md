@@ -53,7 +53,14 @@ double stack_pop(Stack& stack);
  - It should return the value that was pushed the last time
  - It should decrement the `size` by 1
  - It should reallocate the array inside by the decremented `size`, and copy it's values
+ 
+##### Is empty
+```cpp
+bool is_empty(Stack& stack);
+```
 
+ - It should return true if the stack is empty and false otherwise
+ 
 ### Optimized Stack
 Implement a stack data-structure that stores doubles in C++, and several functions that operate on stacks
 Each stack should have `size` property that stores how many elements are in the stack.
