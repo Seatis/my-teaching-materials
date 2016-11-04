@@ -11,6 +11,8 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 |[Arrays (related to Object, Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)|11:07|
 |[Interators on ArrayList (Vidal)](https://www.youtube.com/watch?v=5TaZbcXkpxs)|6:47|
 |[Using foreach (Miskew)](https://www.youtube.com/watch?v=eByBsjUazII)|7:34|
+|[String, StringBuilder, Immutable (Bana 13)](https://www.youtube.com/watch?v=RxeDe6BsTMI)|15:43|
+|[Casting & Conversion](https://www.youtube.com/watch?v=AzO5pYE3y5o)|14:13|
 
 
 ### Optional
@@ -26,6 +28,8 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 |[Hash Table concepts (CS50)](https://www.youtube.com/watch?v=h2d9b_nEzoA)|7:41|
 |[HashSet/HashMap Demo (vidal)](https://www.youtube.com/watch?v=jwtx6GVPdyw)|13:24|
 |[HashMap/Set examples from Minecraft (vector)](https://www.youtube.com/watch?v=j442WG8YzM4)|5:53|
+|[Refresher on data types & conversion (indian English)](https://www.youtube.com/watch?v=bqPIWlnjWbA)|14:53|
+|[StringBuilder (Posch)](https://www.youtube.com/watch?v=1yynLCFRuAk|6:13|
 
 
 ## Assignment Review
