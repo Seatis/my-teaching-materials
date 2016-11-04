@@ -15,9 +15,10 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 
 ### Optional
 *These are other type of Collections, the usage of them all is basically the same just working differently under the hood.*
+
 | Material | Time |
 |:-------- |-----:|
-|[Introduction (Visual  illustration) of Linked Lists (Reel)](https://www.youtube.com/watch?v=pBrz9HmjFOs)| 13:39 |
+|[Introduction (Visual  illustration) of Linked Lists (Reel)](https://www.youtube.com/watch?v=pBrz9HmjFOs)|13:39|
 |[Linked Lists (High Level, Bana.12)](https://www.youtube.com/watch?v=HLwijvzWNKo)|11:45|
 |[Linked Lists (Deeper/Part 1 Bana.LL1)](https://www.youtube.com/watch?v=195KUinjBpU)|17:35|
 |[Linked Lists (Deeper/Part 2 (doubly linked & Interators)](https://www.youtube.com/watch?v=iR5wyCaIayk)|19.12|
