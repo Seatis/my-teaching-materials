@@ -29,49 +29,48 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 
 ## Assignment Review
 - ArrayLists
-- means to *add* and *remove*
-- addAll
-- contains
-- containsAll *comparing one Array with another*
-- clear
-- isEmpty
+  - means to *add* and *remove*
+  - addAll
+  - contains
+  - containsAll *comparing one Array with another*
+  - clear
+  - isEmpty
+  - initialise
+    - empty
+    - with values
+    - using a loop
+  - add (to the next position, at an index)
+  - remove (by index, by value)
+  - set
+  - size()
+  - isEmpty
+  - searching: contains(), containsAll()
+  - assigning between arrays (*copying* toArray(), addAll())
+  - casting as string toString()
+  - difference between arrays & collection (*primitive* data types)
 - Iterator
-- supports ArrayList
-- hasNext
-- associated with an ArrayList
-- List
-- List&lt;String&gt;
-- add
-- foreach()
-- size (not length)
+  - supports ArrayList
+  - hasNext
+  - associated with an ArrayList
+  - List
+  - `List<String>`
+  - add
+  - foreach()
+  - size (not length)
+  - next
+  - hasNext
+  - remove
+- `for(Datatype item : Collection)`
 
 ## Workshop
 
 ### ArrayLists with types
 
 ### ArraysLists & Collections
-- initialise
-  - empty
-  - with values
-  - using a loop
-- add (to the next position, at an index)
-- remove (by index, by value)
-- set
-- size()
-- isEmpty
-- searching: contains(), containsAll()
-- assigning between arrays (*copying* toArray(), addAll())
-- casting as string toString()
-- difference between arrays & collection (*primitive* data types)
-
 
 ### Iterator
-- next
-- hasNext
-- remove
 
 ### Foreach
-- for (&lt;datatype&gt; &lt;variable&gt; : &lt;array/collection&gt;)
 
 
 ### Optional
@@ -82,7 +81,7 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 - remove
 
 
-### LinkedLists
+#### LinkedLists
 - concept: pointing to the next, previous, first, last
 - add(), addFirst(), addLast
 - set()
@@ -102,23 +101,23 @@ It's worth knowing conceptually what these are as they come up in interviews and
 - Stack  
 
 
-## Workshop/Practice
-
 ### Challenge - Kata Descending Order
 - https://www.codewars.com/kata/descending-order/train/java
 
-## Demo
-- Generate palindromes for a given set of input; be able to search and match.
-- Show understanding of variables, conditionals, loops and the other basic elements of a programming language.
-
-## Assignment
-| Link | Comment|Time|
-|:---- |:------ |---:|
-|https://www.youtube.com/watch?v=_pUz-GJcdRU|Pulling it together, Monster Game Part 1 (Bana.08)|21:10|
-|https://www.youtube.com/watch?v=bQTFXlZWzKw|Monster Game Part 2 (Bana.10)|19:11|
-| http://goo.gl/lDM30|Code for the game||
-
-# Links
-- [Return to Module Overview](..)
-- [Previous day](../m03d2-arrays-collections-functions)
-- [Next day](../m04d4)
+## Individual Workshop Review
+Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+- Is the directory structure and the name of the files correct?
+- Are the includes placed on the top of the files?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
+- Are the names of things following the styleguide?
+    - Classes: UpperCamelCase
+    - variables: lowerCamelCase
+    - functions: lowerCamelCase(paramsLowerCase)
+- Are all of the brackets in the perfect place?
+- Whitespaces, where they should be, where shouldn't?
