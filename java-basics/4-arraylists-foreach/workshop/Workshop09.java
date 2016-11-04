@@ -2,11 +2,12 @@ import java.util.*;
 
 public class Workshop09{
   public static void main(String... args){
-    LinkedList<String> linkedList = new LinkedList<String>(Arrays.asList("first", "sixth", "third", "fourth", "fifth"));
-    // Accidentally I added "sixth" instead of "second"! Your task is to swap "sixth" with "second"
+    ArrayList<String> list = new ArrayList<String>(Arrays.asList("second", "third", "fourth"));
+    // Add "first" to the beginning of the list and add "fifth" to the end of the list
+    // Expected output: [first, second, third, fourth, fifth]
 
-
-    System.out.println(linkedList);
+    System.out.println(list);
   }
 }
+
 

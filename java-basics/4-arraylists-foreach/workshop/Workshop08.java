@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Workshop08{
   public static void main(String... args){
-    LinkedList<String> linkedList = new LinkedList<String>(Arrays.asList("second", "third", "fourth"));
-    // Add "first" to the beginning of the list and add "fifth" to the end of the list
-    // Expected output: [first, second, third, fourth, fifth]
+    ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
+    // Check if the arrayList contains "7" if it contains print "Hoorray" otherwise print "Noooooo"
 
-    System.out.println(linkedList);
   }
 }
+
+
 

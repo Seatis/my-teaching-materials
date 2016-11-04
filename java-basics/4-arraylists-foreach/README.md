@@ -69,14 +69,41 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 
 ## Workshop
 
-### ArrayLists with types
+### StringBuilder
+
+[Workshop18.java](workshop/Workshop18.java)
+[Workshop19.java](workshop/Workshop19.java)
+[Workshop20.java](workshop/Workshop20.java)
+[Workshop21.java](workshop/Workshop21.java)
+[Workshop22.java](workshop/Workshop22.java)
+[Workshop23.java](workshop/Workshop23.java)
 
 ### ArraysLists & Collections
 
-### Iterator
+[Workshop01.java](workshop/Workshop01.java)
+[Workshop02.java](workshop/Workshop02.java)
+[Workshop03.java](workshop/Workshop03.java)
+[Workshop04.java](workshop/Workshop04.java)
+[Workshop05.java](workshop/Workshop05.java)
+[Workshop06.java](workshop/Workshop06.java)
+[Workshop07.java](workshop/Workshop07.java)
+[Workshop08.java](workshop/Workshop08.java)
+[Workshop09.java](workshop/Workshop09.java)
+[Workshop10.java](workshop/Workshop10.java)
+[Workshop11.java](workshop/Workshop11.java)
+[Workshop12.java](workshop/Workshop12.java)
 
-### Foreach
+### Iterator & Foreach
 
+[Workshop13.java](workshop/Workshop13.java)
+[Workshop14.java](workshop/Workshop14.java)
+[Workshop15.java](workshop/Workshop15.java)
+[Workshop16.java](workshop/Workshop16.java)
+[Workshop17.java](workshop/Workshop17.java)
+
+### Data conversion (simple calculator)
+
+[Workshop24.java](workshop/Workshop24.java)
 
 ### Optional
 #### HashSet &amp; HashMaps

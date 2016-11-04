@@ -6,3 +6,5 @@ public class Workshop15{
     // Add "a" to every string in al. Use a for(each) loop
   }
 }
+
+
