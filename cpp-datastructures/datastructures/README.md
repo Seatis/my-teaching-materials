@@ -159,6 +159,7 @@ Node* list_construct_one(double value);
 ```
  - It should set the next element to `nullptr`
  - It should set it's value
+
 ##### Length
 ```cpp
 unsigned int list_length(Node& head);
