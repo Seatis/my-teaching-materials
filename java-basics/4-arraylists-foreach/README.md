@@ -1,7 +1,7 @@
 # Module 03 #4 - ArrayList (LinkedLists),  Iterators and Foreach
 The previous workshop introduced Arrays.  Here we look at arrays a little more; though it's over 35 minutes, it should be a *refresher* only.  
-- ArrayLists - these are generally used when we have lists of values and are not so concerned about navigating (x or x,y)
-- We see here (again, but perhaps you didn't catch it before) that the item tracked is of a data type (e.g. &lt;String&gt;)
+- ArrayLists - these are generally used when we have lists of values and are not so concerned about navigating (e.g. element "x" or "x","y")
+- We see here (again, but perhaps you didn't catch it before) that the item tracked might have to be of a certain data type (e.g. &lt;String&gt;)
 - There are various ways to step through a list
   - Foreach - which we saw earlier
   - Iterator - knowing the list and waiting to be told, *go to the next one*
@@ -17,7 +17,8 @@ In the optional materials there are a few other *List* types that are good to kn
 - Hash - yet another way to store lists so that the values can be found quickly; but at a price.
 - Dictionary - these are *ordered pairs* where one might use a text value to look something up (for example in a configuration).
 
-We'll be doing these Workshops as well as reviewing last week's through the end of tomorrow.  So there's time to get a handle on all of  this stuff.  If you find you're getting ahead, then look at the optional materials.
+We'll be doing these Workshops as well as reviewing last week's through the end of tomorrow.  So there's time to get a handle on all of  this stuff.  If you find you're getting ahead, then look at the optional materials.  So please, at the end of this posting note the questions about style when reviewing your own work and that of the people you are code reviewing.
+
 
 ## Materials & Resources
 | Material | Time |
@@ -50,36 +51,34 @@ We'll be doing these Workshops as well as reviewing last week's through the end 
 ## Assignment Review
 - ArrayLists
   - means to *add* and *remove*
-  - addAll
-  - contains
-  - containsAll *comparing one Array with another*
-  - clear
-  - isEmpty
+  - `.addAll()`
+  - `.contains()`
+  - `.containsAll()` *comparing one Array with another*
+  - `.clear()`
+  - `.isEmpty()`
   - initialise
-    - empty
-    - with values
-    - using a loop
-  - add (to the next position, at an index)
-  - remove (by index, by value)
-  - set
-  - size()
-  - isEmpty
-  - searching: contains(), containsAll()
-  - assigning between arrays (*copying* toArray(), addAll())
-  - casting as string toString()
+    - what are the situation? empty, with values
+    - how does one use such; loops
+  - `.add()` (to the next position, at an index)
+  - `.remove()` (by index, by value)
+  - `.set()`
+  - `.size()`
+  - `.isEmpty()`
+  - searching: `.contains()`, `.containsAll()`
+  - assigning between arrays (*copying* `.toArray()`, `.addAll()`)
+  - casting as string `.toString()`
   - difference between arrays & collection (*primitive* data types)
 - Iterator
   - supports ArrayList
-  - hasNext
+  - `.hasNext()`
   - associated with an ArrayList
   - List
   - List&lt;String&gt;
   - add
   - foreach()
-  - size (not length)
-  - next
-  - hasNext
-  - remove
+  - `.size()` (not length)
+  - `.next()`
+  - `.remove()`
 - `for(Datatype item : Collection)`
 - String (and StringBuilder)
   - escape character (e.g. \", \n, \b
@@ -136,7 +135,7 @@ It's worth knowing conceptually what these are as they come up in interviews and
 ## Workshops
 
 ### StringBuilder
-Work on the Stringbuilder stuff first.  Once this feels comfortable, we'll look at the collection stuff more.
+Work on the Stringbuilder stuff first.  Once this feels comfortable, look at the collection stuff more.
 
 - [Workshop18.java](workshop/Workshop18.java)
 - [Workshop19.java](workshop/Workshop19.java)
@@ -161,7 +160,7 @@ Work on the Stringbuilder stuff first.  Once this feels comfortable, we'll look 
 - [Workshop12.java](workshop/Workshop12.java)
 
 ### Iterator & Foreach
-There are different ways of navigating through collections; here's a few exercises to get more experience.
+There are different ways of navigating through collections; here are a few exercises to get more experience.
 - [Workshop13.java](workshop/Workshop13.java)
 - [Workshop14.java](workshop/Workshop14.java)
 - [Workshop15.java](workshop/Workshop15.java)
@@ -169,27 +168,38 @@ There are different ways of navigating through collections; here's a few exercis
 - [Workshop17.java](workshop/Workshop17.java)
 
 ### Challenge - Data conversion (simple calculator)
-Now, lets try something with a purpose.
+Now, let's try something with a purpose.
 - [Workshop24.java](workshop/Workshop24.java)
 
 
 ### Challenge - Kata Descending Order
+It's fun to try out some of the algorithm puzzles posed on codewars.com.
 - https://www.codewars.com/kata/descending-order/train/java
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
-- Is the directory structure and the name of the files correct?
-- Are the includes placed on the top of the files?
-- Is the indentation good in each file?
-- Is there unnecessary code?
-- Can you find unnecessary code in comments?
-- Is there unnecessary code duplication?
-- Are there unnecessary empty blocks?
-- Can you spot unused variables?
-- Is the commit message meaningful?
-- Are the names of things following the styleguide?
+Neatness counts in coding.
+
+Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
+
+Key questions to consider:
+- Are the directory structure and the names of the files correct?
+- Are the includes placed at the top of the file?
+- Does the code follow the right level of indentation?
+- Are all of the brackets positioned correctly?
+- Are the whitespaces where they should be; and not where they shouldn't?
+- Is the code *pithy* (meaning to the point, not superfluous or un-necessary)?
+  - Not using extra variables (unless needed to understand the logic)
+  - Not confusingly or overly commented
+  - Does the computation instead of repeating stuff (aka *code duplication*)?
+  - Does not contain empty blocks
+  - Non repetitive and where needing to repeat a block instead, carved out to a function?
+- Are there un-used variables - added during development but later made surplus to requirements through simplification?
+- Is the commentary in the code at the right level?
+  - Can one deduce the purpose of a block from the variable naming combined with the explanation
+  - Are there *Watch outs* warnings just in case somebody later maintains the code and needs to beware of something tricky (or not obvious)?
+- Are the data types used right for the purpose
+- Is the "commit message" meaningful?
+- Do the names conform to the Styleguide?
     - Classes: UpperCamelCase
     - variables: lowerCamelCase
     - functions: lowerCamelCase(paramsLowerCase)
-- Are all of the brackets in the perfect place?
-- Whitespaces, where they should be, where shouldn't?
