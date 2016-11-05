@@ -1,8 +1,23 @@
-# Module 03: Day 3 - ArrayList (LinkedLists),  Iterators and Foreach
-Working with lists is core to computing; the first computers were little more than engines for sorting tables.  In this day we look further into storing and working with lists.
+# Module 03 #4 - ArrayList (LinkedLists),  Iterators and Foreach
+The previous workshop introduced Arrays.  Here we look at arrays a little more; though it's over 35 minutes, it should be a *refresher* only.  
+- ArrayLists - these are generally used when we have lists of values and are not so concerned about navigating (x or x,y)
+- We see here (again, but perhaps you didn't catch it before) that the item tracked is of a data type (e.g. &lt;String&gt;)
+- There are various ways to step through a list
+  - Foreach - which we saw earlier
+  - Iterator - knowing the list and waiting to be told, *go to the next one*
 
-As this is a short week, we are not doing any demos.  However, we are assigning some videos and a review for over the weekend to reinforce the various items that were learnt so far in this module.
+As we have already played with Strings, we can revisit the idea of immutable (*One Love, ...* as Bob Marley would say).  But there are other situations where the string can change (mutable).
 
+Lastly, as you may have suspected, switching between datatypes can sometimes be inferred; other times you need to be forceful and explicit.  For example what happens with `System.out.println("1" + 1)`?  What if it were `System.out.println((int) "1" + 1)`?  This is casting and conversion.
+
+In the optional materials there are a few other *List* types that are good to know about.  Normally in a full year's course you'd go deeper; we have them here so that you know about them.  You might, later in the course, consider one of these approaches for a project - or in your later career.
+- Linked Lists - these are lists where an item in the list points to the next (and/or previous) item in the list; this lets us insert and remove items from a list without having to clean up memory
+- Stacks - we use these for figuring out, for example, what to process.  Think of an ambulance passing through heavy traffic; the ambulance goes to the top of the stack at the traffic light.
+- Queues - welcome to the post office, supermarket...  you've probably heard of *First in, First Out* (aka *FIFO*) and others.
+- Hash - yet another way to store lists so that the values can be found quickly; but at a price.
+- Dictionary - these are *ordered pairs* where one might use a text value to look something up (for example in a configuration).
+
+We'll be doing these Workshops as well as reviewing last week's through the end of tomorrow.  So there's time to get a handle on all of  this stuff.  If you find you're getting ahead, then look at the optional materials.
 
 ## Materials & Resources
 | Material | Time |
@@ -58,7 +73,7 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
   - hasNext
   - associated with an ArrayList
   - List
-  - `List<String>`
+  - List&lt;String&gt;
   - add
   - foreach()
   - size (not length)
@@ -66,10 +81,62 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
   - hasNext
   - remove
 - `for(Datatype item : Collection)`
+- String (and StringBuilder)
+  - escape character (e.g. \", \n, \b
+  - `.length()`
+  - `.subString()`
+  - `.trim()`
+  - `.replace()`
+  - `.charAt()`
+  - `.equals()` function
+  - `.compare()`
+  - `toLowerCase()` and lower case
+  - `.contains()`
+  - `.endsWith()`
+  - `.startsWith()`
+  - `indexOf()`
+  - `.lastIndexOf()`
+  - `.split()`
+- Specifically StringBuilder
+  - `.append()`
+  - `.insert()`
+  - `.delete()`
+  - `.capacity()`
+  - `.ensureCapacity()`
+  - `.trimToSize()` 
+  - `.toString()`
 
-## Workshop
+### Optional
+It's worth knowing conceptually what these are as they come up in interviews and are instrumental in various types of processes like email servers, windows engines, etc.  Here, it's partly about understanding the concepts and recognising the terms.
+
+- HashSet &amp; HashMaps
+  - concepts: hash function, collision, order of magnitude rating
+  - add &amp; put
+  - keyset
+  - remove
+- LinkedLists
+  - concept: pointing to the next, previous, first, last
+  - `.add()`, `.addFirst()`, `.addLast()`
+  - `.set()`
+  - `.remove()`
+  - `.size()`
+  - `.get()`, `getFirst()`, `.getLast()`
+  - `.peek()`
+  - `.poll()`, `.pollFirst()`, `.pollLast()`
+  - `.clear()`
+
+- Dictionary *note this is an actual term*, it refers to *ordered pairs* - this is used a lot
+
+- Queue & Stack
+  - `push`
+  - `pop`
+  - `clear`
+
+
+## Workshops
 
 ### StringBuilder
+Work on the Stringbuilder stuff first.  Once this feels comfortable, we'll look at the collection stuff more.
 
 - [Workshop18.java](workshop/Workshop18.java)
 - [Workshop19.java](workshop/Workshop19.java)
@@ -94,43 +161,16 @@ As this is a short week, we are not doing any demos.  However, we are assigning 
 - [Workshop12.java](workshop/Workshop12.java)
 
 ### Iterator & Foreach
-
+There are different ways of navigating through collections; here's a few exercises to get more experience.
 - [Workshop13.java](workshop/Workshop13.java)
 - [Workshop14.java](workshop/Workshop14.java)
 - [Workshop15.java](workshop/Workshop15.java)
 - [Workshop16.java](workshop/Workshop16.java)
 - [Workshop17.java](workshop/Workshop17.java)
 
-### Data conversion (simple calculator)
-
+### Challenge - Data conversion (simple calculator)
+Now, lets try something with a purpose.
 - [Workshop24.java](workshop/Workshop24.java)
-
-### Optional
-#### HashSet &amp; HashMaps
-- concepts: hash function, collision, order of magnitude rating
-- add &amp; put
-- keyset
-- remove
-
-
-#### LinkedLists
-- concept: pointing to the next, previous, first, last
-- add(), addFirst(), addLast
-- set()
-- remove()
-- size
-- get(), getFirst(), getLast()
-- peek()
-- poll(), pollFirst(), pollLast()
-- clear()
-
-#### Other well-known types of lists
-It's worth knowing conceptually what these are as they come up in interviews and are instrumental in various types of processes like email servers, windows engines, etc.
-- Dictionary - ordered pairs
-- Queue
-  - push
-  - pop
-- Stack  
 
 
 ### Challenge - Kata Descending Order
