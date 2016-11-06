@@ -24,4 +24,5 @@ Different classes are requiring different technical focuses, to achieve smooth t
 - [ArrayList, LinkedLists, HashMap;  Iterators, Foreach](4-arraylists-foreach)
 - [File I/O, Exception handling](5-io-exceptions-try-catch-finally)
 - [Serialization, Regular Expressions](6-serialization-regex)
+
 #### [Knowledge & Skills](knowledge-skills.md)

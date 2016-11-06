@@ -1,10 +1,15 @@
-# Module 03 #5 - Exceptions, File I/O, try-catch-finally
-
+# Exceptions, File I/O, try-catch-finally
 Exceptions helps to handle ...
 I/O (Input/Output) discusses how one stores and retrieves streams of data ...
 try-catch-finally used to handle exceptions
 
+## Objectives
+ - What are the Exceptions and how to handle them using try-catch-finally
+ - How to write and read a text file from java
+
 ## Materials & Resources
+
+### Training
 | Material | Time |
 |:-------- |-----:|
 |[Exceptions](https://www.youtube.com/watch?v=EWj60p8esD0)|15:42|
@@ -13,14 +18,14 @@ try-catch-finally used to handle exceptions
 
 
 ### Optional
-*How to read/write binary data*
+*How to read/write binary files.*
 
 | Material | Time |
 |:-------- |-----:|
 |[Read & Write Binary Streams](https://www.youtube.com/watch?v=X81XIVaMWCQ)|13:58|
 
 
-## Assignment Review
+## Material Review
 - Exceptions
   - java.lang.RuntimeException
   - java.lang.Exception
@@ -56,23 +61,23 @@ try-catch-finally used to handle exceptions
   - IOException
 
 ### Optional
-
 Binary data read/write
 
 ## Workshops
-
 ### Exceptions
+How to work with Exceptions.
 
+#### Exercise
 - [Workshop18.java](workshop/Workshop18.java)
-
 
 ### File I/O
 
+#### Exercise
 - [Workshop01.java](workshop/Workshop01.java)
-
 
 ### try-catch-finally
 
+#### Exercise
 - [Workshop13.java](workshop/Workshop13.java)
 
 

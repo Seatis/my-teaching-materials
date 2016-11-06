@@ -1,14 +1,17 @@
-# Module 03 #6 - Serialization, Regex
-
+# Serialization, Regular Expressions
 [Description of serialization and regex]
 
+## Objectives
+ - How to Serialize/Deserialize objects
+
 ## Materials & Resources
+
+### Training
 | Material | Time |
 |:-------- |-----:|
 |[Serialization Part 1](https://www.youtube.com/watch?v=6MisF1sxBTo)|9:24|
 |[Serialization Part 2](https://www.youtube.com/watch?v=FCRwbIXTFyk)|9:48|
 |[Serialization Part 3](https://www.youtube.com/watch?v=q_g7VYoA4sg)|7:50|
-
 
 ### Optional
 *How to use Regular Expressions in Java*
@@ -17,8 +20,7 @@
 |:-------- |-----:|
 |[Regex](https://www.youtube.com/watch?v=s_PfopWcMwI)|19:27|
 
-
-## Assignment Review
+## Material Review
 - Serialization
   - Serializable interface
   - ObjectOutputStream
@@ -38,14 +40,15 @@
   - String.replaceAll(String regex, String replacement)
   - String.replaceFirst(String regex, String replacement)
 
-## Workshops
-
+## Workshop
 ### Serialization
 
+#### Exercise
 - [Workshop18.java](workshop/Workshop18.java)
 
 ### Regular Expression
 
+#### Exercise
 - [Workshop13.java](workshop/Workshop13.java)
 
 ## Individual Workshop Review
