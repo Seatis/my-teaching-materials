@@ -26,15 +26,13 @@ N/A
 
 
 ## Workshops
-So here below are *our* ideas.  
+Chose from the assignments that follow.
 
-Note that we illustrate what the expected output of the console would be as follows.
+__Note__ that we illustrate what the expected output of the console would be as follows.
 ```
 items shown like this
 ``` 
-In order to give you a feeling of what the program should be doing.
-
-User input/action might then follow.
+The *User input/action* might then follow.
 
 
 
@@ -46,29 +44,29 @@ Take any input, validate whether it's a palindrome and output the value in rever
 ```
 What do you want to do [1=Test if such is a Palindrome, 0=Quit]?
 ```
-1
+  1
 ```
 Enter the phrase please?
 ```
-Mark is here
+  Mark is here
 ```
 Ereh si kram
 Nope, not a palindrome.
 
 What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
 ```
-2
+  2
 ```
 Enter the phrase please?
 ```
-Able I was ere I saw elba.
+  Able I was ere I saw elba.
 ```
 Able I was ere I saw elba.
-Yup, it's a palindrome`
+Yup, it's a palindrome
 
 What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
 ```
-0
+  0
 ```
 Bye!
 ```
@@ -80,7 +78,7 @@ Enter a numeric value and report back the prime factors.
 ```
 Enter a number to test, or 0 to Quit?
 ```
-12
+  12
 ```
 "12" has the following factors: 2 3 3
 Or by count:-
@@ -89,7 +87,7 @@ Or by count:-
 
 Enter a number to test, or 0 to Quit?
 ```
-120
+  120
 ```
 "120" has the following factors: 2 2 3 3 5
 Or by count:-
@@ -99,14 +97,14 @@ Or by count:-
 
 Enter a number to test, or 0 to Quit?
 ```
-17
+  17
 
 ```
 "17" is a prime number
 
 Enter a number to test, or 0 to Quit?
 ```
-0
+  0
 ```
 Bye!
 ```
@@ -118,63 +116,62 @@ The program randomly choses a number and then gives hints and/or goads the user 
 ```
 Enter a top number in the range, or 0?
 ```
-64
+  64
 ```
 Okay, I've got a number.  You should be able to figure that out in 6 goes, let's begin.  
 Guess?
 ```
-32
+  32
 ```
-Nope, you're high. You've got 5 guesses left.  Guess?
+Nope, you're low. You've got 5 guesses left.  Guess?
 ```
-48
+  48
 ```
 Nope, you're high. You've got 4 guesses left.  Guess?
 ```
-40
+  40
 ```
-Nope, you're low. You've got 3 guesses left.  Guess?
+Nope, you're high. You've got 3 guesses left.  Guess?
 ```
-35
+  35
 ```
-Nope, you're high. You've got 2 guesses left.  Guess?
+Nope, you're low. You've got 2 guesses left.  Guess?
 ```
-37
+  37
 ```
 Nope, you're high and you've just repeated yourself, what a waste. Last chance.  Guess?
 ```
-37
+  37
 ```
 What are you thick?  You just guessed 37.  Guess?
 ```
-37
+  37
 ```
 Ugh, you tried that before! Guess?
 ```
-38
+  38
 ```
 Ever considered being a fortune teller?  Guess not.  Guess?
 ```
-36
+  36
 ```
 Yippee, I was running out of insults.
 
 Try again?  Enter a top number in the range, or 0?
 ```
-1
+  1
 ```
 Okay, I've got a number.  You should be able to figure that out in 1 go, let's begin.  
 
 Guess?
 ```
-11
-
+  1
 ```
 Well done, you managed to guess it in 1 go.
 
 Try again?  Enter a top number in the range, or 0?
 ```
-0
+  0
 ```
 It was fun playing.  Bye!
 ```
@@ -188,11 +185,11 @@ Take any input and then rotate the matrix.
 ```
 Enter a matrix and terminate with the symbol !
 ```
-11 12 13 14
-21 22 23 24
-31 32 33 34
-41 42 43 44
-!
+  11 12 13 14
+  21 22 23 24
+  31 32 33 34
+  41 42 43 44 
+  !
 
 ```
 -- 1st Rotation
@@ -213,10 +210,10 @@ Enter a matrix and terminate with the symbol !
 
 Enter a matrix and terminate with the symbol !
 ```
-11 12 13
-21 22 23
-31 32 33
-!
+  11 12 13
+  21 22 23
+  31 32 33 
+  !
 ```
 -- 1st Rotation
 31 21 11
@@ -233,9 +230,9 @@ Enter a matrix and terminate with the symbol !
 
 Enter a matrix and terminate with the symbol !
 ```
-dogs cats
-bats rats
-!
+  dogs cats
+  bats rats
+  !
 ```
 -- 1st Rotation
 bats dogs
@@ -249,7 +246,7 @@ dogs bats
 
 Enter a matrix and terminate with the symbol !
 ```
-!
+  !
 ```
 Bye
 ```
@@ -259,10 +256,10 @@ Handle a jagged array, for example
 ```
 Enter a matrix and terminate with the symbol !
 ```
-11 12 13 14
-21 22 23
-31 32 33 34 35
-!
+  11 12 13 14
+  21 22 23
+  31 32 33 34 35
+  !
 
 ```
 -- 1st Rotation
