@@ -27,7 +27,10 @@ N/A
 
 ## Workshops
 So here below are *our* ideas
-Note the `items shown like this` are the function's output.
+Note the 
+```items shown like this
+``` 
+are the function's output.
 
 ### Challenge: Palindrome Builder (Simple)
 Take any input, validate whether it's a palindrome and output the value in reverse.  The program must operate as a game, asking a series of questions and then determining the output.  It must also reverse the capitalisation of start and end.
@@ -53,7 +56,8 @@ What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome,
 Enter the phrase please?
 ```
 Able I was ere I saw elba.
-```Able I was ere I saw elba.
+```
+Able I was ere I saw elba.
 Yup, it's a palindrome`
 
 What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
@@ -66,174 +70,217 @@ Bye!
 ### Challenge: Prime Factors (Simple)
 Enter a numeric value and report back the prime factors.
 
-Note the >>> is the function's output.
-
 ####Sample Operation
->>>Enter a number to test, or 0 to Quit?
+```
+Enter a number to test, or 0 to Quit?
+```
 12
->>>"12" has the following factors: 2 3 3
->>>Or by count:-
->>>"2" - 1 (once)
->>>"3" - 2 times
+```
+"12" has the following factors: 2 3 3
+Or by count:-
+"2" - 1 (once)
+"3" - 2 times
 
->>>Enter a number to test, or 0 to Quit?
+Enter a number to test, or 0 to Quit?
+```
 120
->>>"120" has the following factors: 2 2 3 3 5
->>>Or by count:-
->>>"2" - 2 times
->>>"3" - 2 times
->>>"5" - 1 (once)
+```
+"120" has the following factors: 2 2 3 3 5
+Or by count:-
+"2" - 2 times
+"3" - 2 times
+"5" - 1 (once)
 
->>>Enter a number to test, or 0 to Quit?
+Enter a number to test, or 0 to Quit?
+```
 17
->>>"17" is a prime number
 
->>>Enter a number to test, or 0 to Quit?
+```
+"17" is a prime number
+
+Enter a number to test, or 0 to Quit?
+```
 0
->>>Bye!
+```
+Bye!
+```
 
 ### Challenge: Guess my number 
 The program randomly choses a number and then gives hints and/or goads the user for not determining it
 
-Note the >>> is the function's output.
-
 ####Sample Operation
->>>Enter a top number in the range, or 0?
+```
+Enter a top number in the range, or 0?
+```
 64
-
->>>Okay, I've got a number.  You should be able to figure that out in 6 goes, let's begin.  
->>>Guess?
+```
+Okay, I've got a number.  You should be able to figure that out in 6 goes, let's begin.  
+Guess?
+```
 32
-
->>>Nope, you're high. You've got 5 guesses left.  Guess?
+```
+Nope, you're high. You've got 5 guesses left.  Guess?
+```
 48
-
->>>Nope, you're high. You've got 4 guesses left.  Guess?
+```
+Nope, you're high. You've got 4 guesses left.  Guess?
+```
 40
-
->>>Nope, you're low. You've got 3 guesses left.  Guess?
+```
+Nope, you're low. You've got 3 guesses left.  Guess?
+```
 35
-
->>>Nope, you're high. You've got 2 guesses left.  Guess?
+```
+Nope, you're high. You've got 2 guesses left.  Guess?
+```
 37
-
->>>Nope, you're high and you've just repeated yourself, what a waste. Last chance.  Guess?
+```
+Nope, you're high and you've just repeated yourself, what a waste. Last chance.  Guess?
+```
 37
-
->>>What are you thick?  You just guessed 37.  Guess?
+```
+What are you thick?  You just guessed 37.  Guess?
+```
 37
-
->>>Ugh, you tried that before! Guess?
+```
+Ugh, you tried that before! Guess?
+```
 38
-
->>>Ever considered being a fortune teller?  Guess not.  Guess?
+```
+Ever considered being a fortune teller?  Guess not.  Guess?
+```
 36
+```
+Yippee, I was running out of insults.
 
->>>Yippee, I was running out of insults.
-
->>>Try again?  Enter a top number in the range, or 0?
+Try again?  Enter a top number in the range, or 0?
+```
 1
+```
+Okay, I've got a number.  You should be able to figure that out in 1 go, let's begin.  
 
->>>Okay, I've got a number.  You should be able to figure that out in 1 go, let's begin.  
->>>Guess?
+Guess?
+```
 11
 
->>>Well done, you managed to guess it in 1 go.
->>>Try again?  Enter a top number in the range, or 0?
-0
->>>It was fun playing.  Bye!
+```
+Well done, you managed to guess it in 1 go.
 
+Try again?  Enter a top number in the range, or 0?
+```
+0
+```
+It was fun playing.  Bye!
+```
 
 ### Challenge: Rotate a Matrix
 Take any input and then rotate the matrix.
 
-Note the >>> is the function's output.
+*Note that this is a typical Big Name challenge you might expect if you were applying to Google.*
 
 ####Sample Operation
->>> Enter a matrix and terminate with the symbol !
+```
+Enter a matrix and terminate with the symbol !
+```
 11 12 13 14
 21 22 23 24
 31 32 33 34
 41 42 43 44
 !
 
->>>
->>>-- 1st Rotation
->>>41 31 21 11
->>>42 32 22 12
->>>43 33 23 13
->>>44 34 24 14
->>>-- 2nd Rotation
->>>44 43 42 41
->>>34 33 32 31
->>>24 23 22 21
->>>14 13 12 11
->>>-- 3rd Rotation
->>>14 24 34 44
->>>13 23 33 43
->>>12 22 32 42
->>>11 21 31 41
+```
+-- 1st Rotation
+41 31 21 11
+42 32 22 12
+43 33 23 13
+44 34 24 14
+-- 2nd Rotation
+44 43 42 41
+34 33 32 31
+24 23 22 21
+14 13 12 11
+-- 3rd Rotation
+14 24 34 44
+13 23 33 43
+12 22 32 42
+11 21 31 41
 
->>> Enter a matrix and terminate with the symbol !
+Enter a matrix and terminate with the symbol !
+```
 11 12 13
 21 22 23
 31 32 33
 !
->>>
->>>-- 1st Rotation
->>>31 21 11
->>>32 22 12
->>>33 23 13
->>>-- 2nd Rotation
->>>33 32 31
->>>23 22 21
->>>13 12 11
->>>-- 3rd Rotation
->>>13 23 33
->>>12 22 32
->>>11 21 31
+```
+-- 1st Rotation
+31 21 11
+32 22 12
+33 23 13
+-- 2nd Rotation
+33 32 31
+23 22 21
+13 12 11
+-- 3rd Rotation
+13 23 33
+12 22 32
+11 21 31
 
->>> Enter a matrix and terminate with the symbol !
+Enter a matrix and terminate with the symbol !
+```
 dogs cats
 bats rats
 !
->>>
->>>-- 1st Rotation
->>>bats dogs
->>>rats cats
->>>-- 2nd Rotation
->>>rats bats
->>>cats dogs
->>>-- 3rd Rotation
->>>cats rats
->>>dogs bats
+```
+-- 1st Rotation
+bats dogs
+rats cats
+-- 2nd Rotation
+rats bats
+cats dogs
+-- 3rd Rotation
+cats rats
+dogs bats
 
->>> Enter a matrix and terminate with the symbol !
+Enter a matrix and terminate with the symbol !
+```
 !
-
->>> Bye
+```
+Bye
+```
 
 ####Extra challenge
 Handle a jagged array, for example 
-
+```
+Enter a matrix and terminate with the symbol !
+```
 11 12 13 14
 21 22 23
 31 32 33 34 35
 !
 
->>>31 21 11
->>>32 22 12
->>>33 23 13
->>>34    14
->>>35
-... etc.
+```
+-- 1st Rotation
+31 21 11
+32 22 12
+33 23 13
+34    14
+35
+-- 2nd Rotation
+ 35 34 33 32 31
+       23 22 12 
+    14 13 12 11
+-- 3rd Rotation
+      35
+14    34
+13 23 33
+12 22 32
+11 22 31
+```
 
 
 
 ### Challenge: Combinatorics
 Stefan is a board game developer who has the option to use a couple of different sided dice.  Of course he can use 6 sided dice, but he can also use 8, 12, etc.  The thing is, for the various game play options, he wants to stack the percentages a certain way and therefore needs to see what sums occur with a frequency to match his "design".
-
-Note the >>> is the function's output.
 
 ####Sample Operation
 >>>Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
