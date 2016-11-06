@@ -235,11 +235,14 @@ Enter a matrix and terminate with the symbol !
 
 Enter a matrix and terminate with the symbol !
 ```
->  11 12 13
+>11 12 13
 
 >21 22 23
-31 32 33 
-!
+
+>31 32 33 
+
+>!
+
 ```
 -- 1st Rotation
 31 21 11
@@ -256,9 +259,12 @@ Enter a matrix and terminate with the symbol !
 
 Enter a matrix and terminate with the symbol !
 ```
-  dogs cats
-  bats rats
-  !
+>dogs cats
+
+>bats rats
+
+>!
+
 ```
 -- 1st Rotation
 bats dogs
@@ -282,10 +288,13 @@ Handle a jagged array, for example
 ```
 Enter a matrix and terminate with the symbol !
 ```
-  11 12 13 14
-  21 22 23
-  31 32 33 34 35
-  !
+>11 12 13 14
+
+>21 22 23
+
+>31 32 33 34 35
+
+>!
 
 ```
 -- 1st Rotation
@@ -312,37 +321,43 @@ Enter a matrix and terminate with the symbol !
 Stefan is a board game developer who has the option to use a couple of different sided dice.  Of course he can use 6 sided dice, but he can also use 8, 12, etc.  The thing is, for the various game play options, he wants to stack the percentages a certain way and therefore needs to see what sums occur with a frequency to match his "design".
 
 ####Sample Operation
->>>Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
+```
+Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
+```
+``
 4 4!
+``
+```
+You asked for a listing of all the combinatorics ...
+1 + 1 
+1 + 2
+1 + 3
+1 + 4
+2 + 1 
+2 + 2
+2 + 3
+2 + 4
+3 + 1
+3 + 2
+3 + 3
+3 + 4
+3 + 4
+4 + 1
+4 + 2 
+4 + 3
+4 + 4
 
->>> You asked for a listing of all the combinatorics ...
->>> 1 + 1 
->>> 1 + 2
->>> 1 + 3
->>> 1 + 4
->>> 2 + 1 
->>> 2 + 2
->>> 2 + 3
->>> 2 + 4
->>> 3 + 1
->>> 3 + 2
->>> 3 + 3
->>> 3 + 4
->>> 3 + 4
->>> 4 + 1
->>> 4 + 2 
->>> 4 + 3
->>> 4 + 4
->>>
->>> Total combinations = 16
->>> Sum   Occurs   Probability
->>>   2        1      6.25%
->>>   3        2     12.50%
->>>   4        3     18.75%
->>>   5        4     25.00%
->>>   6        3     18.75%
->>>   7        2     12.50%
->>>   8        1      6.25%
+Total combinations = 16
+Sum   Occurs   Probability
+  2        1      6.25%
+  3        2     12.50%
+  4        3     18.75%
+  5        4     25.00%
+  6        3     18.75%
+  7        2     12.50%
+  8        1      6.25%
+```
+
 
 
 
