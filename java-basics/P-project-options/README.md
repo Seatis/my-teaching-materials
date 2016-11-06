@@ -509,7 +509,8 @@ Your move?
 ```
 >W
 
-```Moved Up, Last monster destroyed by your trap. You won
+```
+Moved Up, Last monster destroyed by your trap. You won
 _0123456789
 0         
 1         
