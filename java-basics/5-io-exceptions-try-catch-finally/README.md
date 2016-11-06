@@ -22,8 +22,8 @@ And we have combined these topics here as I/O is one place where you cannot alwa
 | Material | Time |
 |:-------- |-----:|
 |[Exceptions (Bana.06)](https://www.youtube.com/watch?v=EWj60p8esD0)|15:42|
-|[File Class (first part using files Bana.31)](https://www.youtube.com/watch?v=o9F73FU2vzs) ignore the JFrame around 10m00|12:17|
-|[Read & Write Files (Bana.32) this shows a little bit of Object Orientation; pay attention to printWriter and getInfo](https://www.youtube.com/watch?v=D_WDuwnaobg)|14:31|
+|[File Class (first part using files Bana.31)](https://www.youtube.com/watch?v=o9F73FU2vzs) - ignore the JFrame around 10m00|12:17|
+|[Read & Write Files (Bana.32)](https://www.youtube.com/watch?v=D_WDuwnaobg) - this shows a little bit of Object Orientation; pay attention to printWriter and getInfo|14:31|
 
 Bana talks about OO which we will get into; for the moment though, focus on the methods of reading and writing data.  
 
