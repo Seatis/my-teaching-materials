@@ -32,7 +32,7 @@ __Note__ that we illustrate what the expected output of the console would be as 
 ```
 items shown like this
 ``` 
-The *User input/action* might then follow.
+> The *User input/action* that might then follow.
 
 
 
@@ -49,25 +49,29 @@ What do you want to do [1=Test if such is a Palindrome, 0=Quit]?
 ```
 Enter the phrase please?
 ```
-  Mark is here
+> Mark is here
+
 ```
 Ereh si kram
 Nope, not a palindrome.
 
 What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
 ```
-  2
+> 2
+
 ```
 Enter the phrase please?
 ```
-  Able I was ere I saw elba.
+> Able I was ere I saw elba.
+
 ```
 Able I was ere I saw elba.
 Yup, it's a palindrome
 
 What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
 ```
-  0
+> 0
+
 ```
 Bye!
 ```
