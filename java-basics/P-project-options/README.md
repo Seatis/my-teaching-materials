@@ -26,11 +26,17 @@ N/A
 
 
 ## Workshops
-So here below are *our* ideas
-Note the 
-```items shown like this
+So here below are *our* ideas.  
+
+Note that we illustrate what the expected output of the console would be as follows.
+```
+items shown like this
 ``` 
-are the function's output.
+In order to give you a feeling of what the program should be doing.
+
+User input/action might then follow.
+
+
 
 ### Challenge: Palindrome Builder (Simple)
 Take any input, validate whether it's a palindrome and output the value in reverse.  The program must operate as a game, asking a series of questions and then determining the output.  It must also reverse the capitalisation of start and end.
