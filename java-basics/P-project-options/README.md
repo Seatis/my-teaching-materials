@@ -324,10 +324,8 @@ Stefan is a board game developer who has the option to use a couple of different
 ```
 Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
 ```
->
-4 4
-!
->
+>4 4!
+
 ```
 You asked for a listing of all the combinatorics ...
 1 + 1 
@@ -359,118 +357,172 @@ Sum   Occurs   Probability
   8        1      6.25%
 ```
 
+Alternatively, without the combinations
+```
+Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
+```
+>6 6 
 
+```
+Total combinations = 36
+Sum   Occurs   Probability
+  2	       1         2.78%
+  3        2         5.56%
+  4        3         8.33%
+  5        4        11.11%
+  6        5        13.89%
+  7        6        16.67%
+  8        5        13.89%
+  9        4        11.11%
+ 10        3         8.33%
+ 11        2         5.56%
+ 12        1         2.78%
+ 
+Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
+```
+>0
+```
+Bye!
+```
 
 
 ### Challenge: Monster Dodge 'Ems
 This is a old standard for playing with multi-dimensional arrays.  You have a game board and you have to populate it with "monsters" who if they get you, you're toast.  But monsters can be blocked by walls and will be destroyed if they run into other monsters, hit traps you lay or run into swamps that are also randomly distributed when the game starts.
 
-Note the >>> is the function's output.
-
 #### Sample Operation
 
->>> Enter game board size (up to 50 square), or ! to stop?
-10
->>> Enter number of monsters, or ! to stop?
-4
->>> Enter level of difficulty (1 to 5) or ! to stop?
-1
->>> Generating initial matrix
->>>
->>>  0123456789
->>> 0         *
->>> 1
->>> 2       X  
->>> 3   @   W
->>> 4     W             
->>> 5
->>> 6   W
->>> 7 *
->>> 8
->>> 9
->>> Traps left=2.
->>> @=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
->>> Your move?
-X!
->>> Moved Down, Trap laid.
->>>  0123456789
->>> 0         
->>> 1         *
->>> 2       X  
->>> 3       W
->>> 4   !@W             
->>> 5
->>> 6 * W
->>> 7 
->>> 8
->>> 9
->>> Traps left=1.
->>> @=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
->>> Your move?
-W
->>> Moved Up
->>>  0123456789
->>> 0         
->>> 1         
->>> 2       X * 
->>> 3    @  W
->>> 4   ! W             
->>> 5 *
->>> 6   W
->>> 7 
->>> 8
->>> 9
->>> Traps left=1.
->>> @=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
->>> Your move?
-hit the return key, no move.
->>> Moved Up
->>>  0123456789
->>> 0         
->>> 1         
->>> 2       X* 
->>> 3    @  W
->>> 4   ! W             
->>> 5  *
->>> 6   W
->>> 7 
->>> 8
->>> 9
->>> Traps left=1.
->>> @=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
->>> Your move?
-A
->>> Moved Left, 1 monster drowned in the swamp.
->>>  0123456789
->>> 0         
->>> 1         
->>> 2       X 
->>> 3   @   W
->>> 4   ! W             
->>> 5   *
->>> 6   W
->>> 7 
->>> 8
->>> 9
->>> Traps left=1.
->>> @=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
->>> Your move?
-W
->>> Moved Up, Last monster destroyed by your trap. You won
->>>  0123456789
->>> 0         
->>> 1         
->>> 2       X 
->>> 3   @   W
->>> 4   ! W             
->>> 5   *
->>> 6   W
->>> 7 
->>> 8
->>> 9
->>> Traps left=1.
->>> Play Again (Y/N)?
+```
+Enter game board size (up to 50 square), or ! to stop?
+```
+>10
 
+```
+Enter number of monsters, or ! to stop?
+```
+>4
+
+```
+Enter level of difficulty (1 to 5) or ! to stop?
+```
+>1
+
+```Generating initial matrix
+_0123456789
+0         *
+1
+2       X  
+3   @   W
+4     W             
+5
+6   W
+7 *
+8
+9
+
+Traps left=2.
+
+@=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
+Your move?
+```
+>X!
+
+```
+Moved Down, Trap laid.
+_0123456789
+0         
+1         *
+2       X  
+3       W
+4   !@W             
+5
+6 * W
+7 
+8
+9
+
+Traps left=1.
+@=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
+Your move?
+```
+>W
+
+```
+Moved Up
+_0123456789
+0         
+1         
+2       X * 
+3    @  W
+4   ! W             
+5 *
+6   W
+7 
+8
+9
+
+Traps left=1.
+@=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
+Your move?
+```
+>Press the return key, no move.
+
+```
+Moved Up
+_0123456789
+0         
+1         
+2       X* 
+3    @  W
+4   ! W             
+5  *
+6   W
+7 
+8
+9
+
+Traps left=1.
+@=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
+Your move?
+```
+>A
+
+```
+Moved Left, 1 monster drowned in the swamp.
+_0123456789
+0         
+1         
+2       X 
+3   @   W
+4   ! W             
+5   *
+6   W
+7 
+8
+9
+
+Traps left=1.
+@=is You. !=Trap. X=Swamp. W=Wall. Press A=Left. W=Up. D=Right. X=Down. To lay a trap, type !.
+Your move?
+```
+>W
+
+```Moved Up, Last monster destroyed by your trap. You won
+_0123456789
+0         
+1         
+2       X 
+3   @   W
+4   ! W             
+5   *
+6   W
+7 
+8
+9
+
+Traps left=1.
+
+Play Again (Y/N)?
+```
 
 ### Challenge: Hangman
 This is a 2 person game, one person enters a value.  And the other person then has to guess.
