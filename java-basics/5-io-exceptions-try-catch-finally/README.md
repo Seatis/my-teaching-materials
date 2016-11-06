@@ -2,14 +2,15 @@
 If anything can go wrong, it will go wrong.  Programming is not exempt.  Exceptions come in all sorts of ways:-
 - the data entered is of a type that isn't expected
 - one is looking for data in the wrong place
-- one falls to a point in the code where one was never expected to get to
-Let's face it, machines and people don't always behave as anticipated; nor are we *yet* gods.
+- one falls to a point in the code where one was never expected to get to.
 
-Fortunately, we have ways to handle errors.  One is to code defensively.  That is, ensure the error cannot occur by, for example, writing checks that validate the data the program is about to handle.  Another is to have a fallback that says, *if something goes wrong, do this to recover.*.
+Let's face it, machines and people don't always behave as anticipated; nor are we gods, *yet*.
 
-I/O (which standards for Input/Output) addresses how we work with *streams* of data.  Data might be streamed from a source (like YouTube) or the disk drive; a device monitoring items on a conveyor belt.  
+Fortunately, we have ways to handle errors.  One is to code defensively.  That is, ensure the error cannot occur by inserting code that  checks the data that the program is about to handle.  Another way is to have a fallback that says, *if something goes wrong, do this to recover* .
 
-And we combine the 2 together here as I/O is one place where you cannot always predict what might be the next item you get.  
+I/O (which standards for Input/Output) addresses how we work with *streams* of data.  Data might be streamed from a source (like YouTube), the disk drive; perhaps a device monitoring items on a conveyor belt.  
+
+And we have combined these topics here as I/O is one place where you cannot always predict what might be happen and therefore must be ready for Exceptions.  
 
 ## Objectives
  - What are the Exceptions and how to handle them using try-catch-finally
