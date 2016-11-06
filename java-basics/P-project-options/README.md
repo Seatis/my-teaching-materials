@@ -540,6 +540,7 @@ Enter the word to guess?
 ``` 
 Good choice sir, "ONE LOVE" it is.  Press "Enter" and I'll scroll the display.
 ```
+
 *Note that the word is Upper Case even though lower was entered.  All Lowercase letters are upper cased.*
 
 >User presses "Enter" key
@@ -561,7 +562,7 @@ STARTING!!!
    +----------+
 
  Enter a letter?
- ```
+```
 >H
 
 ```
