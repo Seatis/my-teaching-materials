@@ -235,10 +235,11 @@ Enter a matrix and terminate with the symbol !
 
 Enter a matrix and terminate with the symbol !
 ```
-  11 12 13
-  21 22 23
-  31 32 33 
-  !
+>  11 12 13
+
+>21 22 23
+31 32 33 
+!
 ```
 -- 1st Rotation
 31 21 11
