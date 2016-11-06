@@ -324,9 +324,10 @@ Stefan is a board game developer who has the option to use a couple of different
 ```
 Enter the number of dice sides.  0 to end; add an ! if you want to see all the combinatorics
 ```
-``
-4 4!
-``
+>
+4 4
+!
+>
 ```
 You asked for a listing of all the combinatorics ...
 1 + 1 
