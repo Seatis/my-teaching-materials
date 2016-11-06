@@ -34,24 +34,34 @@ Take any input, validate whether it's a palindrome and output the value in rever
 
 
 ####Sample Operation
-`What do you want to do [1=Test if such is a Palindrome, 0=Quit]?`
+```
+What do you want to do [1=Test if such is a Palindrome, 0=Quit]?
+```
 1
-`Enter the phrase please?`
-```Mark is here```
+```
+Enter the phrase please?
+```
+Mark is here
+```
+Ereh si kram
+Nope, not a palindrome.
 
-`Ereh si kram
-Nope, not a palindrome.`
-
-`What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?`
-```2```
-`Enter the phrase please?`
-```Able I was ere I saw elba.```
-`Able I was ere I saw elba.
+What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
+```
+2
+```
+Enter the phrase please?
+```
+Able I was ere I saw elba.
+```Able I was ere I saw elba.
 Yup, it's a palindrome`
 
-`What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?`
-```0```
-`Bye!`
+What do you want to do [1=Generate A Palindrome, 2=Test if such is a Palindrome, 0=Quit]?
+```
+0
+```
+Bye!
+```
 
 ### Challenge: Prime Factors (Simple)
 Enter a numeric value and report back the prime factors.
