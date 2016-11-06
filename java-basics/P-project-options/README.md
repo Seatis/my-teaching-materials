@@ -710,7 +710,7 @@ Enter a letter?
 >B
 
 ```
-Nope, to "B" or not to be, we'll it's looking like it's not to be.
+Nope, to "B" or not to be, we'll it's looking like I'll know the answer to that question pretty soon.
 
        +------+
        |      |
@@ -750,6 +750,7 @@ Nope, I guess "C" stands for "see you later".  Think man! One more wrong guess a
 Enter a letter?
 ```
 >N
+
 ```
 Yup, there's a(n) "N".  Think man! One more wrong guess and it's curtains for me!
 
