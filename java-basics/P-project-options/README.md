@@ -399,14 +399,15 @@ Enter game board size (up to 50 square), or ! to stop?
 ```
 Enter number of monsters, or ! to stop?
 ```
->4
+>2
 
 ```
 Enter level of difficulty (1 to 5) or ! to stop?
 ```
 >1
 
-```Generating initial matrix
+```
+Generating initial matrix
 _0123456789
 0         *
 1
