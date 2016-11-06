@@ -83,7 +83,8 @@ Enter a numeric value and report back the prime factors.
 ```
 Enter a number to test, or 0 to Quit?
 ```
-  12
+> 12
+
 ```
 "12" has the following factors: 2 3 3
 Or by count:-
@@ -92,7 +93,8 @@ Or by count:-
 
 Enter a number to test, or 0 to Quit?
 ```
-  120
+> 120
+
 ```
 "120" has the following factors: 2 2 3 3 5
 Or by count:-
@@ -102,14 +104,15 @@ Or by count:-
 
 Enter a number to test, or 0 to Quit?
 ```
-  17
+> 17
 
 ```
 "17" is a prime number
 
 Enter a number to test, or 0 to Quit?
 ```
-  0
+> 0
+
 ```
 Bye!
 ```
@@ -121,62 +124,75 @@ The program randomly choses a number and then gives hints and/or goads the user 
 ```
 Enter a top number in the range, or 0?
 ```
-  64
+> 64
+
 ```
 Okay, I've got a number.  You should be able to figure that out in 6 goes, let's begin.  
 Guess?
 ```
-  32
+> 32
+
 ```
 Nope, you're low. You've got 5 guesses left.  Guess?
 ```
-  48
+> 48
+
 ```
 Nope, you're high. You've got 4 guesses left.  Guess?
 ```
-  40
+> 40
+
 ```
 Nope, you're high. You've got 3 guesses left.  Guess?
 ```
-  35
+> 35
+
 ```
 Nope, you're low. You've got 2 guesses left.  Guess?
 ```
-  37
+> 37
+
 ```
 Nope, you're high and you've just repeated yourself, what a waste. Last chance.  Guess?
 ```
-  37
+> 37
+
 ```
 What are you thick?  You just guessed 37.  Guess?
 ```
-  37
+> 37
+
 ```
 Ugh, you tried that before! Guess?
 ```
-  38
+> 38
+
 ```
 Ever considered being a fortune teller?  Guess not.  Guess?
 ```
-  36
+> 36
+
 ```
 Yippee, I was running out of insults.
 
 Try again?  Enter a top number in the range, or 0?
 ```
-  1
+> 1
+
 ```
 Okay, I've got a number.  You should be able to figure that out in 1 go, let's begin.  
 
 Guess?
 ```
-  1
+> 1
+
 ```
 Well done, you managed to guess it in 1 go.
 
 Try again?  Enter a top number in the range, or 0?
 ```
-  0
+> 0
+
 ```
 It was fun playing.  Bye!
 ```
@@ -190,10 +206,10 @@ Take any input and then rotate the matrix.
 ```
 Enter a matrix and terminate with the symbol !
 ```
-  11 12 13 14
-  21 22 23 24
-  31 32 33 34
-  41 42 43 44 
+> 11 12 13 14
+21 22 23 24
+31 32 33 34
+41 42 43 44 
   !
 
 ```
