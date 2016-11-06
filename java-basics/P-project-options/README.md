@@ -45,6 +45,7 @@ Take any input, validate whether it's a palindrome and output the value in rever
 What do you want to do [1=Test if such is a Palindrome, 0=Quit]?
 ```
 > 1
+
 ```
 Enter the phrase please?
 ```
