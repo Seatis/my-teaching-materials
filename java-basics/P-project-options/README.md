@@ -389,6 +389,8 @@ Bye!
 ### Challenge: Monster Dodge 'Ems
 This is a old standard for playing with multi-dimensional arrays.  You have a game board and you have to populate it with "monsters" who if they get you, you're toast.  But monsters can be blocked by walls and will be destroyed if they run into other monsters, hit traps you lay or run into swamps that are also randomly distributed when the game starts.
 
+Note that I did this by hand, in your version you should space the matrix out better with borders and/or so that the cells appear more as squares.
+
 #### Sample Operation
 
 ```
@@ -528,197 +530,243 @@ Play Again (Y/N)?
 ### Challenge: Hangman
 This is a 2 person game, one person enters a value.  And the other person then has to guess.
 
-Note the >>> is the function's output.
-
 #### Sample Operation
 
->>> Enter the word to guess?
-One Love
->>> Good choice sir, "One Love" it is.  Press "Enter" and I'll scroll the display.
-User presses "Enter" key
->>> STARTING!!!
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>      | |     |
->>>      | |     |
->>>      m m     |
->>>              |
->>>   +----------+
->>>    _ _ _   _ _ _ _
->>>   +----------+
->>>
->>> Enter a letter?
-H
->>> Sorry, there are no "H"s.
->>>
->>>       +------+
->>>       |      |
->>>       0      |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    _ _ _   _ _ _ _
->>>   +----------+
->>> Enter a letter?
-L
->>> Yup, there's a(n) "L".
->>>       +------+
->>>       |      |
->>>       0      |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    _ _ _   L _ _ _
->>>   +----------+
->>>
->>> Enter a letter?
-O
->>> Well done, there are 2 "O"s.
->>>       +------+
->>>       |      |
->>>       0      |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ _   L O _ _
->>>   +----------+
->>>
->>> Enter a letter?
-W
->>> Nope, "W"s we have not.
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ _   L O _ _
->>>   +----------+
->>>
->>> Enter a letter?
-Y
->>> Nope, "Y", why not!
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>              |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ _   L O _ _
->>>   +----------+
->>>
->>> Enter a letter?
-X
->>> Nope, "X", might mark the spot, but here it definitely does not! It's not looking good mate!
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ _   L O _ _
->>>   +----------+
->>>
->>> Enter a letter?
-E
->>> Well done, there are 2 "E"s.
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>              |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ E   L O _ E
->>>   +----------+
->>>
->>> Enter a letter?
-B
->>> Nope, to "B" or not to be, we'll it's looking like it's not to be.
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>      | |     |
->>>              |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ E   L O _ E
->>>   +----------+
->>>
->>> Enter a letter?
-B
->>> Nope, I guess "C" stands for "see you later".  Think man! One more wrong guess and it's my toes and I'm toast!
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>      | |     |
->>>      | |     |
->>>              |
->>>              |
->>>   +----------+
->>>    O _ E   L O _ E
->>>   +----------+
->>>
->>> Enter a letter?
-N
->>> Yup, there's a(n) "L".  Think man! One more wrong guess and it's curtains for me!
->>>       +------+
->>>       |      |
->>>       0      |
->>>       |      |
->>>     /+++\    |
->>>    / +++ \   |
->>>      | |     |
->>>      | |     |
->>>              |
->>>              |
->>>   +----------+
->>>    O N E   L O _ E
->>>   +----------+
->>>
->>> Enter a letter?
+```
+Enter the word to guess?
+```
+>One Love
+
+``` 
+Good choice sir, "ONE LOVE" it is.  Press "Enter" and I'll scroll the display.
+```
+*Note that the word is Upper Case even though lower was entered.  All Lowercase letters are upper cased.*
+
+>User presses "Enter" key
+
+```
+STARTING!!!
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+      | |     |
+      | |     |
+      m m     |
+              |
+   +----------+
+    _ _ _   _ _ _ _
+   +----------+
+
+ Enter a letter?
+ ```
+>H
+
+```
+Sorry, there are no "H"s.
+
+       +------+
+       |      |
+       0      |
+              |
+              |
+              |
+              |
+              |
+              |
+   +----------+
+    _ _ _   _ _ _ _
+   +----------+
+
+Enter a letter?
+```
+>L
+
+```
+Yup, there's a(n) "L".
+
+       +------+
+       |      |
+       0      |
+              |
+              |
+              |
+              |
+              |
+              |
+   +----------+
+    _ _ _   L _ _ _
+   +----------+
+
+Enter a letter?
+```
+>O
+
+``` 
+Well done, there are 2 "O"s.
+       +------+
+       |      |
+       0      |
+              |
+              |
+              |
+              |
+              |
+              |
+   +----------+
+    O _ _   L O _ _
+   +----------+
+
+Enter a letter?
+```
+>W
+
+```
+Nope, "W"s we have not.
+
+       +------+
+       |      |
+       0      |
+       |      |
+              |
+              |
+              |
+              |
+              |
+              |
+   +----------+
+    O _ _   L O _ _
+   +----------+
+
+Enter a letter?
+```
+>Y
+
+```
+Nope, "Y", why not!
+
+       +------+
+      |      |
+       0      |
+       |      |
+     /+++\    |
+              |
+              |
+              |
+              |
+              |
+   +----------+
+    O _ _   L O _ _
+   +----------+
+
+Enter a letter?
+```
+>X
+
+```
+Nope, "X", might mark the spot, but here it definitely does not! It's not looking good mate!
+
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+              |
+              |
+              |
+              |
+   +----------+
+    O _ _   L O _ _
+   +----------+
+
+Enter a letter?
+```
+>E
+
+```
+Well done, there are 2 "E"s.
+
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+              |
+              |
+              |
+              |
+   +----------+
+    O _ E   L O _ E
+   +----------+
+
+Enter a letter?
+```
+>B
+
+```
+Nope, to "B" or not to be, we'll it's looking like it's not to be.
+
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+      | |     |
+              |
+              |
+              |
+   +----------+
+    O _ E   L O _ E
+   +----------+
+
+Enter a letter?
+```
+>C
+
+```
+Nope, I guess "C" stands for "see you later".  Think man! One more wrong guess and it's my toes and I'm toast!
+
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+      | |     |
+      | |     |
+              |
+              |
+   +----------+
+    O _ E   L O _ E
+   +----------+
+
+Enter a letter?
+```
+>N
+```
+Yup, there's a(n) "N".  Think man! One more wrong guess and it's curtains for me!
+
+       +------+
+       |      |
+       0      |
+       |      |
+     /+++\    |
+    / +++ \   |
+      | |     |
+      | |     |
+              |
+              |
+   +----------+
+    O N E   L O _ E
+   +----------+
+
+Enter a letter?
+```
 
 I think I'll leave it there (it's a cliffhanger)... Does he live or does he die?  Who knows... Mwaahahah.
 
@@ -726,33 +774,59 @@ I think I'll leave it there (it's a cliffhanger)... Does he live or does he die?
 - There should a cache of messages to send depending upon where the player is in the game
   - not guessing right
   - same letter again, ugh, you're playing with the poor guy's life.
+    > hey, I can't feel me toes!
 - Watch for singular and plurals (note how he says there are 2 and there is a(n))
+
+### Zsuzsi's Challenge
+Take an input file consisting of the following sorted data, for example:
+```
+AA 1234
+AA 4321
+AA 2344
+AA 2321
+BB 2312
+BB 2132
+BB 3421
+CC 2131
+```
+
+The program should work as follows:-
+```
+Provide the file location and name, or <enter> to end?
+```
+>D:\temp\ZsuzsiTest.txt
+
+```
+The results are:-
+
+Run  Count  Total 
+AA      4   10220 
+BB      3    7865 
+CC      1    2131 
+
+Totals  8   20216 
+
+Provide the file location and name, or <enter> to end?
+```
+>Enter
+
+#### Optionally, more challenging
+Add the average and percentage.  This means having to store the interim results.
+
+```
+The results are:-
+
+Run  Count  Total Average Percent
+AA      4   10220    2633   50.55
+BB      3    7865    2622   38.90
+CC      1    2131    2131   10.54
+
+Totals  8   20216    2527   99.99
+
+Provide the file location and name, or <enter> to end?
+```
+>Enter
 
 
 ## Individual Workshop Review
-Neatness counts in coding.
-
-Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
-
-Key questions to consider:
-- Are the directory structure and the names of the files correct?
-- Are the includes placed at the top of the file?
-- Does the code follow the right level of indentation?
-- Are all of the brackets positioned correctly?
-- Are the whitespaces where they should be; and not where they shouldn't?
-- Is the code *pithy* (meaning to the point, not superfluous or un-necessary)?
-  - Not using extra variables (unless needed to understand the logic)
-  - Not confusingly or overly commented
-  - Does the computation instead of repeating stuff (aka *code duplication*)?
-  - Does not contain empty blocks
-  - Non repetitive and where needing to repeat a block instead, carved out to a function?
-- Are there un-used variables - added during development but later made surplus to requirements through simplification?
-- Is the commentary in the code at the right level?
-  - Can one deduce the purpose of a block from the variable naming combined with the explanation
-  - Are there *Watch outs* warnings just in case somebody later maintains the code and needs to beware of something tricky (or not obvious)?
-- Are the data types used right for the purpose
-- Is the "commit message" meaningful?
-- Do the names conform to the Styleguide?
-    - Classes: UpperCamelCase
-    - variables: lowerCamelCase
-    - functions: lowerCamelCase(paramsLowerCase)
+Remember what we've been pointing out about the code.  Neatness counts in coding.
