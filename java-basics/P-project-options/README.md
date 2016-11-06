@@ -1,5 +1,6 @@
 # Module 03 #P - Projects for Demos
-_NOTE if you are reading this right now, be ware, we are not done! (But may we also say well done for looking ahead.) _
+_NOTE if you are reading this right now, be ware, we are not done! (But may we also say well done for looking ahead.)_
+
 By now, we've covered the basics of most programming languages and that means we can write something interesting.  We have a collection of ideas here for you to choose from; or, with a well reasoned argument, we Mentors might be convinced by you to try something else.
 
 For the projects we're looking for something that:-
