@@ -1,4 +1,4 @@
-# Exceptions, File I/O, `try-catch-finally`
+# Module 03 #5 Exceptions (`try, catch &amp; finally`) and File Input/Output (IKO)
 If anything can go wrong, it will.   Programming is not exempt and exceptions come in all sorts of ways:-
 - the data entered or received is of a type that isn't expected
 - the location for data is wrong
@@ -96,17 +96,24 @@ Binary data read/write
 
 ## Workshops
 ### Exceptions
-How to work with Exceptions.
+In these exercises work on catching the basic exceptions and then determining what to do.
 
 #### Exercise
-- [Workshop18.java](workshop/Workshop18.java)
+- [m04d05w01.java](workshop/Workshop01.java) - a simple situation
+- [m04d05w02.java](workshop/Workshop02.java) - more complexity
+- [m04d05w03.java](workshop/Workshop03.java) - what to do at the end
+- [m04d05w04.java](workshop/Workshop04.java) - programming defensively
 
 ### File I/O
-- [Workshop01.java](workshop/Workshop01.java)
+Search for a particular file in a directory; then read input in, write stuff out.
 
-### try-catch-finally
-- [Workshop13.java](workshop/Workshop13.java)
-
+#### Exercise
+- [m04d05w11.java](workshop/Workshop11.java) - scan directory
+- [m04d05w12.java](workshop/Workshop12.java) - read input
+- [m04d05w13.java](workshop/Workshop13.java) - write output
+- [m04d05w14.java](workshop/Workshop14.java) - merge 2 files
+- [m04d05w15.java](workshop/Workshop15.java) - handle missing file
+- [m04d05w16.java](workshop/Workshop16.java) - handle a data exception
 
 ## Individual Workshop Review
 Neatness counts in coding.
