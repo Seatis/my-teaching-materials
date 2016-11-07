@@ -1,12 +1,12 @@
-# Module 03 #5 - Exceptions, File I/O, `try-catch-finally`
-If anything can go wrong, it will go wrong.  Programming is not exempt.  Exceptions come in all sorts of ways:-
-- the data entered is of a type that isn't expected
-- one is looking for data in the wrong place
-- one falls to a point in the code where one was never expected to get to.
+# Exceptions, File I/O, `try-catch-finally`
+If anything can go wrong, it will.   Programming is not exempt and exceptions come in all sorts of ways:-
+- the data entered or received is of a type that isn't expected
+- the location for data is wrong
+- an unexpected event or condition occurs.
 
-Let's face it, machines and people don't always behave as anticipated; nor are we gods, *yet*.
+We don't always anticipate every situation, and machines (like people) don't always behave as anticipated.
 
-Fortunately, we have ways to handle errors.  One is to code defensively.  That is, ensure the error cannot occur by inserting code that  checks the data that the program is about to handle.  Another way is to have a fallback that says, *if something goes wrong, do this to recover* .
+Fortunately, we have ways to handle errors.  One is to code defensively.  That is, ensure the error cannot occur by inserting code that  checks the data that the program is about to handle.  Another is to code in fallbacks.  These say, *if something goes wrong, do this to recover*.
 
 I/O (which standards for Input/Output) addresses how we work with *streams* of data.  Data might be streamed from a source (like YouTube), the disk drive; perhaps a device monitoring items on a conveyor belt.  
 
@@ -23,7 +23,7 @@ And we have combined these topics here as I/O is one place where you cannot alwa
 |:-------- |-----:|
 |[Exceptions (Bana.06)](https://www.youtube.com/watch?v=EWj60p8esD0)|15:42|
 |[File Class (first part using files Bana.31)](https://www.youtube.com/watch?v=o9F73FU2vzs) - ignore the JFrame around 10m00|12:17|
-|[Read & Write Files (Bana.32)](https://www.youtube.com/watch?v=D_WDuwnaobg) - this shows a little bit of Object Orientation; pay attention to printWriter and getInfo|14:31|
+|[Read & Write Files (Bana.32)](https://www.youtube.com/watch?v=D_WDuwnaobg) - this shows a little bit of Object Orientation (OO); pay attention to printWriter and getInfo|14:31|
 
 Bana talks about OO which we will get into; for the moment though, focus on the methods of reading and writing data.  
 
