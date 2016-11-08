@@ -1,4 +1,4 @@
-# Module 03 #5 Exceptions (`try, catch &amp; finally`) and File Input/Output (IKO)
+# Module 03 #5 Exceptions (`try`, `catch` &amp; `finally`) and File Input/Output (aka I/O)
 If anything can go wrong, it will.   Programming is not exempt and exceptions come in all sorts of ways:-
 - the data entered or received is of a type that isn't expected
 - the location for data is wrong
@@ -32,8 +32,8 @@ As opposed to ASCII (or encoded) data, we can also get *binary* data such as ima
 
 | Material | Time |
 |:-------- |-----:|
-|[Exception Handling in Java](http://beginnersbook.com/2013/04/try-catch-in-java/)||
-|[Read & Write Binary Streams](https://www.youtube.com/watch?v=X81XIVaMWCQ)|13:58|
+|[Exception Handling in Java - a series of pages with examples](http://beginnersbook.com/2013/04/try-catch-in-java/)||
+|[Read & Write Binary Streams - this differs a little bit from character streams](https://www.youtube.com/watch?v=X81XIVaMWCQ)|13:58|
 
 
 ## Material Review
@@ -82,9 +82,8 @@ As opposed to ASCII (or encoded) data, we can also get *binary* data such as ima
   - FileWriter
   - BufferedReader
   - FileReader
-  - Exceptions
+  - Exceptions *this is a non-exhaustive list*
     - ArithmeticException
-    - ClassNotFound
     - IllegalArgumentException
     - InputMismatchException
     - FileNotFoundException
