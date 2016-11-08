@@ -92,3 +92,9 @@ Key questions to consider:
     - Classes: UpperCamelCase
     - variables: lowerCamelCase
     - functions: lowerCamelCase(paramsLowerCase)
+
+# Links
+- [Java Basic Module](..\README.md)
+- [Day 4](..\3-arrays-collections-functions\README.md)
+- [Next Day](..\5-io-exceptions-try-catch-finally\README.md)
+- [Projects](..\P-project-options\README.md)

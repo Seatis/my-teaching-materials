@@ -206,7 +206,7 @@ Key questions to consider:
 
 # Links
 - [Java Basic Module](..\README.md)
-- [Prev Day](..\3-arrays-collections-functions
+- [Prev Day](..\3-arrays-collections-functions\README.md)
 - [Next Day](..\5-io-exceptions-try-catch-finally\README.md)
 - [Projects](..\P-project-options\README.md)
 
