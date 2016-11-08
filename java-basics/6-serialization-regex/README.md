@@ -18,7 +18,6 @@ Also today, we can take a brief look at Regex.  These are ways of scanning texts
 
 ## Materials & Resources
 
-### Training
 | Material | Time |
 |:-------- |-----:|
 |[Concepts behind Serialization (POSCH.01)](https://www.youtube.com/watch?v=6MisF1sxBTo) - converting data into and out of transmittable forms.|9:24|
@@ -32,8 +31,7 @@ Also today, we can take a brief look at Regex.  These are ways of scanning texts
 
 | Material | Time |
 |:-------- |-----:|
-|[Regex](https://www.youtube.com/watch?v=s_PfopWcMwI)|19:27|
-
+|[Regex - How to use Regular Expressions (in Java)](https://www.youtube.com/watch?v=s_PfopWcMwI)|19:27|
 ## Material Review
 - Serialization
   - Serializable interface
