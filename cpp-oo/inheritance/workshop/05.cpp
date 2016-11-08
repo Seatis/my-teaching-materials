@@ -3,24 +3,29 @@
 
 using namespace std;
 
-
-
-class House {
+class Student {
   private:
-    string address;
-    unsigned int area;
-    unsigned int price;
+    string name;
+    unsigned int age;
   public:
-    unsigned int get_price() {
-      return this->price;
+    Student(string name, unsigned int age) {
+      this->age = age;
+      this->name = name;
     }
+
 };
 
+// Create 2 methods for both parameters of the Student class.
+// One should be called getParameterName, the other should be called setParameterName
+// e.g.: string getName(void), void setName(string name) etc.
+// Consider what decisions You'l have to make:
+//   - Does it take a type, a reference or a pointer as argumnet?
+//   - What happens with the current parameters if You get new ones?
+// 
+// Create code in teh main function that uses all these functions and ilustrates that they work 
+// by printing out something.
+
 int main() {
-  // The market price of the houses is 400 EUR / square meters
-  // Create a constructor for the House class that takes it's address and area.
-  House house = House("Andrassy 66", 349);
-  cout << house.get_price();
 
   return 0;
 }
