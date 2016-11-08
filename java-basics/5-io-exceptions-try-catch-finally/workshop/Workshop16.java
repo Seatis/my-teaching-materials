@@ -8,9 +8,11 @@
  * 
  * This challenge, back in the day, would have been awe inspiring.  You're going to take input
  * from the scanner and copy such to a file.
- * This is how it should work.
- * 
- * Note, >>> means that what the computer does; and <<< is what you the user does.
+ *
+ * This is how it should work, but NOTE ...
+ * >>> means that what the computer does; and 
+ * <<< is what you the user does.
+ *
  * >>> Enter the filename (assuming writing to C:\TEMP\)?  
  * <<< Test.txt
  * >>> Writing to Test.txt; when done press enter 3 times.
@@ -23,6 +25,8 @@
  * <<<
  * >>> Done, wrote 102 Characters to C:\TEMP\Test.txt.
  *
+ * There's also a little challenge of how to pass a variable into a routine and then 
+ * return it back (that's why I'm using Integer, the object)
  */
 
 import java.io.File;
@@ -39,7 +43,8 @@ public class Workshop16 {
         Scanner userInput = new Scanner(System.in);
 
         String strNameOfFile;
-	int ctCharacters;
+	Integer ctCharacters = new Integer;
+	ctCharacters = 0;
         System.out.print("Path: ");
 
         while(userInput.hasNextLine()){
@@ -53,7 +58,7 @@ public class Workshop16 {
 
     }
 
-    private static void writeStuff (String pathToList) {
+    private static void writeStuff (String pathToList, Integer ctCharacters) {
   	//open the file, blow up if already there
 
 	//next Scanner While to take the input and transfer to the file
