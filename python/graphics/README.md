@@ -12,6 +12,7 @@
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
+
 | Material | Time |
 |:---------|-----:|
 | [Canvas Widgets](http://www.python-course.eu/tkinter_canvas.php) | |
