@@ -278,7 +278,7 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - Whitespaces, where they should be, where shouldn't?
 
 # Links
-- [Parent - Java Basic Module](..\README.md)
-- [Prior - Installation](..\1-installing-basics\README.md)
-- [Next - Arrays &amp; Functions](..\3-arrays-collections-functions\README.md)
+- [Parent - Java Basic Module](../README.md)
+- [Prior - Installation](../1-installing-basics/README.md)
+- [Next - Arrays &amp; Functions](../3-arrays-collections-functions/README.md)
 
