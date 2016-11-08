@@ -1,23 +1,23 @@
 # Graphics in Python
 
 ## Objectives
-* draw on a canvas using TKinter
+* draw on a canvas using Tkinter
 
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
 | [Python GUI with Tkinter - 1 - Introduction](https://www.youtube.com/watch?v=RJB1Ek2Ko_Y&index=1&list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d) | 8:37 |
 | [Python GUI with Tkinter - 13 - Shapes and Graphics](https://www.youtube.com/watch?v=O12aT42okYE&list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d&index=13) | 9:51 |
-| [%Some cool article%](http://www.tutorialspoint.com/python/tk_canvas.htm) | |
+| [Python Tkinter Canvas docs](http://www.tutorialspoint.com/python/tk_canvas.htm) | |
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
 | Material | Time |
 |:---------|-----:|
-| [%Some cool article%](http://www.python-course.eu/tkinter_canvas.php) | |
+| [Canvas Widgets](http://www.python-course.eu/tkinter_canvas.php) | |
 
 ## Material Review
- - TKinter
+ - Tkinter
  - GUI
  - canvas
  - shapes
