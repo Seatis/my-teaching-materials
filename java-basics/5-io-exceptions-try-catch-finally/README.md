@@ -120,7 +120,8 @@ Search for a particular file in a directory; then read input in, write stuff out
 - [16 Don't forget to write](workshop/Workshop16.java) - write 1 or more lines of input from the keyboard to a file
 - [17 Copy a file](workshop/Workshop17.java) - garbage in, garbage out...  Now you can call yourself a programmer (and take *no* responsibility for content)
 - [18 Merge sort](workshop/Workshop18.java) - This really is (was) a staple of 1960s IT when we had *tapes* of data in Data Processing (DP) Centers
-
+  - [W18A.dat "left" data file to read](workshop18/W18A.dat)
+  - [W18B.dat "right" data file to merge](workshop18/W18B.dat)
 
 ## Individual Workshop Review
 Neatness counts in coding.
