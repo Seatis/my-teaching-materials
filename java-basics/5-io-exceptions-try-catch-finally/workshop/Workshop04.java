@@ -9,7 +9,7 @@
 import java.util.*;
 
 public class Workshop04{
-    public static void main(String... args){
+    public static void main(String[] args){
 
         int a[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8};
         String two = "2";

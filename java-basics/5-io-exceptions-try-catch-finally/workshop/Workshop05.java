@@ -1,13 +1,15 @@
 /**************************************************************************************************
  * Workshop: Practice Exceptions: Nested Try Catch
  * 
- * Run this and explain the what is going on
+ * Run this and explain the what the heck is going on
+ *
+ * ADD YOUR EXPLANATION HERE -----------------------------------
  *
  **************************************************************************************************/
 import java.util.*;
 
 public class Workshop05{
-    public static void main(String... args){
+    public static void main(String[] args){
 
  //Parent try block
      try{
