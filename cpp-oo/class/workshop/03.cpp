@@ -11,10 +11,7 @@ class Student {
       this->age = age;
       this->name = name;
     }
-
-    string greet() {
-      return "Hello my name is: " + this->name;
-    }
+    
 };
 
 int main() {
