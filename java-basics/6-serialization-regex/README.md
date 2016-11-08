@@ -12,6 +12,8 @@
 |[Serialization Part 1](https://www.youtube.com/watch?v=6MisF1sxBTo)|9:24|
 |[Serialization Part 2](https://www.youtube.com/watch?v=FCRwbIXTFyk)|9:48|
 |[Serialization Part 3](https://www.youtube.com/watch?v=q_g7VYoA4sg)|7:50|
+|[Add Maven library to a IDEA project](https://www.jetbrains.com/help/idea/2016.2/downloading-libraries-from-maven-repositories.html)|0:50|
+|[Gson API docs](https://google.github.io/gson/apidocs/com/google/gson/Gson.html)|1:00|
 
 ### Optional
 *How to use Regular Expressions in Java*
@@ -29,6 +31,10 @@
   - ObjectInputStream
     - readObject()
   - ObjectOutputStream
+- Gson (serialize to JSON)
+  - JSON
+  - toJson()
+  - fromJson()
 
 ### Optional
 - Regular Expressions
@@ -44,7 +50,10 @@
 ### Serialization
 
 #### Exercise
-- [Workshop18.java](workshop/Workshop18.java)
+- [Workshop01.java](workshop/Workshop01.java)
+- [Workshop02.java](workshop/Workshop02.java)
+- [Workshop03.java](workshop/Workshop03.java)
+- [Workshop04.java](workshop/Workshop04.java)
 
 ### Regular Expression
 
