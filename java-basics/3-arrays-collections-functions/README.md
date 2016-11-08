@@ -161,6 +161,6 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 
 # Links
 - [Parent - Java Basic Module](../README.md)
-- [Prior - Exxpression &amp; Control Flow](../2-expressions-control-flow/README.md)
+- [Prior - Expression &amp; Control Flow](../2-expressions-control-flow/README.md)
 - [Next - Arraylists &amp; Foreach] (../4-arraylists-foreach/README.md)
 
