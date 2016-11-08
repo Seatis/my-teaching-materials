@@ -32,6 +32,7 @@ As opposed to ASCII (or encoded) data, we can also get *binary* data such as ima
 
 | Material | Time |
 |:-------- |-----:|
+|[Exception Handling in Java](http://beginnersbook.com/2013/04/try-catch-in-java/)||
 |[Read & Write Binary Streams](https://www.youtube.com/watch?v=X81XIVaMWCQ)|13:58|
 
 
@@ -85,7 +86,6 @@ As opposed to ASCII (or encoded) data, we can also get *binary* data such as ima
     - ArithmeticException
     - ClassNotFound
     - IllegalArgumentException
-    - IndexOutOfBounds
     - InputMismatchException
     - FileNotFoundException
     - IOException
@@ -97,12 +97,20 @@ Binary data read/write
 ## Workshops
 ### Exceptions
 In these exercises work on catching the basic exceptions and then determining what to do.
+<<<<<<< HEAD
 
 #### Exercise
-- [m04d05w01.java](workshop/Workshop01.java) - a simple situation
-- [m04d05w02.java](workshop/Workshop02.java) - more complexity
-- [m04d05w03.java](workshop/Workshop03.java) - what to do at the end
-- [m04d05w04.java](workshop/Workshop04.java) - programming defensively
+- [01 Walkthrough the Video](workshop/Workshop01.java) - These are the items in Bana's Video
+- [02 Bad Index on the Array](workshop/Workshop02.java) - Deal with reading past the end of an array
+- [03 Data type Overflow](workshop/Workshop03.java) - Handle bad data entry
+- [04 Cascading Catches](workshop/Workshop04.java) - If it's not one thing, then its another
+- [05 Nested Try Catch](workshop/Workshop05.java) - Sit back a minute and rather than code, figure out what is happening.
+- [06 Nested Try Catch 2](workshop/Workshop06.java) - Still sitting back?  Good, look at this one too
+- [07 The case of "7"](workshop/Workshop07.java) - Why should java have all the fun, you too can raise exceptions
+- [08 The party's over](workshop/Workshop08.java) - Okay, you've had the party, made a mess of your parents' apartment, now what?
+- [09 Setting an Exception Message](workshop/Workshop09.java) - If you're going to throw exceptions, at least explain why.
+- [10 Other Exception Situations](workshop/Workshop10.java) - How to figure out exceptions and code for them
+- [11 Throw out different exceptions in the same routine](workshop/Workshop11.java)
 
 ### File I/O
 Search for a particular file in a directory; then read input in, write stuff out.
