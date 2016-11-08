@@ -4,11 +4,11 @@
  * Welcome to crap coding by a mentor week!
  *
  * You have an array and the program tries to read past the end.  How do you ensure that you
- * still get to the finish line?
+ * still get to the ::::FINISH LINE::::?
  **************************************************************************************************/
 import java.util.*;
 
-public class Lesson01{
+public class Workshop02{
     public static void main(String... args){
         String[] numbers = new String[] { "one", "two", "three", "four", "five"};
 
@@ -18,7 +18,7 @@ public class Lesson01{
 
         }
 
-       System.out.println("*** FINISH LINE ***");
+       System.out.println("::::FINISH LINE::::");
     }
 }
 
