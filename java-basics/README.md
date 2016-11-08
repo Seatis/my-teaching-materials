@@ -1,28 +1,55 @@
-# Java Basics
-*Java fundamentals, variables, functions, expressions*
+# Module 03 : Java Basics
+This module introduces the basics of programming found throughout IT.  In the next week plus we'll start by becoming acquainted with an Integrated Development Environment (IDE) which is used to both generate the code a machine can understand and link together the various resources required to make that program.
 
-## Knowledge & Skills
-List the major competences (knowledge and/or skills) that the participants are expected to master in this module.
+We'll also consider a bit about how a programming language works, specifically using a compiler and generating machine code, discuss something about memory and how a machine executes instructions serially.
 
-- core concepts in programming
-    - variables,
-    - types,
-    - loops,
-    - expressions,
-    - control & functions
+We must cover the basic elements and constructs in programming, namely:-
+- types of data, variables and storage
+- operators, expressions and statements
+- conditionals (e.g. `if` `then` `else` and `switch`)
+- loops (e.g. `for`, `while`, `until`) and `break`ing out of a loop
+- arrays
+- the `main` function found in all java programs
+- functions in general and passing parameters; data scoping; returning values
+- more complex structures such as ArrayLists, how one loops through such (using `for*each*`); Iterators
+- debugging
+- introduce some object types (though we'll stay away from Object Orientation at this point) such as Integer, Scanner, String, StringBuilder, ArrayList and some others
+- look at exception handling `try`, `catch` and `finally`
+- discuss Input/Output, and look at reading the directory
+- introduce `import` to access libraries of routines
+- examine *Serialisation*
+- optionally cover -
+  - Regex - regular expression pattern matching
+  - Hashing
+  - Dictionaries
+  - Linked Lists
 
-<!-- With specializations -->
-## Specializations
-Different classes are requiring different technical focuses, to achieve smooth transition between modules for the participants.
+## Overview of the Days
+- [01) Installation of the IDE (IntelliJ's IDEA)](1-installing-basics\README.md)
+- [02) Expressions &amp; Control Flow](2-expressions-control-flow\README.md)
+- [03) Arrays &amp; Functions](3-arrays-collections-functions\README.md)
+- [04) ArrayLists &amp; Foreach](4-arrylists-foreach\README.md)
+- [05) I/O &amp; Exception Handling (5-io-exceptions-try-catch-finally\README.md)
+- [06) Serialization &amp; Regular Expression Pattern Matching](6-serialization-regex\README.md)
+- [Project Options](P-project-options\README.md) - the list of projects to be considered for the end of module review.
 
-### Java
+# Knowledge & Skills
+*List the competences (knowledge and/or skills) that the participants are expected to master in this module.*
+- Understanding of the basic *Turing* machine, concepts core to all programming; interpreters, compilers
+- General knowledge of core components of the Java world - IDE & program, compile to bytecode, linking, running in the JVM, libraries
+- Able to write and run a Java program; debug and inspect variables in an operating program
+- Search for, and install a library (Maven)
+- Understand primitive data types, define and use variables (in expressions)
+- Craft expressions
+- Control program flow - loops (while, do-while, for), statements (if, if-then, if-then-else, elseif)
+- Work with arrays (single and multi-dimensional), understand what are jagged arrays
+- Have an understanding of collections - ArrayList & HashMaps and be able to iterate through such
+- Define functions - parameters, return values, signatures/overloading; main args[]
+- Understand the String and StringBuilder objects, their differences
+- Make use of simple I/O calling the Scanner class (reading from the prompt (System.in), writing to the prompt (System.out))
+- Perform and explain primitive data conversions
 
-#### Schedule
-- [Java Environment &amp; Basic Constructs](1-installing-basics)
-- [Expressions and control flow](2-expressions-control-flow)
-- [Arrays, Functions and Debugging &amp; Exceptions](3-arrays-collections-functions)
-- [ArrayList, LinkedLists, HashMap;  Iterators, Foreach](4-arraylists-foreach)
-- [File I/O, Exception handling](5-io-exceptions-try-catch-finally)
-- [Serialization, Regular Expressions](6-serialization-regex)
+## Demo description
+- Creating simple algorithms as searching palindromes in a string,
+- Show understanding of variables, conditionals, loops and the other basic elements of a programming language.
 
-#### [Knowledge & Skills](knowledge-skills.md)

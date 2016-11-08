@@ -4,7 +4,21 @@
  * Welcome to crap coding by a mentor week!
  *
  * You have an array and the program tries to read past the end.  How do you ensure that you
- * still get to the ::::FINISH LINE::::?
+ * still get to the ::::FINISH LINE::::? without changing the "for loop"'s "<=".  
+ *
+ * Hint, you're studying try/catch/finally.
+ * 
+ * The output should be 
+ * 0=one
+ * 1=two
+ * 2=three
+ * 3=four
+ * 4=
+ * EXCEPTION and something like ArrayIndexOutOfBoundsException (I cannot remember exactly)
+ * ::::FINISH LINE::::
+ *
+ * Again, don't change the loop exit condition!  This is solvable using Exception Handling.
+
  **************************************************************************************************/
 import java.util.*;
 

@@ -276,3 +276,9 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
     - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
+
+# Links
+- [Java Basic Module](..\README.md)
+- [Prior Day](..\1-installing-basics\README.md)
+- [Next Day](..\3-arrays-collections-functions\README.md)
+
