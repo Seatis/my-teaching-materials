@@ -12,6 +12,11 @@
  *
  * So write a routine that throws an exception on the presence of 7.
  *
+ * NOTE. Extra points if you knew the definition of "reprobate" without having to check the "Urban
+ * Dictionary"
+ *
+ * NOTE NOTE: get this right.  We use this again in further exercises!
+ *
  **************************************************************************************************/
 import java.util.*;
 
@@ -23,7 +28,7 @@ public class Workshop07{
         return;
     }
 
-    public static void main(String... args){
+    public static void main(String[] args){
 
         Scanner userInput = new Scanner(System.in);
         int age;

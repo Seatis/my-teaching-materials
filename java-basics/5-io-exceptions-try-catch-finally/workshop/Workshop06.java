@@ -7,7 +7,7 @@
 import java.util.*;
 
 public class Workshop06{
-    public static void main(String... args){
+    public static void main(String[] args){
       //main try-block
       try{
     	//try-block2
