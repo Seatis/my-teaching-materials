@@ -160,7 +160,7 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - Whitespaces, where they should be, where shouldn't?
 
 # Links
-- [Java Basic Module](..\README.md)
-- [Previous Day](..\2-expressions-control-flow\README.md)
-- [Next Day] (..\4-arraylists-foreach\README.md)
+- [Parent - Java Basic Module](../README.md)
+- [Prior - Exxpression &amp; Control Flow](../2-expressions-control-flow/README.md)
+- [Next - Arraylists &amp; Foreach] (../4-arraylists-foreach/README.md)
 
