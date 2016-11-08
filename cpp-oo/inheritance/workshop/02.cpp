@@ -16,11 +16,11 @@ string* Shape::getName() {
 }
 
 
-// Create 2 classes which inherit from the above defined class, Shape
-// One should be Triangle, the other Square.
-// Create their getName function based on the above example.
-// Then watch what the code below does. 
-// If You find any typos, etc, correct them.
+// First, move the previous code to new hpp and cpp files for each class. 
+// Include them into this file. 
+// Make sure they include each other when needed. 
+// Make sure the code below still works.
+
 
 int main() {
 	Shape* shape = new Shape();
