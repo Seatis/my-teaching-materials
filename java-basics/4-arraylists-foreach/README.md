@@ -205,8 +205,8 @@ Key questions to consider:
     - functions: lowerCamelCase(paramsLowerCase)
 
 # Links
-- [Java Basic Module](..\README.md)
-- [Prev Day](..\3-arrays-collections-functions\README.md)
-- [Next Day](..\5-io-exceptions-try-catch-finally\README.md)
-- [Projects](..\P-project-options\README.md)
+- [Parent - Java Basic Module](../README.md)
+- [Previous - Arrays &amp; Functions](../3-arrays-collections-functions/README.md)
+- [Next - I/O &amp; Exceptions](../5-io-exceptions-try-catch-finally/README.md)
+- [Projects](../P-project-options/README.md)
 
