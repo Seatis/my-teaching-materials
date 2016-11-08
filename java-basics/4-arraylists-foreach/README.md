@@ -45,7 +45,7 @@ We'll be doing these Workshops as well as reviewing last week's through the end 
 |[HashSet/HashMap Demo (vidal)](https://www.youtube.com/watch?v=jwtx6GVPdyw)|13:24|
 |[HashMap/Set examples from Minecraft (vector)](https://www.youtube.com/watch?v=j442WG8YzM4)|5:53|
 |[Refresher on data types & conversion (indian English)](https://www.youtube.com/watch?v=bqPIWlnjWbA)|14:53|
-|[StringBuilder (Posch)](https://www.youtube.com/watch?v=1yynLCFRuAk|6:13|
+|[StringBuilder (Posch)](https://www.youtube.com/watch?v=1yynLCFRuAk)|6:13|
 
 
 ## Assignment Review
@@ -209,4 +209,3 @@ Key questions to consider:
 - [Previous - Arrays &amp; Functions](../3-arrays-collections-functions/README.md)
 - [Next - I/O &amp; Exceptions](../5-io-exceptions-try-catch-finally/README.md)
 - [Projects](../P-project-options/README.md)
-
