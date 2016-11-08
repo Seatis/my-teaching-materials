@@ -5,12 +5,12 @@ class IntList {
 	private:
 		int mLength;
 	public:
-		void append(int _a);
-		void insert(int _idx, int _a);
-		int getFirst();
-		int getLast();
-		int getLength();
-		bool isEmpty();
+		virtual void append(int _a);
+		virtual void insert(int _idx, int _a);
+		virtual int getFirst();
+		virtual int getLast();
+		virtual int getLength();
+		virtual bool isEmpty();
 
 };
 
