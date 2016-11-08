@@ -113,9 +113,9 @@ In these exercises work on catching the basic exceptions and then determining wh
 
 ### File I/O
 Search for a particular file in a directory; then read input in, write stuff out.
-- [12 Review the Mechanics of Searching the Directory](workshop/Workshop12.java) - Here's one we made earlier for convenience
+- [12 Review the Mechanics of Searching the Directory](workshop/Workshop12.java) - Derived from Bana's video; run this in debug mode to be sure you get it
 - [13 Scan the directory](workshop/Workshop13.java) - Enter a directory name, see what you find
-- [14 Review the Mechanics of IO](workshop/Workshop14.java) 
+- [14 Review the Mechanics of IO](workshop/Workshop14.java) - Another one that is derived from Bana's video for you to run in debug mode
 - [15 Dump a file](workshop/Workshop15.java) - you've found a file, now flood your screen with its contents
 - [16 Don't forget to write](workshop/Workshop16.java) - write 1 or more lines of input from the keyboard to a file
 - [17 Copy a file](workshop/Workshop17.java) - garbage in, garbage out...  Now you can call yourself a programmer (and take *no* responsibility for content)
