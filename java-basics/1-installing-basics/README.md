@@ -291,5 +291,5 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
     - variables: lowerCamelCase
 
 # Links
-- [Java Basic Module](../README.md)
-- [Next Day](../2-expressions-control-flow/README.md)
+- [Parent - Java Basic Module](../README.md)
+- [Next Day (Expressions &amp; Control Flow](../2-expressions-control-flow/README.md)
