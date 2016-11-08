@@ -289,3 +289,7 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - Are the names of things following the styleguide?
     - Classes: UpperCamelCase
     - variables: lowerCamelCase
+
+# Links
+- [Java Basic Module](../README.md)
+- [Next Day](../2-expressions-control-flow/README.md)
