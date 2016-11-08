@@ -3,18 +3,19 @@ Serialization is an approach to transmitting data between processes.  While in a
 
 The first complication is that you need to know where one piece of data ends and another begins.  If we just put A, B and C (above) together, we'd get 102Joe.  We could have a separate file that says 2 characters for A, 1 for B and the rest is C.  But that's not very flexible.  What if later, we have an A that is 100?
 
-While databases have defined "columns", when communicating between processes (especially over the internet), we need another method to do such.  Enter the concept of serialisation.  Serialisation is a way to mark the beginning and endings; and also name what each packet of data is.  In fact, Serialisation can also tell you about relationships between data.  For example, this is the Invoice, and these 2 lines here are the Billing Rows.
+While databases have defined "columns", when communicating between processes (especially over the internet), we need another method to do such.  Enter the concept of *serialisation*.  Serialisation is a way to mark the beginning and endings; and also name what each packet of data is.  In fact, *serialisation* can also identify data relationships.  For example, this is an `Invoice`, and here are the `Invoices` 2 `Billing Rows`.
 
-You are already acquainted with this.  Think of HTML and CSS.  They are both examples of serialisation.  For example &lt;div&gt; marks a lexical group which can contain other &lt;div&gt;s, &lt;p&gt;s, &lt;span&gt;s etc.  And &lt;div&gt; can have element value and attributes.
+You are already acquainted with this.  Think of HTML and CSS.  They are both examples of serialisation.  For example &lt;div&gt; marks a lexical group which can contain other &lt;div&gt;s, &lt;p&gt;s, &lt;span&gt;s etc.  &lt;article&gt; for example, tells a Search Engine that what follows is text to be indexed for searches as opposed to &lt;h1&gt; which is just a section title in the document (and therefore probably less likely to answer a googler's question.  And &lt;div&gt can have direct value such the element's value which can be a long piece of text as well as attributes that appear inside the angled brackets.
 
 Putting data into this format is aptly call *serialization* and returning it to data variables conversely is called *deserialisation*.
 
-Now to do this could be involved, but fortunately most modern programming languages have libraries that do just that for us (though you'd be amazed at the number of people who still attempt to do it the old, long hand method - with incredible results; and not to name names, but TNT still hasn't figured it out).
+Now to do this could be involved.  Fortunately though, most modern programming languages have libraries that do all the heavy lifting  for us. (Though you'd be amazed at the number of people who still attempt to do it the old, long hand method - with incredible results; and not to name names, but TNT (as of 2016) still hasn't figured it out.)
 
-Also today, we can take a brief look at Regex.  These are ways of scanning texts for patterns and are useful, for example, in validating postcodes, phone numbers, email addresses, etc.  From time-to-time you'll find knowing of Regex well worth it as you'll just have to find the Regex expression to validate some data input (e.g. Brazilian Postcodes) rather than you having to research and then handcode such (again, writing from "recent" experience).
+Also in this `day` we can optionally look at Regex.  Regex offers ways to scan texts for patterns.  These are useful, for example, in validating postcodes, phone numbers, email addresses, etc.  From time-to-time you'll find knowing a little Regex well worth your while.  All you'll need to do is Google a particular pattern, find it and then use it to validate some data input (e.g. Brazilian Postcodes) rather than you having to research and then handcode such (again, I'm drawing on some *recent* experience).
 
 ## Objectives
- - How to Serialize/Deserialize objects
+- How to Serialize/Deserialize objects
+- Introduce Regex
 
 ## Materials & Resources
 
@@ -23,15 +24,13 @@ Also today, we can take a brief look at Regex.  These are ways of scanning texts
 |[Concepts behind Serialization (POSCH.01)](https://www.youtube.com/watch?v=6MisF1sxBTo) - converting data into and out of transmittable forms.|9:24|
 |[Serialization - a worked example (POSCH.02)](https://www.youtube.com/watch?v=FCRwbIXTFyk)|9:48|
 |[Deserialization - a worked example (POSCH.03)](https://www.youtube.com/watch?v=q_g7VYoA4sg)|7:50|
-|[Add Maven library to a IDEA project](https://www.jetbrains.com/help/idea/2016.2/downloading-libraries-from-maven-repositories.html)|0:50|
-|[Gson API docs](https://google.github.io/gson/apidocs/com/google/gson/Gson.html)|1:00|
 
 ### Optional
 *How to use Regular Expressions in Java.*
-
-| Material | Time |
-|:-------- |-----:|
 |[Regex - How to use Regular Expressions (in Java)](https://www.youtube.com/watch?v=s_PfopWcMwI)|19:27|
+|[Add Maven library to a IDEA project](https://www.jetbrains.com/help/idea/2016.2/downloading-libraries-from-maven-repositories.html)|0:50|
+|[Gson API docs](https://google.github.io/gson/apidocs/com/google/gson/Gson.html)|1:00|
+
 ## Material Review
 - Serialization
   - Serializable interface
@@ -58,16 +57,12 @@ Also today, we can take a brief look at Regex.  These are ways of scanning texts
 
 ## Workshop
 ### Serialization
-
-#### Exercise
 - [Workshop01.java](workshop/Workshop01.java)
 - [Workshop02.java](workshop/Workshop02.java)
 - [Workshop03.java](workshop/Workshop03.java)
 - [Workshop04.java](workshop/Workshop04.java)
 
 ### Regular Expression
-
-#### Exercise
 - [Workshop13.java](workshop/Workshop13.java)
 
 ## Individual Workshop Review
