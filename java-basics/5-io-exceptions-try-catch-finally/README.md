@@ -150,3 +150,8 @@ Key questions to consider:
     - Classes: UpperCamelCase
     - variables: lowerCamelCase
     - functions: lowerCamelCase(paramsLowerCase)
+
+#Links
+- [Parent - Java Basic Module](../README.md)
+- [Prev - ArrayLists &amp; Foreach](../4-arraylists-foreach/README.md)
+- [Projects](../P-project-options/README.md)
