@@ -107,21 +107,21 @@ In these exercises work on catching the basic exceptions and then determining wh
 - [05 Nested Try Catch](workshop/Workshop05.java) - Sit back a minute and rather than code, figure out what is happening.
 - [06 Nested Try Catch 2](workshop/Workshop06.java) - Still sitting back?  Good, look at this one too
 - [07 The case of "7"](workshop/Workshop07.java) - Why should java have all the fun, you too can raise exceptions
-- [08 The party's over](workshop/Workshop08.java) - Okay, you've had the party, made a mess of your parents' apartment, now what?
+- [08 The party's over](workshop/Workshop08.java) - Okay, you've had the party, trashed your parents' apartment, now what?
 - [09 Setting an Exception Message](workshop/Workshop09.java) - If you're going to throw exceptions, at least explain why.
 - [10 Other Exception Situations](workshop/Workshop10.java) - How to figure out exceptions and code for them
 - [11 Throw out different exceptions in the same routine](workshop/Workshop11.java)
 
 ### File I/O
 Search for a particular file in a directory; then read input in, write stuff out.
+- [12 Review the Mechanics of Searching the Directory](workshop/Workshop12.java) - Here's one we made earlier for convenience
+- [13 Scan the directory](workshop/Workshop13.java) - Enter a directory name, see what you find
+- [14 Review the Mechanics of IO](workshop/Workshop14.java) 
+- [15 Dump a file](workshop/Workshop15.java) - you've found a file, now flood your screen with its contents
+- [16 Don't forget to write](workshop/Workshop16.java) - write 1 or more lines of input from the keyboard to a file
+- [17 Copy a file](workshop/Workshop17.java) - garbage in, garbage out...  Now you can call yourself a programmer (and take *no* responsibility for content)
+- [18 Merge sort](workshop/Workshop18.java) - This really is (was) a staple of 1960s IT when we had *tapes* of data in Data Processing (DP) Centers
 
-#### Exercise
-- [m04d05w11.java](workshop/Workshop11.java) - scan directory
-- [m04d05w12.java](workshop/Workshop12.java) - read input
-- [m04d05w13.java](workshop/Workshop13.java) - write output
-- [m04d05w14.java](workshop/Workshop14.java) - merge 2 files
-- [m04d05w15.java](workshop/Workshop15.java) - handle missing file
-- [m04d05w16.java](workshop/Workshop16.java) - handle a data exception
 
 ## Individual Workshop Review
 Neatness counts in coding.
