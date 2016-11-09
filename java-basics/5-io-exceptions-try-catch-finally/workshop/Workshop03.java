@@ -1,5 +1,3 @@
-** * Created by Verőci Ádám on 2016.11.09..
- */
 /**************************************************************************************************
  * Workshop: Practice With Exceptions: InputMismatchException
  * Write a routine that catches an InputMismatchException.
