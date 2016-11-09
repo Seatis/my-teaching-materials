@@ -13,8 +13,7 @@ What happens when a function calls itself?
 | [Recursive Factorial Function](https://www.youtube.com/watch?v=o920mj0NbhE&index=12&list=PL36E7A2B75028A3D6) | 5:35 |
 | [Comparing Iterative and Recursive Factorial Functions](https://www.youtube.com/watch?v=kx6DfrYfWnQ&list=PL36E7A2B75028A3D6&index=13) | 7:47 |
 | [Recursive Fibonacci Example](https://www.youtube.com/watch?v=urPVT1lymzU&list=PL36E7A2B75028A3D6&index=17) | 7:36 |
-| [Stepping Through Recursive Fibonacci Function
-](https://www.youtube.com/watch?v=zg-ddPbzcKM&index=18&list=PL36E7A2B75028A3D6) | 8:03 |
+| [Stepping Through Recursive Fibonacci Function](https://www.youtube.com/watch?v=zg-ddPbzcKM&index=18&list=PL36E7A2B75028A3D6) | 8:03 |
 | | |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
 | [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/python/recursion) | |
