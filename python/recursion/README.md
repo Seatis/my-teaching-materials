@@ -16,7 +16,7 @@ What happens when a function calls itself? [Learn more here]()
 | [Stepping Through Recursive Fibonacci Function](https://www.youtube.com/watch?v=zg-ddPbzcKM&index=18&list=PL36E7A2B75028A3D6) | 8:03 |
 | | |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
-| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/python/recursion) | |
+| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/python/recursion) | ∞ |
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
