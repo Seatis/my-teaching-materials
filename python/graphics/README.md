@@ -82,3 +82,7 @@ root.mainloop()
 - Reproduce these:
 ![doodle one](workshop/r5.png)   
 ![doodle one](workshop/r6.gif)   
+
+
+## Individual Workshop Review
+Please follow the style guide: [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
