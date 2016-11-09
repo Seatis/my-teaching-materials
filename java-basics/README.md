@@ -25,13 +25,13 @@ We must cover the basic elements and constructs in programming, namely:-
   - Linked Lists
 
 ## Overview of the Days
-- [01) Installation of the IDE (IntelliJ's IDEA)](1-installing-basics/README.md) - be able to work
-- [02) Expressions &amp; Control Flow](2-expressions-control-flow/README.md) - know what stores data and navigates the program
-- [03) Arrays &amp; Functions](3-arrays-collections-functions/README.md) - additional tools for storing results and managing repeated code
-- [04) ArrayLists &amp; Foreach](4-arrylists-foreach/README.md) - introduction to Objects and propert
-- [05) I/O &amp; Exception Handling](5-io-exceptions-try-catch-finally/README.md) - read and write files and handle unexpected results
-- [06) Serialization &amp; Regular Expression Pattern Matching](6-serialization-regex/README.md) - how to transmit and receive complex data
-- [Project Options](P-project-options/README.md) - the list of projects to be considered for the end of module review.
+- [01) Installation of the IDE (IntelliJ's IDEA)](1-installing-basics) - be able to work
+- [02) Expressions &amp; Control Flow](2-expressions-control-flow) - know what stores data and navigates the program
+- [03) Arrays &amp; Functions](3-arrays-collections-functions) - additional tools for storing results and managing repeated code
+- [04) ArrayLists &amp; Foreach](4-arrylists-foreach) - introduction to Objects and propert
+- [05) I/O &amp; Exception Handling](5-io-exceptions-try-catch-finally) - read and write files and handle unexpected results
+- [06) Scanner and random](6-scanner) - how to transmit and receive complex data
+- [Project Options](P-project-options) - the list of projects to be considered for the end of module review.
 
 # Knowledge & Skills
 *List the competences (knowledge and/or skills) that the participants are expected to master in this module.*
@@ -52,4 +52,3 @@ We must cover the basic elements and constructs in programming, namely:-
 ## Demo description
 - Creating simple algorithms such as searching strings, writing simple games (like guess a number of hangman), process runs of data from an input file
 - Show understanding of variables, conditionals, loops and the other basic elements of a programming language.
-
