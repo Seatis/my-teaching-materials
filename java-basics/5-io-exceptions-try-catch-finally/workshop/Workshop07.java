@@ -17,6 +17,9 @@
  *
  * NOTE NOTE: get this right.  We use this again in further exercises!
  *
+ * Please google "java function throws Exception" ... you should see that something gets added to 
+ * the declaration of the function; but also in the function (myMethod), you need to notify the JVM
+ * that an exception occurred
  **************************************************************************************************/
 import java.util.*;
 
@@ -33,22 +36,23 @@ public class Workshop07{
     public static void main(String[] args){
 
         Scanner userInput = new Scanner(System.in);
-        int age;
+        int myValue;
         String prompt = "Enter a value from 1 to 9 or 0 to exit?";
 
         System.out.println(prompt);
         while (userInput.hasNextInt()) {
-            age = userInput.nextInt();
-            if (age == 0) {
+            myValue = userInput.nextInt();
+            if (myValue == 0) {
                 break;
             } else {
                 try {
                     System.out.println("try - first statement");
-                    myMethod(age);
+                    myMethod(myValue);
                     System.out.println("try - last statement");
                 } catch (Exception ex) {
-                    System.out.println("An Exception");
+                    System.out.println("An Exception occurred: " + ex.getMessage());
                 }
             }
         } //while
-    } // main} //Workshop
+    } // main
+} //Workshop
