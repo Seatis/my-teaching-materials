@@ -14,6 +14,7 @@ class ParentClass {
 	public:
 		ParentClass();
 		void setString(string _str);
+		void unsafeSetString(string _str);
 		string getString();
 		string* getStringAddress();
 		virtual ~ParentClass();	
@@ -27,6 +28,10 @@ void ParentClass::setString(string _str) {
 	string* tmp = mParentString;
 	mParentString = new string(_str);
 	delete tmp;
+}
+
+void ParentClass::unsafeSetString(string _str) {
+	mParentString = new string(_str);
 }
 
 string ParentClass::getString() {
@@ -70,6 +75,10 @@ int main() {
 	string* stra = a->getStringAddress();
 	string* strb = ((ChildClass*)a)->getChildStringAddress();
 	cout << *stra << endl << *strb << endl;
+	
+	a->unsafeSetString("muhahhhahaaaaaa");
+	cout << *stra << endl << a->getString()<<endl;	
+
 	delete a;
 	cout << "a deleted: ----------------------------------------" << endl;
 	cout << *stra << endl << *strb << endl;
