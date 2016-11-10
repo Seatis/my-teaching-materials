@@ -36,7 +36,7 @@
  - [NEW 03.01.cpp](workshop/03.01.cpp)
  - [NEW 03.02.cpp](workshop/03.02.cpp)
  - [NEW 03.03.cpp](workshop/03.03.cpp)
- - [NEW 03.04.cpp](workshop/03.04.cpp) [03.04.solution.cpp](workshop/03.04.solution.cpp)
+ - [NEW 03.04.cpp](workshop/03.04.cpp), [03.04.solution.cpp](workshop/03.04.solution.cpp)
  - [04.cpp](workshop/04.cpp), [IntList.hpp](workshop/IntList.hpp), [IntArrayList.hpp](workshop/IntArrayList.hpp), [IntLinkedList.hpp](workshop/IntLinkedList.hpp)
  - [05.cpp](workshop/05.cpp)
 
