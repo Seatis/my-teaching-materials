@@ -63,8 +63,6 @@ ChildClass::ChildClass(string _str) {
 }
 
 ChildClass::~ChildClass() {
-	ParentClass::~ParentClass();
-	delete mChildString;
 }
 
 int main() {
