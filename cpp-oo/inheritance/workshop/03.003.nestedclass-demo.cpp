@@ -24,6 +24,9 @@ class Vehicle {
 				virtual void stop() = 0;
 				virtual ~Motor() = 0;
 		};
+// After having declared the inner class fully, now I can use it for delcaring
+// variables in this type.
+		Motor* mMotor;
 	public:
 		virtual void goForward() = 0;
 		virtual void stop() = 0;
@@ -63,19 +66,10 @@ void Car::Motor::start() {
 // How would this help make a safely usable LinkedList?
 
 
-// First, we declare the nems of the classes we will use. This is not necesarily 
-// needed. But we can not have a pointer or reference before we have declared that
-// such a class will exist.
-class LinkedList;
-class LinkedList::ListNode;
 
 class LinkedList {
 	private:
-// I can have these here, because I've declared before that I'll have the class
-// LinkedList::ListNode...
-		ListNode* mFirst;
-		ListNode* mLast;
-// Otherwise I'd have to have this before declaring the two pointer above.
+// I have to have this before declaring the two pointer below it.
 		class ListNode {
         		private:
                 		double* mValue;
@@ -85,6 +79,9 @@ class LinkedList {
 				void setPrev(ListNode* _node);
 
 		};
+// Declaring the pointers
+                ListNode* mFirst;
+                ListNode* mLast;
 	public:
 
 

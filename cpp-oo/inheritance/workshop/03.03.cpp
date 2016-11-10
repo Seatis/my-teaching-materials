@@ -44,6 +44,8 @@ string* ParentClass::getStringAddress() {
 }
 
 ParentClass::~ParentClass() {
+	cout << "~ParentClass" << endl;
+	//Write code here
 }
 
 class ChildClass : public ParentClass {
@@ -72,7 +74,10 @@ ChildClass::ChildClass(string _str) {
 }
 
 ChildClass::~ChildClass() {
+	cout << "~ChildClass" << endl;
+	// Write Your code here
 }
+
 
 int main() {
 	ParentClass* a = new ChildClass();
