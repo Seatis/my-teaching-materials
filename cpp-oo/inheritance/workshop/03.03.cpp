@@ -30,6 +30,7 @@ void ParentClass::setString(string _str) {
 	delete tmp;
 }
 
+// This is only here to illustrate the effects of improper memory handling.
 void ParentClass::unsafeSetString(string _str) {
 	mParentString = new string(_str);
 }
@@ -55,6 +56,9 @@ class ChildClass : public ParentClass {
 		string* getChildStringAddress();
 };
 
+// This is only here to demonstrate possible effects of improper encaspulation.
+// How it can spoil You're porgram if You don't pay attention who can access 
+// Your pointers and how.
 string* ChildClass::getChildStringAddress() {
 	return mChildString;
 }
@@ -74,12 +78,21 @@ int main() {
 	ParentClass* a = new ChildClass();
 	string* stra = a->getStringAddress();
 	string* strb = ((ChildClass*)a)->getChildStringAddress();
+	cout << "You have two different strings. As illustrated below" << endl;
 	cout << *stra << endl << *strb << endl;
 	
+	// This should illustrate, how a memory leak works.
+	// If You set this with the unsafe set method. It lingers in hte memory.
 	a->unsafeSetString("muhahhhahaaaaaa");
+	cout << endl << "The old string is still in the memory when the new is set unsafely" << endl;
+	cout << "See them both below: " << endl;
 	cout << *stra << endl << a->getString()<<endl;	
-
+	
+	stra = a->getStringAddress();
 	delete a;
-	cout << "a deleted: ----------------------------------------" << endl;
-	cout << *stra << endl << *strb << endl;
+	cout << "a deleted: -- And yet, there is a good chance Your string is " << endl;
+	cout << "Still in memory if You didn't do Your ~destructor right. Let's see!" << endl;
+	// You're solution will be good when on Windows You get a "segfault". 
+	// Then You need to comment out the next line.
+	cout << *stra << endl;
 }
