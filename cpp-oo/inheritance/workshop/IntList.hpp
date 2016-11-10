@@ -14,13 +14,17 @@ class IntList {
 		virtual void insert(int _idx, int _a) = 0;
 		virtual int getFirst() = 0;
 		virtual int getLast() = 0;
-		virtual int getLength() = 0;
+		int getLength();
 		virtual bool isEmpty() = 0;
 
 };
 
 void IntList::setLength(int _length) {
 	mLength = _length;
+}
+
+int IntList::getLength() {
+	return mLength;
 }
 
 
