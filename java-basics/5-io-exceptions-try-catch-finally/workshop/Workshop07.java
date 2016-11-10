@@ -22,9 +22,11 @@ import java.util.*;
 
 public class Workshop07{
 
-    public void myMethod(int testnum) // something should appear here before 
+ static void myMethod(int inNumber) // something should appear here before
     {
-     	if (testnum == 7) // do that thing that chucks the reprobate out
+        if (inNumber == 7) // do that thing that chucks the reprobate out
+	  // something here
+        System.out.println("Nice number");
         return;
     }
 
@@ -32,22 +34,21 @@ public class Workshop07{
 
         Scanner userInput = new Scanner(System.in);
         int age;
-        String prompt = "Enter any number, 0 to exit?";
+        String prompt = "Enter a value from 1 to 9 or 0 to exit?";
 
         System.out.println(prompt);
         while (userInput.hasNextInt()) {
             age = userInput.nextInt();
-            if (age==0) {
-		break; 
-	    } else {
+            if (age == 0) {
+                break;
+            } else {
                 try {
                     System.out.println("try - first statement");
-                    myMethod(testnum);
+                    myMethod(age);
                     System.out.println("try - last statement");
-                }
-                catch ( Exception ex) {
+                } catch (Exception ex) {
                     System.out.println("An Exception");
                 }
-          } //while
-      } // main
-} //Workshop
+            }
+        } //while
+    } // main} //Workshop
