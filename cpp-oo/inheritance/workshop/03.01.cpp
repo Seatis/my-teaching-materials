@@ -32,7 +32,12 @@ class ChildClass : public ParentClass {
 	public:
 		void setVariable(int _var);
 		int getVariable();
+		int getChildVariable();
 };
+
+int ChildClass::getChildVariable() {
+	return mVariable;
+}
 
 void ChildClass::setVariable(int _var) {
 	this->mVariable = _var;
@@ -45,7 +50,16 @@ int ChildClass::getVariable() {
 int main() {
 	ParentClass* a = new ChildClass();
 	a->setVariable(2);
-	((ChildClass*)a)->setVariable(4);
+	((ChildClass*)a)->setVariable(4); //Casting a to be interpreted as ChildClass*
 	cout << a->getVariable() << "  " << ((ChildClass*)a)->getVariable() << endl;
+	
+	ChildClass* b = new ChildClass();
+	ParentClass* c = b;
+	c->setVariable(42);
+	b->setVariable(24);
+	cout << endl << c->getVariable() << "  " << b->getVariable() << endl;
+	
+	// To illustrate compile time error when calleing undefined function.
+	//cout << b->getChildVariable() << "  " << c->getChildVariable() << endl;
 	return 0;
 }
