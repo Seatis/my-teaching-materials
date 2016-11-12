@@ -1,4 +1,4 @@
-# TDD
+# TDD – Test driven development
 
 ## Training
 | Material | Time |
