@@ -1,4 +1,8 @@
-Create a `Circle` class that takes it's radius as a constructor parameter.
-+ It should have a `getPerimeter` method that returns it's circumference.
-+ It should have a `getArea` method that returns it's area.
-+ It should have an another constructor without any parameter which does set the radius to 1
+Create a `Circle` class:
+
++ Constructor
+  - Given a parameter, sets the radius
+  - No parameter passed, radius of 1
++ Methods
+  - `getPerimeter` - turns the circumference.
+  - `getArea` - returns it's area.
