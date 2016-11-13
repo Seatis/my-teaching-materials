@@ -6,4 +6,4 @@ console.log('Hello, World!');
 ```
 
 #### Exercise
- - [exercise01.js](exercise-01/exercise01.jsexercise-01)
+ - [exercise01.js](exercise-01/exercise01.js)

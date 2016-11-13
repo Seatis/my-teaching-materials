@@ -2,7 +2,7 @@
 
 ## Implementations
  - [C](c.md)
- - [C++](c++.md)
+ - [C++](cpp.md)
  - [C#](cs.md)
  - [Java](java.md)
  - [JavaScript](js.md)

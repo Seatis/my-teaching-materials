@@ -14,4 +14,4 @@ int main() {
 ```
 
 #### Exercise
- - [exercise01.c](exercise-01/exercise01.cpp)
+ - [exercise01.cpp](exercise-01/exercise01.cpp)
