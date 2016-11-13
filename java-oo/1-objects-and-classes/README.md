@@ -84,4 +84,4 @@ Please be sure you're well acquainted with the guidelines on coding: [GreenFox A
 
 #Links
 - [Parent - Java OO](../README.md)
-- [Next - title](../x/README.md)
+- [Next - Packages and Inheritance ](../2-packages-and-inheritance/README.md)
