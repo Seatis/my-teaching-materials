@@ -43,12 +43,12 @@ In this segment we'll first cover the theory (and how it arose); then go through
 - constructor
   - same as the name of the class
   - can have multiple versions (signatures)
-- new 
+- new
 - fields (aka, properties, attributes)
 - setter
 - getter
 - static
- 
+
 ### Optional Items
 - IntelliJ Tools
 
@@ -67,12 +67,13 @@ Introducing the basic anatomy of an object.
 - [06) Extend object with an alternative constructor](workshop/Workshop01-Constructor2.md) - rather than having to write separate lines for each attribute, do it all in 1 go when the object gets created
 - [07) ArrayList and an Object](workshop/Workshop01-ArrayOf10.md) - add 10 cars and then print them out
 - [08) Static property](workshop/Workshop01-Static.md) - illustrate what is in the Car Class initially (before creating 10 cars), then see the final value once 10 cars are created.
+- [+1) The Garage](workshop/Garage.md)
 
 ### From Scratch
 Having stepped through the *Car* Class, let's repeat such from start to finish with some other classes.
 - [09) The Circle](workshop/Workshop02.md)
 - [10) Pirates *Arghhh*](workshop/Workshop03.md)
-
+- [+1) The Armada of Pirate Ships](workshop/Ship.md)
 
 
 
