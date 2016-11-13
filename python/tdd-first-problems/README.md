@@ -1,6 +1,6 @@
 # TDD – Test driven development
 
-## Training
+## Materials & Resources
 | Material | Time |
 |:---------|-----:|
 | [Understanding Unit Testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing) | 15-30 min reading |
@@ -38,8 +38,6 @@ Write a function, that takes a string as an argument and returns a dictionary wi
 
 #### Now for something completely different
 Send me your work and test file on Slack, and in the afternoon we'll see how many of you go through against the tests of others'.
-
-## Lunch somewhere around here
 
 ### Extension
 Check out the `extend` folder. There's a work file and a test file.
