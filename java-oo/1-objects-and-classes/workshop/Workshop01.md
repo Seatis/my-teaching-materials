@@ -5,14 +5,17 @@ The mentors' have already laid out a starter for you.
 When a new car is created, the size of the Engine should be 1600 cc and the color should be red.
 
 ```java
+// Car.java
 public class Car {
-
     //Add somethings here to create a car and some fields
-  
+}
+
+// App.java
+public class App {
     public static void main(String[] args){
         Car myCar = new Car();
         System.out.printf("Just got a new Car, it's %s and has a %d cc Engine!\n",
-        "puke" , 1 // replace this stuff with the way we get those attributes about myCar 
+        "puke" , 1 // replace this stuff with the way we get those attributes about myCar
     );
     }
 }
