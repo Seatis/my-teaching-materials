@@ -58,10 +58,10 @@ In today's workshops you'll be building up from 1 exercise to the next to produc
 
 ### *The Car*
 Introducing the basic anatomy of an object.
-- [01) Add a constructor](workshop/Workshop01.java) - Misi's built something, you just have to finish for him
-- [02) Add some fields/properties](workshop/Workshop01-AddFields.md)
-- [03) Add getters &amp; setters](workshop/Workshop01-AddGetters.md) - 
-- Repeat the previous workshop, but use the IntelliJ tool for generating the getters &amp; setters (described above in the optional)
+- [01) Add a constructor](workshop/Workshop01.java) - The mentors have started to build something but you have to finish it
+- [02) Add some fields](workshop/Workshop01-AddFields.md) - There are a couple of ways to setting values in fields and getting their values
+- [03) Add getters &amp; setters](workshop/Workshop01-AddGetters.md) - Separate the Class from the Main(), creating a separate file called Workshop01.java.
+- If you created the `getters` and `setters` by hand, repeat the previous workshop, but use the IntelliJ tool (Code.Generate) to generate the getters &amp; setters (described above in the optional section; and don't feel silly you missed it, but glad that we've now shown you a tool).
 - [04) Create a drive method](workshop/Workshop01-AddDrive.md) - drive the car some distance, updates the odometer.
 - [05) Combine fields together into a method](workshop/Workshop01-ToString.md) - create a `toString` method that can get us the Make, km and top speed; making it easier for us to report
 - [06) Extend object with an alternative constructor](workshop/Workshop01-Constructor2.md) - rather than having to write separate lines for each attribute, do it all in 1 go when the object gets created

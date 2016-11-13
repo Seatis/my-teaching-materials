@@ -1,17 +1,19 @@
-Create a class called `Car`
-+ It should have a `type` property that stores the car's type in a string eg: "Mazda"
-+ It should have a `km` property that stores how many kilometers it has run
+This is a fuller spec.  You can do this in the same Project, but this is now a new class and should be tested with Workshop02.
 
-The `km` and the `type` property should be the parameters of the constructor.
-It should have a method called `ride` that takes a number and increments the `km` property by it.
+#Create a `Circle` class:
 
-```java
-public class CarWorkshop {
-    public static void main(String... args){
-        Car myCar = new Car("Mazda", 10);
-        myCar.ride(12000);
-        System.out.println(String.format("I have a %s with %d kilometres.",
-                myCar.getType(), myCar.getKm()));
-    }
-}
-```
++ Constructor
+  - Given a parameter, sets the radius
+  - No parameter passed, radius of 1
++ Methods
+  - `getPerimeter` - turns the circumference.
+  - `getArea` - returns it's area.
+  - `countObjects` - returns the number of circles
+
+
+#Tests
+- Create a standard circle with no radius
+  -- what's its perimeter and area
+- Create a user defined circle
+  -- what's its perimeter and area
+
