@@ -58,7 +58,7 @@ In today's workshops you'll be building up from 1 exercise to the next to produc
 
 ### *The Car*
 Introducing the basic anatomy of an object.
-- [01) Add a constructor](workshop/Workshop01.java) - The mentors have started to build something but you have to finish it
+- [01) Add a constructor](workshop/Workshop01.md) - The mentors have started to build something but you have to finish it
 - [02) Add some fields](workshop/Workshop01-AddFields.md) - There are a couple of ways to setting values in fields and getting their values
 - [03) Add getters &amp; setters](workshop/Workshop01-AddGetters.md) - Separate the Class from the Main(), creating a separate file called Workshop01.java.
 - If you created the `getters` and `setters` by hand, repeat the previous workshop, but use the IntelliJ tool (Code.Generate) to generate the getters &amp; setters (described above in the optional section; and don't feel silly you missed it, but glad that we've now shown you a tool).
@@ -83,6 +83,5 @@ Please be sure you're well acquainted with the guidelines on coding: [GreenFox A
 
 
 #Links
-- [Parent - Java OO Module](../README.md)
-- [Prev - title](../x/README.md)
+- [Parent - Java OO](../README.md)
 - [Next - title](../x/README.md)
