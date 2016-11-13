@@ -48,3 +48,22 @@ In this segment we'll first cover the theory (and how it arose); then go through
 - getter
 - static
  
+## Material Review
+
+### Optional
+
+## Workshops
+### Exceptions
+In these exercises ...
+- [](workshop/Workshop01.java) - These are the items in Bana's Video
+
+## Individual Workshop Review
+Neatness counts in coding.
+
+Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
+
+
+#Links
+- [Parent - Java OO Module](../README.md)
+- [Prev - title](../x/README.md)
+- [Next - title](../x/README.md)
