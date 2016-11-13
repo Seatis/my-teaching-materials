@@ -37,25 +37,44 @@ In this segment we'll first cover the theory (and how it arose); then go through
   - contains fields and methods
 - object
 - instantiation
-- *instance*
+  - initialization
+  - *instance*
 - method
 - constructor
   - same as the name of the class
   - can have multiple versions (signatures)
 - new 
-- field/properties
+- fields (aka, properties, attributes)
 - setter
 - getter
 - static
  
-## Material Review
+### Optional Items
+- IntelliJ Tools
 
-### Optional
 
 ## Workshops
-### Exceptions
-In these exercises ...
-- [](workshop/Workshop01.java) - These are the items in Bana's Video
+In today's workshops you'll be building up from 1 exercise to the next to produce a final upload (to git) bit of code.
+
+### *The Car*
+Introducing the basic anatomy of an object.
+- [01) Add a constructor](workshop/Workshop01.java) - Misi's built something, you just have to finish for him
+- [02) Add some fields/properties](workshop/Workshop01-AddFields.md)
+- [03) Add getters &amp; setters](workshop/Workshop01-AddGetters.md) - 
+- Repeat the previous workshop, but use the IntelliJ tool for generating the getters &amp; setters (described above in the optional)
+- [04) Create a drive method](workshop/Workshop01-AddDrive.md) - drive the car some distance, updates the odometer.
+- [05) Combine fields together into a method](workshop/Workshop01-ToString.md) - create a `toString` method that can get us the Make, km and top speed; making it easier for us to report
+- [06) Extend object with an alternative constructor](workshop/Workshop01-Constructor2.md) - rather than having to write separate lines for each attribute, do it all in 1 go when the object gets created
+- [07) ArrayList and an Object](workshop/Workshop01-ArrayOf10.md) - add 10 cars and then print them out
+- [08) Static property](workshop/Workshop01-Static.md) - illustrate what is in the Car Class initially (before creating 10 cars), then see the final value once 10 cars are created.
+
+### From Scratch
+Having stepped through the *Car* Class, let's repeat such from start to finish with some other classes.
+- [09) The Circle](workshop/Workshop02.md)
+- [10) Pirates *Arghhh*](workshop/Workshop03.md)
+
+
+
 
 ## Individual Workshop Review
 Neatness counts in coding.
