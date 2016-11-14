@@ -19,7 +19,7 @@
 |:-------- |-----:|
 |[Packages (CodeMonkey.12)](https://www.youtube.com/watch?v=l5SviD48vOQ)|
 |[Access Modifier (CodeMonkey.11)](https://www.youtube.com/watch?v=ePj64t65G40)|5:04|
-|[Access Modifiers (Javadocs)] (https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html_||
+|[Access Modifiers (Javadocs)] (https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)||
 
 ## Material Review
 
