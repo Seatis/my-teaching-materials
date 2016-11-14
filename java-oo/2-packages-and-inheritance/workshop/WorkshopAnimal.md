@@ -11,7 +11,7 @@ Both constructors tell us "created an animal".
 There are no need for getters nor setters.
 
 An there are some other Methods:-
-- speak()  sout("speaks")
+- speak() - sout("speaks")
 - sleep() - sout("sleeps")
 - toString() - returns "isCarnivore=%b, lifeExpectancy=%d"
 
@@ -23,7 +23,7 @@ Next extend `Animal` with the class `Dog`.
   - speak() - sout("barks")
 - have an additional method
   - beg() - sout("begs")
-- dogs might have tails (`hasTail`)
+- dogs usually have tails (`hasTail`)
 
 Next extend `Animal` with the class `Bird`.
 - Birds only usually live 2 years and are not carnivores (in general)
@@ -86,7 +86,7 @@ Testing Dog
 dog barks
 animal sleeps
 dog begs
-And a dog:isCarnivore=true, lifeExpectancy=15, and hasTail=false
+And a dog:isCarnivore=true, lifeExpectancy=15, and hasTail=true
 
 Testing Dog2
 new dog
