@@ -11,6 +11,9 @@
 |[Refresher on Objects (CodeMonkey.09)](https://youtu.be/ZpBtDTCgalw)|14:17|
 |[Refresher on New, Values &amp; References (CodeMonkey.10)](https://youtu.be/eRfvgSvf-mM)|7:46|
 |[Inheritance (CodeMonkey.12)](https://www.youtube.com/watch?v=gQTzUpqeLH4)|9:54|
+|[Inheritance](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
+|[Inheritance & Polymorhism](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
+|[Usage of super keyword](http://www.javatpoint.com/super-keyword)||
 
 
 ### Optional
@@ -29,7 +32,7 @@
 - [01) student &amp; grades](workshop/Workshop01.md) - simple practice
 - [02) stack](workshop/Workshop02.md) - useful data structure concept
 - [03) circle](workshop/Workshop03.md) - inheritance, overwrite methods; new method only for circle (get radius)
-- [04) rectangle](workshop/Workshop04.md) - inheritance 
+- [04) rectangle](workshop/Workshop04.md) - inheritance
 - [05) square](workshop/Workshop05.md) - inheritance, overwrite method
 - [06) point &amp; line](workshop/Workshop06.md) - inheritance, additional methods
 - [07) cylinder](workshop/Workshop07.md) - super
