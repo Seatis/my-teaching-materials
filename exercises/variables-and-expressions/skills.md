@@ -1,5 +1,13 @@
 # Skills
 
+## Implementations
+ - [C](c.md)
+ - [C++](cpp.md)
+ - [C#](cs.md)
+ - [Java](java.md)
+ - [JavaScript](js.md)
+ - [Python](python.md)
+
 ## Levels
  - (A) Watched the concept in video or read about it
  - (B) Seen a code example using the concept
@@ -29,13 +37,18 @@
 
 ### Numbers
  - Integer literal
+ - Minimum and maximum value of integers
  - Float literal
  - Add numbers
+ - Rounding when adding floats
  - Substract numbers
  - Modulo
 
 ### Strings
  - String literal
+
+### Booleans
+ - Boolean literal
 
 ### Types and expressions
  - indexing a collection using a variable (the index was stored in a varible)
