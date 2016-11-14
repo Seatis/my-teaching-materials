@@ -29,16 +29,19 @@
 ### Optional
 
 ## Workshops
-- [01) student &amp; grades](workshop/Workshop01.md) - simple practice
-- [02) stack](workshop/Workshop02.md) - useful data structure concept
-- [03) circle](workshop/Workshop03.md) - inheritance, overwrite methods; new method only for circle (get radius)
+- [01) student &amp; grades](workshop/Workshop01.md) - inheritance
+- [02) student &amp; grades](workshop/Workshop02.md) - super, method overriding
+- [03) students & mentors](workshop/Workshop03.md) - inheritance, super, method overriding
 - [04) rectangle](workshop/Workshop04.md) - inheritance
 - [05) square](workshop/Workshop05.md) - inheritance, overwrite method
-- [06) point &amp; line](workshop/Workshop06.md) - inheritance, additional methods
-- [07) cylinder](workshop/Workshop07.md) - super
-- [08) package it up](workshop/Workshop08.md) - take what was built and put it into a package
 
+### Practice Classes and Objects
+- [stack](workshop/stack.md) - useful data structure concept
+- [point &amp; line](workshop/pointandline.md) - additional methods
+- [circle](workshop/circle.md) - revisiting the circle class
 
+### Practice Inheritance
+- [cylinder](workshop/cylinder.md) - super (based on [circle](workshop/circle.md))
 
 
 ## Individual Workshop Review
