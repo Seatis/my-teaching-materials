@@ -14,6 +14,8 @@ ne place where you cannot always predict what might be happen and therefore must
 |[Access Modifier (CodeMonkey.11)](https://www.youtube.com/watch?v=ePj64t65G40)|5:04|
 |[Packages (CodeMonkey.12)](https://www.youtube.com/watch?v=l5SviD48vOQ)|
 |[Inheritance (CodeMonkey.12)](https://www.youtube.com/watch?v=gQTzUpqeLH4)|9:54|
+|[Inheritance](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
+|[Inheritance & Polymorhism](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
 
 ### Optional
 
@@ -27,7 +29,7 @@ ne place where you cannot always predict what might be happen and therefore must
 ## Workshops
 ### Exceptions
 In these exercises ...
-- [](workshop/Workshop01.java) - The stack
+- [](workshops/Workshop01.java) - The stack
 - students and average grades
 - Rectangles and area
 
