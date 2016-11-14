@@ -14,9 +14,9 @@ There are getters and setters:-
 - setColor(color:String):void
 
 An there are some other Methods:-
-- toString():String - returns "Circle[radius=<value>,color=<value>]
+- toString():String - returns "Circle[radius=<value>,color=<value>]"
 - getArea():double
-- getCircumference
+- getCircumference():double
 
 After defining this, execute the following testbed.
 

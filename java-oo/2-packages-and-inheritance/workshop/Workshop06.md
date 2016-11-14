@@ -68,3 +68,18 @@ Getters and Setters - As you'd expect, but be sure to have:-
 - setEnd(x:int, y:int)
 - getLength():double
 
+Next, test with at least the following:-
+
+> Point p = new Point(10,15);
+> Point q = new Point(12,18);
+> Line n = new Line(p,q);
+> sout n.getLength()
+
+> Line m = new Line (10,15,12,18);
+> sout m.getLength();  // should be the same
+
+> Point v = new Point();
+> Line a = new Line (v,p);
+> sout v.getLength();
+> sout a.distance(); // should be the same
+
