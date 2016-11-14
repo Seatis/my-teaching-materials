@@ -27,11 +27,11 @@
 ## Workshops
 - [01) student &amp; grades](/workshop/Workshop01.md) - simple practice
 - [02) stack](/workshop/Workshop02.md) - useful data structure concept
-- [03) rectangle](/workshop/Workshop03.md) - inheritance 
-- [04) square](/workshop/Workshop04.md) - inheritance, overwrite method
-- [05) circle](/workshop/Workshop05.md) - inheritance, overwrite methods; new method only for circle (get radius)
-- [06) cylinder](/workshop/Workshop06.md) - inheritance, additional methods
-- [07) xxxx and modifiers](/workshop/Workshop07.md) - super
+- [03) circle](/workshop/Workshop03.md) - inheritance, overwrite methods; new method only for circle (get radius)
+- [04) rectangle](/workshop/Workshop04.md) - inheritance 
+- [05) square](/workshop/Workshop05.md) - inheritance, overwrite method
+- [06) point](/workshop/Workshop06.md) - inheritance, additional methods
+- [07) cylinder](/workshop/Workshop07.md) - super
 - [08) package it up](/workshop/Workshop08.md) - take what was built and put it into a package
 
 
