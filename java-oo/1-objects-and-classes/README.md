@@ -22,7 +22,6 @@ In this segment we'll first cover the theory (and how it arose); then go through
 |[Getters and Return (Cave.15)](https://www.youtube.com/watch?v=foX28s2Qw0w)|10:31|
 |[Setters and this (Cave.17)](https://www.youtube.com/watch?v=x-gBJ6q3Ufc)|10:58|
 |[Constructors (Cave.18)](https://www.youtube.com/watch?v=oSiN1J_G01Q)|10:18|
-|[What does "new" do (Telusko)](https://www.youtube.com/watch?v=AozJ0CR2W4A) - try to watch at 2x speed|2:20|
 |[New Operator; Declaration, Instantiation & Initialization (Ross)](https://www.youtube.com/watch?v=VyPFa1Slh7A#t=50) - what happens when you create an object; also give you an idea of what its like to work without an IDE|12:11|
 
 
