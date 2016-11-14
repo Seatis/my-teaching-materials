@@ -1,4 +1,4 @@
-# Module 04 #2 Inheritance
+# Inheritance
 
 ## Objectives
 -

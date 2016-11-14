@@ -1,4 +1,4 @@
-# Module 3 - #01 - Introduction to Classes and Objects
+# Introduction to Classes and Objects
 Classes and Objects lay at the heart of Java.  Until this point we have covered the foundations of programming (that is variables, conditionals, simple I/O and loops) as well as learning some core skills (getting a program to run and watching it execute so as to debug).  
 
 Now that we have a foundation, we can turn our attention to a core element of the Java *Object Orientation* (aka "OO").  In the late 80s, this was the &quot;Promised Land&quot; (that&apos;s a biblical metaphor for *the future of programming*).  
