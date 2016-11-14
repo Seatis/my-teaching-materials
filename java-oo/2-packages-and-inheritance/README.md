@@ -1,5 +1,4 @@
-# Module 04 #2 Packages &amp; Inheritance
-ne place where you cannot always predict what might be happen and therefore must be ready for Exceptions.  
+# Module 04 #2 Inheritance
 
 ## Objectives
 -
@@ -11,37 +10,40 @@ ne place where you cannot always predict what might be happen and therefore must
 |:-------- |-----:|
 |[Refresher on Objects (CodeMonkey.09)](https://youtu.be/ZpBtDTCgalw)|14:17|
 |[Refresher on New, Values &amp; References (CodeMonkey.10)](https://youtu.be/eRfvgSvf-mM)|7:46|
-|[Access Modifier (CodeMonkey.11)](https://www.youtube.com/watch?v=ePj64t65G40)|5:04|
-|[Packages (CodeMonkey.12)](https://www.youtube.com/watch?v=l5SviD48vOQ)|6:30|
 |[Inheritance (CodeMonkey.12)](https://www.youtube.com/watch?v=gQTzUpqeLH4)|9:54|
-|[Inheritance](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
-|[Inheritance & Polymorhism](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
-|[Usage of super keyword](http://www.javatpoint.com/super-keyword)||
+
 
 ### Optional
 
 | Material | Time |
 |:-------- |-----:|
-
+|[Packages (CodeMonkey.12)](https://www.youtube.com/watch?v=l5SviD48vOQ)|
+|[Access Modifier (CodeMonkey.11)](https://www.youtube.com/watch?v=ePj64t65G40)|5:04|
+|[Access Modifiers (Javadocs)])https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html_||
 ## Material Review
 
 ### Optional
 
 ## Workshops
-### Exceptions
-In these exercises ...
-- [](workshops/Workshop01.java) - The stack
-- students and average grades
-- Rectangles and area
+- [01) student &amp; grades](/workshop/Workshop01.md) - simple practice
+- [02) stack](/workshop/Workshop02.md) - useful data structure concept
+- [03) rectangle](/workshop/Workshop03.md) - inheritance 
+- [04) square](/workshop/Workshop04.md) - inheritance, overwrite method
+- [05) circle](/workshop/Workshop05.md) - inheritance, overwrite methods; new method only for circle (get radius)
+- [06) cylinder](/workshop/Workshop06.md) - inheritance, additional methods
+- [07) xxxx and modifiers](/workshop/Workshop07.md) - super
+- [08) package it up](/workshop/Workshop08.md) - take what was built and put it into a package
+
+
 
 
 ## Individual Workshop Review
-Neatness counts in coding.
+As always neatness counts in coding.
 
 Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
 
 
 #Links
 - [Parent - Java OO Module](../README.md)
-- [Prev - title](../x/README.md)
-- [Next - title](../x/README.md)
+- [Prev - title](../1-objects-and-classes/README.md)
+- [Next - title](../3-abstracts-and-interfaces/README.md)
