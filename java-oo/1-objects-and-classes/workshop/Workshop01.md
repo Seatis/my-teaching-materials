@@ -1,4 +1,4 @@
-Create a `Car` class.
+Create a `Car` and a separate `App` class.
 
 The mentors' have already laid out a starter for you.
 
