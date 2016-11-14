@@ -16,7 +16,7 @@ Here we do a rehersal of OO concepts and introduce some new concepts.
 | [Classes and Instances](https://www.youtube.com/watch?v=ZDa-Z5JzLYM) | 15:23 |
 | [Class Variables](https://www.youtube.com/watch?v=BJ-VvGyQxho) | 11:40 |
 | [classmethods and staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M) | 15:19 |
-| [Creating Subclasses](https://www.youtube.com/watch?v=ZDa-Z5JzLYM) | 19:39 |
+| [Creating Subclasses](https://www.youtube.com/watch?v=RSl87lqOXDE) | 19:39 |
 
 ### Optional
 If you've got time and/or want to dig deeper, consider the following:
