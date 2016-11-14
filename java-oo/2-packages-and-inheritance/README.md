@@ -29,15 +29,12 @@
 ### Optional
 
 ## Workshops
-- [01) student &amp; grades](workshop/Workshop01.md) - inheritance
-- [02) student &amp; grades](workshop/Workshop02.md) - super, method overriding
-- [03) students & mentors](workshop/Workshop03.md) - inheritance, super, method overriding
-- [04) rectangle](workshop/Workshop04.md) - inheritance
-- [05) square](workshop/Workshop05.md) - inheritance, overwrite method
-- [06) point &amp; line](workshop/Workshop06.md) - inheritance, additional methods
-- [  ) Animal - Dog vs Bird](workshop/WorkshopAnimal.md) - inheritance, casting
-- [07) cylinder](workshop/Workshop07.md) - super
-- [08) package it up](workshop/Workshop08.md) - take what was built and put it into a package
+- [01) Animal and Bird](workshop/Workshop01.md) - inheritance
+- [02) Animal and Bird again](workshop/Workshop02.md) - super, method overriding
+- [03) Animal - Dog vs Bird](workshop/Workshop03.md) - inheritance, casting
+- [04) students & mentors](workshop/Workshop04.md) - inheritance, super, method overriding
+- [05) rectangle](workshop/Workshop05.md) - inheritance
+- [06) square](workshop/Workshop06.md) - inheritance, overwrite method
 
 ### Practice Classes and Objects
 - [stack](workshop/stack.md) - useful data structure concept
