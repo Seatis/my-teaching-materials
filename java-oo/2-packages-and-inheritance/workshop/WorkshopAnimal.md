@@ -31,9 +31,6 @@ Next extend `Animal` with the class `Bird`.
 - fly() - sout("flies")
 
 ```java
-/**
- * Created by eric.hofer on 11/14/2016.
- */
 public class AppTestAnimal {
     public static void main(String[] args) {
         Animal animal = new Animal();
