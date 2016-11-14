@@ -1,4 +1,4 @@
-Create a `Point` class which is a single point in a Cartesian system.  The Point consists of 2 fields:
+First create a `Point` class which is a single point in a Cartesian system.  The Point consists of 2 fields:
 + x:int = 0
 + y:int = 0
 
@@ -54,3 +54,17 @@ public class Workshop06{
 }
 
 ```
+
+Next inherit from the above to create a `line` object:-
+
+Constructor
+- Line(point:Point,point:Point)
+- Line(x:int,y:int;x2:int,y2:int)
+
+Getters and Setters - As you'd expect, but be sure to have:-
+- setStart(point:Point)
+- setStart(x:int, y:int)
+- setEnd(point:Point)
+- setEnd(x:int, y:int)
+- getLength():double
+
