@@ -1,28 +1,32 @@
-#Create a `CreditCard` object by implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
+#Create a `Reservation` object by implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
 
 ```java
 //package ??? should set this
+import java.util.Date; // described in an Optional Video
 
-interface CreditCardy {
+public interface Reservationy {
 
-    void setSumCVV(int sumCVV);
-    int getSumCVV();
-    void setNameCardholder(String nameCardholder);
-    String getNameCardholder();
-    void setCodeAccount(String codeAccount);
-    String getCodeAccount();
+    void setDateBooking(Date dateBooking);
+    Date getDateBooking();
 
-    int cumeSumCVV(String codeAccount); // computes codeAccount checksum (see below)
-    boolean ValidCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
+    void setCodeBooking(String codeBooking);
+    String getCodeBooking();
 
-    String toString (); \\String.format("Name=%s CC#=%s CVV=%d");
+    boolean PlaceReserved (Date dateBooking, String codeBooking); //must return true if successful
+    boolean PlaceCancelled (Date dateBooking,String codeBooking); //must return true if successful
+    
+    String toString (); //format("Booking# %s for #s")
+
 }
+
 ```
 
-*What's a checksum*?  It's derived from adding values together.  For example if codeAccount = 1935, then the check sum is 1+9+3+5 or 18.
+*the PlaceReserved and PlaceCancelled would be things that another program might expect you to have so that it could call and/or work with the object that you'd define.
 
 *Did you know that IntelliJ can generate the Methods of an Interface for you?*  Check 
 out alt-Insert (W10) %%N (Mac).
+
+*Note however, that it's better if there are going to be *Getters* and *Setters* to first create the fields in the class, and then use the Generate function.  It will wire things up and also mark the setters, etc. as `@Override`.
 
 
 #Tests
@@ -35,15 +39,15 @@ public class App {
     public static void main(String[] args) {
 
 
-        ArrayList<CreditCard> cards = new ArrayList<CreditCard>();
+        ArrayList<Reservation> bookings = new ArrayList<Reservation>();
         int ct = 10;
 
         for (int i = 0; i<ct; i++) {
-            cards.add(new CreditCard(0,"ABC" + i, random16()));
+            cards.add(new Reservation(randomDate(10), random16()));
         }
 
-        for (CreditCard iCard: cards) {
-            System.out.println(iCard.toString());
+        for (Reservation iBooking: bookings{
+            System.out.println(iBooking.toString());
         }
 
     }
@@ -56,23 +60,13 @@ public class App {
 
         return out;
     }
+
+    //static Date randomDate(int ctDaysFromTomorrow) // generates a random date between tomorrow and ctDaysFromTomorrow
 }
 ```
 
 This should give you a result sort of like:-
 ```
-Name=ABC0 CC#=0832572706713808 CVV=59
-Name=ABC1 CC#=7358743437116556 CVV=69
-Name=ABC2 CC#=5234352635810043 CVV=51
-Name=ABC3 CC#=8746006842881022 CVV=64
-Name=ABC4 CC#=1125887725821251 CVV=64
-Name=ABC5 CC#=8241682314633624 CVV=59
-Name=ABC6 CC#=3422056400811670 CVV=49
-Name=ABC7 CC#=3187260122423745 CVV=52
-Name=ABC8 CC#=7621381805013844 CVV=57
-Name=ABC9 CC#=3250546364831081 CVV=58
+!!TBA
 ```
 
-##Also
-- Why did we create the gets and sets in the CreditCardy interface?
-- Why did we call it CreditCard_y_ ?
