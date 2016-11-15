@@ -28,6 +28,11 @@
 
 ## Workshop
 ### Cognitive Apprenticeship
+Create a program that works like the `cp` command.
+ - It should be able to take two path as command line arguments, and it should copy the file
+ - If it can't open the input file the program should return with the necessary error code
+
+### [Exercises](../../exercises/file-manipulations/cpp.md)
 
 
 
@@ -45,4 +50,5 @@ Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
  - Is the commit message meaningful?
  - Are the allocated resources deleted when necessary?
  - Is there any potential memory leak?
+ - Are all the files closed?
 
