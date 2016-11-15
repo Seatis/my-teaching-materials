@@ -68,11 +68,12 @@ int main() {
  - [exercise05.cpp](exercise-05/exercise05.cpp)
  - [exercise06.cpp](exercise-06/exercise06.cpp) 
  - [exercise07.cpp](exercise-07/exercise07.cpp) 
+ - [exercise08.cpp](exercise-08/exercise08.cpp)
 
 ### Decryption
 #### Exercise
- - [exercise08.cpp](exercise-08/exercise08.cpp) | [duplicated-chars.txt](exercise-08/duplicated-chars.txt)
- - [exercise09.cpp](exercise-09/exercise09.cpp) | [reversed-lines.txt](exercise-09/reversed-lines.txt)
- - [exercise10.cpp](exercise-10/exercise10.cpp) | [reversed-order.txt](exercise-10/reversed-order.txt)
- - [exercise11.cpp](exercise-11/exercise11.cpp) | [encoded-lines.txt](exercise-11/encoded-lines.txt)
+ - [exercise09.cpp](exercise-09/exercise08.cpp) | [duplicated-chars.txt](exercise-09/duplicated-chars.txt)
+ - [exercise10.cpp](exercise-10/exercise09.cpp) | [reversed-lines.txt](exercise-10/reversed-lines.txt)
+ - [exercise11.cpp](exercise-11/exercise10.cpp) | [reversed-order.txt](exercise-11/reversed-order.txt)
+ - [exercise12.cpp](exercise-12/exercise11.cpp) | [encoded-lines.txt](exercise-12/encoded-lines.txt)
 
