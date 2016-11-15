@@ -77,18 +77,23 @@ Exception in thread "main" java.lang.ClassCastException: Model cannot be cast to
 
 *What's the problem?*
 
-To sort Objects, you hav eto implement the _Comparable_ interface and then override the _compareTo()* method.  How?
+To sort Objects, you have to implement the _Comparable_ interface and then override the _compareTo()_ method.  
 
-Look up the `implements Comparable<T>`.
+How? Look up the `implements Comparable<T>`.
 
 You'll see that you need to both amend the header of the Class, and add a method `compareTo()`.
 
 ```java
-public int compareTo (Model compareModel) { 
+public class .... {
+
 ...
+  public int compareTo (Model compareModel) { 
+  ...
+  }
+}
 ```
 
-This function gets called by a `sort` which uses such to compare to entries in the array arriving at a value which the `sort` can then use to rank to items that it's comparing.
+Now when `sort` runs, it has a means to compute a ranking of the items it's comparing.
 
 When this works, you should get the following output.
 
@@ -100,26 +105,40 @@ NEC MultiSync EA193Mi - 18 diagonal (8)
 ```
 
 ## Use a `Comparator`
-Look up the following `class implements Comparable<T>`  
+Google the following `class implements Comparable<T>`.  
 
-This is another way that the comparison can be done.
+This is another way that the comparison can be done.  Adding this will give you some alternatives to just the 1 sort.
 
 Note that you'll keep the `compareTo()` function, but you'll also add a `Comparator<>` static method; this will allow you to chose to sort by say the name.
 
 This is a trickier bit of code... You can try to figure it out with Google, or peek below.
 
->
->
->
->
->
->
->
->
->
->
->
->
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
+> *
 
 ```java
     public static Comparator<Model> ModelNameComparator = new Comparator<Model>() {
@@ -141,7 +160,8 @@ NEC MultiSync EA193Mi - 18 diagonal (8)
 Samsung S19E200BW - 19 diagonal (5)
 ```
 
-### Next, implement one last comparator, ModelSizeCompartor, you should get
+## Finally 
+Implement one last comparator, a `ModelSizeComparator`, you should get the following:
 
 ```
 Now by ModelSize Comparator
@@ -150,7 +170,8 @@ LG 19MB35D - 18 diagonal (2)
 NEC MultiSync EA193Mi - 18 diagonal (8)
 Samsung S19E200BW - 19 diagonal (5)
 ```
-
+## Closing observations
+You'll notice that you don't get an option of Ascending or Descending.  To do that you have to implement a separate function and just reverse comparing from left to right, to right to left.
 
 
 

@@ -1,4 +1,5 @@
-#Extending from the work already done, lets now implement an interface using for the `CreditCard` and `Reservation` interfaces, implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
+#Workshop04 - And object based upon 2 interfaces.
+Extending from the work already done, lets now implement an interface using for the `CreditCard` and `Reservation` interfaces, implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
 
 ```java
 package com.greenfox.bx;
