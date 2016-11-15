@@ -6,7 +6,5 @@
 
 ## Unit Schedule
 - [01) Objects and Classes](1-objects-and-classes)
-- [02) Inheritance)[2-packages-and-inheritance)
+- [02) Inheritance](2-packages-and-inheritance)
 - [03) Polymorphism, Abstracts &amp; Interfaces](3-abstracts-and-interfaces)
-
-

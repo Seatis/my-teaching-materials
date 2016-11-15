@@ -22,12 +22,11 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 |[Access Modifiers (Javadocs)] (https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)||
 
 ## Material Review
-## Material Review
 - `extends`
 - `super()`
 - relationships
-  - is-a 
-  - has-a 
+  - is-a
+  - has-a
 - &lt;variable&gt; `instanceof` &lt;Class&gt;
 - `private`
 - `protected`
@@ -38,7 +37,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 Optional
 - Packages
   -  `package` keyword
-  - resolve to a type 
+  - resolve to a type
   - `import` &lt;package&gt;.&lt;class&gt;
   - `import` &lt;package&gt;.*
 - Organization
