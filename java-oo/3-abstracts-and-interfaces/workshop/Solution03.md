@@ -5,9 +5,6 @@
 import com.greenfox.bx.*;
 import java.util.ArrayList;
 
-/**
- * Created by eric.hofer on 11/15/2016.
- */
 public class App {
 
     public static void main(String[] args) {

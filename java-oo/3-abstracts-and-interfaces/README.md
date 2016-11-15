@@ -25,7 +25,7 @@ Java gets round this through Abstracts and Interfaces.
 |[Abstract Classes and methods (CodeMonkey.17)](https://www.youtube.com/watch?v=pt1S11yX-7k)|14:37|
 |[Java Interfaces Explained (Degee.40)](https://www.youtube.com/watch?v=fX1xNMBTMfg)|7:11|
 |[SimpleDateFormat (ProgrammingKnowledge)](https://www.youtube.com/watch?v=JtAplwiTOXc)|10.46|
-
+|[Comparator (mkyong)](https://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/)||
 
 ## Material Review
 - inheriting from more than 1 class
@@ -47,6 +47,8 @@ for the parent class to work
 - [01) Instruments to Stringed Instruments](workshop/Workshop01.md) - 2 levels of abstraction
 - [02) Reservation based upon an Interface](workshop/Workship02.md)
 - [03) Credit Card based upon an Interface](workshop/Workshop03.md) - a bit more complex
+- [04) Credit Card &amp; Reservation](workshop/Workshop04.md) - implements 2 interfaces
+- [05) Comparable](workshop/Workshop05.md) - something we'd use to compare values
 
 #Links
 - [Parent - Java OO Module](../README.md)
