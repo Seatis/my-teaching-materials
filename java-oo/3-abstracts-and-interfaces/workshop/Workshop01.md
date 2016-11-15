@@ -1,4 +1,4 @@
-Model stringed instruments.
+#Workshop01 - Model stringed instruments.
 
 The classes referenced should be in a package called `main.java.music`.
 
