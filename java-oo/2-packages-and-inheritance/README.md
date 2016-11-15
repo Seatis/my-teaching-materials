@@ -1,7 +1,5 @@
 # Inheritance
-
-## Objectives
--
+Objects can extend other objects allowing programs to re-use code and set default.
 
 ## Materials & Resources
 
@@ -11,13 +9,12 @@
 |[Refresher on Objects (CodeMonkey.09)](https://youtu.be/ZpBtDTCgalw)|14:17|
 |[Refresher on New, Values &amp; References (CodeMonkey.10)](https://youtu.be/eRfvgSvf-mM)|7:46|
 |[Inheritance (CodeMonkey.12)](https://www.youtube.com/watch?v=gQTzUpqeLH4)|9:54|
-|[Inheritance](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
-|[Inheritance & Polymorhism](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
+|[Inheritance (NewBoston.49)](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
+|[Inheritance & Polymorphism (Bana.14)](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
 |[Usage of super keyword](http://www.javatpoint.com/super-keyword)||
 
 
 ### Optional
-
 | Material | Time |
 |:-------- |-----:|
 |[Packages (CodeMonkey.12)](https://www.youtube.com/watch?v=l5SviD48vOQ)|
@@ -25,8 +22,33 @@
 |[Access Modifiers (Javadocs)] (https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)||
 
 ## Material Review
+## Material Review
+- `extends`
+- `super()`
+- relationships
+  - is-a 
+  - has-a 
+- &lt;variable&gt; `instanceof` &lt;Class&gt;
+- `private`
+- `protected`
+- `final`
+- `public`
+- casting subClass as Class
 
-### Optional
+Optional
+- Packages
+  -  `package` keyword
+  - resolve to a type 
+  - `import` &lt;package&gt;.&lt;class&gt;
+  - `import` &lt;package&gt;.*
+- Organization
+  - Flat
+  - Hierarchical (CodeMonkey.12)
+- Declaration - fully qualifying the &lt;package&gt;.&lt;class&gt;
+- Access Levels &amp; Visibility
+  - Modifier (`public`, `protected`,`<no modifier>` and `private`)
+  - Class, Package, Subclass and World
+
 
 ## Workshops
 - [01) Animal and Bird](workshop/Workshop01.md) - inheritance
@@ -53,5 +75,5 @@ Please be sure you're well acquainted with the guidelines on coding: [GreenFox A
 
 #Links
 - [Parent - Java OO Module](../README.md)
-- [Prev - title](../1-objects-and-classes/README.md)
-- [Next - title](../3-abstracts-and-interfaces/README.md)
+- [Prev - Classes &amp; Objects](../1-objects-and-classes/README.md)
+- [Next - Abstracts &amp; Interfaces](../3-abstracts-and-interfaces/README.md)
