@@ -6,6 +6,16 @@
  - Create a bigger project
 
 
+## Materials & Resources
+### Training
+| Material | Time |
+|:---------|-----:|
+| [C++ Tutorial 23 - Static Member Variables](https://www.youtube.com/watch?v=7u7ti-S69uY) | 20:56 |
+| [ITK BarCamp - C++ Training - Command Line Arguments](https://www.youtube.com/watch?v=3iATEcmhB8w) | 13:28 |
+
+## Material Review
+ - `static`
+
 ## Workshop
 ### Tasks
 #### Basics (mandatory):
