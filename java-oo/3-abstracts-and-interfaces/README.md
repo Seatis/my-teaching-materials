@@ -11,19 +11,20 @@ Java gets round this through Abstracts and Interfaces.
 ### Training
 | Material | Time |
 |:-------- |-----:|
-|[Refresher on Inheritance and Polymorphism](https://www.youtube.com/watch?v=gWpg3yMiL0M)|3:03|
+|[Refresher on Inheritance and Polymorphism (Guru.08)](https://www.youtube.com/watch?v=gWpg3yMiL0M)|3:03|
 |[When to use an abstract class in Java (Degee.39)](https://www.youtube.com/watch?v=hZ1EU-F-0nU)|4:25|
-|[Java Interface Tutorial](https://www.youtube.com/watch?v=5Aef6vnAxR8)|1:08|
+|[Java Interface Tutorial (Guru)](https://www.youtube.com/watch?v=5Aef6vnAxR8)|1:08|
 |[Interfaces and Abstracts (Bana.15)](https://www.youtube.com/watch?v=1PPDoAKbaNA)|8:29|
-|[Abstract and Concrete Classes](https://www.youtube.com/watch?v=TyPNvt6Zg8c)|8:26|
+|[Abstract and Concrete Classes (NewBoston.58)](https://www.youtube.com/watch?v=TyPNvt6Zg8c)|8:26|
 
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|[Abstract Classes and Interfaces](https://www.youtube.com/watch?v=AU07jJc_qMQ)|26:33|
-|[Abstract Classes and methods](https://www.youtube.com/watch?v=pt1S11yX-7k)|14:37|
+|[Abstract Classes and Interfaces (Wertz)](https://www.youtube.com/watch?v=AU07jJc_qMQ)|26:33|
+|[Abstract Classes and methods (CodeMonkey.17)](https://www.youtube.com/watch?v=pt1S11yX-7k)|14:37|
 |[Java Interfaces Explained (Degee.40)](https://www.youtube.com/watch?v=fX1xNMBTMfg)|7:11|
+|[SimpleDateFormat (ProgrammingKnowledge)](https://www.youtube.com/watch?v=JtAplwiTOXc)|10.46|
 
 
 ## Material Review
@@ -44,6 +45,8 @@ for the parent class to work
 
 ## Workshops
 - [01) Instruments to Stringed Instruments](workshop/Workshop01.md) - 2 levels of abstraction
+- [02) Reservation based upon an Interface](workshop/Workship02.md)
+- [03) Credit Card based upon an Interface](workshop/Workshop03.md) - a bit more complex
 
 #Links
 - [Parent - Java OO Module](../README.md)

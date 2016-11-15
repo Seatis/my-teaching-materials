@@ -5,133 +5,111 @@
 import com.greenfox.bx.*;
 import java.util.ArrayList;
 
-/**
- * Created by eric.hofer on 11/15/2016.
- */
 public class App {
 
+    final static String[] lsDow = { "MON","TUE","WED","THU","FRI","SAT","SUN"};
+
     public static void main(String[] args) {
-
-
-        ArrayList<CreditCard> cards = new ArrayList<CreditCard>();
+        ArrayList<Reservation> bookings = new ArrayList<Reservation>();
         int ct = 10;
 
         for (int i = 0; i<ct; i++) {
-            cards.add(new CreditCard(0,"ABC" + i, random16()));
+            bookings.add(new Reservation(randomDow(10)));
         }
 
-        for (CreditCard iCard: cards) {
-            System.out.println(iCard.toString());
+        for (Reservation iBooking: bookings){
+            System.out.println(iBooking.toString());
         }
 
     }
 
-    static String random16() {
-        String out ="";
-        for(int i = 0; i<16; i++) {
-            out += Integer.toString( (int) ( Math.random() * 9));
-        }
 
-        return out;
+    static String randomDow(int ct) {
+        return lsDow[(int)( Math.random() * 6)];
     }
 }
 ```
 
 ## com.greenfox.bx contains
 
-### CreditCardy.java
+### Reservationy.java
 ```java
 package com.greenfox.bx;
 
-interface CreditCardy {
+public interface Reservationy {
 
-    void setSumCVV(int sumCVV);
-    int getSumCVV();
-    void setNameCardholder(String nameCardholder);
-    String getNameCardholder();
-    void setCodeAccount(String codeAccount);
-    String getCodeAccount();
+    void setDowBooking(String dowBooking);
+    String getDowBooking();
 
-    int cumeSumCVV(String codeAccount); // computes codeAccount checksum (see below)
-    boolean ValidCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
-    String toString ();
+    void setCodeBooking(String codeBooking);
+    String getCodeBooking();
 
+    boolean PlaceReserved (String dowBooking, String codeBooking); //must return true if successful
+    boolean PlaceCancelled (String dowBooking,String codeBooking); //must return true if successful
+
+    String toString (); //format("Booking# %s for %s");
 }
 ```
 
-### CreditCard.java
+### Reservation.java
 ```java
 package com.greenfox.bx;
 
-public class CreditCard implements CreditCardy {
+public class Reservation implements Reservationy {
 
-    private int sumCVV;
-    private String nameCardholder;
-    private String codeAccount;
+    String dowBooking;
+    String codeBooking;
+    final static String ls = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public CreditCard(int sumCVV, String nameCardholder, String codeAccount) {
 
-        this.sumCVV = (sumCVV==0)?cumeSumCVV(codeAccount):sumCVV;
-        this.nameCardholder=nameCardholder;
-        this.nameCardholder=nameCardholder;
-        this.codeAccount =codeAccount;
-
+    public Reservation(String dowBooking) {
+        this.dowBooking = dowBooking;
+        this.codeBooking = randomZeroToZ(8);
     }
 
-    @Override
-    private int cumeSumCVV(String codeAccount) {
-
-        int sum = 0;
-        char c;
-
-        for (int i = 0; i < codeAccount.length()-1; i++) {
-            c = codeAccount.charAt(i);
-            sum += (c >= '0' && c <= '9') ? Character.getNumericValue(c) : 0;
+    static String randomZeroToZ(int len) {
+        String out = "";
+        for(int i= 0; i<len; i++) {
+            out += ls.charAt((int) (Math.random() * 36));
         }
-
-        return sum;
-
+        return out;
     }
 
     @Override
-    public String toString () {
-        return String.format("Name=%s CC#=%s CVV=%d", this.nameCardholder, this.codeAccount, this.sumCVV);
+    public String toString() {
+
+        return String.format("Booking# %s for %s", this.codeBooking, this.dowBooking);
+    }
+
+
+    @Override
+    public String getDowBooking() {
+        return this.dowBooking;
     }
 
     @Override
-    public void setSumCVV(int sumCVV) {
-        this.sumCVV = sumCVV;
+    public void setDowBooking(String dowBooking) {
+        this.dowBooking = dowBooking;
     }
 
     @Override
-    public int getSumCVV() {
-        return sumCVV;
+    public String getCodeBooking() {
+        return codeBooking;
     }
 
     @Override
-    public void setNameCardholder(String nameCardholder) {
-        this.nameCardholder= nameCardholder;
-
+    public void setCodeBooking(String codeBooking) {
+        this.codeBooking = codeBooking;
     }
 
     @Override
-    public String getNameCardholder() {
-        return this.nameCardholder;
+    public boolean PlaceReserved(String dowBooking, String codeBooking) {
+        return true;
     }
 
     @Override
-    public void setCodeAccount(String codeAccount) {
-        this.codeAccount = codeAccount;
-    }
-
-    @Override
-    public String getCodeAccount() {
-        return this.codeAccount;
-    }
-
-    @Override
-    public boolean ValidCard(String codeAccount, int sumCVV) {
-        return (cumeSumCVV(codeAccount)==sumCVV);
+    public boolean PlaceCancelled(String dowBooking, String codeBooking) {
+        return true;
     }
 }
 ```
