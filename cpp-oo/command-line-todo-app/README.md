@@ -19,7 +19,7 @@
 |:---------|-----:|
 | [UML 2.0 Tutorial #01 - Intor & Use Cases](https://www.youtube.com/watch?v=OkC7HKtiZC0&index=1&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc) | 12:47 |
 | [UML 2.0 Tutorial #03 - Class Diagramms](https://www.youtube.com/watch?v=3cmzqZzwNDM&index=3&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc) | 16:46 |
-|:---------|-----:|
+
 | HomeWork Exercise | Tools |
 |:---------|-----:|
 | Create the UML class diagramm for Your ToDo App | [UML editor](http://staruml.io/downloadq) |
