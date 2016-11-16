@@ -54,9 +54,13 @@ for the parent class to work
 - [05) Comparable](workshop/Workshop05.md) - something we'd use to compare values
 - [06) Add Comparator support to the Credit Card &amp; Reservation classes](workshop/Workshop06.md)
 
+
+## Individual Workshop Review
+As always neatness counts in coding.
+
+Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
+
 #Links
 - [Parent - Java OO Module](../README.md)
 - [Prev - Inheritance &amp; Packages](../2-packages-and-inheritance/README.md)
 - [Next - Project: Todo App](../4-project-todo-app/README.md)
-
-
