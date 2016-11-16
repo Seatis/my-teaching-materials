@@ -30,6 +30,8 @@ out alt-Insert (W10) %%N (Mac).
 #Tests
 The App.java should be in `src`.  You can re-use your previous Workshop App, just rename the old `main` to something like `mainWorkshop02`, and do a new `main`.
 
+*Note* made some minor changes here, but didn't test.
+
 ```java
 import java.util.ArrayList;
 //there's another import missing (if you set this up right
