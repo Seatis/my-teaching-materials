@@ -146,11 +146,13 @@ Do homework
  - When the application is starting the program should check the file and load its contents to the list
  - The name and the state of the todos should be stored in the storage file. (CSV is recommended)
  - For example:
+
  ```
  not_checked;Walk the dog
  not_checked;Buy milk
  checked;Do homework
  ```
+ 
  - or you can just use `0` and `1` instead of checked and not_checked
 
 ##### Missing file
