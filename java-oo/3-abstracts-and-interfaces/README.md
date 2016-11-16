@@ -42,13 +42,17 @@ for the parent class to work
 - for interfaces, the entire definition is an abstract (e.g. not defined)
 - `implements`
 - `Object`
+- Comparison functionality for objects
+  - `implements Comparable<T>` and `compareTo()`
+  - public static Comparator<Model> ModelSizeComparator = new Comparator<Model>()
 
 ## Workshops
 - [01) Instruments to Stringed Instruments](workshop/Workshop01.md) - 2 levels of abstraction
-- [02) Reservation based upon an Interface](workshop/Workship02.md)
+- [02) Reservation based upon an Interface](workshop/Workshop02.md)
 - [03) Credit Card based upon an Interface](workshop/Workshop03.md) - a bit more complex
 - [04) Credit Card &amp; Reservation](workshop/Workshop04.md) - implements 2 interfaces
 - [05) Comparable](workshop/Workshop05.md) - something we'd use to compare values
+- [06) Add Comparator support to the Credit Card &amp; Reservation classes](workshop/Workshop06.md)
 
 #Links
 - [Parent - Java OO Module](../README.md)
