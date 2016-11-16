@@ -13,6 +13,8 @@
 | [C++ Tutorial 23 - Static Member Variables](https://www.youtube.com/watch?v=7u7ti-S69uY) | 20:56 |
 | [ITK BarCamp - C++ Training - Command Line Arguments](https://www.youtube.com/watch?v=3iATEcmhB8w) | 13:28 |
 
+
+
 | Material - Day 2 | Time |
 |:---------|-----:|
 | [UML 2.0 Tutorial #01 - Intor & Use Cases](https://www.youtube.com/watch?v=OkC7HKtiZC0&index=1&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc) | 12:47 |
