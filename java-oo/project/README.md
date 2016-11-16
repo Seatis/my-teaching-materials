@@ -14,7 +14,7 @@ This is a complex exercise, so please read through the whole first, then start a
  - Remove tasks
  - Store in file
  - Load state from file
- - One type of commands
+ - One type of commands (see later in the Usage)
 
 #### Advanced (optional):
  - Refactor the application to align with the proposed architecture
