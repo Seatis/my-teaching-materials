@@ -1,4 +1,5 @@
-#Create a `Reservation` object by implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
+#Workshop 2 - Reservations
+Create a `Reservation` object by implementing all the features as required by the Interface.  It should go into a package library name `com.greenfox.bx`.
 
 ```java
 //package ??? should set this
