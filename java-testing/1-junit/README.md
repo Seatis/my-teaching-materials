@@ -38,16 +38,33 @@ Testing generally involves running a method to see that such returns expected re
 - Exception
 
 ## Workshops
-- [01) Simple Class That Equals](workshop/Workshop01.md) - 2 levels of abstraction
-- [02) Simple Class That should be true](workshop/Workshop02.md)
-- [03) Simple Class That should be false][workshop/Workshop0.md)
-- [04) Two tests for the same class][workshop/Workshop0.md)
-- [05) 2 Classes to test, but not having coverage][workshop/Workshop0.md) - check the coverage, see that the percentage is not 100%
-- [06) 2 Classes to test][workshop/Workshop0.md)
-- [07) 3 Classes to test - and catching an Exception][workshop/Workshop0.md) - using the coverage
-- [08) 4 Classes to test - and ignoring a test][workshop/Workshop0.md) - using the coverage
-- [09) Missing a class, what happens][workshop/Workshop0.md)
-- [10) Pulling it together -  16 possible situations to test][workshop/Workshop0.md)
+We're going to try something that spans not just your own git, but will involve the rest of the class.  To learn about testing, we're going to construct code to meet a specification.  This means that we have to use the same names and store our sample code in a way that we can easily retrieve programs to run the test.
+
+So,
+- your project must be stored in your repository (e.g. `greenfox-zerda-raptor` / your name / `JUnit` / `D1`), there you'll 
+- create a `src` folder
+  - your standard `App` Class, with `public static void Main(String[] args){}`
+  - inside of `src` a package directory `package.com.greenfox.junit` and that in turn will contain
+    - A class called `WordToolbox` with the following fields and methods
+      - `stringHeld` this is going to be the String that is the base for your tests
+      - the usual getters and setters
+      - constructor `WordToolbox(String stringHeld)` 
+      - boolean `isAnAnagram(String stringToCheck)`
+      - int `countHowMany(char charToFind)`
+-  a new directory (as per Dr.Bee Video #1) called `tests` and inside
+   - `WordToolboxTest` class that will contain the tests you will build
+
+- [01) CountHowMany](workshop/Workshop01.md) - this routine is the basis of the first bits of testing
+- [02) Test AssertEquals()](workshop/Workshop02.md) - 2 levels of abstraction
+- [03) Add a 2nd test to the AssertEquals()](workshop/Workshop03.md) - 
+- [04) Prepare to add a test, but not yet have the code working](workshop/Workshop04.md)
+- [05) Add exception handling](workshop/Workshop05.md) - in this workshop we're going to throw an exception
+- [06) Define a new method `isAnagram()` (that doesn't do anything) and test for coverage](workshop/Workshop06.md)
+- [07) Complete `isAnagram()` method](workshop/Workshop07.md)
+- [08) Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`](workshop/Workshop08.md)
+- [09) Structure your test to do both `CountHowMany()` and `isAnagram()` using @Before and @After](workshop/Workshop09)
+- [10) Structure your test to do both `CountHowMany()` and `isAnagram()` using @BeforeClass and @AfterClass](workshop/Workshop09)
+- [11) Construct test to challenge others]
 
 #Links
 - [Parent - Java OO Module](../README.md)
