@@ -30,14 +30,16 @@ Testing generally involves running a method to see that such returns expected re
 - Persistent data
 - @Test
   - Expectation
-- Before, BeforeClass
-- After, AfterClass
-- AssertEqual, AssertTrue, AssertFalse
+- `@Before`, `@BeforeClass`
+- `@After`, `@AfterClass`
+- `@AssertEqual`, `@AssertTrue`, `@AssertFalse`
 - Coverage
-- Ignore
-- Exception
+- `@Ignore`
+- `@Exception`
 
 ## Workshops
+
+### Rules
 We're going to try something that spans not just your own git, but will involve the rest of the class.  To learn about testing, we're going to construct code to meet a specification.  This means that we have to use the same names and store our sample code in a way that we can easily retrieve programs to run the test.
 
 So,
@@ -54,17 +56,18 @@ So,
 -  a new directory (as per Dr.Bee Video #1) called `tests` and inside
    - `WordToolboxTest` class that will contain the tests you will build
 
-- [01) CountHowMany](workshop/Workshop01.md) - this routine is the basis of the first bits of testing
-- [02) Test AssertEquals()](workshop/Workshop02.md) - 2 levels of abstraction
-- [03) Add a 2nd test to the AssertEquals()](workshop/Workshop03.md) - 
-- [04) Prepare to add a test, but not yet have the code working](workshop/Workshop04.md)
+### Exercises
+- [01) Create something to test](workshop/Workshop01.md) - build `WordToolbox` class and the method `countHowMany()`
+- [02) The first use of JUnit](workshop/Workshop02.md) - Test `AssertEquals()`
+- [03) Multiple tests](workshop/Workshop03.md) - Add a 2nd test to the `AssertEquals()`
+- [04) Ignore a test](workshop/Workshop04.md) - Prepare to add a test, but not yet have the code working
 - [05) Add exception handling](workshop/Workshop05.md) - in this workshop we're going to throw an exception
-- [06) Define a new method `isAnagram()` (that doesn't do anything) and test for coverage](workshop/Workshop06.md)
-- [07) Complete `isAnagram()` method](workshop/Workshop07.md)
-- [08) Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`](workshop/Workshop08.md)
-- [09) Structure your test to do both `CountHowMany()` and `isAnagram()` using @Before and @After](workshop/Workshop09)
-- [10) Structure your test to do both `CountHowMany()` and `isAnagram()` using @BeforeClass and @AfterClass](workshop/Workshop09)
-- [11) Construct test to challenge others]
+- [06) Test for *Coverage*](workshop/Workshop06.md) - Define a new method `isAnagram()` (that doesn't do anything) and test for coverage
+- [07) Create a 2nd item to test](workshop/Workshop07.md) - Complete `isAnagram()` method
+- [08) Work with a 2nd type of *assertion*](workshop/Workshop08.md) - Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`
+- [09) Learn about the `@Before` and `@After` annotations](workshop/Workshop09.md) - Structure your test to do both `CountHowMany()` and `isAnagram()` using @Before and @After
+- [10) Learn about the `@BeforeClass` etc.](workshop/Workshop10.md) - Structure your test to do both `CountHowMany()` and `isAnagram()` using @BeforeClass and @AfterClass
+- [11) Construct test to challenge others](workshop/Workshop11.md)
 
 #Links
 - [Parent - Java OO Module](../README.md)
