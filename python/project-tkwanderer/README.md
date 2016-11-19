@@ -3,12 +3,11 @@
 Build a hero based walking on tiles and killing monsters type of game. Heroes and monsters have levels and stats depending on their levels.
 
 ### Workshop: Plan your work
-- Go through the [project specification](specification.md).
-- Create a Trello board for your work and add the [project stories](stories.md).
+#### 1. Go through the [project specification](specification.md).
+#### 2. Create a Trello board for your work and add the [project stories](stories.md).
 
-#### Form groups and plan your application together.
-**Plan your architecture.**   
-In your architecture you should consider the following components:
+#### 3. Form groups and plan your application together.
+Plan your architecture. In your architecture you should consider the following components:
 - Models
     - GameObject
         - Character
@@ -26,6 +25,7 @@ In your architecture you should consider the following components:
     - handling events
     - current game
 
+#### 4. Create task breakdown in Trello together.
 Now that you see the big picture, **go through the stories together** and break them down into tasks:
   - To classes
   - To methods
