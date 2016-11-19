@@ -1,4 +1,5 @@
-### Writing files
+# File manipulation exercises
+## Writing files
 
 ```cpp
 #include <iostream>
@@ -16,10 +17,10 @@ int main() {
 }
 ```
 
-#### Exercise
+### Exercise
  - [exercise01.cpp](exercise-01/exercise01.cpp)
 
-### Reading files
+## Reading files
 
 ```cpp
 #include <iostream>
@@ -32,15 +33,20 @@ int main() {
   ifstream my_file; // Creates an object that represents a file
   my_file.open("example.txt"); // The object opens the file called "example.txt"
   string file_content;
-  my_file >> file_content; // Reads a line from the file and puts it into the variable called file_content
+  my_file >> file_content; // Reads the first word from the first line of the file and puts it into the variable called file_content
   my_file.close(); // Closes the object
 
   return 0;
 }
 ```
+Be aware that this method only reads a word, so if the line consists
+any white space character it only reads the line till that character.
 
-#### Exercise
+
+### Exercise
  - [exercise02.cpp](exercise-02/exercise02.cpp) | [second-exercise.txt](exercise-02/second-exercise.txt)
+
+### Reading lines
 
 ### Multiple lines and errors
 ```cpp
