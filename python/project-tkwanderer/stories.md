@@ -5,17 +5,29 @@
 ##### Tile
  - Given a terminal opened in the project directory
  - When the game is ran by executing `python main.py`
- - Then it should show a tile like this: ![floor.png](assets/floor.png)
+ - Then it should show a tile like this:   
+ 
+ |Floor tile|
+ |----------|
+ |![floor.png](assets/floor.png)|
 
 ##### Map
  - Given a terminal opened in the project directory
  - When the game is ran by executing `python mai/n.py`
- - Then it should show a map of tiles like this: ![floor map](assets/floor-map.png)
+ - Then it should show a map of tiles like this:
+ 
+ ![floor map](assets/floor-map.png)
 
 ##### Walls
  - Given the launched game
  - When the map is rendered on the screen
- - Then it should show floor ![wall.png](assets/wall.png) and wall type tiles as well: ![full map](assets/full-map.png)
+ - Then it should show floor and wall type tiles as well:
+ 
+Floor tile | Wall tile 
+---------- | ---------
+![floor.png](assets/floor.png) | ![wall.png](assets/wall.png)
+ 
+![full map](assets/full-map.png)
 
 
 #### Place a character on it and move with key bindings
@@ -23,7 +35,11 @@
 ##### Hero
  - Given the launched game
  - When the map is rendered on the screen
- - Then it should show a hero on the top-left corner: ![hero](assets/hero-down.png)
+ - Then it should show a hero on the top-left corner:
+ 
+| Hero |
+| ------ |
+| ![hero](assets/hero-down.png) |
 
  ![hero map](assets/hero-map.png)
 
@@ -41,10 +57,10 @@
  - Given the launched game
  - When the hero is moved by the arrow keys
  - Then the hero should face the direction where he went
-    - Up: ![up](assets/hero-up.png)
-    - Right: ![down](assets/hero-right.png)
-    - Down: ![down](assets/hero-down.png)
-    - Left: ![down](assets/hero-left.png)
+
+| Hero Up | Hero Right | Hero Down | Hero Left |
+| ------- | ---------- | --------- | --------- |
+| ![up](assets/hero-up.png) | ![right](assets/hero-right.png) | ![down](assets/hero-down.png) | ![left](assets/hero-left.png) |
 
 ##### Map boundaries
  - Given the hero on any edge of the map
@@ -61,12 +77,20 @@
 ##### Skeletons
  - Given the launched game
  - When the map is rendered on the screen
- - Then 3 skeletons ![skeleton.png](assets/skeleton.png) should be on the map, somewhere on floor type tiles
+ - Then 3 skeletons should be on the map, somewhere on floor type tiles
+
+| Skeleton |
+| ---------- | 
+| ![skeleton.png](assets/skeleton.png) |
 
 ##### Boss
  - Given the launched game
  - When the map is rendered on the screen
- - Then a boss ![boss.png](assets/boss.png) should be on the map, somewhere on floor type tiles
+ - Then a boss should be on the map, somewhere on floor type tiles
+ 
+| Boss |
+| ---- |
+| ![boss.png](assets/boss.png) |
 
 #### Create fight & game logic
 
