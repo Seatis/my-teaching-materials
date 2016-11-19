@@ -5,17 +5,17 @@
 ##### Tile
  - Given a terminal opened in the project directory
  - When the game is ran by executing `python main.py`
- - Then it should show a tile like this: ![floor.png](Basics/week-06/floor.png)
+ - Then it should show a tile like this: ![floor.png](assets/floor.png)
 
 ##### Map
  - Given a terminal opened in the project directory
  - When the game is ran by executing `python mai/n.py`
- - Then it should show a map of tiles like this: ![floor map](Basics/week-06/floor-map.png)
+ - Then it should show a map of tiles like this: ![floor map](assets/floor-map.png)
 
 ##### Walls
  - Given the launched game
  - When the map is rendered on the screen
- - Then it should show floor ![wall.png](Basics/week-06/wall.png) and wall type tiles as well: ![full map](Basics/week-06/full-map.png)
+ - Then it should show floor ![wall.png](assets/wall.png) and wall type tiles as well: ![full map](assets/full-map.png)
 
 
 #### Place a character on it and move with key bindings
@@ -23,9 +23,9 @@
 ##### Hero
  - Given the launched game
  - When the map is rendered on the screen
- - Then it should show a hero on the top-left corner: ![hero](Basics/week-06/hero-down.png)
+ - Then it should show a hero on the top-left corner: ![hero](assets/hero-down.png)
 
- ![hero map](Basics/week-06/hero-map.png)
+ ![hero map](assets/hero-map.png)
 
 ##### Move down
  - Given the launched game
@@ -41,10 +41,10 @@
  - Given the launched game
  - When the hero is moved by the arrow keys
  - Then the hero should face the direction where he went
-    - Up: ![up](Basics/week-06/hero-up.png)
-    - Right: ![down](Basics/week-06/hero-right.png)
-    - Down: ![down](Basics/week-06/hero-down.png)
-    - Left: ![down](Basics/week-06/hero-left.png)
+    - Up: ![up](assets/hero-up.png)
+    - Right: ![down](assets/hero-right.png)
+    - Down: ![down](assets/hero-down.png)
+    - Left: ![down](assets/hero-left.png)
 
 ##### Map boundaries
  - Given the hero on any edge of the map
@@ -61,12 +61,12 @@
 ##### Skeletons
  - Given the launched game
  - When the map is rendered on the screen
- - Then 3 skeletons ![Basics/week-06/skeleton.png](Basics/week-06/skeleton.png) should be on the map, somewhere on floor type tiles
+ - Then 3 skeletons ![skeleton.png](assets/skeleton.png) should be on the map, somewhere on floor type tiles
 
 ##### Boss
  - Given the launched game
  - When the map is rendered on the screen
- - Then a boss ![Basics/week-06/boss.png](Basics/week-06/boss.png) should be on the map, somewhere on floor type tiles
+ - Then a boss ![boss.png](assets/boss.png) should be on the map, somewhere on floor type tiles
 
 #### Create fight & game logic
 
@@ -89,15 +89,3 @@
 #### Optional features
 
 ##### Random map
-
-
-   - TDD create the heroes and monsters
-       - this can be done easily test driven
-       - create a class for the hero
-       - stats
-       - strike
-       - lvl UP
-   - create area and gamelogic
-       - randMap
-       - nextArea
-       - generate monsters and BOSS

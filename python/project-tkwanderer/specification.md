@@ -2,6 +2,8 @@
 
 This is a hero based walking on tiles and killing monsters type of game. Heroes and monsters have levels and stats depending on their levels. The goal is reach the highest level by killing the monsters holding the keys to the next level.
 
+![hero map](assets/hero-map.png)
+
 #### The Game screen
 - the screen contains the first area, which is 10x10 tiles where the hero (and the monsters) can move
     - every area contains 10x10 tiles
