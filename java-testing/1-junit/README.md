@@ -24,7 +24,7 @@ Testing generally involves running a method to see that such returns expected re
 |[Thinking about what to test (QAShahin)](https://www.youtube.com/watch?v=M_6z8L8qK8o)|13:04|
 |[Reinforcement on using IntelliJ for testing (IntelliJ)](https://www.youtube.com/watch?v=AsHZWTjJYmg)|3:02|
 |[Refresher on JUnit from a different perspective (In28Minutes)](https://www.youtube.com/watch?v=AN4NCnc4eZg)|12:54|
-
+|[Summary of JUnit constructs](https://www.tutorialspoint.com/juni)||
 
 ## Material Review
 - Persistent data
@@ -57,17 +57,17 @@ So,
    - `WordToolboxTest` class that will contain the tests you will build
 
 ### Exercises
-- [01) Create something to test](workshop/Workshop01.md) - build `WordToolbox` class and the method `countHowMany()`
+- [01) Create something to test](workshop/Workshop01.md) - build `WordToolbox` class which implements an Interface (`IWordToolbox`) and specifically fill out the method `countHowMany()` (the other methods do nothing for the moment).
 - [02) The first use of JUnit](workshop/Workshop02.md) - Test `AssertEquals()`
 - [03) Multiple tests](workshop/Workshop03.md) - Add a 2nd test to the `AssertEquals()`
-- [04) Ignore a test](workshop/Workshop04.md) - Prepare to add a test, but not yet have the code working
-- [05) Add exception handling](workshop/Workshop05.md) - in this workshop we're going to throw an exception
-- [06) Test for *Coverage*](workshop/Workshop06.md) - Define a new method `isAnagram()` (that doesn't do anything) and test for coverage
-- [07) Create a 2nd item to test](workshop/Workshop07.md) - Complete `isAnagram()` method
-- [08) Work with a 2nd type of *assertion*](workshop/Workshop08.md) - Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`
-- [09) Learn about the `@Before` and `@After` annotations](workshop/Workshop09.md) - Structure your test to do both `CountHowMany()` and `isAnagram()` using @Before and @After
-- [10) Learn about the `@BeforeClass` etc.](workshop/Workshop10.md) - Structure your test to do both `CountHowMany()` and `isAnagram()` using @BeforeClass and @AfterClass
-- [11) Construct test to challenge others](workshop/Workshop11.md)
+- [04) Test for *Coverage*](workshop/Workshop04.md) - See which methods have been missed by testing
+- [05) Ignore a test](workshop/Workshop05.md) - For `isAnagram()` tell the test suite it's not necessary to test
+- [06) Create a 2nd item to test](workshop/Workshop06.md) - Complete `isAnagram()` method
+- [07) Work with a 2nd type of *assertion*](workshop/Workshop07.md) - Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`
+- [08) Add exception handling](workshop/Workshop08.md) - in this workshop we're going to throw an exception
+- [09) Time out test](workshop/Workshop09.md) - create an infinite loop and cause the testing to catch and report
+- [10) Learn about the `@Before` and `@After` annotations](workshop/Workshop10.md) 
+- [11) Construct test to challenge others](workshop/Workshop11.md) - create your master test script to challenge the rest of the class.
 
 #Links
 - [Parent - Java OO Module](../README.md)
