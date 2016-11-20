@@ -58,6 +58,18 @@ You are tasked with creating the first assertion; you've probably already tested
 
 Set up a test for "Tarzan's toenails, check for "a" and other letters both in and out of the string.
 
+## The testing Competition begins
+Now that you have at least one implemented method to test and an actual test for that, you can try out the Competition.
+http://gf-tester.mobil.ninja/
+- Login with your Google Account
+- Upload your versions of WordToolbox, note the name of your file & class to match the requirements
+- Upload your test class, again check the requirements of the naming
+- Hit: Do my results
+- Wait a little until the system runs your solution against the tests already uploaded by you and others
+- Refresh the page, if the second button is green, you can check your results with it.
+- And your position should appear in the toplist
+- From now on, feel free to upload a new version of your solution- and testfile to be the very best on the toplist!
+
 ## C03) Multiple tests
 Extend from Tarzan and his toenails. Add another string, specifically "Me Tarzan, You Jane" to the mix. These should show up as a *2nd test*.
 
