@@ -17,7 +17,7 @@ So,
 -  a new directory (as per Dr.Bee Video #1) called `tests` and inside
    - `TestYourName` class that will contain the tests you will build
 
-## Create something to test
+## C01) Create something to test
 This method has to sit in a class that we'll extend in this lesson for testing.  At the end of the day, it will support your various tests. Implement the following interface in
 
 The basis of the class is as follow
@@ -53,26 +53,28 @@ Now add to this class the following methods `getS()` and `countHowMany(char c)`.
 Hint: `String` variables have `length()` and `charAt(int)`
 
 
-## First Assert
+## C02) First Assert
 You are tasked with creating the first assertion; you've probably already tested these anyway in your `main()` however this is a weak way to test programs. Let's move these to a Test section which we can re-visit later if we change the code.
 
 Set up a test for "Tarzan's toenails, check for "a" and other letters both in and out of the string.
 
-## Multiple tests
+## C03) Multiple tests
 Extend from Tarzan and his toenails. Add another string, specifically "Me Tarzan, You Jane" to the mix. These should show up as a *2nd test*.
 
-## Test for coverage.
+## C04) Test for coverage.
 Look at which methods are not being tested.
 
-## Test for coverage.
+## C05) Test for coverage.
 Ignore `isAnagram()` and recheck the coverage.
 
-## Develop the `isAnagram()` method.
+## C06) Develop the `isAnagram()` method.
 
-### Helper method
+### C07) Helper method
 For checking the Anagram its probably helpful to create another method which counts all letters in the word given as paramater.
 For that you can use the `HashMap` class.
+
 The `HashMap<Key, Value>` class, what you can use like the `ArrayList<Value>` with not just integer as the index. So you can create a list, where calling the `get()` method you dont put an int as the parameter, but you can use a char instead. It even has a `containsKey(Object)`.
+
 So the helper method should look like this:
 ```java
 private HashMap<Character, Integer> countAllLetters(String word) {
@@ -81,7 +83,7 @@ private HashMap<Character, Integer> countAllLetters(String word) {
 ```
 Hint: You can user your `countHowMany(char)` method.
 
-### Now the isAnagram method
+### C08) Now the isAnagram method
 
 By *anagram* we want to test if one word uses the same characters as the other.  We are case *insensitive* and only care about the standard English letters. Here are some samples from which you can derive a solution:-
 
@@ -117,7 +119,7 @@ is float an anagram of aloft = true
 is flota an anagram of aloft = true
 ```
 
-## Try out `AssertTrue()` and `AssertFalse()`
+## C09) Try out `AssertTrue()` and `AssertFalse()`
 
 Now that the Anagram program *works*, let's put it through its paces.
 
@@ -126,7 +128,7 @@ Do various asserts based on what we tested earlier, with
 - what if one string is blank and the other isn't
 - vice versa
 
-## Let's cause an exception
+## C10) Let's cause an exception
 
 What happens if you do the following?
 
@@ -139,7 +141,7 @@ Let's have a test to catch this failure.
 Then let's modify the code to both catch the failure (in the class), and still test for it cleanly.
 Infinite loop
 
-## Complete the method() `WaitingItOut()` as follows
+## C11) Complete the method() `WaitingItOut()` as follows
 ```java
 void WaitingItOut() {
   for (int i = 0; i = 0; ) {};
@@ -149,7 +151,7 @@ void WaitingItOut() {
 
 Let's have a test to catch this failure.  
 
-## Using @Before and @After
+## C12) Using @Before and @After
 
 Add to your test the following methods and ensure that they execute accordingly in your testing
 
@@ -189,7 +191,7 @@ Expectations are something like this (not tested yet).
 @AfterClass: onceAfterAll
 ```
 
-## Test all cases and methods
+## C13) Test all cases and methods
 - If you're finished with these, you can come up with special cases, test them.
 - Ensure that all `public` methods are tested
 - Try to make others' solution fail, while yours passes everything
