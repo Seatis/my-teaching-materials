@@ -24,11 +24,11 @@ Testing generally involves running a method to see that such returns expected re
 |[Thinking about what to test (QAShahin)](https://www.youtube.com/watch?v=M_6z8L8qK8o)|13:04|
 |[Reinforcement on using IntelliJ for testing (IntelliJ)](https://www.youtube.com/watch?v=AsHZWTjJYmg)|3:02|
 |[Refresher on JUnit from a different perspective (In28Minutes)](https://www.youtube.com/watch?v=AN4NCnc4eZg)|12:54|
-|[Summary of JUnit constructs](https://www.tutorialspoint.com/juni)||
+|[Summary of JUnit constructs](https://www.tutorialspoint.com/junit)||
 
 ## Material Review
 - Persistent data
-- @Test
+- `@Test`
   - Expectation
 - `@Before`, `@BeforeClass`
 - `@After`, `@AfterClass`
@@ -43,14 +43,14 @@ Testing generally involves running a method to see that such returns expected re
 We're going to try something that spans not just your own git, but will involve the rest of the class.  To learn about testing, we're going to construct code to meet a specification.  This means that we have to use the same names and store our sample code in a way that we can easily retrieve programs to run the test.
 
 So,
-- your project must be stored in your repository (e.g. `greenfox-zerda-raptor` / your name / `JUnit` / `D1`), there you'll 
+- your project must be stored in your repository (e.g. `greenfox-zerda-raptor` / your name / `JUnit` / `D1`), there you'll
 - create a `src` folder
   - your standard `App` Class, with `public static void Main(String[] args){}`
   - inside of `src` a package directory `package.com.greenfox.junit` and that in turn will contain
     - A class called `WordToolbox` with the following fields and methods
       - `stringHeld` this is going to be the String that is the base for your tests
       - the usual getters and setters
-      - constructor `WordToolbox(String stringHeld)` 
+      - constructor `WordToolbox(String stringHeld)`
       - boolean `isAnAnagram(String stringToCheck)`
       - int `countHowMany(char charToFind)`
 -  a new directory (as per Dr.Bee Video #1) called `tests` and inside
@@ -66,12 +66,10 @@ So,
 - [07) Work with a 2nd type of *assertion*](workshop/Workshop07.md) - Test `AssertsTrue()` and `AssertsFalse()` on `isAnagram()`
 - [08) Add exception handling](workshop/Workshop08.md) - in this workshop we're going to throw an exception
 - [09) Time out test](workshop/Workshop09.md) - create an infinite loop and cause the testing to catch and report
-- [10) Learn about the `@Before` and `@After` annotations](workshop/Workshop10.md) 
+- [10) Learn about the `@Before` and `@After` annotations](workshop/Workshop10.md)
 - [11) Construct test to challenge others](workshop/Workshop11.md) - create your master test script to challenge the rest of the class.
 
 #Links
 - [Parent - Java OO Module](../README.md)
 - [Prev - Project: Todo App](../4-project-todo-app/README.md)
 - [Next - not defined](../XYZ/README.md)
-
-
