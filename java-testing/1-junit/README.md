@@ -47,7 +47,7 @@ Testing generally involves running a method to see that such returns expected re
 
 ## Lets play a game - The testing Competition
 With our basic testing Knowledge we shall figure out who's the best in writing solution and writing tests. So we've created a relatively simple task (which will be implemented as the Solution) and you also asked to create tests for checking that solution. Since the problem is the same for everyone, if we pay attention to the details we can run everyone's test on your solution to see how well it is doing on things others' tested.
-- [Testing Competition](workshop/TestCompetition.md)
+- [Testing Competition](workshop/TestingCompetition.md)
 
 #Links
 - [Parent - Java OO Module](../README.md)
