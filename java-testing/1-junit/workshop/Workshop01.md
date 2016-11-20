@@ -1,31 +1,13 @@
-# Workshop01 - Create something to test
-This method has to sit in a class that we'll extend in this lesson for testing.  At the end of the day, it will support your various tests.  Implement the following interface in 
-
-The basis of the class is as follow
-
-```java
-package com.greenfox.lesson.junit;
-
-interface IWordToolbox {
-
-    public int countHowMany(char c);
-    public void setS(String s);
-    public String getS();
-    public boolean isAnAnagram(String stringToCheck) throws Exception ;
-    public void WaitingItOut();
-    }
-```
-
-
-Now add to this class the following methods `getS()` and `countHowMany(char c)`.  Here are some samples to give you an idea
-
-```java
-
-  WordToolbox wSource = new WordToolbox ("Tarzan's toenails");
-  System.out.println ("countHowMany(\"a\")=", wSource.countHowMany("a")); \\ countHowMany("a")=2
-  System.out.println ("countHowMany(\"T\")=", wSource.countHowMany("T")); \\ countHowMany("T")=2
-  System.out.println ("countHowMany(\"t\")=", wSource.countHowMany("t")); \\ countHowMany("t")=2
-  System.out.println ("countHowMany(\"x\")=", wSource.countHowMany("x")); \\ countHowMany("x")=0
-  System.out.println ("countHowMany(\"\")=", wSource.countHowMany("")); \\ countHowMany("")=0
-  System.out.println ("countHowMany(\" \")=", wSource.countHowMany(" ")); \\ countHowMany(" ")=1
-```
+# Your first test
+- Create a class, with one method (eg. `public String getApple()`) that returns a String (eg. `"apple"`)
+- Create a test for that.
+    - Create a test class
+    - Create a test method
+    - Instantiate an Object from your class in the method
+    - Use the `assertEquals()`
+    - The expected parameter should be the same string (eg. `"apple"`)
+    - The actual parameter should be the return of the called method (eg. `myObject.getApple()`)
+- Run the test
+- Change the expected value to make the test failing
+- Run the test
+- Fix the returned value for to make the test succeeding again

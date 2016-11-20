@@ -1,4 +1,16 @@
-# Workshop02 - First Assert
-Review the videos.  You are tasked with creating the first assertion; you've probably already tested these anyway in your `main()` however this is a weak way to test programs.  Let's move these to a Test section which we can re-visit later if we change the code.
-
-Set up a test for "Tarzan's toenails, check for "a" and other letters both in and out of the string.
+# The Second test experience
+- Create a sum method in your class which has an ArrayList of Integers as parameter
+- It should sum the elements in the list
+- Create a test for that
+    - Add a new test method
+    - Instantiate your class
+    - create a list of integers
+    - use the `assertEquals` to test the result of the created sum method
+- Run them
+- Create a test where you
+    - test your method with an empyt list
+    - with a list with one element in it
+    - with multiple elements in it
+    - with a `null`
+- Run them
+- Fix your code if needed
