@@ -10,4 +10,4 @@
 - Run the test
 - Change the expected value to make the test failing
 - Run the test
-- Fix the returned value for to make the test succeeding again
+- Fix the returned value to make the test succeeding again
