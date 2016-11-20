@@ -4,4 +4,4 @@
 - Create tests that covers all types of input (like in the previous workshop exercise)
 
 
-[Next Workshop - Testing Competition](..\TestingCompetition.md)
+[Next Workshop - Testing Competition](TestingCompetition.md)
