@@ -34,7 +34,8 @@ interface IWordToolbox {
     public void WaitingItOut();
     }
 ```
-
+So create an `Interface` like that in your project (copy-paste), and let your `WordToolbox` class implement this interface.
+Hint: In order to have a useable class you have to create the first version of all methods in the interface. Don't bother with the actual solution, just create a default, empty methods, return a default when you have to.
 
 Now add to this class the following methods `getS()` and `countHowMany(char c)`.  Here are some samples to give you an idea
 
@@ -50,6 +51,7 @@ Now add to this class the following methods `getS()` and `countHowMany(char c)`.
 ```
 
 Hint: `String` variables have `length()` and `charAt(int)`
+
 
 ## First Assert
 You are tasked with creating the first assertion; you've probably already tested these anyway in your `main()` however this is a weak way to test programs. Let's move these to a Test section which we can re-visit later if we change the code.
