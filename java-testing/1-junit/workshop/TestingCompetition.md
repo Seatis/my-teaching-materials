@@ -42,12 +42,11 @@ Now add to this class the following methods `getS()` and `countHowMany(char c)`.
 ```java
 
   WordToolbox wSource = new WordToolbox ("Tarzan's toenails");
-  System.out.println ("countHowMany(\"a\")=", wSource.countHowMany('a')); \\ countHowMany("a")=3
-  System.out.println ("countHowMany(\"T\")=", wSource.countHowMany('T')); \\ countHowMany("T")=2
-  System.out.println ("countHowMany(\"t\")=", wSource.countHowMany('t')); \\ countHowMany("t")=2
-  System.out.println ("countHowMany(\"x\")=", wSource.countHowMany('x')); \\ countHowMany("x")=0
-  System.out.println ("countHowMany(\"\")=", wSource.countHowMany(\u000)); \\ countHowMany("")=0
-  System.out.println ("countHowMany(\" \")=", wSource.countHowMany(' ')); \\ countHowMany(" ")=1
+  System.out.println ("countHowMany(\"a\")=" + wSource.countHowMany('a')); \\ countHowMany("a")=3
+  System.out.println ("countHowMany(\"T\")=" + wSource.countHowMany('T')); \\ countHowMany("T")=2
+  System.out.println ("countHowMany(\"t\")=" + wSource.countHowMany('t')); \\ countHowMany("t")=2
+  System.out.println ("countHowMany(\"x\")=" + wSource.countHowMany('x')); \\ countHowMany("x")=0
+  System.out.println ("countHowMany(\" \")=" + wSource.countHowMany(' ')); \\ countHowMany(" ")=1
 ```
 
 Hint: `String` variables have `length()` and `charAt(int)`
