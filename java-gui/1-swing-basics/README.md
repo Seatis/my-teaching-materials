@@ -108,6 +108,7 @@ public static void main(String[] args) {
   - get the width and height of window
   - calculate the center of screen
   - center the window
+![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module/java-gui/1-swing-basics/centeredwindow.png)
 
 ### "Counter app"
 *Simple app which counts all button clicks*
@@ -117,6 +118,8 @@ public static void main(String[] args) {
 - Implement ActionListener interface
   - ActionListener implementation increment a int field and set it to conuter label.
 - Add ActionListener to button.
+
+![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module/java-gui/1-swing-basics/CounterApp.png)
 
 *Reset counter*
 - Add another button to Counter app which can reset the counter.
