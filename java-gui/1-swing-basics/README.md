@@ -66,7 +66,7 @@
       - constants, default values
       
 ## Workshop
-### "Hello World"
+### Hello World
 *Create first Hello World Swing application*
 - Create HelloWorld class
 - Add JFrame and JPanel
@@ -90,11 +90,22 @@ public static void main(String[] args) {
 - Add JLabel for HelloWorld text
 - Add label to panel
 
-### "Customized Hello World"
+### Customized Hello World
 - Change the previous application to greet you. 
 - Set DefaultCloseOperation
 
-### "Window position and properties"
+### Say Hello to all the world
+*You are very happy and would say hello in different languages*
+- Add new labels to your HelloWorld panel with Helo in different languages iteratively. (use for)
+- Use the following greetings:
+```java
+String[] hellos = {"Mirëdita", "Ahalan", "Parev", "Zdravei", "Nei Ho", "Dobrý den", "Ahoj", "Goddag", "Goede dag, Hallo", "Hello", "Saluton", "Hei", "Bonjour",
+                "Guten Tag", "Gia'sou", "Aloha", "Shalom", "Namaste", "Namaste", "Jó napot", "Halló", "Helló", "Góðan daginn", "Halo", "Aksunai", "Qanuipit", "Dia dhuit",
+                "Salve", "Ciao", "Kon-nichiwa", "An-nyong Ha-se-yo", "Salvëte", "Ni hao", "Dzien' dobry", "Olá", "Bunã ziua", "Zdravstvuyte", "Hola", "Jambo", "Hujambo", "Hej",
+                "Sa-wat-dee", "Merhaba", "Selam", "Vitayu", "Xin chào", "Hylo", "Sut Mae", "Sholem Aleychem", "Sawubona"};
+```
+
+### Window position and properties
 *Fixed size window to center of your screen*
 - Modify the previous app to open in the center of your screen with 400x400 non resizable window.
 - JFrame
@@ -110,7 +121,7 @@ public static void main(String[] args) {
   - center the window
 ![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module/java-gui/1-swing-basics/centeredwindow.png)
 
-### "Counter app"
+### Counter app
 *Simple app which counts all button clicks*
 - Create Counter class
 - Initialize JFrame and JPanel
@@ -124,7 +135,7 @@ public static void main(String[] args) {
 *Reset counter*
 - Add another button to Counter app which can reset the counter.
 
-### "UI Controls"
+### UI Controls
 *Shows the value of input text box*
 - Create UIControls class which extends JFrame
 - Initialize JFrame and JPanel
@@ -152,7 +163,7 @@ Box.createRigidArea(new Dimension(0, 20));
 
 ![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module/java-gui/1-swing-basics/UIControls.png)
 
-### "Image app"
+### Image app
 *Custom image on panel*
 - Create ImageApp class which extends JFrame
 - Initialize JFrame and JPanel
