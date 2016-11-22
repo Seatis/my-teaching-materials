@@ -40,6 +40,8 @@
  - [08.cpp](workshop/08.cpp)
  - [09.cpp](workshop/09.cpp)
  - [10.cpp](workshop/10.cpp)
+ - [Advanced 11.cpp](workshop/11.cpp) ![Advanced - Hajra!](../../cpp-basics/pointers/smaller.gif?raw=true "Advanced - Hajra!")
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
