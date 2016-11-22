@@ -64,3 +64,24 @@
       - `.append(String)` - what to add to the JTextArea
     - `JScrollPane(control to which to associate, int VERTICAL, int HORIZONTAL )` - the control identified will be the one affected by the scroll bars
       - constants, default values
+      
+## Workshop
+### "Hello World"
+*Create first Hello World Swing application*
+- Create HelloWorld class
+- Add JFrame and JPanel
+- Set title of JFrame
+- Set visible the JFrame
+- How to run a program
+
+```java
+public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new HelloWorld();
+            }
+        });
+    }
+```
+
