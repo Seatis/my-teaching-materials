@@ -140,8 +140,9 @@ public static void main(String[] args) {
 Handy tools:
   - JPanel.setBorder
   - JPanel.setLayout
-  - 'Box.createRigidArea(new Dimension(0, 20))'
-  
+```java
+Box.createRigidArea(new Dimension(0, 20));
+```
 *Clear memory (Optional)*
 - Add a button which can clear the memory label.
 - Disble the clear button when memory is empty.
