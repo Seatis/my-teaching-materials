@@ -96,7 +96,7 @@ public static void main(String[] args) {
 
 ### "Window position and properties"
 *Fixed size window to center of your screen*
-Modify the previous app to open in the center of your screen with 400x400 non resizable window.
+- Modify the previous app to open in the center of your screen with 400x400 non resizable window.
 - JFrame
   - setSize
   - setResizable
