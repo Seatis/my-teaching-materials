@@ -97,13 +97,13 @@ public static void main(String[] args) {
 ### "Window position and properties"
 *Shows fixed size window to center of your screen*
 - JFrame
--- setSize
--- setResizable
--- setDefaultCloseOperation
--- setLocation
+  - setSize
+  - setResizable
+  - setDefaultCloseOperation
+  - setLocation
 
 - AWT Toolkit
--- getScreenSize
+  - getScreenSize
 
 ### "Counter app"
 *Create simple app which counts all button clicks*
@@ -111,5 +111,5 @@ public static void main(String[] args) {
 - Initialize JFrame and JPanel
 - Add a label to panel to counter text and a button too.
 - Implement ActionListener interface
--- ActionListener implementation increment a int field and set it to conuter label.
+  -ActionListener implementation increment a int field and set it to conuter label.
 - Add ActionListener to button.
