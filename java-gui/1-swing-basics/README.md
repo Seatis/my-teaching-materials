@@ -14,12 +14,11 @@
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|SwingQuickGuide (tutorialspoint)|https://www.tutorialspoint.com/swing/swing_quick_guide.htm||
-|JLabel - summary (tutorialspoint)|https://www.tutorialspoint.com/swing/swing_jlabel.htm||
-|JButton |https://www.tutorialspoint.com/swing/swing_jbutton.htm||
-|JText |https://www.tutorialspoint.com/swing/swing_jtextfield.htm||
-|JTextArea| https://www.tutorialspoint.com/swing/swing_jtextarea.htm||
-|JScrollBar - like ScrollPane?|https://www.tutorialspoint.com/swing/swing_jscrollbar.htm||
+|[SwingQuickGuide (tutorialspoint)](https://www.tutorialspoint.com/swing/swing_quick_guide.htm)||
+|[JLabel - summary (tutorialspoint)](https://www.tutorialspoint.com/swing/swing_jlabel.htm)||
+|[JButton](https://www.tutorialspoint.com/swing/swing_jbutton.htm)||
+|[JText](https://www.tutorialspoint.com/swing/swing_jtextfield.htm)||
+|[JTextArea](https://www.tutorialspoint.com/swing/swing_jtextarea.htm)||
 
 ## Material Review
 - *Frames* - `JFrame` class
