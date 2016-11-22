@@ -159,7 +159,7 @@ Box.createRigidArea(new Dimension(0, 20));
 ```
 *Clear memory (Optional)*
 - Add a button which can clear the memory label.
-- Disble the clear button when memory is empty.
+- Disable the clear button when memory is empty.
 
 ![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module/java-gui/1-swing-basics/UIControls.png)
 
