@@ -86,7 +86,7 @@ public static void main(String[] args) {
 ```
 
 
-*Show HelloWorld text*
+*HelloWorld text*
 - Add JLabel for HelloWorld text
 - Add label to panel
 
@@ -95,7 +95,7 @@ public static void main(String[] args) {
 - Set DefaultCloseOperation
 
 ### "Window position and properties"
-*Shows fixed size window to center of your screen*
+*Fixed size window to center of your screen*
 - JFrame
   - setSize
   - setResizable
@@ -104,12 +104,63 @@ public static void main(String[] args) {
 
 - AWT Toolkit
   - getScreenSize
+  - get the width and height of window
+  - calculate the center of screen
+  - center the window
 
 ### "Counter app"
-*Create simple app which counts all button clicks*
+*Simple app which counts all button clicks*
 - Create Counter class
 - Initialize JFrame and JPanel
 - Add a label to panel to counter text and a button too.
 - Implement ActionListener interface
-  -ActionListener implementation increment a int field and set it to conuter label.
+  - ActionListener implementation increment a int field and set it to conuter label.
 - Add ActionListener to button.
+
+*Reset counter*
+- Add another button to Counter app which can reset the counter.
+
+### "UI Controls"
+*Shows the value of input text box*
+- Create UIControls class which extends JFrame
+- Initialize JFrame and JPanel
+- Add a JTextField and two JLabel to panel
+- We have a JLabel to show input text and another to show memory (previous value).
+- Add and implement ActionListener interface to UIControls class.
+- actionPerformed function put the value of JTextField to first JLabel.
+- add addActionListener to JTextField
+
+*Shows and remembers the value of input text box*
+- Extends the implementation of actionPerformed function to copy the own content to memory label before shows value of input box.
+
+*BoxLayout (Optional)*
+- Format the UI Controls app with BoxLayout layout manager.
+
+Handy tools:
+  - JPanel.setBorder
+  - JPanel.setLayout
+  - 'Box.createRigidArea(new Dimension(0, 20))'
+  
+*Clear memory (Optional)*
+- Add a button which can clear the memory label.
+- Disble the clear button when memory is empty.
+
+### "Image app"
+*Custom image on panel*
+- Create ImageApp class which extends JFrame
+- Initialize JFrame and JPanel
+- Load image
+
+```java
+Toolkit.getDefaultToolkit().createImage("image.jpg");
+```
+
+- Draw image to panel in paintComponent function
+```java
+@Override
+    public void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+        requestFocus();
+        // Draw your image
+    }
+```
