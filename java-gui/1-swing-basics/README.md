@@ -85,3 +85,31 @@ public static void main(String[] args) {
     }
 ```
 
+
+*Show HelloWorld text*
+- Add JLabel for HelloWorld text
+- Add label to panel
+
+### "Customized Hello World"
+- Change the previous application to greet you. 
+- Set DefaultCloseOperation
+
+### "Window position and properties"
+*Shows fixed size window to center of your screen*
+- JFrame
+-- setSize
+-- setResizable
+-- setDefaultCloseOperation
+-- setLocation
+
+- AWT Toolkit
+-- getScreenSize
+
+### "Counter app"
+*Create simple app which counts all button clicks*
+- Create Counter class
+- Initialize JFrame and JPanel
+- Add a label to panel to counter text and a button too.
+- Implement ActionListener interface
+-- ActionListener implementation increment a int field and set it to conuter label.
+- Add ActionListener to button.
