@@ -123,3 +123,11 @@ Toolkit.getDefaultToolkit().createImage("image.jpg");
         ...
         getContentPane().setLayout(new FlowLayout());
 ```
+
+## Projects
+
+### Simple image gallery
+
+### Memory game
+
+### Tic-tac-toe (3x3)
