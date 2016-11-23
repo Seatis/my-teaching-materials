@@ -40,10 +40,58 @@ this.addMouseListener(listenForMouse);
 this.addWindowListener(listenForWindow);
 ```
 
-### Menü
+### Menu
+*Application with menu and exit menu item*
+
+- Create WrapperApp class which extends JFrame and implements ActionListener
+- Initilaize it to 500x500 non resizable and put it center.
+- You need JMenuBar, JMenu, and JMenuItem fields.
+- MenuBar >> File >> Exit (build menu hierarchy)
+- Call 'setJMenuBar(menubar);' in constructor of your frame.
+- Add action listener to exit menu item and implement it to terminate the application.
+
+```java
+System.exit(0);
+```
 
 ### Draw to image
+*Show an image in Menu app and paint it a little bit*
 
-### Workshop wrapper
+- Create an ImagePanel class which extends JPanel.
+- Download the image.jpg from repository and add it to the root of your project.
+- Load it in the constructor of ImagePanel.
+```java
+Toolkit.getDefaultToolkit().createImage("image.jpg");
+```
+- You should Override the paintComponent method of JPanel and inside of this block you can draw to this component.
+```java
+@Override
+    public void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+        requestFocus();
+        graphics.drawImage(image, 7, 25, this);
+    }
+```
+- If it is done, you should make some fun for example in the picture below. Let your imagination free!
+- Use setColor, setFont, drawString, drawOval, fillRect methods of graphics.
 
-### Complex layout
+```java
+        // Example
+        graphics.setColor(Color.BLACK);
+        graphics.setFont(new Font("Ariel", Font.BOLD, 20));
+        graphics.drawString("Heroes of Might and Magic V", 110, 420);
+
+        graphics.setColor(new Color(200, 200, 100));
+        graphics.drawOval(270, 45, 70, 120);
+
+        graphics.setColor(Color.BLUE);
+        graphics.fillRect(280, 100, 50, 10);
+
+        graphics.setColor(Color.PINK);
+        graphics.fillOval(230, 210, 15, 15);
+        graphics.fillOval(290, 210, 15, 15);
+```
+
+### Workshop wrapper (Optional)
+
+### Complex layout (Optional)
