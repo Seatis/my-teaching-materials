@@ -5,5 +5,9 @@ Having looked at how data is displayed, in this unit we look at how the events a
 Also, in this unit we set up for the Demo Project for the week.
 
 
-## Materials
+## Materials & Resources
+
+### Training
+| Material | Time |
+|:-------- |-----:|
 |[GUI Event Handling (Basic listener such as mouse, key & window), shortcut was to use Interfaces (Bana.21)](https://www.youtube.com/watch?v=qVdRxODXBcU)|13:56|
