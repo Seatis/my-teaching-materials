@@ -63,6 +63,7 @@ System.exit(0);
 ```java
 Toolkit.getDefaultToolkit().createImage("image.jpg");
 ```
+- Add panel to frame of Menu app.
 - You should Override the paintComponent method of JPanel and inside of this block you can draw to this component.
 ```java
 @Override
@@ -94,5 +95,14 @@ Toolkit.getDefaultToolkit().createImage("image.jpg");
 ```
 
 ### Workshop wrapper (Optional)
+- Create differnet classes for your previous Swing tasks which extends from JPanel.
+- Build menu hierarchy for these. (Say Hello to all the world, Counter app, UI Controls, Event counter, Draw to image)
+- Set menu click event handlers to open slected task in main window.
+```java
+        if (event.getSource() == menuItemImage) {
+            getContentPane().add(new ImagePanel());
+        }
+```
+- Now you can present your previous UI work in single application.
 
 ### Complex layout (Optional)
