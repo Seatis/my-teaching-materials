@@ -5,3 +5,4 @@
 
 ## Schedule
 - [1) Swing Basics](1-swing-basics)
+- [2) Swing More](1-swing-more)
