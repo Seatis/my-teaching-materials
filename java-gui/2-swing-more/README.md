@@ -44,7 +44,7 @@ this.addWindowListener(listenForWindow);
 *Application with menu and exit menu item*
 
 - Create WrapperApp class which extends JFrame and implements ActionListener
-- Initilaize it to 500x500 non resizable and put it center.
+- Initialize it to 500x500 non resizable and put it center.
 - You need JMenuBar, JMenu, and JMenuItem fields.
 - MenuBar >> File >> Exit (build menu hierarchy)
 - Call 'setJMenuBar(menubar);' in constructor of your frame.
