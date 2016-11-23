@@ -10,4 +10,11 @@ Also, in this unit we set up for the Demo Project for the week.
 ### Training
 | Material | Time |
 |:-------- |-----:|
-|[GUI Event Handling (Basic listener such as mouse, key & window), shortcut was to use Interfaces (Bana.21)](https://www.youtube.com/watch?v=qVdRxODXBcU)|13:56|
+|[GUI Event Handling (Basic listener such as mouse, key & window), shortcut was to use Interfaces (Bana.21)](https://www.youtube.com/watch?v=3ifwR5feRQI)|11:00|
+
+
+### Optional
+| Material | Time |
+|:-------- |-----:|
+|[Form elements in Java Swing (Bana.22)](https://www.youtube.com/watch?v=qVdRxODXBcU)|13:56|
+|[Handling them (Bana.23)](https://www.youtube.com/watch?v=wApG8SHBJ24)|11:03|
