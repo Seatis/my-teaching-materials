@@ -18,3 +18,32 @@ Also, in this unit we set up for the Demo Project for the week.
 |:-------- |-----:|
 |[Form elements in Java Swing (Bana.22)](https://www.youtube.com/watch?v=qVdRxODXBcU)|13:56|
 |[Handling them (Bana.23)](https://www.youtube.com/watch?v=wApG8SHBJ24)|11:03|
+
+## Workshop
+
+### Event counter
+*Create a new or upgrade our counter which able to count mouse, keyboard and window events according to training material.*
+
+- Initialize our event counter frame and put it to center of the screen.
+- You need three label for counters (Mouse event counter, Key event counter, Window event counter) and you should add a JTextField too.
+- Like the previous counter app you need counter variables (fields).
+- Create ListenForKeys listener which implements KeyListener interface and increment the key event counter and update text of counter label too. You can count both events. (press and release). 
+- Add this listener to text field.
+- Create ListenForMouse listener which implements MouseListener interface and increment the mouse event counter and update text of counter label. You should handle multiple clicks.
+- Add the ListenForMouse listener to JFrame.
+- Create ListenForWindow listener which implements WindowListener interface and increment the window event counter and update text of counter label too. You sould handle activate, deactivate, deiconified, iconified, opened state changes.
+- Add the ListenForWindow listener to JFrame.
+
+```java
+textField.addKeyListener(listenForKeys);
+this.addMouseListener(listenForMouse);
+this.addWindowListener(listenForWindow);
+```
+
+### Menü
+
+### Draw to image
+
+### Workshop wrapper
+
+### Complex layout
