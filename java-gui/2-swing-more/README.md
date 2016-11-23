@@ -95,6 +95,7 @@ Toolkit.getDefaultToolkit().createImage("image.jpg");
 ```
 
 ### Workshop wrapper (Optional)
+*Wrapper app for your previous tasks*
 - Create differnet classes for your previous Swing tasks which extends from JPanel.
 - Build menu hierarchy for these. (Say Hello to all the world, Counter app, UI Controls, Event counter, Draw to image)
 - Set menu click event handlers to open slected task in main window.
@@ -106,3 +107,19 @@ Toolkit.getDefaultToolkit().createImage("image.jpg");
 - Now you can present your previous UI work in single application.
 
 ### Complex layout (Optional)
+![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module_2/java-gui/2-swing-more/complexpanel.png)
+- You need left and right JPanel.
+- Set layout of left panel to GridLayout.
+- Add buttons to left panel.
+- Set layout of right panel to BorderLayout.
+- Add buttons to right panel too.
+- Set layout of conctet pane to FlowLayout and add panels to conctet pane.
+- It is done.
+
+```java
+        left.setLayout(new GridLayout(3, 1, 5, 5));
+        ...
+        right.setLayout(new BorderLayout(10, 10));
+        ...
+        getContentPane().setLayout(new FlowLayout());
+```
