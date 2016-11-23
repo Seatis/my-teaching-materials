@@ -73,6 +73,7 @@ Toolkit.getDefaultToolkit().createImage("image.jpg");
     }
 ```
 - If it is done, you should make some fun for example in the picture below. Let your imagination free!
+![alt tag](https://raw.githubusercontent.com/greenfox-academy/teaching-materials/kicsen_java-gui_module_2/java-gui/2-swing-more/image_example.png)
 - Use setColor, setFont, drawString, drawOval, fillRect methods of graphics.
 
 ```java
