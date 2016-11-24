@@ -1,4 +1,4 @@
-# Struct
+# Misc
 *Define classes, properties and methods, then creating instances and mutate them*
 
 ## Objectives
