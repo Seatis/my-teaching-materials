@@ -1,4 +1,4 @@
-# Struct
+# Vectors
 *Define classes, properties and methods, then creating instances and mutate them*
 
 ## Objectives
@@ -11,10 +11,20 @@
 | [C++ Tutorial 18 - Vectors and Vector Functions](https://www.youtube.com/watch?v=Cq1h1KPoGBU) | 16:13 |
 | [C++ Tutorial 19 - Vectors as Parameters](https://www.youtube.com/watch?v=ReWNqNAhlkY) | 21:55 |
 | [C++ Tutorial 21 - Vectors of Objects](https://www.youtube.com/watch?v=iPlW5tSUOUM) | 26:55 |
+| [C++ Tutorial: A Beginner's Guide to std::vector, Part 1](http://www.codeguru.com/cpp/cpp/cpp_mfc/stl/article.php/c4027/C-Tutorial-A-Beginners-Guide-to-stdvector-Part-1.htm) | text |
 
 
 ## Material Review
- - 
+ - vectors
+ - vector constructor
+ - vector functions
+ - `.begin`, `.end`
+ - `.size`, `.capacity`, .`.reserve`
+ - `.empty`, `.clear`
+ - `.push_back`, `.pop_back`
+ - operator[], `.at`, `.swap`
+ - vector as parameters
+ - vector of objects
 
 
 ## Excercises
