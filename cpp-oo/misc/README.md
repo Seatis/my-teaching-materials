@@ -25,6 +25,24 @@
  - deep copy
 
 #### Excercises
+Implement the game called Bulls and Cows
+
+Please read the rules of the game:
+https://en.wikipedia.org/wiki/Bulls_and_Cows
+
+Features:
+ - The game should generate a random 4 digit number
+ - It should ask guesses in the standard input, than answer on the standard output
+ - The answer should show the number of Cows and Bulls like: `Cows: 2, Bulls: 2`
+ - If the guess is right it should print: `Congratulations: You win!`
+ - If the player could not figure out the number in 10 rounds it should print: `Game over!`
+ - Every invalid guess that is not a 4 digit number should raise an error like: `Please provide a 4 digit number` and re-request the guess
+
+Try to use the concepts you have learned this week, you are free to use any
+method or tool you find online. Try to separate responsibilites and create
+small self-contained functions and classes that are only doing one thing.
+Pay attention when you are naming things also be conscious about your commits
+and commit messages.
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
