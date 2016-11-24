@@ -24,7 +24,7 @@
  - shallow copy
  - deep copy
 
-#### Excercises
+## Excercises
 Implement the game called Bulls and Cows
 
 Please read the rules of the game:
@@ -41,6 +41,8 @@ Features:
 Try to use the concepts you have learned this week, you are free to use any
 method or tool you find online. Try to separate responsibilites and create
 small self-contained functions and classes that are only doing one thing.
+Separate the logic of the game from the representation how it is played in the
+terminal.
 Pay attention when you are naming things also be conscious about your commits
 and commit messages.
 
