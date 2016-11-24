@@ -19,7 +19,7 @@
  - vector constructor
  - vector functions
  - `.begin`, `.end`
- - `.size`, `.capacity`, .`.reserve`
+ - `.size`, `.capacity`, `.reserve`
  - `.empty`, `.clear`
  - `.push_back`, `.pop_back`
  - operator[], `.at`, `.swap`
