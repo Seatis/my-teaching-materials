@@ -8,7 +8,7 @@ Project = Calorie Counter
 Week 09
 - Intro, Boot, HelloWorld - Krisztián
 - Thymeleaf, Models, Views - Misi
-- [Beans (IoC), Config](.\ioc-bean\README.md) - Inversion of Control and using the Bean Factory Pattern
+- [Beans (IoC), Config](./ioc-bean/README.md) - Inversion of Control and using the Bean Factory Pattern
 - Database integration - Eric
 - Project finish
 
