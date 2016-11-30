@@ -1,40 +1,44 @@
-import java.util.Date;
+import org.joda.time.LocalDate;
+
 import java.util.Scanner;
 
-public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> {
+/**
+ * Created by kicsen on 2016. 11. 30..
+ */
+public class BirthdayWithJodaTime implements BirthdayCalculator<LocalDate> {
 
     @Override
-    public Date parseDate(String str) {
+    public LocalDate parseDate(String str) {
         // TODO - return with the parsed date; format is: yyyy-MM-dd
         return null;
     }
 
     @Override
-    public String printMonthAndDay(Date date) {
+    public String printMonthAndDay(LocalDate date) {
         // TODO - return the date formatted: month & day (MM. dd.)
         return null;
     }
 
     @Override
-    public boolean isAnniversaryToday(Date date) {
+    public boolean isAnniversaryToday(LocalDate date) {
         // TODO - return with true if today is the same month+day as date
         return false;
     }
 
     @Override
-    public int calculateAgeInYears(Date birthday) {
+    public int calculateAgeInYears(LocalDate birthday) {
         // TODO - return how many years age the input date 'birthday' was
         return -1;
     }
 
     @Override
-    public int calculateDaysToNextAnniversary(Date date) {
+    public int calculateDaysToNextAnniversary(LocalDate date) {
         // TODO - the number of days remaining to the next anniversary of 'date' (e.g. if tomorrow, return 1)
         return -1;
     }
 
     public static void main(String[] args) {
-        new BirthdayWithJavaUtilDate().run();
+        new BirthdayWithJodaTime().run();
     }
 
     private void run() {
@@ -42,7 +46,7 @@ public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> 
         print("Birthday with java.util.Date.");
         String birthdayStr = readInput("What day were you born (yyyy-mm-dd)?");
 
-        Date birthdayDate = parseDate(birthdayStr);
+        LocalDate birthdayDate = parseDate(birthdayStr);
         print("Your birthday: " + printMonthAndDay(birthdayDate));
 
         if (isAnniversaryToday(birthdayDate)) {
@@ -64,5 +68,4 @@ public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> 
     }
 
     private final Scanner input = new Scanner(System.in, "UTF-8");
-
 }

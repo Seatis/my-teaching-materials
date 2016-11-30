@@ -26,6 +26,14 @@ public final class TestJavaUtilBirthdayCalculator {
     }
 
     @Test
+    public void printMonthAndDay() throws Exception {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date expectedDate = dateFormat.parse("2014-10-17");
+        String monthAndDay = birthdayCalculator.printMonthAndDay(expectedDate);
+        assertEquals("10. 17.", monthAndDay);
+    }
+
+    @Test
     public void testIsAnniversaryToday() throws Exception {
         GregorianCalendar gregorianCalendar = createPreviousYearGregorianCalendar();
 
