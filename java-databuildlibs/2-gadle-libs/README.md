@@ -34,8 +34,9 @@
       - Use maven central repositiry.
       - You are going to use newest stable versions of "guava", "joda-time", "slf4j-log4j12" and "junit" java libraries. Add these to gradle dependencies.
       - (We use Java/JDK 1.7)
+- Create .gitignore file and roles
 - Build and run BirthdayWithJavaUtilDate.java
 - Run TestJavaUtilDate.java unit test.
-- If both java files compilable and runnable this task is done.
+- If both java files compilable and runnable please commit your code and this task is done.
 
 # Birthday Calculator with Java Util Date
