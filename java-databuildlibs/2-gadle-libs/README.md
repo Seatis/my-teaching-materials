@@ -30,10 +30,10 @@
 - Project name: jodatime
 - Copy sources from git repo to src folder of your project
 - Gradle setting:
--     You need java plugin.
--     Use maven central repositiry.
--     You are going to use newest stable versions of "guava", "joda-time", "slf4j-log4j12" and "junit" java libraries. Add these to gradle dependencies.
--     (We use Java/JDK 1.7)
+      - You need java plugin.
+      - Use maven central repositiry.
+      - You are going to use newest stable versions of "guava", "joda-time", "slf4j-log4j12" and "junit" java libraries. Add these to gradle dependencies.
+      - (We use Java/JDK 1.7)
 - Build and run BirthdayWithJavaUtilDate.java
 - Run TestJavaUtilDate.java unit test.
 - If both java files compilable and runnable this task is done.
