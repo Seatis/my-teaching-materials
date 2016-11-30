@@ -22,7 +22,7 @@
       
 ## Workshop
 
-# New Gradle project
+### New Gradle project
 *Create new Gradle project in IntelliJ as tutorial.*
 - New project (Gradle, Java)
 - Group id: hu.greenfox, Artifact id: jodatime
@@ -39,14 +39,14 @@
 - Run TestJavaUtilDate.java unit test.
 - If both java files compilable and runnable please commit your code and this task is done.
 
-# Birthday Calculator with Java Util Date
+### Birthday Calculator with Java Util Date
 
 - Open BirthdayWithJavaUtilDate class and iplement the empty methods of BirthdayCalculator interface. Please use simple java util date only.
 - Run, try and correct your program.
 - Run unit tests of TestJavaUtilBirthdayCalculator.
 - Improve your program as long as all tests run well.
 
-# Birthday Calculator with Joda-Time
+### Birthday Calculator with Joda-Time
 
 - Open BirthdayWithJodaTime class and iplement the empty methods of BirthdayCalculator interface. You should use Joda-Time library now.
 - Run, try and correct your program.
