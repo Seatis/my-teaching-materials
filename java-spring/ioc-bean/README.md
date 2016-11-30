@@ -120,5 +120,5 @@ In today's workshops you'll be
 - Challenges  
 
 #Links
-- [Parent - Java OO](../README.md)
-- [Next - Packages and Inheritance ](../2-packages-and-inheritance/README.md)
+- [Parent - Java Spring](../README.md)
+- [Next - Database Integration](../database-integration/README.md)
