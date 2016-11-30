@@ -18,7 +18,7 @@
 |[Gradle Custom Tasks (EP3)](https://www.youtube.com/watch?v=g56O_HeefBE)|29:53|
 |[Introduction to Google Guava](http://zetcode.com/articles/guava/)||
 |[Overview of Guava](https://www.youtube.com/watch?v=MFEJll-wU7Q)|55:56|
-|[Introducing the Java Time API in JDK 8](https://www.youtube.com/watch?v=CtD9B9TU_cY)|58:37|
+|[Introducing the Java Time API in JDK 8 (Advanced)](https://www.youtube.com/watch?v=CtD9B9TU_cY)|58:37|
 
 ## Material Review
       
