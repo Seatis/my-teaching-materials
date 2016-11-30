@@ -41,7 +41,14 @@
 
 # Birthday Calculator with Java Util Date
 
-- Open BirthdayWithJavaUtilDate class and iplement the empty methods of BirthdayCalculator interface. Pleas use simple java util date only.
+- Open BirthdayWithJavaUtilDate class and iplement the empty methods of BirthdayCalculator interface. Please use simple java util date only.
 - Run, try and correct your program.
 - Run unit tests of TestJavaUtilBirthdayCalculator.
+- Improve your program as long as all tests run well.
+
+# Birthday Calculator with Joda-Time
+
+- Open BirthdayWithJodaTime class and iplement the empty methods of BirthdayCalculator interface. You should use Joda-Time library now.
+- Run, try and correct your program.
+- Run unit tests of TestJodaTimeBirthdayCalculator.
 - Improve your program as long as all tests run well.
