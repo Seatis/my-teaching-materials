@@ -31,7 +31,7 @@
 - Copy sources from git repo to src folder of your project
 - Gradle setting:
       - You need java plugin.
-      - Use maven central repositiry.
+      - Use maven central repository.
       - You are going to use newest stable versions of "guava", "joda-time", "slf4j-log4j12" and "junit" java libraries. Add these to gradle dependencies.
       - (We use Java/JDK 1.7)
 - Create .gitignore file and roles
@@ -40,3 +40,8 @@
 - If both java files compilable and runnable please commit your code and this task is done.
 
 # Birthday Calculator with Java Util Date
+
+- Open BirthdayWithJavaUtilDate class and iplement the empty methods of BirthdayCalculator interface. Pleas use simple java util date only.
+- Run, try and correct your program.
+- Run unit tests of TestJavaUtilBirthdayCalculator.
+- Improve your program as long as all tests run well.
