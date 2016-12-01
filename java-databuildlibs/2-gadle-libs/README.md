@@ -28,7 +28,7 @@
 - Group id: hu.greenfox, Artifact id: jodatime
 - Check auto-import and create directories for empty content roots options
 - Project name: jodatime
-- Copy sources from git repo to src folder of your project
+- Copy sources from git repo (src folder OR content of src.zip) to root folder of your project
 - Gradle setting:
       - You need java plugin.
       - Use maven central repository.
