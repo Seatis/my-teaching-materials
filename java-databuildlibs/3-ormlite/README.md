@@ -48,3 +48,18 @@
   - clearTable(ConnectionSource, Class)
 
 ## Workshop
+
+### Account sample
+Implement the sample project from ORMLite's documentation.
+
+- Create a new Java project
+- Add [Workshop01.java](workshop/Workshop01.java) to the project (this is the entry point)
+- Add ormlite-core (com.j256.ormlite:ormlite-core:4.30), ormlite-jdbc (com.j256.ormlite:ormlite-jdbc:4.30) and h2 (com.h2database:h2:1.4.1892) packages to the project from Maven
+- Create an Account class with a name and a password property. Do not forget to add the required Annotations to the class and to the fields.
+- Make sure the project compiles
+
+The last line of the output has to be the following:
+
+```
+Account: Captain America
+```
