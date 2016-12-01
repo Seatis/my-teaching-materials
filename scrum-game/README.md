@@ -28,10 +28,12 @@ Plan your architecture. In your architecture you should consider the following c
     - handling events
     - current game
 
-#### 4. Create task breakdown in Trello together.
+#### 5. Create task breakdown in Trello together.
 Now that you see the big picture, **go through the stories together** and break them down into tasks:
   - To classes
   - To methods
   - To data and actions
 Try to estimate the time needed for each task and story.   
 While working on them later, track your time spent on each.
+
+#### 6. Start working on your first task!
