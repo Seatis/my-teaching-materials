@@ -4,6 +4,7 @@
     - The specification and the stories *are not* designed for working with layouts
     - but to work well with drawing on a canvas
     - Note: of course the project is doable in any case and using any architecture, just easier to follow the stories when using only one component (eg. `JComponent`)
+    - This doesn't mean you have to put everything in one class. You should create and use multiple classes, just not swing components but yours with your own draw method.
 - When reading through the specification and the stories keep this in mind.
 - Here's an example of a big drawable canvas with one image painted on it:
 ```java
