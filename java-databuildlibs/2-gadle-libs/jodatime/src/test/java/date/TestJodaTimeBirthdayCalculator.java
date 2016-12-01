@@ -1,7 +1,5 @@
 package date;
 
-import date.BirthdayCalculator;
-import date.BirthdayWithJodaTime;
 import org.joda.time.DateTime;
 import org.joda.time.Interval;
 import org.joda.time.LocalDate;
@@ -71,21 +69,32 @@ public class TestJodaTimeBirthdayCalculator {
 
     @Test
     public void testCalculateDaysToNextAnniversary() throws Exception {
+        int expected = getExpectedDaysToNextAnniversary(EXPECTED_DATE);
+        assertEquals(expected, birthdayCalculator.calculateDaysToNextAnniversary(EXPECTED_DATE));
+
+        LocalDate localDate = LocalDate.parse("1980-01-12", DateTimeFormat.forPattern("yyyy-MM-dd"));
+        expected = getExpectedDaysToNextAnniversary(localDate);
+        assertEquals(expected, birthdayCalculator.calculateDaysToNextAnniversary(localDate));
+
+        localDate = LocalDate.now();
+        expected = getExpectedDaysToNextAnniversary(localDate);
+        assertEquals(expected, birthdayCalculator.calculateDaysToNextAnniversary(localDate));
+    }
+
+    private int getExpectedDaysToNextAnniversary(LocalDate date) {
         DateTime now = DateTime.now();
-        Interval interval;
         int expected;
-        if (now.getDayOfYear() == EXPECTED_DATE.getDayOfYear()) {
+        if (now.getDayOfYear() == date.getDayOfYear()) {
             expected = 0;
-        } else if (now.getDayOfYear() > EXPECTED_DATE.getDayOfYear()) {
-            interval = new Interval(now, new DateTime(now.getYear() + 1, EXPECTED_DATE.getMonthOfYear(), EXPECTED_DATE.getDayOfMonth(), 12, 0, 0));
+        } else if (now.getDayOfYear() > date.getDayOfYear()) {
+            Interval interval = new Interval(now, new DateTime(now.getYear() + 1, date.getMonthOfYear(), date.getDayOfMonth(), 12, 0, 0));
             expected = (int) interval.toDuration().getStandardDays();
         } else {
-            DateTime end = new DateTime(now.getYear(), EXPECTED_DATE.getMonthOfYear(), EXPECTED_DATE.getDayOfMonth(), now.getHourOfDay(), now.getMinuteOfHour(), now.getSecondOfMinute());
-            interval = new Interval(now, end);
+            DateTime end = new DateTime(now.getYear(), date.getMonthOfYear(), date.getDayOfMonth(), now.getHourOfDay(), now.getMinuteOfHour(), now.getSecondOfMinute());
+            Interval interval = new Interval(now, end);
             expected = (int) interval.toDuration().getStandardDays();
         }
-
-        assertEquals(expected, birthdayCalculator.calculateDaysToNextAnniversary(EXPECTED_DATE));
+        return expected;
     }
 
     @Test(expected = NullPointerException.class)
