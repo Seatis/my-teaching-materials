@@ -4,7 +4,7 @@
 ## Knowledge & Skills
 
 ## Schedule
-- [1) SQL](1-sql-basics)
+- [1) SQL](../sql-basics/1-plain)
 - [2) Gradle, Libs (joda-time, guava)](2-gadle-libs)
 - [3) ORMLite](3-ormlite)
 - [4) Annotations++ Project Lombok](4-lombok)
