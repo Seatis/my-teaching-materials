@@ -41,14 +41,21 @@
 
 ### Birthday Calculator with Java Util Date
 
-- Open BirthdayWithJavaUtilDate class and iplement the empty methods of BirthdayCalculator interface. Please use simple java util date only.
+- Open BirthdayWithJavaUtilDate class from date package and implement the empty methods of BirthdayCalculator interface. Please use simple java util date only.
 - Run, try and correct your program.
 - Run unit tests of TestJavaUtilBirthdayCalculator.
 - Improve your program as long as all tests run well.
 
 ### Birthday Calculator with Joda-Time
 
-- Open BirthdayWithJodaTime class and iplement the empty methods of BirthdayCalculator interface. You should use Joda-Time library now.
+- Open BirthdayWithJodaTime class from date package and implement the empty methods of BirthdayCalculator interface. You should use Joda-Time library now.
 - Run, try and correct your program.
 - Run unit tests of TestJodaTimeBirthdayCalculator.
+- Improve your program as long as all tests run well.
+
+### Handy Guava tools
+
+- Open GuavaTasks from guava package class and implement the missing part of constructor and empty methods acording to TODOs. You must use Google Common Utility libraries (Guava) for your solutions
+- Run, try and correct your program.
+- Run unit tests of TestGuavaTasks.
 - Improve your program as long as all tests run well.
