@@ -118,3 +118,10 @@ Floor tile | Wall tile
 ##### Random map
 - When map is created the placement of walls should be random
 - Make sure that all floor tiles are connected
+
+##### Leveling
+- Add more hp / damage to the hero according to the specification
+- Add more hp / damage to the monsters
+- Implement random events which happen when entering the new area
+
+##### Monsters moving around

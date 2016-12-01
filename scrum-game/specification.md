@@ -50,7 +50,7 @@ This is a hero based walking on tiles and killing monsters type of game. Heroes 
 - on a successful strike the other character's HP is decreased by the SV - the other character's DP
 
 #### Leveling
-- after successfully won battle the character is levelling up
+- after successfully won battle the character is leveling up
 - his max HP increases by d6
 - his DP increases by d6
 - his SP increases by d6
