@@ -35,7 +35,6 @@ public class PositionedImage {
     public PositionedImage(String filename, int posX, int posY) {
         this.posX = posX;
         this.posY = posY;
-        this.observer = observer;
         try {
             image = ImageIO.read(new File(filename));
         } catch (IOException e) {
