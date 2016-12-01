@@ -6,6 +6,7 @@ Build a hero based walking on tiles and killing monsters type of game. Heroes an
 #### 1. Go through the language specific notes first
 - [Java focus](java.md)
 - [Python focus](python.md)
+
 #### 2. Go through the [project specification](specification.md).
 #### 3. Create a Trello board for your work and add the [project stories](stories.md).
 #### 4. Form groups and plan your application together.
