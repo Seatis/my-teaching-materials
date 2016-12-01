@@ -28,7 +28,6 @@ public class Car {
         return price;
     }
 
-
     public String getModel() {
         return model;
     }

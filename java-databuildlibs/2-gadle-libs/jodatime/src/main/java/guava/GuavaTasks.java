@@ -24,37 +24,37 @@ public class GuavaTasks {
 
         // TODO: Initialize cars list with car variables above. You should use Lists.newArrayList() utils of Guava.
 
-        // END of implementation part
+        // END of your implementation part
         this.carTitles = generateCarTitles();
     }
 
-    private String printCar(Car car) {
+    String printCar(Car car) {
         // TODO: Print cars in human readable format without toString implementation. "
         // Hint: MoreObjects.toStringHelper
         return null;
     }
 
-    private Collection<String> generateCarTitles() {
+    Collection<String> generateCarTitles() {
         // TODO: Create String collection from title of cars. Title format: name (model) e.g.: Volvo (XC90)
         // Hint: You should use Lists.newArrayList() utils of Guava.
         // Advanced hint: You may try Guava Function/Predicate and Collections2.transform too.
         return null;
     }
 
-    private String concatCarTitles(Collection<String> carTitles) {
-        // TODO: Build string from carTitles like: "Audi (A4), Mercedes (), Skoda (), Volvo (XC90), Volvo (V40)"
+    String concatCarTitles(Collection<String> carTitles) {
+        // TODO: Build string from carTitles like: "Audi (A4), Mercedes (), Skoda (null), Volvo (XC90), Volvo (V40)"
         // Hint: You should use Guava Joiner.
         return null;
     }
 
-    private Collection<String> generateCarTitlesWithoutEmpty(Collection<Car> cars) {
+    Collection<String> generateCarTitlesWithoutEmpty(Collection<Car> cars) {
         // TODO: You should upgrade generateCarTitles functionality here to skip model if it is empty or null.
         // "Audi (A4), Mercedes, Skoda, Volvo (XC90), Volvo (V40)"
         // Hint: You should use Guava Strings.isNullOrEmpty()
         return null;
     }
 
-    public Collection<Car> findCar(String name, Integer priceLimit) {
+    Collection<Car> findCar(final String name, final Integer priceLimit) {
         // TODO: Check name is not null or empty and throw IllegalArgumentException if it is.
         // TODO: Check priceLimit is not null and throw NullPointerException if it is.
         // TODO: Check priceLimit is greater than 0 and throw IllegalArgumentException if it is not.
