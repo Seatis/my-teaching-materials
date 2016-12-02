@@ -1,5 +1,7 @@
 # Object Relational Mapping with ORMLite
-> Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems in object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language. There are both free and commercial packages available that perform object-relational mapping, although some programmers opt to construct their own ORM tools. - Wikipedia
+> Object-relational mapping (ORM, but also referred to as *O/RM* and the *O/R mapping tool*) is a programming technique for converting data between incompatible data type systems which arise in object-oriented programming. In effect, it creates, a *virtual object database* that one can use from within the programming language. There are both free and commercial packages available that perform ORM.  However, some programmers opt to construct their own ORM tools. 
+
+Synopsised from Wikipedia
 
 ## Materials & Resources
 
@@ -70,18 +72,20 @@ Account: Captain America
 ```
 
 ### Use SQLite as a database
-In the previous exercise you used an in-memory H2 database for testing purposes. In this exercise you are going to change the database to use an embedded SQLite instead of H2. (More info about [SQLite](https://en.wikipedia.org/wiki/SQLite))
+In the previous exercise you used an in-memory H2 database for testing purposes. In this exercise you are going to change the database to use an embedded version of SQLite instead of H2. (More info about [SQLite](https://en.wikipedia.org/wiki/SQLite))
 
-- Include [Workshop02.java](workshop/Workshop02.java) in the previous project
+- Include [Workshop02.java](workshop/Workshop02.java) from the previous project
 - Change the `databaseUrl` variable to `jdbc:sqlite:accounts.db`
 - Run the application (you should see a new `accounts.db` in your project folder)
 - It is an SQLite database file and you can open it with `DB Browser for SQLite` ([download it](http://sqlitebrowser.org/))
 - You should see something like this:
+
 ![SQLite browser](workshop02_sqlitebrowser.png)
+
 
 ### Add at least 3 Accounts to the database
 
-- Use the previous class (Workshop02.java) and complete it with some lines of code which inserts 3 or 4 different accounts __without duplicates__ (add Iron Man, Wolverine, Hulk, Loki)
+- Use the previous class (Workshop02.java) and complete it with some lines of code which inserts 3 or 4 different accounts __without duplicates__ (add *Iron Man*, *Wolverine*, *Hulk* and *Loki*)
 - Iterate through all the accounts from the database and print its name
 
 Expected output (the order can differ):
@@ -122,7 +126,8 @@ country =  Hungary,
 street =  Andrássy út
 }
 ```
-- Implement the toString() function in the Account class also
+- Implement the `toString()` function in the Account class also
+
 ```
 {
 name =  Captain America,
