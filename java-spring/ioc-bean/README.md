@@ -12,8 +12,6 @@ Beans are defined in a variety of combinable ways:-
 - during execution of the object (not recommended)
 - annotations to the caller code - which is prescanned to generate the xml configuration.
 
-Most of the materials use the xml approach, however, the annotation method is easier.
-
 This is a large topic and we will only cover the basics as it's both used by many and we will revisit these concepts later.  In the Materials & Resources for this unit we:-
 - introduce the concept of IoC
 - review the bean factory model
@@ -26,26 +24,37 @@ This is a large topic and we will only cover the basics as it's both used by man
 ## Materials & Resources
 
 ### Training
+In selecting materials, the introduction to this topic starts with the XML approach and then explains the annotation method.  Annotation is quicker to code than annotation and preferred.  XML's advantage is that you see all there is to know about a bean in a single place.  As you need to understand what you're doing, we start by showing the XML - but, as in many cases as you are turning out beans that are closely related to their classes, you'll more likely use the annotation approach.  
+
+Please bear with the explanation in XML; we'll only expect though that you use annotation.
+
 | Material | Time |
 |:---------|-----:|
-|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how we get to needing a Bean Factory|14:51|
+|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the  need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
 |[Creating beans - XML (JavaBrains.04)](https://www.youtube.com/watch?v=7c6ZTF6cF88&s=10) - starts off doing this the way we know and then repeats using the Bean Factory pattern.|11:21|
-|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=Oft0a5IUalQ)|2:22|
+|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
+|[@Component annotation (Telusko)](https://www.youtube.com/watch?v=4fZJfqpnyWg) - this is fairly clear and quick |6:35|
+|[`@Component(<name>)` and `@scope("singleton"|"prototype")`](https://www.youtube.com/watch?v=ELKrfHIvvPI&s=240) - watch this just for the `@Component(<name>)` and `@scope()`|7:21|
 |[ApplicationContext - XML (JavaBrains.05)](https://www.youtube.com/watch?v=ZxLaEovze3M)|7:36|
 |[Constructor - XML (JavaBrains.06)](https://www.youtube.com/watch?v=IOZzxmJVus0) - once you get the principle, speed through the rest|13:59|
-|[Creation &amp; Destruction methods (gontuseries.14)](https://www.youtube.com/watch?v=CZzmmP2Soy4)|10:40|
+|[Creation &amp; Destruction methods - annotation &amp; xml (gontuseries.13)](https://www.youtube.com/watch?v=CZzmmP2Soy4)|10:40|
 |[Injecting subordinate objects - XML (JavaBrains.07)](https://www.youtube.com/watch?v=g15RcFyEcrk)|15:18|
 |[Autowiring - XML (JavaBrains.10)](https://www.youtube.com/watch?v=suiEGbKf21g)|7:26|
-|
+|[Autowire - annotation (JavaBrains.19)](https://www.youtube.com/watch?v=IVIhVJJGo68)|14:19|
+
 Once you understand the Bean Factory, consider rewatching JavaBrains.01.
+
 
 ### Optional
 | Material | Time |
 |:---------|-----:|
-|[Autowire - annotation](https://www.youtube.com/watch?v=IVIhVJJGo68)|14:19|
 |[Inner Beans, Aliasing and Enforcing completeness (idref) - XML (JavaBrains.08)](https://www.youtube.com/watch?v=TW51XsixMqA)|9:50|
+|[Enforcing completeness `@required` annotation (JavaBrains.18)](https://www.youtube.com/watch?v=Fs_IoEGSP-A)|9:53|
+|[Easy Tutorials](https://www.tutorialspoint.com/spring/spring_ioc_containers.htm) - great resource for quick checking||
 |[Spring's detailed discussion on Beans](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html) - this is the defacto, *go to* site for Spring and Beans.|170 pages|
+
+
 
 ## Review
 - Container (creates the objects needed; instantiates from *blueprint*)
@@ -82,16 +91,25 @@ Once you understand the Bean Factory, consider rewatching JavaBrains.01.
         - value - initial value
 - wiring
 - constructor injection
+- `@bean(name=<>)`
+- `@configuration`
+- `@required`
+- `@autowired`
+- `@component`
+- `@scope` - prototype, singleton
 
 - libraries
-  - `org.springframework.context.annotation.CommonAnnotationBeanPostProcessor` - to reach additional annotation directives such as `@PostConstruct` &amp; `@PreDestroy`
-  - `org.springframework.beans.factory.DisposableBean`
-  - `org.springframework.beans.factory.InitializingBean`
+  - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
+  - `org.springframework.beans.factory.*`
+
 - Different ways of instantiating the Factory
   - BeanFactory fac = new XmlBeanFactory (new FileSystemResource ("beans.xml")
     - `.getBean(String nameOfTheBean)`  has to be classed e.g. `Account a = (Account)fac.getBean("accObj");`
   - ApplicationContext fac = FileSystemXmlApplicationContext("c:\\TestAC\\beans.xml") //whereever located
     - or ClassPathXmlApplicationContext(); \\will search down the classpath
+    - or AnnotationConfigApplicationContext();  \\when using @bean() - having a Java class instead of an XML file (described earlier in [Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) )
+- the naming convention for beans; start off lowercase (as opposed to a Class)
+
 
 ### Optional Items
 - idref
@@ -102,11 +120,16 @@ Once you understand the Bean Factory, consider rewatching JavaBrains.01.
 
 
 ## Workshops
-In today's workshops you'll be 
+In today's workshops you'll be creating a few simple beans.  The beans are critical for later stuff we'll do.  So right now it's just getting a basic feel for how to write.
 
 - Simple bean creation
   - hello world - https://www.youtube.com/watch?v=OQIsKgfkYcE&t=1000
   - id attrib specifying the name, class the fully qualified name - https://www.youtube.com/watch?v=gy4I_jmwu9k
+  http://www.java2novice.com/spring/spring-java-based-configuration/
+  
+  other ideas
+  http://www.java2novice.com/spring/inject-list-into-spring-bean/
+  
   - redo with annotation
 - Lifecycle
   - on create
@@ -117,7 +140,9 @@ In today's workshops you'll be
   - using autowire byName
   - using autowire byClass
 
-- Challenges  
+- Challenge/Real World application -
+  - Point Of Sales card reader call to the backend.  
+
 
 #Links
 - [Parent - Java Spring](../README.md)
