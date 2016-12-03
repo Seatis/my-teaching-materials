@@ -7,4 +7,4 @@ Materials are split to 4 segments:
  - TDD and first complex problems
  - Building a game
 
-### Please not that this repo is in work in progress mode
+[Expected Knowledge and Skills at the end of the Python Module](knowledge-skills.md)
