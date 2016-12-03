@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class Workshop03 {
     public static void main(String[] args) throws SQLException {
-        String databaseUrl = "jdbc:sqlite:accounts03.db";
+        String databaseUrl = "FILL ME IN";
 
         ConnectionSource connectionSource = new JdbcConnectionSource(databaseUrl);
 
@@ -19,14 +19,16 @@ public class Workshop03 {
                 DaoManager.createDao(connectionSource, Account.class);
 
 
-        Account account = accountDao.queryForId("Captain America");
-        if(account == null) {
-            Account newAccount = new Account("Captain America", "uejnsd632**234.", new Address("1061", "Andrássy út", "Hungary", "Budapest"));
-
-            accountDao.create(newAccount);
-        }
+        Account account = new Account("Captain America", "uejnsd632**234.");
+        createAccountIfNotExists(accountDao, account);
 
         account = accountDao.queryForId("Captain America");
         System.out.println("Account: " + account.toString());
+    }
+
+    private static void createAccountIfNotExists(Dao<Account, String> accountDao, Account acc) throws SQLException {
+        if(accountDao.queryForId(acc.getName()) == null) {
+            accountDao.create(acc);
+        }
     }
 }

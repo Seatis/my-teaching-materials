@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class Workshop02 {
     public static void main(String[] args) throws SQLException {
-        String databaseUrl = "jdbc:sqlite:accounts02.db";
+        String databaseUrl = "FILL ME IN";
 
         ConnectionSource connectionSource = new JdbcConnectionSource(databaseUrl);
 
