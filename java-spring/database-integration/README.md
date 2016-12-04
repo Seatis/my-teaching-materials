@@ -6,12 +6,15 @@ Explain
 ### Training
 | Material | Time |
 |:---------|-----:|
+|Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
 
 ### Optional
 | Material | Time |
 |:---------|-----:|
 
 ## Review
+- org.springframework.boot.CommandLineRunner;
+
 
 ### Optional Items
 

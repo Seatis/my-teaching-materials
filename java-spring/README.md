@@ -9,7 +9,7 @@ Week 09
 - Intro, Boot, HelloWorld - Krisztián
 - Thymeleaf, Models, Views - Misi
 - [Beans (IoC), Config](./ioc-bean/README.md) - Inversion of Control and using the Bean Factory Pattern
-- [Database Integration](./database-integration/README.md) 
+- Database integration - Eric
 - Project finish
 
 Week 10- Spring 02
