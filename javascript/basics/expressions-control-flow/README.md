@@ -399,5 +399,5 @@ console.log(add(1, 2));
  - [45.js](workshop/45.js)
 
 ### Bonus Excercises
-- rewrite the python command line [recursion exercises](../../week-04/4-recursion) in JavaScript
+- rewrite the python command line [recursion exercises](../../../python/recursion) in JavaScript
 - watch https://www.destroyallsoftware.com/talks/wat and reproduce the JavaScript examples
