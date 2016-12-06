@@ -54,6 +54,7 @@ class MyGame : public Game {
   }
   virtual void render(GameContext& context) {
     context.draw_sprite("image.bmp", 0, 0);
+    context.render();
   }
 };
 ```
@@ -97,7 +98,12 @@ if (context.was_key_pressed(ARROW_UP)) {
 }
 ```
 
+#### render
+```cpp
+void GameContext::render();
+```
 
+Renders all the images to the window, you must call it on the end of the Game's render function
 ### GameEngine
 This class is reponsible for running your game. You must create an instance in your main function
 and pass a pointer to your game object and the size of the window.
