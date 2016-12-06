@@ -48,6 +48,7 @@ This game draws a single image to the window called `image.bmp`
 
 ```cpp
 class MyGame : public Game {
+public:
   MyGame() {}
   virtual void init(GameContext& context) {
     context.load_file("image.bmp");

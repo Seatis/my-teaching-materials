@@ -13,7 +13,7 @@
 
 ##### Map
  - Given a terminal opened in the project directory
- - When the game is ran by executing `rpg_fame`
+ - When the game is ran by executing `rpg_game`
  - Then it should show a map of tiles like this:
  
  ![floor map](assets/floor-map.png)

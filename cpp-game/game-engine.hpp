@@ -1,3 +1,6 @@
+#ifndef GAME_ENGINE_H
+#define GAME_ENGINE_H
+
 #include "SDL/SDL.h"
 #include <map>
 #include <string>
@@ -113,4 +116,4 @@ public:
     }
   }
 };
-
+#endif
