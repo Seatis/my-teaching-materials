@@ -16,7 +16,7 @@ class GameContext {
 private:
   SDL_Window* screen;
   SDL_Renderer* renderer;
-  std::map<std::string, SDL_Surface*> sprites;
+  std::map<std::string, SDL_Texture*> sprites;
   bool keys[5];
 public:
   GameContext(unsigned int screen_width, unsigned int screen_height) {
@@ -30,24 +30,24 @@ public:
     reset_keys();
   }
   ~GameContext() {
-    for (std::map<std::string, SDL_Surface*>::iterator it = sprites.begin(); it != sprites.end(); ++it) {
-      SDL_FreeSurface(it->second);
+    for (std::map<std::string, SDL_Texture*>::iterator it = sprites.begin(); it != sprites.end(); ++it) {
+      SDL_DestroyTexture(it->second);
     }
     SDL_Quit();
   }
   void load_file(std::string name) {
     SDL_Surface* result = SDL_LoadBMP(name.c_str());
     SDL_SetColorKey(result, SDL_TRUE, SDL_MapRGB(SDL_AllocFormat(SDL_GetWindowPixelFormat(screen)), 0xFF, 0, 0xFF));
-    sprites[name] = result;
+    sprites[name] = SDL_CreateTextureFromSurface(renderer, result);
+    SDL_FreeSurface(result);
   }
   void draw_sprite(std::string name, int x, int y) {
-    SDL_Texture * texture = SDL_CreateTextureFromSurface(renderer, sprites[name]);
     SDL_Rect temp;
     temp.x = x;
     temp.y = y;
     temp.w = 72;
     temp.h = 72;
-    SDL_RenderCopy(renderer, texture, NULL, &temp);
+    SDL_RenderCopy(renderer, sprites[name], NULL, &temp);
   }
   void render() {
     SDL_RenderPresent(renderer);
