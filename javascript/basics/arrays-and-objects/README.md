@@ -14,10 +14,10 @@ Arrays, Objects, Functions, Switch statement
 #### Arrays
 
  - http://bonsaiden.github.io/JavaScript-Garden/#array
- - http://colintoh.com/blog/5-array-methods-that-you-should-use-today ( expect Demethodizing chapter )
+ - http://colintoh.com/blog/5-array-methods-that-you-should-use-today (expect Demethodizing chapter)
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array (till the properties chapter)
 
- Study these methods:  
+Study these methods:  
 
  - [Concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
  - [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
