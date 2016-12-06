@@ -71,13 +71,32 @@ This function loads an image file, without loading the file you can't draw the i
 Load the files in the `init` method of your game.
 It takes the path to the image as a string parameter.
 
-#### context.draw_sprite
+#### draw_sprite
 ```cpp
 void GameContext::draw_sprite(std::string file_name, unsigned int x, unsigned int y);
 ```
 
 This function draws an image to the window. The image is must loaded before this method is used.
 It takes the path as a string parameter and the coordinates on the window as integers.
+
+#### was_key_pressed
+```cpp
+bool GameContext::was_key_pressed(unsigned int key_code);
+```
+
+It can request if a key has been pressed since the last call of the render function.
+It returns a boolean, and takes a character code as a parameter.
+
+There are predefined character constants:
+`ARROW_UP`, `ARROW_RIGHT`, `ARROW_DOWN`, `ARROW_LEFT`, `SPACE`
+
+##### Example
+```cpp
+if (context.was_key_pressed(ARROW_UP)) {
+  // the "Up-Arrow"-key has been pressed
+}
+```
+
 
 ### GameEngine
 This class is reponsible for running your game. You must create an instance in your main function
@@ -95,7 +114,7 @@ You have to pass a pointer to your game instance the size of the window as two i
 void GameEngine::run();
 ```
 
-It runs your game.
+It runs your game. If the `q` key is pressed than the game quits.
 
 #### Example
 ```cpp
