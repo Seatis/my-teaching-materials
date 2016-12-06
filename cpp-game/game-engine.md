@@ -64,7 +64,7 @@ It has several usefull methods:
 
 #### load_file
 ```cpp
-context.load_file(std::string file_name);
+void GameContext::load_file(std::string file_name);
 ```
 
 This function loads an image file, without loading the file you can't draw the image later.
@@ -73,7 +73,7 @@ It takes the path to the image as a string parameter.
 
 #### context.draw_sprite
 ```cpp
-context.draw_sprite(std::string file_name, unsigned int x, unsigned int y);
+void GameContext::draw_sprite(std::string file_name, unsigned int x, unsigned int y);
 ```
 
 This function draws an image to the window. The image is must loaded before this method is used.
@@ -92,7 +92,7 @@ You have to pass a pointer to your game instance the size of the window as two i
 
 #### run
 ```cpp
-void run();
+void GameEngine::run();
 ```
 
 It runs your game.
