@@ -1,4 +1,4 @@
-#include "SDL/SDL.h"
+#include "SDL2/SDL.h"
 #include <map>
 #include <string>
 
@@ -10,14 +10,19 @@
 
 class GameContext {
 private:
-  SDL_Surface* screen;
+  SDL_Window* screen;
+  SDL_Renderer* renderer;
   std::map<std::string, SDL_Surface*> sprites;
   bool keys[5];
 public:
   GameContext(unsigned int screen_width, unsigned int screen_height) {
     SDL_Init(SDL_INIT_VIDEO);
-    SDL_WM_SetCaption("Game", "Game");
-    screen = SDL_SetVideoMode(screen_width, screen_height, 0, 0);
+    screen = SDL_CreateWindow("My Game Window",
+                              SDL_WINDOWPOS_UNDEFINED,
+                              SDL_WINDOWPOS_UNDEFINED,
+                              screen_width, screen_height,
+                              0);
+    renderer = SDL_CreateRenderer(screen, -1, 0);
     reset_keys();
   }
   ~GameContext() {
@@ -27,20 +32,21 @@ public:
     SDL_Quit();
   }
   void load_file(std::string name) {
-    SDL_Surface* temp = SDL_LoadBMP(name.c_str());
-    sprites[name] = SDL_DisplayFormat(temp);
-    SDL_FreeSurface(temp);
-    int colorkey = SDL_MapRGB(screen->format, 255, 0, 255);
-    SDL_SetColorKey(sprites[name], SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
+    SDL_Surface* result = SDL_LoadBMP(name.c_str());
+    SDL_SetColorKey(result, SDL_TRUE, SDL_MapRGB(SDL_AllocFormat(SDL_GetWindowPixelFormat(screen)), 0xFF, 0, 0xFF));
+    sprites[name] = result;
   }
   void draw_sprite(std::string name, int x, int y) {
+    SDL_Texture * texture = SDL_CreateTextureFromSurface(renderer, sprites[name]);
     SDL_Rect temp;
     temp.x = x;
     temp.y = y;
-    SDL_BlitSurface(sprites[name], NULL, screen, &temp);
+    temp.w = 72;
+    temp.h = 72;
+    SDL_RenderCopy(renderer, texture, NULL, &temp);
   }
   void render() {
-    SDL_UpdateRect(screen, 0, 0, 0, 0);
+    SDL_RenderPresent(renderer);
   }
   void reset_keys() {
     for (unsigned int i = 0; i < 5; ++i) {
@@ -113,4 +119,3 @@ public:
     }
   }
 };
-
