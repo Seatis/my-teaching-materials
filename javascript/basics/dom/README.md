@@ -12,6 +12,12 @@ You'll learn how the broser builds HTML documents
 - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 - https://css-tricks.com/dom/
 
+#### Digging deeper
+
+Read more about the DOM in the Eloquent Javascript book's relevant chapter:
+
+http://eloquentjavascript.net/13_dom.html
+
 ## Material Review
 - accessing elements
   - getElementById
