@@ -1,18 +1,14 @@
 # The Bean Factory Pattern
-Inversion of Control (IoC) offers an alternative way to construct applications such that developers can:
-- work independently to test items without depending upon others and 
-- swap out internals without needing to refactor (aka recode) objects.
 
-*Inversion* means that the rather the subordinates (aka objects) being unaware of who calls them and therefore unable to be amended or replaced and therefore not in control, instead they are flexible and can be altered.  For example, one could swap the data access object without having to touch the objects that call it.  This is an aspect of polymorphism.  It allows a caller to be ignorant of the specific functionality that will run and only concern itself with calling a specific function.  The object itself resolves what to actually do.
+!!WORK IN PROGRESS 
+The Spring framework uses a pattern commonly referred to as a *Factory* (or specifically a Bean Factory).  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by an calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their composition can be changed without altering the calling objects.  The Factory in effect manages all communications between the callers and its beans and simply returns *references* that the caller can use.
 
-The Spring framework uses the Bean Factory pattern in order to offer IoC.  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by an calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their composition can be changed without altering the calling objects.  The Factory in effect manages all communications between the callers and its beans and simply returns *references* that the caller can use.
+As explained earlier in the Module, Beans are defined in a variety of combinable ways:-
+- xml configuration (mentioned earlier)
+- during execution of the object (flexible but not always recommended)
+- annotations in caller and definitional code - which is prescanned to generate the configuration that drives Spring.
 
-Beans are defined in a variety of combinable ways:-
-- xml configuration
-- during execution of the object (not recommended)
-- annotations to the caller code - which is prescanned to generate the xml configuration.
-
-This is a large topic and we will only cover the basics as it's both used by many and we need a basis to cover some other key concepts later.  In the Materials & Resources for this unit we:-
+As with other aspects of Spring, the Bean Factory too is a large topic and we will cover the basics used most frequently; this will serve you later in learning more about the Factory approach.  In the Materials & Resources for this unit we:-
 - introduce the concept of IoC
 - review the bean factory model
 - look at the core elements of beans
@@ -43,7 +39,6 @@ Please bear with the explanation in XML; we'll expect you to use the simpler, an
 |[Creation &amp; Destruction methods - annotation &amp; xml (gontuseries.13)](https://www.youtube.com/watch?v=CZzmmP2Soy4)|10:40|
 |[Injecting subordinate objects - XML (JavaBrains.07)](https://www.youtube.com/watch?v=g15RcFyEcrk)|15:18|
 |[Autowiring - XML (JavaBrains.10)](https://www.youtube.com/watch?v=suiEGbKf21g)|7:26|
-|[Autowire - annotation (JavaBrains.19)](https://www.youtube.com/watch?v=IVIhVJJGo68)|14:19|
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
