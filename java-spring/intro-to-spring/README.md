@@ -14,7 +14,7 @@ Core to Spring itself are its *beans*.  Beans are objects based upon class defin
 
 But wait! Beans are not the only Spring feature.  Spring came along at a critical point simplifying many other challenges such as a cleaner way to interact with requests for web-pages, build webservices, consume data services and use databases.
 
-*One last introductory point related to beans ... *
+*One last introductory point related to beans ...*
 
 Spring has evolved over the years.  Early on it was controlled through configuration files and/or programming.  The configuring was (and still can be) achieved by writing XML which is hierarchical in nature and centralised.  As Java improved, new features came along - specifically annotation.  Annotation simplifies the way developers interact with Spring.  
 
