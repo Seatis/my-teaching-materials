@@ -125,13 +125,14 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 ## Workshops
 In today's workshops you'll be creating a few simple beans.  The beans are critical for later stuff we'll do.  So right now it's just getting a basic feel for how to write.
 
-- [Do the Traditional, "Hello World"](./workshop/Workshop01.md) - Create a simple, single bean and ensure that Spring is working on your machine
 - [Adding an initialization and destruction method](./workshop/Workshop02.md) - 
 - [Bean dependencies](./workshop/Workshop03.md)  
 - 
-- [Injecting bean d
-  - id attrib specifying the name, class the fully qualified name - https://www.youtube.com/watch?v=gy4I_jmwu9k
-  http://www.java2novice.com/spring/spring-java-based-configuration/
+- [Injecting bean d]()
+  id attrib specifying the name, class the fully qualified name 
+  canibalise 
+  - https://www.youtube.com/watch?v=gy4I_jmwu9k
+  - http://www.java2novice.com/spring/spring-java-based-configuration/
   
   other ideas
   http://www.java2novice.com/spring/inject-list-into-spring-bean/
@@ -146,10 +147,10 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
   - using autowire byName
   - using autowire byClass
 
-- Challenge/Real World application -
-  - Point Of Sales card reader call to the backend.  
+- Webservice to get calorie data 
 
 
 #Links
 - [Parent - Java Spring](../README.md)
+- [Prior - Thymeleaf](../thymeleaf/README.md)
 - [Next - Database Integration](../database-integration/README.md)

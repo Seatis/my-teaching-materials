@@ -4,15 +4,24 @@ Inversion of Control (IoC) offers an alternative way to construct applications s
 - work independently to test items without depending upon others and 
 - swap out internals without needing to refactor (aka recode) objects.
 
-*Inversion* means that the rather the subordinates (aka objects) being unaware of who calls them and therefore causing heartache if they themselves need amending, they are now decoupled (unlinked) in a way and are made available to those who need them in a way that is similar to a dispensary.  Through a medium, Spring takes care of providing access to subordinate Objects constructed from your (or others') definitions and fill in all the linkages as required.
+Typically objects are built upon other, subordinate objects.  The objects at the top of the heap know who they use.  We can say that they are *in control*.  But those at the bottom are blind.  Now this would be okay in a static universe.  But imagine the chagrin when something deep in the heap needs changing.  
 
-This is useful, for example, when one might need to swap the way data is retrieved from a database (say you remove one service in favour of another provider).  The *surgery* (aka changing the service happens outside) and your calling object(s) serve up the *right* Object based upon the current configuration without needing to be recompiled.  This is offers a richer, more stable means of polymorphism.  It allows a caller to be ignorant of the specific functionality that will run to do the low-level thing(s) needed; it need only concern itself with interfacing with the object(s).  And Spring will resolve all the necessary connections (referred to as *wiring* and *resources*).
+*Inversion of Control* takes that philosophy and flips it.  In simple terms, it says that those at the bottom retain control of themselves (and some would argue, those that use them).  By using this approach, they can be decoupled (that is, unlinked) such that they can retain their existing interfaces, be recompiled with new features, swapped out and/or repaired, and those that depend upon them are unaffected.  Instead of their class definitions being "baked in" to their callers, the Spring Framework acts like a dispensary, fabricating the objects for the callers (which might include wiring them together with other objects) and then handing the *instances* over as required.
 
-Core to Spring itself are *beans*.  Beans are objects based upon class definitions.  They are the same as what you've already built in Java.  Only, they are managed by Spring.  In this first day, we'll look at getting a simple "Hello World" application to fire up.  This will require understanding a litttle about the Spring universe and adding in features in IntelliJ.
+This is useful, for example, when one might need to swap the way data is retrieved from a database (say you remove one service in favour of another provider).  The *surgery* (aka changing the service) happens outside of your calling object.  And when needed, Spring serves your calling object the _right_ subordinate based upon the latest configuration.  This way the caller does not need to be recompiled.  This approach offers a stronger, more stable means of polymorphism.  
 
-Very important to note.  Spring has evolved over the years.  Early on it was controlled mainly through configuration files.  These are XML in nature.  As Java itself has improved, new features in Java - specifically annotations - have been used to simplify the way developers interact with the framework.  We bring this up because a) many times, you'll see features of Java explained using XML as there are just much more of these videos and answers out there and b) in the xml, you can see the overall definition of the beans.
+Core to Spring itself are its *beans*.  Beans are objects based upon class definitions.  They are the same as what you've already built in Java.  Only, they are managed by Spring.  In this first day, we'll look at getting a simple "Hello World" application to fire up.  This will require understanding a little about the Spring universe and informing IntelliJ of what you want to build.
 
-However, we are using Spring with annotation.
+But wait! Beans are not the only Spring feature.  Spring came along at a critical point simplifying many other challenges such as a cleaner way to interact with requests for web-pages, build webservices, consume data services and use databases.
+
+*One last introductory point related to beans ... *
+
+Spring has evolved over the years.  Early on it was controlled through configuration files and/or programming.  The configuring was (and still can be) achieved by writing XML which is hierarchical in nature and centralised.  As Java improved, new features came along - specifically annotation.  Annotation simplifies the way developers interact with Spring.  
+
+Nonetheless, there's a lot of documents of there explaining Spring using XML.  It's just a fact of time, there are just more of those videos and answers out there.  And, XML has an advantange: you can see the overall definition of all of the beans in one (or more dedicated) file(s).
+
+However, we are focusing on applying Spring through annotation as this technique extends the actual code that Spring reads.  By annotating the specific code fragment that relates to the bean there's no distance between the code and what Spring will employ.  By annotating the code when such gets defined for Spring, you reduce the risk of omitting something.
+
 
 ## Materials & Resources
 
