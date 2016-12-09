@@ -149,7 +149,7 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 ### Say Hello to all the world (Web App)
 You are very happy and would say hello in different languages
 
-According to previous task you should create a webb app which say hello in different languages and this hellos have different font sizes and colors.
+According to previous tasks you should create a webb app which say hello in different languages and this hellos have different font sizes and colors.
 
 - Use the following greetings:
 ```java
