@@ -89,6 +89,28 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Open [localhost:8080](http://localhost:8080) in your webbrowse
 - If you get "Whitelabel Error Page" it means your application is running.
 
+### Hello World REST App
+- Add "controllers" package to your Spring project.
+- Create "Greeting" class with "long id" and "String content" fields. Getter and AllArgsConstructor. (Use Lombok)
+- Add "HelloRESTController" class to controllers package and add @RestController annotation to this class.
+- Add greeting method and use @RequestMapping annotation.
+- Create and pass a Greeting object when it is called.
+- Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your webbrowser
+- Your output should looks like: {"id":1,"content":"Hello, World!"}
+
+### Hello User REST App
+- Please improve your previous app to greet you and get the name from url query parameter.
+- You should use @RequestParam annotation 
+- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
+- Your output should looks like: {"id":1,"content":"Hello, Your name!"}
+
+### REST Greet counter app
+- Lets improve your previous app to able to count the greet number. (count api calls)
+- You should use AtomicLong class.
+- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
+- Your output should looks like: {"id":1,"content":"Hello, Your name!"}
+- Then at next call your output should looks like: {"id":2,"content":"Hello, Your name!"} and so on...
+
 #Links
 - [Parent - Java Spring](../README.md)
 - [Next - Thymeleaf](../thymeleaf/README.md)
