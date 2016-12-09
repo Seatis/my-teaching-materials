@@ -29,12 +29,11 @@ However, we are focusing on applying Spring through annotation as this technique
 
 | Material | Time |
 |:---------|-----:|
-|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the  need for the Bean Factory arose.|14:51|
+|Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)| reading |
+|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0) - explains how the  need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
-|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - getting started with annotation using `@bean()`.|1:58|
-|[@Component annotation (Telusko)](https://www.youtube.com/watch?v=4fZJfqpnyWg) - this is fairly clear and quick |6:35|
-|[Autowire - annotation (JavaBrains.19)](https://www.youtube.com/watch?v=IVIhVJJGo68)|14:19|
-|[Spring support enable in IntelliJ](https://www.jetbrains.com/help/idea/2016.2/enabling-spring-support.html#plugin)||
+|Serving Web Content with Spring MVC](http://spring.io/guides/gs/serving-web-content/)| reading |
+|Understanding View Templates](http://spring.io/understanding/view-templates)| reading |
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
@@ -44,7 +43,9 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 |:---------|-----:|
 |[Creating beans - XML (JavaBrains.04)](https://www.youtube.com/watch?v=7c6ZTF6cF88&s=10) - starts off doing this the way we know and then repeats using the Bean Factory pattern.|11:21|
 |[Clear, concise tutorials related to Spring](https://www.tutorialspoint.com/spring/spring_ioc_containers.htm) - great resource for quick checking||
+
 |[Spring's detailed discussion on Beans](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html) - _Reference Only_ this is the defacto, *go to* site for Spring.|170 pages|
+
 
 
 ## Review
