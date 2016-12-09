@@ -66,11 +66,20 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 ## Workshops
 In today's workshops you'll be creating a few simple beans.  The beans are critical for later stuff we'll do.  So right now it's just getting a basic feel for how to write.
 
-- [Do the Traditional, "Hello World"](./workshop/Workshop01.md) - Create a simple, single bean and ensure that Spring is working on your machine
-- multiple beans
-- autowire example
-- Start Calorie Counter Project
-
+### Create our first Spring Boot Application
+- [Open Start Spring IO site](http://start.spring.io/)
+- Use following settings: 
+  - Generate a Gradle with Spring Boot 1.4.2.
+  - Group: com.greenfoxacademy
+  - Artifact: springstart
+  - Name: springstart
+  - Package Name: com.greenfoxacademy.springstart
+  - Packaging: jar
+  - Java Version: 1.7
+  - Language: java
+  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools
+- Generate Project
+- Extract the downloaded zip
 
 #Links
 - [Parent - Java Spring](../README.md)
