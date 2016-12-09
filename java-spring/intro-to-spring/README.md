@@ -81,6 +81,14 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Generate Project
 - Extract the downloaded zip
 
+- IntelliJ: Import project
+- Use Gradle external model
+- Use Auto import, Create directories for empty..., uncheck: Create separate modules per source set >> Finish
+- Open build.grdle and remove line: "apply plugin: 'eclipse'"
+- Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
+- Open localhost:8080 in your webbrowse
+- If you get "Whitelabel Error Page" it means your application is running.
+
 #Links
 - [Parent - Java Spring](../README.md)
 - [Next - Thymeleaf](../thymeleaf/README.md)
