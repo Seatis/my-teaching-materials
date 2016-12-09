@@ -49,18 +49,18 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 
 
 ## Review
+- What is REST
 - Dependency Injection/Inversion of Control
 - Bean
 - Component
 - Autowired
-- `@bean(name=<>)`
-- `@configuration`
-- `@required`
-- `@autowired`
-- `@component`
-- libraries
-  - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
-  - `org.springframework.beans.factory.*`
+  - `@bean(name=<>)`
+  - `@autowired`
+  - `@component`
+- REST controller
+- Web Content with Spring MVC
+- View Templates
+
 
 
 ## Workshops
