@@ -29,11 +29,11 @@ However, we are focusing on applying Spring through annotation as this technique
 
 | Material | Time |
 |:---------|-----:|
-|Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)| reading |
+|[Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)| reading |
 |[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0) - explains how the  need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
-|Serving Web Content with Spring MVC](http://spring.io/guides/gs/serving-web-content/)| reading |
-|Understanding View Templates](http://spring.io/understanding/view-templates)| reading |
+|[Serving Web Content with Spring MVC](http://spring.io/guides/gs/serving-web-content/)| reading |
+|[Understanding View Templates](http://spring.io/understanding/view-templates)| reading |
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
