@@ -95,21 +95,48 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Add "HelloRESTController" class to controllers package and add @RestController annotation to this class.
 - Add greeting method and use @RequestMapping annotation.
 - Create and pass a Greeting object when it is called.
+- Recompile app
 - Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your webbrowser
 - Your output should looks like: {"id":1,"content":"Hello, World!"}
 
 ### Hello User REST App
 - Please improve your previous app to greet you and get the name from url query parameter.
 - You should use @RequestParam annotation 
+- Recompile app
 - Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
 - Your output should looks like: {"id":1,"content":"Hello, Your name!"}
 
 ### REST Greet counter app
 - Lets improve your previous app to able to count the greet number. (count api calls)
 - You should use AtomicLong class.
+- Recompile app
 - Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
 - Your output should looks like: {"id":1,"content":"Hello, Your name!"}
 - Then at next call your output should looks like: {"id":2,"content":"Hello, Your name!"} and so on...
+
+### Hello World Web App
+- Lets create another controller "HelloWebController" to controllers package.
+- Add greeting method like:
+```java
+@RequestMapping("/web/greeting")
+    public String greeting(Model model) {
+        model.addAttribute("name", " World!");
+        return "greeting";
+    }
+```
+- Add following HTML template file to "resources/templates/greeting.html"
+```html
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'"/>
+</body>
+</html>
+```
 
 #Links
 - [Parent - Java Spring](../README.md)
