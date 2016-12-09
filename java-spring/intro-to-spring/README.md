@@ -97,14 +97,14 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Create and pass a Greeting object when it is called.
 - Recompile app
 - Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your webbrowser
-- Your output should looks like: {"id":1,"content":"Hello, World!"}
+- Your output should look like: {"id":1,"content":"Hello, World!"}
 
 ### Hello User REST App
 - Please improve your previous app to greet you and get the name from url query parameter.
 - You should use @RequestParam annotation 
 - Recompile app
 - Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
-- Your output should looks like: {"id":1,"content":"Hello, Your name!"}
+- Your output should look like: {"id":1,"content":"Hello, Your name!"}
 
 ### REST Greet counter app
 - Lets improve your previous app to able to count the greet number. (count api calls)
@@ -112,7 +112,7 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Recompile app
 - Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
 - Your output should looks like: {"id":1,"content":"Hello, Your name!"}
-- Then at next call your output should looks like: {"id":2,"content":"Hello, Your name!"} and so on...
+- Then at next call your output should look like: {"id":2,"content":"Hello, Your name!"} and so on...
 
 ### Hello World Web App
 - Lets create another controller "HelloWebController" to controllers package.
@@ -120,7 +120,7 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 ```java
 @RequestMapping("/web/greeting")
     public String greeting(Model model) {
-        model.addAttribute("name", " World!");
+        model.addAttribute("name", " World");
         return "greeting";
     }
 ```
@@ -136,6 +136,27 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 <p th:text="'Hello, ' + ${name} + '!'"/>
 </body>
 </html>
+```
+- Recompile app
+- Open [http://localhost:8080/web/greeting](http://localhost:8080/web/greeting) in your webbrowser
+- Your output should look like: Hello, World! (It is a web page.)
+
+### Web Greet counter app
+- Lets do a web app which can count the website load and greet the user as the previous counter task.
+- Open [http://localhost:8080/web/greeting?name=Your%20name](http://localhost:8080/web/greeting?name=Your%20name) in your webbrowser
+- Your output should look like: Hello, Your name! This site was loaded 3 times since last server start.
+
+### Say Hello to all the world (Web App)
+You are very happy and would say hello in different languages
+
+According to previous task you should create a webb app which say hello in different languages and this hellos have different font sizes and colors.
+
+- Use the following greetings:
+```java
+String[] hellos = {"Mirëdita", "Ahalan", "Parev", "Zdravei", "Nei Ho", "Dobrý den", "Ahoj", "Goddag", "Goede dag, Hallo", "Hello", "Saluton", "Hei", "Bonjour",
+                "Guten Tag", "Gia'sou", "Aloha", "Shalom", "Namaste", "Namaste", "Jó napot", "Halló", "Helló", "Góðan daginn", "Halo", "Aksunai", "Qanuipit", "Dia dhuit",
+                "Salve", "Ciao", "Kon-nichiwa", "An-nyong Ha-se-yo", "Salvëte", "Ni hao", "Dzien' dobry", "Olá", "Bunã ziua", "Zdravstvuyte", "Hola", "Jambo", "Hujambo", "Hej",
+                "Sa-wat-dee", "Merhaba", "Selam", "Vitayu", "Xin chào", "Hylo", "Sut Mae", "Sholem Aleychem", "Sawubona"};
 ```
 
 #Links
