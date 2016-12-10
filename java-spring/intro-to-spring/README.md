@@ -90,9 +90,7 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 <img src="./spring-start-04.jpg">
 
 - Use Gradle external model
-<img src="./spring-start-05A.jpg">
 <img src="./spring-start-05.jpg">
-<img src="./spring-start-05B.jpg">
 
 - Use Auto import, Create directories for empty..., uncheck: Create separate modules per source set >> Finish
 - Open build.grdle and remove line: "apply plugin: 'eclipse'"
@@ -102,10 +100,10 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 <img src="./spring-start-06B.jpg">
 
 - Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
-<img src="./spring-start-07.jpg">
+<img src="./spring-start-07.jpg" > !!OK
 
 - Open [localhost:8080](http://localhost:8080) in your webbrowse
-<img src="./spring-start-07.jpg">
+<img src="./spring-start-08.jpg">
 
 You should get the "Whitelabel Error Page".  This means your application is running.
 
