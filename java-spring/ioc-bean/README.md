@@ -1,7 +1,5 @@
 # The Bean Factory Pattern
-
-!!WORK IN PROGRESS 
-The Spring framework uses a pattern commonly referred to as a *Factory* (or specifically a Bean Factory).  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by an calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their composition can be changed without altering the calling objects.  The Factory in effect manages all communications between the callers and its beans and simply returns *references* that the caller can use.
+Having started to look at Spring, lets take a little bit of time to understand better what is going on inside.  The Spring framework uses a pattern commonly referred to as a *Factory* (or specifically a Bean Factory).  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by an calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their composition can be changed without altering the calling objects.  The Factory in effect manages all communications between the callers and its beans and simply returns *references* that the caller can use.
 
 As explained earlier in the Module, Beans are defined in a variety of combinable ways:-
 - xml configuration (mentioned earlier)
@@ -28,12 +26,12 @@ Please bear with the explanation in XML; we'll expect you to use the simpler, an
 
 | Material | Time |
 |:---------|-----:|
-|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the  need for the Bean Factory arose.|14:51|
+|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
 |[Creating beans - XML (JavaBrains.04)](https://www.youtube.com/watch?v=7c6ZTF6cF88&s=10) - starts off doing this the way we know and then repeats using the Bean Factory pattern.|11:21|
 |[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
 |[@Component annotation (Telusko)](https://www.youtube.com/watch?v=4fZJfqpnyWg) - this is fairly clear and quick |6:35|
-|[@Component(&lt;name&gt;) and @scope(@quot;singleton(@quot;|(@quot;prototype(@quot;)](https://www.youtube.com/watch?v=ELKrfHIvvPI&s=240) - watch this just for the `@Component(<name>)` and `@scope()`|7:21|
+|[@Component(&lt;name&gt;) and @scope(&quot;singleton(&quot;|(&quot;prototype(&quot;)](https://www.youtube.com/watch?v=ELKrfHIvvPI&s=240) - watch this just for the `@Component(<name>)` and `@scope()`|7:21|
 |[ApplicationContext - XML (JavaBrains.05)](https://www.youtube.com/watch?v=ZxLaEovze3M)|7:36|
 |[Constructor - XML (JavaBrains.06)](https://www.youtube.com/watch?v=IOZzxmJVus0) - once you get the principle, speed through the rest|13:59|
 |[Creation &amp; Destruction methods - annotation &amp; xml (gontuseries.13)](https://www.youtube.com/watch?v=CZzmmP2Soy4)|10:40|
