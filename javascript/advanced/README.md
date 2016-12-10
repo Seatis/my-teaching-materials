@@ -12,7 +12,7 @@
 |:---------|-----:|
 | [Javascript this keyword: Explained](https://www.youtube.com/watch?v=IGqGqlyIcg8) | 15:51 |
 | [Higher-order functions - Part 1 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=BMUiFMZr7vk) | 10:48 |
-| [Closures - Part 5 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=CQqwU2Ixu-U) | 10:48 |
+| [Closures - Part 5 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=CQqwU2Ixu-U) | 7:03 |
 
 ### Variables, Scopes, Hoisting
 | Material | Time |
@@ -22,9 +22,9 @@
 ### Object Creation
 | Material | Time |
 |:---------|-----:|
-| [bind and this - Object Creation in JavaScript P1 - FunFunFunction #43](https://www.youtube.com/watch?v=GhbhD1HR5vk) | 19:19 |
+| [bind and this - Object Creation in JavaScript P1 - FunFunFunction #43](https://www.youtube.com/watch?v=GhbhD1HR5vk) | 15:38 |
 | [Prototype basics - Object Creation in JavaScript P3 - FunFunFunction #46](https://www.youtube.com/watch?v=YkoelSTUy7A) | 19:19 |
-| [The 'new' keyword - Object Creation in JavaScript P4 - FunFunFunction #50](https://www.youtube.com/watch?v=Y3zzCY62NYc) | 19:19 |
+| [The 'new' keyword - Object Creation in JavaScript P4 - FunFunFunction #50](https://www.youtube.com/watch?v=Y3zzCY62NYc) | 24:33 |
 
 
 ### Optional
