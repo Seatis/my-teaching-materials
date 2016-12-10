@@ -31,7 +31,7 @@ Please bear with the explanation in XML; we'll expect you to use the simpler, an
 |[Creating beans - XML (JavaBrains.04)](https://www.youtube.com/watch?v=7c6ZTF6cF88&s=10) - starts off doing this the way we know and then repeats using the Bean Factory pattern.|11:21|
 |[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
 |[@Component annotation (Telusko)](https://www.youtube.com/watch?v=4fZJfqpnyWg) - this is fairly clear and quick |6:35|
-|[@Component(&lt;name&gt;) and @scope(&quot;singleton(&quot;|(&quot;prototype(&quot;)](https://www.youtube.com/watch?v=ELKrfHIvvPI&s=240) - watch this just for the `@Component(<name>)` and `@scope()`|7:21|
+|[@Component(&lt;name&gt;) and @scope(&quot;singleton(&quot; or (&quot;prototype(&quot;)](https://www.youtube.com/watch?v=ELKrfHIvvPI&s=240) - watch this just for the `@Component(<name>)` and `@scope()`|7:21|
 |[ApplicationContext - XML (JavaBrains.05)](https://www.youtube.com/watch?v=ZxLaEovze3M)|7:36|
 |[Constructor - XML (JavaBrains.06)](https://www.youtube.com/watch?v=IOZzxmJVus0) - once you get the principle, speed through the rest|13:59|
 |[Creation &amp; Destruction methods - annotation &amp; xml (gontuseries.13)](https://www.youtube.com/watch?v=CZzmmP2Soy4)|10:40|
