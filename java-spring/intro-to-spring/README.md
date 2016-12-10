@@ -68,6 +68,9 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 
 ### Create our first Spring Boot Application
 - [Open Start Spring IO site](http://start.spring.io/)
+
+<img src="./spring-start-02.jpg">
+
 - Use following settings: 
   - Generate a Gradle with Spring Boot 1.4.2.
   - Group: com.greenfoxacademy
@@ -77,17 +80,34 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
   - Packaging: jar
   - Java Version: 1.7
   - Language: java
-  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools
+  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools *Note, you have to do these 1 at a time!*
 - Generate Project
-- Extract the downloaded zip
+
+- Extract the downloaded zip to a directory (consider, btw, using the directory where you would like to have the code and not in Download as shown here)
 
 - IntelliJ: Import project
+<img src="./spring-start-03.jpg">
+<img src="./spring-start-04.jpg">
+
 - Use Gradle external model
+<img src="./spring-start-05A.jpg">
+<img src="./spring-start-05.jpg">
+<img src="./spring-start-05B.jpg">
+
 - Use Auto import, Create directories for empty..., uncheck: Create separate modules per source set >> Finish
 - Open build.grdle and remove line: "apply plugin: 'eclipse'"
+<img src="./spring-start-06.jpg">
+
+*if, for any reason you are missing the dependencies, you can enter them in:-
+<img src="./spring-start-06B.jpg">
+
 - Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
+<img src="./spring-start-07.jpg">
+
 - Open [localhost:8080](http://localhost:8080) in your webbrowse
-- If you get "Whitelabel Error Page" it means your application is running.
+<img src="./spring-start-07.jpg">
+
+You should get the "Whitelabel Error Page".  This means your application is running.
 
 ### Hello World REST App
 - Add "controllers" package to your Spring project.
