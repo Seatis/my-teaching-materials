@@ -1,9 +1,9 @@
-# Functional programming and Object orientation in JavaScript
+# Functional Programming and Object Orientation in JavaScript
 
 ## Objectives
- - %Objective that is reached by finishing the workshop 1%
- - %Objective that is reached by finishing the workshop 2%
- - %Objective that is reached by finishing the workshop 3%
+ - Have an idea about functional programming in JavaScript
+ - Get an understanding of how variables work in JavaScript
+ - Get some routine in Object Creation in JavaScript
 
 ## Materials & Resources
 
