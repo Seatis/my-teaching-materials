@@ -1,6 +1,6 @@
 #Workshop01 - Bean Factory, getting started
 
-Create the standard *Hello World*, ala Spring.  This will appear in your sout.
+Create the standard *Hello World*, ala Spring.  This will appear in your sout and not in a browser window.
 
 To get this to work, when you start the project you need to be sure that you've informed IntelliJ that you're working with Spring.
 
@@ -8,7 +8,7 @@ This is explained [here (by jetbrains)](https://www.jetbrains.com/help/idea/2016
 
 <img src="./Workshop01-1.jpg">
 
-Here, you need to inform the engine that you want to work with Spring.  You'll only need the need all the libraries.  So you can select the one(s) potentially needed.
+Here, you need to inform the engine that you want to work with Spring; select all as we'll build out from this, however this first workshop you'll not need any of the libraries.
 
 Create a package directory: `com.greenfoxacademy.java.lesson.beans`.
 

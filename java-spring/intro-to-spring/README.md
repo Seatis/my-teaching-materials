@@ -102,10 +102,10 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
 <img src="./spring-start-07.jpg" > !!OK
 
-- Open [localhost:8080](http://localhost:8080) in your webbrowse
+- Open [localhost:8080](http://localhost:8080) in your webbrowse.  You should get the "Whitelabel Error Page".  This means your application is running.
 <img src="./spring-start-08.jpg">
 
-You should get the "Whitelabel Error Page".  This means your application is running.
+*Note, to stop your webserver, in the Terminal, press Control-C.
 
 ### Hello World REST App
 - Add "controllers" package to your Spring project.
@@ -113,7 +113,7 @@ You should get the "Whitelabel Error Page".  This means your application is runn
 - Add "HelloRESTController" class to controllers package and add @RestController annotation to this class.
 - Add greeting method and use @RequestMapping annotation.
 - Create and pass a Greeting object when it is called.
-- Recompile app
+- Recompile app (use the "Make Project (Ctrl-F9" at the top of your project if you've edited the existing project and are restarting)
 - Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your webbrowser
 - Your output should look like: {"id":1,"content":"Hello, World!"}
 
@@ -158,6 +158,7 @@ You should get the "Whitelabel Error Page".  This means your application is runn
 - Recompile app
 - Open [http://localhost:8080/web/greeting](http://localhost:8080/web/greeting) in your webbrowser
 - Your output should look like: Hello, World! (It is a web page.)
+
 
 ### Web Greet counter app
 - Lets do a web app which can count the website load and greet the user as the previous counter task.
