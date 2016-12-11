@@ -57,7 +57,7 @@ The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 |[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
 |[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/constructor_based_dependency_injection.htm)|reading|
 |[Using Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_annotation_based_configuration.htm)|reading|
-|Useful reference on using Annotation(spring.io)|(http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html) - peruse this, I think you'll find it handy later.|reading|
+|[Useful reference on using Annotation(spring.io)](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html) - peruse this, I think you'll find it handy later.|reading|
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
@@ -82,25 +82,16 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 - `@Component`
 - `@ComponentScan`
 - `@Scope` - prototype, singleton
-
 - Libraries
   - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
   - `org.springframework.beans.factory.*` (note also has annotation support)
-
 - Different ways of instantiating the Factory, but as we are using annotation:-
-  - or AnnotationConfigApplicationContext();  \\when using @bean() - having a Java class instead of an XML file (described earlier in [Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) )
+  - `AnnotationConfigApplicationContext()` 
 - the naming convention for beans; start off lowercase (as opposed to a Class)
 
-
 ### Optional Items
-- idref
-- inner bean
-- aliasing
 - `@Resource` - similar to `@Autowire` 
 - `@Service` - as opposed to `@Component`
-
-
-
 
 ## Workshops
 - [Hello World](./workshop/Workshop01.md) - in this exercise, you will get acquainted with the IntelliJ support for Spring
