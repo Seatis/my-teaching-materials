@@ -54,9 +54,10 @@ In Foo:new Bar
 More red
 ```
 
-## Add in an init and cleanup method (as shown  "[Authoring `@Configuration` classes`](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)").  
+## Add in an init and cleanup method
+This was in the Materials for the day, "[Authoring `@Configuration` classes`](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)").  
 
-To save you time, it's Foo that needs some preparatory and destructive skills ...
+To save you time, it's Foo that needs some preparatory and destructive methods; here they are ...
 ```
    public void init () {
         System.out.println("The Foo Man is awakening!");

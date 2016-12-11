@@ -1,21 +1,21 @@
 # The Bean Factory Pattern
-Having started to look at Spring, lets take a little bit of time to understand better what is going on inside.  The Spring framework uses a pattern commonly referred to as a *Factory* (or specifically a Bean Factory).  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by an calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their composition can be changed without altering the calling objects.  The Factory in effect manages all communications between the callers and its beans and simply returns *references* that the caller can use.
+Having started to look at Spring, lets take a little bit of time to understand better what is going on inside.  The Spring framework uses a pattern commonly referred to as a *Factory* (or specifically a Bean Factory).  The Factory is a *container* that references *blueprints* to build object (instances commonly referred to as *beans*) as required by a calling application.  These *beans* live inside the factory which manages them.  As they are based upon *blueprints* defined in a configuration file, their internals can be changed without altering the calling objects.  We say *internals* as changing their *interfaces* could however affect the callers.  The Factory manages the life of the bean, simply returns *references* to the caller to use and when the Beans are no longer references, the Factory destroys them.
 
-A major benefit to this approach is that there can be just ONE copy of the instance which can be used repeatedly in the code.  However, this requires that instance be *stateless*.  That is, it does not retain any data between calls.  This way, if 2 different threads or parts of the code call the same instance, the values inside of it do not get over-written or impact the other call.  
+A major benefit to this approach is that there can be just ONE copy of the instance which can be used repeatedly in the code.  However, this requires that instance be *stateless*.  Stateless means the Bean only retains _final_ data between calls; it must not have anything that varies (e.g. a counter).  This way, if 2 different threads call the same Bean, the values it holds will not be corrupted.
 
 As explained earlier in the Module, Beans are defined in a variety of combinable ways:-
 - xml configuration (mentioned earlier)
 - during execution of the object (flexible but not always recommended)
 - annotations in caller and definitional code - which is prescanned to generate the configuration that drives Spring.
+Here, we focus on the annotation method.
 
-As with other aspects of Spring, the Bean Factory too is a large topic and we will cover the basics used most frequently; this will serve you later in learning more about the Factory approach.  In the Materials & Resources for this unit we:-
-- introduce the concept of IoC
-- review the bean factory model
-- look at the core elements of beans
-  - creating
-  - integrating beans into code and with each other
-  - identifying methods to run when creating and destroying
-- practice defining beans, with special emphasis on annotation (as that's the most common way developers employ the Bean Factory Pattern).
+The Bean Factory has several facets.  For today will focus on the core and practice, namely by:
+- reviewing the concept Dependency Injection (DI) / Inversion of Control (IoC)
+- explore the the bean factory model
+- look at the core elements of beans, and using annotation how 
+  - configure the code so that beans are found and wired together
+  - the different ways that bean can interact
+  - specifying what to do when a bean is created and destroyed
 
 
 ## Materials & Resources
@@ -32,9 +32,9 @@ public class TextEditor {
 }
 ```
 
-When TextEditor runs, it has a dependency on the creation of an instance of SpellChecker.  In this way, TextEditor is dependent upon SpellChecker.
+Read this through closely.  It says that *When TextEditor is created, it will have a dependency on a creation of an instance of a SpellChecker*.  In this way we can say that the *TextEditor is dependent upon SpellChecker*.
 
-Inversion of Control says instead that the instance of the SpellChecker would be passed like a parameter:-
+Inversion of Control (IoC) says we can change that.  Instead we could pass an instance of the SpellChecker as we would a parameter:-
 
 ```java
 public class TextEditor {
@@ -46,7 +46,7 @@ public class TextEditor {
 }
 ```
 
-This is the fundamental basis of IoC / DI.
+This is the fundamental basis of IoC.  It's how we inject a dependency (DI).
 
 The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 
@@ -54,7 +54,7 @@ The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 |:---------|-----:|
 |[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
-|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
+|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - a simple illustration of annotation using `@bean()`.|1:58|
 |[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/constructor_based_dependency_injection.htm)|reading|
 |[Using Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_annotation_based_configuration.htm)|reading|
 |[Autowire Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)|reading|
@@ -81,13 +81,10 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 - `@Component`
 - `@ComponentScan`
 - `@Autowired`
-  - on a setter method (that is `setX(int x) {this.x = x});` will make required (unless told otherwise); byType wiring
-  - on a property (that is `private AProperty aProperty;` will remove the need for a setter method; Spring automatically assigns the property with the values passed
-  - on a constructor (that is `public class AClass { public AClass(){}; ...`) will bean and connect in the subordinate class(es) !!AZE?
-  - `@Autowired(required=false)` - turns off the default behaviour so that the bean will construct even if the value(s) to instantiate are not passed
-  
-- `@Required` - similiar to `@Autowired`
-- `@Scope` - prototype, singleton
+  - on a setter method (that is `setX(int x) {this.x = x});`) -  will make required (unless told otherwise); byType wiring
+  - on a property (that is `private AProperty aProperty;`) - will remove the need for a setter method; Spring automatically assigns the property with the values passed
+  - on a constructor (that is `public class AClass { public AClass(){}; ...`) - will bean and connect in the subordinate class(es) !!AZE?
+  - `@Autowired(required=false)` - will turn off the default behaviour so that the bean will be construct even if the value(s) to instantiate it are missing.
 - Libraries
   - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
   - `org.springframework.beans.factory.*` (note also has annotation support)
@@ -96,17 +93,17 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 - the naming convention for beans; start off lowercase (as opposed to a Class)
 
 ### Optional Items
-- `@Resource` - similar to `@Autowire` 
+- `@Resource` - similar to `@Autowired` 
+- `@Required` - similiar to `@Autowired`
 - `@Service` - as opposed to `@Component`
+- `@Scope` - prototype, singleton
 
 ## Workshops
 - [Hello World](./workshop/Workshop01.md) - in this exercise, you will get acquainted with the IntelliJ support for Spring
 - [Work through an example of DI](./workshop/Workshop02.md) - run the code and understand how it's working
 - [Create a couple of beans that are autowired](./workshop/Workshop03.md) - try to do it yourself referring to earlier examples
 - [More on Autowiring](./workshop/Workshop04.md) - play with where the @Autowire is set
-- [Adding an initialization and destruction method](./workshop/Workshop04.md) - 
-- [Bean dependencies](./workshop/Workshop05.md)  
-- [Web service call](.workshop/Workshop06.md) - get some experience calling a service and managing such with a bean
+- [Bean Dependency and adding initialization and destruction methods](./workshop/Workshop05.md) 
 
 #Links
 - [Parent - Java Spring](../README.md)

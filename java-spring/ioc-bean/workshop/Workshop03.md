@@ -1,6 +1,6 @@
 #Workshop03 - Practice with the constructs
 
-Earlier we explained that a basic idea behind DI was with an example of a SpellChecker.
+Earlier we explained the basic underlying concept of IoC/DI with an example involving a TextEditor and a SpellChecker.
 
 ```java
 public class TextEditor {
@@ -12,7 +12,7 @@ public class TextEditor {
 }
 ```
 
-Namely, that Inversion of Control says instead that the instance of the SpellChecker would be passed like a parameter:-
+Namely, that Inversion of Control says we instead should pass in the instance of the SpellChecker:-
 
 ```java
 public class TextEditor {
@@ -24,7 +24,7 @@ public class TextEditor {
 }
 ```
 
-In this Workshop, convert this into a Beans with annotation.  
+In this Workshop, we want to implement the above with Beans and annotation.  
 
 Some hints:-
 - You saw @Configuration at the start of the DIConfiguration class in Workshop02; consider it as the model for AppConfig
@@ -46,7 +46,6 @@ public class SpellChecker {
     public void checkSpelling(String tx){
         System.out.printf("Inside checkSpelling, %s is a word.\n", tx );
     }
-
 }
 ```
 
@@ -94,7 +93,6 @@ import com.greenfox.services.TextEditor;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import com.greenfox.configuration.AppConfig;
 
-
 public class App {
 
     public static void main(String[] args) {
@@ -106,12 +104,15 @@ public class App {
 
 You should get something like this when you run the code.
 ```
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21b8d17c: startup date ...
-INFO: Overriding bean definition for bean 'textEditor' with a different definition: replacing [Generic bean: class [com.greenfox.services.TextEditor]; ...
-INFO: Overriding bean definition for bean 'spellChecker' with a different definition: replacing [Generic bean: class [com.greenfox.services.SpellChecker]; ...
+RED STUFF INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21b8d17c: startup date ...
+MORE RED STUFF INFO: Overriding bean definition for bean 'textEditor' with a different definition: replacing [Generic bean: class [com.greenfox.services.TextEditor]; ...
+MORE RED STUFF INFO: Overriding bean definition for bean 'spellChecker' with a different definition: replacing [Generic bean: class [com.greenfox.services.SpellChecker]; ...
 Inside SpellChecker constructor.
 Inside checkSpelling, Woof is a word.
+RED STUFF
 ```
 
-
+# Links
+[Previous Workshop - ](../Workshop02.md)
+[Next Workshop - ](../Workshop04.md)
 

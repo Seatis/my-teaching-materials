@@ -8,7 +8,7 @@ This is explained [here (by jetbrains)](https://www.jetbrains.com/help/idea/2016
 
 <img src="./Workshop01-1.jpg">
 
-Here, you need to inform the engine that you want to work with Spring; select all as we'll build out from this, however this first workshop you'll not need any of the libraries.
+Here, you need to inform the engine that you want to work with Spring; select only the top level.  You'll not need any of the extra libraries.
 
 Create a package directory: `com.greenfoxacademy.java.lesson.beans`.
 
@@ -48,7 +48,6 @@ import com.greenfoxacademy.java.lesson.beans.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;
 
-
 public class App {
 
     public static void main(String[] args) {
@@ -62,3 +61,13 @@ public class App {
     }
 }
 ```
+
+Output, as pretty much expected:
+```
+RED STUFF
+Hello World!
+RED STUFF
+```
+
+# Links
+[Next Workshop - ](../Workshop02.md)
