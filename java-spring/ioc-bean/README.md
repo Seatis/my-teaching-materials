@@ -57,6 +57,7 @@ The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 |[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - shows how easy it is to do the same thing with annotation using just `@bean()`.|1:58|
 |[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/constructor_based_dependency_injection.htm)|reading|
 |[Using Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_annotation_based_configuration.htm)|reading|
+|[Autowire Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)|reading|
 |[Useful reference on using Annotation(spring.io)](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html) - peruse this, I think you'll find it handy later.|reading|
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
@@ -75,12 +76,17 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
     - .setBeanName() - method of BeanNameAware
     - preDestroy
 - wiring
-- `@Bean(name=<>)`
+- `@Bean(name="*override the name of the bean here if you so wish*")`
 - `@Configuration`
-- `@Required`
-- `@Autowired`
 - `@Component`
 - `@ComponentScan`
+- `@Autowired`
+  - on a setter method (that is `setX(int x) {this.x = x});` will make required (unless told otherwise); byType wiring
+  - on a property (that is `private AProperty aProperty;` will remove the need for a setter method; Spring automatically assigns the property with the values passed
+  - on a constructor (that is `public class AClass { public AClass(){}; ...`) will bean and connect in the subordinate class(es) !!AZE?
+  - `@Autowired(required=false)` - turns off the default behaviour so that the bean will construct even if the value(s) to instantiate are not passed
+  
+- `@Required` - similiar to `@Autowired`
 - `@Scope` - prototype, singleton
 - Libraries
   - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
@@ -97,6 +103,7 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 - [Hello World](./workshop/Workshop01.md) - in this exercise, you will get acquainted with the IntelliJ support for Spring
 - [Work through an example of DI](./workshop/Workshop02.md) - run the code and understand how it's working
 - [Create a couple of beans that are autowired](./workshop/Workshop03.md) - try to do it yourself referring to earlier examples
+- [More on Autowiring](./workshop/Workshop04.md) - play with where the @Autowire is set
 - [Adding an initialization and destruction method](./workshop/Workshop04.md) - 
 - [Bean dependencies](./workshop/Workshop05.md)  
 - [Web service call](.workshop/Workshop06.md) - get some experience calling a service and managing such with a bean

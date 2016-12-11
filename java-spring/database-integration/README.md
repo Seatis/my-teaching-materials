@@ -20,6 +20,8 @@ Explain
 
 
 ## Workshops
+- [Web service call](.workshop/Workshop06.md) - get some experience calling a service and managing such with a bean
+
 
 #Links
 - [Parent - Java Spring](../README.md)
