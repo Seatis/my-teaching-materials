@@ -22,6 +22,11 @@
 - [08.cpp](workshop/08.cpp)
 - [09.cpp](workshop/09.cpp)
 - [10.cpp](workshop/10.cpp)
+- [11.cpp](workshop/11.cpp)
+- [12.cpp](workshop/12.cpp)
+
+
+
 
 
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
