@@ -23,7 +23,7 @@ Getting to know callbacks inside-out.
  - clearTimeout
  - clearInterval
  - blocking / non blocking
- - AJAX
+ - requestAnimationFrame
 
 ## Workshop
 
