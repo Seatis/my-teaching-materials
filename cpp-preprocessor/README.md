@@ -6,7 +6,11 @@
 ### Training
 | Material | Time |
 |:---------|-----:|
-| [Preprocessor tutorial on cplusplus.com](http://www.cplusplus.com/doc/tutorial/preprocessor/)| 0:30 |
+| [Preprocessor tutorial on cplusplus.com](http://www.cplusplus.com/doc/tutorial/preprocessor/)| Read |
+| [C++ Tutorial 18: Preprocessor Directives] (https://www.youtube.com/watch?v=CLPzcFaA-Dk) | 5:37 |
+| [C++ Tutorial 18: Preprocessor Commands] (https://www.youtube.com/watch?v=xro8-rObtP0)| 15:43|
+
+
 
 ## Material Review
 
@@ -90,12 +94,12 @@ int main() {
 	#define MyAssert1(a, msg) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl; for(;;);}
 	#define MyAssert2(a, msg, p1) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << std::endl; for(;;);
 	#define MyAssert3(a, msg, p1, p2) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << ' ' << p2 << std::endl; for(;;);}
-#elif defined __LOGGING
+#elif defined(__LOGGING)
 	#define MyAssert0(a) if(!(a) ){std::cout << "Assertion failed: (" << #a << ") in:  " << __FILE__ << " at: " << __LINE__ << std::endl;}
 	#define MyAssert1(a, msg) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl;}
 	#define MyAssert2(a, msg, p1) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << std::endl;}
 	#define MyAssert3(a, msg, p1, p2) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << ' ' << p2 << std::endl;}
-#elif defined __RELEASE
+#elif defined (__RELEASE)
 	#define MyAssert0(a)
 	#define MyAssert1(a, msg)
 	#define MyAssert2(a, msg, p1)
