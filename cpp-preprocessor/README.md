@@ -10,6 +10,92 @@
 
 ## Material Review
 
+###Examples
+#### Basic define
+```cpp
+#define TABLE_SIZE 123
+
+int main(){
+	int a = TABLE_SIZE;
+	return 0;
+}
+```
+
+####Function like Macros
+```cpp
+#include <iostream>
+
+#define max(a,b) (a < b ? b : a)
+
+int main() {
+	std::cout << max(12,34) << std::endl;
+	return 0;
+}
+```
+
+####Difference between funtion like Macro & functions
+```cpp
+#include <iostream>
+#define dmax(a,b) (a<b?b:a)
+
+unsigned int function_max(unsigned int a, unsigned int b){
+	return a<b?b:a;
+}
+
+
+int main() {
+	unsigned int a = 12;
+	unsigned int b = 24;
+	std::cout << function_max(a,b) << std::endl;
+
+	int c = -2;
+	int d = -44;
+	char e = 2;
+	char f = 4;
+	std::cout << function_max(c,d) << std::endl;
+	std::cout << function_max(e,f) << std::endl;
+	std::cout << dmax(c,d) << std::endl;
+	std::cout << dmax(e,f) << std::endl;
+	return 0;
+}
+```
+
+####Pre-defined macro values
+```cpp
+#include <iostream>
+
+
+int main() {
+	std::cout << "in " << __FILE__ << ": @line:" << __LINE__ << std::endl;
+	std::cout << __cplusplus << std::endl;
+	std::cout << "in " << __FILE__ << ": @line:" << __LINE__ << std::endl;
+	return 0;
+}
+```
+
+####Using pre-defined macro values & different definitions
+```cpp
+#include <iostream>
+
+#ifdef __DEBUG 
+	#define MyAssert0(a) if(!(a) ){std::cout << "Assertion failed: (" << #a << ") in:  " << __FILE__ << " at: " << __LINE__ << std::endl; for(;;);}
+	#define MyAssert1(a,msg) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl; for(;;);}
+#elif __LOGGING
+	#define MyAssert0(a) if(!(a) ){std::cout << "Assertion failed: (" << #a << ") in:  " << __FILE__ << " at: " << __LINE__ << std::endl;}
+	#define MyAssert1(a,msg) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl;}
+#else
+	#define MyAssert0(a)
+	#define MyAssert1(a,msg)
+#endif
+
+int main(){
+	int smaller_number = 2;
+	int larger_number = 22;
+	MyAssert1(smaller_number > larger_number,"smaller_number: " << smaller_number << " larger_numer:" << larger_number);
+	return 0;
+}
+
+```
 
 #### Excercises
 - [01.cpp](workshop/01.cpp)
