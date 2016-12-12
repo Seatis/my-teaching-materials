@@ -1,7 +1,7 @@
 # Project Lombok &amp; Method Chaining
 Project Lombok is an extension to Java that delivers a set of annotations that can reduce the amount of *boilerplate* code (English definition follow) one needs to write.  Lombok, for example, provides one word commands that add *getters*, *setters*, *constructors*.  It also provides functionality by which one can pipe output to a log file (say the console).  Given its usefulness, we introduce it here.
 
-*Boilerplate* - means a repetitive, standard document; one that is usually served up for repetitive situations.  It might be used in describing a response, or something that is then extended.  For example, as a bureaucratic response or when generating a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*). 
+*Boilerplate* - means a repetitive, standard document; one that is usually served up for repetitive situations.  It might be used in describing a response, or something that is then extended.  For example, as a bureaucratic response or when generating a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*).
 
 ## Materials & Resources
 
@@ -11,6 +11,8 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 |[Introduction to Project Lombok (Cortez)](https://youtu.be/DXnUpcOPOYA)|5:42|
 |[Lombok, invoked from (aka created using) IntelliJ (Vega)](https://www.youtube.com/watch?v=E-_Qs_NeHMQ) - note that we'll revisit the  Spring Initialzr (SpringBoot) and JPA in the Spring Module that comes next.|10:15|
 |[Project Lombok](https://projectlombok.org) - yet more of same, but quick*ish*; extra credit if you can master his pronunciation of "Java"|3:49|
+|[Project Lombok Demo Video](https://projectlombok.org/)|3:49|
+|[Project Documentation](https://projectlombok.org/features/index.html) Please read the subpages of annotations too!!! | reading |
 
 #### Method Chaining
 We cover this as there are several examples where this technique is used.
@@ -98,7 +100,7 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - `@NonNull`
 - `@EqualsAndHashCode`
 - `@NoArgsConstructor`
-- `@AllArgsConstructor` 
+- `@AllArgsConstructor`
   - a static constructor - `@AllArgsConstructor(staticName="of"`) leads to xOfClass`.of()`
 - `@Builder` - build an object using a *fluent* API (Java 8, chaining)
 - `@Log`
