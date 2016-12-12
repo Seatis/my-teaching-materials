@@ -40,6 +40,7 @@ Preparation:
   - n (text, varchar, char); nvarcharX = n'text'
   - datetime, timestamp
   - null
+  - identity, auto-increment
 - select statement
     - where, predicate, constraint
     - operators (= , > , < , <>, like, between, not like , not between, in, ...)
