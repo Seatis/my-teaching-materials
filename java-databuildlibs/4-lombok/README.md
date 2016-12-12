@@ -3,6 +3,7 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 
 *Boilerplate* - means a repetitive, standard document; one that is usually served up for repetitive situations.  It might be used in describing a response, or something that is then extended.  For example, as a bureaucratic response or when generating a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*).
 
+
 ## Materials & Resources
 
 ### Training
