@@ -2,8 +2,9 @@
 
 ## Materials & Resources
 ### Environment
-- Install MySQL for your computer
-- (you can install MySQL Workbench as well)
+Preparation:
+- Install MySQL for your computer - you'll need to have admin rights to your pc;
+- Add MySQL Workbench 
 
 ### Training
 | Material | Time |
@@ -16,53 +17,46 @@
 
 ## Assignment review
 - data
-- dbms
 - database
     - navigational
     - relational
     - oodb
+- dbms
 - SQL
-- primary key
-- normalizations
-    - 1nf
-    - 2nf
-    - 3nf
-- create database
-- use database
-- create table
-    - text
-    - varchar
-    - integer
-    - datetime
-    - ...
-- describe
-- insert into
-- value / values
-- select
-    - where
-    - operators
-        - =
-        - >
-        - <
-        - <>
-        - IN
-        - ...
-    - group by
-    - having
-    - sql functions
-        - sum
-        - max
-        - min
-        - avg
-        - ...
+- normalization - data is only defined in 1 place, no repeated definitions
+    - 1nf - id|name|list-of-phone-numbers|
+    - 2nf - mfg|mfg-city|model-machine|
+    - 3nf - tournament|year|winner|winner's date of birth|
+- keys
+  - primary key
+  - candidate
+  - composite
+  - cascading deletes
+- database operations - create, use
+- table operations - create, alter, alter column, drop, describe, insert into ... values()
+- data types 
+  - text
+  - varchar vs char
+  - n (text, varchar, char); nvarcharX = n'text'
+  - datetime, timestamp
+  - null
+- select statement
+    - where, predicate, constraint
+    - operators (= , > , < , <>, like, between, not like , not between, in, ...)
+    - nested selects
+    - group by; aggregate functions (max, sum, min, avg, count); having
 - join
-    - wtf :)
+    - inner, outer
+    - on operator
+- coalesce(), isnull(), ifnull()    
 
-## Workshop
+## Work With
+Review the first 7+ exercises with class in http://sqlbolt.com/.
+Review the concept of joins
+<img src="Moffat-SQL-Joins-Representation.png">
 
 ### Practice Exercises
-- Complete all challenges here:
-- http://sqlbolt.com/
+Complete the challenges here:
 - https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_core/
 - https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_extra/
 - https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_social_query_core/
