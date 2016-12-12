@@ -5,6 +5,9 @@
 
 ## Materials & Resources
 ### Training
+| Material | Time |
+|:---------|-----:|
+| [Preprocessor tutorial on cplusplus.com](http://www.cplusplus.com/doc/tutorial/preprocessor/)| 0:30 |
 
 ## Material Review
 
@@ -12,6 +15,10 @@
 #### Excercises
 - [01.cpp](workshop/01.cpp)
 - [02.cpp](workshop/02.cpp)
+- [03.cpp](workshop/03.cpp)
+- [04.cpp](workshop/04.cpp)
+- [05.cpp](workshop/05.cpp)
+- [06.cpp](workshop/06.cpp)
 
 
 
