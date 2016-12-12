@@ -43,6 +43,9 @@ unsigned int function_max(unsigned int a, unsigned int b){
 }
 
 
+// Let's check how much the macro cares about type safety and how many times I have to define it. 
+// And what's up with the function.
+
 int main() {
 	unsigned int a = 12;
 	unsigned int b = 24;
@@ -77,15 +80,31 @@ int main() {
 ```cpp
 #include <iostream>
 
-#ifdef __DEBUG 
+#ifdef __DEBUG
+// What is for(;;); good for?
+// Basically: it's a completely empty for loop.
+// It doesn't do anything, but it keeps the process alive.
+// This enables us to attach a debugger if something goes wrong.
+// Even if we did not attach it before we started running the program.
 	#define MyAssert0(a) if(!(a) ){std::cout << "Assertion failed: (" << #a << ") in:  " << __FILE__ << " at: " << __LINE__ << std::endl; for(;;);}
-	#define MyAssert1(a,msg) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl; for(;;);}
-#elif __LOGGING
+	#define MyAssert1(a, msg) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl; for(;;);}
+	#define MyAssert2(a, msg, p1) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << std::endl; for(;;);
+	#define MyAssert3(a, msg, p1, p2) if(!(a)) {std::cout << "Assertion failed: (" << #a <<") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << ' ' << p2 << std::endl; for(;;);}
+#elif defined __LOGGING
 	#define MyAssert0(a) if(!(a) ){std::cout << "Assertion failed: (" << #a << ") in:  " << __FILE__ << " at: " << __LINE__ << std::endl;}
-	#define MyAssert1(a,msg) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl;}
-#else
+	#define MyAssert1(a, msg) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << std::endl;}
+	#define MyAssert2(a, msg, p1) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << std::endl;}
+	#define MyAssert3(a, msg, p1, p2) if(!(a)) {std::cout << "Assertion failed: ("<< #a << ") in: " << __FILE__ << "at: " << __LINE__ << " | " << msg << ' ' << p1 << ' ' << p2 << std::endl;}
+#elif defined __RELEASE
 	#define MyAssert0(a)
-	#define MyAssert1(a,msg)
+	#define MyAssert1(a, msg)
+	#define MyAssert2(a, msg, p1)
+	#define MyAssert3(a, msg, p1, p2)
+#else
+	#define MyAssert0(a) if(!(a))for(;;);
+	#define MyAssert1(a, msg) if(!(a))for(;;);
+	#define MyAssert2(a, msg, p1) if(!(a))for(;;);
+	#define MyAssert3(a, msg, p1, p2) if(!(a))for(;;);
 #endif
 
 int main(){
@@ -96,6 +115,7 @@ int main(){
 }
 
 ```
+
 
 #### Excercises
 - [01.cpp](workshop/01.cpp)
