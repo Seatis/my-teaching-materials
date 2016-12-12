@@ -1,5 +1,4 @@
 # Preprocessor
-*Define stl maps and vectors and manipulate them using iterators*
 
 ## Objectives
 
@@ -19,7 +18,10 @@
 - [04.cpp](workshop/04.cpp)
 - [05.cpp](workshop/05.cpp)
 - [06.cpp](workshop/06.cpp)
-
+- [07.cpp](workshop/07.cpp)
+- [08.cpp](workshop/08.cpp)
+- [09.cpp](workshop/09.cpp)
+- [10.cpp](workshop/10.cpp)
 
 
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
