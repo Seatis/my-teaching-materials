@@ -11,9 +11,9 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 |:-------- |-----:|
 |[Introduction to Project Lombok (Cortez)](https://youtu.be/DXnUpcOPOYA)|5:42|
 |[Lombok, kicked off from IntelliJ (Vega)](https://www.youtube.com/watch?v=E-_Qs_NeHMQ) - note that we'll return to Spring Initialzr (SpringBoot) and JPA in the Spring Module that comes next.|10:15|
-|[Project Lomobok](https://projectlombok.org)||
+|[Project Lomobok](https://projectlombok.org) - yet more of same, but quick*ish*; extra credit if you can master his pronunciation of "Java"|3:49|
 
-### Method Chaining
+#### Method Chaining
 We cover this as there are several examples where this technique is used.
 
 *Taken from stackoverflow* [Method Chaining/Fluent Interface (stackoverflow](http://stackoverflow.com/questions/2872222/how-to-do-method-chaining-in-java-o-m1-m2-m3-m4) - the response from *subhashis*
