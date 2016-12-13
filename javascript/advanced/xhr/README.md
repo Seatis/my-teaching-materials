@@ -35,6 +35,16 @@ Talking to a server
 
 ## Workshop
 
+
+### Try it out
+
+```javascript
+let httpRequest = new XMLHttpRequest();
+httpRequest.open('GET', 'https://sheetsu.com/apis/v1.0/7654fbe24554', true); // Also try http://444.hu/feed
+httpRequest.send(null);
+httpRequest.onreadystatechange = console.log;
+```
+
 Design of user interface is not important, don't spend more than 5 minutes making it look pretty.
 
 
@@ -85,5 +95,6 @@ Read the documentation on how to post data: `https://sheetsu.com/docs/beta#post`
 
 ### Todo project backend communication
 
-Check this readme: [Todo project backend specification](todo-ajax/README.md)
+Check the documentation of the [Todo project's backend](https://todo-docs.herokuapp.com/docs/#!/default/todosGET)
 
+ - Try to implement all methods without connecting them to you UI
