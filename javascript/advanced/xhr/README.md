@@ -27,6 +27,7 @@ Talking to a server
  - Blocking / non-blocking
  - Callbacks
  - status codes
+ - headers
  - XML
  - JSON
  - Fetch API 
