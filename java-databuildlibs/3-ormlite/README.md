@@ -20,6 +20,7 @@ Synopsised from Wikipedia
 | [ORMLite documentation (from chapter 2.12 to the end)](http://ormlite.com/docs/ormlite.pdf) | 20:00 |
 
 ## Material Review
+- Persistence (state that outlives the process that created it) technology
 - JDBC
 - @DatabaseTable
   - tableName
