@@ -49,9 +49,11 @@ https://github.com/Giphy/GiphyAPI
 
 ### New York Times API
 
+http://developer.nytimes.com/
+
 Ask your local mentor for the API key or request your own. Use `localhost` as the website.
 
- - Use the Article Search API
+ - Use the [Article Search API](http://developer.nytimes.com/article_search_v2.json)
  - Find articles about the moon landing by Apollo 11
  - Display the following fields in a list
     - Headline
