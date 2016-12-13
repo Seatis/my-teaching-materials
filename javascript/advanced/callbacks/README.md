@@ -52,4 +52,5 @@ Find the HTML skeleton of the game in the [candy game](candy-game) folder.
  - 10 lollipops generate 1 candy per second.
    - Use the 🍭 emoji to display the lollipops you have
  - Display the candy producton rate in the `Candies / Second` row
+ - If you press the "make candy rain" button, the candy generation should speed up 10x
  - Create a procedural and OO versions of the same app
