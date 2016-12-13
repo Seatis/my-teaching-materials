@@ -16,7 +16,8 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 #### Method Chaining
 We cover this as there are several examples where this technique is used.
 
-*Taken from stackoverflow* [Method Chaining/Fluent Interface (stackoverflow](http://stackoverflow.com/questions/2872222/how-to-do-method-chaining-in-java-o-m1-m2-m3-m4) - the response from *subhashis*
+*Excerpted from stackOverflow* [Method Chaining/Fluent Interface (stackoverflow](http://stackoverflow.com/questions/2872222/how-to-do-method-chaining-in-java-o-m1-m2-m3-m4) - and specifically the response from *subhashis* who kindly created a worked example (but was not voted the best answer to the question).
+
 **Method chaining**, also known as named **parameter idiom**, is a common syntax for invoking multiple method calls in object-oriented programming languages. Each method returns an object, allowing the calls to be chained together in a single statement. Chaining is syntactic sugar which eliminates the need for intermediate variables. A method chain is also known as a train wreck due to the increase in the number of methods that come one after another in the same line that occurs as more methods are chained together even though line breaks are often added between methods.
 
 A similar syntax is **method cascading**, where after the method call the expression evaluates to the current object, not the return value of the method. Cascading can be implemented using method chaining by having the method return the current object itself (this). Cascading is a key technique in fluent interfaces, and since chaining is widely implemented in object-oriented languages while cascading isn't, this form of "cascading-by-chaining by returning this" is often referred to simply as "chaining". Both chaining and cascading come from the Smalltalk language.
