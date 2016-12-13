@@ -1,4 +1,4 @@
-# Map
+#Map
 *Define stl maps and vectors and manipulate them using iterators*
 
 ## Objectives
@@ -18,9 +18,23 @@
 | [C++ Made Easy HD Tutorial 66 - Sets](https://www.youtube.com/watch?v=nj_ks4TPU1s) | 8:05 |
 
 ## Material Review
-
+ - `map`
+ - `pair`
+ - `iterator`
+ - `.begin()`
+ - `.end()`
+ - `accumulate`
+ - `sort`
+ - reverse iterator
+ - sets
 
 #### Excercises
+ - [exercise-1.cpp](exercise-1.cpp)
+ - [exercise-2.cpp](exercise-2.cpp)
+ - [exercise-3.cpp](exercise-3.cpp)
+ - [exercise-4.cpp](exercise-4.cpp)
+ - [exercise-5.cpp](exercise-5.cpp)
+ - [exercise-6.cpp](exercise-6.cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
