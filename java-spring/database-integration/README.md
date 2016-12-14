@@ -8,20 +8,16 @@
 | Material | Time |
 |:---------|-----:|
 |[Spring Boot to create a program with data base connectivity (Code Taming)](https://www.youtube.com/watch?v=oBqTpe5ciMo)|4:10|
-|Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
+|[Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
 |[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/)|reading|
 |[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading|
-!!videos; additional sql
-!!integrating with MySQL engine
-!!Logger factory
+
+Recall previous videos from ORM, SQL and Project Lombok.
 
 ### Optional
 | Material | Time |
 |:---------|-----:|
 |[JdbcTemplate (spring.io)](http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/jdbc/core/JdbcTemplate.html) - catalogue of the different methods and data types available from the library|reference|
-|[MySQL Download](https://www.mysql.com/why-mysql/windows/)|link|
-!!Java 8 Lambdas
-
 
 ## Review
 - org.springframework.boot.CommandLineRunner;
@@ -40,17 +36,17 @@
   - query()
   - execute()
   
-- slf4j / aka Lombok
 - @SpringBootApplication
   - @Configuration
   - @EnableAutoConfiguration
   - @ComponentScan
+
+### Reminders from other videos
+- slf4j / aka Lombok
 - LoggerFactory
 - SQL
   - replacing values marked by `?`
-
-- CurdRepository
-
+- CrudRepository
 
 ### Optional Items
 
@@ -59,10 +55,10 @@
 We saw previously how to use the web-based Spring Tool Suite (STS) to build; in this series of W/S's will use the built-in, IntelliJ tool to talk to STS called Spring Initializr.  We'll use this to prepare the environment.
 
 Start by creating a new project and choosing Spring Initializr:-
-<img src="Workshop/workshop01-A.jpg">
+<img src="workshop/workshop01-A.jpg">
 
 Next, you're generating a Gradle Project (note there're 2 Gradle options).  You should name it appropriately and set the group and package.
-<img src="Workshop/workshop01-B.jpg">
+<img src="workshop/workshop01-B.jpg">
 
 Depending upon the workshop's objectives, we're chosing
 - DevTools
@@ -71,10 +67,11 @@ Depending upon the workshop's objectives, we're chosing
 - JDBC which allows us to talk to an SQL database, or 
 - JPA which allows us to talk to an SQL database 
 
-<img src="readme-A.jgp">
+<img src="readme-A.jpg">
 
 Lastly, we're generating this to use the gradle wrapper (giving us a Gradlew.bat and bootRun).  We specifically unticked "Create separate module per source set":
-<img src="Workshop/workshop01-D.jpg">
+
+<img src="workshop/workshop01-D.jpg">
 
 The Workshops are:-
 - [Data Project with JPA / Spring Boot Gradle build](./workshop/Workshop03.md) - explore JPA 
