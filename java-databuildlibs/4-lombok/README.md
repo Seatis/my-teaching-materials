@@ -88,8 +88,8 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|[Lombok Project Summary](http://jnb.ociweb.com/jnb/jnbJan2010.html)|reading|
-|[Method Chaining](https://www.youtube.com/watch?v=CZfEHRrLA80) - dreadful, jargoned without illustrations, but explains what is method chaining; here until we find something better.|2:46|
+|[Project Lombok Summary](http://jnb.ociweb.com/jnb/jnbJan2010.html)|reading|
+|[Method Chaining](https://www.youtube.com/watch?v=CZfEHRrLA80) - dreadful, machine-voice, jargoned and lacking illustrations.  However it does explains what is *method chaining* and it's here until we find something better.|2:46|
 
 ## Material Review
 - `@Data` - super annotation for `@Getter`, `@Setter`, `@ToString`, `@EqualsAndHashCode`
@@ -104,13 +104,13 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - `@Log`
   - utility logger
 - pom.iml
-- *pojo*
+- *pojo* - stands for "plain old java object" - meaning not using special features
 - The Terminal - in IntelliJ
 - Fluent Interfaces
 - Method Chaining
 
 ## Workshop
-- Create a pojo (that is *plain old java object*, meaning not using special features) with constructors, then
+- Create a pojo with constructors, then
   - replace with @getter for all items; prove it works
   - experiment with just a single field @getter on one field
 - Change to use @Build
