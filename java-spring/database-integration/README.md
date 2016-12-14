@@ -1,6 +1,5 @@
 #Database Integration
-!!Explain
-
+There are several tools through which, with Spring, one can access data tables.  These contribute to reducing the programming effort.  In this day, we review 2 techniques.
 
 ## Materials & Resources
 
@@ -12,7 +11,7 @@
 |[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/)|reading|
 |[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading|
 
-Recall previous videos from ORM, SQL and Project Lombok.
+Recall previous units on ORM, SQL and Project Lombok.
 
 ### Optional
 | Material | Time |
@@ -35,21 +34,17 @@ Recall previous videos from ORM, SQL and Project Lombok.
   - batchUpdate()
   - query()
   - execute()
-  
 - @SpringBootApplication
   - @Configuration
   - @EnableAutoConfiguration
   - @ComponentScan
+- CrudRepository
 
-### Reminders from other videos
+### Reminders from earlier lessons
 - slf4j / aka Lombok
 - LoggerFactory
 - SQL
   - replacing values marked by `?`
-- CrudRepository
-
-### Optional Items
-
 
 ## Workshops
 We saw previously how to use the web-based Spring Tool Suite (STS) to build; in this series of W/S's will use the built-in, IntelliJ tool to talk to STS called Spring Initializr.  We'll use this to prepare the environment.
