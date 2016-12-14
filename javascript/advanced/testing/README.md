@@ -18,7 +18,6 @@
  - units
 
 ## Workshop
-### %Topic%
 initialize an npm project in today's working directory,   
 install tape for testing
 - [tape](https://github.com/substack/tape)
