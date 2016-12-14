@@ -1,8 +1,8 @@
-# ProjectLombok &amp; Method Chaining
+# Project Lombok &amp; Method Chaining
 *Subtitle*
 Project Lombok is an extension to Java that delivers a set of annotations that can reduce the amount of *boilerplate* code (English definition follow) one needs to write.  Lombok, for example, provides one word commands that add *getters*, *setters*, *constructors*.  It also provides functionality by which one can pipe output to a log file (say the console).  Given its usefulness, we introduce it here.
 
-*Boilerplate* - means a repetitive, standard stuff that one always gets or uses; usually in reference to a response, or a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*.  Usually the boilerplate can then be customised to meet specific needs.
+*Boilerplate* - means a repetitive, standard document; one that is usually served up for repetitive situations.  It might be used in describing a response, or something that is then extended.  For example, as a bureaucratic response or when generating a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*). 
 
 ## Materials & Resources
 
@@ -11,7 +11,7 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 |:-------- |-----:|
 |[Introduction to Project Lombok (Cortez)](https://youtu.be/DXnUpcOPOYA)|5:42|
 |[Lombok, kicked off from IntelliJ (Vega)](https://www.youtube.com/watch?v=E-_Qs_NeHMQ) - note that we'll return to Spring Initialzr (SpringBoot) and JPA in the Spring Module that comes next.|10:15|
-|[Project Lomobok](https://projectlombok.org) - yet more of same, but quick*ish*; extra credit if you can master his pronunciation of "Java"|3:49|
+|[Project Lombok](https://projectlombok.org) - yet more of same, but quick*ish*; extra credit if you can master his pronunciation of "Java"|3:49|
 
 #### Method Chaining
 We cover this as there are several examples where this technique is used.
@@ -111,9 +111,10 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - Method Chaining
 
 ## Workshop
-- Create a pojo with constructors, then
-  - replace with @getter
-  - experiment with just a single field @getter
+- Create a pojo (that is *plain old java object*, meaning not using special features) with constructors, then
+  - replace with @getter for all items; prove it works
+  - experiment with just a single field @getter on one field
 - Change to use @Build
+  - remove the constructor
 - Use the @Log
 - Write something that chains stuff together
