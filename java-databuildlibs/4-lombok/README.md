@@ -1,5 +1,4 @@
 # Project Lombok &amp; Method Chaining
-*Subtitle*
 Project Lombok is an extension to Java that delivers a set of annotations that can reduce the amount of *boilerplate* code (English definition follow) one needs to write.  Lombok, for example, provides one word commands that add *getters*, *setters*, *constructors*.  It also provides functionality by which one can pipe output to a log file (say the console).  Given its usefulness, we introduce it here.
 
 *Boilerplate* - means a repetitive, standard document; one that is usually served up for repetitive situations.  It might be used in describing a response, or something that is then extended.  For example, as a bureaucratic response or when generating a contract (that is to say a *Standard Lease Agreement* or *Boilerplate Lease*). 
@@ -10,13 +9,13 @@ Project Lombok is an extension to Java that delivers a set of annotations that c
 | Material | Time |
 |:-------- |-----:|
 |[Introduction to Project Lombok (Cortez)](https://youtu.be/DXnUpcOPOYA)|5:42|
-|[Lombok, kicked off from IntelliJ (Vega)](https://www.youtube.com/watch?v=E-_Qs_NeHMQ) - note that we'll return to Spring Initialzr (SpringBoot) and JPA in the Spring Module that comes next.|10:15|
+|[Lombok, invoked from (aka created using) IntelliJ (Vega)](https://www.youtube.com/watch?v=E-_Qs_NeHMQ) - note that we'll revisit the  Spring Initialzr (SpringBoot) and JPA in the Spring Module that comes next.|10:15|
 |[Project Lombok](https://projectlombok.org) - yet more of same, but quick*ish*; extra credit if you can master his pronunciation of "Java"|3:49|
 
 #### Method Chaining
 We cover this as there are several examples where this technique is used.
 
-*Excerpted from stackOverflow [Method Chaining/Fluent Interface (stackoverflow)](http://stackoverflow.com/questions/2872222/how-to-do-method-chaining-in-java-o-m1-m2-m3-m4) - and specifically the response from *subhashis* who kindly created a worked example (but was not voted the best answer to the question, hence our wanting to highlight such here instead).*
+*Excerpted from stackOverflow [Method Chaining/Fluent Interface (stackoverflow)](http://stackoverflow.com/questions/2872222/how-to-do-method-chaining-in-java-o-m1-m2-m3-m4) - and specifically the response from **subhashis** who kindly created a worked example (but was not voted the best answer to the question, hence our wanting to highlight such here instead).*
 
 **Method chaining**, also known as named **parameter idiom**, is a common syntax for invoking multiple method calls in object-oriented programming languages. Each method returns an object, allowing the calls to be chained together in a single statement. Chaining is syntactic sugar which eliminates the need for intermediate variables. A method chain is also known as a train wreck due to the increase in the number of methods that come one after another in the same line that occurs as more methods are chained together even though line breaks are often added between methods.
 
