@@ -1,15 +1,20 @@
 package lombok.animals;
 
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import lombok.extern.java.Log;
 import lombok.foods.HorseFood;
-
-import java.util.logging.Logger;
 
 /**
  * Created by kicsen on 2016. 12. 12..
  */
+@Log
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class Horse extends AbstractAnimal {
-    private static final Logger LOGGER = Logger.getLogger(Horse.class.getSimpleName());
 
+    @Builder
     public Horse(String name, long weightInGram, double happiness) {
         super(name, weightInGram, happiness);
     }
@@ -20,16 +25,11 @@ public class Horse extends AbstractAnimal {
 
     @Override
     public void logOwnInfo() {
-        LOGGER.info(this.toString());
+        log.info(this.toString());
     }
 
     @Override
     protected int getMoveHappinessDecrease() {
         return 1;
-    }
-
-    @Override
-    public String toString() {
-        return "Horse{" + super.toString() + "}";
     }
 }

@@ -1,15 +1,20 @@
 package lombok.animals;
 
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import lombok.extern.java.Log;
 import lombok.foods.Food;
-
-import java.util.logging.Logger;
 
 /**
  * Created by kicsen on 2016. 12. 12..
  */
+@Log
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class Mouse extends AbstractAnimal {
-    private static final Logger LOGGER = Logger.getLogger(Mouse.class.getSimpleName());
 
+    @Builder
     public Mouse(String name, long weightInGram, double happiness) {
         super(name, weightInGram, happiness);
     }
@@ -20,7 +25,7 @@ public class Mouse extends AbstractAnimal {
 
     @Override
     public void logOwnInfo() {
-        LOGGER.info(this.toString());
+        log.info(this.toString());
     }
 
     @Override
@@ -28,8 +33,4 @@ public class Mouse extends AbstractAnimal {
         return 3;
     }
 
-    @Override
-    public String toString() {
-        return "Mouse{" + super.toString() + "}";
-    }
 }
