@@ -134,13 +134,8 @@ Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the sta
 ### Replace getters
 - Replace all getter methods with @Getter annotation.
   - Observe that there are different levels at which Getters (and Setters) can be set
-<<<<<<< HEAD
 
-*Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh.  Remember Alt-Enter.*  
-=======
-
-Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh.  Remember Alt-Enter.
->>>>>>> a529985... gradle note
+Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh. Remember Alt-Enter.
 
 ### Replace setters
 - Replace all setter methods with @Setter annotation.
