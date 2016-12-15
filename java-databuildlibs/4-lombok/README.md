@@ -212,10 +212,30 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - Method Chaining
 
 ## Workshop
-- Create a pojo with constructors, then
-  - replace with @getter for all items; prove it works
-  - experiment with just a single field @getter on one field
-- Change to use @Build
-  - remove the constructor
-- Use the @Log
-- Write something that chains stuff together
+
+### Create project with lombok
+- Create a new gradle project as first task on Tue. (project id: samplelombok)
+- You should install the Lombok plugin to zour IntelliJ. (Preferences >> Plugins >> Browse repository >> Lombok Plugin >> Install)
+- Then you should replace gradle settings and src folder with source of this repository. (Zip file contains the same source files.)
+- Run the tests and MainApp. Both have to run without failures.
+
+*In next excercises you should modify the classes in main/animals and main/foods packages. Please keep Main App and test unaltered.*
+
+### Replace getters
+- Replace all getter methods with @Getter annotation.
+
+### Replace setters
+- Replace all setter methods with @Getter annotation.
+- You can use AccessLevel.NONE if you do want to avoid a setter.
+
+### Replace Equals and HashCode
+- Replace all equals and hashCode methods with @EqualsAndHashCode annotation.
+- Hint: callSuper
+
+### Replace toString
+- Replace all toString methods with @ToString annotation.
+
+### Replace logging
+- Replace logging with @Log annotation.
+
+### Replace constructors and implement Builder pattern
