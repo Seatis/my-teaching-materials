@@ -239,3 +239,4 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - Replace logging with @Log annotation.
 
 ### Replace constructors and implement Builder pattern
+- Replace static builder classes with @Builder annotation on constructors or top ot the classes.
