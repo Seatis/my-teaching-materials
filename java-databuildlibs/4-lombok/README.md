@@ -215,7 +215,7 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 
 ### Create project with lombok
 - Create a new gradle project as first task on Tue. (project id: samplelombok)
-- You should install the Lombok plugin to zour IntelliJ. (Preferences >> Plugins >> Browse repository >> Lombok Plugin >> Install)
+- You should install the Lombok plugin to zour IntelliJ. (Preferences >> Plugins >> Browse repository >> Lombok Plugin >> Install); **Remember, you must restart IntelliJ for the Plugin to take effect**.
 - Then you should replace gradle settings and src folder with source of this repository. (Zip file contains the same source files.)
 - Run the tests and MainApp. Both have to run without failures.
 
