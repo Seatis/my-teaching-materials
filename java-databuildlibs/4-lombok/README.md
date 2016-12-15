@@ -214,26 +214,33 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 ## Workshop
 
 ### Create project with lombok
-- Create a new gradle project as first task on Tue. (project id: samplelombok)
-- You should install the Lombok plugin to zour IntelliJ. (Preferences >> Plugins >> Browse repository >> Lombok Plugin >> Install); **Remember, you must restart IntelliJ for the Plugin to take effect**.
-- Then you should replace gradle settings and src folder with source of this repository. (Zip file contains the same source files.)
+- Create a new gradle project as first task on Tue. (group id: com.greenfoxacademy; artifact id: samplelombok)
+- Install the Lombok plugin to your IntelliJ environment
+  - You do this through System/Preferences &gt;&gt; Plugins &gt;&gt; Browse repository &gt;&gt; Lombok Plugin &gt;&gt; Install 
+  - **Remember, you must restart IntelliJ for the Plugin to take effect**
+  - Ensure that annotations are enabled, find this in System/Preferences &gt;%gt; Build, Execution &gt;&gt; Compiler &gt;&gt; Annotation Processors 
+- Replace the gradle settings and src folder with source supplied in this lesson (**Note that the zip file contains all the same source files.**)
+  - Ensure that you *refresh* Gradle.
 - Run the tests and MainApp. Both have to run without failures.
 
-*In next excercises you should modify the classes in main/animals and main/foods packages. Please keep Main App and test unaltered.*
+*In next excercises you will modify the classes in main/animals and main/foods packages.  You will **not** change either the App or Test sets.*
 
 ### Replace getters
 - Replace all getter methods with @Getter annotation.
+  - Observe that there are different levels at which Getters (and Setters) can be set
+*Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh.  Remember Alt-Enter.*  
 
 ### Replace setters
-- Replace all setter methods with @Getter annotation.
+- Replace all setter methods with @Setter annotation.
 - You can use AccessLevel.NONE if you do want to avoid a setter.
 
 ### Replace Equals and HashCode
 - Replace all equals and hashCode methods with @EqualsAndHashCode annotation.
-- Hint: callSuper
+- Hint, when something is an extension of a base class, the Equals requires a way to look back at the super: callSuper
 
 ### Replace toString
 - Replace all toString methods with @ToString annotation.
+
 
 ### Replace logging
 - Replace logging with @Log annotation.
