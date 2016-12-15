@@ -124,7 +124,7 @@ In next excercises you will modify the classes in main/animals and main/foods pa
 
 You will **not** change either the App or Test sets.
 
-Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the start of the Class and you're done.  Sometimes, it's the placement of the annotation, or instructions given to the annotation that are necessary.
+Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the start of the Class and you're done.  Sometimes, it's the placement of the annotation, or instructions given, to the annotation that are necessary.
 
 ### Replace getters
 - Replace all getter methods with @Getter annotation.
@@ -138,7 +138,7 @@ Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the sta
 
 ### Replace Equals and HashCode
 - Replace all equals and hashCode methods with @EqualsAndHashCode annotation.
-*Hint, when something is an extension of a base class, the Lombok doesn't necessarily realize such and needs a hint to check on the super's equivalent facility.*
+*Hint, when something is an extension of a base class, Lombok doesn't necessarily realize such and needs a hint to so as to check on the super's equivalent method.* 
 
 ### Replace toString
 - Replace all toString methods with @ToString annotation.
