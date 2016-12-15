@@ -99,7 +99,10 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
 - `@EqualsAndHashCode`
 - `@NoArgsConstructor`
 - `@AllArgsConstructor`
-  - a static constructor - `@AllArgsConstructor(staticName="of"`) leads to xOfClass`.of()`
+- instructions
+  - `staticName` - e.g. `@AllArgsConstructor(staticName="of"`) leads to xOfClass`.of()`
+  - `callToSuper`
+  - `AccessLevel.NONE`
 - `@Builder` - build an object using a *fluent* API (Java 8, chaining)
 - `@Log`
   - utility logger
@@ -120,6 +123,8 @@ Note that this is not the same as [Constructor Chaining (Degee)](https://www.you
   - Ensure that you *refresh* Gradle.
 - Run the tests and MainApp. Both have to run without failures.
 
+**Note that if you recompile your gradle project, you might lose the reference connections in the Test bed.  If so, you need to alt-Enter to reset these in TestHorse to recover `@Log`.  This is due to having `compileonly "org.projectlombok:lombok:1.16.12"` in the gradle.build; if this is `compile "org.projectlombok:lombok:1.16.12"` then it will be resilient, but that means the jar will be compiled and held locally instead of resolved when build.**.
+
 In next excercises you will modify the classes in main/animals and main/foods packages.  
 
 You will **not** change either the App or Test sets.
@@ -129,8 +134,13 @@ Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the sta
 ### Replace getters
 - Replace all getter methods with @Getter annotation.
   - Observe that there are different levels at which Getters (and Setters) can be set
+<<<<<<< HEAD
 
 *Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh.  Remember Alt-Enter.*  
+=======
+
+Keep in mind that when you add methods, you need to sometimes ask IntelliJ to refresh.  Remember Alt-Enter.
+>>>>>>> a529985... gradle note
 
 ### Replace setters
 - Replace all setter methods with @Setter annotation.
@@ -138,7 +148,8 @@ Keep in mind that it's not always just an annotation (e.g. `@Setter`) at the sta
 
 ### Replace Equals and HashCode
 - Replace all equals and hashCode methods with @EqualsAndHashCode annotation.
-*Hint, when something is an extension of a base class, Lombok doesn't necessarily realize such and needs a hint to so as to check on the super's equivalent method.* 
+
+Hint, when something is an extension of a base class, Lombok doesn't necessarily realize such and needs a hint to so as to check on the super's equivalent method.
 
 ### Replace toString
 - Replace all toString methods with @ToString annotation.
