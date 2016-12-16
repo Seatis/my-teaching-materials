@@ -89,6 +89,6 @@ For the last 2 graphic exercise, you can use [draw.h](workshop/draw.h) & [draw.c
 - [10.cpp](workshop/10.cpp)
 - 11: reproduce this:   
 ![11](workshop/recursive_graphic.png)
-- [12.cpp](workshop/12.cpp)
+- [12.cpp](workshop/12.cpp) - Optional
 - 13: reproduce this:   
 ![13](workshop/recursive_graphic_2.png)
