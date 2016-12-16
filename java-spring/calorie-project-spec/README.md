@@ -29,94 +29,62 @@ To do this project, you should leverage the following lessons:-
 Basic web page of your own fashion that tracks the calories consumed per meal in a persistent way.  This runs in a browser and routes with links that route to particular pages.
 
 ### Main Page
-There should be a page that is sent as a response to starting up (`index`).  It shows the title, perhaps an image, and one can click a button that calls the `/meals` GET endpoint.
+There should be a page that is sent as a response to starting up (`index`).  It shows the title, perhaps a background image and then lists the meals.
 
-### Add meal backend
+The columns shown are:-
+- meal date
+- type
+- description
+- total calories
+- functions 
+  - edit
+  - delete
 
-#### Create a database scheme for meals.
-Each meal should have:
-- name (string),
-- count total calories (integer),
-- a date (date)
-- type of meal (breakfast, lunch, dinner, snack, midnight snack, elevenses (for Hobbits and Welsh users) 
+At the bottom of the page, it shows the:-
+- total calories.
+- number of meals
+- summary table
+  - type (of meal)
+  - count
+  - total calories
+- functions
+  - add a meal
+  - view next, previous page
+  - view first, last page
+  - set number of lines to view on a page
+  
+There are selectors for:-
+- a date range
+- types of meals
+- functions 
+  - reselect
 
-#### Create an endpoint: "/meals"
-When receiving the meal in the post data in a `POST` request, the server should add a new meal to the database.
-Use the `body-parser` module for decoding the post data.
-You can try your application with the following command:
-`curl --data '{"name": "something", "calories": 200, "date": "2016-01-26:12:03:10"}' -H 'content-type:application/json'  http://localhost:8080/meals`
-It should reply with the newly created meal object plus status ok if the request was successful. Example response:
-```JavaScript
-{
-  "status": "ok",
-  "meal": {
-    "id": 123,
-    "name": "something",
-    "calories": 200,
-	"type": "midnight snack"
-    "date": "2016-01-04T23:00:00.000Z"
-  }
-}
+The type of meal comes from a table:-
+- Breakfast
+- Elevenses
+- Lunch
+- Snack
+- Dinner
+- Midnight Snack
+
+
+### Add &amp; Edit a meal
+This is a simple page that either adds a new meal definition, or edits such.
+
+As a columnar (right justified around a ":") set, one can enter the details, for example
 ```
-
-
-### Add meal frontend
-#### Create a form for adding a new meal
-- Create an input field for the name of the meal
-- Create an input field for the calories
-- Create an input field for the date
-- Create a button that sends an `POST` http request to the server, to the
-`/meals` endpoint with the fields from the inputs.
-
-### List meals backend
-#### Create an endpoint: "/meals"
-When receiving a `GET` request, the server should respond with the list of meals.
-like:
-```json
-{
-  "meals": [
-    {"id": 1, "name": "steak", "calories": 890, type: "dinner", "date": "2016-01-04T23:00:00.000Z"},
-    {"id": 2, "name": "carrot", "calories": 200,type: "snack",  "date": "2016-01-04T23:00:00.000Z"}
-  ]
-}
+     Date: [date field]
+	 Type: [pull down list]v
+	 Desc: [text block]
+	 Cals: [numeric entry]
+	 
+	 <Add/Return> <Add/Another> <Cancel> <Delete>
+	 
 ```
-You can try your application with the following command:
-`curl -H 'content-type:application/json'  http://localhost:8080/meals`
+The user should be able to cancel, returning to the main screen.
 
-### List meals frontend
-The fronted should list all the added meals below the form.
-It should show the name, calories and date for each.
-
-### Delete meals backend
-#### Create an endpoint: "/meals/:id"
-When receiving a `DELETE` request, the backend should delete the meal with the given id.
-If the delete was successful, it should respond
-
-```json
-{
-  "status": "ok",
-  "meal": {
-    "id": 123
-  }
-}
-```
-, otherwise it should respond
-`{"status": "not exists"}`
-
-You can try your application with the following command:
-`curl -H 'content-type:application/json' -X 'DELETE' http://localhost:8080/meals/3`
-
-### Delete meals frontend
-Add a delete button to each row in the meals list. Clicking a button should send a `DELETE` http request to the server, to the
-`/meals/:id` endpoint with the id of the corresponding meal, after a user confirmation asking "Are you sure you want to delete this meal?".
-
-### Filter meals frontend
-Add a form for filtering the meal list for days. The form should have a date input, a button called 'filter', and one called 'all'.
-If the 'filter' button is clicked, it should only show meals for the given day.
-If the 'all' button is clicked, it should show all meals.
-
-### Sum calories
-Add a field that always shows the sum of calories.
+### Delete a meal 
+For the various situations where deleting.  The user should reconfirm the delete.
 
 ### Object Model 
 These are the minimum elements, of course you can add your own.
@@ -127,6 +95,17 @@ These are the minimum elements, of course you can add your own.
   - food description
   - total calories
 
+- Type
+  - code
+  - description
+  - sequence in a day
+  
+### Extra credit ideas
+- Add line item details to the meal, for each part of the meal, to break up the calories
+- Call a WebService to get calories for particular serving
+  - this will require portion size
+  - learning about how to call a webservice  
+- Create a calendar view that shows, day by day meals eaten, total calories  
 
 #Links
 - [Parent - Java Spring](../README.md)
