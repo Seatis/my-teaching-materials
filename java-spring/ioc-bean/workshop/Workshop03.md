@@ -1,4 +1,4 @@
-#Workshop03 - Practice with the constructs
+#Workshop03 - Practice with the Autowired and Constructors
 
 Earlier we explained the basic underlying concept of IoC/DI with an example involving a TextEditor and a SpellChecker.
 
@@ -28,7 +28,7 @@ In this Workshop, we want to implement the above with Beans and annotation.
 
 Some hints:-
 - You saw @Configuration at the start of the DIConfiguration class in Workshop02; consider it as the model for AppConfig
-- In my solution I had the following packages:-
+- In our solution we had the following packages:-
   - configuration
   - services (for SpellChecker and TextEditor)
 - Revisit this [Useful reference on using Annotation(spring.io)](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)

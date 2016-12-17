@@ -23,7 +23,7 @@ public class HelloWorld {
     }
 
     public void getMessage(){
-        System.out.println("Your Message : " + message);
+        System.out.println("Your Message (from HelloWorld.java): " + message);
     }
 }
 ```
@@ -38,6 +38,30 @@ public class HelloWorldConfig {
     @Bean
     public HelloWorld helloWorld(){
         return new HelloWorld();
+    }
+}
+```
+
+```java
+package com.greenfoxacademy.java.lesson.beans;
+
+public class WithFries {
+    boolean flSalted = true;
+
+    public WithFries(boolean flSalted) {
+        this.flSalted = flSalted;
+    }
+
+    public WithFries() {
+    }
+
+    @Override
+    public String toString() {
+        return (flSalted? "Salted" : "Unassaulted");
+    }
+
+    public void toggleFlSalted() {
+        this.flSalted = ! this.flSalted;
     }
 }
 ```
@@ -58,16 +82,57 @@ public class App {
 
         helloWorld.setMessage("Hello World!");
         helloWorld.getMessage();
+		
+        WithFries withFries = new WithFries();
+        System.out.println(withFries.toString());
+        withFries.toggleFlSalted();
+        System.out.printf("Just toggled withFries and now they are '%s'.", withFries.toString());
+
     }
 }
 ```
 
+
+
 Output, as pretty much expected:
 ```
 RED STUFF
-Hello World!
-RED STUFF
+Your Message (from HelloWorld.java) : Hello World!
+Salted Fries
+Just toggled withFries and now they are 'Unassaulted.'
 ```
+
+The basics of this exercise are that you understand and can use such as a basis:-
+- where is the Spring configuration being held?
+- what is ctx?  What is it holding?
+- how did Spring know where to find the the HelloWorld?
+- if we didn't use ctx.getBean, how would we have created `helloWorld` (the variable)?
+- as we don't have a "new HelloWorld()" instantiated, where is the helloWorld object *living*?
+
+## Now You Do It
+Change withFries into a *Bean*!
+
+Your output could be:-
+```
+Your Message (from HelloWorld.java) : Hello World!
+Salted
+Just toggled withFries and now they are 'Unassaulted'.
+```
+
+## Expand to passing parameters
+What if we want to do the following?
+`WithFries withFries = new WithFries (false); `
+
+You should get the following output
+```
+Your Message (from HelloWorld.java) : Hello World!
+Unassaulted
+Just toggled withFries and now they are 'Salted'.
+```
+
+Could you do that with annotation and the Bean?
+- you'll find that for simple data types, passing simple data types as parameters doesn't work in annotation
+- google it to get a feel for why
 
 # Links
 [Next Workshop - ](../Workshop02.md)
