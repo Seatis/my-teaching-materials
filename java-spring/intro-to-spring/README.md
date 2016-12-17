@@ -80,29 +80,36 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
   - Packaging: jar
   - Java Version: 1.7
   - Language: java
-  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools *Note, you have to do these 1 at a time!*
+  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools *Note, you have to do these 1 at a time, or you can scroll down and tick them*.
 - Generate Project
-
 - Extract the downloaded zip to a directory (consider, btw, using the directory where you would like to have the code and not in Download as shown here)
 
 - IntelliJ: Import project
+
 <img src="./spring-start-03.jpg">
+
 <img src="./spring-start-04.jpg">
 
 - Use Gradle external model
+
 <img src="./spring-start-05.jpg">
 
 - Use Auto import, Create directories for empty..., uncheck: Create separate modules per source set >> Finish
 - Open build.grdle and remove line: "apply plugin: 'eclipse'"
+
 <img src="./spring-start-06.jpg">
 
 *if, for any reason you are missing the dependencies, you can enter them in:-
+
 <img src="./spring-start-06B.jpg">
 
 - Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
-<img src="./spring-start-07.jpg" > !!OK
+
+<img src="./spring-start-07.jpg" > 
+@K okay?
 
 - Open [localhost:8080](http://localhost:8080) in your webbrowse.  You should get the "Whitelabel Error Page".  This means your application is running.
+
 <img src="./spring-start-08.jpg">
 
 *Note, to stop your webserver, in the Terminal, press Control-C.
@@ -114,21 +121,21 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 - Add greeting method and use @RequestMapping annotation.
 - Create and pass a Greeting object when it is called.
 - Recompile app (use the "Make Project (Ctrl-F9" at the top of your project if you've edited the existing project and are restarting)
-- Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your webbrowser
+- Open [http://localhost:8080/greeting](http://localhost:8080/greeting) in your web browser
 - Your output should look like: {"id":1,"content":"Hello, World!"}
 
 ### Hello User REST App
 - Please improve your previous app to greet you and get the name from url query parameter.
 - You should use @RequestParam annotation 
 - Recompile app
-- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
+- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your web browser
 - Your output should look like: {"id":1,"content":"Hello, Your name!"}
 
 ### REST Greet counter app
 - Lets improve your previous app to able to count the greet number. (count api calls)
 - You should use AtomicLong class.
 - Recompile app
-- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your webbrowser
+- Open [http://localhost:8080/greeting?name=Your%20name](http://localhost:8080/greeting?name=Your%20name) in your web browser
 - Your output should looks like: {"id":1,"content":"Hello, Your name!"}
 - Then at next call your output should look like: {"id":2,"content":"Hello, Your name!"} and so on...
 
@@ -156,8 +163,12 @@ In today's workshops you'll be creating a few simple beans.  The beans are criti
 </html>
 ```
 - Recompile app
-- Open [http://localhost:8080/web/greeting](http://localhost:8080/web/greeting) in your webbrowser
-- Your output should look like: Hello, World! (It is a web page.)
+- Open [http://localhost:8080/web/greeting](http://localhost:8080/web/greeting) in your web browser
+- Your output should look like: 
+
+```
+Hello, World! (It is a web page.)
+```
 
 
 ### Web Greet counter app
