@@ -29,18 +29,23 @@ npm install tape --save-dev
 
 #### Exercise
 ```javascript
-var test = require('tape');
-
 var add = function (a, b) {
   return a + b;
 }
 
-test('add 2 numbers', function (t) {
-    var actual = add(1, 2);
-    var expected = 3;
+module.exports = add;
+```
 
-    t.equal(actual, expected);
-    t.end();
+```javascript
+var test = require('tape');
+var add = require('./add.js');
+
+test('add 2 numbers', function (t) {
+  var actual = add(1, 2);
+  var expected = 3;
+
+  t.equal(actual, expected);
+  t.end();
 });
 ```
 
