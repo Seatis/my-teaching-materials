@@ -31,3 +31,7 @@ Note you can also get some hints from the code in [Workshop02](.\Workshop02.md).
 
 ## Extra
 - Replace @Autowired with @Required
+
+# Links
+[Previous Workshop - ](../Workshop03.md)
+[Next Workshop - ](../Workshop05.md)

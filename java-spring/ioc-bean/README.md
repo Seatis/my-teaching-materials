@@ -54,15 +54,20 @@ The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 |:---------|-----:|
 |[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the need for the Bean Factory arose.|14:51|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
-|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE) - a simple illustration of annotation using `@bean()`.|1:58|
-|[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/constructor_based_dependency_injection.htm)|reading|
+|[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9) - a simple illustration of annotation using `@bean()`.|1:58|
+|[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_dependency_injection.htm) - there are 2 sub-links, consider these too.  They use XML (rather than Annotation), so read them to understand the concept only.|reading|
 |[Using Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_annotation_based_configuration.htm)|reading|
 |[Autowire Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)|reading|
 |[Useful reference on using Annotation(spring.io)](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html) - peruse this, I think you'll find it handy later.|reading|
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
+|[Autowiring examples (in28min)](https://www.youtube.com/watch?v=xTGkWSZkyNg)|18:20|
+|[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire|5:43|
+
 ## Review
+- Dependency Injection via either: constructor or setter (for fine-tuning beans)
+
 - Container (creates the objects needed; instantiates from *blueprint*)
   - Object Factory
     - gets a request
@@ -76,12 +81,12 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
     - .setBeanName() - method of BeanNameAware
     - preDestroy
 - wiring
-- `@Bean(name="*override the name of the bean here if you so wish*")`
-- `@Configuration`
+- `@Bean(name="*override the name of the bean here if you so wish, otherwise it's derived from the bean's name*")` - method-level annotation
+- `@Configuration` - indicates that the class will be used as a source of Bean definition
 - `@Component`
 - `@ComponentScan`
 - `@Autowired`
-  - on a setter method (that is `setX(int x) {this.x = x});`) -  will make required (unless told otherwise); byType wiring
+  - on a setter method (that is `setX(Integer x) {this.x = x});`) -  will make required (unless told otherwise); byType wiring
   - on a property (that is `private AProperty aProperty;`) - will remove the need for a setter method; Spring automatically assigns the property with the values passed
   - on a constructor (that is `public class AClass { public AClass(){}; ...`) - will bean and connect in the subordinate class(es) !!AZE?
   - `@Autowired(required=false)` - will turn off the default behaviour so that the bean will be construct even if the value(s) to instantiate it are missing.
@@ -89,7 +94,10 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
   - `org.springframework.context.annotation*` - to reach use annotation directives to instead read a Java class and pick up on `@configuration`, `@bean`, `@PostConstruct` &amp; `@PreDestroy` and to have a Java class with embedded annotation 
   - `org.springframework.beans.factory.*` (note also has annotation support)
 - Different ways of instantiating the Factory, but as we are using annotation:-
-  - `AnnotationConfigApplicationContext()` 
+  - `AnnotationConfigApplicationContext(&lt;name of the class to use&gt;.class)`  - e.g. `newAnnotationConfigApplicationContext(AppConfig.class)`
+- working with beans
+  - .getBean(&lt;name of bean&gt;)  - ``` Service service = (Service) context.getBean("ServiceA");```
+
 - the naming convention for beans; start off lowercase (as opposed to a Class)
 
 ### Optional Items
@@ -99,8 +107,8 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 - `@Scope` - prototype, singleton
 
 ## Workshops
-- [Hello World](./workshop/Workshop01.md) - in this exercise, you will get acquainted with the IntelliJ support for Spring
-- [Work through an example of DI](./workshop/Workshop02.md) - run the code and understand how it's working
+- [Hello World With Fries](./workshop/Workshop01.md) - in this exercise, you will get acquainted with the IntelliJ and basic Bean Annotation (replacing "new" object)
+- [Switching Configurations](./workshop/Workshop02.md) - run the code and understand how it's working; get an insight into how, with Spring one would swap services
 - [Create a couple of beans that are autowired](./workshop/Workshop03.md) - try to do it yourself referring to earlier examples
 - [More on Autowiring](./workshop/Workshop04.md) - play with where the @Autowire is set
 - [Bean Dependency and adding initialization and destruction methods](./workshop/Workshop05.md) 

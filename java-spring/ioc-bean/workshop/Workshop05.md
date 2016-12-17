@@ -83,3 +83,9 @@ The Foo Man is no more, and his mess is gone too!
 ```
 
 There is another way to do this, even closer to the Bean, by using the `@PostConstruct` and `@PreDestroy` annotations (see "[Spring @PostConstruct and @PreDestroy (Mkyong)](https://www.mkyong.com/spring/spring-postconstruct-and-predestroy-example/)").
+
+
+# Links
+[Previous Workshop - ](../Workshop04.md)[Previous Workshop - ](../Workshop04.md)
+[Next Workshop - ](../Workshop06.md)
+[Next Workshop - ](../Workshop06.md)
