@@ -77,5 +77,5 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 
 #Links
 - [Parent - Java Spring](../README.md)
-- [Prior - Introduction To Spring)[../intro-to-spring/README.md)
-- [Next - Thymeleaf](../thymeleaf/README.md)
+- [Prior - Intro, Boot, HelloWorld](../intro-to-spring/README.md)
+- [Next - Beans, Config](../ioc-bean/README.md)
