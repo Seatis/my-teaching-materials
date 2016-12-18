@@ -7,6 +7,7 @@
 
 ## Materials & Resources
 | Material | Time |
+|:---------|-----:|
 | [The Net Ninja: Node JS Tutorial for Beginners #11 - Clients & Servers](https://www.youtube.com/watch?v=qSAze9b0wrY) | 6:12 |
 | [The Net Ninja: Node JS Tutorial for Beginners #12 - Creating a Server](https://www.youtube.com/watch?v=lm86czWdrk0) | 9:30 |
 | [The Net Ninja: Node JS Tutorial for Beginners #20 - The Node Package Manager](https://www.youtube.com/watch?v=kQ1j0rEI7EI) | 5:22 |
