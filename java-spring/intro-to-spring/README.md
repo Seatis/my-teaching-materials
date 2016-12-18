@@ -13,6 +13,27 @@
 |[Building an Application with Spring Boot](http://spring.io/guides/gs/spring-boot/)|reading ~11 mins|
 
 ## Review
+- Web Application
+- Web server
+- Web client
+- Protocol
+    - HTTP
+    - FTP
+- Request and response
+    - methods: GET, POST, PUT, DELETE...
+    - repsonse codes: 200, 400, 404, 500
+- Headers
+- static and dynamic response
+- Spring Boot
+    - `@SpringBootApplication`
+        - `@Configuration`
+        - `@ComponentScan`
+        - `@EnableAutoConfiguration`
+- `@Controller`
+    - `@RestController`
+    - `@RequestMapping`
+        - value
+    - `@ResponseBody`
 
 ## Workshops
 
