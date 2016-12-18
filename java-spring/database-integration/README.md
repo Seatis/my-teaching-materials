@@ -8,6 +8,7 @@ There are several tools through which, with Spring, one can access data tables. 
 |:---------|-----:|
 |[Spring Boot to create a program with data base connectivity (Code Taming)](https://www.youtube.com/watch?v=oBqTpe5ciMo)|4:10|
 |[Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
+|[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s) - shows 
 |[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/)|reading|
 |[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading|
 
@@ -16,14 +17,20 @@ Recall previous units on ORM, SQL and Project Lombok.
 ### Optional
 | Material | Time |
 |:---------|-----:|
+|[How to create a Spring Boot, REST &amp; JPA Project in IntelliJ (Michalski)](https://www.youtube.com/watch?v=I1ydigiZ25g)|8:00|
 |[JdbcTemplate (spring.io)](http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/jdbc/core/JdbcTemplate.html) - catalogue of the different methods and data types available from the library|reference|
 
 ## Review
 - org.springframework.boot.CommandLineRunner;
+- Hibernate - JPA extended from it; can be used to supply the DDL 
+  - Cardinality: `@OneToOne`, `@OneToMany`
+  - `@JoinColumn`
+  - `
 - H2
+
 - JPA
   - @Entity
-  - @Table
+  - @Table (name = "&lt;name to use&gt;")
   - @Id
   - @GeneratedValue
     - (strategy=GenerationType.AUTO)
@@ -69,10 +76,10 @@ Lastly, we're generating this to use the gradle wrapper (giving us a Gradlew.bat
 <img src="workshop/workshop01-D.jpg">
 
 The Workshops are:-
-- [Data Project with JPA / Spring Boot Gradle build](./workshop/Workshop03.md) - explore JPA 
-- [Practice with `@Table` and other JPA Annotations](./Workshop/Workshop04.md)
 - [Data Project with JDBC / Spring Boot Gradle build](./workshop/Workshop01.md) - using Spring Initialzr in IntelliJ to create a project, practice understanding JDBC and get a short intro to Java 8 and Lambdas
 - [Practice by extending W/S1 with another table](./workshop/Workshop02.md)
+- [Data Project with JPA / Spring Boot Gradle build](./workshop/Workshop03.md) - explore JPA 
+- [Practice with `@Table` and other JPA Annotations](./Workshop/Workshop04.md)
 - [Read data from MySQL using JDBC](./Workshop/Workshop05.md) 
 
 

@@ -16,6 +16,7 @@ You should be able to answer the following questions:-
 Obviously doing helps to retain the knowledge.  Here're some practice ideas.
 
 ### One class dependent upon another Example
+### One class dependent upon another Example
 Define the following set of dependencies.
 
 There is the Nespresso machine (check it out at www.nespresso.com/fr/en/machinelistblock).  
