@@ -12,8 +12,7 @@
 | [The Net Ninja: Node JS Tutorial for Beginners #12 - Creating a Server](https://www.youtube.com/watch?v=lm86czWdrk0) | 9:30 |
 | [The Net Ninja: Node JS Tutorial for Beginners #20 - The Node Package Manager](https://www.youtube.com/watch?v=kQ1j0rEI7EI) | 5:22 |
 | [The Net Ninja: Node JS Tutorial for Beginners #21 - The package.json File](https://www.youtube.com/watch?v=_eRwjuIDJ2Y) | 5:08 |
-| [The Net Ninja:
-Node JS Tutorial for Beginners #23 - Introduction to Express](https://www.youtube.com/watch?v=9TSBKO59u0Y) | 8:18 |
+| [The Net Ninja: Node JS Tutorial for Beginners #23 - Introduction to Express](https://www.youtube.com/watch?v=9TSBKO59u0Y) | 8:18 |
 | [The Net Ninja: Node JS Tutorial for Beginners #24 - Express Route Params](https://www.youtube.com/watch?v=MuMs1pLuT7I) | 5:07 |
 | [The Net Ninja: Node JS Tutorial for Beginners #25 - Template Engines](https://www.youtube.com/watch?v=oZGmHNZv7Sc) | 11:38 |
 | [The Net Ninja: Node JS Tutorial for Beginners #26 - Template Engines ( part 2 )](https://www.youtube.com/watch?v=RczQp3zCPXs) | 4:37 |
