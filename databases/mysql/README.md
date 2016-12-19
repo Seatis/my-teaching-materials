@@ -9,7 +9,9 @@ Get introduced to MySQL
 ## Materials & Resources
 ### Environment
  - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+
 ### Tools
+Install a GUI client to manage DB tables
  - [HeidiSQL](http://www.heidisql.com/) - Windows
  - [Sequel pro](http://www.sequelpro.com/) - OSX
 
