@@ -1,5 +1,5 @@
 # The Second test experience
-- Create a sum method in your class which has a vector reference of integers as parameter
+- Create a sum method in your class which has a method that takes a vector reference of integers as parameter
 - It should return the sum of the elements in the list
 - Create a test for that
     - Add a new test case

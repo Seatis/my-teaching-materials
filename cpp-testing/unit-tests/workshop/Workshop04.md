@@ -70,7 +70,7 @@ is float an anagram of aloft = true
 is flota an anagram of aloft = true
 ```
 
-## C09) Try out `REQUIRE()` and `REQUIRE_FALSE()`
+## C06) Try out `REQUIRE()` and `REQUIRE_FALSE()`
 
 Now that the Anagram program *works*, let's put it through its paces.
 
@@ -79,70 +79,6 @@ Do various asserts based on what we tested earlier, with
 - what if one string is blank and the other isn't
 - vice versa
 
-## C10) Let's cause an exception
-
-What happens if you do the following?
-
-```java
-            System.out.printf("is %s an anagram of %s = %s\n", null, w.getS(), w.isAnAnagram(null));
-```
-
-Let's have a test to catch this failure.  
-
-Then let's modify the code to both catch the failure (in the class), and still test for it cleanly.
-Infinite loop
-
-## C11) Complete the method() `WaitingItOut()` as follows
-```java
-void WaitingItOut() {
-  for (int i = 0; i = 0; ) {};
-}
-
-```
-
-Let's have a test to catch this failure.  
-
-## C12) Using @Before and @After
-
-Add to your test the following methods and ensure that they execute accordingly in your testing
-
-```java
-        WordToolbox wordToolbox;
-
-		    public static void onceExecutedBeforeAll() {
-		        System.out.println("@BeforeClass: onceExecutedBeforeAll");
-		    }
-
-		    public void executedBeforeEach() {
-		        wordToolbox = new WordToolbox("Muppets");
-		        System.out.println("@Before: executedBeforeEach");
-		    }
-
-		    public static void onceExecutedAfterAll() {
-		        System.out.println("@AfterClass: onceAfterAll");
-		    }
-
-		    public void executedAfterEach() {
-						wordToolbox = null;
-		        System.out.println("@After: executedAfterEach");
-		    }
-
-```
-
-Expectations are something like this (not tested yet).
-
-```	 
-@BeforeClass: onceExecutedBeforeAll
-@Before: executedBeforeEach
-@Test: testwhatever
-@After: executedAfterEach
-@Before: executedBeforeEach
-@Test: testwhatever
-@After: executedAfterEach
-@AfterClass: onceAfterAll
-```
-
-## C13) Test all cases and methods
+## C07) Test all cases and methods
 - If you're finished with these, you can come up with special cases, test them.
 - Ensure that all `public` methods are tested
-- Try to make others' solution fail, while yours passes everything
