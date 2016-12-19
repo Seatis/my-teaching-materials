@@ -50,12 +50,13 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 - Extend the previous project and add a Todo (id:int, title:String, isUrgent:Boolean, isDone:boolean) class
 - Create a new controller called `TodoController` which maps to `/todo` (hint: @RequestMapping to Controller?)
 - Add a new action to the previous controller which maps to `/` and `/list`
-- Put the following line into the function: `[PUT CODE HERE]`
-- Create a new template in the `src/main/resources/templates/todo` folder and in its html body display the `todos` list in a `ul` (hint: `th:each`)
+- Add [TodoService.java](workshop/TodoService.java) to the project (don't forget the package)
+- Use `getTodos()` from `TodoService` to get all the Todos
+- Create a new template in the `src/main/resources/templates/todo` folder and in its html body display the `todos` list (hint: `th:each`, `ul`)
 
 ### Extend Listing
 
-- Extend the previous listing action with a parameter for listing the active todos (parameter name can be `active`)
+- Extend the previous listing action with a parameter (querystring) for listing the active todos (parameter name can be `active`; active means !isDone)
 
 ### Todo Details View
 
@@ -63,17 +64,18 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 - On the detail page show the following attributes:
   - id
   - title
-  - isUrgent (checkbox)
-  - isDone (checkbox)
+  - isUrgent (checkbox, disabled)
+  - isDone (checkbox, disabled)
 - It has to be accessible from an url like this: `http://localhost/todo/details/1` (1 is the id of the Todo)
 
 ### Create a Link
 
 - Extend the previous project and create a link from the `list` page to the `details` page for every Todo
 
-### Create an Add New Todo Page
+### Create an "Add New Todo" Page
 
-[PUT DESCRIPTION HERE]
+- Extend the previous project and add a create todo view and action (hint: you need two different actions(GET, POST))
+- Add a link to the `list` page which redirects to the `add new todo` page
 
 #Links
 - [Parent - Java Spring](../README.md)
