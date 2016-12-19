@@ -76,10 +76,10 @@ Lastly, we're generating this to use the gradle wrapper (giving us a Gradlew.bat
 <img src="workshop/workshop01-D.jpg">
 
 The Workshops are:-
-- [Data Project with JDBC / Spring Boot Gradle build](./workshop/Workshop01.md) - using Spring Initialzr in IntelliJ to create a project, practice understanding JDBC and get a short intro to Java 8 and Lambdas
-- [Practice by extending W/S1 with another table](./workshop/Workshop02.md)
-- [Data Project with JPA / Spring Boot Gradle build](./workshop/Workshop03.md) - explore JPA 
-- [Practice with `@Table` and other JPA Annotations](./Workshop/Workshop04.md)
+- [Data Project with JDBC / Spring Boot Gradle build](./workshop/Workshop01.md) - using Spring Initialzr in IntelliJ to create a project, practice understanding JPA and using H2.
+- [JPA with MySQL](./workshop/Workshop02.md)
+- [JPA, MySQL and relationships between Objects](./workshop/Workshop03.md) - explore JPA 
+- [CrudRepository](./Workshop/Workshop04.md)
 - [Read data from MySQL using JDBC](./Workshop/Workshop05.md) 
 
 
