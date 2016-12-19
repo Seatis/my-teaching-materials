@@ -27,6 +27,7 @@
 - @RequestParam
   - required
 - @PathVariable
+- @ModelAttribute
 - Model
 - xmlns:th="http://www.thymeleaf.org"
 
