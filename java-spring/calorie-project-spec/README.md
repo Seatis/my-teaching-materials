@@ -5,7 +5,7 @@ As part of our learning about Spring and simulating the world of a programmer, t
 
 | Material | Time |
 |:---------|-----:|
-
+|[Building a CRUD Web App Using Thymeleaf, JPA and H2 (Marinho)](https://www.youtube.com/watch?v=TcP5kFPq354)|29:38|
 
 | Material | Time |
 |:---------|-----:|

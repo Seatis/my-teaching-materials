@@ -8,9 +8,9 @@ There are several tools through which, with Spring, one can access data tables. 
 |:---------|-----:|
 |[Spring Boot to create a program with data base connectivity (Code Taming)](https://www.youtube.com/watch?v=oBqTpe5ciMo)|4:10|
 |[Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
-|[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s) - shows 
-|[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/)|reading|
-|[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading|
+|[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s)|45:00|
+|[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/)|reading 7:00|
+|[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading 10:00|
 
 Recall previous units on ORM, SQL and Project Lombok.
 
