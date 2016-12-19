@@ -84,6 +84,9 @@ The Bean Factory enables this sort of *passing* to occur in a simple, clean way.
 
 Once through the above, consider rewatching the first video (JavaBrains.01) to reinforce your understanding.
 
+### Additional items
+| Material | Time |
+|:---------|-----:|
 |[Autowiring examples (in28min)](https://www.youtube.com/watch?v=xTGkWSZkyNg)|18:20|
 |[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire|5:43|
 
