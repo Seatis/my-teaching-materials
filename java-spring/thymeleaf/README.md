@@ -48,9 +48,9 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 
 ### Todos
 
-- Extend the previous project and add a Todo (id:int, title:String, isUrgent:Boolean, isDone:boolean) class
+- Extend the previous project and add a Todo (id:int, title:String, isUrgent:Boolean, isDone:Boolean) class
 - Create a new controller called `TodoController` which maps to `/todo` (hint: @RequestMapping to Controller?)
-- Add a new action to the previous controller which maps to `/` and `/list`
+- Add a new action which maps to `/` and `/list` to the previous controller
 - Add [TodoService.java](workshop/TodoService.java) to the project (don't forget to specify the package)
 - Use `getTodos()` from `TodoService` to get all the Todos
 - Create a new template in the `src/main/resources/templates/todo` folder and in its html body display the `todos` list (hint: `th:each`, `ul`)
@@ -76,6 +76,7 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 ### Create an "Add New Todo" Page
 
 - Extend the previous project and add a create todo view and action (hint: you need two different actions(GET, POST))
+- After the user submitted the form and the Todo is saved then redirect to the `list` page
 - Add a link to the `list` page which redirects to the `add new todo` page
 
 #Links
