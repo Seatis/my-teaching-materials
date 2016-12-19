@@ -24,5 +24,5 @@ After running this you should find the following customers in your database.
 
 # Links
 - [Unit Overview](../../README.md)
-- [Prev Workshop01](../Workshop01.md)
-- [Next Workshop03](../Workshop03.md)
+- [Prev Workshop01](./Workshop01.md)
+- [Next Workshop03](./Workshop03.md)
