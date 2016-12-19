@@ -165,4 +165,4 @@ Using the Debugger, step through the process and understand what is happening, t
 
 # Links
 [Unit Overview](../../README.md)
-[Next Workshop - ](../Workshop02.md)
+[Next Workshop - ](./Workshop02.md)
