@@ -13,8 +13,8 @@ You'll need to:-
 
 After running this you should find the following customers in your database.
 
-|id|firstName|LastName|
-|:-|:--------|:-------|
+|id  |firstName|LastName|
+|:---|:--------|:-------|
 |1|Jack|Bauer|
 |2|Chloe|O'Brian|
 |3|Kim|Bauer|
@@ -23,6 +23,6 @@ After running this you should find the following customers in your database.
  
 
 # Links
-[Unit Overview](../../README.md)
-[Prev Workshop01](../Workshop01.md)
-[Next Workshop03](../Workshop03.md)
+- [Unit Overview](../../README.md)
+- [Prev Workshop01](../Workshop01.md)
+- [Next Workshop03](../Workshop03.md)
