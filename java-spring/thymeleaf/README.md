@@ -9,17 +9,17 @@
 ### Training
 | Material | Time |
 |:-------- |-----:|
-| [Using Thymeleaf (From Paragraph 3)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | reading |
-| [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| reading |
-| [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc) | reading |
-| [Spring Forms with Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#creating-a-form) | reading |
-| [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | reading |
+| [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| 5:34 |
+| [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc) | 7:00 |
+| [Spring Forms with Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#creating-a-form) | 8:42 |
+| [Spring RequestMapping](http://www.baeldung.com/spring-requestmapping) | 7:26 |
+| [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | 6:59 |
 
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-| [Spring RequestMapping](http://www.baeldung.com/spring-requestmapping) | reading |
+| [Using Thymeleaf (From Paragraph 3 to 7)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | 35:00 |
 
 ## Material Review
 - @Controller
