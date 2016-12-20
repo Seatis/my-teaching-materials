@@ -7,8 +7,10 @@ As part of our learning about Spring and simulating the world of a programmer, t
 |:---------|-----:|
 |[Building a CRUD Web App Using Thymeleaf, JPA and H2 (Marinho)](https://www.youtube.com/watch?v=TcP5kFPq354)|29:38|
 
+
 | Material | Time |
 |:---------|-----:|
+|[Dev Tools &amp; Docker](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3) - article and video explaining dev tools and docker| reading + 11:26|
 |[Motivation (FunFunFunction.25)](https://www.youtube.com/watch?v=RQg_Q4HYYpg) - what keeps people going? PMJ is a consummate developer with a following, and these are his musings from Gotenborg|11:53|
 Working in teams?
 JSON
@@ -23,6 +25,7 @@ To do this project, you should leverage the following lessons:-
 - SQL - basics
 - JSON
 - MVC
+- DevTools (Optional above)
 
 ## Specification/Stories
 
