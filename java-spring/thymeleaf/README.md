@@ -52,6 +52,16 @@ Solve all the exercises from Exercise 1 to 13 on http://itutorial.thymeleaf.org/
 - Create a new controller called `TodoController` which maps to `/todo` (hint: @RequestMapping to Controller?)
 - Add a new action which maps to `/` and `/list` to the previous controller
 - Add [TodoService.java](workshop/TodoService.java) to the project (don't forget to specify the package)
+- Add the following to the `TodoController` class:
+
+  ```
+  private TodoService todoService;
+
+  @Autowired
+  public TodoController(TodoService todoService){
+    this.todoService = todoService;
+  }
+  ```
 - Use `getTodos()` from `TodoService` to get all the Todos
 - Create a new template in the `src/main/resources/templates/todo` folder and in its html body display the `todos` list (hint: `th:each`, `ul`)
 
