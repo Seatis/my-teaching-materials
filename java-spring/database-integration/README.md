@@ -10,7 +10,7 @@ There are several tools through which, with Spring, one can access data tables w
 |[Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
 |[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/) - we'll repeat this exercise in class|reading 7:00|
 |[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading 10:00|
-|[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s) - we'll repeat this exercise in class|45:00|
+|[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s) - we'll repeat this exercise in class also|45:00|
 
 Recall previous units on ORM, SQL and Project Lombok.
 
@@ -18,17 +18,15 @@ Recall previous units on ORM, SQL and Project Lombok.
 | Material | Time |
 |:---------|-----:|
 |[JpaRepository (Ubilife)](https://www.youtube.com/watch?v=PMMyTCjGFjI) - explain JpaRepository which extends CrudRepository, showing how a `public interface` is extended and then used to have create, update and find functionality. |18:51|
-|An Intro to Spring (SpringDeveloper/Olivier)](https://www.youtube.com/watch?v=jIae_pcG-9M)|1:27:19|
+|[An Intro to Spring (SpringDeveloper/Olivier)](https://www.youtube.com/watch?v=jIae_pcG-9M)|1:27:19|
 |[How to create a Spring Boot, REST &amp; JPA Project in IntelliJ (Michalski)](https://www.youtube.com/watch?v=I1ydigiZ25g)|8:00|
 |[Spring Data JPA Query Definition Strategies (LeanStack)](https://www.youtube.com/watch?v=S5vZP_03ENY) - more on built-in Query building and manually defined queries (`@NamedQuery`).|24:29|
 |[JdbcTemplate (spring.io)](http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/jdbc/core/JdbcTemplate.html) - catalogue of the different methods and data types available from the library|reference|
 
 ## Review
-- org.springframework.boot.CommandLineRunner;
 - Hibernate - JPA extended from it; can be used to supply the DDL 
   - Cardinality: `@OneToOne`, `@OneToMany`, `@ManyToMany`
   - `@JoinColumn`
-  - `
 - H2
 - CrudRepository
 - JpaRepository  
@@ -52,7 +50,6 @@ Recall previous units on ORM, SQL and Project Lombok.
 	- exists (ID id)
 	- count()
 	- delete (ID id); delete (T entity), delete (Iterable <? extends T> entities), deleteAll()
-  - 
 - JDBC
   - batchUpdate()
   - query()
@@ -75,9 +72,11 @@ Recall previous units on ORM, SQL and Project Lombok.
 We saw previously how to use the web-based Spring Tool Suite (STS) to build; in this series of W/S's will use the built-in, IntelliJ tool to talk to STS called Spring Initializr.  We'll use this to prepare the environment.
 
 Start by creating a new project and choosing Spring Initializr:-
+
 <img src="workshop/workshop01-A.jpg">
 
 Next, you're generating a Gradle Project (note there're 2 Gradle options).  You should name it appropriately and set the group and package.
+
 <img src="workshop/workshop01-B.jpg">
 
 Depending upon the workshop's objectives, we're chosing
