@@ -59,11 +59,11 @@ The Bean Factory has several facets.  For today we will focus on the core and pr
 
 | Material | Time |
 |:---------|-----:|
-|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the need for the Bean Factory arose.|14:51|
+|[What &amp; Why of Dependency Injection (Ferrara)](https://www.youtube.com/watch?v=IKD2-MAkXyQ) - revisiting why DI is important and how it applies.|4:46|
 |[Understanding Beans &amp; Factory Design Pattern (JavaBrains.03)](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
 |[Creating beans - annotation (InterviewDot)](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9) - a simple illustration of annotation using `@bean()`.|1:58|
-|[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_dependency_injection.htm) - there are 2 sub-links, consider these too.  They use XML (rather than Annotation), so read them to understand the concept only.|reading|
 |[Using Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_annotation_based_configuration.htm)|reading|
+|[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire.|5:43|
 |[Autowire Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)|reading|
 |[Useful reference on using Annotation(spring.io)](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html) - peruse this, I think you'll find it handy later.|reading|
 
@@ -72,9 +72,9 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 ### Additional items
 | Material | Time |
 |:---------|-----:|
-|[What &amp; Why of Dependency Injection (Ferrara)](https://www.youtube.com/watch?v=IKD2-MAkXyQ) - revisiting why DI is important and how it applies.|4:46|
+|[Overview of DI (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_dependency_injection.htm) - there are 2 sub-links, consider these too.  They use XML (rather than Annotation), so read them to understand the concept only.|reading|
+|[Inversion of Control/Dependency Injection (JavaBrains.01)](https://www.youtube.com/watch?v=GB8k2-Egfv0&t=714s) - explains how the need for the Bean Factory arose.|14:51|
 |[Autowiring examples (in28min)](https://www.youtube.com/watch?v=xTGkWSZkyNg)|18:20|
-|[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire.|5:43|
 
 ## Review
 - Dependency Injection via either: constructor or setter (for fine-tuning beans)
