@@ -9,6 +9,7 @@
 ### Training
 | Material | Time |
 |:-------- |-----:|
+|[Introduction to Thymeleaf (Broadleaf)](https://www.youtube.com/watch?v=GNteuJDo1KA&t=374) - focus on the section "Introduction to Thymeleaf", you can keep watching the "Intermediate" Chapter, but this is just to get the basic concepts (@27m00).|38:00|
 | [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| 5:34 |
 | [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc) | 7:00 |
 | [Spring Forms with Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#creating-a-form) | 8:42 |
@@ -20,6 +21,7 @@
 | Material | Time |
 |:-------- |-----:|
 | [Using Thymeleaf (From Paragraph 3 to 7)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | 35:00 |
+| [Illustration of Thymeleaf with MVC (RomanianCoder)[(https://www.youtube.com/watch?v=Aiqf0X7dlw0&t=454s) - this shows some sample code using the annotations to the html and how such is backed with Java code.  We'll do more on MVC and beans later.|26:20|
 
 ## Material Review
 - @Controller
