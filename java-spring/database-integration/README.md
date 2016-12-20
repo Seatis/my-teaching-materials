@@ -7,9 +7,9 @@ There are several tools through which, with Spring, one can access data tables w
 | Material | Time |
 |:---------|-----:|
 |[Spring Boot to create a program with data base connectivity (Code Taming)](https://www.youtube.com/watch?v=oBqTpe5ciMo)|4:10|
-|[Database Access (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
-|[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/) - we'll repeat this exercise in class|reading 7:00|
-|[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading 10:00|
+|[JPA Spring (DotInterview)](https://youtu.be/IZfbg89KGRY) - terrible audio, but covers all the elements|7:09|
+|[Accessing data with JPA (spring.io)](https://spring.io/guides/gs/accessing-data-jpa/) - we'll repeat this exercise in class|reading 10:00|
+|[Accessing a relational DB (spring.io)](http://spring.io/guides/gs/relational-data-access/)|reading 15:00|
 |[JPA with Lombok, MySql (Marinho)](https://www.youtube.com/watch?v=8FC_h1xuh-s) - we'll repeat this exercise in class also|45:00|
 
 Recall previous units on ORM, SQL and Project Lombok.
@@ -22,6 +22,7 @@ Recall previous units on ORM, SQL and Project Lombok.
 |[How to create a Spring Boot, REST &amp; JPA Project in IntelliJ (Michalski)](https://www.youtube.com/watch?v=I1ydigiZ25g)|8:00|
 |[Spring Data JPA Query Definition Strategies (LeanStack)](https://www.youtube.com/watch?v=S5vZP_03ENY) - more on built-in Query building and manually defined queries (`@NamedQuery`).|24:29|
 |[JdbcTemplate (spring.io)](http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/jdbc/core/JdbcTemplate.html) - catalogue of the different methods and data types available from the library|reference|
+|[Database Access with MVC (Romanian.03)](https://www.youtube.com/watch?v=C3bNEz9opuU)|19:37|
 
 ## Review
 - Hibernate - JPA extended from it; can be used to supply the DDL 
