@@ -21,7 +21,7 @@
 | Material | Time |
 |:-------- |-----:|
 | [Using Thymeleaf (From Paragraph 3 to 7)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | 35:00 |
-| [Illustration of Thymeleaf with MVC (RomanianCoder)[(https://www.youtube.com/watch?v=Aiqf0X7dlw0&t=454s) - this shows some sample code using the annotations to the html and how such is backed with Java code.  We'll do more on MVC and beans later.|26:20|
+| [Illustration of Thymeleaf with MVC (RomanianCoder)](https://www.youtube.com/watch?v=Aiqf0X7dlw0&t=454s) - this shows some sample code using the annotations to the html and how such is backed with Java code.  We'll do more on MVC and beans later.|26:20|
 
 ## Material Review
 - @Controller
