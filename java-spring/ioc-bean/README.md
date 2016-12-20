@@ -48,7 +48,7 @@ Spring has evolved over the years.  Early on it was controlled through configura
 
 As we are focusing annotation, we won't use the xml approach.  By annotating the specific code fragment that relates to the bean there's no distance between the code and what Spring will employ.  That reduces error such as omitting something.
 
-The Bean Factory has several facets.  For today will focus on the core and practice, namely by:
+The Bean Factory has several facets.  For today we will focus on the core and practice, namely by:
 - reviewing the concept Dependency Injection (DI) / Inversion of Control (IoC)
 - exploring the the bean factory model
 - looking at the core elements of beans and how, with annotation, to 
