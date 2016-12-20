@@ -1,22 +1,14 @@
-#Workshop01 - Data Project with JDBC / Spring Boot Gradle build
+#WorkshopJDBC - Data Project with JDBC / Spring Boot Gradle build
 
-We saw previously how to use the web-based Spring Tool Suite (STS) to build; let's use the built-in, IntelliJ version to get a starter environment.
+We saw previously how to use the web-based Spring Tool Suite (STS) to build.  These same tools can be used to set up a JDBC environment.  JDBC is a lower level than JPA or Hibernate.
 
 ## Set up the situation
-Start by creating a new project and choosing Spring Initializr:-
-<img src="workshop01-A.jpg">
-
-Next, you're generating a Gradle Project (note there're 2 Gradle options).  You should name it appropriately and set the group and package.
-<img src="workshop01-B.jpg">
-
-For this first effort, we're choosing 
+For this effort, we're choosing 
 - Lombok (as that gives us messages to the console (CommandLineRunner and Logger (org.slf4j)).
 - H2 which allows us to do in memory SQL
 - JDBC which allows us to talk to an SQL database
-<img src="workshop01-C.jgp">
 
-Lastly, we're generating this to use the gradle wrapper (giving us a Gradlew.bat and bootRun).  We specifically unticked "Create separate module per source set":
-<img src="workshop01-D.jpg">
+<img src="workshopJDBC-A.jgp">
 
 This will give us an environment where we can try out the source code found "[Guide: Relational DB access (spring.io)](http://spring.io/guides/gs/relational-data-access/)".  From there, you'll copy over 2 .java classes: Application.java and Customer.java.
 

@@ -87,8 +87,9 @@ Once through the above, consider rewatching the first video (JavaBrains.01) to r
 ### Additional items
 | Material | Time |
 |:---------|-----:|
+|[What &amp; Why of Dependency Injection (Ferrara)](https://www.youtube.com/watch?v=IKD2-MAkXyQ) - revisiting why DI is important and how it applies.|4:46|
 |[Autowiring examples (in28min)](https://www.youtube.com/watch?v=xTGkWSZkyNg)|18:20|
-|[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire|5:43|
+|[Autowired Annotation example (Telusko.9)](https://www.youtube.com/watch?v=HFt_q0wYYLU&t=70) - not the most "direct" example, but he gets there in the end.  You'll see how a bean is annotated to pick up another class through @Autowire.|5:43|
 
 ## Review
 - Dependency Injection via either: constructor or setter (for fine-tuning beans)
