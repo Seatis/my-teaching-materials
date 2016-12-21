@@ -8,13 +8,13 @@ Over the next 2 weeks we'll get to know Spring better and also, a couple of othe
 ##Week 09 - Bean Basics
 This week is organised around a project, *Calorie Counter*.  There will be fewer daily tasks each day, just doing simple exercises to become acquainted with the technology.  The remainder will be apply such to the web app that we will be building up.
 
-- [Setup & Introduction to Spring (SpringBoot) and a HelloWorld (Kriszti·n)](./intro-to-spring/README.md)
+- [Setup & Introduction to Spring (SpringBoot) and a HelloWorld (Kriszti√°n)](./intro-to-spring/README.md)
 - [Thymeleaf - a way to generate HTML and an Introduction to Models &amp; Views (Misi)](./thymeleaf/README.md)
 - [Inversion of Control (IoC) aka *Dependency Injection* using annotation to create Beans using a Bean Factory (Eric)](./ioc-bean/README.md) 
 - [Database integration (Eric)](./database-integration/README.md)
-- Project finish [*overall specification*](./calorie-project-spec/README.md)
+- [Project *overall specification*](./calorie-project-spec/README.md)
 
 ##Week 10- MVC 
-- MVC
+- [MVC Intro](./mvc-intro/README.md)
 - Other patterns (singleton, builder, observer)
-- Project
+- [Extend Project *as above, complete and expand*](./calorie-project-spec/README.md)
