@@ -1,4 +1,4 @@
-#Workshop04 - Various positions of @Autowire
+#Workshop04 - Various positions of @Autowired
 
 This workshop looks at how you can use `@Autowire` to get better control over how the Beans are connected up.  This workshop follows one of the Materials given earlier, namely "[Autowire Annotation (tutorialspoint)](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)".  
 
@@ -33,5 +33,6 @@ Note you can also get some hints from the code in [Workshop02](.\Workshop02.md).
 - Replace @Autowired with @Required
 
 # Links
-[Previous Workshop - ](../Workshop03.md)
-[Next Workshop - ](../Workshop05.md)
+- [Spring Bean Factory Overview](../README.md)
+- [Previous Workshop - Autowired &amp; Constructors ](./Workshop03.md)
+- [Next Workshop - Configuration, Intialization &amp; Destruction ](./Workshop05.md)
