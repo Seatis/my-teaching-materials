@@ -12,7 +12,7 @@ Here, you need to inform the engine that you want to work with Spring; select on
 
 Create a package directory: `com.greenfoxacademy.java.lesson.beans`.
 
-You'll need 2 classes
+You'll need the following classes
 ```java
 package com.greenfoxacademy.java.lesson.beans;
 public class HelloWorld {
@@ -38,6 +38,12 @@ public class HelloWorldConfig {
     @Bean
     public HelloWorld helloWorld(){
         return new HelloWorld();
+    }
+    
+    //Note "1" covered later
+    @Bean
+    public WithFries withFries() {
+      return new withFries();
     }
 }
 ```
@@ -131,8 +137,24 @@ Just toggled withFries and now they are 'Salted'.
 ```
 
 Could you do that with annotation and the Bean?
-- you'll find that for simple data types, passing simple data types as parameters doesn't work in annotation
-- google it to get a feel for why
+
+Google to find an answer, we found 2 but this was most palatable [Passing Constructor Parameter to getBean when using Annotation (stackoverflow)](http://stackoverflow.com/questions/16997034/how-to-pass-parameters-dynamically-to-spring-beans).
+
+To make it work we needed to amend the Configuration where you see `note "1" LATER`:
+```java
+@Bean
+@Scope("prototype")  //or @Scope(configurableBeanFactor.SCOPE_PROTYPE)
+  public WithFries withFries(boolean salted) {  //IntelliJ will complain, but still compile
+      return new withFries(salted); 
+    }
+```
+And in the App, call
+```java
+   WithFries withFries = ctx.getBean(WithFries.class, false);
+```
+
+Note, however, now the empty contstructor for Fries won't work.
+
 
 # Links
 - [Spring Bean Factory Overview](../README.md)
