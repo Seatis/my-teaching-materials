@@ -202,5 +202,6 @@ Test it, get familiar and then answer the following questions:-
 - Drawing out the way that one class calls the other with the annotation used to call upon the other.
 
 # Links
-- [Previous Workshop - ](../Workshop01.md)
-- [Next Workshop - ](../Workshop03.md)
+- [Spring Bean Factory Overview](../README.md)
+- [Previous Workshop - Intro to Beans](./Workshop01.md)
+- [Next Workshop - Autowired &amp; Constructors](./Workshop03.md)
