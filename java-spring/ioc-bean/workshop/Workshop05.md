@@ -86,6 +86,6 @@ There is another way to do this, even closer to the Bean, by using the `@PostCon
 
 
 # Links
-[Previous Workshop - ](../Workshop04.md)[Previous Workshop - ](../Workshop04.md)
-[Next Workshop - ](../Workshop06.md)
-[Next Workshop - ](../Workshop06.md)
+- [Spring Bean Factory Overview](../README.md)
+- [Previous Workshop - @Autowired](./Workshop04.md)
+- [Next Workshop - Practice Beans](./Workshop06.md)
