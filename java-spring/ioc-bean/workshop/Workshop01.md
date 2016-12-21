@@ -135,4 +135,5 @@ Could you do that with annotation and the Bean?
 - google it to get a feel for why
 
 # Links
-[Next Workshop - ](./Workshop02.md)
+- [Spring Bean Factory Overview](../README.md)
+- [Next Workshop - Swapping Services ](./Workshop02.md)
