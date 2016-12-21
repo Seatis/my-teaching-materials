@@ -49,4 +49,5 @@ Replace the startup message with "Give me a min".
 Change the Hopper size to 4 and retest.
 
 ## Links
-[Previous Workshop - ](../Workshop05.md)
+- [Spring Bean Factory Overview](../README.md)
+- [Previous Workshop - Configuration, Intialization &amp; Destruction ](./Workshop05.md)
