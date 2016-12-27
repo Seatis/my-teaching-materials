@@ -18,6 +18,7 @@ https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 - Constructor Pattern
 - Module Pattern
 - Revealing Module Pattern
+- Mediator Pattern (pubsub)
 - Prototype Pattern
 - Facade Pattern
 - Factory Pattern
