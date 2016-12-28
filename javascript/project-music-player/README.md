@@ -54,6 +54,8 @@ Save your prototype experiments in an `experiments` folder
 
 This day you'll work in pairs: https://www.agilealliance.org/glossary/pairing/
 
+### Stories
+
 #### Mock a backend service
 - Check out the specification and create the saffolding of the backend using Express
 - Mocking means that you have to crate a "fake" service, like `/tracks` that returns the expected format in JSON
@@ -97,6 +99,8 @@ This day you'll work in pairs: https://www.agilealliance.org/glossary/pairing/
 
 ## Day 3: Database and functional REST API
 
+### Stories
+
 #### Design the database
 
 Here's a suggested schema, implement it in MySQL
@@ -124,7 +128,9 @@ Insert the "Favorites" playlist by hand (like animals do) and set "system" to 1
 
 ## Day 4: Finalize frontend with live data
 
-### Load track artwork from Last.fm
+### Stories
+
+#### Load track artwork from Last.fm
 - Your API key is: `ee125f318852fc7d1c2f4e21458a0035`
 - Use the `artist.getInfo` API method: http://www.last.fm/api/show/artist.getInfo
 - On each track loading, request the band photo (large, square one)
@@ -132,7 +138,7 @@ Insert the "Favorites" playlist by hand (like animals do) and set "system" to 1
 	- http://www.last.fm/api/tos
 	- "You will implement suitable caching in accordance with the HTTP headers sent with web service responses. You will not make more than 5 requests per originating IP address per second, averaged over a 5 minute period, without prior written consent. You agree to cache similar artist and any chart data (top tracks, top artists, top albums) for a minimum of one week."
 
-### Close the gaps
+#### Close the gaps
 - Check the frontend again
 - Re-read the specification
 - Check the frontend again
@@ -140,6 +146,9 @@ Insert the "Favorites" playlist by hand (like animals do) and set "system" to 1
 - Check the frontend again
 
 ## Day 5: Polishing
+
+### Stories
+
 - have fun adding things like:
 	- waveform visualization
 	- more keyboard shortcuts
