@@ -6,9 +6,9 @@ A browser based local music player
 
 # Project breakdown
 
-## Day 1: Create experiments and build UI
+A detailed birds-eye explanation and gudie how to proceed with the app development day by day.
 
-The user should configure the root music directory in the index.js file in a string variable.
+## Day 1: Create experiments and build UI
 
 ### Stories
 
