@@ -109,7 +109,7 @@ Not visible parts:
 
 
 ## Tracks
- - A simpe list of tracks
+ - A simple list of tracks
  - By default it must display the "All tracks" playlist
  - You might only display the file names, like "hello.mp3"
  	- In this case you won't display the duration
@@ -128,14 +128,14 @@ Not visible parts:
 
 
 # Backend
- - Implent the backend via a single NodeJS app. 
- - You shold be alble to start it via typing `npm start` to the console. 
+ - Implement the backend via a single Node.js app. 
+ - You should be able to start it via typing `npm start` to the console. 
  - The user must configure the music directory in the `index.js` file by setting a constant to an existing directory.
 
 
 ## Best practices
  - Add logging for each API calls to help debugging frontend development
- - Save all dependencies with `npm install coopackage --save`
+ - Save all dependencies with `npm install coolackage --save`
 
 ## REST API
  - This is REST-ful application so you should create the following endpoints
@@ -149,7 +149,7 @@ Not visible parts:
  - Creates a new playlist
  - Required field is only a "playlist" property that contains the name of the playlist
  - System playlist cannot be created by the client
- - Rerurn playlists in the order they were added
+ - Return playlists in the order they were added
 
 `DELETE /playlists/:id`
  - Deletes the given playlist
@@ -160,6 +160,9 @@ Not visible parts:
 ### Playlist tracks
 
 The `id` URL parameter is always required since it identifies the playlist you want to have some operation with.
+
+`GET /playlis-tracks/`
+ - Without a `playlist_id` it should return all tracks in the `root` folder. Subfolders should be explored recursively.
 
 `GET /playlis-tracks/:playlist_id`
  - Lists all the tracks added to the playlist
@@ -182,4 +185,4 @@ The `id` URL parameter is always required since it identifies the playlist you w
 
 ### Bonus material
 
-Don't forget to occasinally ejnoy the silence https://www.youtube.com/watch?v=aGSKrC7dGcY
+Don't forget to occasionaly enjoy the silence https://www.youtube.com/watch?v=aGSKrC7dGcY

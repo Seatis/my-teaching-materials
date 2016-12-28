@@ -8,12 +8,14 @@ A browser based local music player
 
 ## Day 1: Create experiments and build UI
 
+The user should configure the root music directory in the index.js file in a string variable.
+
 ### Stories
 
 Save your prototype experiments in an `experiments` folder
 
 #### The `<audio>` tag
-- Lean about the <audio> tag:
+- Learn about the <audio> tag:
 	- https://www.sitepoint.com/essential-audio-and-video-events-for-html5/
 	- https://developer.mozilla.org/en/docs/Web/Guide/Events/Media_events
 	- https://www.w3.org/2010/05/video/mediaevents.html
