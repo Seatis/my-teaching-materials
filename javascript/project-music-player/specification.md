@@ -4,7 +4,7 @@ Please pay extra attention to the words `must` `should` and `may`, `might`. The 
 
 ![main ui with labels](img/musicplayer_labelled.png)
 
-## Frontend
+# Frontend
 
 Let's break down the main pats of the player:
 
@@ -21,75 +21,75 @@ Not visible parts:
  	- Add track to playlist
  	- Crate playlist
 
-### Global hotkeys
+## Global hotkeys
  - `SPACE` must toggle play / pause
  - `N` might play the next track
  - `P` might play the previous track
  - `ESC` might mute the volume
 
-### Logo & notifications
+## Logo & notifications
  - The logo should be clickable and it should select and display the *All tracks* playlist
  - If you want to display notifications, like errors to the user you might place it in this spot
 
-### Control panel
+## Control panel
  - Sticks to the bottom width is 100%, flexible
 
-#### Playback controls
+### Playback controls
  - Prev / Next buttons should cycle through the playlist
  - Pause and play should toggle each other
 
-#### Time displays
+### Time displays
  - Remaining time
  - Total length time
 
-#### Seekbar
+### Seekbar
  - It should be the slider that you picked from the stories
  
-#### Shuffle
+### Shuffle
  - A toggle button
  - If active it must be blue
  - When active, the next track should be a random choice, but the one that actually plays
 
-#### Volume
+### Volume
  - Use the same slider that you picked for the seekbar
  - Clicking on the speaker icon might mute the volume
  - It controls the global volume 
  - A new track must always be set to this value
 
 
-### Playlists
+## Playlists
  - There are two playlists that are there by default
  - They cannot be deleted
  - User crated playlists must have a delete button
 
-#### All tracks
+### All tracks
  - Contains all tracks that the user has in the `root` music folder
  - The user can't remove tracks from here
  - This playlist cannot be deleted
 
-#### Favorites
+### Favorites
  - Contains all tracks that the user move here by pressing the *star icon* on the "currently playing" panel
  - This playlist cannot be deleted
 
-#### New playlist
+### New playlist
  - Clicking this creates a new playlist
  - The user does this by opening a modal dialog (VEX from stories)
  	- The modal dialog must have a single input field
  	- It must have a "create playlist" and a "cancel" button
 
-#### Clicking on the playlist
+### Clicking on the playlist
  - The active playlist must get a highlight color
  - The tracks should update on the right panel
  - The tracks section will have a more elaborate description of what to display
 
 
-### Artwork
+## Artwork
  - Display the currently playing artist from Last.fm
  - Description is in the stories section
  - If the artist can't be found, use the [music placeholder](img/music-placeholder.png) image instead
 
 
-### Currently playing
+## Currently playing
  - It must display the *track title*
  - It must display the *Artist*
  - Depending on how you implement ID3 metadata loading you might display this immediately or after an AJAX call
@@ -97,18 +97,18 @@ Not visible parts:
  - Browser based solution https://github.com/aadsm/JavaScript-ID3-Reader
  - Note that this might be slow for loading all track ID3 in the tracks panels
 
-#### Add to playlist
+### Add to playlist
  - Opens a modal dialog
  - Reuse the code from the modal experiment you did on the first day
  - The playlist should not change when the user closes the modal dialog
 
-#### Add to favorite
+### Add to favorite
  - It immediately adds the currently playing track to the special "favorites" playlist
  - The star is immediately turned to light blue
  - When a new track starts to play, this icon must turn to light blue if the track is part if of the favorites playlist
 
 
-### Tracks
+## Tracks
  - A simpe list of tracks
  - By default it must display the "All tracks" playlist
  - You might only display the file names, like "hello.mp3"
@@ -117,7 +117,7 @@ Not visible parts:
 		- use the format: Artist - Title ([hh:]mm:ss)
  - You *might* add [something like iSroll](http://iscrolljs.com/#scrollbars) to make the scrollbars look pretty
 
-#### Clicking on a track
+### Clicking on a track
  - Highlight the track
  - Immediately start to play the track
  - Don't foget to:
@@ -127,20 +127,20 @@ Not visible parts:
  	- Update the artwork
 
 
-## Backend
+# Backend
  - Implent the backend via a single NodeJS app. 
  - You shold be alble to start it via typing `npm start` to the console. 
  - The user must configure the music directory in the `index.js` file by setting a constant to an existing directory.
 
 
-### Best practices
+## Best practices
  - Add logging for each API calls to help debugging frontend development
  - Save all dependencies with `npm install coopackage --save`
 
-### REST API
+## REST API
  - This is REST-ful application so you should create the following endpoints
 
-#### Playlists
+### Playlists
 
 `GET /playlists`
  - Lists all the playlists
@@ -157,7 +157,7 @@ Not visible parts:
  - If the system field is set to 1, you mustn't delete the playlist
 
 
-#### Playlist tracks
+### Playlist tracks
 
 The `id` URL parameter is always required since it identifies the playlist you want to have some operation with.
 
@@ -178,8 +178,8 @@ The `id` URL parameter is always required since it identifies the playlist you w
 `DELETE /playlist-tracks/:playlist_id/:track_id`
  - Deletes the given track with the `track_id` from the playlist with the `playlist_playlist`
  - If one of the `id` parameter is not present or is not enumerable return an error in JSON format. You might explain the error briefly.
- 
 
-#### Bonus material
+
+### Bonus material
 
 Don't forget to occasinally ejnoy the silence https://www.youtube.com/watch?v=aGSKrC7dGcY
