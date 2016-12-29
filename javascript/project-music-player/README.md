@@ -4,6 +4,8 @@ A browser based local music player
 
 ![main ui](img/musicplayer.png)
 
+### [Full specification](specification.md)
+
 # Project breakdown
 
 A detailed birds-eye explanation and gudie how to proceed with the app development day by day.
