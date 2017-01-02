@@ -38,7 +38,7 @@ import lombok.Setter;
 import javax.persistence.*;
 //more imports
 
-//Annotations - orders table
+//Annotations - orders table: Entity, Getter, Setter, NoArgsConstructor, AllArgsConstructor, and Table (name="orders"); later he adds Builder
 public class Order {
 
     // annotations
@@ -53,10 +53,59 @@ public class Order {
 ### Step 4 - Add Items &amp; Products
 One quick way to do this is to copy paste what you've already built and change names.  
 
+```java
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode
+@Table(name = "products")
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    private String name;
+
+}
+```
+
 However, you'll have to get the relationships right
 
-### Step 5 - Add PhoneNumbers
+### Step 5 - Add PhoneNumber
 This amends the Customer class to point to the phone numbers, and phone numbers to point to the customer.  So there are 2 relationships that get defined here.  Around 27m00.
+
+```java
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.Set;
+
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode
+@Table(name = "phone_numbers")
+public class PhoneNumber {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    private String value;
+
+    @ManyToMany(mappedBy = "phoneNumbers")
+    private Set<Customer> customers;
+}
+```
 
 ### Step 6 - Add repositories
 Around 30m30, he explains how to add the three key repositories, which are all defined as interfaces.

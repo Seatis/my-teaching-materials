@@ -79,6 +79,8 @@ INSERT INTO grades (student_id, code_class, grade) VALUES ( 8, "Desert", 4);
 ### Exercises
 - For each student, retrieve his grades
 - For each class, retrieve the students and grades earnt
+
+#### Extra
 - Determine which class was not taken by any students
 - For each class, get the count of students that took the class, the average grade 
 - For each student, get the number of classes taken, the average grade
