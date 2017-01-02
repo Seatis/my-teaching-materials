@@ -19,7 +19,7 @@
 ### Example Codes
 Please add comments explanign what You do after each signficant goup of lines!
 #### Server App
-'''c_cpp
+```c_cpp
 #include <iostream>
 #include <SDL/SDL.h>
 #include <SDL/SDL_net.h>
@@ -42,10 +42,10 @@ int main() {
 	}
 	SDL_Quit();
 }
-'''
+```
 
 #### Client App
-'''c_cpp
+```c_cpp
 #include <iostream>
 #include <SDL/SDL.h>
 #include <SDL/SDL_net.h>
@@ -62,7 +62,7 @@ int main() {
 	SDLNet_TCP_Close(client);
 	SDL_Quit();
 	}
-'''
+```
 
 ## Material Review
  - What are the OSI Layers?
