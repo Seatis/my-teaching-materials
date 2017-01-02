@@ -78,6 +78,8 @@ int main() {
 
 
 #### Excercises
+Make sure to create tests for each exercise.
+Also make sure to Comment each section in the code that does something significant!
  - [01.cpp](workshop/01.cpp)
  - [02.cpp](workshop/02.cpp)
  - [03.cpp](workshop/03.cpp)
