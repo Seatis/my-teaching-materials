@@ -71,6 +71,8 @@ For this you need to be sure to point to the right Spring, class.
 
 Ensure that 2 bits of SQL are set up to prepare the database (clear and populate).  These need to be in a resource file associated with the test.  To save time, here's the sql.
 
+These goes to the resource file associated with the test.
+
 ```sql
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE items;
@@ -115,81 +117,131 @@ INSERT INTO items (order_id, product_id, quantity) values (1,5,2);
 ```
 
 ### Test - shouldReturnManyPhonesForCustomer 
-Find Mario who should have 2 phone numbers; this requires use injection (around 35m00 +)
+Find Mario who should have 2 phone numbers; this requires use injection (around 35m00 +).
+
+__IMPORTANT__  In the sample code by Marinho, he used `@SpringApplicationConfiguration(classes = JPABasicMappings.class)`.  This is deprecated and replaced with `@SpringBootTest(classes = JPABasicMappings.class)`.  If you don't swap, you'll get  errors stating that it cannot find various javax or springboot.core classes.
+
+Note also that Marinho used `org.hamcrest.MatcherAssert.assertThat` and `org.hamcrest.core.Is.is`.  These are found by Gradle.
 
 ```java
-@Test
-public void shouldReturnManyPhonesForCustomer() {
-  Customer myself = customerRepository.findByName("Marcio"); // yes, his name is Marcio not (Super) Mario
-  assertThat(myself.getPhoneNumbers().size(), is(2));
+package com.greenfox;
+
+import com.greenfox.model.Customer;
+import com.greenfox.model.Item;
+import com.greenfox.model.Order;
+import com.greenfox.model.Product;
+import com.greenfox.model.repository.CustomerRepository;
+import com.greenfox.model.repository.OrderRepository;
+import com.greenfox.model.repository.ProductRepository;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.jdbc.Sql;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes = JPABasicMappings.class)
+@WebAppConfiguration
+public class JPABasicMappingsTest {
+
+    @Autowired
+    private ProductRepository productRepository;
+
+    @Autowired
+    private CustomerRepository customerRepository;
+
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Test
+    @Sql({"/clear-tables.sql","/populate-tables.sql"})
+    @Transactional
+    public void shouldReturnManyPhonesForCustomer() {
+        Customer marcio = customerRepository.findByName("Marcio");
+        assertThat(marcio.getPhoneNumbers().size(), is(2));
+    }
 }
 ```
-
-Note, we've dropped loads of things here that you'll have to add, and no guarantee that is(2) works.
 
 ### Test - shouldDeleteOrder
 In this test you have to find the ordres of the customer and that means navigating to the particular customer.
 
 ```java
-@Test
-public void shouldDeleteOrder() {
-  //do something to find the `jonasOrders` (that is, the orders of the customer named "Jonas" )
-  orderRepository.delete(jonasOrder);  //deletes the one order of Jonas; so there should not be any left
-  
-  List<Order> orders = (List<Order>)orderRepository.findAll();
-  assertThat(orders.size(), is(0));
-} 
+    @Test
+    @Sql({"/clear-tables.sql", "/populate-tables.sql"})
+    @Transactional
+    public void shouldCreateOrder() {
+
+        Customer myself = customerRepository.findByName("Marcio");
+
+        Order order = Order.builder()
+                .customer(myself)
+                .createdAt(new Date())
+                .build();
+
+        Product mazdaCar = productRepository.findByName("Mazda 3");
+
+        Product myPopCorn = productRepository.findByName("Pop Corn");
+
+        Item mazda = Item.builder()
+                .product(mazdaCar)
+                .order(order)
+                .quantity(3)
+                .build();
+
+        Item popcorn = Item.builder()
+                .product(myPopCorn)
+                .order(order)
+                .quantity(7)
+                .build();
+
+        List<Item> items = new ArrayList<Item>() {{
+            add(mazda);
+            add(popcorn);
+        }};
+
+        order.setItems(items);
+
+        orderRepository.save(order);
+
+        List<Order> orders = (List<Order>) orderRepository.findAll();
+        Order foundOrder = orders.get(1);
+
+        assertThat(orders.size(), is(2));
+        assertThat(foundOrder.getItems().size(), is(2));
+        assertThat(foundOrder.getItems().get(0).getProduct(), is(mazdaCar));
+        assertThat(foundOrder.getItems().get(1).getProduct(), is(myPopCorn));
+
+    }
 ```
 
-### Test - 
+### Test - ShouldDeleteOrder
 
 ```java
+    @Test
+    @Sql({"/clear-tables.sql", "/populate-tables.sql"})
+    @Transactional
+    public void shouldDeleteOrder() {
 
-public void shouldCreateOrder() {
+        Customer jonas = customerRepository.findByName("Jonas");
+        Order jonasOrder = orderRepository.findByCustomer(jonas);
+        orderRepository.delete(jonasOrder);
 
-  // will also need @EqualsAndHashCode to work
-  Customer myself=customerRepository.findByName("Marcio");  
-  //note youll have to ensure that order builder routine is supported with annotation, namely:
-  //@Builder, @NoArgsConstructior and @AllArgsConstructor
-  Order order = Order.builder()
-	.customer(myself)
-	.createdAt(new Date())
-	.build();
+        List<Order> orders = (List<Order>)orderRepository.findAll();
+        assertThat(orders.size(), is(0));
 
-  // will also need @EqualsAndHashCode to work
-  Product mazdaCar = productRepository.findByName("Mazda 3");
-  Product myPopCorn = productRepository.findByName("Pop Corn");
-  
-  //likewise item has a builder and needs the proper annotations.
-  Item mazda = Item.builder()  
-	.product(mazdaCar)
-	.order(order)
-	.quantity(3)
-	.build();
-
-   Item popcorn = Item.builder() 
-	.product(myPopCorn)      
-	.order(order)
-	.quantity(7)
-	.build;
-	  
-  List<Item> items = new ArrayList<Item>() {{
-	  add (mazda);
-	  add (popcorn);
-  }};
-	
-  order.setItems(items);
-  orderRepository.save(order);
-	
-  List<Order> orders= (List<Order>) orderRepository.findAll();
-  Order foundOrder = orders.get(1);
-	
-  assertThat(orders.size(), is(2));
-  assertThat(foundOrder.getItems().size(), is(2));
-  assertThat(foundOrder.getItems().get(0).getProduct(), is(mazdaCar));  
-  assertThat(foundOrder.getItems().get(1).getProduct(), is(myPopcorn));
-}	
-
+    }
 ```
 
 # Links
