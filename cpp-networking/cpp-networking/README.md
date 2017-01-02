@@ -19,8 +19,8 @@
 ### Example Codes
 Please add comments explanign what You do after each signficant goup of lines!
 #### Server App
-''' cpp
-nclude <iostream>
+'''
+#include <iostream>
 #include <SDL/SDL.h>
 #include <SDL/SDL_net.h>
 
