@@ -7,12 +7,13 @@
 ### Training
 | Material | Time |
 |:---------|-----:|
-| [video title](youtube link) | 8:25 |
+| [The OSI Model Demystified](https://www.youtube.com/watch?v=HEEnLZV2wGI)| 18:40 |
+| [SDL tutorial 25 - networking with SDL_net (send and recv TCP packages)](https://www.youtube.com/watch?v=LNSqqxIKX_k&list=PL949B30C9A609DEE8&index=57) | 26:26 |
+| [FPS game (OpenGL,SDL,C++) tutorial 12 - multiplayer, networking, server](https://www.youtube.com/watch?v=iJfC4-yNnzY)|1:41:31 |
 
 ### Optional
 | Material | Time |
 |:---------|-----:|
-| [video title](youtube link) | 8:25 |
 
 
 ## Material Review
