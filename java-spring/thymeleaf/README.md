@@ -32,6 +32,31 @@
 - @ModelAttribute
 - Model
 - xmlns:th="http://www.thymeleaf.org"
+HTML insertions
+- `${...}` : Variable expressions.
+  - `${session.user.name}` = OGNL (Open Graph Notation Language)
+- `*{...}` : Selection expressions - used to replace one item for another, eg. a parent
+- `#{...}` : Message (i18n) expressions - found in the properties file
+- `@{...}` : Link (URL) expressions.
+- `~{...}` : Fragment expressions.
+
+- extensions
+  - `th:text` - will replace the text
+  - `th:attrib` 
+  - `th:utext`
+  - `th:each` - `<li th:each= "book : ${books}>" iterating book which can be used beneath, for each item in the list books
+  - `th:insert`
+  - `th:replace`
+  - `th:with`
+  - `th:unless`
+- operators
+  - use of `?`
+    - to supply a default value ( `(value) ?: (defaultvalue)`)
+	- for if then (`(if) ? (then)`)
+	- for ternary (`(if) ? (then) : (else)`)
+  - `__` - preprocessor - eg `#{selection.__${sel.code}__}` where `{sel.code}` = "ALL" becomes `#{select.ALL}` before evaluating
+	
+
 
 ## Workshop
 
