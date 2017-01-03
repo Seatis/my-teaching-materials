@@ -70,6 +70,96 @@ int main() {
 	}
 ```
 
+#### Serializing a Message
+```c_cpp
+#include <iostream>
+
+using namespace std;
+
+union Ptr {
+        char* asChar;
+        unsigned char* asUChar;
+        int* asInt;
+        unsigned int* asUInt;
+        float* asFloat;
+        double* asDouble;
+        bool* asBool;
+        void* asVoid;
+};
+
+int main() {
+        char* text = "Elemes auto";
+        int nk = 42;
+        float ff = 123.78f;
+
+        cout << text << " | " << nk << " | " << ff << endl;
+        // Char so, I know how many bytes I have. This could be done in many different ways.
+        char buffer[128];
+        
+        // Defining simplistic run-length encoding:
+        // char = 'c'
+        // unsigned char = 'x'
+        // After char and uchar comes an int, denoting the length.
+        // int = 'i'
+        // unsigned int = 'u'
+        // float = 'f'
+        // double = 'd'
+        // bool = 'b'
+        // void = 'v'
+        // end, there is no more data = 'q';
+
+        //Assembling message
+        Ptr a;
+        a.asChar = buffer;
+        *a.asChar++ = 'c';
+        *a.asInt++ = 12;
+        for(int i=0;i<12;i++){
+                *a.asChar++ = text[i];
+        }
+        *a.asChar++ = 'i';
+        *a.asInt++ = nk;
+        *a.asChar++ = 'f';
+        *a.asFloat++ = ff;
+        *a.asChar = 'q';
+        
+        // Decoding message. I'm cheating a bit here. I know what's in the message. Then again
+        // most of the time You actually know - to some extent - what You want to send. So this is
+        // cheting and not cheating at the same time.
+        // The main point is, how I use the Ptr type and how I'm getting new variables with the same
+        // values aftr that.
+        Ptr b;
+        b.asChar = buffer;
+        char* text2;
+        int cnt;
+        int nk2;
+        float ff2;
+        while(*b.asChar != 'q'){
+                if(*b.asChar == 'c'){
+                        b.asChar++;
+                        cnt = *b.asInt++;
+                        text2 = new char[cnt];
+                        for(int i=0; i<cnt; ++i){
+                                text2[i] = *b.asChar++;
+                        }
+                } else if(*b.asChar == 'i'){
+                        b.asChar++;
+                        nk2 = *b.asInt++;
+                } else if(*b.asChar == 'f'){
+                        b.asChar++;
+                        ff2 = *b.asFloat++;
+                }
+                if(*b.asChar == 'q'){
+                        cout << "End fo transmitted data" << endl;
+                }
+        }
+        // Priting for comparison...
+        cout << text2 << " | " << nk2 << " | " << ff2 << endl;
+
+        return 0;
+}
+```
+
+
 ## Material Review
  - What are the OSI Layers?
  - What is a server?
