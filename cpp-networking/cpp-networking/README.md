@@ -107,6 +107,7 @@ int main() {
         // bool = 'b'
         // void = 'v'
         // end, there is no more data = 'q';
+		// In the current case our message willbe like this: c|12|Elemes auto|i|42|f|123.78
 
         //Assembling message
         Ptr a;
