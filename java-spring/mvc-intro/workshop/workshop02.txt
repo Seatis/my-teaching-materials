@@ -1,0 +1,13 @@
+# Spring MVC - Workshop 02 Refactor the database connection
+
+## Copy from a previous build (Workshop01)
+
+### Settings 
+Remember to tick on Annotations.
+
+
+ 
+#Links
+- [Parent - Java Spring](../README.md)
+- [Prior ](../xxx/README.md)
+- [Next ](../Workshop/workshop02.md)
