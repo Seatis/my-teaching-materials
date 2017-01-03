@@ -37,6 +37,8 @@ runtime('mysql:mysql-connector-java')
 - Check your index page out (even the redirect)
 - If you haven't thought about adding a new post as a separate display, well do it now :)
     - create the endpoint and a template
+    - Create the link at the index template which navigates to this endpoint
+- Check if the navigation works with the link
 
 ### The Post
 - Setup a new database called `reddit`
@@ -63,9 +65,43 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ```java
 model.addAttribute("posts", repository.findAll());
 ```
--
+- Add some data manually (in Java or directly in the database)
+- Do the table for the listing in the template, then check it out!
 
+### Adding
+- The template and the endpoint should be created at this point
+- Add a form (if you haven't already) to the template
+- Set the action for the form to an endpoint which is a `RequestMethod.POST`
+- If you set up the form template right, it can actually create the needed object (of Post class) for you
+    - hint: google handling form submission spring
+- In your controller you only need to save the passed object with the repository
+- And redirect back to the posts, letting the user see the created post
+
+### Vote
+- Create the endpoints if you haven't already (for upvote and downvote separately)
+- The end of them is easier, since its the same as when adding.
+- The voting urls should look like this: `/posts/5/upvote` for upvoting the post with the id 5
+- Then you'll have this id as a parameter in your controller's method, so you can find the actual Post object
+- Increment or decrement the score
+- Save it and redirect
+
+### Extending functionality
+- Make it cleaner
+    - In the controllers there shouldn't be any model related logic, just calling methods
+    - The Post should have the ability to change it's score
+    - You can create a service which actually does the needed things with the repository, so in the controller methods just one service call remains
+    - Ask the mentors if its clean enough :)
+- Add a date to the posts and display it
+    - a constructor will be needed there at least
+- Add users
+    - When entering the site ask a username and create the posts for the users
+        - User model will be needed
+        - Post model will be updated
+        - You'll need to somehow tell who is the current user
+    - Pro version: try to follow Vega 1-2 to handle actual login
+- Make it pretty
+    - Wire in Bootstrap and make everything nicer
 
 ## Links
 - [Parent - Java Spring](../README.md)
-- [Prior - WS2 - Refactor the database](./Workshop02.md)
+- [Next - Optional](./Workshop01.md)

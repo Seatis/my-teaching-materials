@@ -22,8 +22,8 @@ Import
 - create separate moduel per source set
 - use gradel wrapper
 
-### Settings 
-Remember to tick on Annotations (especially if you intend to use Lombok) 
+### Settings
+Remember to tick on Annotations (especially if you intend to use Lombok)
 - File -> Project Settings -> Build, Execution, Deployment -> Compiler  -> Annotation Processors : Enable Annotation Processing
 - Apply
 - Okay
@@ -37,9 +37,9 @@ Remember to tick on Annotations (especially if you intend to use Lombok)
 		- Dao
 		- Entity
 		- Services
- 
+
 If by chance you craeted a "Workshop01Application" in "com.greenfox" then refactor it to Main.
- 
+
 ### Student Controller, Dao, Entity &amp; Service Definition
 Starting around 10m30 in the video, copy the steps and understand.
 
@@ -53,9 +53,9 @@ At 16m30 add in the MVC glue (@RestController, @Repository, @Service, @AutoWired
 ### Run basic Test &amp; Extend with Delete
 - Check that LocalHost:8080/students - returns the list of students
 - Add the method to return a particular student id "ocalhost:8080/students/1"
-- Add the delete/remove functionality/method 
+- Add the delete/remove functionality/method
 
-_Notes_ 
+_Notes_
 - to restart the server, the IntelliJ short cut is control-F5.
 - IntelliJ will automatically insert a template for a required method to class being referenced when you press Alt-Enter.
 
@@ -66,7 +66,7 @@ To test with different methods, get an HTTP Client.Postman as explained at 28m43
 ### Add "Update" functionality
 Starting around 31m15.
 
-_Notes_ 
+_Notes_
 - Put in the code, but don't immediately test as he makes some mistakes, so watch until he gets it right and then replicate.
 - When using Postman, to switch to sending the `Body` with `Put` you need to set `raw` and you need to change `TEXT` to `JSON` in the type of body sent.
 - the MediaType is of org.springframework.HTTP
@@ -85,7 +85,8 @@ Here's an example that one might find helpful to navigate what was done in this 
 
 It maps out what calls what, and the commands that are useful for each step.  Consider going back through the steps and tracing out the linkages, elements passed and note the annotations.
 
- 
+
 #Links
 - [Parent - Spring MVC](../README.md)
 - [Next - WS2 Refactor the Database ](./Workshop02.md)
+- [Previous - Reddit](./reddit.md)

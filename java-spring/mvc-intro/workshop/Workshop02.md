@@ -11,7 +11,7 @@ If you have trouble with the copy, consider the following steps:-
 - Import - as this is from a Gradle project, import from an external model
 - For this build, as before, also tick "Use Auto Import" and "Create directories for empty content ..."
 
-### Settings 
+### Settings
 Remember to tick on Annotations.
 
 ### Test
@@ -23,7 +23,7 @@ Ensure that all is still working.
 The existing StudentDao will become both an implementation and the basis of an *interface*.
 - Rename `StudentDao` to `FakeStudentDaoImpl`
 - With the rename `FakeStudentDaoImpl` apply Refactor -> Extract -> Extract Interface to generate `StudentDao`
-- Check 
+- Check
   - `FakeStudentDaoImpl` - this should now implement `StudentDao`
   - `StudentDao` should now be an interface
 
@@ -39,7 +39,7 @@ If you need to add the mysql to the build:-
 - Add to the dependences `compile('mysql:mysql-connector-java:5.1.40')` (_Note_ we determined this particular connector by looking at previous Gradle mysql builds; this is not the latest, but it worked previously)
 - Refresh gradle - this way it finds everything.
 
-Remember to:- 
+Remember to:-
 - set up the target database (for example mvc_ws02) in mySql
 - update application.properties to reference the datasource.url
 - start mySQL to be sure that the server is waiting to answer calls
@@ -50,7 +50,7 @@ You may find you get the following issue:
 
 `
 Field studentDao in com.greenfox.Service.StudentService required a bean of type 'com.greenfox.Dao.StudentDao' that could not be found.
-` 
+`
 
 Consider what you've Beaned and marked as Autowired.
 
@@ -75,7 +75,7 @@ This should be a fairly simple one to convert; however, if it's failing because 
 
 Keep in mind, the CrudRepository's findOne data type is driven by the key value, while the earlier design had `int` and not `Long` or `Integer`.
 
-###Remaining elements 
+###Remaining elements
 These should be a straight forward:-
 - removeStudentById
 - updateStudentById
@@ -87,8 +87,7 @@ Test with the same items as before, using Postman.
 To understand the connections, we've done this illustration.  Consider it and/or amend:-
 
 <img src="./workshop02A.jpg" >
- 
+
 #Links
 - [Parent - Java Spring](../README.md)
 - [Prior - WS1 - Reproduce Djalas tutorial](./Workshop01.md)
-- [Next - Reddit](./reddit.md)

@@ -82,9 +82,11 @@ public Student getStudentById(@RequestBody Student student {
 ```
 
 ## Workshops
+- [The Reddit](./workshop/reddit.md)
+
+### Optional
 - [WS1 Reproduce Djalas tutorial](./workshop/Workshop01.md)
 - [WS2 Refactor the Database](./workshop/Workshop02.md)
-- [The Reddit](./workshop/reddit.md)
 
 #Links
 - [Parent - Java Spring](../README.md)
