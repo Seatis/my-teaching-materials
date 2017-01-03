@@ -85,5 +85,5 @@ Test with the same items as before, using Postman.
  
 #Links
 - [Parent - Java Spring](../README.md)
-- [Prior - WS1 - Reproduce Djalas tutorial](../Workshop/Workshop01.md)
+- [Prior - WS1 - Reproduce Djalas tutorial](../workshop/Workshop01.md)
 - [Next - Reddit](../Workshop/reddit.md)
