@@ -6,4 +6,6 @@
 // 
 // The point being to create a game that works as before, but...
 // Uses seprate classes - dependant form abstract classes to
-// do the communication between players #1 & #2
+// do the communication between players #1 & #2.
+// Even when they are playing on the same computer, within the
+// same application. (Eg.: as in the case of Your original game.)
