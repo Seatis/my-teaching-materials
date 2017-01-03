@@ -1,6 +1,8 @@
 # The Reddit
 We'll create a simple reddit clone application, where the users can create posts and upvote / downvote existing posts. Later on you can extend this functionality.
+
 ![Posts](posts.png)
+
 ![Add](add.png)
 
 ### Create a new Project
