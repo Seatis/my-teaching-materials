@@ -28,11 +28,15 @@ The Vega MVC CRUD videos cover a more involved example.  It's well-worked, cover
 |[MVC CRUD Update (Vega.05)](https://www.youtube.com/watch?v=q2DMt_XEfq0)|4:00|
 |[MVC CRUD Delete (Vega.06)](https://www.youtube.com/watch?v=bdVKdMZNjOY)|5:23|
 
+<<<<<<< HEAD
 ## Review
 The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to the course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce much.  But it's not a starting point.
 
 If you want to explore this later, for gradle:-
 SpringInitialzr:
+=======
+If you want to explore this later, using Gradle and SpringInitialzr, set:-
+>>>>>>> b9533f5... merge MVC ReadMe work
 - gradle
 - group-id: com.therealdanvega
 - artifact-id: crud-start
