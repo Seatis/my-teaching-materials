@@ -93,6 +93,9 @@ model.addAttribute("posts", repository.findAll());
     - Ask the mentors if its clean enough :)
 - Add a date to the posts and display it
     - a constructor will be needed there at least
+- List always the best 10 post (at first)
+    - so you'll need to upgrade your repository
+    - and also handle pagination so the user can see the other posts
 - Add users
     - When entering the site ask a username and create the posts for the users
         - User model will be needed
