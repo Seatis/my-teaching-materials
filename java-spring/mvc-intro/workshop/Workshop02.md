@@ -41,7 +41,7 @@ If you need to add the mysql to the build:-
 
 Remember to:- 
 - set up the target database (for example mvc_ws02) in mySql
-- update application.properties to reference teh datasource.url
+- update application.properties to reference the datasource.url
 - start mySQL to be sure that the server is waiting to answer calls
 
 The first method to try to replace is getAllStudents().  For this you'll face a challenge.  In the *interface* this returns a `Collection` however, a CrudRepository equivalent is `Iterable<E> .findAll()`.  You'll have to convert the data for this to work.  Use Google to find a way to convert.
