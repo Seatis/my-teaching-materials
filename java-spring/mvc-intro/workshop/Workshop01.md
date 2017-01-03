@@ -82,7 +82,7 @@ Here's an example that one might find helpful to navigate what was done in this 
 
 <img src="./workshop01A.jpg" >
 
-It maps out what calls what, and the commands that are useful for each step.  Go back through the steps and draw out the linkages, elements passed and note the annotations.
+It maps out what calls what, and the commands that are useful for each step.  Consider going back through the steps and tracing out the linkages, elements passed and note the annotations.
 
  
 #Links
