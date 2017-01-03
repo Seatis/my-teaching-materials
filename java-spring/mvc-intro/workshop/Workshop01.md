@@ -88,4 +88,4 @@ It maps out what calls what, and the commands that are useful for each step.  Co
  
 #Links
 - [Parent - Spring MVC](../README.md)
-- [Next ](./workshop02.md)
+- [Next - WS2 Refactor the Database ](./Workshop02.md)
