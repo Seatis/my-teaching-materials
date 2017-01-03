@@ -82,6 +82,11 @@ These should be a straight forward:-
 - insertStudentToDb
 
 Test with the same items as before, using Postman.
+
+### Draw Up
+To understand the connections, we've done this illustration.  Consider it and/or amend:-
+
+<img src="./workshop02A.jpg" >
  
 #Links
 - [Parent - Java Spring](../README.md)
