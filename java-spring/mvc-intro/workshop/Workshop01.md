@@ -1,4 +1,5 @@
 # Spring MVC - Workshop 01
+This tutorial follows the video "[Learn Spring Boot (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs)" identified in the Optional Materials for the day.
 
 ## Set up the basic program
 ### SpringInitialzr
