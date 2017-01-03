@@ -14,14 +14,14 @@
 |[MVC started with a Bean, also configuring to use Tomcat](https://www.youtube.com/watch?v=_SOXs4xdurE)|4:57|
 |[Getting Started with Spring MVC and IntelliJ, JSP, taglib](https://www.youtube.com/watch?v=JKaalSS76vk#t=200) - note, also talks about Homebrew which is a command line installer for Mac.|22:52|
 |[Spring MVC Framework] (tutorialspoint) - while using xml and jsp, this gives you an overview of MVC. Be sure to dive into the examples, especially the first 3.|reading 45:00|
-|[Using IntelliJ, the basics of MVC (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to 1) make an installable version to run on another machine 2) use a Chrome add-in to send different RequestMethods 3) refactor to create an Interface after the fact to then build an alternative Data Access layer 4) uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work.|56:53|
+|[Using IntelliJ, the basics of MVC (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to 1) make an installable version to run on another machine 2) use a Chrome add-in to send different RequestMethods 3) refactor to create an Interface after the fact to then build an alternative Data Access layer 4) uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work. _Note_ this is the basis of a workshop.|56:53|
 
 ### Optional : Vega Tutorial
-The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to this course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce a lot.  But it's too involved as a starter tutorial.
+The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to this course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce a lot.  But it's too involved as a starter tutorial.  The site itself is a blog.  It lists articles and also features lists of articles by author as we as restricting which users can admin blog articles.
 
 | Material | Time |
 |:---------|-----:|
-|[MVC CRUD Setup (Vega.01)](https://www.youtube.com/watch?v=Ys0UiIIIDlQ) - Start of walking through an example; CRUD setup.  This is a larger project that uses Thymeleaf and also security; it produces a blog web site with lists that one can drill down into as well as a separate user type who is permitted to admin blog articles.|8:30|
+|[MVC CRUD Setup (Vega.01)](https://www.youtube.com/watch?v=Ys0UiIIIDlQ) - Start of walking through an example; CRUD setup.  |8:30|
 |[MVC CRUD Read (Vega.02)](https://www.youtube.com/watch?v=HHWepKpJtmk)|15:29|
 |[MVC CRUD Create (Vega.03)](https://www.youtube.com/watch?v=fozoSKHNXJg)|12:39|
 |[MVC CRUD Validate(Vega.04)](https://www.youtube.com/watch?v=WiVHC7fNJa8)|12:80|
@@ -56,11 +56,10 @@ SpringInitialzr:
 - `@RequestBody`, `@ResponseBody` -used in the method associated with an end-point, means to access fields in a response see [@RequestBody and @ResponseBody annotations in Spring](http://stackoverflow.com/questions/11291933/requestbody-and-responsebody-annotations-in-spring)
 - Return
   - ModelAndView, AddObject
-<<<<<<< HEAD
-  - String and AddAttribute
-=======
   - String and AddAttribute(s)
->>>>>>> 0a60511... merge MVC ReadMe work
+- Controller return - [Which is better, returning a ModelAndView or String? (StackOverflow)](http://stackoverflow.com/questions/7175509/which-is-better-return-modelandview-or-string-on-spring3-controller)
+  - ModelAndView, addObject
+  - String and addAttribute(s)
 
 Illustration of `@PathVariable` to the way it is used in an endpoint.
 ```java
@@ -70,11 +69,7 @@ public Student getStudentById(@PathVarible("id") int id {
   return studentService.getStudentById(id);
   }
 ...
-<<<<<<< HEAD
 ```
-=======
-```  
->>>>>>> 0a60511... merge MVC ReadMe work
 
 vs.
 
@@ -86,21 +81,11 @@ public Student getStudentById(@RequestBody Student student {
   }
 ...
 ```
-<<<<<<< HEAD
-
-## Workshops
-- [Reproduce Djalas tutorial](./workshop/Workshop01.md)
-- [Refactor the Database](./workshop/Workshop02.md)
-- [Add Thymeleaf](./workshop/Workshop03.md)
-=======
-
-### Optional Items
 
 ## Workshops
 - [WS1 Reproduce Djalas tutorial](./workshop/Workshop01.md)
 - [WS2 Refactor the Database](./workshop/Workshop02.md)
 - [The Reddit](./workshop/reddit.md)
->>>>>>> 0a60511... merge MVC ReadMe work
 
 #Links
 - [Parent - Java Spring](../README.md)
