@@ -1,5 +1,7 @@
 # The Reddit
 We'll create a simple reddit clone application, where the users can create posts and upvote / downvote existing posts. Later on you can extend this functionality.
+![Posts](posts.png)
+![Add](add.png)
 
 ### Create a new Project
 - Set up a new project
@@ -30,8 +32,9 @@ runtime('mysql:mysql-connector-java')
     - this action usually called `index`, it's always a `GET` and the endpoint is `"/"`
     - create an HTML template for this, a simple `Hello World` in the body will do for now
     - hence our home controller will only redirect to here (you'll need to remove the requestbody annotation to do that)
-- If you haven't thought about adding a new post as a separate display
 - Check your index page out (even the redirect)
+- If you haven't thought about adding a new post as a separate display, well do it now :)
+    - create the endpoint and a template
 
 ### The Post
 - Setup a new database called `reddit`
@@ -58,9 +61,9 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ```java
 model.addAttribute("posts", repository.findAll());
 ```
-...
+-
 
 
-## Links 
+## Links
 - [Parent - Java Spring](../README.md)
 - [Prior - WS2 - Refactor the database](./Workshop02.md)
