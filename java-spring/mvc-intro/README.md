@@ -17,7 +17,7 @@
 |[Using IntelliJ, the basics of MVC (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to 1) make an installable version to run on another machine 2) use a Chrome add-in to send different RequestMethods 3) refactor to create an Interface after the fact to then build an alternative Data Access layer 4) uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work. _Note_ this is the basis of a workshop.|56:53|
 
 ### Optional : Vega Tutorial
-The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to this course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce a lot.  But it's too involved as a starter tutorial.  The site itself is a blog.  It lists articles and also features lists of articles by author as we as restricting which users can admin blog articles.
+The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to this course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce a lot.  But it's too involved as a starter tutorial.  The projet is a blog site.  It lists articles and also features lists of articles by author as well as restricting which users can admin blog articles.
 
 | Material | Time |
 |:---------|-----:|
