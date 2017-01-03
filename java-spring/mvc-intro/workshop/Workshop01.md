@@ -78,15 +78,13 @@ Run the various tests.
 
 
 ## Draw out the logic using boxes
-Optional activity. 
+Here's an example that one might find helpful to navigate what was done in this workshop.  
+
 <img src="./workshop01A.jpg" >
 
-
-Many newbies find it helpful to map out what calls what, and the commands that are useful for each step.  Go back through the steps and draw out the linkages, elements passed and note the annotations.
-- Student -> StudentDAO -> 
+It maps out what calls what, and the commands that are useful for each step.  Go back through the steps and draw out the linkages, elements passed and note the annotations.
 
  
 #Links
-- [Parent - Java Spring](../README.md)
-- [Prior ](../xxx/README.md)
-- [Next ](../Workshop/workshop02.md)
+- [Parent - Spring MVC](../README.md)
+- [Next ](./workshop02.md)

@@ -14,22 +14,28 @@
 |[MVC started with a Bean, also configuring to use Tomcat](https://www.youtube.com/watch?v=_SOXs4xdurE)|4:57|
 |[Getting Started with Spring MVC and IntelliJ, JSP, taglib](https://www.youtube.com/watch?v=JKaalSS76vk#t=200) - note, also talks about Homebrew which is a command line installer for Mac.|22:52|
 |[Spring MVC Framework] (tutorialspoint) - while using xml and jsp, this gives you an overview of MVC. Be sure to dive into the examples, especially the first 3.|reading 45:00|
+<<<<<<< HEAD
 |[Using IntelliJ, the basics of MVC (Djalas) ](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to:
 - make an installable version to run on another machine,
 - use a Chrome add-in to send different RequestMethods,
 - refactor to create an Interface after the fact to then build an alternative Data Access layer,
 - uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work.|56:53|
+=======
+|[Using IntelliJ, the basics of MVC (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to 1) make an installable version to run on another machine 2) use a Chrome add-in to send different RequestMethods 3) refactor to create an Interface after the fact to then build an alternative Data Access layer 4) uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work.|56:53|
+>>>>>>> 90eeee1... minor cosmetics
 
 
-Preparation
-To test with HTTP client calls with DELETE, go to the [Chrome Webstore](chrome.google.com/webstore/search/rest%20client?hl=en) and consider using "Postman" - which you need to only Launch.
-
-
-
-### Additional Stuff
+### Additional Material
 | Material | Time |
 |:---------|-----:|
 |[MVC started with a Bean, also configuring to use Tomcat](https://www.youtube.com/watch?v=_SOXs4xdurE)|4:57|
+
+#### Vega Tutorial
+The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to the course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce much.  But it's not a starting point.
+
+
+| Material | Time |
+|:---------|-----:|
 |[MVC CRUD Setup (Vega.01)](https://www.youtube.com/watch?v=Ys0UiIIIDlQ) - Start of walking through an example; CRUD setup.  This is a larger project that uses Thymeleaf and also security; looking at a blog site.|8:30|
 |[MVC CRUD Read (Vega.02)](https://www.youtube.com/watch?v=HHWepKpJtmk)|15:29|
 |[MVC CRUD Create (Vega.03)](https://www.youtube.com/watch?v=fozoSKHNXJg)|12:39|
@@ -40,7 +46,7 @@ To test with HTTP client calls with DELETE, go to the [Chrome Webstore](chrome.g
 ## Review
 The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to the course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce much.  But it's not a starting point.
 
-To convert Vega code to gradle:-
+If you want to explore this, for gradle:-
 SpringInitialzr:
 - gradle
 - group-id: com.therealdanvega
@@ -88,8 +94,8 @@ public Student getStudentById(@RequestBody Student student {
 
 ## Workshops
 - [Reproduce Djalas tutorial](./workshop/Workshop01.md)
-- [Add Thymeleaf views](./workshop/Workshop02.md)
-- [Replace Database method](./workshop/Workshop03.md)
+- [Refactor the Database](./workshop/Workshop02.md)
+- [Add Thymeleaf](./workshop/Workshop03.md)
 
 #Links
 - [Parent - Java Spring](../README.md)
