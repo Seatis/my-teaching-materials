@@ -36,9 +36,9 @@ HTML insertions
 - `${...}` : Variable expressions.
   - `${session.user.name}` = OGNL (Open Graph Notation Language)
 - `*{...}` : Selection expressions - used to replace one item for another, eg. a parent
-- `#{...}` : Message (i18n) expressions - found in the properties file
+- `#{...}` : Message (i18n) expressions - found in the properties file - *not critical for course*
 - `@{...}` : Link (URL) expressions.
-- `~{...}` : Fragment expressions.
+- `~{...}` : Fragment expressions. - *not critical for course*
 
 - extensions
   - `th:text` - will replace the text
@@ -56,7 +56,6 @@ HTML insertions
 	- for ternary (`(if) ? (then) : (else)`)
   - `__` - preprocessor - eg `#{selection.__${sel.code}__}` where `{sel.code}` = "ALL" becomes `#{select.ALL}` before evaluating
 	
-
 
 ## Workshop
 
