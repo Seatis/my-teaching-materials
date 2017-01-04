@@ -33,7 +33,7 @@ runtime('mysql:mysql-connector-java')
 - Also listing the posts should be done here
     - this action usually called `index`, it's always a `GET` and the endpoint is `"/"`
     - create an HTML template for this, a simple `Hello World` in the body will do for now
-    - hence our home controller will only redirect to here (you'll need to remove the requestbody annotation to do that)
+    - hence our home controller will only redirect to here (you'll need to remove the ResponseBody annotation to do that)
 - Check your index page out (even the redirect)
 - If you haven't thought about adding a new post as a separate display, well do it now :)
     - create the endpoint and a template
