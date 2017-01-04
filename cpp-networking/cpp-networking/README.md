@@ -12,6 +12,7 @@
 | Material | Time |
 |:---------|-----:|
 | [The OSI Model Demystified](https://www.youtube.com/watch?v=HEEnLZV2wGI)| 18:40 |
+| [Computer Networks 6-3: Connection Establishment](https://www.youtube.com/watch?v=8vVjqREDBiQ)| 12:55 |
 | [SDL tutorial 25 - networking with SDL_net (send and recv TCP packages)](https://www.youtube.com/watch?v=LNSqqxIKX_k&list=PL949B30C9A609DEE8&index=57) | 26:26 |
 | [[SDL2 - Part 13] Multiplayer - TCP - headerphile](http://headerphile.com/sdl2/sdl2-part-13-multiplayer-tcp/)|Blogpost|
 
