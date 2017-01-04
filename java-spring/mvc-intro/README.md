@@ -15,6 +15,7 @@
 |[Getting Started with Spring MVC and IntelliJ, JSP, taglib](https://www.youtube.com/watch?v=JKaalSS76vk#t=200) - note, also talks about Homebrew which is a command line installer for Mac.|22:52|
 |[Spring MVC Framework](https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm) - while using xml and jsp, this gives you an overview of MVC. Be sure to dive into the examples, especially the first 3.|reading 45:00|
 |[Using IntelliJ, the basics of MVC (Djalas)](https://www.youtube.com/watch?v=Ke7Tr4RgRTs) - while he uses DAO, he also shows how to 1) make an installable version to run on another machine 2) use a Chrome add-in to send different RequestMethods 3) refactor to create an Interface after the fact to then build an alternative Data Access layer 4) uses  `@Qualifier` and reinforces how SpringBoot, `@Bean` and `@Autowired` work. _Note_ this is the basis of a workshop.|56:53|
+|[What's the difference between @Component, @Service, @Controller and @Repository? (Stackoverflow)](http://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in)| reading 10:00|
 
 ### Optional : Vega Tutorial
 The Vega MVC CRUD videos cover a more involved example.  It's well-worked, covering much of what are core to this course: Thymeleaf, CrudRepository and Dependency Injection; and it also works in Security and Interceptor.  As a later review, stepping through his code would reinforce a lot.  But it's too involved as a starter tutorial.  The projet is a blog site.  It lists articles and also features lists of articles by author as well as restricting which users can admin blog articles.
@@ -43,9 +44,9 @@ If you want to explore this later, using Gradle and SpringInitialzr, set:-
   - h2
 
 ## Review
-- `@Controller` and `@RestController` - identifies the code that will fire in response to fielding a request for an endpoint
+- `@Controller` and `@RestController` - identifies the code/class that will fire in response to fielding a request for an endpoint; determines who to call to get data and return views; enables `@RequestMapping`
   -  `@RestController` adds `@ResponseBody` to `@Controller` see [Difference between @Controller and @RestController](http://stackoverflow.com/questions/25242321/difference-between-spring-controller-and-restcontroller-annotation)
-- `@RequestMapping`
+- `@RequestMapping` - available if Class is marked `@Controller`
   - `...("/url")`
   - `(method=RequestMethod.GET POST PUT DELETE)`
   - `(consumes=MediaType.APPLICATION_JSON_VALUE)`
@@ -56,9 +57,10 @@ If you want to explore this later, using Gradle and SpringInitialzr, set:-
 - Return
   - ModelAndView, AddObject
   - String and AddAttribute(s)
-- Controller return - [Which is better, returning a ModelAndView or String? (StackOverflow)](http://stackoverflow.com/questions/7175509/which-is-better-return-modelandview-or-string-on-spring3-controller)
+- A Controller returns either ModelAndView or a String; ModelAndView is the older version. (see [returning a ModelAndView or String? (StackOverflow)](http://stackoverflow.com/questions/7175509/which-is-better-return-modelandview-or-string-on-spring3-controller) for more info)
   - ModelAndView, addObject
   - String and addAttribute(s)
+- `@Service` - for Service layer; extension of `@Component` - identifies where the business logic goes  
 
 Illustration of `@PathVariable` to the way it is used in an endpoint.
 ```java
@@ -80,6 +82,20 @@ public Student getStudentById(@RequestBody Student student {
   }
 ...
 ```
+
+The layers of Components:-
+
+|Type|Provides|
+|:---|:-------|
+|Component|Base Annotation/Stereotype; identifies a class for Spring to *bean* |
+|Controller|Extends Component; identifies the layer that will interact with calls from internet, returns to a Servlet that either sends back pages or data.  Methods are marked with RequestMapping; returns ModelAndView (with addAttributes) or String and additional objects|
+|Service|Extends Component; where the business logic should occur; no special additional handling in Spring yet; its elements can be wired in|
+|Service Access/Interface|Not necessarily a component; might be based upon an *interface* and use Qualifiers to swap between persistence methods; implements different means to talk to the Repository|
+|Repository|Extends Component; where the communication to the persistence (database) store resides.  Also offers database Exception handling|
+
+<img src="./workshop/workshop02A.jpg" >
+
+*taken from WS2.*
 
 ## Workshops
 - [The Reddit](./workshop/reddit.md)
