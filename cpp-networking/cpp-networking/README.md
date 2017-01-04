@@ -16,13 +16,16 @@
 | [TCP connection walkthrough | Networking tutorial (13 of 13)](https://www.youtube.com/watch?v=F27PLin3TV0)| 9:30 |
 | [SDL tutorial 25 - networking with SDL_net (send and recv TCP packages)](https://www.youtube.com/watch?v=LNSqqxIKX_k&list=PL949B30C9A609DEE8&index=57) | 26:26 |
 | [[SDL2 - Part 13] Multiplayer - TCP - headerphile](http://headerphile.com/sdl2/sdl2-part-13-multiplayer-tcp/)|Blogpost|
+| | |
+| [TCP and UDP](https://www.youtube.com/watch?v=TKrTnPz7gvk) | 3:06 |
+| [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8) | 11:34 |
+| [What’s the Difference Between TCP and UDP?](http://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/)|Blogpost|
 
 
 
 | Optional | Time |
 |:---------|-----:|
 | [FPS game (OpenGL,SDL,C++) tutorial 12 - multiplayer, networking, server](https://www.youtube.com/watch?v=iJfC4-yNnzY)|1:41:31 |
-
 
 ### Example Codes
 Please add comments explanign what You do after each signficant goup of lines!
