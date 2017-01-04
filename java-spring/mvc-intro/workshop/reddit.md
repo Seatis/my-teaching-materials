@@ -9,7 +9,6 @@ We'll create a simple reddit clone application, where the users can create posts
 - Set up a new project
 - You'll need these dependencies:
 ```
-compile('org.springframework.boot:spring-boot-starter-data-jpa')
 compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 runtime('org.springframework.boot:spring-boot-devtools')
 runtime('mysql:mysql-connector-java')
@@ -42,6 +41,10 @@ runtime('mysql:mysql-connector-java')
 
 ### The Post
 - Setup a new database called `reddit`
+- Add a new dependency
+```
+compile('org.springframework.boot:spring-boot-starter-data-jpa')
+```
 - Setup your database connection with the `application.properties` file
 - It should look like this
 ```
