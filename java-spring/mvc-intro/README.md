@@ -8,6 +8,8 @@
 |[Creating a Spring Project using Gradle &amp; migrating from Maven (LynAs)](https://www.youtube.com/watch?v=RtbWEKMWp7A) - this gives an overview of moving from Maven to Gradle; what's happening behind the scenes.|6:51|
 |[Building a CRUD Web Application with Spring Boot (Marinho)](https://www.youtube.com/watch?v=TcP5kFPq354)|29:38|
 
+__Note__ while there are explanations talking about DELETE and PUT methods, as we have not studied JavaScript/Ajax, we will not use these in our current assignments.  For these situations we can get by with our simpler understanding of HTML and use GET and POST (which supports retrieving a page and POSTing values from a form).  Thus for situations such as say DELETE, we would use a modified endpoint (e.g /students/delete/1).
+
 ### Optional
 | Material | Time |
 |:---------|-----:|
@@ -48,7 +50,7 @@ If you want to explore this later, using Gradle and SpringInitialzr, set:-
   -  `@RestController` adds `@ResponseBody` to `@Controller` see [Difference between @Controller and @RestController](http://stackoverflow.com/questions/25242321/difference-between-spring-controller-and-restcontroller-annotation)
 - `@RequestMapping` - available if Class is marked `@Controller`
   - `...("/url")`
-  - `(method=RequestMethod.GET POST PUT DELETE)`
+  - `(method=RequestMethod.GET POST PUT DELETE)` - __note__ that we are only using GET and POST
   - `(consumes=MediaType.APPLICATION_JSON_VALUE)`
   - `(value="/{id}")` - /{id} being an example, and would be bound with `@PathVariable`
   - can set at either class level or method; if at class, then can have different RequestMethods for each method
