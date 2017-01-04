@@ -11,7 +11,6 @@ We'll create a simple reddit clone application, where the users can create posts
 ```
 compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 runtime('org.springframework.boot:spring-boot-devtools')
-runtime('mysql:mysql-connector-java')
 ```
 - Create a package to work in (eg. `com.greenfox.aze.reddit`)
 - Create a `RedditApp` class containing the `main` method to start SpringBoot.
@@ -41,9 +40,10 @@ runtime('mysql:mysql-connector-java')
 
 ### The Post
 - Setup a new database called `reddit`
-- Add a new dependency
+- Add a new dependencies
 ```
 compile('org.springframework.boot:spring-boot-starter-data-jpa')
+runtime('mysql:mysql-connector-java')
 ```
 - Setup your database connection with the `application.properties` file
 - It should look like this
