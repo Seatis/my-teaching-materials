@@ -7,6 +7,7 @@
 |[IntelliJ - Spring Initializr (CodeTaming)](https://www.youtube.com/watch?v=oBqTpe5ciMo) - these are the key steps for generating a project using IntelliJ's Spring Initializr facility.|4:10|
 |[Creating a Spring Project using Gradle &amp; migrating from Maven (LynAs)](https://www.youtube.com/watch?v=RtbWEKMWp7A) - this gives an overview of moving from Maven to Gradle; what's happening behind the scenes.|6:51|
 |[Building a CRUD Web Application with Spring Boot (Marinho)](https://www.youtube.com/watch?v=TcP5kFPq354)|29:38|
+|[Handling a Form (spring.io)](https://spring.io/guides/gs/handling-form-submission/) | reading 10:00|
 
 __Note__ while there are explanations talking about DELETE and PUT methods, as we have not studied JavaScript/Ajax, we will not use these in our current assignments.  For these situations we can get by with our simpler understanding of HTML and use GET and POST (which supports retrieving a page and POSTing values from a form).  Thus for situations such as say DELETE, we would use a modified endpoint (e.g /students/delete/1).
 
@@ -54,6 +55,7 @@ If you want to explore this later, using Gradle and SpringInitialzr, set:-
   - `(consumes=MediaType.APPLICATION_JSON_VALUE)`
   - `(value="/{id}")` - /{id} being an example, and would be bound with `@PathVariable`
   - can set at either class level or method; if at class, then can have different RequestMethods for each method
+  - `@GetMapping("/url")` and `@PostMapping("/url")` - shorthands for `@RequestMapping("/url", method=RequestMethod.GET)` and `@RequestMapping("/url", method=RequestMethod.POST)`
 - `@PathVariable("id")` - annotation to connect RequestMapping value to a procedure call
 - `@RequestBody`, `@ResponseBody` -used in the method associated with an end-point, means to access fields in a response see [@RequestBody and @ResponseBody annotations in Spring](http://stackoverflow.com/questions/11291933/requestbody-and-responsebody-annotations-in-spring)
 - Return
