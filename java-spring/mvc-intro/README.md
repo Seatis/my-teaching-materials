@@ -92,14 +92,13 @@ The layers of Components:-
 |Type|Provides|
 |:---|:-------|
 |Component|Base Annotation/Stereotype; identifies a class for Spring to *bean* |
-|Controller|Extends Component; identifies the layer that will interact with calls from internet, returns to a Servlet that either sends back pages or data.  Methods are marked with RequestMapping; returns ModelAndView (with addAttributes) or String and additional objects|
+|Controller|Extends Component; identifies the layer that will interact with calls from internet, returns to a Servlet that either sends back pages or data.  Methods are marked with RequestMapping (or GetRequest, PostRequest); data from Servlet can be wired into your routines using @PathVariable and @ModelAreturns ModelAndView (with addAttributes) or String and additional objects|
 |Service|Extends Component; where the business logic should occur; no special additional handling in Spring yet; its elements can be wired in|
-|Service Access/Interface|Not necessarily a component; might be based upon an *interface* and use Qualifiers to swap between persistence methods; implements different means to talk to the Repository|
 |Repository|Extends Component; where the communication to the persistence (database) store resides.  Also offers database Exception handling|
 
-<img src="./workshop/workshop02A.jpg" >
+<img src="./README01.jpg" >
 
-*taken from WS2.*
+
 
 ## Workshops
 - [The Reddit](./workshop/reddit.md)
