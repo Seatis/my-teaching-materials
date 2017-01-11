@@ -14,8 +14,10 @@ Learn how we can use Git for working in teams
     - python
     - javascript
     - java
+- hint: no need for framework (eg. spring/express or any package/library), just plain old #language
 - create a repo and a project
 - create a gitignore file with appropriate content for the chosen language
+- commit and push these together, so every team member will have the same initialized project
 - assign your team members to
     - Member A
     - Member B
