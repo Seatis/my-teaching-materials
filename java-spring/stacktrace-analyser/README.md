@@ -9,7 +9,8 @@
 - `do`
   - Try to run `gradlew bootRun`
   - Check the errors
-  - Solve what the error says
+  - Find out together what's wrong currently, what the error says
+  - Solve it!
 - `while(errors)`
 - finally, your application starts up, great!
 - Check the site, and the functionality:
@@ -17,5 +18,6 @@
     - when submitting the form, the submitted user should be saved in the database and this page should be shown with the new user
 - `while(missingFunctionality || errors)`
     - Check the errors (on the frontend and in the log as well)
-    - Solve what the error says
+    - Find out together what's wrong currently, what the error says
+    - Solve it!
 - Great! Now you solved a bunch of errors, this will happen in the future many times. Remember these steps.
