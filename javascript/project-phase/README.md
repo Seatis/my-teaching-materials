@@ -10,8 +10,7 @@
 | Material | Time |
 |:---------|-----:|
 | [Staying relevant as a programmer](https://www.youtube.com/watch?v=ZZUY37RQS-k) | 8:01 |
-| [Journey Through The JavaScript MVC Jungle
-By Addy Osmani](https://www.youtube.com/watch?v=ZZUY37RQS-k)
+| [Journey Through The JavaScript MVC Jungle By Addy Osmani](https://www.youtube.com/watch?v=ZZUY37RQS-k)
  feel free to skip the framework-specific parts, they are obsolete | 35 min read |
 
 ### Debugging
