@@ -5,19 +5,19 @@
 
 int main() {
   // Prints "Hello, World!" to the terminal window.
-  printf("Hello, world!\n");
+  printf("Hello, World!\n");
 
   return 0;
 }
 ```
 
-#### Print different type of values
+#### Print values with different types 
 ```c
 #include <stdio.h>
 
 int main() {
   // Prints a string to the terminal window.
-  printf("Hello, world!\n");
+  printf("Hello, World!\n");
 
   // Prints an integer to the terminal window.
   printf("%d\n", 100);

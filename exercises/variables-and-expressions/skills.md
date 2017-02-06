@@ -53,4 +53,7 @@
 ### Types and expressions
  - indexing a collection using a variable (the index was stored in a varible)
 
+### Comments
+ - Write single line comments
+ - Write multi line comments
 

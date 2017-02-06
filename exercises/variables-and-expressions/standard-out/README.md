@@ -22,6 +22,6 @@
 | Skill                  | Level |
 |:-----------------------|:-----:|
 | Print value to console | B, D  |
-| Integer literal        |   D   |
-| Float literal          |   D   |
-| String literal         |   D   |
+| Integer literal        | B, D  |
+| Float literal          | B, D  |
+| String literal         | B, D  |

@@ -1,13 +1,10 @@
-### Hello World
+## Exercises
 
-```java
-public class HelloWorld {
-  public static void main(String[] args) {
-    // Prints "Hello, World!" to the terminal window.
-    System.out.println("Hello, World!");
-  }
-}
-```
+### [Standard out](./standard-out/java.md)
 
-#### Exercise
- - [Exercise01.java](exercise-01/Exercise01.java)
+### [Numbers and strings](./numbers-and-strings/java.md)
+
+### [Variables](./variables/java.md)
+
+### [Standard in](./standard-in/java.md)
+
