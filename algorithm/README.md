@@ -1,6 +1,9 @@
 #Algorithms
 *Understanding basic algorithm theory*
 
+## Objectives
+Not to be scared of the integral signs... :)
+
 ## Materials & Resources
 ### Training
 | Material | Time |
@@ -54,7 +57,7 @@ It shoudl have a `getGroups` method that returns a list of all groups.
 ### Percolation
 
 #### Percolation checking
-Watch [this](https://www.youtube.com/watch?v=zeF_d5ok_1k)
+Watch [this](https://www.youtube.com/watch?v=zeF_d5ok_1k).
 Create a function that determinate if an N*N grid percolates or not.
 The function should take a N*N Matrix of numbers (0 and 1). If the element of
 the Matrix is 0 it means it blocks, and 1 if it is vacant.
