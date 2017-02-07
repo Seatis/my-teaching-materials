@@ -58,15 +58,15 @@ It shoudl have a `getGroups` method that returns a list of all groups.
 
 #### Percolation checking
 Watch [this](https://www.youtube.com/watch?v=zeF_d5ok_1k).
-Create a function that determinate if an N*N grid percolates or not.
-The function should take a N*N Matrix of numbers (0 and 1). If the element of
+Create a function that determinate if an N x N grid percolates or not.
+The function should take a N x N Matrix of numbers (0 and 1). If the element of
 the Matrix is 0 it means it blocks, and 1 if it is vacant.
 The function should return a boolan that determinates if the Matrix percolates.
 The Matrix percolates if top and bottom are connected by vacant elements.
 
 #### Find percolation treshold
 
-Create a program that generates a N*N Matrix and starts to add random vacant elements to it.
+Create a program that generates a N x N Matrix and starts to add random vacant elements to it.
 The program should check the percolation on each iteration. The loop should stop if the Matrix percolates.
 The program should store the fraciton of the vacant elements to the all elements in the Matrix.
 It should generate this fraction for a given number of Matrices and print the average treshold.
