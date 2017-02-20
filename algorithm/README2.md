@@ -7,7 +7,7 @@
 |:---------|-----:|
 | [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w) | 8:06 |
 | [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw) | 8:36 |
-| [Data Structures: Hash Tables](https://www.youtube.com/watch?v=shs0K1M3wKv8) | 6:24 |
+| [Data Structures: Hash Tables](https://www.youtube.com/watch?v=shs0KM3wKv8) | 6:24 |
 | [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA) | 7:42 |
 | [Data Structures: Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) | 9:56 |
 | [Algorithms: Binary Search](https://www.youtube.com/watch?v=P3YID7liBug) | 6:21 |
