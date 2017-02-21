@@ -66,6 +66,10 @@ String s = new String("abc");
 - What's the difference between method Overloading and Overriding?
 - Is it possible to instantiate an abstract class?
 - Is it possible to instantiate an interface?
+- What is the return type of this method?
+```java
+public abstract int[] foo(int[] arg)[][][][][][][][][][][];
+```
 
 ### What's get printed out?
 ```java
@@ -126,4 +130,31 @@ public static void main() {
 public static void methodTwo(int i) {
   i++;
 }
+```
+
+```java
+Object o = true ? 'a' : new Float(1);
+System.out.println(o);
+System.out.println(o.getClass());
+```
+
+```java
+int[] a = { , };
+System.out.println(a.length);
+```
+
+```java
+public class Foo {
+    public static String wat(String arg) {
+        return arg + arg;
+    }
+}
+
+Foo myFoo = null;
+System.out.println(myFoo.wat("wat"));
+```
+
+```java
+System.out.println("a.b.c".replace(".", "/"));
+System.out.println("a.b.c".replaceAll(".", "/"));
 ```
