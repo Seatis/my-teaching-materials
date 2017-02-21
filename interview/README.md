@@ -132,6 +132,8 @@ public static void methodTwo(int i) {
 }
 ```
 
+### Java WAT
+
 ```java
 Object o = true ? 'a' : new Float(1);
 System.out.println(o);
