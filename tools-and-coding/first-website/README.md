@@ -32,12 +32,14 @@ Focus on text styling, basic layout and header image.
 |:---------|-----:|
 | [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
 | [Lecture 2: Hardware, Continued - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=-i23I4SMiVM) | 1:46:23 |
+| [Computer, Button](https://www.youtube.com/watch?v=8d4RtvMQp10) | 1:34 |
 | [Lecture 9: Programming - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=cZYnPHeRa4Q) | 1:45:37 |
 | [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
 
 ## Material Review
 ### Internet
  - Bit, Byte, MegaBit, MegaByte, KiloByte
+ - Yip, Yip, Yip!
  - Internet
  - Protocol
  - ISP
