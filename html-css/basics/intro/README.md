@@ -140,7 +140,7 @@ Font size: 18 pixels
 
 Font size: 16 pixels, Font family: courier
 
-Artwork: ![grab the duck](duck.png)
+Artwork: [grab the duck](duck.png)
 
 Don't resize the image with an external tool, use CSS
 
