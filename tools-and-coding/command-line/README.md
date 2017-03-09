@@ -25,20 +25,23 @@ Introduction to version control systems and Git.
   - Mac
     - http://git-scm.com/download/mac or `brew install git`
 
+ - Windows users might enjoy [Total Commander](https://www.ghisler.com/)
 
 ### Training
-| Material | Comment |
+| Material | Duration |
 |:---------|-----:|
-| [Code Academy Command Line](https://www.codecademy.com/learn/learn-the-command-line) |  |
-| [Code Academy Learn Git](https://www.codecademy.com/learn/learn-git) | (__Note__ only review the first two sections: "Git Basic Workflow" and "How to Backtrack") |
-| [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) | |
+| [Linux Terminal Tutorial Episode 1: Back to Basics](https://www.youtube.com/watch?v=2FiQSLdnBqA) | 11:32 |
+| [Code Academy Command Line](https://www.codecademy.com/learn/learn-the-command-line) | - |
+| [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4) | 30:32 |
+
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
 
  - Proceed to read the next 2 chapters of git
- - try https://try.github.io/
-
+ - Try https://try.github.io/
+ - GIT, the simple guide: http://rogerdudler.github.io/git-guide/
+ - Bookmark: http://ohshitgit.com/
 
 ## Material Review
  - `cd`
@@ -209,4 +212,3 @@ Create a new repo under your username at github called yourgithubusername.github
 
 ## Individual Workshop Review
 Please check if all files is published to GitHub
-
