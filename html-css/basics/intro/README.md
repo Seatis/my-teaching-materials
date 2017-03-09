@@ -96,29 +96,29 @@ __NOTE!__ Pay special attention to determine the purpose of these tags: `<header
 ## Workshop
 In the sections that follow are a list of Exercises for you to build using simple layouts in HTML and CSS.
 
-- Create each in its own, separate directory.
-- Try to use the most simple method when selecting the element.
-- Try to avoid duplicating code.
-- Use paint, gimp, or something similar to figure out the sizes and colors.
-- You can use any lorem ipsum generator for the texts, it is not necessary to have the same
+- Create each in its own, separate directory
+- Try to use the most simple method when selecting the element
+- Try to avoid duplicating code
+- Use paint, gimp, irfanview or something similar to figure out the sizes and colors
+- You can use any lorem ipsum generator for the texts, *it is not necessary to have the same text*
 
 ### Exercise 1
-![first](1.jpg)
+![first](01.png)
 
-Font size: 30 pixels
+Font size: 2 rem
 
 ### Exercise 2
-![second](2.jpg)
+![second](02.png)
 
-Font size: 30 pixels
+Font size: 2 rem
 
 ### Exercise 3
-![third](3.jpg)
+![third](03.png)
 
-Font size: 30 pixels
+Font size: 2 rem
 
 ### Exercise 4
-![fourth](4.jpg)
+![fourth](04.png)
 
 ### Exercise 5
 ![fifth](5.jpg)
@@ -136,11 +136,13 @@ Try to change the color of the blocks when the mouse is over it.
 Font size: 18 pixels
 
 ### Exercise 8
-![eighth](8.jpg)
+![eighth](05.png)
 
-Font size: 18 pixels
+Font size: 16 pixels, Font family: courier
 
-Duck: ![duck](duck.png)
+Artwork: ![grab the duck](duck.png)
+
+Don't resize the image with an external tool, use CSS
 
 ## Project work
 [CV template](https://invis.io/X575YEGVU#/155416515_Greenfox-Anakins-Cv) to follow
