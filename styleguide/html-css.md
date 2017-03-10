@@ -1,6 +1,6 @@
 # Styleguide for HTML & CSS
 
-We follow the styleguide of Google: https://google.github.io/styleguide/htmlcssguide.xml
+We follow the styleguide of Google: https://google.github.io/styleguide/htmlcssguide.html
 
 ## Exceptions
  - HTML
