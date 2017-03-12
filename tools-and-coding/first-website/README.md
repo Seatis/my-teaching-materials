@@ -115,5 +115,5 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
  - **Add in style.**
    Create a style.css file and link it to your HTML.
    How do you center content on the page?
-   Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Merriweather).
+   Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather).
 
