@@ -101,35 +101,19 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
  - MDN: https://developer.mozilla.org/en-US/
 
 ### Steps
- - __Plan your work.__
-   Determine the requirements.  Gather content, images.  Run through the basic HTML structure and make note of how it has been styled.
- - __Keep things tidy.__
-   Create a folder for all your Green Fox materials.  Then within that, a folder for the first week, and within that a folder for the first day's assignment.
- - __Start with the content.__
-   Create an index.html file. What are the mandatory tags in an HTML document? See [step1 in the workshop folder](workshop/step1).
- - __Add more content.__
-   Copy-paste a few paragraphs of text from [the article above](https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp) to start with.
- - __Give it some structure.__
+ - **Keep things tidy.**
+   Create a folder for all your Green Fox materials. Then within that, a folder for the first week, and within that a folder for the first day's assignment.
+   Check the recomended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it.
+ - **Create your first page**
+   Create a html file using your editor called `index.html`, and open it in your browser.
+ - **Start with the content.**
+   Copy-paste the headingsa and the first 3 paragraphs of text from [the article above](https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp) to start with.
+ - **Give it some structure.**
    What semantic role do these paragraphs fill? Divide it into a few separate HTML tags.
- - __Add in style.__
-   Create a style.css file and link it to your HTML.  
-   How do you center content on the page?  
-   Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Merriweather).  
- - __Add a header image.__
-   Try adding an image tag. How do you make it full page wide?  
-   Try adding the image as background-image instead.
-
-## Individual Workshop Review
-Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-css.md)
-
- - Is the directory structure and the name of the files correct?
- - Is the doctype present and valid?
- - Are the `html`, `head` and `body` has the right structure?
- - Is the semantic structuring good in the html file?
- - Is the styling valid for the image, titles, and paragraphs?
- - Are the color codes valid?
- - Is there unnecessary code duplication?
- - Is the indentation good in each file?
- - Are the attributes valid on each tag?
- - The code should not show errors here: https://validator.w3.org/
+ - **Add a header image.**
+   Download the image from the medium site, and save it next to your html file.
+ - **Add in style.**
+   Create a style.css file and link it to your HTML.
+   How do you center content on the page?
+   Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Merriweather).
 
