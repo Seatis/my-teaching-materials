@@ -13,27 +13,35 @@ the time.
  -  **Create your first page**
     Create a html file using your editor called `index.html`, and open it in your browser.
      -  Add a word as content to the file
+
         ```html
         apple
         ```
+
      -  Open it in the browser
      -  Add a second word separated by space
+
         ```html
         apple pear
         ```
+
      -  The browser only refreshes if you manually hit refresh because of the request mechanism
      -  Tell them to put the second word to a new line (not going to work because how whitespace characters are handled in html)
+
         ```html
         apple
         pear
         ```
+
      -  Show them that none of the whitespace characters are doing any change.
+
         ```html
         apple
 
         
            pear
         ```
+
      -  Show them this slide:
         [html document slide](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.ge7c2a704f_0_0), 
         and explain what is an html document
@@ -41,10 +49,12 @@ the time.
         [element nesting](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.ge7c2a704f_0_26),
         and explain how to nest html elements
      -  Wrap the first word in an `<h1>` tag
+
         ```html
         <h1>apple</h1>
         pear
         ```
+
      -  Point out how the editor uses different colors, and how it helps to visually spot errors
         (for example not matched greater than characters)
      -  Explain that we use the html elements for sematical use rather than how it looks in the browser.
@@ -75,6 +85,7 @@ the time.
          - paragraphs
          - the paragraphs are emphesized
      -  Wrap the titles to heading tags
+
         ```html
         <h1>How She Got There<h1>
         <h2>
@@ -85,8 +96,10 @@ the time.
         Erika had been profiled numerous times in many different forums, and her insights on design, business and technology were well known. I was after something narrower, though. I wanted to hear about the nitty gritty of her professional journey, the trials and tribulations she encountered in finding meaningful work, and the stories of her lucky breaks and less lucky mishaps. The goal of How They Got There was to document the random things that conspire together to forge every career, even very high profile ones like Erika’s.
         I knew that, if it went off well, our discussion would serve as a kind of template for the others that would follow, and so I was relieved when Erika talked about her professional life with such unaffected candor and incisive wit. Her tales of the first dot-com bubble and burst, and how she salvaged from that wreckage the building blocks that would lead to Mule Design, were exactly what I was looking for. This interview remains one of my very favorites from all of the ones I conducted for How They Got There.
         ```
+
      -  Explain how the `<h1>` and `<h2>` is indented and the importance of indentation
      -  Add the paragraphs, links, and `<em>`-s
+
         ```html
         <h1>How She Got There</h1>
         <h2>
@@ -109,12 +122,14 @@ the time.
           </em>
         </p>
         ```
+
      -  Explain the difference between `<em>` and `<i>`
  -  **Add a header image.**
     Download the image from the medium site, and save it next to your html file.
      -  Tell them to rename the image
      -  Show them the broken image link
      -  add the image tag and wrap the artice to an `<article>` tag
+
         ```html
         <img src="road.jpg" alt="Road">
         <article>
@@ -140,12 +155,14 @@ the time.
           </p>
         </article>
         ```
+
      -  Explain the purpose of the `<article>` tag
  -  **Add in style.**
     Create a style.css file and link it to your HTML.
     How do you center content on the page?
     Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather).
      -  Show them the basic html boilerplate and explain it's purpose
+
         ```html
         <!doctype html>
         <html lang="en">
@@ -177,7 +194,9 @@ the time.
           </body>
         </html>
         ```
+
      -  Add the title, the charset meta tag, and link the stylesheet. Explain the purpose for each. (show them how the text changes on the browser tab)
+
         ```html
         <!doctype html>
         <html lang="en">
@@ -213,14 +232,17 @@ the time.
           </body>
         </html>
         ```
+
      -  Show them this slide:
         [CSS syntax](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.ge7c2a704f_0_30),
      -  Make everything red
+
         ```css
         body {
           color: red;
         }
         ```
+
      -  Show them how to create a comment in css
      -  Show them the wiew page source
      -  Show them the devloper tools
@@ -229,18 +251,23 @@ the time.
      -  Rewtire the css
      -  Ask for the simple differences, and show them one by one how to change it
          -  image margin
+
             ```css
             body {
               margin: 0;
             } 
             ```
+
          -  image size
+
             ```css
             img {
               width: 100%;
             }
             ```
+
          -  Center the content
+
             ```css
             article {
               max-width: 740px;
@@ -248,7 +275,9 @@ the time.
               margin-right: auto;
             }
             ```
+
          -  heading positions
+
             ```css
             h1 {
               text-align: center;
@@ -258,14 +287,18 @@ the time.
               text-align: center;
             }
             ```
+
          -  Explain the problem with code duplication and refactor
+
             ```css
             h1,
             h2 {
               text-align: center;
             }
             ```
+
          -  Font sizes, colors and margins 
+
             ```css
             body {
               margin: 0;
@@ -313,7 +346,9 @@ the time.
               color: rgba(0, 0, 0, 0.8);
             }
             ```
+
          -  Pick the fonts from google font and link it to the html, than add it to our css
+
             ```css
             body {
               margin: 0;
@@ -363,3 +398,4 @@ the time.
               color: rgba(0, 0, 0, 0.8);
             }
             ```
+
