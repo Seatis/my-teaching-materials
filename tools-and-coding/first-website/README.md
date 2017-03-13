@@ -8,7 +8,7 @@ Focus on text styling, basic layout and header image.
  - Writing first HTML and CSS file
  - Basic HTML structure
  - CSS selector
- - Indentation and formating
+ - Indentation and formatting
 
 ## Materials & Resources
 ### Environment
@@ -16,7 +16,7 @@ Focus on text styling, basic layout and header image.
  - Download and install [Google Chrome](https://www.google.com/chrome)
  - Register to [Github](https://github.com/)
 
-### Trainning
+### Training
 #### Internet
 | Material | Time |
 |:---------|-----:|
@@ -26,7 +26,7 @@ Focus on text styling, basic layout and header image.
 | [The Internet: HTTP and HTML](https://www.youtube.com/watch?v=1K64fWX5z4U) | 7:06 |
 | [The Internet: Encryption and public keys](https://www.youtube.com/watch?v=6-JjHa-qLPk) | 6:39 |
 | [The Internet: Cybersecurity and crime](https://www.youtube.com/watch?v=5k24We8pED8) | 5:01 |
-| [How the DNS works?](https://www.youtube.com/watch?v=2ZUxoi7YNgs) | 2:26 | 
+| [How the DNS works?](https://www.youtube.com/watch?v=2ZUxoi7YNgs) | 2:26 |
 
 #### Computer
 | Material | Time |
@@ -63,7 +63,7 @@ Focus on text styling, basic layout and header image.
  - Backdoor
  - Bot Net
  - DDos
- - Phising
+ - Phishing
 
 ### Computer
  - CPU
@@ -104,11 +104,11 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
 ### Steps
  - **Keep things tidy.**
    Create a folder for all your Green Fox materials. Then within that, a folder for the first week, and within that a folder for the first day's assignment.
-   Check the recomended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it.
+   Check the recommended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it.
  - **Create your first page**
    Create a html file using your editor called `index.html`, and open it in your browser.
  - **Start with the content.**
-   Copy-paste the headingsa and the first 3 paragraphs of text from [the article above](https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp) to start with.
+   Copy-paste the headings and the first 3 paragraphs of text from [the article above](https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp) to start with.
  - **Give it some structure.**
    What semantic role do these paragraphs fill? Divide it into a few separate HTML tags.
  - **Add a header image.**
@@ -117,4 +117,3 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
    Create a style.css file and link it to your HTML.
    How do you center content on the page?
    Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather).
-
