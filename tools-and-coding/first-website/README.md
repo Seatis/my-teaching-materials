@@ -26,6 +26,7 @@ Focus on text styling, basic layout and header image.
 | [The Internet: HTTP and HTML](https://www.youtube.com/watch?v=1K64fWX5z4U) | 7:06 |
 | [The Internet: Encryption and public keys](https://www.youtube.com/watch?v=6-JjHa-qLPk) | 6:39 |
 | [The Internet: Cybersecurity and crime](https://www.youtube.com/watch?v=5k24We8pED8) | 5:01 |
+| [How the DNS works?](https://www.youtube.com/watch?v=2ZUxoi7YNgs) | 2:26 | 
 
 #### Computer
 | Material | Time |
