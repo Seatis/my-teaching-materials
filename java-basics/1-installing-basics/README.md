@@ -17,7 +17,8 @@ Get into *real* programming, installing a development environment and then runni
 |:---------|-----:|
 |[Historic background leading to Java (Guru-01)](https://www.youtube.com/watch?v=2Xa3Y4xz8_s)| 6:01|
 |[Installing Java & IntelliJ IDEA (Koets)](https://www.youtube.com/watch?v=qscQ3XT6qu4)| 15:58|
-|[Getting started (Bana 01, note he's using eclipse)](https://www.youtube.com/watch?v=TBWX97e1E9g)|17:42|
+|[Basic Syntax](https://www.youtube.com/watch?v=SSEpAsKqRqA)|10:35|
+|[Strings, String Functions](https://www.youtube.com/watch?v=0tDMZFyfNpY)| only until 7:00 |
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
@@ -54,212 +55,67 @@ IntelliJ has some tools that complete entering values for you; and of course, va
 - escape character
 - `"Java's stuff"` and `'stuff of Java'`
 - concatenation
+- Arithmetic Operators (`+, -, *, /, %, ++, --, +=, -=, /=, *=`)
+- length()
+- isEmpty()
+- Concatenation, concat()
+- Escape special characters
+    - `\\, \n, \t`
+- indexOf(), contains(), lastIndexOf()
+- substring()
+- replace()
+- toLowerCase(), toUpperCase()
+- trim()
+
 
 ## Workshop
-### The Java environment
-- Programs with the .java, .class extensions
-- Compiling to bytecode
-- RAM
-- Just-in-time (JIT) compiling vs linking together
-- Interpreter to machine code
-- JDK, JRE, JVM
 
 ### "Hello World"
-*Test that everything is installed correctly.*
-- Get output
-- Practice creating file, directories
-- How to run a program
-- `public static void main(string args[])`
+- Create your first file
+- Add a main method: `public static void main(string args[]) {}`
+- Run your program
 
 ```java
 System.out.println("Hello world!");
 ```
 
-##### Exercise
 - Run a simple Hello World!
 - Change it to greet you instead of the World.
-- [Workshop01.java](workshop/Workshop01.java)
 
 ### Variables
 #### Numbers
-- Integer
-- Byte
-- Short
-- Long
-- Float
-- Double
-- Range limitations
-- Arithmetic Operators (+, -, *, /, %, ++, --, +=, -=, /=, *=)
 
 ```java
-// Integers
-// Byte (8 bit; min:-128; max: +127)
-byte a = -127;
-byte b = 2;
-byte c = 278; // error by the IDE
-
-// Short (16 bit; min: -32768 ; max: +32 767)
-short d = -32768;
-short e = 65000; // error by the IDE
-Short f = 567;
-
-// Integer (32 bit; min: -2 147 483 648; max: 2 147 483 647)
-int g = 12;
-Integer h = 13;
-
-
-// Long (64 bit; min: -9 223 372 036 854 775 808 ;max: 9 223 372 036 854 775 807 )
-long i = 200;
-long j = 30000000000000L;
-long k = -34500000000L;
-
-// Floats
-// Float (32 bit single precision IEEE 754)
-float l = 1.3f;
-float m = 45f;
-Float n = 0; // use 0f
-
-// Double ( 64 bit, double precision IEEE 754)
-double o = 23.03013103103d;
-Double p = 1d;
+byte b = 2;     // Byte (8 bit; min:-128; max: +127)
+short s = 567;  // Short (16 bit; min: -32768 ; max: +32 767)
+int i = 12;     // integer (32 bit; min: -2 147 483 648; max: 2 147 483 647)
+long l = 30000000000000L; // long (64 bit; min: -9 223 372 036 854 775 808 ;max: 9 223 372 036 854 775 807)
+float f = 1.3f;
+float f2 = 45f; // Float (32 bit single precision IEEE 754)
+double d = 23.03013103103; // Double ( 64 bit, double precision IEEE 754)
 
 // Arithmetic operators
-int aa = 3 + 4;
-int bb = 6 * 7;
-int cc = 8 / 4;
-int dd = 8 % 4;
-int ee = 8 % 5;
+int addingNumbers = 3 + 4;
+int multiplyingNumbers = 6 * 7;
+int dividingNumbers = 8 / 4;
+int modulingNumbers = 8 % 5;
 
 int ff = 8;
 ff *= 3;
 ff /= 6; // ff = 4
 ```
-**
-#### Exercise
-*Exercises about simple types and numbers*
+
+- [Workshop01.java](workshop/Workshop01.java)
 - [Workshop02.java](workshop/Workshop02.java)
 - [Workshop03.java](workshop/Workshop03.java)
 - [Workshop04.java](workshop/Workshop04.java)
 - [Workshop05.java](workshop/Workshop05.java)
 - [Workshop06.java](workshop/Workshop06.java)
 
-#### Other datatypes
-- Boolean
-```java
-// Boolean (8 bit, 1 byte), true or false         
-Boolean trueCondition = Boolean.TRUE;    
-System.out.println(trueCondition); // true        
-
-boolean trueBool = true;
-boolean falseBool = false;
-
-boolean isBigger = 3 > 4;
-boolean isTheSame = 5 == 5;         
-```
-- Date (will cover later)
-- Objects (will cover later)
-
-
-##### Exercise
-*Exercises about other data types*
-- [Workshop07.java](workshop/Workshop07.java)
-- [Workshop08.java](workshop/Workshop08.java)
-- [Workshop09.java](workshop/Workshop09.java)
-- [Workshop10.java](workshop/Workshop10.java)
-- [Workshop11.java](workshop/Workshop11.java)
-- [Workshop12.java](workshop/Workshop12.java)
-- [Workshop13.java](workshop/Workshop13.java)
-
 
 #### Strings
- - char
- - String Class
- - length()
- - isEmpty()
- - Concatenation, concat()
- - Escape special characters
- - indexOf(), contains(), lastIndexOf()
- - substring()
- - format()
- - compareTo(), compareToIgnoreCase()
- - replace()
- - toLowerCase(), toUpperCase
- - trim()
- - \\, \n, \t
- *general familiarity with how to check syntax and find functions on the internet*
-
 ```java
-// Strings and char                                                                                                                                           
-// char 16 bit unicode character (unsigned -> min: 0; max: 65535)                                                                                             
-String actionsProverb = "Actions speak louder than words.";                                                                                                   
 
-// select the first char from the string, it is the uppercase A                                                                                               
-char firstChar = actionsProverb.charAt(0);                                                                                                                    
-System.out.println(firstChar);                                                                                                                                
-
-// string concatenation                                                                                                                                       
-String concated = "Hope for the best " + "but";                                                                                                               
-concated = concated + " prepare";                                                                                                                             
-concated += " for ";                                                                                                                                          
-concated.concat("the worst.");                                                                                                                                
-System.out.println(concated);                                                                                                                                 
-
-// escape special character                                                                                                                                   
-String strWithSpecialCharacters = "I can \"put\" special 'characters' in a \\string\\.";                                                                      
-System.out.println(strWithSpecialCharacters);                                                                                                                 
-
-// length of a string                                                                                                                                         
-int myLength = "what is my length?".length();                                                                                                                 
-System.out.println(myLength);                                                                                                                                 
-
-System.out.println(actionsProverb.length());                                                                                                                  
-
-// isEmpty()                                                                                                                                                  
-String emptyString = "";                                                                                                                                      
-System.out.println("Is \"emptyString\" empty? " + emptyString.isEmpty());                                                                                     
-System.out.println("Is \"actionsProverb\" empty? " + actionsProverb.isEmpty());                                                                               
-
-// contains                                                                                                                                                   
-System.out.println(actionsProverb.contains("than")); // true                                                                                                  
-System.out.println(actionsProverb.contains("five")); // false                                                                                                 
-
-// indexOf                                                                                                                                                    
-System.out.println(actionsProverb.indexOf("t")); // 2 (t in "Actions")                                                                                        
-System.out.println(actionsProverb.indexOf("t", 3)); // second parameter is called fromIndex, result will be 21 (t in "than")                                  
-System.out.println(actionsProverb.indexOf("thinking")); // -1                                                                                                 
-
-// lastIndexOf                                                                                                                                                
-System.out.println(actionsProverb.lastIndexOf("t")); // 21 (t in "than")                                                                                      
-
-// substring                                                                                                                                                  
-System.out.println(actionsProverb.substring(0,7)); // result will be "Actions"                                                                                
-System.out.println(actionsProverb.substring(14,20)); // result will be "louder" (startIndex, endIndex)                                                        
-
-// format strings                                                                                                                                             
-System.out.println(String.format("I have %d cats.", 2)); // %d -> integer                                                                                     
-System.out.println(String.format("I have %d %s and I love them!", 3, "raptors")); // %d -> integer; %s -> string, %f -> float                                 
-
-// compareTo                                                                                                                                                  
-System.out.println("a".compareTo("b")); // -1                                                                                                                 
-System.out.println("b".compareTo("a")); // 1                                                                                                                  
-System.out.println("a".compareTo("c")); // -2                                                                                                                 
-System.out.println("a".compareTo("deli")); // -3                                                                                                              
-System.out.println("a".compareTo("a")); // 0 -> equals                                                                                                        
-
-// compareToIgnoreCase                                                                                                                                        
-System.out.println("a".compareToIgnoreCase("A")); // 0 -> equals                                                                                              
-
-// replace                                                                                                                                                    
-String weakestLinkProverb = "A rope is only as strong as its weakest link."; // it has a mistake, correctly: "A chain is only as strong as its weakest link."
-System.out.println(weakestLinkProverb.replace("rope", "chain"));                                                                                              
-System.out.println(weakestLinkProverb.replace("a", "b"));                                                                                                     
-
-// toLowerCase; toUpperCase                                                                                                                                   
-System.out.println("How much is the fish?".toUpperCase());                                                                                                    
-System.out.println("HOOOORRRAAAAAYYYY".toLowerCase());                                                                                                        
-
-// trim                                                                                                                                                       
-System.out.println("     string with lots of spaces       ".trim());                                                                                          
 ```
 
 ##### Exercise
@@ -289,7 +145,3 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - Are the names of things following the styleguide?
     - Classes: UpperCamelCase
     - variables: lowerCamelCase
-
-# Links
-- [Parent - Java Basic Module](../README.md)
-- [Next Day (Expressions &amp; Control Flow](../2-expressions-control-flow/README.md)

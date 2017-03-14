@@ -1,14 +1,19 @@
-# Module 03: Day 1 (post installation) - Intro, Expressions & Control-Flow
+# Expressions & Control-Flow
 Having installed IntelliJ and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
 
-## Objectives
-- Expressions
-- Control Flow
-- Some of the Java *Lingo*
 
 ## Materials & Resources
 
 ### Training
+| Material | Time |
+|:-------- |-----:|
+|[Boolean Operators & IF Statement](https://www.youtube.com/watch?v=6O_lwNnWFR0)|10:29|
+|[Else/Else If Statements & AND/OR Operators](https://www.youtube.com/watch?v=3J4jCSXA1Pw)|14:22|
+|[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
+
+### Optional
+*If you've got time and/or want to dig deeper, consider the following:*
+
 | Material | Time |
 |:-------- |-----:|
 |[Variables, Math functions & Scanner class (Bana 02)](https://www.youtube.com/watch?v=yYN8u90MKCg)|17:05|
@@ -16,19 +21,13 @@ Having installed IntelliJ and tested our installs (with a "Hello World") program
 |[Looping, collecting user input with Scanner class (Bana 04)](https://www.youtube.com/watch?v=efvZmFd1prA)|13:23|
 |[Strings (mathtutordvd 07) - basic items](https://www.youtube.com/watch?v=r3DBIDyzLUI)|11:38|
 |[String resource on Java, specifically focused on strings](http://tutorials.jenkov.com/java/strings.html)||
-
-### Optional
-*If you've got time and/or want to dig deeper, consider the following:*
-
-| Material | Time |
-|:-------- |-----:|
 |[Using IDEA (instead of Eclipse)](https://www.jetbrains.com/help/idea/2016.2/tutorial-creating-running-and-packaging-your-first-java-application.html)||
 |[Alternative discussion on Variables and Binary (JCode.01)](https://www.youtube.com/watch?v=DnBTGtmJdzA)|5:19|
 |[Deeper on how memory works (storing variables. Stack & Heap) (JCode.02)](https://www.youtube.com/watch?v=tUW2kIPY3is)|3:52|
 |[Official Java docs on Strings](http://docs.oracle.com/javase/8/docs/api/java/lang/String.html)||
 
 ## Material Review
-- condition
+- condition, if, else
 - loops: for, while
 - scanner
 - operators
@@ -45,101 +44,39 @@ Having installed IntelliJ and tested our installs (with a "Hello World") program
     - `||`
     - `&&`
     - `!`
-- `Math.*`
-- ...
 
 
 ## Workshop
 
-### Conditional
-- comparison operators
-  - ==      equal to
-  - !=      not equal to
-  - >       greater than
-  - >=      greater than or equal to
-  - <       less than
-  - <=      less than or equal to
-- if
-- else
-- elseif
-- switch
-- conditional operators
-   - and &&
-   - or ||
-   - negation !
-
+### Boolean
 ```java
-// Conditionals                                                                                 
-// Example 1                                                                                    
-if(1 == 1)                                                                                      
-    System.out.println("1 equals 1, wohooo");                                                   
 
-// Example 2                                                                                    
-if(2 >= 1)                                                                                      
-    System.out.println("2 is greater than or equal to 1");                                      
+boolean trueBool = true;
+boolean falseBool = false;
 
-// Example 3 (!= not equal)                                                                     
-if(4 != 5)                                                                                      
-    System.out.println("4 is not equal to 5");                                                  
-
-// Example 4                                                                                    
-int a = 5;                                                                                      
-int b = 7;                                                                                      
-
-if(a > b) {                                                                                     
-    System.out.println(String.format("%d is bigger than %d", a, b));                            
-} else {                                                                                        
-    System.out.println(String.format("%d is less than %d", a, b));                              
-}                                                                                               
-// What happens when a equals b? (Let's see Example 3)                                          
-
-// Example 5                                                                                    
-b = 5;                                                                                          
-
-if(a > b) {                                                                                     
-    System.out.println(String.format("%d is bigger than %d", a, b));                            
-} else if(a < b) {                                                                              
-    System.out.println(String.format("%d is less than %d", a, b));                              
-}else {                                                                                         
-    System.out.println(String.format("%d is equals to %d", a, b));                              
-}                                                                                               
-
-// Example 6 -> check if "a" is in the 1..9 range (inclusive)                                   
-a = 5;                                                                                          
-
-if(a >= 1 && a <=9) {                                                                           
-    System.out.println("It is in the range!");                                                  
-}                                                                                               
-
-// Example 7 -> check if "a" is outside of the 1..9 range (use conditional "or" operator)       
-a = -2;                                                                                         
-
-if(a < 1 || a > 9)                                                                              
-    System.out.println("\"a\" is outside of the specified range.");                             
-
-// Example 8 -> check if "a" is outside of the 1..9 range, but with using negation operator (!)
-a = -2;                                                                                         
-
-if(!(a >= 1 && a <=9)) {                                                                        
-    System.out.println("\"a\" is outside of the specified range.");                             
-}                                                                                               
-
-// Example 9                                                                                    
-Boolean trueBool = true;                                                                        
-Boolean falseBool = Boolean.FALSE;                                                              
-
-if(trueBool || falseBool)                                                                       
-    System.out.println("One of the variables is \"true\"");                                     
+boolean isBigger = 3 > 4;
+boolean isTheSame = 5 == 5;         
 ```
 
-- bitwise operators
-   - and &
-   - or |
-   - xor ^
+- [Workshop07.java](workshop/Workshop07.java)
+- [Workshop08.java](workshop/Workshop08.java)
+- [Workshop09.java](workshop/Workshop09.java)
+- [Workshop10.java](workshop/Workshop10.java)
+- [Workshop11.java](workshop/Workshop11.java)
+- [Workshop12.java](workshop/Workshop12.java)
+- [Workshop13.java](workshop/Workshop13.java)
 
+### Conditionals
+```java
+if(thirsty && hungry) {
+  System.out.println("Lunch time!");
+} else if (thirsty || hungry) {
+  System.out.println("Snack time!");
+} else {
+  System.out.println("No food for you, litle fatty.");
+}
+```
 
-##### Exercise
-*Exercises about Conditions*
 - [Workshop22.java](workshop/Workshop22.java)
 - [Workshop23.java](workshop/Workshop23.java)
 - [Workshop24.java](workshop/Workshop24.java)
@@ -151,100 +88,16 @@ if(trueBool || falseBool)
 - [Workshop30.java](workshop/Workshop30.java)
 
 ### Loops
-- for
-- while
-- do while
-- break
-- continue
 
 ```java
-// Loops                                                                        
-// For statement/loop                                                           
-/*                                                                              
-    for (initialization; termination; increment) {                              
-        statement(s)                                                            
-    }                                                                           
-*/                                                                              
-
-// Example 1                                                                    
-for (int i = 0; i < 10; i++) {                                                  
-    System.out.print(i);                                                        
-}                                                                               
-
-// Example 2 -> going by 2                                                      
-int j = 0;                                                                      
-for (; j < 10; j += 2)                                                          
-    System.out.print(j);                                                        
-
-// Example 3 -> infinity loop ( :D )                                            
-for(;;)                                                                         
-    System.out.print(j);                                                        
-
-// While statement/loop                                                         
-/*                                                                              
-    while (expression) {                                                        
-        statement(s)                                                            
-    }                                                                           
-*/                                                                              
-
-// Example 1                                                                    
-int k = 0;                                                                      
-while (k < 10) {                                                                
-    System.out.print(k);                                                        
-    k++;                                                                        
-}                                                                               
-
-// Example 2                                                                    
-k = 0;                                                                          
-while (k < 10) {                                                                
-    System.out.print(k);                                                        
-    k += 2;                                                                     
-}                                                                               
-
-// Do-While statement/loop (it executes at least once)                          
-/*                                                                              
-    while (expression) {                                                        
-        statement(s)                                                            
-    }                                                                           
-*/                                                                              
-
-// Example 1                                                                    
-int l = 0;                                                                      
-do {                                                                            
-    System.out.print(l);                                                        
-    l++;                                                                        
-} while (l < 10);                                                               
-
-// Example 2                                                                    
-l = 0;                                                                          
-do {                                                                            
-    System.out.print(l);                                                        
-    l += 2;                                                                     
-} while (l < 10);                                                               
-
-
-// Break statement (jump out from the loop)                                     
-
-// Example 1 -> break when  the first element has found which is divisible by 5
-for (int m = 1; m < 10; m++) {                                                  
-    if (m % 5 == 0)                                                             
-        break;                                                                  
-    System.out.print(m);                                                        
-}                                                                               
-
-
-// Continue statement (jump to the next loop iteration)                         
-
-// Example 1 -> continue on elements which is divisible by 2                    
-for (int m = 1; m < 10; m++) {                                                  
-    if (m % 2 == 0)                                                             
-        continue;                                                               
-    System.out.print(m);                                                        
-}                                                                               
+while(boolCondition) {
+  System.out.println("I'm just printing until the boolCondition is true.");
+}
+for(int i = 0; i < 100; i++) {
+  System.out.println("I won't cheat on my exams again.");
+}
 ```
 
-##### Exercise
-*Exercises about Loops*
 - [Workshop31.java](workshop/Workshop31.java)
 - [Workshop32.java](workshop/Workshop32.java)
 - [Workshop33.java](workshop/Workshop33.java)
@@ -276,9 +129,3 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
     - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
-
-# Links
-- [Parent - Java Basic Module](../README.md)
-- [Prior - Installation](../1-installing-basics/README.md)
-- [Next - Arrays &amp; Functions](../3-arrays-collections-functions/README.md)
-
