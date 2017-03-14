@@ -1,4 +1,4 @@
-# Array Exercise
+# Array Exercises
 
 ## 01
 - Create an array variable named `q` with the following content: `[4, 5, 6, 7]`
@@ -63,31 +63,3 @@
 - Create an array variable named `aj` with the following content: `[3, 4, 5, 6, 7]`
 - Reverse the order of the elements in `aj`
 - Print the elements of the reversed `aj`
-
-## 14
-- Create an integer variable named `ak` and assign the value `123` to it
-- Create a function called `doubling` that doubles it's input parameter
-- Print the result of `doubling(ak)`
-
-## 15
-- Create a string variable named `al` and assign the value `Greenfox` to it
-- Create a function called `greet` that greets it's input parameter
-    - Greeting is printing e.g. `Greetings dear, Greenfox`
-- Greet `al`
-
-## 16
-- Create a string variable named `am` and assign the value `kuty` to it
-- Write a function called `appendA` that gets a string as an input and appends an 'a' character to its end
-- Print the result of `appendA(am)`
-
-## 17
-- Write a function called `sum` that sum all the numbers until the given parameter
-
-## 18
-- Create a function called `factorio` that returns it's input factorial
-
-## 19
-- Create a recursive function called `refactorio` that returns it's input factorial
-
-## 20
-- Create a function called `printer` which prints the input String parameters (can have multiple number of arguments)
