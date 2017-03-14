@@ -118,7 +118,6 @@ We also saw:
 - [Workshop17.java](workshop/Workshop17.java)
 - [Workshop18.java](workshop/Workshop18.java)
 - [Workshop19.java](workshop/Workshop19.java)
-- [Workshop20.java](workshop/Workshop20.java)
 - [Workshop21.java](workshop/Workshop21.java)
 - [Workshop22.java](workshop/Workshop22.java)
 - [Workshop23.java](workshop/Workshop23.java)
@@ -163,4 +162,3 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - [Parent - Java Basic Module](../README.md)
 - [Prior - Expression &amp; Control Flow](../2-expressions-control-flow/README.md)
 - [Next - Arraylists &amp; Foreach] (../4-arraylists-foreach/README.md)
-
