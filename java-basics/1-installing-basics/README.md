@@ -1,24 +1,18 @@
 # Installing & Basics
 Get into *real* programming, installing a development environment and then running our first programs.
 
-## Objectives
-- Get a working environment going
-- Create first program in Java
-- Variables
-
-## Materials & Resources
-### Environment
-- download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
-- if *jre* (Java Runtime Environment) didn't download, get that too
-- download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
-
-### Training
+## Materials
 | Material | Time |
 |:---------|-----:|
 |[Historic background leading to Java (Guru-01)](https://www.youtube.com/watch?v=2Xa3Y4xz8_s)| 6:01|
 |[Installing Java & IntelliJ IDEA (Koets)](https://www.youtube.com/watch?v=qscQ3XT6qu4)| 15:58|
 |[Basic Syntax](https://www.youtube.com/watch?v=SSEpAsKqRqA)|10:35|
 |[Strings, String Functions](https://www.youtube.com/watch?v=0tDMZFyfNpY)| only until 7:00 |
+
+### Environment
+- download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
+- if *jre* (Java Runtime Environment) didn't download, get that too
+- download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
