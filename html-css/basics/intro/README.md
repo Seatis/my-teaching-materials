@@ -46,6 +46,7 @@ __NOTE!__ Pay special attention to determine the purpose of these tags: `<header
 | [CSS Tutorial For Beginners 37 - Margins](https://www.youtube.com/watch?v=ggo0di5L6sA) | 10:38 |
 | [CSS Tutorial For Beginners 38 - Padding](https://www.youtube.com/watch?v=4YF-eaX4P0k) | 4:41 |
 | [CSS Tutorial For Beginners 40 - Borders](https://www.youtube.com/watch?v=sdn5p4kf91c) | 6:47 |
+| [CSS Tutorial For Beginners 41 - Block-level Elements](https://www.youtube.com/watch?v=HuiPIK-0-_A) | 11:08 |
 
 ### Optional 
 *If you've got time, consider the following:*
