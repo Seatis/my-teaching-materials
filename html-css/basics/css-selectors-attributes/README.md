@@ -90,3 +90,20 @@
  Artwork: [grab the duck](duck.png)
 
  Don't resize the image with an external tool, use CSS
+
+ 
+## Individual Workshop Review
+ Please follow the styleguide: [Our HTML & CSS styleguide](../../../styleguide/html-css.md)
+
+  - Is the directory structure and the name of the files correct?
+  - Is the doctype present and valid?
+  - Is the semantic structuring good in the html file?
+  - Are the color codes valid?
+  - Is there unnecessary code duplication?
+  - Is the indentation good in each file?
+  - Are the attributes valid on each tag?
+  - Are there unnecessary code or empty selectors?
+  - Are the `<ul>` and `<li>` elements valid?
+  - Are there id duplications?
+  - The code should not show errors here: https://validator.w3.org/
+  - Is the commit message meaningful?
