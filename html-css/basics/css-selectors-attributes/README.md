@@ -9,15 +9,13 @@
 | [HTML Tutorial for Beginners 12 - HR and BR Tags](https://www.youtube.com/watch?v=xkF-cKpzREU) | 3:25 |
 | [HTML Tutorial for Beginners 16 - Adding JavaScript to HTML](https://www.youtube.com/watch?v=Gd0RBdFRvF0) | 9:41 |
 
-__NOTE!__ Pay special attention to determine the purpose of these tags: `<header>`, `<main>`, `<footer>`, `<section>`, `<article>`
-
 
 #### CSS
 | Material | Time |
 |:---------|-----:|
 | [CSS Tutorial For Beginners 05 - Inline & Embedded Styles](https://www.youtube.com/watch?v=jpjzhva3owA) | 9:29 |
 | [CSS Tutorial For Beginners 06 - External Style Sheets](https://www.youtube.com/watch?v=Wj2iI7w37Y0) | 5:37 |
-| [CSS Tutorial For Beginners 07 - CSS Comments and Where to Use Them](https://www.youtube.com/watch?v=qfpo_XsM0hM) | 4:40 
+| [CSS Tutorial For Beginners 07 - CSS Comments and Where to Use Them](https://www.youtube.com/watch?v=qfpo_XsM0hM) | 4:40
 | [CSS Tutorial For Beginners 13 - The Important Declaration](https://www.youtube.com/watch?v=BHzQ_9zzuNM) | 5:39 |
 | [CSS Tutorial For Beginners 16 - Child Selectors](https://www.youtube.com/watch?v=MlJrAhGVIis) | 3:45 |
 | [CSS Tutorial For Beginners 17 - Adjacent Selectors](https://www.youtube.com/watch?v=K92X4yyyfNY) | 4:20 |
@@ -66,3 +64,29 @@ __NOTE!__ Pay special attention to determine the purpose of these tags: `<header
  - inline element
  - inline-block
  - comments
+
+## Workshop
+ In the sections that follow are a list of Exercises for you to build using simple layouts in HTML and CSS.
+
+ - Create each in its own, separate directory
+ - Try to use the most simple method when selecting the element
+ - Try to avoid duplicating code
+ - Use paint, gimp, irfanview or something similar to figure out the sizes and colors
+ - You can use any lorem ipsum generator for the texts, *it is not necessary to have the same text*
+
+
+### Exercise 1
+ ![seventh](7.jpg)
+
+ Try to change the color of the blocks when the mouse is over it.
+
+ Font size: 18 pixels
+
+### Exercise 2
+ ![eighth](05.png)
+
+ Font size: 16 pixels, Font family: courier
+
+ Artwork: [grab the duck](duck.png)
+
+ Don't resize the image with an external tool, use CSS

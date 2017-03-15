@@ -5,7 +5,6 @@ Create small layouts with HTML and CSS.
  - Using classes and ids
  - Understanding sizes and the box-model in CSS
  - Using borders
- - Using background images
 
 ## Materials & Resources
 ### Training
@@ -25,8 +24,6 @@ Create small layouts with HTML and CSS.
 | [HTML Tutorial for Beginners 13 - The div Tag](https://www.youtube.com/watch?v=-XQlr727A8w) | 4:51 |
 | [HTML Tutorial for Beginners 14 - ID's and Classes](https://www.youtube.com/watch?v=9UNmumTYuq8) | 8:13 |
 | [HTML Tutorial for Beginners 15 - Adding CSS to HTML](https://www.youtube.com/watch?v=Tc4IsPFB01E) | 9:33 |
-
-__NOTE!__ Pay special attention to determine the purpose of these tags: `<header>`, `<main>`, `<footer>`, `<section>`, `<article>`
 
 
 #### CSS
@@ -122,24 +119,23 @@ Font size: 2 rem
 Font size: 18 pixels
 
 ### Exercise 5
-![seventh](7.jpg)
+Given the following HTML structure:
+```HTML
+<div class="container">
+  <div id="b325" class="asteroid">The King</div>
+  <div class="asteroid b326">The Conceited Man</div>
+</div>
+<p class="asteroid big">The Businessman</p>
+<div class="asteroid b329 big">The Lamplighter</div>
+```
 
-Try to change the color of the blocks when the mouse is over it.
-
-Font size: 18 pixels
-
-### Exercise 6
-![eighth](05.png)
-
-Font size: 16 pixels, Font family: courier
-
-Artwork: [grab the duck](duck.png)
-
-Don't resize the image with an external tool, use CSS
-
-## Project work
-[CV template](https://invis.io/X575YEGVU#/155416515_Greenfox-Anakins-Cv) to follow
-Try to make a build as similar as possible to the design.
+- make 'The Businessman' and 'The Lamplighter' blue colored
+- add 'The King' and 'The Conceited Man' a 1 pixel wide green border each
+- make 'The King', 'The Conceited Man' and 'The Lamplighter' bold
+- add 'The Businessman' a yellow background
+for each task, figure out the simplest selector possible.
+the result should look like this:
+![prince](prince.png)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our HTML & CSS styleguide](../../../styleguide/html-css.md)
