@@ -1,9 +1,12 @@
 # Build Your own CV
 
 ## Project work
+
+![cv](workshop/skywalker.png)
+
 [CV template](https://invis.io/X575YEGVU#/155416515_Greenfox-Anakins-Cv) to follow   
 Try to make a build as similar as possible to the design above.   
-You can find the header image and the text content here, in the workshop folder.
+You can find the header image and the text content here, in the workshop folder.   
 Look up what the `<blockquote>`, `<q>`, `<hgroup>`, `<nav>` elements are for, use them.
 
 ### Tools

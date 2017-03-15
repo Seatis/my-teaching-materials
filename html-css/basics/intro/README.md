@@ -133,8 +133,10 @@ Given the following HTML structure:
 - add 'The King' and 'The Conceited Man' a 1 pixel wide green border each
 - make 'The King', 'The Conceited Man' and 'The Lamplighter' bold
 - add 'The Businessman' a yellow background
-for each task, figure out the simplest selector possible.
+
+for each task, figure out the simplest selector possible.   
 the result should look like this:
+
 ![prince](prince.png)
 
 ## Individual Workshop Review
