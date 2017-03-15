@@ -48,15 +48,15 @@ __NOTE!__ Pay special attention to determine the purpose of these tags: `<header
 | [CSS Tutorial For Beginners 40 - Borders](https://www.youtube.com/watch?v=sdn5p4kf91c) | 6:47 |
 
 
-### Optional 
+### Optional
 *If you've got time, consider the following:*
  - https://developer.mozilla.org/en-US/docs/Web/HTTP
  - https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/HTML_basics
  - https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/CSS_basics
  - http://alistapart.com/article/grokwebstandards
 
-## Material Review 
- - Purpose of: 
+## Material Review
+ - Purpose of:
    - `<html>`
    - `<head>`
    - `<link>`
@@ -87,8 +87,8 @@ __NOTE!__ Pay special attention to determine the purpose of these tags: `<header
  - class
  - id
  - Descendant selector
- - Conflict 
- - Inheritance 
+ - Conflict
+ - Inheritance
  - Specificity
  - The Box model
  - Shorthand
@@ -142,7 +142,7 @@ Don't resize the image with an external tool, use CSS
 Try to make a build as similar as possible to the design.
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-css.md)
+Please follow the styleguide: [Our HTML & CSS styleguide](../../../styleguide/html-css.md)
 
  - Is the directory structure and the name of the files correct?
  - Is the doctype present and valid?
@@ -156,4 +156,3 @@ Please follow the styleguide: [Our HTML & CSS styleguide](../../styleguide/html-
  - Are there id duplications?
  - The code should not show errors here: https://validator.w3.org/
  - Is the commit message meaningful?
-
