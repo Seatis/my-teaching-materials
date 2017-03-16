@@ -78,6 +78,7 @@ Create small layouts with HTML and CSS.
    - `<ul>`
    - `<ol>`
    - `<li>`
+   - `<dl>`
    - `<dd>`
    - `<dt>`
    - `<pre>`
