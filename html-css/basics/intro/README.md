@@ -111,9 +111,9 @@ Font size: 36 pixels
 Font size: 36 pixels
 
 ### Exercise 3
-![third](3.jpg)
+![third](03.png)
 
-Font size: 30 pixels
+Font size: 36 pixels
 
 ### Exercise 4
 ![fourth](4.jpg)
