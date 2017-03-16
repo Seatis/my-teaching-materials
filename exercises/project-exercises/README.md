@@ -3,7 +3,8 @@
 ## Summary
  - [Anagram](#anagram)
  - [Palindrome builder](#palindrome-builder)
-
+ - [Palindrome searcher](#palindrome-searcher)
+ 
 ## Anagram
 
 ### What the hell is an anagram?
@@ -38,3 +39,19 @@ Create a function named **create palindrome** following your current language's 
 |""|""|
 |"greenfox"|"greenfoxxofneerg"|
 |"123"|"123321"|
+
+## Palindrome searcher
+
+[What the hell is a palindrome?](#palindrome-builder)
+
+### Exercise
+
+Create a function named **search palindrome** following your current language's style guide. It should take a string, search for palindromes that at least 3 characters long and return a list with the found palindromes.
+
+### Examples
+
+|input|output|
+|:---:|:---:|
+|"dog goat dad duck doodle never"|["og go", " dad ", "d d", "dood", "eve"]|
+|"apple"|[]|
+|""|[]|
