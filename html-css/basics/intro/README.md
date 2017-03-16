@@ -103,22 +103,30 @@ In the sections that follow are a list of Exercises for you to build using simpl
 ### Exercise 1
 ![first](01.png)
 
-Font size: 2 rem
+Font size: 36 pixels
 
 ### Exercise 2
 ![second](02.png)
 
-Font size: 2 rem
+Font size: 36 pixels
 
 ### Exercise 3
-![fifth](5.jpg)
+![third](3.jpg)
+
+Font size: 30 pixels
 
 ### Exercise 4
+![fourth](4.jpg)
+
+### Exercise 5
+![fifth](5.jpg)
+
+### Exercise 6
 ![sixth](6.jpg)
 
 Font size: 18 pixels
 
-### Exercise 5
+### Exercise 7
 Given the following HTML structure:
 ```HTML
 <div class="container">
