@@ -1,6 +1,0 @@
-- case:  &id001
-    input: |
-    output: |
-      ^[a-zA-Z ]+$
-      ^[\d]+$
-      ^[\d]+\.[\d]+$

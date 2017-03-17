@@ -1,10 +1,41 @@
-## Exercises
+## Workshop
 
-### [Standard out](./standard-out/java.md)
+### Printing to the terminal window
 
-### [Numbers and strings](./numbers-and-strings/java.md)
+#### Hello World
 
-### [Variables](./variables/java.md)
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    // Prints "Hello, World!" to the terminal window.
+    System.out.println("Hello, World!");
+  }
+}
+```
 
-### [Standard in](./standard-in/java.md)
+#### Exercises
+ - [01](hello-me/HelloMe.java)
+ - [02](hello-others/HelloOthers.java)
+ - [03](humpty-dumpty/HumptyDumpty.java)
+
+
+### Types
+
+#### Print values with different types
+
+```java
+public class PrintValues {
+  public static void main(String[] args) {
+    // Prints a string to the terminal window.
+    System.out.println("Hello, World!");
+
+    // Prints an integer to the terminal window.
+    System.out.println(42);
+
+    // Prints a floating point number to the terminal window.
+    System.out.println(3.141592);
+  }
+}
+```
+
 
