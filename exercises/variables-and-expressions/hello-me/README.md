@@ -11,10 +11,9 @@
 
 ## Skills
 
-| Skill                  | Level |
-|:-----------------------|:-----:|
-| Print value to console | B, D  |
-| Integer literal        |   D   |
-| Float literal          |   D   |
-| String literal         |   D   |
+| Skill                      | Level |
+|:---------------------------|:-----:|
+| Write the boilerplate code | B     |
+| Print value to console     | B, C  |
+| String literal             | C     |
 
