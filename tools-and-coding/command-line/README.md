@@ -133,7 +133,7 @@ Introduction to version control systems and Git.
 
 ---
   - create a repo on github
-      - under your class organisation and the repo name should be your github username
+      - under the [greenfox-academy](https://github.com/greenfox-academy) organisation and the repo name should be your github username
   - clone it on your system using command line
   - your working directory should look like this
       - home
@@ -157,7 +157,7 @@ Introduction to version control systems and Git.
       - ...create my working directory for greenfox lessons
       - ...create a new directory for task 1
       - ...
-  - change in to your week-01/day-3 directory
+  - change in to your week-02/day-1 directory
   - create 5 directory and 5 file with content
   - see the changes
   - add these files as staged files
@@ -191,12 +191,13 @@ Introduction to version control systems and Git.
     - this should be a git repository as well
     - stage and commit the changes, and push it to your remote repo
     - see it on Github
-  - From tomorrow you'll only work in one repository found under the greenfox-raptor organisation
+  - From tomorrow you'll only work in one repository found under the [greenfox-academy](https://github.com/greenfox-academy)  organisation
     - easier to track everything related to your progress in one repository
     - we won't learn how to create git repositories inside other git repositories, but a link would be nice for today's learning curves ;)
     - create a README.md file in your main greenfox repository root
     - check out how to create a link in Markdown syntax: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
-    - create a link for your cloned syllabus repo with a nice title (stage, commit and push)
+    - create a link for your syllabus repo with a nice title (stage, commit and push)
+    - for more details check out [github-usage](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md) in definitions
 
 #### Creating a website
 *The cherry on the cake for today*
