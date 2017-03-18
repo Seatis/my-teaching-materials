@@ -38,7 +38,7 @@ Introduction to version control systems and Git.
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
 
- - Proceed to read the next 2 chapters of git
+ - Proceed to read the next 2 chapters of git https://git-scm.com/book/en/v2
  - Try https://try.github.io/
  - GIT, the simple guide: http://rogerdudler.github.io/git-guide/
  - Bookmark: http://ohshitgit.com/
