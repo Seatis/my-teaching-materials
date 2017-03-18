@@ -1,4 +1,5 @@
 # Expressions and Control Flow
+Get into *real* programming, installing a development environment and then running our first programs.
 
 ## Materials
 | Material | Time |
@@ -11,46 +12,57 @@
 |[Else/Else If Statements & AND/OR Operators](https://www.youtube.com/watch?v=3J4jCSXA1Pw)|14:22|
 |[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
 
-### Material Review
-- Java
-- IntelliJ IDEA
-- statement
-- variables
-  - declaration
-  - giving value
-  - byte
-  - int
-  - float
-  - boolean
-  - char
-  - String
-- difference between variable declaration and statements
-- println
-- Hello World
-- escape character
-- `"Java's stuff"` and `'stuff of Java'`
-- concatenation
-- condition, if, else
-- loops: for, while
-- scanner
-  - `System.in`
-  - next()
-  - nextLine()
-  - nextInt()
-- operators
-  - `+, +=`
-  - `-, -=`
-  - `*, *=`
-  - `/, /=`
-  - `%`
-  - `==`
-  - `>=`
-  - `<=`
-  - `>`
-  - `<`
-  - `||`
-  - `&&`
-  - `!`
+### Environment
+ -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
+ -  if *jre* (Java Runtime Environment) didn't download, get that too
+ -  download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
+
+
+## Material Review
+ -  Java
+ -  IntelliJ IDEA
+ -  statement
+ -  variables
+     -  declaration
+     -  giving value
+     -  byte
+     -  int
+     -  float
+     -  boolean
+     -  char
+     -  String
+ -  operators
+     -  `+`
+     -  `-`
+     -  `*`
+     -  `/`
+     -  `%`
+     -  `=`
+     -  `+=`
+     -  `-=`
+     -  `*=`
+     -  `/=`
+     -  `==`
+     -  `>=`
+     -  `<=`
+     -  `>`
+     -  `<`
+     -  `||`
+     -  `&&`
+     -  `!`
+ -  difference between variable declaration and statements
+ -  `System.out.println()`
+ -  Hello World
+ -  escape character
+ -  `"Java's stuff"` and `'stuff of Java'`
+ -  concatenation
+ -  condition, `if`, `else`
+ -  loops: `for`, `while`
+ -  scanner
+     -  `System.in`
+     -  next()
+     -  nextLine()
+     -  nextInt()
 
 ## Workshop
 
@@ -68,10 +80,9 @@ public class HelloWorld {
 ```
 
 #### Exercises
- - [01](hello-me/HelloMe.java)
- - [02](hello-others/HelloOthers.java)
- - [03](humpty-dumpty/HumptyDumpty.java)
-
+ -  [01](hello-me/HelloMe.java)
+ -  [02](hello-others/HelloOthers.java)
+ -  [03](humpty-dumpty/HumptyDumpty.java)
 
 ### Types
 

@@ -1,13 +1,7 @@
 # Expressions and Control flow
-
-## Reqiuired installs
- - Please install the latest Python from the 3.* version
-https://www.python.org/downloads/
+Get into *real* programming, installing a development environment and then running our first programs.
 
 ## Materials & Resources
-
-### Must have
-
 | Material | Time |
 |:---------|-----:|
 | [Python Programming Tutorial - 1 - Installing Python](https://www.youtube.com/watch?v=HBxCHonP6Ro) | 5:24 |
@@ -22,11 +16,47 @@ https://www.python.org/downloads/
 | [Python Programming Tutorial - 11 - Continue](https://www.youtube.com/watch?v=68EhtQbgXRc) | 4:02 |
 
 
-### Nice to have
- - https://www.codecademy.com/courses/introduction-to-python-6WeG3/0/3
- - https://www.codecademy.com/courses/python-beginner-GB6hM/0/1
- - https://www.codecademy.com/courses/python-beginner-sRXwR/0/1
- - https://www.codecademy.com/courses/python-beginner-BxUFN/1/1
+### Environment
+ -  Please install the latest Python from the 3.* version
+    [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+## Material Review
+ -  Python
+ -  statement
+ -  variables
+     -  definition
+     -  mutating the value
+     -  integer
+     -  float
+     -  boolean
+     -  String
+ -  operators
+     -  `+`
+     -  `-`
+     -  `*`
+     -  `/`
+     -  `%`
+     -  `=`
+     -  `+=`
+     -  `-=`
+     -  `*=`
+     -  `/=`
+     -  `==`
+     -  `>=`
+     -  `<=`
+     -  `>`
+     -  `<`
+     -  `||`
+     -  `&&`
+     -  `!`
+ -  `print()`
+ -  Hello World
+ -  escape character
+ -  `"Python's stuff"` and `'stuff of Python'`
+ -  concatenation
+ -  condition, `if`, `else`
+ -  Loops: `for`, `while`
+ -  `input()`
 
 ## Workshop
 
