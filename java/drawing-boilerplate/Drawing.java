@@ -1,0 +1,34 @@
+import javax.swing.*;
+
+import java.awt.*;
+
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+
+public class Drawing extends JPanel {
+
+    @Override
+    protected void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+        
+
+    }
+
+
+
+
+
+
+
+
+//    Don't touch the code below
+    public static void main(String[] args) {
+        JFrame jFrame = new JFrame("Drawing");
+        jFrame.getContentPane().setPreferredSize(new Dimension(900, 700));
+        jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jFrame.add(new Drawing());
+        jFrame.pack();
+        jFrame.setLocationRelativeTo(null);
+        jFrame.setVisible(true);
+    }
+
+}
