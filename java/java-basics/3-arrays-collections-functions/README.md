@@ -18,12 +18,11 @@ As we are now conversant with the basic data types and flow, we introduce some t
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
 |[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-<!--- |[Functions with Classes (Bana.08)](https://www.youtube.com/watch?v=rGlJiUO-dZA)| 16:48|
-|[Arrays & For Loop](https://www.youtube.com/watch?v=_pUz-GJcdRU)| 21:00| -->
 |[Array Lists (related to Object, Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)| 11:07|
 |[Lists (with Arrays and data typed, NewBoston.04)](https://www.youtube.com/watch?v=jU5ACV5MucM)|7:16|
 |[Using IntelliJ's Debugger (JavaForTesters YT and text)](http://blog.javafortesters.com/2016/07/how-to-debug-java-with-intellij.html)|08:47|
-
+<!-- |[Functions with Classes (Bana.08)](https://www.youtube.com/watch?v=rGlJiUO-dZA)| 16:48|
+|[Arrays & For Loop](https://www.youtube.com/watch?v=_pUz-GJcdRU)| 21:00| -->
 
 ### Optional
 If unclear only.
