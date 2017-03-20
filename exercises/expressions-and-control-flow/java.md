@@ -16,6 +16,7 @@ Get into *real* programming, installing a development environment and then runni
  -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
  -  if *jre* (Java Runtime Environment) didn't download, get that too
  -  download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
+ -  activate IntelliJ IDEA following [this activation guide](https://github.com/greenfox-academy/teaching-materials/blob/master/exercises/expressions-and-control-flow/intellij-activation.md)
 
 
 ## Material Review
