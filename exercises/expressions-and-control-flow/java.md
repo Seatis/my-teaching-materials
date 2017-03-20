@@ -62,7 +62,6 @@ Get into *real* programming, installing a development environment and then runni
  -  block
  -  scanner
      -  `System.in`
-     -  `next()`
      -  `nextLine()`
      -  `nextInt()`
 
@@ -326,29 +325,17 @@ public class UserInput {
     // Creates a scanner
     Scanner scanner = new Scanner(System.in);
 
-    // The program stops and waits for user input and to press enter
-    String userInput1 = scanner.next();
+		// The program stops and waits for user input and to press enter
+		String userInput1 = scanner.nextLine();
 
-    // It only prints the first word of the line
+		// It prints the whole line that was given by the user
 		System.out.println(userInput1);
 
-		// The program reads the rest of the previous line.
-		String userInput2 = scanner.nextLine();
-
-		// It prints the rest.
-		System.out.println(userInput2);
-
-		// The program stops and waits for user input and to press enter
-		String userInput3 = scanner.nextLine();
-
-		// It prints the whole line
-		System.out.println(userInput3);
-
 		// The program stops and waits for user input that is an integer and to press enter
-		int userInput4 = scanner.nextInt();
+		int userInput2 = scanner.nextInt();
 
 		// It prints the integer
-		System.out.println(userInput4);
+		System.out.println(userInput2);
   }
 }
 ```
