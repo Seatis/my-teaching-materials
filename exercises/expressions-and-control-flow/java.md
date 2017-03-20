@@ -59,11 +59,12 @@ Get into *real* programming, installing a development environment and then runni
  -  concatenation
  -  condition, `if`, `else`
  -  loops: `for`, `while`
+ -  block
  -  scanner
      -  `System.in`
-     -  next()
-     -  nextLine()
-     -  nextInt()
+     -  `next()`
+     -  `nextLine()`
+     -  `nextInt()`
 
 ## Workshop
 
@@ -329,19 +330,25 @@ public class UserInput {
     String userInput1 = scanner.next();
 
     // It only prints the first word of the line
-    System.out.println(userInput1);
+		System.out.println(userInput1);
 
-    // The program stops and waits for user input and to press enter
-    String userInput2 = scanner.nextLine();
+		// The program reads the rest of the previous line.
+		String userInput2 = scanner.nextLine();
 
-    // It prints the whole line
-    System.out.println(userInput2);
+		// It prints the rest.
+		System.out.println(userInput2);
 
-    // The program stops and waits for user input that is an integer and to press enter
-    int userInput3 = scanner.nextInt();
+		// The program stops and waits for user input and to press enter
+		String userInput3 = scanner.nextLine();
 
-    // It prints the integer
-    System.out.println(userInput3);
+		// It prints the whole line
+		System.out.println(userInput3);
+
+		// The program stops and waits for user input that is an integer and to press enter
+		int userInput4 = scanner.nextInt();
+
+		// It prints the integer
+		System.out.println(userInput4);
   }
 }
 ```
@@ -380,7 +387,7 @@ public class Conditionals {
 
     if (c < 10) {
       System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
-    } else {
+    } else if (c < 20) {
       System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
     } else {
       System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run

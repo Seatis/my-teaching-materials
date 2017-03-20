@@ -47,9 +47,9 @@ Get into *real* programming, installing a development environment and then runni
      -  `<=`
      -  `>`
      -  `<`
-     -  `||`
-     -  `&&`
-     -  `!`
+     -  `not`
+     -  `or`
+     -  `and`
  -  `print()`
  -  Hello World
  -  escape character
@@ -57,6 +57,7 @@ Get into *real* programming, installing a development environment and then runni
  -  concatenation
  -  condition, `if`, `else`
  -  Loops: `for`, `while`
+ -  block
  -  `input()`
  -  `str()`
  -  `int()`
@@ -214,24 +215,17 @@ b -= 4
 print(b) # Prints 8
 
 c = 12
-c += 1
-print(c) # Prints 13
+c *= 3
+print(c) # Prints 36
 
 d = 12
-d -= 1
-print(d) # Prints 11
+d /= 3
+print(d) # Prints 4
 
 e = 12
-e *= 3
-print(e) # Prints 36
-
-f = 12
-f /= 3
-print(f) # Prints 4
-
-g = 12
-g %= 7
-print(g) # Prints 5
+e %= 7
+print(e) # Prints 5
+>>>>>>> feat(expressions-and-control-flow): python workshop outline
 ```
 
 #### Exercises
@@ -246,129 +240,105 @@ print(g) # Prints 5
 ### User input (scanner)
 
 ```python
-// Creates a scanner
-Scanner scanner = new Scanner(System.in);
+# The program stops and waits for user input and to press enter
+user_input_1 = input()
 
-// The program stops and waits for user input and to press enter
-String userInput1 = scanner.next();
+# It prints the whole line that the user entered
+print(user_input_1)
 
-// It only prints the first word of the line
-System.out.println(userInput1);
+# The program stops and waits for user input that is an integer and to press enter
+user_nput2 = int(input())
 
-// The program stops and waits for user input and to press enter
-String userInput2 = scanner.nextLine();
-
-// It prints the whole line
-System.out.println(userInput2);
-
-// The program stops and waits for user input that is an integer and to press enter
-int userInput3 = scanner.nextInt();
-
-// It prints the integer
-System.out.println(userInput3);
+# It prints the integer
+print(user_input_3)
 ```
 
 #### Exercises
- -  [14](hello-user/HelloUser.java)
- -  [15](mile-to-km-converter/MileToKmConverter.java)
- -  [16](animals-and-legs/AnimalsAndLegs.java)
- -  [17](average-of-input/AverageOfInput.java)
+ -  [14](hello-user/hello-user.py)
+ -  [15](mile-to-km-converter/mile-to-km-converter.py)
+ -  [16](animals-and-legs/animals-and-legs.py)
+ -  [17](average-of-input/average-of-input.py)
 
 ### Conditionals
 
-```java
-public class Conditionals {
-  public static void main(String[] args) {
-    int a = 13;
+```python
+a = 13
 
-    if (a == 13) {
-      System.out.println("Yaaay! The value of the \"a\" variable is 13"); // This block will run
-    }
+if a == 13:
+  print("Yaaay! The value of the \"a\" variable is 13") # This block will run
 
-    if (a == 8) {
-      System.out.println("Yaaay! The value of the \"a\" variable is 8"); // This block will NOT run
-    }
+if a == 8:
+  print("Yaaay! The value of the \"a\" variable is 8") # This block will NOT run
 
 
-    int b = 20;
+b = 20
 
-    if (b < 10) {
-      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
-    } else {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
-    }
-
-
-    int c = 15;
-
-    if (c < 10) {
-      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
-    } else {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
-    } else {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run
-    }
+if b < 10:
+  print("Yaaay! The value of the \"b\" variable is lower than 10") # This block will NOT run
+else:
+  print("Yaaay! The value of the \"b\" variable is higher than 10") # This block will run
 
 
-    boolean thirsty = true;
-    boolean hungry = false;
+c = 15
 
-    if (thirsty && hungry) {
-      System.out.println("Lunch time!");
-    } else if (thirsty || hungry) {
-      System.out.println("Snack time!");
-    } else {
-      System.out.println("No food for you, little fatty.");
-    }
-  }
-}
+if c < 10:
+  print("Yaaay! The value of the \"b\" variable is lower than 10") # This block will NOT run
+elif c < 20:
+  print("Yaaay! The value of the \"b\" variable is higher than 10") # This block will run
+else:
+  print("Yaaay! The value of the \"b\" variable is higher than 10") # This block will NOT run
+
+
+thirsty = True
+hungry = False
+
+if thirsty and hungry:
+  print("Lunch time!")
+elif thirsty or hungry:
+  print("Snack time!")
+else:
+  print("No food for you, little fatty.")
 ```
 
 #### Exercises
- -  [18](odd-even/OddEven.java)
- -  [19](one-two-a-lot/OneTwoALot.java)
- -  [20](print-bigger/PrintBigger.java)
- -  [21](password-protected/PasswordProtected.java)
- -  [22](party-indicator/PartyIndicator)
- -  [23](food-you-like/FoodYouLike.java)
- -  [24](conditional-variable-mutation/ConditionalVariableMutation.java)
+ -  [18](odd-even/odd-even.py)
+ -  [19](one-two-a-lot/one-two-a-lot.py)
+ -  [20](print-bigger/print-bigger.py)
+ -  [21](password-protected/password-protected.py)
+ -  [22](party-indicator/party-indicator.py)
+ -  [23](food-you-like/food-you-like.py)
+ -  [24](conditional-variable-mutation/conditional-variable-mutation.py)
 
 ### Loops
 
-```java
-public class Conditionals {
-  public static void main(String[] args) {
-    int a = 0;
-    while (a < 10) {
-      System.out.println(a); // Prints the numbers from 0 to 9
-      a += 1;
-    }
+```python
+a = 0:
+while a < 10:
+  print(a) # Prints the numbers from 0 to 9
+  a += 1
 
-    for (int i = 0; i < 100; i++) {
-      System.out.println(i); // Prints the numbers from 0 to 99
-    }
-  }
-}
+for i in range(0, 100):
+  print(i) # Prints the numbers from 0 to 99
 ```
 
 #### Exercises
- -  [25](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
- -  [26](print-even/PrintEven.java)
- -  [27](count-from-to/CountFromTo.java)
- -  [28](multiplication-table/MultiplicationTable.java)
- -  [29](draw-triangle/DrawTriangle.java)
- -  [30](draw-pyramid/DrawPyramid.java)
- -  [31](draw-diamond/DrawDiamond.java)
- -  [32](draw-square/DrawSquare.java)
- -  [33](draw-diagonal/DrawDiagonal.java)
- -  [34](draw-chess-table/DrawChessTable.java)
- -  [35](fizz-buzz/FizzBuzz.java)
- -  [36](guess-the-number/GuessTheNumber.java)
- -  [37](parametric-average/ParametricAverage.java)
+ -  [25](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.py)
+ -  [26](print-even/print-even.py)
+ -  [27](count-from-to/count-from-to.py)
+ -  [28](multiplication-table/multiplication-table.py)
+ -  [29](draw-triangle/draw-triangle.py)
+ -  [30](draw-pyramid/draw-pyramid.py)
+ -  [31](draw-diamond/draw-diamond.py)
+ -  [32](draw-square/draw-square.py)
+ -  [33](draw-diagonal/draw-diagonal.py)
+ -  [34](draw-chess-table/draw-chess-table.py)
+ -  [35](fizz-buzz/fizz-buzz.py)
+ -  [36](guess-the-number/guess-the-number.py)
+ -  [37](parametric-average/parametric-average.py)
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+Please follow the styleguide: [Our Python styleguide](../../styleguide/python.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
@@ -380,7 +350,5 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
 - Can you spot unused variables?
 - Is the commit message meaningful?
 - Are the names of things following the styleguide?
-    - Classes: UpperCamelCase
-    - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
