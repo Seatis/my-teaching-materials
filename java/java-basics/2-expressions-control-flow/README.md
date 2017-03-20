@@ -1,5 +1,5 @@
 # Expressions & Control-Flow
-Having installed IntelliJ and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
+Having installed [IntelliJ](../1-installing-basics.README.md) and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
 
 
 ## Materials & Resources
@@ -113,7 +113,7 @@ for(int i = 0; i < 100; i++) {
 - Loop printing out prime numbers from 2 to 100
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+Please follow the styleguide: [Our Java styleguide](../../../styleguide/java.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
