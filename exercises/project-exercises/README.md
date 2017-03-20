@@ -59,7 +59,10 @@ Create a function named **search palindrome** following your current language's 
 
 ### Exercise
 
-The program randomly takes a number then asks the user to guess the number. Depending on the user's input, the program gives feedback.
+Write a program where the program chooses a number between 1 and 10. The player is then asked to enter a guess. If the player guesses wrong, then the program gives feedback and ask to enter an other guess until the guess is correct.
+
+ - You can make the range customizable.
+ - You can add lives.
 
 ### Example
 `I've the number between 1-100. You have 5 lives.`
