@@ -204,6 +204,8 @@ public class Strings {
     // String Operators
     // Concatination
     System.out.println("tooth" + "brush"); // Prints toothbrush
+
+    // Concat string with number
     System.out.println("My favorite number is: " + 8); // Prints My favorite number is: 8
   }
 }
@@ -211,7 +213,8 @@ public class Strings {
 
 #### Exercises
  -  [04](introduce-yourself/IntroduceYourself.java)
- -  [05]
+ -  [05](two-numbers/TwoNumbers.java)
+ -  [06](coding-hours/CodingHours.java)
 
 ### Variables
 
@@ -223,6 +226,10 @@ public class Variables {
     // String
     String welcome = "Hello, World";
     System.out.println(welcome);
+
+    // Boolean
+    boolean isAwesome = true;
+    System.out.println(isAwesome);
 
     // Whole number
     // integer (32 bit; min: -2 147 483 648; max: 2 147 483 647)
@@ -240,32 +247,217 @@ public class Variables {
     long l = 30000000000000L; // long (64 bit; min: -9 223 372 036 854 775 808 ;max: 9 223 372 036 854 775 807)
     float f = 1.3f;
     float f2 = 45f; // Float (32 bit single precision IEEE 754)
+
+    // Declaring a variable
+    int number;
+
+    // Assigning a variable, (define its value)
+    number = 12;
+
+    // Mutate a variable, (redefine its value)
+    number = 23;
   }
 }
-
-// Arithmetic operators
-
 ```
 
-#### Exercises
-
-### Operators
-
-#### Trying out all Arithmetic Operators
+#### Arithmetic Assignment Operators
 
 ```java
-int addingNumbers = 3 + 4;
-int multiplyingNumbers = 6 * 7;
-int dividingNumbers = 8 / 4;
-int modulingNumbers = 8 % 5;
+public class Variables {
+  public static void main(String[] args) {
+    int a = 12;
+    a += 4;
+    System.out.println(a); // Prints 16
 
-int ff = 8;
-ff *= 3;
-ff /= 6; // ff = 4
+    int b = 12;
+    b -= 4;
+    System.out.println(b); // Prints 8
+
+    int c = 12;
+    System.out.println(c++); // Prints 12
+    System.out.println(c); // Prints 13
+
+    int d = 12;
+    System.out.println(++d); // Prints 13
+    System.out.println(d); // Prints 13
+
+    int e = 12;
+    System.out.println(e--); // Prints 12
+    System.out.println(e); // Prints 11
+
+    int f = 12;
+    System.out.println(--f); // Prints 11
+    System.out.println(f); // Prints 11
+
+    int g = 12;
+    g *= 3;
+    System.out.println(g); // Prints 36
+
+    int h = 12;
+    h /= 3;
+    System.out.println(h); // Prints 4
+
+    int i = 12;
+    i %= 7;
+    System.out.println(i); // Prints 5
+  }
+}
 ```
 
 #### Exercises
+ -  [07](favorite-number/FavoriteNumber.java)
+ -  [08](define-basic-info/DefineBasicInfo.java)
+ -  [09](bmi/Bmi.java)
+ -  [10](cuboid/Cuboid.java)
+ -  [11](seconds-in-a-day/SecondsInADay.java)
+ -  [12](swap/Swap.java)
+ -  [13](variable-mutation/VariableMutation.java)
+
+### User input (scanner)
+
+```java
+// Loads the scanner to the file
+import java.util.Scanner;
+
+public class UserInput {
+  public static void main(String[] args) {
+    // Creates a scanner
+    Scanner scanner = new Scanner(System.in);
+
+    // The program stops and waits for user input and to press enter
+    String userInput1 = scanner.next();
+
+    // It only prints the first word of the line
+    System.out.println(userInput1);
+
+    // The program stops and waits for user input and to press enter
+    String userInput2 = scanner.nextLine();
+
+    // It prints the whole line
+    System.out.println(userInput2);
+
+    // The program stops and waits for user input that is an integer and to press enter
+    int userInput3 = scanner.nextInt();
+
+    // It prints the integer
+    System.out.println(userInput3);
+  }
+}
+```
+#### Exercises
+ -  [14](hello-user/HelloUser.java)
+ -  [15](mile-to-km-converter/MileToKmConverter.java)
+ -  [16](animals-and-legs/AnimalsAndLegs.java)
+ -  [17](average-of-input/AverageOfInput.java)
 
 ### Conditionals
 
+```java
+public class Conditionals {
+  public static void main(String[] args) {
+    int a = 13;
+
+    if (a == 13) {
+      System.out.println("Yaaay! The value of the \"a\" variable is 13"); // This block will run
+    }
+
+    if (a == 8) {
+      System.out.println("Yaaay! The value of the \"a\" variable is 8"); // This block will NOT run
+    }
+
+
+    int b = 20;
+
+    if (b < 10) {
+      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+    } else {
+      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
+    }
+
+
+    int c = 15;
+
+    if (c < 10) {
+      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+    } else {
+      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
+    } else {
+      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run
+    }
+
+
+    boolean thirsty = true;
+    boolean hungry = false;
+
+    if (thirsty && hungry) {
+      System.out.println("Lunch time!");
+    } else if (thirsty || hungry) {
+      System.out.println("Snack time!");
+    } else {
+      System.out.println("No food for you, little fatty.");
+    }
+  }
+}
+```
+
+#### Exercises
+ -  [18](odd-even/OddEven.java)
+ -  [19](one-two-a-lot/OneTwoALot.java)
+ -  [20](print-bigger/PrintBigger.java)
+ -  [21](password-protected/PasswordProtected.java)
+ -  [22](party-indicator/PartyIndicator)
+ -  [23](food-you-like/FoodYouLike.java)
+ -  [24](conditional-variable-mutation/ConditionalVariableMutation.java)
+
 ### Loops
+
+```java
+public class Conditionals {
+  public static void main(String[] args) {
+    int a = 0;
+    while (a < 10) {
+      System.out.println(a); // Prints the numbers from 0 to 9
+      a += 1;
+    }
+
+    for (int i = 0; i < 100; i++) {
+      System.out.println(i); // Prints the numbers from 0 to 99
+    }
+  }
+}
+```
+
+#### Exercises
+ -  [25](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
+ -  [26](print-even/PrintEven.java)
+ -  [27](count-from-to/CountFromTo.java)
+ -  [28](multiplication-table/MultiplicationTable.java)
+ -  [29](draw-triangle/DrawTriangle.java)
+ -  [30](draw-pyramid/DrawPyramid.java)
+ -  [31](draw-diamond/DrawDiamond.java)
+ -  [32](draw-square/DrawSquare.java)
+ -  [33](draw-diagonal/DrawDiagonal.java)
+ -  [34](draw-chess-table/DrawChessTable.java)
+ -  [35](fizz-buzz/FizzBuzz.java)
+ -  [36](guess-the-number/GuessTheNumber.java)
+ -  [37](parametric-average/ParametricAverage.java)
+
+
+## Individual Workshop Review
+Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+
+- Is the directory structure and the name of the files correct?
+- Are the includes palced on the top of the files?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
+- Are the names of things following the styleguide?
+    - Classes: UpperCamelCase
+    - variables: lowerCamelCase
+- Are all of the brackets in the perfect place?
+- Whitespaces, where they should be, where shouldn't?
+
