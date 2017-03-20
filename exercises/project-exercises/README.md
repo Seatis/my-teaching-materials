@@ -4,12 +4,12 @@
  - [Anagram](#anagram)
  - [Palindrome builder](#palindrome-builder)
  - [Palindrome searcher](#palindrome-searcher)
- 
+ - [Guess my number](#guess-my-number)
+
 ## Anagram
 
 ### What the hell is an anagram?
 > An anagram is direct word switch or word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example, the word anagram can be rearranged into nag-a-ram.
-
 > *[for more detail check [anagram](https://en.wikipedia.org/wiki/Anagram) on Wikipedia]*
 
 ### Exercise
@@ -25,7 +25,6 @@ Create a function named **is anagram** following your current language's style g
 ### What the hell is a palindrome?
 
 > A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
-
 > *[for more detail check [palindrome](https://en.wikipedia.org/wiki/Palindrome) on Wikipedia]*
 
 ### Exercise
@@ -55,3 +54,21 @@ Create a function named **search palindrome** following your current language's 
 |"dog goat dad duck doodle never"|["og go", " dad ", "d d", "dood", "eve"]|
 |"apple"|[]|
 |""|[]|
+
+## Guess my number
+
+### Exercise
+
+The program randomly takes a number then asks the user to guess the number. Depending on the user's input, the program gives feedback.
+
+### Example
+`I've the number between 1-100. You have 5 lives.`
+> 20
+
+`Too high. You have 4 lives left.`
+> 10
+
+`Too low. You have 3 lives left.`
+> 15
+
+`Congratulations. You won!`
