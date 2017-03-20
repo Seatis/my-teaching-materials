@@ -173,7 +173,7 @@ print("My favorite number is: " + str(8)) # Prints My favorite number is: 8
 #### Exercises
  -  [04](introduce-yourself/introduce-yourself.py)
  -  [05](two-numbers/two-numbers.py)
- -  [06](coding-hours/two-numbers.py)
+ -  [06](coding-hours/coding-hours.py)
 
 ### Variables
 
