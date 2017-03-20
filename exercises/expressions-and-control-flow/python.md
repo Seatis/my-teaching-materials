@@ -214,31 +214,23 @@ b -= 4
 print(b) # Prints 8
 
 c = 12
-print(c++) # Prints 12
+c += 1
 print(c) # Prints 13
 
 d = 12
-print(++d) # Prints 13
-print(d) # Prints 13
+d -= 1
+print(d) # Prints 11
 
 e = 12
-print(e--) # Prints 12
-print(e) # Prints 11
-
-f = 12
-print(--f) # Prints 11
-print(f) # Prints 11
-
-g = 12
-g *= 3
+e *= 3
 print(g) # Prints 36
 
-h = 12
-h /= 3
+f = 12
+f /= 3
 print(h) # Prints 4
 
-i = 12
-i %= 7
+g = 12
+g %= 7
 print(i) # Prints 5
 ```
 
@@ -392,7 +384,3 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
     - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
-
-
-
-
