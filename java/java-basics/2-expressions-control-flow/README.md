@@ -1,5 +1,5 @@
 # Expressions & Control-Flow
-Having installed [IntelliJ](../1-installing-basics.README.md) and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
+Having installed [IntelliJ](../1-installing-basics/) and tested our installs (with a "Hello World") program, we can now start laying the foundation of programming specifically using Java.
 
 
 ## Materials & Resources
