@@ -225,7 +225,6 @@ print(d) # Prints 4
 e = 12
 e %= 7
 print(e) # Prints 5
->>>>>>> feat(expressions-and-control-flow): python workshop outline
 ```
 
 #### Exercises
