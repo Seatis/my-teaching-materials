@@ -1,6 +1,6 @@
 # Recursion
 What happens when a function calls itself? [Learn more here](
-https://github.com/gy0p4k/test/recursion_java.md)
+java.md)
 
 ## Materials & Resources
 | Material | Time |
@@ -48,17 +48,17 @@ public static int factorial_recursive(int n) {
 
 ### Exercises
 
- - [01](java/recursive_counter.java)
- - [02](java/recursive_add.java)
- - [03](java/recursive_sumdigit.java)
- - [04](java/recursive_power.java)	
- - [05](java/recursion_bunny1.java)
- - [06](java/recursion_bunny2.java)
- - [07](java/recursion_string1.java)
- - [08](java/recursion_string2.java)
- - [09](java/recursion_string3.java)
- - [10](java/recursion_fibonacci.java)
+ - [01](basic_math_examples/counter.java)
+ - [02](basic_math_examples/numberadder.java)
+ - [03](basic_math_examples/sumdigit.java)
+ - [04](basic_math_examples/power.java)	
+ - [05](bunnies/bunny1.java)
+ - [06](bunnies/bunny2.java)
+ - [07](strings/string1.java)
+ - [08](strings/string2.java)
+ - [09](strings/string3.java)
+ - [10](fibonacci/fibonacci.java)
  - 11: reproduce this:   
-![11](java/recursive_graphic.png)
+![11](drawing/graphic.png)
  - 12: reproduce this:   
-![12](java/recursive_graphic2.png)
+![12](drawing/graphic2.png)

@@ -1,6 +1,6 @@
 # Recursion
 What happens when a function calls itself? [Learn more here](
-https://github.com/gy0p4k/test/recursion/python.md)
+python.md)
 
 ## Materials & Resources
 | Material | Time |
@@ -65,17 +65,17 @@ print('5! is', factorial(5))
 
 ### Exercises
 
- - [01](python/recursive_counter.py)
- - [02](python/recursive_add.py)
- - [03](python/recursive_sumdigit.py)
- - [04](python/recursive_power.py)	
- - [05](python/recursion_bunny1.py)
- - [06](python/recursion_bunny2.py)
- - [07](python/recursion_string1.py)
- - [08](python/recursion_string2.py)
- - [09](python/recursion_string3.py)
- - [10](python/recursion_fibonacci.py)
+ - [01](basic_math_examples/counter.py)
+ - [02](basic_math_examples/numberadder.py)
+ - [03](basic_math_examples/sumdigit.py)
+ - [04](basic_math_examples/power.py)	
+ - [05](bunnies/bunny1.py)
+ - [06](bunnies/bunny2.py)
+ - [07](strings/string1.py)
+ - [08](strings/string2.py)
+ - [09](strings/string3.py)
+ - [10](fibonacci/fibonacci.py)
  - 11: reproduce this:   
-![11](python/recursive_graphic.png)
+![11](drawing/graphic.png)
  - 12: reproduce this:   
-![12](python/recursive_graphic2.png)
+![12](drawing/graphic2.png)
