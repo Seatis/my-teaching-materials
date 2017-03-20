@@ -223,15 +223,15 @@ print(d) # Prints 11
 
 e = 12
 e *= 3
-print(g) # Prints 36
+print(e) # Prints 36
 
 f = 12
 f /= 3
-print(h) # Prints 4
+print(f) # Prints 4
 
 g = 12
 g %= 7
-print(i) # Prints 5
+print(g) # Prints 5
 ```
 
 #### Exercises
