@@ -430,10 +430,10 @@ public class Conditionals {
  -  [29](draw-diamond/DrawDiamond.java)
  -  [30](draw-square/DrawSquare.java)
  -  [31](draw-diagonal/DrawDiagonal.java)
- -  [32](draw-chess-table/DrawChessTable.java)
- -  [33](fizz-buzz/FizzBuzz.java)
- -  [34](guess-the-number/GuessTheNumber.java)
- -  [35](parametric-average/ParametricAverage.java)
+ -  [32](fizz-buzz/FizzBuzz.java)
+ -  [33](guess-the-number/GuessTheNumber.java)
+ -  [34](parametric-average/ParametricAverage.java)
+ -  [35](draw-chess-table/DrawChessTable.java)
 
 
 ## Individual Workshop Review

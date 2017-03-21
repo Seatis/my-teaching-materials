@@ -328,10 +328,10 @@ for i in range(0, 100):
  -  [29](draw-diamond/draw-diamond.py)
  -  [30](draw-square/draw-square.py)
  -  [31](draw-diagonal/draw-diagonal.py)
- -  [32](draw-chess-table/draw-chess-table.py)
- -  [33](fizz-buzz/fizz-buzz.py)
- -  [34](guess-the-number/guess-the-number.py)
- -  [35](parametric-average/parametric-average.py)
+ -  [32](fizz-buzz/fizz-buzz.py)
+ -  [33](guess-the-number/guess-the-number.py)
+ -  [34](parametric-average/parametric-average.py)
+ -  [35](draw-chess-table/draw-chess-table.py)
 
 
 ## Individual Workshop Review
