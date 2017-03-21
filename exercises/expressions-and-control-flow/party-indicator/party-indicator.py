@@ -11,4 +11,4 @@
 # If there are less people coming than 20
 #
 # It should print: Sausage party
-# If no girls are coming
+# If no girls are coming, regardless the count of the people
