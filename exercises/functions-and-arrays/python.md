@@ -1,5 +1,4 @@
 # Functions and Data structures
-# Functions and Data structures
 Dive deeper into *real* programming, reuse code and get to know more complex data structures
 
 ## Materials & Resources
@@ -94,12 +93,74 @@ greet_by_name(name)
 ```
 
 #### Excercises
--  [Doubling](exercises/doubling/doubling.py)
--  [Greeter function](exercises/greet/greet.py)
--  [Append a](exercises/append-a/append-a.py)
--  [Summing](exercises/sum/sum.py)
--  [Factorial](exercises/factorio/factorio.py)
--  [Print arguments](exercises/printer/printer.py)
+-  [Doubling](exercises/functions/doubling/doubling.py)
+-  [Greeter function](exercises/functions/greet/greet.py)
+-  [Append a](exercises/functions/append-a/append-a.py)
+-  [Summing](exercises/functions/sum/sum.py)
+-  [Factorial](exercises/functions/factorio/factorio.py)
+-  [Print arguments](exercises/functions/printer/printer.py)
 
-### Lists & Data structures
-- [List exercises](exercises/arrays.md)
+### Data structures
+
+#### Lists
+
+```python
+[1, 2, 3]
+[]
+[1, 2] + [3]
+[1] - [2]
+[1, 2] * 3
+1 in [1, 2]
+len([1, 2, 3])
+arr = [1, 2, 3]
+arr[0]
+arr[1:3]
+[] is []
+```
+
+#### dictionaries
+
+```python
+giraffe = {'color': 'yellow', 'pattern': 'polygonal patches'}
+whale = {'color': 'blue', 'size': 10000}
+
+print(giraffe)
+print(giraffe['pattern'])
+print(whale['size'])
+
+whale['say'] = 'eeeeeeeeeeeeuuuuuuw'
+
+print(whale)
+```
+
+#### Excercises
+-  [Third](exercises/arrays/third/third.py)
+-  [Compare Length](exercises/arrays/compare-length/compare-length.py)
+-  [Sum elements](exercises/arrays/sum-elements/sum-elements.py)
+-  [Change element](exercises/arrays/change-element/change-element.py)
+-  [Increment element](exercises/arrays/increment-element/increment-element.py)
+-  [Print elements](exercises/arrays/print-all/print-all.py)
+-  [Matrix](exercises/arrays/diagonal-matrix/diagonal-matrix.py)
+-  [Double items](exercises/arrays/double-items/double-items.py)
+-  [Colors](exercises/arrays/colors/colors.py)
+-  [Append a](exercises/arrays/append-a/append-a.py)
+-  [Swap elements](exercises/arrays/swap-elements/swap-elements.py)
+-  [Sum all elements](exercises/arrays/sum-all/sum-all.py)
+-  [Reverse list](exercises/arrays/reverse/reverse.py)
+
+
+## Individual Workshop Review
+Please follow the styleguide: [Our Python styleguide](../../styleguide/python.md)
+
+- Is the directory structure and the name of the files correct?
+- Are the includes palced on the top of the files?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
+- Are the names of things following the styleguide?
+- Are all of the brackets in the perfect place?
+- Whitespaces, where they should be, where shouldn't?
