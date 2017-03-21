@@ -73,4 +73,18 @@ public class HelloWorld {
 -  [Print arguments](exercises/printer/Printer.java)
 
 ### Lists & Data structures
-- [List exercises](exercises/arrays.md)
+
+#### Excercises
+-  [Third](exercises/third/Third.java)
+-  [Compare Length](exercises/compare-length/CompareLength.java)
+-  [Sum elements](exercises/sum-elements/SumElements.java)
+-  [Change element](exercises/change-element/ChangeElement.java)
+-  [Increment element](exercises/increment-element/IncrementElement.java)
+-  [Print elements](exercises/print-all/PrintAll.java)
+-  [Matrix](exercises/diagonal-matrix/DiagonalMatrix.java)
+-  [Double items](exercises/double-items/DoubleItems.java)
+-  [Colors](exercises/colors/Colors.java)
+-  [Append a](exercises/append-a/AppendA.java)
+-  [Swap elements](exercises/swap-elements/SwapElements.java)
+-  [Sum all elements](exercises/sum-all/SumAll.java)
+-  [Reverse list](exercises/reverse/Reverse.java)

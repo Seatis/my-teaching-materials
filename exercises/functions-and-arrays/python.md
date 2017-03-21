@@ -1,5 +1,9 @@
 # Functions and Data structures
 # Functions and Data structures
+# Functions and Data structures
+# Functions and Data structures
+# Functions and Data structures
+# Functions and Data structures
 Dive deeper into *real* programming, reuse code and get to know more complex data structures
 
 ## Materials & Resources
@@ -102,4 +106,18 @@ greet_by_name(name)
 -  [Print arguments](exercises/printer/printer.py)
 
 ### Lists & Data structures
-- [List exercises](exercises/arrays.md)
+
+#### Excercises
+-  [Third](exercises/third/third.py)
+-  [Compare Length](exercises/compare-length/compare-length.py)
+-  [Sum elements](exercises/sum-elements/sum-elements.py)
+-  [Change element](exercises/change-element/change-element.py)
+-  [Increment element](exercises/increment-element/increment-element.py)
+-  [Print elements](exercises/print-all/print-all.py)
+-  [Matrix](exercises/diagonal-matrix/diagonal-matrix.py)
+-  [Double items](exercises/double-items/double-items.py)
+-  [Colors](exercises/colors/colors.py)
+-  [Append a](exercises/append-a/append-a.py)
+-  [Swap elements](exercises/swap-elements/swap-elements.py)
+-  [Sum all elements](exercises/sum-all/sum-all.py)
+-  [Reverse list](exercises/reverse/reverse.py)
