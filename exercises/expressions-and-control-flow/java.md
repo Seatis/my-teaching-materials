@@ -171,7 +171,7 @@ public class Booleans {
     // true, false
     System.out.println(true); // Prints true
     System.out.println(false); // Prints false
-    
+
     // Boolean Operators
     // Negation
     System.out.println(!true); // Prints false
@@ -200,8 +200,8 @@ public class Strings {
     // String and special characters
     System.out.println("apple"); // Prints apple
     System.out.println("don't"); // Prints don't
-    System.out.println("\"Everything you can imagine is real.\" - Picasso"); // Prints "Everything you can imagine is real." - Picasso 
-    
+    System.out.println("\"Everything you can imagine is real.\" - Picasso"); // Prints "Everything you can imagine is real." - Picasso
+
     // String Operators
     // Concatination
     System.out.println("tooth" + "brush"); // Prints toothbrush
@@ -399,7 +399,7 @@ public class Conditionals {
  -  [18](odd-even/OddEven.java)
  -  [19](one-two-a-lot/OneTwoALot.java)
  -  [20](print-bigger/PrintBigger.java)
- -  [21](party-indicator/PartyIndicator)
+ -  [21](party-indicator/PartyIndicator.java)
  -  [22](conditional-variable-mutation/ConditionalVariableMutation.java)
 
 ### Loops
@@ -453,4 +453,3 @@ Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
     - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
-
