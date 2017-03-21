@@ -65,12 +65,12 @@ public class HelloWorld {
 ```
 
 #### Excercises
--  [Doubling](exercises/doubling/Doubling.java)
--  [Greeter function](exercises/greet/Greet.java)
--  [Append a](exercises/append-a/AppendA.java)
--  [Summing](exercises/sum/Sum.java)
--  [Factorial](exercises/factorio/Factorio.java)
--  [Print arguments](exercises/printer/Printer.java)
+-  [Doubling](exercises/functions/doubling/Doubling.java)
+-  [Greeter function](exercises/functions/greet/Greet.java)
+-  [Append a](exercises/functions/append-a/AppendA.java)
+-  [Summing](exercises/functions/sum/Sum.java)
+-  [Factorial](exercises/functions/factorio/Factorio.java)
+-  [Print arguments](exercises/functions/printer/Printer.java)
 
 ### Arrays
 
@@ -91,19 +91,19 @@ public class Arrays {
 ```
 
 #### Excercises
--  [Third](exercises/third/Third.java)
--  [Compare Length](exercises/compare-length/CompareLength.java)
--  [Sum elements](exercises/sum-elements/SumElements.java)
--  [Change element](exercises/change-element/ChangeElement.java)
--  [Increment element](exercises/increment-element/IncrementElement.java)
--  [Print elements](exercises/print-all/PrintAll.java)
--  [Matrix](exercises/diagonal-matrix/DiagonalMatrix.java)
--  [Double items](exercises/double-items/DoubleItems.java)
--  [Colors](exercises/colors/Colors.java)
--  [Append a](exercises/append-a/AppendA.java)
--  [Swap elements](exercises/swap-elements/SwapElements.java)
--  [Sum all elements](exercises/sum-all/SumAll.java)
--  [Reverse list](exercises/reverse/Reverse.java)
+-  [Third](exercises/arrays/third/Third.java)
+-  [Compare Length](exercises/arrays/compare-length/CompareLength.java)
+-  [Sum elements](exercises/arrays/sum-elements/SumElements.java)
+-  [Change element](exercises/arrays/change-element/ChangeElement.java)
+-  [Increment element](exercises/arrays/increment-element/IncrementElement.java)
+-  [Print elements](exercises/arrays/print-all/PrintAll.java)
+-  [Matrix](exercises/arrays/diagonal-matrix/DiagonalMatrix.java)
+-  [Double items](exercises/arrays/double-items/DoubleItems.java)
+-  [Colors](exercises/arrays/colors/Colors.java)
+-  [Append a](exercises/arrays/append-a/AppendA.java)
+-  [Swap elements](exercises/arrays/swap-elements/SwapElements.java)
+-  [Sum all elements](exercises/arrays/sum-all/SumAll.java)
+-  [Reverse list](exercises/arrays/reverse/Reverse.java)
 
 
 ## Individual Workshop Review

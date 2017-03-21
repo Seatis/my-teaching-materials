@@ -93,12 +93,12 @@ greet_by_name(name)
 ```
 
 #### Excercises
--  [Doubling](exercises/doubling/doubling.py)
--  [Greeter function](exercises/greet/greet.py)
--  [Append a](exercises/append-a/append-a.py)
--  [Summing](exercises/sum/sum.py)
--  [Factorial](exercises/factorio/factorio.py)
--  [Print arguments](exercises/printer/printer.py)
+-  [Doubling](exercises/functions/doubling/doubling.py)
+-  [Greeter function](exercises/functions/greet/greet.py)
+-  [Append a](exercises/functions/append-a/append-a.py)
+-  [Summing](exercises/functions/sum/sum.py)
+-  [Factorial](exercises/functions/factorio/factorio.py)
+-  [Print arguments](exercises/functions/printer/printer.py)
 
 ### Data structures
 
@@ -134,19 +134,19 @@ print(whale)
 ```
 
 #### Excercises
--  [Third](exercises/third/third.py)
--  [Compare Length](exercises/compare-length/compare-length.py)
--  [Sum elements](exercises/sum-elements/sum-elements.py)
--  [Change element](exercises/change-element/change-element.py)
--  [Increment element](exercises/increment-element/increment-element.py)
--  [Print elements](exercises/print-all/print-all.py)
--  [Matrix](exercises/diagonal-matrix/diagonal-matrix.py)
--  [Double items](exercises/double-items/double-items.py)
--  [Colors](exercises/colors/colors.py)
--  [Append a](exercises/append-a/append-a.py)
--  [Swap elements](exercises/swap-elements/swap-elements.py)
--  [Sum all elements](exercises/sum-all/sum-all.py)
--  [Reverse list](exercises/reverse/reverse.py)
+-  [Third](exercises/arrays/third/third.py)
+-  [Compare Length](exercises/arrays/compare-length/compare-length.py)
+-  [Sum elements](exercises/arrays/sum-elements/sum-elements.py)
+-  [Change element](exercises/arrays/change-element/change-element.py)
+-  [Increment element](exercises/arrays/increment-element/increment-element.py)
+-  [Print elements](exercises/arrays/print-all/print-all.py)
+-  [Matrix](exercises/arrays/diagonal-matrix/diagonal-matrix.py)
+-  [Double items](exercises/arrays/double-items/double-items.py)
+-  [Colors](exercises/arrays/colors/colors.py)
+-  [Append a](exercises/arrays/append-a/append-a.py)
+-  [Swap elements](exercises/arrays/swap-elements/swap-elements.py)
+-  [Sum all elements](exercises/arrays/sum-all/sum-all.py)
+-  [Reverse list](exercises/arrays/reverse/reverse.py)
 
 
 ## Individual Workshop Review
