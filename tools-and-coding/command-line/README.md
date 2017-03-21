@@ -140,7 +140,7 @@ Introduction to version control systems and Git.
           - user (your username if you're using mac or linux, on windows its git env username)
               - .hidden_directories...
               - greenfox
-                  - **githubusername (this should be the cloned repo, which is named after your github username, so the folder on your computer should be named that way as well)**
+                  **- githubusername (this should be the cloned repo, which is named after your github username, so the folder on your computer should be named that way as well)**
                       **- week-01**
                          **- day-1**
                               **- contents created on your first day**
