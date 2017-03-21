@@ -1,9 +1,4 @@
 # Functions and Data structures
-# Functions and Data structures
-# Functions and Data structures
-# Functions and Data structures
-# Functions and Data structures
-# Functions and Data structures
 Dive deeper into *real* programming, reuse code and get to know more complex data structures
 
 ## Materials & Resources
