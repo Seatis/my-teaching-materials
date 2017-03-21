@@ -105,7 +105,38 @@ greet_by_name(name)
 -  [Factorial](exercises/factorio/factorio.py)
 -  [Print arguments](exercises/printer/printer.py)
 
-### Lists & Data structures
+### Data structures
+
+#### Lists
+
+```python
+[1, 2, 3]
+[]
+[1, 2] + [3]
+[1] - [2]
+[1, 2] * 3
+1 in [1, 2]
+len([1, 2, 3])
+arr = [1, 2, 3]
+arr[0]
+arr[1:3]
+[] is []
+```
+
+#### dictionaries
+
+```python
+giraffe = {'color': 'yellow', 'pattern': 'polygonal patches'}
+whale = {'color': 'blue', 'size': 10000}
+
+print(giraffe)
+print(giraffe['pattern'])
+print(whale['size'])
+
+whale['say'] = 'eeeeeeeeeeeeuuuuuuw'
+
+print(whale)
+```
 
 #### Excercises
 -  [Third](exercises/third/third.py)
