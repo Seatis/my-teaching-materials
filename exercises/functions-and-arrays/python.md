@@ -1,4 +1,5 @@
 # Functions and Data structures
+# Functions and Data structures
 Dive deeper into *real* programming, reuse code and get to know more complex data structures
 
 ## Materials & Resources
@@ -50,7 +51,55 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 ## Workshop
 
 ### Functions
-- [Function exercises](exercises/functions.md)
+
+```python
+def greet_fox():
+  print("Hello Green Fox!")
+
+greet_fox()
+greet_fox()
+```
+
+#### Function arguments
+
+```python
+def greet_by_name(name):
+  print("Well hi there,", name)
+
+greet_by_name("Tojas")
+greet_by_name("Barbi")
+```
+
+#### Default values for function arguments
+
+```python
+def greet(greet="Hi", name="pal"):
+  print(greet, name)
+
+greet("Hello", "Tojas")
+greet("Howdy", "Barbi")
+greet("Hey")
+greet(name="Everyone")
+```
+
+#### Function return values
+
+```python
+def make_green(name):
+  new_name = "Green " + name
+  return new_name
+
+name = make_green("Tojas")
+greet_by_name(name)
+```
+
+#### Excercises
+-  [Doubling](exercises/doubling/doubling.py)
+-  [Greeter function](exercises/greet/greet.py)
+-  [Append a](exercises/append-a/append-a.py)
+-  [Summing](exercises/sum/sum.py)
+-  [Factorial](exercises/factorio/factorio.py)
+-  [Print arguments](exercises/printer/printer.py)
 
 ### Lists & Data structures
 - [List exercises](exercises/arrays.md)

@@ -49,7 +49,28 @@ If unclear only.
 ## Workshop
 
 ### Functions
-- [Function exercises](exercises/functions.md)
+
+```java
+public class HelloWorld {
+
+  public static void main(String[] args) {
+    greetFunction();
+  }
+
+  public static void greetFunction() {
+    // Prints "Hello Green Fox!" to the terminal window.
+    System.out.println("Hello Green Fox!");
+  }
+}
+```
+
+#### Excercises
+-  [Doubling](exercises/doubling/Doubling.java)
+-  [Greeter function](exercises/greet/Greet.java)
+-  [Append a](exercises/append-a/AppendA.java)
+-  [Summing](exercises/sum/Sum.java)
+-  [Factorial](exercises/factorio/Factorio.java)
+-  [Print arguments](exercises/printer/Printer.java)
 
 ### Lists & Data structures
 - [List exercises](exercises/arrays.md)
