@@ -9,9 +9,6 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 |[Introduction to Arrays](https://www.youtube.com/watch?v=L06uGnF4IpY)|7:25|
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
 |[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
-|[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-|[Array Lists (related to Object, Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)| 11:07|
-|[Lists (with Arrays and data typed, NewBoston.04)](https://www.youtube.com/watch?v=jU5ACV5MucM)|7:16|
 |[Using IntelliJ's Debugger (JavaForTesters YT and text)](http://blog.javafortesters.com/2016/07/how-to-debug-java-with-intellij.html)|08:47|
 
 
