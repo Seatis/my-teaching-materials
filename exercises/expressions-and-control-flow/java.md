@@ -399,10 +399,8 @@ public class Conditionals {
  -  [18](odd-even/OddEven.java)
  -  [19](one-two-a-lot/OneTwoALot.java)
  -  [20](print-bigger/PrintBigger.java)
- -  [21](password-protected/PasswordProtected.java)
- -  [22](party-indicator/PartyIndicator)
- -  [23](food-you-like/FoodYouLike.java)
- -  [24](conditional-variable-mutation/ConditionalVariableMutation.java)
+ -  [21](party-indicator/PartyIndicator)
+ -  [22](conditional-variable-mutation/ConditionalVariableMutation.java)
 
 ### Loops
 
@@ -423,19 +421,19 @@ public class Conditionals {
 ```
 
 #### Exercises
- -  [25](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
- -  [26](print-even/PrintEven.java)
- -  [27](count-from-to/CountFromTo.java)
- -  [28](multiplication-table/MultiplicationTable.java)
- -  [29](draw-triangle/DrawTriangle.java)
- -  [30](draw-pyramid/DrawPyramid.java)
- -  [31](draw-diamond/DrawDiamond.java)
- -  [32](draw-square/DrawSquare.java)
- -  [33](draw-diagonal/DrawDiagonal.java)
- -  [34](draw-chess-table/DrawChessTable.java)
- -  [35](fizz-buzz/FizzBuzz.java)
- -  [36](guess-the-number/GuessTheNumber.java)
- -  [37](parametric-average/ParametricAverage.java)
+ -  [23](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
+ -  [24](print-even/PrintEven.java)
+ -  [25](count-from-to/CountFromTo.java)
+ -  [26](multiplication-table/MultiplicationTable.java)
+ -  [27](draw-triangle/DrawTriangle.java)
+ -  [28](draw-pyramid/DrawPyramid.java)
+ -  [29](draw-diamond/DrawDiamond.java)
+ -  [30](draw-square/DrawSquare.java)
+ -  [31](draw-diagonal/DrawDiagonal.java)
+ -  [32](draw-chess-table/DrawChessTable.java)
+ -  [33](fizz-buzz/FizzBuzz.java)
+ -  [34](guess-the-number/GuessTheNumber.java)
+ -  [35](parametric-average/ParametricAverage.java)
 
 
 ## Individual Workshop Review

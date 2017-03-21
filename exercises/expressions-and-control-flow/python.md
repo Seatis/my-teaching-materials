@@ -303,10 +303,8 @@ else:
  -  [18](odd-even/odd-even.py)
  -  [19](one-two-a-lot/one-two-a-lot.py)
  -  [20](print-bigger/print-bigger.py)
- -  [21](password-protected/password-protected.py)
- -  [22](party-indicator/party-indicator.py)
- -  [23](food-you-like/food-you-like.py)
- -  [24](conditional-variable-mutation/conditional-variable-mutation.py)
+ -  [21](party-indicator/party-indicator.py)
+ -  [22](conditional-variable-mutation/conditional-variable-mutation.py)
 
 ### Loops
 
@@ -321,19 +319,19 @@ for i in range(0, 100):
 ```
 
 #### Exercises
- -  [25](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.py)
- -  [26](print-even/print-even.py)
- -  [27](count-from-to/count-from-to.py)
- -  [28](multiplication-table/multiplication-table.py)
- -  [29](draw-triangle/draw-triangle.py)
- -  [30](draw-pyramid/draw-pyramid.py)
- -  [31](draw-diamond/draw-diamond.py)
- -  [32](draw-square/draw-square.py)
- -  [33](draw-diagonal/draw-diagonal.py)
- -  [34](draw-chess-table/draw-chess-table.py)
- -  [35](fizz-buzz/fizz-buzz.py)
- -  [36](guess-the-number/guess-the-number.py)
- -  [37](parametric-average/parametric-average.py)
+ -  [23](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.py)
+ -  [24](print-even/print-even.py)
+ -  [25](count-from-to/count-from-to.py)
+ -  [26](multiplication-table/multiplication-table.py)
+ -  [27](draw-triangle/draw-triangle.py)
+ -  [28](draw-pyramid/draw-pyramid.py)
+ -  [29](draw-diamond/draw-diamond.py)
+ -  [30](draw-square/draw-square.py)
+ -  [31](draw-diagonal/draw-diagonal.py)
+ -  [32](draw-chess-table/draw-chess-table.py)
+ -  [33](fizz-buzz/fizz-buzz.py)
+ -  [34](guess-the-number/guess-the-number.py)
+ -  [35](parametric-average/parametric-average.py)
 
 
 ## Individual Workshop Review
