@@ -4,8 +4,8 @@ public class SimpleReplace {
 
     example.replace("dishwasher", "galaxy");
 
-    // I would like to replace "dishwasher" with "galaxy" in this example, but it has a problem. 
-    // Please fix it for me! Don't forget that String is immutable
+    // I would like to replace "dishwasher" with "galaxy" in this example, but it has a problem.
+    // Please fix it for me!
     // Expected ouput: In a galaxy far far away
 
     System.out.println(example);

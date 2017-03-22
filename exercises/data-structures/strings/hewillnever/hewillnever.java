@@ -2,10 +2,10 @@ import java.util.*;
 
 public class HeWillNever {
   public static void main(String... args){
-    StringBuilder out = new StringBuilder("");
-    int[] notSoCrypticMessage = {1 12 1 2 11 1 7 11 1 49 1 3 11 1 50 11};
+    String out = "";
+    int[] notSoCrypticMessage = {1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11};
 
-    Map<String, Map<String, String>> map = new HashMap<String, Map<String, String>>();
+    Map<String, String> map = new HashMap<String, String>();
 
     hmap.put(7, "run around and desert you");
     hmap.put(50, "tell a lie and hurt you");
@@ -20,6 +20,6 @@ public class HeWillNever {
     // Your job is to decode the notSoCrypticMessage by using the hashmap as a look up table
     // Assemble the fragments into the out variable
 
-    System.out.println(out.toString());
+    System.out.println(out);
   }
 }
