@@ -3,4 +3,10 @@
 
 // - Create a function called `printer`
 //   which prints the input String parameters
-//   (can have multiple number of arguments)
+// - It can have any number of parameters
+
+// Examples
+// printer("first")
+// printer("first", "second")
+// printer("first", "second", "third", "fourh")
+// ...

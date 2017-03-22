@@ -6,7 +6,6 @@
 // %%  %
 // % % %
 // %  %%
-// %   %
 // %%%%%
 //
 // The square should have as many lines as the number was

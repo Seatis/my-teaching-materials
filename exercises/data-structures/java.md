@@ -15,10 +15,10 @@ Get familiar with Java String functions and a new data structure: Arraylist.
   - means to *add* and *remove*
   - `.addAll()`
   - `.contains()`
-  - `.containsAll()` *comparing one Array with another*
+  - `.containsAll()`
   - `.clear()`
   - `.isEmpty()`
-  - initialise
+  - initialize
     - what are the situation? empty, with values
     - how does one use such; loops
   - `.add()` (to the next position, at an index)
@@ -29,7 +29,6 @@ Get familiar with Java String functions and a new data structure: Arraylist.
   - searching: `.contains()`, `.containsAll()`
   - assigning between arrays (*copying* `.toArray()`, `.addAll()`)
   - casting as string `.toString()`
-  - difference between arrays & collection (*primitive* data types)
 - String
   - `.length()`
   - `.subString()`
@@ -49,6 +48,7 @@ Get familiar with Java String functions and a new data structure: Arraylist.
   - value
   - `.put()`
   - `.get()`
+- Object
 
 ## Workshop
 
