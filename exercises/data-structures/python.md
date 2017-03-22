@@ -13,25 +13,43 @@ Recap these videos, they might come handy again.
 
 ## Workshop
 
+As strategy to progress, pick one from each section as you go along with the exercises.
+
 ### Strings
 
 Strings are basic data structures, they can be treated like lists / arrays.
 
- -  [01](introduce-yourself/introduce-yourself.py)
+ -  [01](strings/simplereplace/simplereplace.py)
+ -  [02](strings/reverse/reverse.py)
+ -  [03](strings/urlfixer/urlfixer.py)
+ -  [04](strings/takeslonger/takeslonger.py)
+ -  [05](strings/todoprint/todoprint.py)
+ -  [06](strings/newliner/newliner.py)
 
 
 ### Lists
 
-Strings are basic data structures, they can be treated like lists / arrays.
+Let's play more with list manipulation
 
- -  [01](introduce-yourself/introduce-yourself.py)
+ -  [01](lists/solarsystem/solarsystem.py)
+ -  [02](lists/matchmaking/matchmaking.py)
+ -  [03](lists/appendletter/appendletter.py)
+ -  [04](lists/candyshop/candyshop.py)
+ -  [05](lists/elementfinder/elementfinder.py)
+ -  [06](lists/isinlist/isinlist.py)
+ -  [07](lists/quoteswap/quoteswap.py)
+ -  [08](lists/calculator/calculator.py)
 
 
 ### Dictinaries
 
-Strings are basic data structures, they can be treated like lists / arrays.
+Dictonaries are "dumb" structures for storing various kinds of data in a single structure. 
 
- -  [01](introduce-yourself/introduce-yourself.py)
+ -  [01](hashes/student-counter/student-counter.py)
+ -  [02](hashes/student-filter/student-filter.py)
+ -  [03](hashes/bank-transfer/bank-transfer.py)
+ -  [04](hashes/festival-entry/festival-entry.py)
+ -  [05](hashes/table-printer/table-printer.py)
 
 
 
@@ -47,6 +65,7 @@ Please follow the styleguide: [Our Python styleguide](../../styleguide/python.md
 - Are there unnecessary empty blocks?
 - Can you spot unused variables?
 - Is the commit message meaningful?
+- Can iterating over lists and arrays simplifed? 
 - Are the names of things following the styleguide?
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
