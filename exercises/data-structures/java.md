@@ -74,6 +74,9 @@ Let's play more with list manipulation
 - [05](lists/elementfinder/elementfinder.java)
 - [06](lists/isinlist/isinlist.java)
 - [07](lists/quoteswap/quoteswap.java)
+
+*Okay, you made it this far. Awesome. If you feel you can get back to any remaining tasks you're unsure of from the previous days. If list is still not your friend, redo all the* [tasks for arrays](../functions-and-arrays/java.md#excercises-1) *just with arraylists instead*
+
 - [08](lists/calculator/calculator.java)
 
 ### Map
