@@ -38,6 +38,7 @@ Get into *real* programming, installing a development environment and then runni
      -  `/`
      -  `%`
      -  `=`
+     -  `!=`
      -  `+=`
      -  `-=`
      -  `*=`
@@ -123,7 +124,7 @@ print(5.) # Prints 5.0
 print(1 + 1) # Prints 2
 print(5 - 2) # Prints 3
 print(3 * 4) # Prints 12
-print(6 * 2) # Prints 3
+print(6 / 2) # Prints 3.0
 print(5 / 2) # Prints 2.5
 print(5 // 2) # Prints 2
 print(5 % 2) # Prints 1

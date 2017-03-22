@@ -4,6 +4,8 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
+| [Python Programming Tutorial - 3 - Strings](https://www.youtube.com/watch?v=nefopNkZmB4) | 8:24 |
+| [Python Programming Tutorial - 4 - Slicing up Strings](https://www.youtube.com/watch?v=YbipxqSKx-E) | 5:40 |
 | [Python Programming Tutorial - 12 - Functions](https://www.youtube.com/watch?v=j2xhtI0WTew) | 6:41 |
 | [Python Programming Tutorial - 13 - Return Values](https://www.youtube.com/watch?v=xRIzPZlei9I) | 6:05 |
 | [Python Programming Tutorial - 14 - Default Values for Arguments](https://www.youtube.com/watch?v=mwr1AtpLMpI) | 4:04 |
