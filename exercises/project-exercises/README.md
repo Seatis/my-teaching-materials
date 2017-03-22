@@ -6,7 +6,13 @@
  - [Palindrome searcher](#palindrome-searcher)
  - [Guess my number](#guess-my-number)
 
+### Experience points
+- Each project has a certain amount of experience points (XP) that can be earned by completing the project
+- To level up and journey safely to the next week's challenges make sure you earn at least 2 XP
+- *Tip: Go with 3XP if you're on __insane__ difficulty setting.*
+
 ## Anagram
+*1XP*
 
 ### What the hell is an anagram?
 > An anagram is direct word switch or word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example, the word anagram can be rearranged into nag-a-ram.
@@ -22,6 +28,8 @@ Create a function named **is anagram** following your current language's style g
 |"green"|"fox"|false|
 
 ## Palindrome builder
+*1XP*
+
 ### What the hell is a palindrome?
 
 > A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
@@ -40,6 +48,7 @@ Create a function named **create palindrome** following your current language's 
 |"123"|"123321"|
 
 ## Palindrome searcher
+*2XP*
 
 [What the hell is a palindrome?](#palindrome-builder)
 
