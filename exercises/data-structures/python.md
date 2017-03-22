@@ -24,7 +24,7 @@ Strings are basic data structures, they can be treated like lists / arrays.
  -  [03](strings/urlfixer/urlfixer.py)
  -  [04](strings/takeslonger/takeslonger.py)
  -  [05](strings/todoprint/todoprint.py)
- -  [06](strings/newliner/newliner.py)
+ -  [06](strings/hewillnever/hewillnever.py)
 
 
 ### Lists
@@ -41,7 +41,7 @@ Let's play more with list manipulation
  -  [08](lists/calculator/calculator.py)
 
 
-### Dictinaries
+### Dictonaries
 
 Dictonaries are "dumb" structures for storing various kinds of data in a single structure. 
 
