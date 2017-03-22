@@ -65,6 +65,7 @@ Create a function named **search palindrome** following your current language's 
 |""|[]|
 
 ## Guess my number
+*2XP*
 
 ### Exercise
 
