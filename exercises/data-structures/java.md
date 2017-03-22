@@ -75,8 +75,15 @@ Let's play more with list manipulation
 - [06](lists/isinlist/isinlist.java)
 - [07](lists/quoteswap/quoteswap.java)
 
-*Okay, you made it this far. Awesome. If you feel you can get back to any remaining tasks you're unsure of from the previous days. If list is still not your friend, redo all the* [tasks for arrays](../functions-and-arrays/java.md#excercises-1) *just with arraylists instead*
+*Okay, you've made it this far. Awesome. If you feel you can get back to any remaining tasks you're unsure of from the previous days. If list is still not your friend, redo all (or some of) the* [tasks for arrays](../functions-and-arrays/java.md#excercises-1) *just with arraylists instead*
+```java
+// You can simple convert the examples from this
+int[] example = {1, 2, 3};
+// To this
+ArrayList<Integer> converted = Arrays.asList(1, 2, 3);
+```
 
+Only proceed to these if you're confident using arraylists, functions, loops, conditions
 - [08](lists/calculator/calculator.java)
 
 ### Map
