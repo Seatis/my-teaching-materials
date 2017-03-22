@@ -52,7 +52,33 @@ Get familiar with Java String functions and a new data structure: Arraylist.
 
 ## Workshop
 
-### String
+### Strings
+
+Strings are basic data structures, they can be treated like a list or array of characters.
+
+- [01](strings/simplereplace/simplereplace.java)
+- [02](strings/urlfixer/urlfixer.java)
+- [03](strings/takeslonger/takeslonger.java)
+- [04](strings/todoprint/todoprint.java)
+- [05](strings/reverse/reverse.java)
 
 
-### ArrayList
+### Lists
+
+Let's play more with list manipulation
+
+- [01](lists/solarsystem/solarsystem.java)
+- [02](lists/matchmaking/matchmaking.java)
+- [03](lists/appendletter/appendletter.java)
+- [04](lists/candyshop/candyshop.java)
+- [05](lists/elementfinder/elementfinder.java)
+- [06](lists/isinlist/isinlist.java)
+- [07](lists/quoteswap/quoteswap.java)
+- [08](lists/calculator/calculator.java)
+
+### Map
+
+Maps are key-value pairs. If you think of it, the list or array is also a map, just with specifically integers as keys.
+
+- [01](strings/hewillnever/hewillnever.java)
+- [02](hashes/student-counter/student-counter.java)
