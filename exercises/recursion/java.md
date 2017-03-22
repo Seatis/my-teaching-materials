@@ -5,6 +5,12 @@ java.md)
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
+|[How Recursion Works](https://www.youtube.com/watch?v=ozmE8G6YKww) | 11:40 |
+|[Algorithms: Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms)| 5:40 |
+|[Java Recursion](https://www.youtube.com/watch?v=neuDuf_i8Sg)| 14:11 |
+| [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
+
+
 
 
 ### Optional
@@ -12,7 +18,8 @@ java.md)
 
 | Material | Time |
 |:---------|-----:|
-
+|[Hanoi-tower](https://www.youtube.com/watch?v=5_6nsViVM00)| 7:18 |
+| [Benoit BM Mandelbrot: Fractals and the art of roughness](https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en) | 17:09 |
 
 
 ## Material Review

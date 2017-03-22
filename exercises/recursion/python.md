@@ -26,6 +26,7 @@ python.md)
 | Material | Time |
 |:---------|-----:|
 | [Benoit BM Mandelbrot: Fractals and the art of roughness](https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en) | 17:09 |
+|[Hanoi-tower](https://www.youtube.com/watch?v=5_6nsViVM00) | 7:18 |
 
 
 
