@@ -8,7 +8,7 @@ public class Drawing {
 
     public static void mainDraw(Graphics graphics){
       // reproduce this:
-      // [https://github.com/greenfox-velox/velox-syllabus/blob/master/week-04/3-graphics/workshop/r1.png]
+      // [https://github.com/greenfox-academy/teaching-materials/blob/master/exercises/drawing/line-play/r1.png]
 
 
 
