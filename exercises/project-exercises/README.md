@@ -60,7 +60,7 @@ Create a function named **search palindrome** following your current language's 
 
 |input|output|
 |:---:|:---:|
-|"dog goat dad duck doodle never"|["og go", " dad ", "d d", "dood", "eve"]|
+|"dog goat dad duck doodle never"|["og go", "g g", " dad ", "dad", "d d", "dood", "eve"]|
 |"apple"|[]|
 |""|[]|
 
