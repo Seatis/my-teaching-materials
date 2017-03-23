@@ -52,29 +52,51 @@ Draw on a canvas using our previous knowledge about control flow and functions
 
 ### Exercises
 
-- [Middle lines](line-in-the-middle/LineInTheMiddle.java)
-- [Colored box](colored-box/ColoredBox.java)
-- [Diagonals](diagonals/Diagonals.java)
-- [To the center](go-to-center/GoToCenter.java)
-- [Horizontal](horizontal-lines/HorizontalLines.java)
-- [Square in the center](centered-square/CenteredSquare.java)
-- [Fill with rectangles](four-rectangles/FourRectangles.java)
-- [Square positioning](position-square/PositionSquare.java)
-- [Centered boxes](center-box-function/CenterBoxFunction.java)
-- [Rainbow boxes](rainbow-box-function/RainbowBoxFunction.java)
-- Reproduce these:   
-![square one](workshop/r3.png)   
-![square two](workshop/r4.png)   
-- [Checkerboard](checkerboard/Checkerboard.java)
-- [Everything goes to center](function-to-center/FunctionToCenter.java)
-- [Line play](line-play/LinePlay.java)
-- [Line play quarters](line-play-quarters/LinePlayQuarters.java)
-- [Envelope star](envelope-star/EnvelopeStar.java)
-- Reproduce these:   
-![doodle one](workshop/r1.png)   
-![doodle two](workshop/r2.png)   
-- [Connect the dots](connect-the-dots/ConnectTheDots.java)
-- [Starry night](starry-night/StarryNight.java)
-- Reproduce these:
-![doodle one](workshop/r5.png)   
-![doodle one](workshop/r6.gif)
+- [01 Middle lines](line-in-the-middle/LineInTheMiddle.java)
+- [02 Colored box](colored-box/ColoredBox.java)
+- [03 Diagonals](diagonals/Diagonals.java)
+- [04 To the center](go-to-center/GoToCenter.java)
+- [05 Horizontal](horizontal-lines/HorizontalLines.java)
+
+- [06 Square in the center](centered-square/CenteredSquare.java)
+- [07 Fill with rectangles](four-rectangles/FourRectangles.java)
+- [08 Square positioning](position-square/PositionSquare.java)
+- [09 Centered boxes](center-box-function/CenterBoxFunction.java)
+- [10 Rainbow boxes](rainbow-box-function/RainbowBoxFunction.java)
+
+-
+| [11 Purple steps](purple-steps/PurpleSteps.java) |
+|:--------------:|
+| ![Purple steps](purple-steps/r3.png) |
+-
+| [12 Purple steps 3d](purple-steps-3d/PurpleSteps3d.java) |
+|:--------------:|
+| ![Purple steps 3d](purple-steps-3d/r4.png) |
+
+
+- [13 Checkerboard](checkerboard/Checkerboard.java)
+- [14 Everything goes to center](function-to-center/FunctionToCenter.java)
+
+-
+| [15 Line play](line-play/LinePlay.java) |
+|:--------------:|
+| ![Line play](line-play/r1.png) |
+
+- [16 Line play quarters](line-play-quarters/LinePlayQuarters.java)
+-
+| [17 Envelope star](envelope-star/EnvelopeStar.java) |
+|:--------------:|
+| ![Envelope star](envelope-star/r2.png) |
+
+- [18 Connect the dots](connect-the-dots/ConnectTheDots.java)
+- [19 Starry night](starry-night/StarryNight.java)
+
+-
+| [20 Triangles](triangles/Triangles.java) |
+|:--------------:|
+| ![Triangles](triangles/r5.png) |
+
+-
+| [21 Super Hexagon](super-hexagon/SuperHexagon.java) |
+|:--------------:|
+| ![Super Hexagon](super-hexagon/r6.gif) |
