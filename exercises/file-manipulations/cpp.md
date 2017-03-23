@@ -18,7 +18,7 @@ int main() {
 ```
 
 ### Exercise
- - [exercise01.cpp](exercise-01/exercise01.cpp)
+ - [exercise01.cpp](write_single_line/exercise01.cpp)
 
 ## Reading files
 
@@ -44,7 +44,7 @@ any white space character it only reads the line till that character.
 
 
 ### Exercise
- - [exercise02.cpp](exercise-02/exercise02.cpp) | [second-exercise.txt](exercise-02/second-exercise.txt)
+ - [exercise02.cpp](read_single_line/exercise02.cpp) | [second-exercise.txt](read_single_line/second-exercise.txt)
 
 ### Reading lines
 
@@ -69,17 +69,17 @@ int main() {
 ```
 
 #### Exercise
- - [exercise03.cpp](exercise-03/exercise03.cpp)
- - [exercise04.cpp](exercise-04/exercise04.cpp) | [fourth-exercise.txt](exercise-04/fourth-exercise.txt)
- - [exercise05.cpp](exercise-05/exercise05.cpp)
- - [exercise06.cpp](exercise-06/exercise06.cpp) 
- - [exercise07.cpp](exercise-07/exercise07.cpp) 
- - [exercise08.cpp](exercise-08/exercise08.cpp)
+ - [exercise03.cpp](write_multiple_lines/exercise03.cpp)
+ - [exercise04.cpp](read_multiple_lines/exercise04.cpp) | [fourth-exercise.txt](read_multiple_lines/fourth-exercise.txt)
+ - [exercise05.cpp](file_not_found_handling/exercise05.cpp)
+ - [exercise06.cpp](read_from_file_function/exercise06.cpp) 
+ - [exercise07.cpp](write_to_file_function/exercise07.cpp) 
+ - [exercise08.cpp](file_copy_function/exercise08.cpp)
 
 ### Decryption
 #### Exercise
- - [exercise09.cpp](exercise-09/exercise09.cpp) | [duplicated-chars.txt](exercise-09/duplicated-chars.txt)
- - [exercise10.cpp](exercise-10/exercise10.cpp) | [reversed-lines.txt](exercise-10/reversed-lines.txt)
- - [exercise11.cpp](exercise-11/exercise11.cpp) | [reversed-order.txt](exercise-11/reversed-order.txt)
- - [exercise12.cpp](exercise-12/exercise12.cpp) | [encoded-lines.txt](exercise-12/encoded-lines.txt)
+ - [exercise09.cpp](decrypt_function_doubled/exercise09.cpp) | [duplicated-chars.txt](decrypt_function_doubled/duplicated-chars.txt)
+ - [exercise10.cpp](decrypt_function_reversed_lines/exercise10.cpp) | [reversed-lines.txt](decrypt_function_reversed_lines/reversed-lines.txt)
+ - [exercise11.cpp](decrypt_function_reversed_order/exercise11.cpp) | [reversed-order.txt](exercise-11/reversed-order.txt)
+ - [exercise12.cpp](decrypt_function_encoded_lines/exercise12.cpp) | [encoded-lines.txt](decrypt_function_encoded_lines/encoded-lines.txt)
 
