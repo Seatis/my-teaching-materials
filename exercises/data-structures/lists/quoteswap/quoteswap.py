@@ -4,5 +4,5 @@
 
 # Also, print the sentence to the output with spaces in between.
 
-words = ["What" "I" "do" "create," "I" "cannot" "not" "understand."]
+words = ["What", "I", "do", "create,", "I", "cannot", "not", "understand."]
 
