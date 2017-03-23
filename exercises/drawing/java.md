@@ -100,3 +100,22 @@ Draw on a canvas using our previous knowledge about control flow and functions
 | [21 Super Hexagon](super-hexagon/SuperHexagon.java) |
 |:--------------:|
 | ![Super Hexagon](super-hexagon/r6.gif) |
+
+
+## Individual Workshop Review
+Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+
+- Is the directory structure and the name of the files correct?
+- Are the includes palced on the top of the files?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
+- Are the names of things following the styleguide?
+    - Classes: UpperCamelCase
+    - variables: lowerCamelCase
+- Are all of the brackets in the perfect place?
+- Whitespaces, where they should be, where shouldn't?
