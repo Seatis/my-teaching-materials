@@ -95,5 +95,5 @@ Maps are key-value pairs. If you think of it, the list or array is also a map, j
 
 ### Project
 
-If you're done with everything and understand everything so far, then go ahead to the project phase
+If you're done with everything and understand everything so far, then go ahead to the week's project exercises
 - [Project](../project-exercises)
