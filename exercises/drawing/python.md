@@ -22,13 +22,18 @@
  - GUI
  - canvas
  - shapes
-   - line
-   - rectangle
-   - polygon
-   - oval
-   - image
-   - arc
+    - line
+    - rectangle
+    - polygon
+    - oval
+    - image
+    - arc
  - options
+    - height
+    - width
+    - bg
+    - bd
+    - fill
 
 ## Workshop
 * cheatsheet for the tasks with all the canvas methods: http://www.python-course.eu/tkinter_canvas.php
