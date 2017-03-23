@@ -69,7 +69,7 @@ root.mainloop()
 ### Exercises
 
 - [Middle lines](line-in-the-middle/line-in-the-middle.py)
-- [Colored box](colored-box/colored-box/py)
+- [Colored box](colored-box/colored-box.py)
 - [Diagonals](diagonals/diagonals.py)
 - [To the center](go-to-center/go-to-center.py)
 - [Horizontal](horizontal-lines/horizontal-lines.py)

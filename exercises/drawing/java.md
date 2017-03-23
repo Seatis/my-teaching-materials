@@ -48,3 +48,32 @@ Draw on a canvas using our previous knowledge about control flow and functions
         graphics.drawPolygon(xpoints, ypoints, npoints);
     }
 ```
+
+### Exercises
+
+- [Middle lines](line-in-the-middle/LineInTheMiddle.java)
+- [Colored box](colored-box/ColoredBox.java)
+- [Diagonals](diagonals/Diagonals.java)
+- [To the center](go-to-center/GoToCenter.java)
+- [Horizontal](horizontal-lines/HorizontalLines.java)
+- [Square in the center](centered-square/CenteredSquare.java)
+- [Fill with rectangles](four-rectangles/FourRectangles.java)
+- [Square positioning](position-square/PositionSquare.java)
+- [Centered boxes](center-box-function/CenterBoxFunction.java)
+- [Rainbow boxes](rainbow-box-function/RainbowBoxFunction.java)
+- Reproduce these:   
+![square one](workshop/r3.png)   
+![square two](workshop/r4.png)   
+- [Checkerboard](checkerboard/Checkerboard.java)
+- [Everything goes to center](function-to-center/FunctionToCenter.java)
+- [Line play](line-play/LinePlay.java)
+- [Line play quarters](line-play-quarters/LinePlayQuarters.java)
+- [Envelope star](envelope-star/EnvelopeStar.java)
+- Reproduce these:   
+![doodle one](workshop/r1.png)   
+![doodle two](workshop/r2.png)   
+- [Connect the dots](connect-the-dots/ConnectTheDots.java)
+- [Starry night](starry-night/StarryNight.java)
+- Reproduce these:
+![doodle one](workshop/r5.png)   
+![doodle one](workshop/r6.gif)
