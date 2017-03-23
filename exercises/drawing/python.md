@@ -82,35 +82,41 @@ root.mainloop()
 - [Rainbow boxes](rainbow-box-function/rainbow-box-function.py)
 
 
-- | [Purple steps](purple-steps/purple-steps.py) |
+- 
+| [Purple steps](purple-steps/purple-steps.py) |
 |:--------------:|
 | ![Purple steps](purple-steps/r3.png) |
-- | [Purple steps 3d](purple-steps/purple-steps-3d.py) |
+- 
+| [Purple steps 3d](purple-steps-3d/purple-steps-3d.py) |
 |:--------------:|
-| ![Purple steps 3d](purple-steps/r4.png) |
+| ![Purple steps 3d](purple-steps-3d/r4.png) |
 
 - [Checkerboard](checkerboard/checkerboard.py)
 - [Everything goes to center](function-to-center/function-to-center.py)
 
-- | [Line play](line-play/line-play.py) |
+- 
+| [Line play](line-play/line-play.py) |
 |:--------------:|
 | ![Line play](line-play/r1.png) |
 
 - [Line play quarters](line-play-quarters/line-play-quarters.py)
-- | [Envelope star](envelope-star/envelope-star.py) |
+- 
+| [Envelope star](envelope-star/envelope-star.py) |
 |:--------------:|
 | ![Envelope star](envelope-star/r2.png) |
 
 - [Connect the dots](connect-the-dots/connect-the-dots.py)
 - [Starry night](starry-night/starry-night.py)
 
-- | [Triangles](triangles/triangles.py) |
+- 
+| [Triangles](triangles/triangles.py) |
 |:--------------:|
-| ![[Triangles](triangles/r5.png) |
+| ![Triangles](triangles/r5.png) |
 
-- | [Super Hexagon](super-hexagon/super-hexagon.py) |
+- 
+| [Super Hexagon](super-hexagon/super-hexagon.py) |
 |:--------------:|
-| ![[Super Hexagon](super-hexagon/r6.gif) |
+| ![Super Hexagon](super-hexagon/r6.gif) |
 
 
 
