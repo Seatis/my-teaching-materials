@@ -18,7 +18,7 @@ int main() {
 ```
 
 ### Exercise
- - [exercise01.cpp](write_single_line/exercise01.cpp)
+ - [write-line.cpp](write_single_line/write-line.cpp)
 
 ## Reading files
 
@@ -44,7 +44,7 @@ any white space character it only reads the line till that character.
 
 
 ### Exercise
- - [exercise02.cpp](read_single_line/exercise02.cpp) | [second-exercise.txt](read_single_line/second-exercise.txt)
+ - [read-line.cpp](read_single_line/read-line.cpp) | [second-exercise.txt](read_single_line/second-exercise.txt)
 
 ### Reading lines
 
@@ -69,12 +69,12 @@ int main() {
 ```
 
 #### Exercise
- - [exercise03.cpp](write_multiple_lines/exercise03.cpp)
- - [exercise04.cpp](read_multiple_lines/exercise04.cpp) | [fourth-exercise.txt](read_multiple_lines/fourth-exercise.txt)
- - [exercise05.cpp](file_not_found_handling/exercise05.cpp)
- - [exercise06.cpp](read_from_file_function/exercise06.cpp) 
- - [exercise07.cpp](write_to_file_function/exercise07.cpp) 
- - [exercise08.cpp](file_copy_function/exercise08.cpp)
+ - [write-lines.cpp](write_multiple_lines/write-lines.cpp)
+ - [fourth-exercise.cpp](read_multiple_lines/fourth-exercise.cpp) | [fourth-exercise.txt](read_multiple_lines/fourth-exercise.txt)
+ - [no-file.cpp](file_not_found_handling/no-file.cpp)
+ - [read-lines2.cpp](read_from_file_function/read-lines2.cpp) 
+ - [write-lines2.cpp](write_to_file_function/write-lines2.cpp) 
+ - [copy-file.cpp](file_copy_function/copy-file.cpp)
 
 ### Decryption
 #### Exercise
