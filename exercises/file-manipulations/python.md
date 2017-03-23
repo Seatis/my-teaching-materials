@@ -10,4 +10,24 @@
 | [General introduction to modules][1] ||
 | [General introduction to file handling / IO][2] ||
 
-
+## Material review
+ - `open()` and parameters `r, w, a`
+ - `close()`
+ - `write()`
+ - `read()`, `readline()` and `readlines()`
+ - `module` and `submodule`
+ - `import`
+ - `from`
+ - `help()`
+ - OS module
+ - Requests module
+ - compile time error
+ - runtime error
+ - syntactic error
+ - semantic error
+ - try
+ - exception
+ - except
+ - exception types
+ - finally
+ 
