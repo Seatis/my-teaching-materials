@@ -92,3 +92,8 @@ Maps are key-value pairs. If you think of it, the list or array is also a map, j
 
 - [01](strings/hewillnever/hewillnever.java)
 - [02](hashes/student-counter/student-counter.java)
+
+### Project
+
+If you're done with everything and understand everything so far, then go ahead to the week's project exercises
+- [Project](../project-exercises)
