@@ -73,27 +73,45 @@ root.mainloop()
 - [Diagonals](diagonals/diagonals.py)
 - [To the center](go-to-center/go-to-center.py)
 - [Horizontal](horizontal-lines/horizontal-lines.py)
+
+
 - [Square in the center](centered-square/centered-square.py)
 - [Fill with rectangles](four-rectangles/four-rectangles.py)
 - [Square positioning](position-square/position-square.py)
 - [Centered boxes](center-box-function/center-box-function.py)
 - [Rainbow boxes](rainbow-box-function/rainbow-box-function.py)
-- Reproduce these:   
-![square one](workshop/r3.png)   
-![square two](workshop/r4.png)   
+
+
+- | [Purple steps](purple-steps/purple-steps.py) |
+|:--------------:|
+| ![Purple steps](purple-steps/r3.png) |
+- | [Purple steps 3d](purple-steps/purple-steps-3d.py) |
+|:--------------:|
+| ![Purple steps 3d](purple-steps/r4.png) |
+
 - [Checkerboard](checkerboard/checkerboard.py)
 - [Everything goes to center](function-to-center/function-to-center.py)
-- [Line play](line-play/line-play.py)
+
+- | [Line play](line-play/line-play.py) |
+|:--------------:|
+| ![Line play](line-play/r1.png) |
+
 - [Line play quarters](line-play-quarters/line-play-quarters.py)
-- [Envelope star](envelope-star/envelope-star.py)
-- Reproduce these:   
-![doodle one](workshop/r1.png)   
-![doodle two](workshop/r2.png)   
+- | [Envelope star](envelope-star/envelope-star.py) |
+|:--------------:|
+| ![Envelope star](envelope-star/r2.png) |
+
 - [Connect the dots](connect-the-dots/connect-the-dots.py)
 - [Starry night](starry-night/starry-night.py)
-- Reproduce these:
-![doodle one](workshop/r5.png)   
-![doodle one](workshop/r6.gif)   
+
+- | [Triangles](triangles/triangles.py) |
+|:--------------:|
+| ![[Triangles](triangles/r5.png) |
+
+- | [Super Hexagon](super-hexagon/super-hexagon.py) |
+|:--------------:|
+| ![[Super Hexagon](super-hexagon/r6.gif) |
+
 
 
 ## Individual Workshop Review
