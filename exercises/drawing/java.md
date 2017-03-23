@@ -6,6 +6,7 @@ Draw on a canvas using our previous knowledge about control flow and functions
 |:---------|-----:|
 | [Java Programming Tutorial - 84 - Drawing Graphics](https://www.youtube.com/watch?v=2l5-5PMUc5Y) | 8:58 |
 | [Java Programming Tutorial - 86 - Drawing More Stuff](https://www.youtube.com/watch?v=OWOeE90ET6w) | 7:15 |
+| [Using Java's Math.random() Method](https://www.youtube.com/watch?v=o-A-M6syLI4) | 5:12 |
 
 
 ## Material Review
