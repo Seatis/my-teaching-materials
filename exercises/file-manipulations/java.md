@@ -1,5 +1,21 @@
 # File manipulation exercises
 
+## Materials & Resources
+
+| Material | Time |
+|:---------|-----:|
+|[Handling Basic Exceptions and File Reading with Java 8](https://www.youtube.com/watch?v=b1A9kI2zSe4)| 31:56 |
+
+## Material Review
+- Exception
+- `try`
+- `catch`
+- `Path` and `Paths.get()`
+- `Files`
+- `readAllLines()`
+- `write()`
+
+
 ## Reading files
 
 ```java
@@ -22,4 +38,3 @@ try {
  - [ReversedLines.java](decrypt_function_reversed_lines/ReversedLines.java) | [reversed-lines.txt](decrypt_function_reversed_lines/reversed-lines.txt)
  - [ReversedOrder.java](decrypt_function_reversed_order/ReversedOrder.java) | [reversed-order.txt](decrypt_function_reversed_order/reversed-order.txt)
  - [EncodedLines.java](decrypt_function_encoded_lines/EncodedLines.java) | [encoded-lines.txt](decrypt_function_encoded_lines/encoded-lines.txt)
-
