@@ -19,8 +19,8 @@
  - `import`
  - `from`
  - `help()`
- - OS module
- - Requests module
+ - `os` library
+ - `requests` library
  - compile time error
  - runtime error
  - syntactic error
@@ -30,4 +30,3 @@
  - except
  - exception types
  - finally
- 
