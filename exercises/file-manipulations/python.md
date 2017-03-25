@@ -20,7 +20,7 @@
  - `from`
  - `help()`
  - `os` library
- - `requests` library
+ - `requests` package
  - compile time error
  - runtime error
  - syntactic error
