@@ -85,7 +85,7 @@ except IOError:
 
 #### Exercises
 - [Divide by 0](exceptions/divide_by_0/divide-by-0.py)
-- [No file](exceptions/file_not_exists/file-not-exists.py)
+- [No file](exceptions/file_not_exists/file_not_exists.py)
 
 ### Optional
  - [Lotto.java](read_lotto_csv/lottery.py) | [otos.csv](read_lotto_csv/otos.csv)
