@@ -1,6 +1,10 @@
 # Coding Dojo
 Get familiar with the TDD process through a strict Coding Dojo practice.
 
+## Requirements
+- Functions
+- Unit Testing
+
 ![red-green-refactor](red_green_refactor.jpg)
 
 ## Red - Green - Refactor
