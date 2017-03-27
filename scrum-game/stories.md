@@ -2,7 +2,7 @@
 
 *Stories should be followed by implementation. Completing a story means you made a little progress on the project. 
 
-Keep in mind, that you have to develop the complete game. So when working on a specific story, you should be able to reuse the implementation later in other parts of the game.*
+*Keep in mind, that you have to develop the complete game. So when working on a specific story, you should be able to reuse the implementation later in other parts of the game.
 
 # Draw a screen with tiles
 
