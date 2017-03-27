@@ -88,4 +88,4 @@ except IOError:
 - [No file](exceptions/file_not_exists/file_not_exists.py)
 
 ### Optional
- - [Lotto.java](read_lotto_csv/lottery.py) | [otos.csv](read_lotto_csv/otos.csv)
+ - [Lotto](read_lotto_csv/lottery.py) | [otos.csv](read_lotto_csv/otos.csv)
