@@ -61,5 +61,5 @@
 
 ### Alltogether
 
-- [Pirates](pirates/python.md)
+- [Pirates](pirates/java.md)
 - Redo the 5 trees homework (with classes)
