@@ -22,6 +22,15 @@
 
 ## Material Review
 
+ - object
+ - `class`
+ - `self`
+ - method
+ - instantiation
+ - `__init__(self)`
+ - class variable
+ - instance variable
+
 ## Workshop
 
 ### Data Structure
