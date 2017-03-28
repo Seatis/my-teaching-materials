@@ -86,23 +86,74 @@
   - hunger
   - thirst
   - default constructor sets these
-  - eat(), drink() -> increase
-  - play() -> decrease both
+  - eat(), drink() -> decrease
+  - play() -> increase both
 
 #### Sharpie
+- Create `Sharpie` class
+  - color, width, inkAmount
+  - constructor(color, width)
+    - inkAmount set to 100
+  - use()
+    - decreases inkAmount
 
 #### Counter
+- Create `Counter` class
+  - private value
+  - add(int)
+  - add() -> +1
+  - get()
+  - reset() -> 0
 
 ### Complex Architectures
 
 #### Teacher Student
+- Create `Student` and `Teacher` classes
+- `Student`
+  - learn()
+  - question(teacher) -> calls the teachers answer
+- `Teacher`
+  - teach(student) -> calls the students learn
+  - answer()
 
 #### Petrol Station
+- Create `Station` and `Car` classes
+- `Station`
+  - gasAmount
+  - refill(car) -> decreases the gasAmount by the capacity of the car and increases the cars amount
+- `Car`
+  - gasAmount
+  - capacity
+  - constructor
+    - inits gasAmount -> 0
+    - capacity -> 100
 
 ### Classes as Fields
 
-#### Blog
+#### Sharpie Set
+- Reuse your `Sharpie` class
+- Create `SharpieSet` class
+  - list of Sharpies
+  - countUsable() -> sharpie is usable if it has ink in it
+  - removeTrash() -> removes all unusable sharpies
 
 #### Farm
+- Reuse your `Animal` class
+- Create a `Farm` class
+  - list of Animals
+  - slots
+  - breed() -> creates a new animal if there's place for it
+  - slaughter() -> removes the least hungry animal
 
-#### Sharpie Set
+#### Blog
+- Reuse your `BlogPost` class
+- Create a `Blog` class
+  - list of BlogPosts
+  - add(BlogPost)
+  - delete(int)
+  - update(int, BlogPost)
+
+### Alltogether
+#### Pirates
+
+#### Redo the 5 trees
