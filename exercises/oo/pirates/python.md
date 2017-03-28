@@ -32,7 +32,7 @@ Add a parrot.
     - The winner captain and crew has a party, including a random number of rum :)
 
 ## BattleApp
-- Create a `BattleApp` class with a `main` method
+- Create a `battle_app.py` file
 - Create 2 ships, fill them with pirates
 - Have a battle!
 
