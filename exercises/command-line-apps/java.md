@@ -1,19 +1,26 @@
-# Project: TODO Application
+# Project
+## Todo App
 
-Write a command-line todo application to easily keep track of your day-to-day tasks.
+This is a complex exercise, so please read through the whole first, then start at the beginning.
 
-Basics (mandatory):
+### Tasks
+#### Basics (mandatory):
 
  - Prints usage
  - A todo task has (at least) a completed state and a description
+ - List tasks
  - Add new tasks
  - Complete tasks
  - Remove tasks
- - List tasks
+ - Store in file
+ - Load state from file
+ - One type of commands (see later in the Usage)
 
-Advanced (optional):
+#### Advanced (optional):
  - Refactor the application to align with the proposed architecture
- - Write unittests for any unit it feels possible
+ - Multiple users
+ - Shorthands for the commands (or the longhands)
+ - Anything else that comes to your mind
 
 ### Stories
 Please create a trello board for yourself and add these stories.
@@ -27,95 +34,84 @@ You should not have 2 or more stories in Doing and Review
 If you have a story in Review show it to one of the mentors to push it to done.
 
 #### Usage
- - Given the terminal opened in the project directory
- - When the application is ran by executing `python todo.py`
+ - Run the application in the IDE
  - Then it should print the usage information:
 ```
-Python Todo application
-=======================
+CLI Todo application
+====================
 
-Command line arguments:
- -l   Lists all the tasks
- -a   Adds a new task
- -r   Removes an task
- -c   Completes an task
+Available commands:
+ list       Lists all the tasks
+ l          shorthand for list
+ add        Adds a new task
+ a          shorthand for add
+ remove     Removes an task
+ r          shorthand for remove
+ complete   Completes an task
+ c          shorthand for complete
+ help       Print out this list again
+ h          shorthand for help
 ```
-
+ - And wait for a command
 
 #### List
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -l`
- - Then it should print the todos that are stored in the file and it should add numbers before them when it prints it
+ - Starting the project
+ - When `list` command is given
+ - Then it should print the todos that are stored in the list
 ```
 1 - Walk the dog
 2 - Buy milk
 3 - Do homework
 ```
 
-So in this case for example the content of the file is:
+So in this case for example the elements of the list are:
 ```
 Walk the dog
 Buy milk
 Do homework
 ```
 
-##### Help
- - [Handling command line arguments](https://docs.oracle.com/javase/tutorial/essential/environment/cmdLineArgs.html)
- - Ignore the storage file in the git repository using .gitignore
-
-
 #### Empty List
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -l` and the file is empty
+ - When the storage list is empty
+ - And the `list` command is given
  - Then it should show a message like this: `No todos for today! :)`
 
 #### Add new task
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -a "Feed the monkey"`
- - Then it should add a new todo task (with the content `Feed the monkey`) to the file, if the todos are listed it should show up on the end
+ - When `add Feed the monkey` command is given
+ - Then it should add a new todo task (with the content `Feed the monkey`) to the list, so if the todos are listed it should show up on the end
 
 #### Add task error handling
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -a`
+ - When `add` command is given, without specifying the todo
  - Then it should show an error message like: `Unable to add: No task is provided`
 
 #### Remove task
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -r 2`
- - Then it should remove the second item from the file, if it is listed it should not show up
+ - When `remove 2` command is given, where the `2` is the index of the todo as showed when listing
+ - Then it should remove the second item from the list, so if it is listed it should not show up
 
 #### Remove task error handling
 1:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -r`
+ - When `remove` command is given, without specifying the index of the todo
  - Then it should show an error message like: `Unable to remove: No index is provided`
 
 2:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -r 20`
+ - When `remove 20` command is given, when there are only 3 todos
  - Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
 
 3:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -r apple`
+ - When `remove apple` command is given
  - Then it should show an error message like: `Unable to remove: Index is not a number`
 
 #### Argument error handling
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.pt -g` or with any other not listed arguments
+ - When any other (eg. `get`) command is given
  - Then it should show an error message like: `Unsupported argument`, also it should print the usage information
 
-#### Missing file
- - Given the terminal opened in the project directory, and no storage file
- - When the application is ran by executing any command that uses the storage file
- - Then it should create a new storage file in the current directory
 
 #### Checked state
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -l`
+ - Starting the project with a file already created that stores todos
+ - When `list` command is given
  - Then it should show the checked state for each task like:
 
 ```
@@ -123,31 +119,53 @@ Do homework
 2 - [ ] Buy milk
 3 - [x] Do homework
 ```
-The state of the todos should be stored in the storage file. (CSV is recommended)
 
 #### Check task
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -c 2`
+ - When `complete 2` command is given
  - Then it should check the second item from the file, if it is listed it should show up as checked
 
 #### Check task error handling
 1:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -c`
- - Then it should show an error message like: `Unable to check: No index is provided`
+ - When `complete` command is given, without specifying the index of the todo
+ - Then it should show an error message like: `Unable to complete: No index is provided`
 
 2:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -c 20`
- - Then it should show an error message, if there is no todo item on that index, like: `Unable to check: Index is out of bound`
+ - When `complete 20` command is given, when there are only 3 todos
+ - Then it should show an error message, if there is no todo item on that index, like: `Unable to complete: Index is out of bound`
 
 3:
 
- - Given the terminal opened in the project directory, and a file that stores the todos
- - When the application is ran by executing `python todo.py -c apple`
- - Then it should show an error message like: `Unable to check: Index is not a number`
+ - When `complete apple` command is given
+ - Then it should show an error message like: `Unable to complete: Index is not a number`
+
+#### Store state in file & load it at start
+ - When the application running is finished, before exiting
+ - The program should save the current state of todos, so next time the user can check them again
+ - When the application is starting the program should check the file and load its contents to the list
+ - The name and the state of the todos should be stored in the storage file. (CSV is recommended)
+ - For example:
+
+ ```
+ not_checked;Walk the dog
+ not_checked;Buy milk
+ checked;Do homework
+ ```
+
+ - or you can just use `0` and `1` instead of checked and not_checked
+
+##### Missing file
+ - When the application starts it should check if the storage file exists
+ - Then it should create a new storage file in the current directory if not
+
+##### Help
+ - Ignore the storage file in the git repository using .gitignore
+
+#### Multiple users
+ - When the program starts it should ask for the username and load the todos for the user
+ - Obviously different storage files are needed for different users
+
 
 
 ## Individual Workshop Review
