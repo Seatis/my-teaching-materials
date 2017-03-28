@@ -22,7 +22,7 @@ They usually contains our tasks separated in columns (todo, doing, done).
 Please create a kanban board for yourself and add the tasks (stories) that need to be done.
 Later on, update your board, so you can always see your project's state and your next steps.
 
-##How to create your kanban board and where to work?
+**How to create your kanban board and where to work?**
   - Create a new public repository with the name: your_github_handle-todoApp under greenfox-academy organization
   - Develop your todo application in this repo
   - Add tag to your new repository with your class name (so we can find your project easily).
