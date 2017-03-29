@@ -41,7 +41,7 @@
 ### Use Class
 
 - [Dominoes](dominoes/python)
-- [Dice](dice/pyhton)
+- [Dice](dice/python)
 - [Fleet of Things](fleet-of-things/python)
 
 ### Encapsulation and Constructor
