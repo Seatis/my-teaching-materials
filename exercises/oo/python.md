@@ -42,7 +42,7 @@
 
 - [Dominoes](#)
 - [Dice](#)
-- [Fleet of Things](#)
+- [Fleet of Things](fleet-of-things/python)
 
 ### Encapsulation and Constructor
 
