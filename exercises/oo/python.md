@@ -35,8 +35,8 @@
 
 ### Data Structure
 
-- [Post-it](#)
-- [BlogPost](#)
+- [Post-it](post-it)
+- [BlogPost](blog-post)
 
 ### Use Class
 
