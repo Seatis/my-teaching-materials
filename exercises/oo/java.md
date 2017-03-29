@@ -19,6 +19,20 @@
 ## Workshop
 
 ### Data Structure
+```java
+public class Bicycle {
+   int cadence;
+   int gear;
+   int speed;
+}
+```
+```java
+  public class FamilyMember {
+    String name;
+    int age;
+    String surname;
+}
+```
 
 - [Post-it](post-it)
 - [BlogPost](blog-post)
