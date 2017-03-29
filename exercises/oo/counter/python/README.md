@@ -7,6 +7,5 @@
   - and we can `get()` the current value
   - also we can `reset()` the value to the initial value
 - Check if everything is working fine with the proper test
-  - Download `CounterTest.java` and place it next to your solution
-  - If something's red in it, ALT+Enter Add JUnit to classpath
-  - Then run the tests with the green play button before the lines (run all of them before the classname)
+  - Download `test_counter.py` and place it next to your solution
+  - Run the test file as a usual python program
