@@ -35,7 +35,7 @@ Show them the [`137.5` degree in Google images](https://www.google.hu/search?q=1
 
 ### Explain the math
 
- - What does it mean to conver from polar to cartesian?
+ - What does it mean to convert from polar to cartesian?
  - Show the research paper: http://algorithmicbotany.org/papers/abop/abop-ch4.pdf
 
 ### Implement the conversion
