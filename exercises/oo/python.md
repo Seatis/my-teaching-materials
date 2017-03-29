@@ -72,6 +72,42 @@ class BankAccount(object):
 
 ### Classes as Fields
 
+```python
+class Page(object):
+    def __init__(self, content=''):
+        self.content = content
+
+class Book(object):
+    def __init__(self):
+        self.pages = []
+
+    def add(self, page):
+        self.pages.append(page)
+
+    def addEmptyPage(self):
+        self.pages.append(Page())
+
+    def remove(self, index):
+        del self.pages[index]
+
+    def update(self, index, page):
+        self.pages[index] = page
+
+    def countBlankPages(self):
+        counter = 0
+        for page in self.pages:
+            if page.content == '':
+                counter += 1
+        return counter
+
+    def removeBlankPages(self):
+        pages = []
+        for page in self.pages:
+            if page.content != '':
+                pages.append(page)
+        self.pages = pages
+```
+
 - [Sharpie Set](#)
 - [Farm](#)
 - [Blog](#)
