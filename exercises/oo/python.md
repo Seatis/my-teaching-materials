@@ -46,6 +46,21 @@
 
 ### Encapsulation and Constructor
 
+```python
+class BankAccount(object):
+    def __init__(self, name, balance=0.0):
+        self.name = name
+        self.balance = balance
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
+```
+
 - [Animal](#)
 - [Sharpie](#)
 - [Counter](#)
