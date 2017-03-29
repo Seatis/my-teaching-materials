@@ -90,18 +90,6 @@ public class Book {
     pages.add(page);
   }
 
-  public void addEmptyPage() {
-    pages.add(new Page());
-  }
-
-  public void remove(int index) {
-    pages.remove(index);
-  }
-
-  public void update(int index, Page page) {
-    pages.set(index, page);
-  }
-
   public int countBlankPages() {
     int counter = 0;
     for (Page page : this.pages) {
@@ -110,16 +98,6 @@ public class Book {
       }
     }
     return counter;
-  }
-
-  public void removeBlankPages() {
-    List<Page> pages = new ArrayList<>();
-    for (Page page : this.pages) {
-      if (!page.getContent().isEmpty()) {
-        pages.add(page);
-      }
-    }
-    this.pages = pages;
   }
 }
 ```
