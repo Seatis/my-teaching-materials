@@ -51,9 +51,9 @@ public class Main {
 
 ### Encapsulation and Constructor
 
-- [Animal](#)
-- [Sharpie](#)
-- [Counter](#)
+- [Animal](animal)
+- [Sharpie](sharpie)
+- [Counter](counter/java)
 
 ### Complex Architectures
 
