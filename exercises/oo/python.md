@@ -27,6 +27,7 @@
  - `self`
  - method
  - instantiation
+ - constructor
  - `__init__(self)`
  - class variable
  - instance variable
@@ -35,6 +36,25 @@
 
 ### Data Structure
 
+```python
+class Car:
+    brand = ''
+    model = ''
+    color = ''
+
+car1 = Car()
+car2 = Car()
+
+car1.brand = 'Nissan'
+car1.model = 'Sunny'
+car1.color = 'green'
+car2.brand = 'Mercedes'
+car2.model = '190'
+car2.color = 'red'
+
+print ('Brand of car1: ' + car1.brand + ', Model: ' + car1.model + ', Color: ' + car1.color)
+print ('Brand of car2: ' + car2.brand + ', Model: ' + car2.model + ', Color: ' + car2.color)
+```
 - [Post-it](post-it)
 - [BlogPost](blog-post)
 
