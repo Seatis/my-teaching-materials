@@ -40,7 +40,7 @@
 
 ### Use Class
 
-- [Dominoes](#)
+- [Dominoes](dominoes/python)
 - [Dice](dice/pyhton)
 - [Fleet of Things](fleet-of-things/python)
 

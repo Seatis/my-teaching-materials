@@ -45,7 +45,7 @@ public class Main {
 }
 ```
 
-- [Dominoes](#)
+- [Dominoes](dominoes/java)
 - [Dice](dice/java)
 - [Fleet of Things](fleet-of-things/java)
 
