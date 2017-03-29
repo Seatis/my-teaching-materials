@@ -1,7 +1,5 @@
 # Graphics in Python
-
-## Objectives
-* draw on a canvas using Tkinter
+Draw on a canvas using Tkinter and our previous knowledge about control flow and functions
 
 ## Materials & Resources
 | Material | Time |
