@@ -1,6 +1,5 @@
 # Recursion
-What happens when a function calls itself? [Learn more here](
-java.md)
+What happens when a function calls itself?
 
 ## Materials & Resources
 | Material | Time |
@@ -9,6 +8,7 @@ java.md)
 |[Algorithms: Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms)| 5:40 |
 |[Java Recursion](https://www.youtube.com/watch?v=neuDuf_i8Sg)| 14:11 |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
+| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/exercises/recursion/java.md) | ∞ |
 
 
 
@@ -32,12 +32,12 @@ java.md)
 ### Factorial with loop
 
 ```java
-public static int factorial_loop(int n) { 
+public static int factorial_loop(int n) {
       int factorial = 1;
       for(int i = 1; i<n+1; i++){
       	factorial *= i;
       	}
-      return factorial;	
+      return factorial;
  }
  ```
 
@@ -45,7 +45,7 @@ public static int factorial_loop(int n) {
 ### Factorial with recursion
 
 ```java
-public static int factorial_recursive(int n) { 
+public static int factorial_recursive(int n) {
       if(n == 1)
            return 1;
       else
@@ -58,7 +58,7 @@ public static int factorial_recursive(int n) {
  - [01](basic_math_examples/counter.java)
  - [02](basic_math_examples/numberadder.java)
  - [03](basic_math_examples/sumdigit.java)
- - [04](basic_math_examples/power.java)	
+ - [04](basic_math_examples/power.java)
  - [05](bunnies/bunny1.java)
  - [06](bunnies/bunny2.java)
  - [07](strings/string1.java)

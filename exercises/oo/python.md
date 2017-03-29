@@ -35,16 +35,31 @@
 
 ### Data Structure
 
-- [Post-it](#)
-- [BlogPost](#)
+- [Post-it](post-it)
+- [BlogPost](blog-post)
 
 ### Use Class
 
-- [Dominoes](#)
-- [Dice](#)
-- [Fleet of Things](#)
+- [Dominoes](dominoes/python)
+- [Dice](dice/pyhton)
+- [Fleet of Things](fleet-of-things/python)
 
 ### Encapsulation and Constructor
+
+```python
+class BankAccount(object):
+    def __init__(self, name, balance=0.0):
+        self.name = name
+        self.balance = balance
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
+```
 
 - [Animal](#)
 - [Sharpie](#)

@@ -2,19 +2,6 @@
 
 ## Materials & Resources
 
-### Doable homework
-- Create 5 trees
-  - Store the data of them in variables in your program
-  - every tree should have
-    - type
-    - leave color
-    - age
-    - sex
-  - you can use just variables, or lists and/or maps
-- Create a function called `water` which can water one tree (specified in the parameter)
-  - changes the color to `"green"`
-  - increases the age by one
-
 ### Materials
 - Before starting the materials
 - Do this little exercise: [Doable homework](homework.md)
@@ -33,14 +20,34 @@
 
 ### Data Structure
 
-- [Post-it](#)
-- [BlogPost](#)
+- [Post-it](post-it)
+- [BlogPost](blog-post)
 
 ### Use Class
 
-- [Dominoes](#)
-- [Dice](#)
-- [Fleet of Things](#)
+```java
+public class Usable {
+  String status;
+  public Usable() {
+    status = "I'm not used at all";
+  }
+
+  public void use() {
+    status = "Now, I was used at least once."
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Usable firstUsable = new Usable();
+    firstUsable.use();
+  }
+}
+```
+
+- [Dominoes](dominoes/java)
+- [Dice](dice/java)
+- [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
 
