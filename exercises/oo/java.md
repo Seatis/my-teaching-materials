@@ -46,7 +46,7 @@ public class Main {
 ```
 
 - [Dominoes](#)
-- [Dice](#)
+- [Dice](dice/java)
 - [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
