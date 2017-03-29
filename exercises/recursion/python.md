@@ -1,6 +1,5 @@
 # Recursion
-What happens when a function calls itself? [Learn more here](
-python.md)
+What happens when a function calls itself?
 
 ## Materials & Resources
 | Material | Time |
@@ -17,7 +16,7 @@ python.md)
 | [Stepping Through Recursive Fibonacci Function](https://www.youtube.com/watch?v=zg-ddPbzcKM&index=18&list=PL36E7A2B75028A3D6) | 8:03 |
 | | |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
-| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/python/recursion) | ∞ |
+| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/exercises/recursion/python.md) | ∞ |
 
 
 ### Optional
@@ -69,7 +68,7 @@ print('5! is', factorial(5))
  - [01](basic_math_examples/counter.py)
  - [02](basic_math_examples/numberadder.py)
  - [03](basic_math_examples/sumdigit.py)
- - [04](basic_math_examples/power.py)	
+ - [04](basic_math_examples/power.py)
  - [05](bunnies/bunny1.py)
  - [06](bunnies/bunny2.py)
  - [07](strings/string1.py)
