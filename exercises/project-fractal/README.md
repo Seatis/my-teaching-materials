@@ -18,16 +18,18 @@ Draw fractals with recursive functions.
 
 ## Fractals for 1 XP
 
-|:-----:|:-----:|
-|Triangles| ![triangles](triangles.jpg) |
-|Circles | ![circles](circles.gif)  |
-|Hexagon | ![hexagon](hexagon.jpg)  |
-|Sierpinsky carpet | ![carpet](sierpinski-carpet.png)  |
-|Square grid | ![grid](square-grid.jpg)  |
-|Koch line | ![koch](koch.png)   |
+| * | *  |
+| --- | --- |
+| Triangles         | ![triangles](triangles.jpg) |
+| Circles           | ![circles](circles.gif) |
+| Hexagon           | ![hexagon](hexagon.jpg) |
+| Sierpinsky carpet | ![carpet](sierpinski-carpet.png) |
+| Square grid       | ![grid](square-grid.png) |
+| Koch line         | ![koch](koch.png)  |
 
 ## Fractals for 2 XP
 
-|:-----:|:-----:|
-|Koch snowflake| ![snowflake](kochsnowflake.png) |
-|Tree | ![tree](tree.png)  |
+| * | *  |
+| --- | --- |
+| Koch snowflake | ![snowflake](kochsnowflake.png) |
+| Tree | ![tree](tree.png)  |
