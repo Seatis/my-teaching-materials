@@ -36,7 +36,7 @@ public static int factorial_loop(int n) {
       int factorial = 1;
       for(int i = 1; i<n+1; i++){
       	factorial *= i;
-      	}
+      	  }
       return factorial;
  }
  ```
@@ -46,25 +46,27 @@ public static int factorial_loop(int n) {
 
 ```java
 public static int factorial_recursive(int n) {
-      if(n == 1)
-           return 1;
-      else
-           return n * factorial_recursive(n - 1);
+      if(n == 1){
+        return 1;
+      }
+      else{
+        return n * factorial_recursive(n - 1);
+      }
  }
  ```
 
 ### Exercises
 
- - [01](basic_math_examples/counter.java)
- - [02](basic_math_examples/numberadder.java)
- - [03](basic_math_examples/sumdigit.java)
- - [04](basic_math_examples/power.java)
- - [05](bunnies/bunny1.java)
- - [06](bunnies/bunny2.java)
- - [07](strings/string1.java)
- - [08](strings/string2.java)
- - [09](strings/string3.java)
- - [10](fibonacci/fibonacci.java)
+ - [01 Counter](counter/Counter.java)
+ - [02 Numberadder](numberadder/Numberadder.java)
+ - [03 Sumdigit](sumdigit/Sumdigit.java)
+ - [04 Power](power/Power.java)
+ - [05 Bunnies](bunnies/Bunny1.java)
+ - [06 Bunnies again](bunnies2/Bunny2.java)
+ - [07 Strings](strings/String1.java)
+ - [08 Strings again](strings2/String2.java)
+ - [09 Strings again and again](strings3/String3.java)
+ - [10 Fibonacci](fibonacci/Fibonacci.java)
  - 11: reproduce this:   
 ![11](drawing/graphic.png)
  - 12: reproduce this:   
