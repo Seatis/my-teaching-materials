@@ -20,20 +20,40 @@
 
 ### Data Structure
 
-- [Post-it](#)
-- [BlogPost](#)
+- [Post-it](post-it)
+- [BlogPost](blog-post)
 
 ### Use Class
 
-- [Dominoes](#)
-- [Dice](#)
+```java
+public class Usable {
+  String status;
+  public Usable() {
+    status = "I'm not used at all";
+  }
+
+  public void use() {
+    status = "Now, I was used at least once."
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Usable firstUsable = new Usable();
+    firstUsable.use();
+  }
+}
+```
+
+- [Dominoes](dominoes/java)
+- [Dice](dice/java)
 - [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
 
-- [Animal](#)
-- [Sharpie](#)
-- [Counter](#)
+- [Animal](animal)
+- [Sharpie](sharpie)
+- [Counter](counter/java)
 
 ### Complex Architectures
 
