@@ -25,6 +25,26 @@
 
 ### Use Class
 
+```java
+public class Usable {
+  String status;
+  public Usable() {
+    status = "I'm not used at all";
+  }
+
+  public void use() {
+    status = "Now, I was used at least once."
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Usable firstUsable = new Usable();
+    firstUsable.use();
+  }
+}
+```
+
 - [Dominoes](#)
 - [Dice](#)
 - [Fleet of Things](fleet-of-things/java)
