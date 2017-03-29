@@ -63,7 +63,7 @@ class BankAccount(object):
 
 - [Animal](animal)
 - [Sharpie](sharpie)
-- [Counter](counter)
+- [Counter](counter/python)
 
 ### Complex Architectures
 

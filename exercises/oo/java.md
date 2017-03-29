@@ -53,7 +53,7 @@ public class Main {
 
 - [Animal](animal)
 - [Sharpie](sharpie)
-- [Counter](counter)
+- [Counter](counter/java)
 
 ### Complex Architectures
 
