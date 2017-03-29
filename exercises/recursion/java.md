@@ -48,10 +48,10 @@ public static int factorial_loop(int n) {
 public static int factorial_recursive(int n) {
       if(n == 1){
         return 1;
-      }
+        }
       else{
         return n * factorial_recursive(n - 1);
-      }
+        }
  }
  ```
 
