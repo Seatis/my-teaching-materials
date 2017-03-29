@@ -61,9 +61,9 @@ class BankAccount(object):
         return self.balance
 ```
 
-- [Animal](#)
-- [Sharpie](#)
-- [Counter](#)
+- [Animal](animal)
+- [Sharpie](sharpie)
+- [Counter](counter)
 
 ### Complex Architectures
 
