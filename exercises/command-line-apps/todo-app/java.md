@@ -30,15 +30,16 @@ Please create a kanban board for yourself and add the tasks (stories) that need 
 Later on, update your board, so you can always see your project's state and your next steps.
 
 **How to create your kanban board and where to work?**
-  - Create a new public repository with the name: your_github_handle-todoApp under greenfox-academy organization
-  - Develop your todo application in this repo
+  - Create a new public repository with the name: YourGithubHandle-todoApp under greenfox-academy organization,
+    and work in it later.
   - Add tag to your new repository with your class name (so we can find your project easily).
-  - At the Projects menu on Github, please create a new project called TODO Application
+  - In your new repository: in the Projects view on Github, please create a new project called TODO Application
   - Then create your board. It should consist 4 columns:
     - Todo
     - Doing
     - Review
     - Done
+  - Add stories to your board
 
 You should not have 2 or more stories in Doing and Review
 If you have a story in Review show it to one of the mentors to push it to done.
