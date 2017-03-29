@@ -27,6 +27,7 @@
  - `self`
  - method
  - instantiation
+ - constructor
  - `__init__(self)`
  - class variable
  - instance variable
