@@ -32,28 +32,28 @@ What happens when a function calls itself?
 ### Factorial with loop
 
 ```java
-public static int factorial_loop(int n) {
-      int factorial = 1;
-      for(int i = 1; i<n+1; i++){
-      	factorial *= i;
-      	}
-      return factorial;
- }
- ```
+public static int factorialLoop(int n) {
+  int factorial = 1;
+  for(int i = 1; i<n+1; i++) {
+   	factorial *= i;
+ 	}
+  return factorial;
+}
+```
 
 
 ### Factorial with recursion
 
 ```java
-public static int factorial_recursive(int n) {
-      if(n == 1){
-        return 1;
-        }
-      else{
-        return n * factorial_recursive(n - 1);
-        }
- }
- ```
+public static int factorialRecursive(int n) {
+  if(n == 1) {
+    return 1;
+  }
+  else {
+    return n * factorialRecursive(n - 1);
+  }
+}
+```
 
 ### Exercises
 
