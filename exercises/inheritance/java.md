@@ -5,6 +5,8 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 
 ### Training
 - Before starting the materials do this little exercise: [Exercise before materials](https://TODO)
+
+
 | Material | Time |
 |:-------- |-----:|
 |[Java Inheritance Tutorials Theory (slidenerd 46)](https://www.youtube.com/watch?v=i2ghIckPZfE)|14:06|
