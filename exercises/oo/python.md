@@ -118,8 +118,8 @@ class BankAccount(object):
 
 ### Complex Architectures
 
-- [Teachers and Students](#)
-- [Petrol Station](#)
+- [Teachers and Students](teachers-and-student)
+- [Petrol Station](petrol-station)
 
 ### Classes as Fields
 
@@ -143,9 +143,9 @@ class Book(object):
         return counter
 ```
 
-- [Sharpie Set](#)
-- [Farm](#)
-- [Blog](#)
+- [Sharpie Set](sharpie-set)
+- [Farm](farm)
+- [Blog](blog)
 
 ### Alltogether
 
