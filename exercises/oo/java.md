@@ -68,28 +68,20 @@ public class Main {
 - [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
-```
+```java
 public class Human {
     private String name;
     private int age;
-    private int iq, height, weight;
+    private int iq;
 
     public Human() {
-        this("unkown", 0, 0, 0, 0);
+        this("unkown", 0, 0);
     }
 
-    public Human(String name, int age) {
-        this.name = name;
-        this.age = age;
-        this.iq = this.height = this.weight = 0;
-    }
-
-    public Human(String name, int age, int iq, int height, int weight) {
+    public Human(String name, int age, int iq) {
         this.name = name;
         this.age = age;
         this.iq = iq;
-        this.height = height;
-        this.weight = weight;
     }
 
     public boolean isSmart(){
@@ -104,69 +96,16 @@ public class Human {
         this.iq += 20;
     }
 
-    @Override
-    public String toString() {
-        return "Human{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", iq=" + iq +
-                ", height=" + height +
-                ", weight=" + weight +
-                '}';
-    }
-
     public static void main(String[] args) {
-
         Human human = new Human();
-        System.out.println(human.toString());
-
-        Human human2 = new Human("Teemo",4);
-        System.out.println(human2.toString());
-
-        Human human3 = new Human("Nami",18,110,140,40);
-        System.out.println(human3.toString());
-
+        Human human2 = new Human("Pista",18,110,140,40);
+        
         human.name="Hector";
-        System.out.println("human's name is: "+human.name);
-        System.out.println(human.toString());
-
         human.age=1;
-        System.out.println(human.age);
-
-        human2.age=human2.height=human2.weight=1;
-        human2.iq=-1;
-        System.out.println(human2.toString());
-
-        ArrayList<Human> humans = new ArrayList<>();
-        humans.add(human);
-        humans.add(human2);
-        humans.add(human3);
-
-        fameOrShame(humans);
-        for (int i = 0; i < 11; ++i){
-            human.beSmarter();
-        }
-        fameOrShame(humans);
-    }
-
-    public static void fameOrShame(ArrayList<Human> humans){
-        for (Human human : humans
-                ) {
-            String output = "";
-            if(human.isSmart()){
-                output = human.name + "is smart";
-                if(human.isNameless()){
-                    System.out.println(output + "but nameless");
-                }else {
-                    System.out.println(output);
-                }
-            }else{
-                System.out.println(human.name + " is not smart");
-            }
-        }
-    }
-}
-
+		
+		if(human.isSmart()){
+			System.out.println(human.name + " is smart, with iq: " + human.iq);
+		}
 ```
 
 - [Animal](animal)
