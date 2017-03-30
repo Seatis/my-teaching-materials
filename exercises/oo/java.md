@@ -10,9 +10,7 @@
 |:---------|-----:|
 | [Class and Object](https://www.youtube.com/watch?v=eKC04ztp09o) | 1:37 |
 | [Fields](https://www.youtube.com/watch?v=UDVVPUqjsRg) | 1:37 |
-| [Visibility](https://www.youtube.com/watch?v=aRQRV2PMHtk) | 7:53 |
-| [Getter and Setter](https://www.youtube.com/watch?v=D3Arfy77Vok) | 15:22 |
-| [Encapsulation](https://www.youtube.com/watch?v=szYzBC89CPE) | 1:08 |
+| [Encapsulation](https://www.youtube.com/watch?v=tt_astMjep0) | till 2:40 |
 | [Class and Object again](https://www.youtube.com/watch?v=0NPR8GFHNmE) | 13:43 |
 | [This](https://www.youtube.com/watch?v=hUZ4jQmgwi4) | 4:11 |
 | [New](https://www.youtube.com/watch?v=VyPFa1Slh7A#t=50) | 12:11 |
@@ -30,12 +28,6 @@
 - Class
 - Object
 - Fields
-- Visibility
-  - Default
-  - Private
-  - Protected
-  - Public
-- Getter 'n Setter
 - Encapsulation
 - This
 - New
@@ -83,8 +75,7 @@ public class Human {
     private int iq, height, weight;
 
     public Human() {
-        name = "unknow";
-        age = iq = height = weight =0;
+        this("unkown", 0, 0, 0, 0);
     }
 
     public Human(String name, int age) {
@@ -101,56 +92,16 @@ public class Human {
         this.weight = weight;
     }
 
-    public String getName() {
-        return name;
+    public boolean isSmart(){
+        return (iq > 100);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public boolean isNameless(){
+        return (this.name.equals("unkown") || this.name.equals(""));
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        if(isBiggerThanZero(age)){
-            this.age = age;
-        }
-    }
-
-    public int getIq() {
-        return iq;
-    }
-
-    public void setIq(int iq) {
-        if(isBiggerThanZero(iq)){
-            this.iq = iq;
-        }
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        if(isBiggerThanZero(height)){
-            this.height = height;
-        }
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        if(isBiggerThanZero(weight)){
-            this.weight = weight;
-        }
-    }
-
-    private boolean isBiggerThanZero(int number){
-        return (number > 0);
+    public void beSmarter(){
+        this.iq += 20;
     }
 
     @Override
@@ -165,35 +116,54 @@ public class Human {
     }
 
     public static void main(String[] args) {
-        //empty || default Constructor
+
         Human human = new Human();
         System.out.println(human.toString());
-        //"Human{ name=unknow, age=0, iq=0, height=0, weight=0}"
 
-        // 2 args Constructor
         Human human2 = new Human("Teemo",4);
         System.out.println(human2.toString());
-        //"Human{ name=Teemo, age=4, iq=0, height=0, weight=0}"
 
-        // all args Constructor
-        Human human3 = new Human("Nami",18,100,140,40);
+        Human human3 = new Human("Nami",18,110,140,40);
         System.out.println(human3.toString());
-        //"Human{ name=Nami, age=18, iq=100, height=140, weight=40}"
 
-        //modify human's name
-        human.setName("Hector");
-        System.out.println("human's name is: "+human.getName());
-        //human's anem is: Hector
+        human.name="Hector";
+        System.out.println("human's name is: "+human.name);
         System.out.println(human.toString());
-        //"Human{ name=unknow, age=0, iq=0, height=0, weight=0}"
 
-        //modify human's age
-        human.setAge(-1);
-        System.out.println(human.getAge());
-        //0
-        human.setAge(1);
-        System.out.println(human.getAge());
-        //1
+        human.age=1;
+        System.out.println(human.age);
+
+        human2.age=human2.height=human2.weight=1;
+        human2.iq=-1;
+        System.out.println(human2.toString());
+
+        ArrayList<Human> humans = new ArrayList<>();
+        humans.add(human);
+        humans.add(human2);
+        humans.add(human3);
+
+        fameOrShame(humans);
+        for (int i = 0; i < 11; ++i){
+            human.beSmarter();
+        }
+        fameOrShame(humans);
+    }
+
+    public static void fameOrShame(ArrayList<Human> humans){
+        for (Human human : humans
+                ) {
+            String output = "";
+            if(human.isSmart()){
+                output = human.name + "is smart";
+                if(human.isNameless()){
+                    System.out.println(output + "but nameless");
+                }else {
+                    System.out.println(output);
+                }
+            }else{
+                System.out.println(human.name + " is not smart");
+            }
+        }
     }
 }
 
