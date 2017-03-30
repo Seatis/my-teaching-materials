@@ -34,7 +34,7 @@
 
 ## Workshop
 
-### Data Structure
+### Classes as Data Structure
 
 ```python
 class Car:
