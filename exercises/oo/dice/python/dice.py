@@ -12,13 +12,21 @@ class Dice():
 
     def getCurrent(self, index=None):
         if index != None:
-            print('The current state of dice['+str(index)+']: ', self.dice[index])
+            return self.dice[index]
         else:
-            print('The current state of dice: ', self.dice)
+            return self.dice
 
     def reroll(self, index=None):
         if index != None:
             self.dice[index] = random.randint(1,6)
         else:
             self.roll()
-        return self.dice
+
+
+dice = Dice()
+print(dice.getCurrent())
+dice.roll()
+print(dice.getCurrent())
+dice.reroll(3)
+print(dice.getCurrent(3))
+print(dice.getCurrent())
