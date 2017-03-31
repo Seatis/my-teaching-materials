@@ -20,12 +20,12 @@ Objects can extend other objects allowing programs to re-use code and set defaul
   [Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - Composition part
 
 ## Material Review
-- casting subClass as Class
+- creating, nesting subclasses
 - `super()` constructor
 - `super()` with `__init__()`
 - `isintance()`
 - `issubclass()`
-- getters, setters
+- prperty decorators: getters, setters
 
 Optional
 - Packages
