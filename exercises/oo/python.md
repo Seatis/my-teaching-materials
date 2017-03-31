@@ -118,7 +118,7 @@ class BankAccount(object):
 
 ### Complex Architectures
 
-- [Teachers and Students](teachers-and-student)
+- [Teachers and Students](teachers-and-students)
 - [Petrol Station](petrol-station)
 
 ### Classes as Fields
