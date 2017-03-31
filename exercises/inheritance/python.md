@@ -17,6 +17,8 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 
 
 ### Optional
+  |||
+  |:---------|-----:|
   |[Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - Composition part| reading |
   |[Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)|9:32|
 
@@ -26,9 +28,9 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - `super()` with `__init__()`
 - `isintance()`
 - `issubclass()`
-- prperty decorators: getters, setters
 - modules
 - import
+- property decorators: getters, setters
 
 ## Workshop
 - [Exeercise 1](TODO)
