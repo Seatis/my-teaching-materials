@@ -11,24 +11,22 @@ public class Dice {
         return dices;
     }
 
-    public void getCurrent() {
-        System.out.println(Arrays.toString(dices));
-    }
-
-    public void getCurrent(int i) {
-        System.out.println(dices[i]);
-    }
-
-    public int[] reroll() {
-        for (int i = 0; i < dices.length; i++) {
-            dices[i] = (int) (Math.random() * 6) + 1;
-        }
+    public int[] getCurrent() {
         return dices;
     }
 
-    public int reroll(int k) {
+    public int getCurrent(int i) {
+        return dices[i];
+    }
+
+    public void reroll() {
+        for (int i = 0; i < dices.length; i++) {
+            dices[i] = (int) (Math.random() * 6) + 1;
+        }
+    }
+
+    public void reroll(int k) {
         dices[k] = (int) (Math.random() * 6) + 1;
-        return dices[k];
     }
 
     public static void main(String[] args) {
