@@ -19,6 +19,20 @@
 ## Workshop
 
 ### Data Structure
+```java
+public class Bicycle {
+   int cadence;
+   int gear;
+   int speed;
+}
+```
+```java
+  public class FamilyMember {
+    String name;
+    int age;
+    String surname;
+}
+```
 
 - [Post-it](post-it)
 - [BlogPost](blog-post)
@@ -57,14 +71,54 @@ public class Main {
 
 ### Complex Architectures
 
-- [Teachers and Students](#)
-- [Petrol Station](#)
+- [Teachers and Students](teachers-and-student)
+- [Petrol Station](petrol-station)
 
 ### Classes as Fields
 
-- [Sharpie Set](#)
-- [Farm](#)
-- [Blog](#)
+```java
+public class Page {
+  private String content;
+
+  public Page() {
+    this.content = "";
+  }
+
+  public Page(String content) {
+    this.content = content;
+  }
+
+  public String getContent() {
+    return content;
+  }
+}
+
+public class Book {
+  private List<Page> pages;
+
+  public Book() {
+    this.pages = new ArrayList<>();
+  }
+
+  public void add(Page page) {
+    pages.add(page);
+  }
+
+  public int countBlankPages() {
+    int counter = 0;
+    for (Page page : this.pages) {
+      if (page.getContent().isEmpty()) {
+        counter++;
+      }
+    }
+    return counter;
+  }
+}
+```
+
+- [Sharpie Set](sharpie-set)
+- [Farm](farm)
+- [Blog](blog)
 
 ### Alltogether
 

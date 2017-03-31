@@ -65,16 +65,16 @@ print('5! is', factorial(5))
 
 ### Exercises
 
- - [01](basic_math_examples/counter.py)
- - [02](basic_math_examples/numberadder.py)
- - [03](basic_math_examples/sumdigit.py)
- - [04](basic_math_examples/power.py)
- - [05](bunnies/bunny1.py)
- - [06](bunnies/bunny2.py)
- - [07](strings/string1.py)
- - [08](strings/string2.py)
- - [09](strings/string3.py)
- - [10](fibonacci/fibonacci.py)
+ - [01 Counter](counter/counter.py)
+ - [02 Numberadder](numberadder/numberadder.py)
+ - [03 Sumdigit](sumdigit/sumdigit.py)
+ - [04 Power](power/power.py)
+ - [05 Bunnies](bunnies/bunny1.py)
+ - [06 Bunnies again](bunnies2/bunny2.py)
+ - [07 Strings](strings/string1.py)
+ - [08 Strings again](strings2/string2.py)
+ - [09 Strings again and again](strings3/string3.py)
+ - [10 Fibonacci](fibonacci/fibonacci.py)
  - 11: reproduce this:   
 ![11](drawing/graphic.png)
  - 12: reproduce this:   
