@@ -11,13 +11,16 @@ Objects can extend other objects allowing programs to re-use code and set defaul
   |[Python Programming Tutorial - 32 - Inheritance](https://www.youtube.com/watch?v=oROcVrgz91YE)|6:51|
   |[Python Programming Tutorial - 33 - Multiple Inheritance](https://www.youtube.com/watch?v=YCEVvs5BhpY)|5:38|
   |[Python OOP Tutorial 4: Inheritance - Creating Subclasses](https://www.youtube.com/watch?v=RSl87lqOXDE)|19:39|
-  |[Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)|9:32|
   |||
+  |[General introduction to modules](http://pymbook.readthedocs.org/en/latest/modules.html) | reading |
   |[Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - until Composition|reading|
 
 
 ### Optional
-  [Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - Composition part
+  |||
+  |:---------|-----:|
+  |[Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - Composition part| reading |
+  |[Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)|9:32|
 
 ## Material Review
 - creating, nesting subclasses
@@ -25,22 +28,9 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - `super()` with `__init__()`
 - `isintance()`
 - `issubclass()`
-- prperty decorators: getters, setters
-
-Optional
-- Packages
-  -  `package` keyword
-  - resolve to a type
-  - `import` &lt;package&gt;.&lt;class&gt;
-  - `import` &lt;package&gt;.*
-- Organization
-  - Flat
-  - Hierarchical
-- Declaration - fully qualifying the &lt;package&gt;.&lt;class&gt;
-- Access Levels &amp; Visibility
-  - access modifiers: `public`, `protected`, `default`, `private`
-  - Class, Package, Subclass and World
-
+- modules
+- import
+- property decorators: getters, setters
 
 ## Workshop
 - [Exeercise 1](TODO)
