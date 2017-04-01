@@ -8,7 +8,7 @@ Create a `Person` class with the following fields:
 
 
 And the following methods:
-- `introduce()`: prints out "Hi, I'm &lt;`name`&gt;, a &lt;`age`&lt; year old &lt;`gender`&lt;."
+- `introduce()`: prints out "Hi, I'm `name`, a `age` year old `gender`."
 - `getGoal()`: prints out "My goal is: Live for the moment!"
 
 
@@ -24,7 +24,7 @@ Create a `Student` class that has the same fields and methods as the `Person` cl
     - `skippedDays`: the number of days skipped from the course
 - methods:
     - `getGoal()`: prints out "Be a junior software developer."
-    - `introduce()`: "Hi, I'm &lt;`name`&gt;, a &lt;`age`&gt; year old &lt;`gender`&gt; from &lt;`previousOrganization`&gt; who skipped &lt;`skippedDays`&gt; days from the course already."
+    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` from `previousOrganization` who skipped `skippedDays` days from the course already."
     - `skipDays(numberOfDays)`: increases `skippedDays` by `numberOfDays`
 
 The `Student` class has the following constructors:
@@ -37,7 +37,7 @@ Create a `Mentor` class that has the same fields and methods as the `Person`clas
     - `level`: the level of the mentor (junior / intermediate / senior)
 - methods:
     - `getGoal()`: prints out "Educate brilliant junior software developers."
-    - `introduce()`: "Hi, I'm &lt;`name`&gt;, a &lt;`age`&gt; year old &lt;`gender`&gt; &lt;`level`&gt; mentor."
+    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` `level` mentor."
 
 
 The `Mentor` class has the following constructors:
@@ -51,7 +51,7 @@ Create a `Sponsor` class that has the same fields and methods as the `Person`cla
     - `company`: name of the company
     - `hiredStudents`: number of students hired
 - method:
-    - `introduce()`: "Hi, I'm &lt;`name`&gt;, a &lt;`age`&gt; year old &lt;`gender`&gt; who represents &lt;`company`&gt; and hired &lt;`hiredStudents`&gt; students so far."
+    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` who represents `company` and hired `hiredStudents` students so far."
     - `hire()`: increase `hiredStudents` by 1
     - `getGoal()`: prints out "Hire brilliant junior software developers."
 
@@ -70,7 +70,7 @@ Create a `LagopusClass` class that has the following
 - methods:
 	- `addStudent(Student)`: adds the given `Student` to `students` list
 	- `addStudent(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `info()`: prints out "Lagopus &lt;`className`&gt; class has &lt;`students.size`&gt; students and &lt;`mentors`.size&gt; mentors."
+	- `info()`: prints out "Lagopus `className` class has `students.size` students and `mentors`.size mentors."
 
 
 The `LagopusClass` class has the following constructors:
