@@ -43,7 +43,7 @@ Optional
   - `import` &lt;package&gt;.*
 
 ## Workshop
-- [Green Fox organizations](green-fox/green-fox.md)
+- [Green Fox organization](green-fox/green-fox.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 

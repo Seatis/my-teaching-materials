@@ -33,7 +33,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - property decorators: getters, setters
 
 ## Workshop
-- [Green Fox organizations](green-fox/green-fox.md)
+- [Green Fox organization](green-fox/green-fox.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 
