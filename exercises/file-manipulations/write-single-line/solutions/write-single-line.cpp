@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-  // Open a file called "first-exercise.txt"
+  // Open a file called "my-file.txt"
   // Write your name and a new line to the file using this program
   ofstream file;
-  file.open("first-exercise.txt");
+  file.open("my-flie.txt");
   file << "John Doe\n";
   file.close();
 
