@@ -1,3 +1,3 @@
-# Create a method that returns the five most frequent lottery number in a pretty table format
+# Create a method that find the 5 most common lottery numbers otos.csv
 def five_most_frequent():
     pass
