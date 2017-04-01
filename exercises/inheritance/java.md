@@ -11,10 +11,10 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 |:-------- |-----:|
 |[Java Inheritance Tutorials Theory (slidenerd 46)](https://www.youtube.com/watch?v=i2ghIckPZfE)|14:06|
 |[Java Inheritance Tutorials Example (slidenerd 47)](https://www.youtube.com/watch?v=PHden2Po8YU)|10:16|
-|[Inheritance (NewBoston.49)](https://www.youtube.com/watch?v=9JpNY-XAseg)|9:24|
 |[Inheritance & Polymorphism (Bana.14)](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
 |[Usage of super keyword](http://www.javatpoint.com/super-keyword)||
 |[Access modifiers (Public, Protected, Private, Default) (EJ Media 17)](https://www.youtube.com/watch?v=aRQRV2PMHtk)|7:53|
+|[Getters and setters (Rakshith Vasudev 11)](https://www.youtube.com/watch?v=Z12IEPyh0fc)|24:04|
 
 
 ### Optional
@@ -41,14 +41,6 @@ Optional
   - resolve to a type
   - `import` &lt;package&gt;.&lt;class&gt;
   - `import` &lt;package&gt;.*
-- Organization
-  - Flat
-  - Hierarchical
-- Declaration - fully qualifying the &lt;package&gt;.&lt;class&gt;
-- Access Levels &amp; Visibility
-  - access modifiers: `public`, `protected`, `default`, `private`
-  - Class, Package, Subclass and World
-
 
 ## Workshop
 - [Green Fox organizations](green-fox/green-fox.md)
