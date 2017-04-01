@@ -4,7 +4,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 ## Materials & Resources
 
 ### Training
-- Before starting the materials do this little exercise: [Exercise before materials](https://TODO)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/green-fox-shorter.md)
 
 
 | Material | Time |
@@ -51,16 +51,12 @@ Optional
 
 
 ## Workshop
-- [Exeercise 1](TODO)
+- [Green Fox organizations](green-fox/green-fox.md)
+- [Garden Application](garden-app/garden-app.md)
+- [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 
 
 ## Individual Workshop Review
 As always neatness counts in coding.
 
 Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
-
-
-#Links
-- [Parent - Java OO Module](../README.md)
-- [Prev - Classes &amp; Objects](../1-objects-and-classes/README.md)
-- [Next - Abstracts &amp; Interfaces](../3-abstracts-and-interfaces/README.md)
