@@ -75,3 +75,6 @@ Create a `LagopusClass` class that has the following
 
 The `LagopusClass` class has the following constructors:
 - `LagopusClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
+
+## Result
+- Your program should result [this output](green-fox_output.md) if you run it with [this input](green-fox_input.md)
