@@ -1,3 +1,3 @@
-# Create a method that decrypts texts/reversed_zen_order.txt
+# Create a method that decrypts reversed-order.txt
 def decrypt(file_name):
     pass

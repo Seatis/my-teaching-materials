@@ -139,6 +139,6 @@ public class WriteFile {
 
 #### Optional Hard Exercises
 
- - [10 - EncodedLines.java](decrypt-encoded-lines/EncodedLines.java) | [encoded-lines.txt](decrypt-encoded-lines/encoded-lines.txt)
+ - [10 - EncodedLines.java](decrypt-encoded/EncodedLines.java) | [encoded-lines.txt](decrypt-encoded/encoded-lines.txt)
  - [11 - Lottery.java](lottery/Lottery.java) | [otos.csv](lottery/otos.csv)
 

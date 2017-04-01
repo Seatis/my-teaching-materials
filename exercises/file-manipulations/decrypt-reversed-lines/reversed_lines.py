@@ -1,3 +1,3 @@
-# Create a method that decrypts texts/reversed_zen_lines.txt
+# Create a method that decrypts reversed-lines.txt
 def decrypt(file_name):
     pass

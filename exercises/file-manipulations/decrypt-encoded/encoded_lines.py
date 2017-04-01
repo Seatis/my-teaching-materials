@@ -1,3 +1,3 @@
-# Create a method that decrypts texts/encoded_zen_lines.txt
+# Create a method that decrypts encoded-lines.txt
 def decrypt(file_name):
     pass
