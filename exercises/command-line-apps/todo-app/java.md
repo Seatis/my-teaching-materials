@@ -24,7 +24,7 @@ This is a complex exercise, so please read through the whole first, then start a
 
 ### Stories
 To follow the state of our projects and manage our work, we use so-called kanban boards.
-They usually contains our tasks separated in columns (todo, doing, done).
+They usually contains our tasks separated in columns (todo, doing, review, done).
 
 Please create a kanban board for yourself and add the tasks (stories) that need to be done.
 Later on, update your board, so you can always see your project's state and your next steps.
@@ -41,8 +41,8 @@ Later on, update your board, so you can always see your project's state and your
     - Done
   - Add stories to your board
 
-You should not have 2 or more stories in Doing and Review
-If you have a story in Review show it to one of the mentors to push it to done.
+You should not have 2 or more stories in Doing.
+If you already have a few stories in Review show them to one of the mentors to push it to done.
 
 #### Usage
  - Run the application in the IDE

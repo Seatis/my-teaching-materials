@@ -10,8 +10,8 @@
 | [General introduction to modules](http://pymbook.readthedocs.org/en/latest/modules.html) | - |
 | [General introduction to file handling / IO](http://pymbook.readthedocs.org/en/latest/file.html) | - |
 
-
 ## Material review
+
  - `open()` and parameters `r, w, a`
  - `close()`
  - `write()`
@@ -22,70 +22,112 @@
  - `help()`
  - `os` library
  - [`requests` module](http://pymbook.readthedocs.io/en/latest/modules.html#requests-module)
- - compile time error
- - runtime error
- - syntactic error
- - semantic error
- - try
+ - Compile time error
+ - Runtime error
+ - Syntax error
+ - Semantic error
+ - `try`
  - exception
- - except
+ - `except`
  - exception types
- - finally
+ - `finally`
 
 ## Workshop
 
-### I/O
+### Exceptions
 
 ```python
-my_file = open("file_name.txt", "r")
+divisor = input()
+
+result = 12 / divisor # If the input value for divisor was 0 the program breaks
+print(result) # The program doesn't reach this line if the input was 0
+```
+
+The result if the input value was zero:
+
+```
+Traceback (most recent call last):
+  File "div.py", line 3, in <module>
+    result = 12 / divisor
+ZeroDivisionError: integer division or modulo by zero
+```
+
+Handle the exception:
+
+```python
+divisor = input()
+
+try: # Prevents the program breaking when attempting dividing by zero
+    result = 12 / divisor # If the input value for divisor was 0 it stops the try block
+    print(result) # The program doesn't reach this line if the input was 0
+except ZeroDivisionError:
+    print("Can't divide by zero!") # This line only runs if the input was 0
+```
+
+#### Exercises
+
+ - [01 - divide_by_zero.py](divide-by-zero/divide_by_zero.py)
+
+
+### Reading files
+
+```python
+my_file = open("file-name.txt", "r")
 ```
 
 4 different ways of reading:
 
 ```python
-my_file.read()
+# reads the entire file as a string
+print(my_file.read())
 
-my_file.readline()
+# reads a line from the file
+print(my_file.readline())
 
-my_file.readlines()
+# reads all lines as a list
+print(my_file.readlines())
 
+# loops through on each of the lines of the file
 for line in my_file:
-      print(line.rstrip())
+    print(line.rstrip()) # rstrip() removes the newline character from the line 
 ```
-<!--
-### Useful string methods
+
 ```python
-split()
-
-" ".join()
-
-my_list[start:end:step]
-
-ord('a')
-
-chr(97)
+file_name = "file-name.txt"
+try:
+    f = open(file_name, "r")
+except IOError:
+    print("cannot open", file_name)
 ```
--->
+
+#### Exercises
+
+ - [02 - print_each_line.py](print-each-line/print_each_line.py)
+ - [03 - count_lines.py](count-lines/count_lines.py)
+
+### Writing files
+
+```python
+my_file = open("file-name.txt", "w")
+my_file.write("Apple") # Wirtes the string "Apple" to the file
+```
+
+#### Exercises
+
+ - [04 - write_single_line.py](write-single-line/write_single_line.py)
+ - [05 - write_multiple_lines.py](write-multiple-lines/write_multiple_lines.py)
+ - [06 - copy_file.py](copy-file/copy_file.py)
 
 ### Decryption
-#### Exercises
- - [Doubled](decrypt_function_doubled/crypto_1dup.py) | [duplicated-chars.txt](decrypt_function_doubled/duplicated-chars.txt)
- - [Reversed Lines](decrypt_function_reversed_lines/crypto_2revlines.py) | [reversed-lines.txt](decrypt_function_reversed_lines/reversed-lines.txt)
- - [Reversed Order](decrypt_function_reversed_order/crypto_3revorder.py) | [reversed-order.txt](decrypt_function_reversed_order/reversed-order.txt)
- - [Encoded Lines](decrypt_function_encoded_lines/crypto_4encoded.py) | [encoded-lines.txt](decrypt_function_encoded_lines/encoded-lines.txt)
-
-
-### Exceptions
-```python
-try:
-    f = open(arg, 'r')
-except IOError:
-    print('cannot open', arg)
-```
 
 #### Exercises
-- [Divide by 0](exceptions/divide_by_0/divide-by-0.py)
-- [No file](exceptions/file_not_exists/file_not_exists.py)
 
-### Optional
- - [Lotto](read_lotto_csv/lottery.py) | [otos.csv](read_lotto_csv/otos.csv)
+ - [07 - doubled.py](decrypt-doubled/doubled.py) | [duplicated-chars.txt](decrypt-doubled/duplicated-chars.txt)
+ - [08 - reversed_lines.py](decrypt-reversed-lines/reversed_lines.py) | [reversed-lines.txt](decrypt-reversed-lines/reversed-lines.txt)
+ - [09 - reversed_order.py](decrypt-reversed-order/reversed_order.py) | [reversed-order.txt](decrypt-reversed-order/reversed-order.txt)
+
+### Optional Hard Exercises
+
+ - [10 - encoded_lines.py](decrypt-encoded/encoded_lines.py) | [encoded-lines.txt](decrypt-encoded/encoded-lines.txt)
+ - [11 - lottery.py](lottery/lottery.py) | [otos.csv](lottery/otos.csv)
+
