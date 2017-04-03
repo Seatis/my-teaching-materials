@@ -84,9 +84,9 @@ public class Main {
 ### Encapsulation and Constructor
 ```java
 public class Human {
-  private String name;
-  private int age;
-  private int iq;
+  String name;
+  int age;
+  int iq;
 
   public Human() {
     this("unkown", 0, 0);
@@ -137,7 +137,7 @@ public class Human {
 
 ```java
 public class Page {
-  private String content;
+  String content;
 
   public Page() {
     this.content = "";
@@ -153,7 +153,7 @@ public class Page {
 }
 
 public class Book {
-  private List<Page> pages;
+  List<Page> pages;
 
   public Book() {
     this.pages = new ArrayList<>();
