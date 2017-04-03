@@ -2,7 +2,7 @@
 Objects can extend other objects allowing programs to re-use code and set default.
 
 ## Materials & Resources
-- Before starting the materials do this little exercise: [Exercise before materials](https://TODO)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/python/green-fox-shorter-python.md)
 
 ### Training
 
@@ -17,7 +17,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 
 
 ### Optional
-  |||
+  | Material | Time |
   |:---------|-----:|
   |[Exercise 44: Inheritance Versus Composition](https://learnpythonthehardway.org/book/ex44.html) - Composition part| reading |
   |[Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)|9:32|
@@ -33,10 +33,12 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - property decorators: getters, setters
 
 ## Workshop
-- [Exeercise 1](TODO)
+- [Green Fox organization](green-fox/python/green-fox-python.md)
+- [Garden Application](garden-app/garden-app.md)
+- [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 
 
 ## Individual Workshop Review
+As always neatness counts in coding.
 
-
-#Links
+Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Python Styleguide](../../styleguide/python.md)
