@@ -113,7 +113,7 @@ class BankAccount(object):
 ```
 
 - [Animal](animal)
-- [Sharpie](sharpie)
+- [Sharpie](sharpie/python.md)
 - [Counter](counter/python)
 
 ### Complex Architectures

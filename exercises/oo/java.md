@@ -125,7 +125,7 @@ public class Human {
 ```
 
 - [Animal](animal)
-- [Sharpie](sharpie)
+- [Sharpie](sharpie/java.md)
 - [Counter](counter/java)
 
 ### Complex Architectures
