@@ -37,7 +37,7 @@
 ### Classes as Data Structure
 
 ```python
-class Car:
+class Car(object):
     brand = ''
     model = ''
     color = ''
@@ -55,13 +55,13 @@ car2.color = 'red'
 print ('Brand of car1: ' + car1.brand + ', Model: ' + car1.model + ', Color: ' + car1.color)
 print ('Brand of car2: ' + car2.brand + ', Model: ' + car2.model + ', Color: ' + car2.color)
 ```
-- [Post-it](post-it)
-- [BlogPost](blog-post)
+- [Post-it](post-it/python.md)
+- [BlogPost](blog-post/python.md)
 
 ### Use Class
 
 ```python
-class Texts():
+class Texts(object):
 
   def __init__(self):
     self.status = "empty"
@@ -119,7 +119,7 @@ class BankAccount(object):
 ### Complex Architectures
 
 - [Teachers and Students](teachers-and-students)
-- [Petrol Station](petrol-station)
+- [Petrol Station](petrol-station/python.md)
 
 ### Classes as Fields
 
@@ -143,7 +143,7 @@ class Book(object):
         return counter
 ```
 
-- [Sharpie Set](sharpie-set)
+- [Sharpie Set](sharpie-set/python.md)
 - [Farm](farm)
 - [Blog](blog)
 

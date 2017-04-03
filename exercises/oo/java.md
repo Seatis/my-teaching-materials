@@ -52,8 +52,8 @@ public class Bicycle {
 }
 ```
 
-- [Post-it](post-it)
-- [BlogPost](blog-post)
+- [Post-it](post-it/java.md)
+- [BlogPost](blog-post/java.md)
 
 ### Use Class
 
@@ -131,7 +131,7 @@ public class Human {
 ### Complex Architectures
 
 - [Teachers and Students](teachers-and-students)
-- [Petrol Station](petrol-station)
+- [Petrol Station](petrol-station/java.md)
 
 ### Classes as Fields
 
@@ -175,7 +175,7 @@ public class Book {
 }
 ```
 
-- [Sharpie Set](sharpie-set)
+- [Sharpie Set](sharpie-set/java.md)
 - [Farm](farm)
 - [Blog](blog)
 

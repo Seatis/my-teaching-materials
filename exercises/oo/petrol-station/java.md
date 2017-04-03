@@ -7,5 +7,5 @@
   - gasAmount
   - capacity
   - create constructor for `Car` where:
-    - initialise gasAmount -> 0
-    - initialise capacity -> 100
+    - initialize gasAmount -> 0
+    - initialize capacity -> 100

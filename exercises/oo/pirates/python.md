@@ -1,7 +1,7 @@
 # Pirates
 Create a `Pirate` class.  While you can add other fields and methods, you must have these methods:-
-- `drinkSomeRum()` - intoxicates the Pirate some
-- `howsItGoingMate()` - when called, the Pirate replies, if `drinkSomeRun` was called:-
+- `drink_some_rum()` - intoxicates the Pirate some
+- `hows_it_going_mate()` - when called, the Pirate replies, if `drink_some_run` was called:-
   - 0 to 4 times, "Pour me anudder!"
   - else, "Arghh, I'ma Pirate. How d'ya d'ink its goin?", the pirate passes out and sleeps it off.
 
@@ -19,7 +19,7 @@ Add a parrot.
 - Create a `Ship` class.
 - The `Ship` stores `Pirate`-s instances in a list as the crew and has one captain who is also a `Pirate`.
 - When a ship is created it doesn't have a crew or a captain.
-- The ship can be filled with pirates and a captain via `fillShip()` method.
+- The ship can be filled with pirates and a captain via `fill_ship()` method.
     - Filling the ship with a captain and random number of pirates.
 - Ships should be represented in a nice way on command line including information about
     - captains consumed rum, state (passed out / died)

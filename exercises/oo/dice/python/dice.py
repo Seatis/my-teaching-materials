@@ -1,6 +1,6 @@
 import random
 
-class Dice():
+class Dice(object):
 
     def __init__(self):
         self.dice = [0, 0, 0, 0, 0, 0]
@@ -10,7 +10,7 @@ class Dice():
             self.dice[i] = random.randint(1,6)
         return self.dice
 
-    def getCurrent(self, index=None):
+    def get_current(self, index=None):
         if index != None:
             return self.dice[index]
         else:
@@ -24,9 +24,9 @@ class Dice():
 
 
 dice = Dice()
-print(dice.getCurrent())
+print(dice.get_current())
 dice.roll()
-print(dice.getCurrent())
+print(dice.get_current())
 dice.reroll(3)
-print(dice.getCurrent(3))
-print(dice.getCurrent())
+print(dice.get_current(3))
+print(dice.get_current())

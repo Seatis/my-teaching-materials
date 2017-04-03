@@ -1,6 +1,6 @@
 from thing import Thing
 
-class Fleet:
+class Fleet(object):
     def __init__(self):
         self.things = []
 
