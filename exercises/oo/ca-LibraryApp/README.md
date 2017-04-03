@@ -1,4 +1,4 @@
-# Objet-oriented programming
+# Object-oriented programming
 *Cognitive apprenticeship material idea*
 
 ## Objectives
@@ -27,10 +27,6 @@ I used the following materials in this exercise:
 ### While coding:
 - Don't explain too much, because you'll run out of time. Just think out loud and write the code.
 
-### After coding
-- Tell them that this was not the "best" way to code this, there are better implementation solutions to get the same result, we'll learn about them later
-
-
 
 ## Example: LibraryApp 
 
@@ -42,11 +38,11 @@ Create an `Author` class.  It is designed to model a document's author. It conta
    	  - `name` (String)
 	  - `email` (String)
    	  - `nationality` (String)
- - One Constructor to initialize an author with the given values. 
- - A `toString()` method that returns similar to this: `Name: Author Name, Email: author@mail.com, Nationality: Hungary   `
+ - One constructor to initialize an author with the given values. 
+ - A `toString()` method that returns similar to this: `Name: Author Name, Email: author@mail.com, Nationality: Hungarian`
 
 ### Document
-A class called `Document` is designed  to model a single document written authors. It contains:
+A class called `Document` is designed  to model a single document written by authors. It contains:
 
 - Private instance variables:
 	- `title` (String)
@@ -63,16 +59,16 @@ A class called `Book` is derived from  `Document` class.  It has a few more para
 	- `year` (int)
 	-  `subtype` (String)
  - `rent()` method:
-	- change the status to `0`
-	-  it has to fail if the book is not avaible
+	- change the status to `0` / `false`
+	-  it has to fail if the book is not available (`status` was already `0` / `false`)
  - `takeBack()` method:
-	- change the status to `1`
-	-  it has to fail if the book is not avaible
- - `toString()` method that returns similar to this: `Author(s): A1,A2 , Title: Mybook,  Type: Fantasy, Year: 1982, Status: avaible`
+	- change the status to `1` / `true`
+	-  it has to fail if the book is available  (`status` was already `1` / `true`)
+ - `toString()` method that returns similar to this: `Author(s): A1,A2; Title: Mybook;  Type: Fantasy; Year: 1982; Status: available`
 	
 
 ### Magazine
-A class called `Magazine` is derived from  `Document` class. It has a few more parameters and methods:
+A class called `Magazine` is derived from `Document` class. It has a few more parameters and methods:
 
  - Private instance variables:
 	- `period` (String)
