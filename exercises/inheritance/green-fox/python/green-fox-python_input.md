@@ -17,7 +17,7 @@ people.add(mentor);
 Sponsor sponsor = new Sponsor();
 Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
 
-student.skipDays(3);
+student.skip_days(3);
 
 for (int i = 0; i < 5; i++) {
 	elon.hire();
@@ -28,13 +28,13 @@ for (int i = 0; i < 3; i++) {
 
 for(Person person : people) {
 	person.introduce();
-	person.getGoal();
+	person.get_goal();
 }
 
 LagopusClass badass = new LagopusClass("BADA55");
-badass.addStudent(student);
-badass.addStudent(john);
-badass.addMentor(mentor);
-badass.addMentor(gandhi);
+badass.add_student(student);
+badass.add_student(john);
+badass.add_mentor(mentor);
+badass.add_mentor(gandhi);
 badass.info();
 ```

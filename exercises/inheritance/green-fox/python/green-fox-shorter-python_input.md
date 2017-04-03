@@ -17,7 +17,7 @@ people.add(mentor);
 Sponsor sponsor = new Sponsor();
 Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
 
-student.skipDays(3);
+student.skip_days(3);
 
 for (int i = 0; i < 5; i++) {
 	elon.hire();
@@ -28,6 +28,6 @@ for (int i = 0; i < 3; i++) {
 
 for(Person person : people) {
 	person.introduce();
-	person.getGoal();
+	person.get_goal();
 }
 ```
