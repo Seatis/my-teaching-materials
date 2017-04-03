@@ -1,33 +1,30 @@
 # Test input
-```java
-ArrayList<Person> people = new ArrayList<>();
+```python
+people = []
 
-Person mark = new Person("Mark", 46, "male");
-people.add(mark);
-Person jane = new Person();
-people.add(jane);
-Student john = new Student("John Doe", 20, "male", "BME");
-people.add(john);
-Student student = new Student();
-people.add(student);
-Mentor gandhi = new Mentor("Gandhi", 148, "male", "senior");
-people.add(gandhi);
-Mentor mentor = new Mentor();
-people.add(mentor);
-Sponsor sponsor = new Sponsor();
-Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
+mark = Person('Mark', 46, 'male')
+people.append(mark)
+jane = Person()
+people.append(jane)
+john = Student('John Doe', 20, 'male', 'BME')
+people.append(john)
+student = Student()
+people.append(student)
+gandhi = Mentor('Gandhi', 148, 'male', 'senior')
+people.apend(gandhi)
+mentor = Mentor()
+people.append(mentor)
+sponsor = Sponsor()
+elon = Sponsor('Elon Musk', 46, 'male', 'SpaceX')
+student.skip_days(3)
 
-student.skip_days(3);
+for i in range(5):
+    elon.hire()
 
-for (int i = 0; i < 5; i++) {
-	elon.hire();
-}
-for (int i = 0; i < 3; i++) {
-	sponsor.hire();
-}
+for i in range(3):
+    sponsor.hire()
 
-for(Person person : people) {
-	person.introduce();
-	person.get_goal();
-}
+for member in people:
+    member.introduce()
+    member.get_goal()
 ```
