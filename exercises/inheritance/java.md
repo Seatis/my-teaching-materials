@@ -4,7 +4,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 ## Materials & Resources
 
 ### Training
-- Before starting the materials do this little exercise: [Exercise before materials](green-fox/green-fox-shorter.md)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/java/green-fox-shorter-java.md)
 
 
 | Material | Time |
@@ -43,7 +43,7 @@ Optional
   - `import` &lt;package&gt;.*
 
 ## Workshop
-- [Green Fox organization](green-fox/green-fox.md)
+- [Green Fox organization](green-fox/java/green-fox-java.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 

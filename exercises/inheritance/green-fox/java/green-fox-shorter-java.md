@@ -60,21 +60,5 @@ The `Sponsor` class has the following constructors:
 - `Sponsor(name, age, gender, company)`: beside the given parameters, it sets `hiredStudents` to 0
 - `Sponsor()`: sets `name` to Jane Doe, `age` to 30, `gender` to female, `company` to Google and `hiredStudents` to 0
 
-
-## LagopusClass
-Create a `LagopusClass` class that has the following
-- fields:
-    - `className`: the name of the class
-    - `students`: a list of `Student`s
-    - `mentors`: a list of `Mentor`s
-- methods:
-	- `addStudent(Student)`: adds the given `Student` to `students` list
-	- `addStudent(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `info()`: prints out "Lagopus `className` class has `students.size` students and `mentors`.size mentors."
-
-
-The `LagopusClass` class has the following constructors:
-- `LagopusClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
-
 ## Result
-- Your program should result [this output](green-fox_output.md) if you run it with [this input](green-fox_input.md)
+- Your program should result [this output](green-fox-shorter-java_output.md) if you run it with [this input](green-fox-shorter-java_input.md)

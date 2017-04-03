@@ -2,7 +2,7 @@
 Objects can extend other objects allowing programs to re-use code and set default.
 
 ## Materials & Resources
-- Before starting the materials do this little exercise: [Exercise before materials](green-fox/green-fox-shorter.md)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/python/green-fox-shorter-python.md)
 
 ### Training
 
@@ -33,7 +33,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - property decorators: getters, setters
 
 ## Workshop
-- [Green Fox organization](green-fox/green-fox.md)
+- [Green Fox organization](green-fox/python/green-fox-python.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 

@@ -40,7 +40,7 @@ Create a class that represents an aircraft-carrier
 
 
 - The carrier should be able to store aircrafts
-- Each carrier should have a store of ammo (`ammoStorage`) represented as number
+- Each carrier should have a store of ammo represented as number
 - The inital ammo should be give by a parameter in it's constructor
 - It should store a health point as a number
 
@@ -51,7 +51,7 @@ Create a class that represents an aircraft-carrier
 - It should take a string as the type of the aircraft (`F16` / `F35`) and add a new aircraft to its store
 
 #### fill
-- It should fill all the aircraft with ammo and substract the needed ammo from the `ammo_storage`
+- It should fill all the aircraft with ammo and substract the needed ammo from the ammo storage
 - If there is not enough ammo than it should start to fill the `F35` types first
 - If there is no ammo when this method is called it should throw an exception
 
