@@ -1,5 +1,5 @@
 # Apples
-- Create a class, with one method that returns a string (eg. `"apple"`)
+- Create a class, with one method (eg. `public String getApple()`) that returns a string (eg. `"apple"`)
 - Create a test for that.
     - Create a test class
     - Create a test method
