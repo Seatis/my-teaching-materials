@@ -31,9 +31,6 @@ Testing generally involves running a method to see that such returns expected re
 - `@Before`, `@BeforeClass`
 - `@After`, `@AfterClass`
 - `@AssertEqual`, `@AssertTrue`, `@AssertFalse`
-- Coverage
-- `@Ignore`
-- `@Exception`
 
 ## Workshop
 
