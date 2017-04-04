@@ -66,7 +66,7 @@ if __name__ == '__main__':
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
-- [Extension](extension/extension.md)
+- [Extension](extension/python.md)
 - [Sharpie](sharpie/python.md)
 - [Animal](animal/animal.md)
 - [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)

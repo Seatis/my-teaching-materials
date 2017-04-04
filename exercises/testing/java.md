@@ -38,11 +38,11 @@ Testing generally involves running a method to see that such returns expected re
 ```java
 public class MessageUtil {
    private String message;
-	
+
    public MessageUtil(String message) {
       this.message = message;
    }
-      
+
    public String printMessage() {
       System.out.println(message);
       return message;
@@ -52,8 +52,8 @@ public class MessageUtil {
 
 ### Test Case Class
 ```java
-public class TestJunit {	
-   String message = "Hello World";	
+public class TestJunit {
+   String message = "Hello World";
    MessageUtil messageUtil = new MessageUtil(message);
 
    @Test
@@ -68,11 +68,11 @@ public class TestJunit {
 public class TestRunner {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(TestJunit.class);
-		
+
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
       }
-		
+
       System.out.println(result.wasSuccessful());
    }
 }  	
@@ -84,6 +84,7 @@ public class TestRunner {
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
+- [Extension](extension/java.md)
 - [Sharpie](sharpie/java.md)
 - [Animal](animal/animal.md)
 - [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)
