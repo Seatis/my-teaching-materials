@@ -68,9 +68,9 @@ Create a `LagopusClass` class that has the following
     - `students`: a list of `Student`s
     - `mentors`: a list of `Mentor`s
 - methods:
-	- `add_student(Student)`: adds the given `Student` to `students` list
-	- `add_student(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `info()`: prints out "Lagopus `class_name` class has `students.size` students and `mentors`.size mentors."
+    - `addStudent(Student)`: adds the given `Student` to `students` list
+    - `addMentor(Mentor)`: adds the given `Mentor` to `mentors` list
+    - `info()`: prints out "Lagopus `className` class has `students.size` students and `mentors.size` mentors."
 
 
 The `LagopusClass` class has the following constructors:
