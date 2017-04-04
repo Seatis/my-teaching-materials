@@ -79,8 +79,8 @@ public class TestRunner {
 ```
 
 ## Exercises
-- [Apples](apples/apples-java.md)
-- [Sum](sum/sum-java.md)
+- [Apples](apples/java.md)
+- [Sum](sum/java.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)

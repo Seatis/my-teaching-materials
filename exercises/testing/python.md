@@ -61,8 +61,8 @@ if __name__ == '__main__':
 - create a `your_name_test.py` where these methods are tested
 
 ### Exercises
-- [Apples](apples/apples-python.md)
-- [Sum](sum/sum-python.md)
+- [Apples](apples/python.md)
+- [Sum](sum/python.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
