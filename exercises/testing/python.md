@@ -60,6 +60,7 @@ if __name__ == '__main__':
 - create the following methods in that file
 - create a `your_name_test.py` where these methods are tested
 
+### Exercises
 - [Apples](apples/apples-python.md)
 - [Sum](sum/sum-python.md)
 - [Anagram](anagram/anagram.md)

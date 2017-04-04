@@ -43,7 +43,7 @@ Testing generally involves running a method to see that such returns expected re
 
 ```
 
-## The beginning
+## Exercises
 - [Apples](apples/apples-java.md)
 - [Sum](sum/sum-java.md)
 - [Anagram](anagram/anagram.md)
