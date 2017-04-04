@@ -48,5 +48,5 @@ Testing generally involves running a method to see that such returns expected re
 - [Sum](sum/sum-java.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
-- [Fibonacci](fibonacci/fibonacci-java.md)
+- [Fibonacci](fibonacci/fibonacci.md)
 - [Testing Game](testing-game/testing-game.md)

@@ -65,6 +65,6 @@ if __name__ == '__main__':
 - [Sum](sum/sum-python.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
-- [Fibonacci](fibonacci/fibonacci-pyhon.md)
+- [Fibonacci](fibonacci/fibonacci.md)
 - [Extension](extension/extension.md)
 - [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)
