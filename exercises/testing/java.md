@@ -84,4 +84,6 @@ public class TestRunner {
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
+- [Sharpie](sharpie/java.md)
+- [Animal](animal/animal.md)
 - [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)
