@@ -13,8 +13,6 @@ Testing generally involves running a method to see that such returns expected re
 | Material | Time |
 |:-------- |-----:|
 |[JUnit 4 Intro with IntelliJ (DrBee.01)](https://www.youtube.com/watch?v=Bld3644bIAo)|11:05|
-|[JUnit 4 Continued (DrBee.02)](https://youtu.be/xHk9yGZ1z3k) - ends prematurely|17:55|
-|[Review of IntelliJ Facilities for Unit Testing (IntelliJ)](https://www.youtube.com/watch?v=jolXBU-_Yyo) - review, gives some additional insights|2:47|
 |[Additional annotative directives for testing (In28Minutes)](https://www.youtube.com/watch?v=5lRetx3Gv-w) - shows the "Before", "Before Class", assertTrue()|9:42|
 
 
