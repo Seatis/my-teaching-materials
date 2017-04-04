@@ -1,8 +1,8 @@
 # Sum
 - Create a sum method in your class which has an ArrayList of Integers as parameter
 - It should return the sum of the elements in the list
-- Create a test for that
-    - Add a new test method
+- Follow these steps:
+    - Add a new test case
     - Instantiate your class
     - create a list of integers
     - use the `assertEquals` to test the result of the created sum method
