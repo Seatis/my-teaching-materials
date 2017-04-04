@@ -14,5 +14,3 @@
     - with a `null`
 - Run them
 - Fix your code if needed
-
-[Next Workshop](Workshop03.md)
