@@ -11,11 +11,12 @@ people.append(john)
 student = Student()
 people.append(student)
 gandhi = Mentor('Gandhi', 148, 'male', 'senior')
-people.apend(gandhi)
+people.append(gandhi)
 mentor = Mentor()
 people.append(mentor)
 sponsor = Sponsor()
 elon = Sponsor('Elon Musk', 46, 'male', 'SpaceX')
+people.append(elon)
 student.skip_days(3)
 
 for i in range(5):
