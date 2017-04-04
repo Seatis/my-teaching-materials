@@ -30,7 +30,7 @@ Testing generally involves running a method to see that such returns expected re
   - Expectation
 - `@Before`, `@BeforeClass`
 - `@After`, `@AfterClass`
-- `@AssertEqual`, `@AssertTrue`, `@AssertFalse`
+- `assertEquals()`, `assertTrue()`, `assertFalse()`
 
 ## Workshop
 
