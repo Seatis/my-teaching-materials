@@ -50,7 +50,7 @@ Create a Kanban Board for yourself and add the stories that need to be done. Lat
 
 It should look something like this. (obviously yours should have the stories added)
 
-![Github Kanban Board](assets/kanban_board.png)]
+![Github Kanban Board](assets/kanban_board.png)
 
 You should not have more than 2 stories in the doing phase. If you already have a few stories in the review phase show them to a mentor.
 
