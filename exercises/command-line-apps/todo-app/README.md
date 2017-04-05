@@ -75,18 +75,17 @@ Command line arguments:
 
  - Given the terminal opened in the project directory
  - And the file where you store your data
- - And an undone task with the description `Walk the dog`
- - And a done task with the description `Buy milk`
- - And an undone task with the description `Do homework`
+ - And a task with the description `Walk the dog` stored in the file
+ - And a task with the description `Buy milk` stored in the file
+ - And a task with the description `Do homework` stored in the file
  - When the application is ran with `-l` argument
  - Then it should print the tasks that are stored in the file
  - And it should add numbers before each
- - And it should add `[ ]` before each if its undone otherwise `[x]`
 
 ```
-1 - [ ] Walk the dog
-2 - [x] Buy milk
-3 - [ ] Do homework
+1 - Walk the dog
+2 - Buy milk
+3 - Do homework
 ```
 
 ### Empty list
@@ -143,11 +142,27 @@ Command line arguments:
 
 ### Check task
 
- - Given the terminal opened in the project directory
- - And the file where you store your data
- - And the file has at least 2 tasks
- - When the application is ran with the `-c 2` argument
- - Then it should check the second task from the file
+ 1.
+     - Given the terminal opened in the project directory
+     - And the file where you store your data
+     - And the file has at least 2 tasks
+     - When the application is ran with the `-c 2` argument
+     - Then it should check the second task from the file
+
+ 2.
+     - Given the terminal opened in the project directory
+     - And a undone task with the description `Walk the dog` stored in the file
+     - And a done task with the description `Buy milk` stored in the file
+     - And a undone task with the description `Do homework` stored in the file
+     - When the application is ran with `-l` argument
+     - Then it should print the tasks that are stored in the file
+     - And it should add `[ ]` before each if its undone otherwise `[x]`
+
+```
+1 - [ ] Walk the dog
+2 - [x] Buy milk
+3 - [ ] Do homework
+```
 
 ### Check task error handling
 
