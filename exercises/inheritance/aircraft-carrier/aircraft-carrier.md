@@ -26,8 +26,10 @@ All the aircrafts should be created with empty ammo store
 - The damage is the multiplication of the base damage and the ammos
 
 #### refill
-- It should take a number as reference and substract as much ammo as possibe
+- It should take a number as parameter and substract as much ammo as possibe
 - It can't have more ammo than the number or the max ammo
+- It should return the remaining ammo
+- Eg. Filling an empty F35 with `300` would completely fill the storage of the aircraft and would return the remaining `288`
 
 #### get_type
 - It should return it's type as a string
