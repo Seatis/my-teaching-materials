@@ -16,7 +16,7 @@ What happens when a function calls itself?
 | [Stepping Through Recursive Fibonacci Function](https://www.youtube.com/watch?v=zg-ddPbzcKM&index=18&list=PL36E7A2B75028A3D6) | 8:03 |
 | | |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
-| [Green Fox Teaching Materials on Recursion](https://github.com/greenfox-academy/teaching-materials/tree/master/exercises/recursion/python.md) | ∞ |
+| [Green Fox Teaching Materials on Recursion](python.md) | ∞ |
 
 
 ### Optional
@@ -63,7 +63,7 @@ def factorial(number):
 print('5! is', factorial(5))
 ```
 
-### Exercises
+### workshop
 
  - [01 Counter](counter/counter.py)
  - [02 Numberadder](numberadder/numberadder.py)

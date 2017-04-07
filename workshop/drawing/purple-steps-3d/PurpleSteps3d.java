@@ -8,7 +8,7 @@ public class Drawing {
 
     public static void mainDraw(Graphics graphics){
       // reproduce this:
-      // [https://github.com/greenfox-academy/teaching-materials/blob/master/exercises/drawing/purple-steps-3d/r4.png]
+      // [https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps-3d/r4.png]
 
 
 
