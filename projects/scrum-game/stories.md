@@ -23,7 +23,7 @@
 #### 3) Add wall tiles
  - Given the launched game
  - When the map is rendered on the screen
- - Then it should show floor and wall type tiles as well like on this layout:
+ - Then it should show floor and wall type tiles as well like on this layout (you can arrange wall differently if you wish):
 
 Floor tile | Wall tile
 ---------- | ---------
@@ -108,19 +108,19 @@ The player should be able to move the hero by using their arrow keys.
       - The SP (_strike point_) of the Hero
    - Like this: `Hero (Level 1) HP: 8/10 | DP: 8 | SP: 6`
 
-#### Update characres on moving hero
-- The characters should only move when the player moves the hero
-
 #### Strike
 - Characters are able to strike as detailed in the [specification](specification.md)
 
 #### Battle logic
 - After a hero character performed a strike the defender should strike back the same way
 
-#### Level up
-- When all enemies cleared from the map, the hero should enter the new level automatically
+#### Next area
+- When the enemy with the key is killed, the hero should enter the new level automatically
 
 # Optional features
+
+#### Update characters on moving hero
+- The characters should only move when the player moves the hero
 
 #### Random map
 - When map is created the placement of walls should be random
