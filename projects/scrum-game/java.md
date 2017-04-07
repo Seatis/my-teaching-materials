@@ -1,52 +1,109 @@
 # Java focus
 - Launching the game is running the `Main` class' `main()` method.
-- Don't mess around with layouts, draw exactly everything how you want to in one `paint()` method.
-    - The specification and the stories *are not* designed for working with layouts
-    - but to work well with drawing on a canvas
-    - Note: of course the project is doable in any case and using any architecture, just easier to follow the stories when using only one component (eg. `JComponent`)
-    - This doesn't mean you have to put everything in one class. You should create and use multiple classes, just not swing components but yours with your own draw method.
 - When reading through the specification and the stories keep this in mind.
-- Here's an example of a big drawable canvas with one image painted on it:
-```java
-public class Board extends JComponent {
-    public Board() {
-        // set the size of your draw board
-        setPreferredSize(new Dimension(720, 720));
-        setVisible(true);
-    }
+- Here's an example, it contains
+  - a big drawable canvas with one image painted on it
+  - and handling pressing keys, for moving your hero around
+  - be aware that these are just all the needed concepts put in one place
+  - you can separate anything anyhow
 
-    @Override
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
-        // here you have a 720x720 canvas
-        // you can create and draw an image using the class below e.g.
-        PositionedImage image = new PositionedImage("yourimage.png", 300, 300);
-        image.draw(graphics);
+```java
+import javax.swing.*;
+import java.awt.*;
+
+public class Board extends JComponent implements KeyListener {
+
+  int testBoxX;
+  int testBoxY;
+
+  public Board() {
+    testBoxX = 300;
+    testBoxY = 300;
+
+    // set the size of your draw board
+    setPreferredSize(new Dimension(720, 720));
+    setVisible(true);
+  }
+
+  @Override
+  public void paint(Graphics graphics) {
+    super.paint(graphics);
+    graphics.fillRect(testBoxX, testBoxY, 100, 100);
+    // here you have a 720x720 canvas
+    // you can create and draw an image using the class below e.g.
+    PositionedImage image = new PositionedImage("yourimage.png", 300, 300);
+    image.draw(graphics);
+  }
+
+  public static void main(String[] args) {
+    // Here is how you set up a new window and adding our board to it
+    JFrame frame = new JFrame("RPG Game");
+    Board board = new Board();
+    frame.add(board);
+    frame.setVisible(true);
+    frame.pack();
+    // Here is how you can add a key event listener
+    // The board object will be notified when hitting any key
+    // with the system calling one of the below 3 methods
+    frame.addKeyListener(board);
+    // Notice (at the top) that we can only do this
+    // because this Board class (the type of the board object) is also a KeyListener
+  }
+
+  // To be a KeyListener the class needs to have these 3 methods in it
+  @Override
+  public void keyTyped(KeyEvent e) {
+
+  }
+
+  @Override
+  public void keyPressed(KeyEvent e) {
+
+  }
+
+  // But actually we can use just this one for our goals here
+  @Override
+  public void keyReleased(KeyEvent e) {
+    // When the up or down keys hit, we change the position of our box
+    if (e.getKeyCode() == KeyEvent.VK_UP) {
+      testBoxY -= 100;
+    } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+      testBoxY += 100;
     }
+    // and redraw to have a new picture with the new coordinates
+    invalidate();
+    repaint();
+  }
 }
 ```
 - You can use this image class as a base:
 ```java
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 public class PositionedImage {
 
-    BufferedImage image;
-    int posX, posY;
+  BufferedImage image;
+  int posX, posY;
 
-    public PositionedImage(String filename, int posX, int posY) {
-        this.posX = posX;
-        this.posY = posY;
-        try {
-            image = ImageIO.read(new File(filename));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+  public PositionedImage(String filename, int posX, int posY) {
+    this.posX = posX;
+    this.posY = posY;
+    try {
+      image = ImageIO.read(new File(filename));
+    } catch (IOException e) {
+      e.printStackTrace();
     }
 
-    public void draw(Graphics graphics) {
-        if (image != null) {
-            graphics.drawImage(image, posX, posY, null);
-        }
+  }
+
+  public void draw(Graphics graphics) {
+    if (image != null) {
+      graphics.drawImage(image, posX, posY, null);
     }
+  }
 }
 ```
