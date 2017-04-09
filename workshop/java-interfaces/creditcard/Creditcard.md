@@ -16,13 +16,13 @@ interface CreditCardy {
     int cumeSumCVV(String codeAccount); // computes codeAccount checksum (see below)
     boolean ValidCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
 
-    String toString (); \\String.format("Name=%s CC#=%s CVV=%d");
+    String toString (); //String.format("Name=%s CC#=%s CVV=%d");
 }
 ```
 
 *What's a checksum*?  It's derived from adding values together.  For example if codeAccount = 1935, then the check sum is 1+9+3+5 or 18.
 
-#Tests
+# Tests
 
 ```java
 import java.util.ArrayList;
