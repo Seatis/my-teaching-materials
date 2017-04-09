@@ -22,7 +22,7 @@ public interface Reservationy {
 *the PlaceReserved and PlaceCancelled would be things that another program might expect you to have so that it could call and/or work with the object that you'd define.  In our world, they'll just always return true.
 
 
-#Tests
+# Tests
 ```java
 import com.greenfox.bx.*;
 import java.util.ArrayList;
@@ -44,8 +44,8 @@ public class App {
         }
     }
 
-    static String randomDow(int ct) {
-        return lsDow[(int)( Math.random() * 6)];
+    static String randomDow() {
+        return lsDow[(int)( Math.random() * (lsDow.length - 1))];
     }
 ```
 
@@ -55,7 +55,7 @@ To build the random reservation code, I did something similar:-
 public class Reservation ... 
 {    
    // this is somewhere in the code...
-   final static String ls = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   final static String ls = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    
    // and someplace else in the code
    this.codeBooking = randomZeroToZ(8);
@@ -65,8 +65,8 @@ public class Reservation ...
    // and this is how I got the code
     static String randomZeroToZ(int len) {
         String out = "";
-        for(int i= 0; i<len; i++) {
-            out += ls.charAt((int) (Math.random() * 36));
+        for(int i = 0; i < len; i++) {
+            out += ls.charAt((int) (Math.random() * (ls.length - 1)));
         }
         return out;
     }
