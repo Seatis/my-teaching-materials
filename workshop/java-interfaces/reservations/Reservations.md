@@ -25,7 +25,6 @@ public interface Reservationy {
 
 ```java
 import com.greenfox.bx.*;
-import java.util.ArrayList;
 
 public class ReservationApp {
 

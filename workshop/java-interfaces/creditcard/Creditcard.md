@@ -18,7 +18,7 @@ interface CreditCardy {
     void setCodeAccount(String codeAccount);
     String getCodeAccount();
 
-    int cumeSumCVV(String codeAccount); // computes codeAccount checksum (see below)
+    int cumeSumCVV(String codeAccount); // computes codeAccount checksum
     boolean validCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
 
     String toString (); //String.format("Name=%s CC#=%s CVV=%d");
@@ -26,8 +26,6 @@ interface CreditCardy {
 ```
 
 ```java
-import java.util.ArrayList;
-
 public class CreditCardApp {
 
     public static void main(String[] args) {
