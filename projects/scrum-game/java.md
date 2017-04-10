@@ -74,7 +74,6 @@ public class Board extends JComponent implements KeyListener {
       testBoxY += 100;
     }
     // and redraw to have a new picture with the new coordinates
-    invalidate();
     repaint();
   }
 }
