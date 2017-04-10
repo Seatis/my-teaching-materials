@@ -4,11 +4,11 @@ The classes referenced should be in a package called `main.java.music`.
 
 We start with a base, abstract class `Instrument`.
 - it reserves (e.g. protected) the `name` of the instrument
-- it expects those who extend it to provide a `play()` method (which will print a *confirmation message*).
+- it should provide a `play()` method (which will print a *confirmation message*).
 
 Next, we add another abstract class, `StringedInstrument` which *extends* `Instrument`.  It
 - introduces `numberOfStrings` and
-- has a final `formatForPlay` String field that is the format of the String that the `play()` will include.
+- has a final `formatForPlay` string field that is the format of the String that the `play()` will include.
 
 ```java
 final String formatForPlay ="%s, a %d-stringed instrument that %s\n";

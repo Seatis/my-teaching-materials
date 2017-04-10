@@ -24,7 +24,6 @@ Java gets round this through Abstracts and Interfaces.
 |:-------- |-----:|
 |[Abstract Classes and Interfaces (Wertz)](https://www.youtube.com/watch?v=AU07jJc_qMQ)|26:33|
 |[Interfaces and Abstracts (Bana.15)](https://www.youtube.com/watch?v=1PPDoAKbaNA)|8:29|
-|[SimpleDateFormat (ProgrammingKnowledge)](https://www.youtube.com/watch?v=JtAplwiTOXc)|10.46|
 |[Diamond problem](diamond_problem.png)||
 |[Comparator (mkyong)](https://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/)||
 
