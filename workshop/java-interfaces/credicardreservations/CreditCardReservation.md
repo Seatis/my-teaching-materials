@@ -1,4 +1,4 @@
-# Reservation Paid By CreditCard
+# Reservation paid by CreditCard
 
 Create a `CreditCardReservation` class by implementing all the features as required by the interfaces.<br />
 The task is to reach the output below and to use the necessary methods.<br />
