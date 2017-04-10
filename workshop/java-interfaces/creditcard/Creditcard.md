@@ -25,8 +25,6 @@ interface CreditCardy {
 }
 ```
 
-# Tests
-
 ```java
 import java.util.ArrayList;
 
