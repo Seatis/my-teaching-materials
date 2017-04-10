@@ -17,7 +17,7 @@ Hint: If you haven't seen the above before use `System.out.printf();` for printi
 
 `StingedInstrument`has 3 descendants, namely:-
 - Electric Guitar (6 strings, "Twang")
-- Electric BassGuitar (4 strings, "Duum-duum-duum")
+- Bass Guitar (4 strings, "Duum-duum-duum")
 - Violin (4 strings, "Screech")
 
 The Workshop should be invoked by an App Class which is placed outer than the package:-
@@ -29,9 +29,9 @@ public class AppMusic {
 
     public static void main(String[] args) {
 
-        System.out.println("Test 1, create ElectricGuitar, Bass and Violin with default strings.");
+        System.out.println("Test 1, create Electric Guitar, Bass Guitar and Violin with default strings.");
         ElectricGuitar guitar = new ElectricGuitar();
-        ElectricBassGuitar bassGuitar = new ElectricBassGuitar();
+        BassGuitar bassGuitar = new BassGuitar();
         Violin violin = new Violin();
 
         System.out.println("Test 1 Play");
@@ -39,9 +39,9 @@ public class AppMusic {
         bassGuitar.play();
         violin.play();
 
-        System.out.println("Test 2, create ElectricGuitar, Bass with 7 and 5 strings .");
-        guitar = new ElectricGuitar(7);
-        bassGuitar = new ElectricBassGuitar(5);
+        System.out.println("Test 2, create Electric Guitar, Bass Guitar with 7 and 5 strings .");
+        ElectricGuitar guitar2 = new ElectricGuitar(7);
+        BassGuitar bassGuitar2 = new BassGuitar(5);
 
         System.out.println("Test 2 Play");
         guitar.play();
