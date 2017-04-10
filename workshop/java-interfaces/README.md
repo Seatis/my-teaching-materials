@@ -47,8 +47,9 @@ Optional
 - [01) Instruments to Stringed Instruments](instruments/Instruments.md) - 2 levels of abstraction
 - [02) Implement CharSequence](charsequence/CharSequence.md)
 - [03) Reservations](reservations/Reservations.md)
-- [04) Credit Card ](creditcard/Creditcard.md) - implements 2 interfaces
-- [05) Comparable](comparator/Comparator.md) - something we'd use to compare values
+- [04) Credit Card ](creditcard/Creditcard.md)
+- [05) Credit Card ](creditcardreservations/CreditCardReservation.md) - implements 2 interfaces
+- [06) Comparable](comparator/Comparator.md) - something we'd use to compare values
 
 
 
