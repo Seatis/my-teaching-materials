@@ -1,6 +1,11 @@
 # CreditCard
 
-Create a `CreditCard` object by implementing all the features as required by the Interface.
+Create a `CreditCard` class by implementing all the features as required by the interface.<br />
+The task is to reach the output below and create 10 instances of CreditCards in a list.<br />
+CC# equals to 16 randomly generated number.<br />
+`String.format` acts similarly as `System.out.printf();` in the previous exercise, however the string will not be automatically printed.<br />
+*What's a checksum*?  It's derived from adding values together.<br />
+For example if codeAccount = 1935, then the check sum is 1+9+3+5 or 18.
 
 ```java
 
@@ -14,59 +19,35 @@ interface CreditCardy {
     String getCodeAccount();
 
     int cumeSumCVV(String codeAccount); // computes codeAccount checksum (see below)
-    boolean ValidCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
+    boolean validCard (String codeAccount, int sumCVV); // compare sumCVV with checksum of codeAccount
 
     String toString (); //String.format("Name=%s CC#=%s CVV=%d");
 }
 ```
-
-*What's a checksum*?  It's derived from adding values together.  For example if codeAccount = 1935, then the check sum is 1+9+3+5 or 18.
 
 # Tests
 
 ```java
 import java.util.ArrayList;
 
-public class App {
+public class CreditCardApp {
 
     public static void main(String[] args) {
 
-
-        ArrayList<CreditCard> cards = new ArrayList<CreditCard>();
-        int ct = 10;
-
-        for (int i = 0; i<ct; i++) {
-            cards.add(new CreditCard(0,"ABC" + i, random16())); //parameters are CVV, name, cardnumber; when CVV is 0, then the Constructor computes the CVV, otherwise it uses the value sent
-        }
-
-        for (CreditCard iCard: cards) {
-            System.out.println(iCard.toString() + (ValidCard(iCard.getCodeAccount, iCard.getSumCVV)? " (validated) " : 
-" (invalid) "));
-        }
-
-    }
-
-    static String random16() {
-        String out ="";
-        for(int i = 0; i<16; i++) {
-            out += Integer.toString( (int) ( Math.random() * 9));
-        }
-
-        return out;
     }
 }
 ```
 
 This should give you a result sort of like:-
 ```
-Name=ABC0 CC#=0832572706713808 CVV=59 (validated)
-Name=ABC1 CC#=7358743437116556 CVV=69 (validated)
-Name=ABC2 CC#=5234352635810043 CVV=51 (validated)
-Name=ABC3 CC#=8746006842881022 CVV=64 (validated)
-Name=ABC4 CC#=1125887725821251 CVV=64 (validated)
-Name=ABC5 CC#=8241682314633624 CVV=59 (validated)
-Name=ABC6 CC#=3422056400811670 CVV=49 (validated)
-Name=ABC7 CC#=3187260122423745 CVV=52 (validated)
-Name=ABC8 CC#=7621381805013844 CVV=57 (validated)
-Name=ABC9 CC#=3250546364831081 CVV=58 (validated)
+Name=ABC0 CC#=6765350286622461 CVV=69 (validated)
+Name=ABC1 CC#=8783542566213117 CVV=69 (validated)
+Name=ABC2 CC#=3771087365240408 CVV=65 (validated)
+Name=ABC3 CC#=4816248346664688 CVV=84 (validated)
+Name=ABC4 CC#=7260457613354654 CVV=68 (validated)
+Name=ABC5 CC#=2202157751114048 CVV=50 (validated)
+Name=ABC6 CC#=6472773572875471 CVV=82 (validated)
+Name=ABC7 CC#=8741321673234632 CVV=62 (validated)
+Name=ABC8 CC#=8406518208481772 CVV=71 (validated)
+Name=ABC9 CC#=3518857486015857 CVV=81 (validated)
 ```

@@ -1,5 +1,5 @@
 # Abstracts & Interfaces
-*There are times when we need common features in classes but they don't work on their own.*
+*There are times when we need common features in classes but they don't work on their own.* <br />
 In some situations either:-
 - we want to inherit from multiple classes
 - the base classes have expectations in order to be used, or in order to support a much larger framework.  

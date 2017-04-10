@@ -1,8 +1,9 @@
 # Reservations
-Create a `Reservation` object by implementing all the features as required by the Interface.<br />
+Create a `Reservation` class by implementing all the features as required by the interface.<br />
 The booked reservations should look like the output below.<br />
 Please note that the reservation code should contain 8 characters randomly from 0-Z, all uppercase letters.<br />
 Also, the DOW is randomly ordered to the bookings from an array.<br />
+`String.format` acts similarly as `System.out.printf();` in the previous exercise, however the string will not be automatically printed.<br />
 *DOW* stands for *Day of the Week* (MON, TUE, etc.)
 
 ```java
@@ -40,7 +41,7 @@ public class Reservation ... {
 ```
 
 The output will be sort of like this:-
-```
+```java
 Booking# 1WBA3OMU for THU
 Booking# 0V5OH7VS for WED
 Booking# CV6QOAJO for MON
