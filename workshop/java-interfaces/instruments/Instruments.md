@@ -3,27 +3,28 @@
 The classes referenced should be in a package called `main.java.music`.
 
 We start with a base, abstract class `Instrument`.
-- it reserves (e.g. protected) the `name` of the instrument 
+- it reserves (e.g. protected) the `name` of the instrument
 - it expects those who extend it to provide a `play()` method (which will print a *confirmation message*).
 
-Next, we add another abstract class, `StringedInstrument` which builds (*extends*) `Instrument`.  It 
-- introduces `numberOfStrings` and 
-- has a final `formatForPlay` that its children reference in their implementations of `play()`.
+Next, we add another abstract class, `StringedInstrument` which *extends* `Instrument`.  It
+- introduces `numberOfStrings` and
+- has a final `formatForPlay` String field that is the format of the String that the `play()` will include.
 
 ```java
 final String formatForPlay ="%s, a %d-stringed instrument that %s\n";
 ```  
+Hint: If you haven't seen the above before use `System.out.printf();` for printing.
 
-Next, we have 3 constructs of the `StingedInstrument`, namely:-
+`StingedInstrument`has 3 descendants, namely:-
 - Electric Guitar (6 strings, "Twang")
 - Electric BassGuitar (4 strings, "Duum-duum-duum")
 - Violin (4 strings, "Screech")
 
-The Workshop should be invoked now by an App Class:-
+The Workshop should be invoked by an App Class which is placed outer than the package:-
 ```java
 import main.java.music.*;
 
-public class App {
+public class AppMusic {
 
 
     public static void main(String[] args) {
@@ -60,11 +61,10 @@ We expect the following output:-
 
 > Violin, a 4-stringed instrument that screeches
 
-> Test 2, create ElectricGuitar, Bass with 7 and 5 strings.
+> Test 2, create Electric, Bass Guitar with 7 and 5 strings.
 
 > Test 2 Play
 
 > Electric Guitar, a 7-stringed instrument that twangs
 
 > Bass Guitar, a 5-stringed instrument that Duum-duum-duum
-

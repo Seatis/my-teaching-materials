@@ -12,27 +12,33 @@ Java gets round this through Abstracts and Interfaces.
 | Material | Time |
 |:-------- |-----:|
 |[Refresher on Inheritance and Polymorphism (Guru.08)](https://www.youtube.com/watch?v=gWpg3yMiL0M)|3:03|
-|[When to use an abstract class in Java (Degee.39)](https://www.youtube.com/watch?v=hZ1EU-F-0nU)|4:25|
 |[Java Interface Tutorial](https://www.youtube.com/watch?v=NnZQ-C0x4hs)|5:28|
-|[Interfaces and Abstracts (Bana.15)](https://www.youtube.com/watch?v=1PPDoAKbaNA)|8:29|
+|[Java Interfaces Explained](https://www.youtube.com/watch?v=KAKtFcvSKp0)|11:47|
+|[Abstract Classes and methods](https://www.youtube.com/watch?v=uOd1RrmNZYk)|15:23|
 |[Abstract and Concrete Classes (NewBoston.58)](https://www.youtube.com/watch?v=TyPNvt6Zg8c)|8:26|
+|[When to use an abstract class in Java (Degee.39)](https://www.youtube.com/watch?v=hZ1EU-F-0nU)|4:25|
 
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
 |[Abstract Classes and Interfaces (Wertz)](https://www.youtube.com/watch?v=AU07jJc_qMQ)|26:33|
-|[Java Interfaces Explained](https://www.youtube.com/watch?v=KAKtFcvSKp0)|11:47|
-|[Abstract Classes and methods](https://www.youtube.com/watch?v=uOd1RrmNZYk)|15:23|
+|[Interfaces and Abstracts (Bana.15)](https://www.youtube.com/watch?v=1PPDoAKbaNA)|8:29|
 |[SimpleDateFormat (ProgrammingKnowledge)](https://www.youtube.com/watch?v=JtAplwiTOXc)|10.46|
-|[Diamon problem](diamond_problem.png)||
+|[Diamond problem](diamond_problem.png)||
 |[Comparator (mkyong)](https://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/)||
 
 ## Material Review
-- abstact class
-- abstact function
+- `implements`
 - interface
-- Diamon problem
+- abstract class
+- abstract methods
+- polymorphism
+- method overriding
+- method overloading
+
+Optional
+- Diamond problem
 - Comparison
   - compareTo()
   - Comparable<T>
@@ -41,7 +47,7 @@ Java gets round this through Abstracts and Interfaces.
 ## Workshops
 - [01) Instruments to Stringed Instruments](instruments/Instruments.md) - 2 levels of abstraction
 - [02) Implement CharSequence](charsequence/CharSequence.md)
-- [03) Reservations](reservations/Reservations.md) 
+- [03) Reservations](reservations/Reservations.md)
 - [04) Credit Card ](creditcard/Creditcard.md) - implements 2 interfaces
 - [05) Comparable](comparator/Comparator.md) - something we'd use to compare values
 
