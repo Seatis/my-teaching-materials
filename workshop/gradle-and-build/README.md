@@ -6,17 +6,33 @@
 
 ## Workshop
 
-### New Gradle project
+### Example code for [jopt-simple](http://pholser.github.io/jopt-simple/examples.html)
 
- - New project (Gradle, Java)
- - GroupId: **com.greenfox**, ArtifactId: **jodatime**
- - Check **auto-import** and **create directories for empty content roots options**
- - Project name: **jodatime**
- - Gradle setting:
-     - You need **java** plugin.
-     - Use **maven central repository**.
-     - You are going to use newest stable versions of `guava`, `joda-time`, `slf4j-log4j12` and `junit` java libraries. Add these to gradle dependencies.
-     - We use Java/JDK 1.8
- - Build BirthdayWithJodaTime.java
- - Run BirthdayWithJodaTime.java unit test.
- - If both java files compilable and runnable please commit your code and this task is done. *The tests should fail for now.*
+```java
+public static void main(String[] args) {
+  OptionParser parser = new OptionParser();
+  parser.accepts("l");
+  parser.accepts("a").withRequiredArg();
+  OptionSet options = parser.parse(args);
+
+  if (options.has("a")) {
+    System.out.println("`-a` was given with the argument " + options.valueOf("a"));
+  }
+
+  if (options.has("l")) {
+    System.out.println("`-l` was given with the no additional information.");
+  }
+}
+```
+
+### Example code for [opencsv](http://opencsv.sourceforge.net/)
+
+```java
+CSVReader reader = new CSVReader(new FileReader("data.csv"), ';');
+List<String[]> lines = reader.readAll();
+CSVWriter writer = new CSVWriter(new FileWriter("copydata.csv"), ';', CSVWriter.NO_QUOTE_CHARACTER);
+writer.writeAll(lines);
+writer.close();
+```
+
+ - [Lottery filter](lottery-filter/java.md)
