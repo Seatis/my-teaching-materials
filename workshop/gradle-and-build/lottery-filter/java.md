@@ -16,19 +16,19 @@ There are three available arguments: `-y <year>`, `-f <file>` and `-o <file>`. `
 ## Cases
 
 1.
- - Given the terminal opened in the project directory
- - When the application ran with the `-y 2015` argument
- - Then it should read the data from `otos.csv`
- - And write every data from 2015 to `output.csv`
+    - Given the terminal opened in the project directory
+    - When the application ran with the `-y 2015` argument
+    - Then it should read the data from `otos.csv`
+    - And write every data from 2015 to `output.csv`
 
 2.
- - Given the terminal opened in the project directory
- - When the application ran with the `-y 2011 -f input.csv` argument
- - Then it should read the data from `input.csv`
- - And write every data from 2015 to `output.csv`
+    - Given the terminal opened in the project directory
+    - When the application ran with the `-y 2011 -f input.csv` argument
+    - Then it should read the data from `input.csv`
+    - And write every data from 2015 to `output.csv`
 
 3.
- - Given the terminal opened in the project directory
- - When the application ran with the `-y 2003 -o greenfox.csv`
- - Then it should read the data from `otos.csv`
- - And write every data from 2003 to `greenfox.csv`
+    - Given the terminal opened in the project directory
+    - When the application ran with the `-y 2003 -o greenfox.csv`
+    - Then it should read the data from `otos.csv`
+    - And write every data from 2003 to `greenfox.csv`
