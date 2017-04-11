@@ -44,6 +44,11 @@ Gradle is an advanced general purpose build management system that supports the 
 
 ## Workshop
 
+### Exercises
+
+ - [Lottery filter](lottery-filter/java.md)
+ - [Yoda Speak]()
+ - [Weather checker](weather-checker/java.md)
 ### Example code for [jopt-simple](http://pholser.github.io/jopt-simple/examples.html)
 
 ```java
@@ -73,4 +78,25 @@ writer.writeAll(lines);
 writer.close();
 ```
 
- - [Lottery filter](lottery-filter/java.md)
+### Example code for [retrofit](http://square.github.io/retrofit/)
+
+```java
+public interface GitHubService {
+  @GET("users/{user}/repos")
+  Call<ResponseBody> listRepos(@Path("user") String user);
+}
+```
+
+```java
+public static void main(String[] args) {
+  Retrofit retrofit = new Retrofit.Builder()
+    .baseUrl("https://api.github.com/")
+    .build();
+
+  GitHubService service = retrofit.create(GitHubService.class);
+
+  Call<ResponseBody> repos = service.listRepos("octocat");
+
+  System.out.println(repos.execute().body().string());
+}
+```
