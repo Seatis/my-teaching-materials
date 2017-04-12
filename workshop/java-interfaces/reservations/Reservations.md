@@ -8,17 +8,11 @@ Also, the DOW is randomly ordered to the bookings from an array.<br />
 
 ```java
 //package name should be figured out
-
 public interface Reservationy {
 
-    void setDowBooking(String dowBooking);
     String getDowBooking();
 
-    void setCodeBooking(String codeBooking);
     String getCodeBooking();
-
-    boolean placeReserved (String dowBooking, String codeBooking); //must return true if successful
-    boolean placeCancelled (String dowBooking,String codeBooking); //must return true if successful
 
     String toString (); //format("Booking# %s for %s");
 ```
