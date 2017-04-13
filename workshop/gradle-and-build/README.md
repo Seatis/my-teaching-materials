@@ -109,4 +109,6 @@ public static void main(String[] args) {
  - Give a GroupId (eg. `com.greenfox`) and an ArtifactId (eg. `yodaspeak`)
  - Check auto-import and create directories for empty content roots options
  - Give a project name (eg. `yodaspeak`)
+ - Make sure that you have `junit` added as dependency
  - Add gradle specific files to your `.gitignore`
+ - Make all test green by solving the methods in `BirthdayCalculatorWithLocalDate.java`
