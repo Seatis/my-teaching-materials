@@ -106,9 +106,10 @@ public static void main(String[] args) {
 ### How to create a gradle project
 
  - New project (Gradle, Java)
- - Give a GroupId (eg. `com.greenfox`) and an ArtifactId (eg. `yodaspeak`)
+ - Give a GroupId (eg. `com.greenfox`) and an ArtifactId (eg. `birthdaycalculator`)
  - Check auto-import and create directories for empty content roots options
- - Give a project name (eg. `yodaspeak`)
+ - Give a project name (eg. `birtdaycalculator`)
  - Make sure that you have `junit` added as dependency
  - Add gradle specific files to your `.gitignore`
+ - copy the source files from [birthday-calculator](birthday-calculator) directory
  - Make all test green by solving the methods in `BirthdayCalculatorWithLocalDate.java`
