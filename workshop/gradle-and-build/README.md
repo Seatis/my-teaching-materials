@@ -46,6 +46,7 @@ Gradle is an advanced general purpose build management system that supports the 
 
 ### Exercises
 
+ - [How to create a gradle project](#how-to-create-a-gradle-project)
  - [Lottery filter](lottery-filter/java.md)
  - [Yoda Speak]()
  - [Weather checker](weather-checker/java.md)
@@ -100,3 +101,12 @@ public static void main(String[] args) {
   System.out.println(repos.execute().body().string());
 }
 ```
+
+
+### How to create a gradle project
+
+ - New project (Gradle, Java)
+ - Give a GroupId (eg. `com.greenfox`) and an ArtifactId (eg. `yodaspeak`)
+ - Check auto-import and create directories for empty content roots options
+ - Give a project name (eg. `yodaspeak`)
+ - Add gradle specific files to your `.gitignore`
