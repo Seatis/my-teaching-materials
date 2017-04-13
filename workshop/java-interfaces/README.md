@@ -9,7 +9,7 @@ Java gets round this through Abstracts and Interfaces.
 ## Materials & Resources
 
 ### Training
-- After finished with the materials try to do this little exercise: [Exercise after workshop](zoo/zoo.md) 
+- After finished with the materials try to do this little exercise: [Exercise before workshop](zoo/zoo.md) 
 
 | Material | Time |
 |:-------- |-----:|
