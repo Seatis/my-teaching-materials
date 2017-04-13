@@ -48,7 +48,7 @@ Gradle is an advanced general purpose build management system that supports the 
 
  - [How to create a gradle project](#how-to-create-a-gradle-project)
  - [Lottery filter](lottery-filter/java.md)
- - [Yoda Speak]()
+ - [Yoda Speak](yoda-speak/java.md)
  - [Weather checker](weather-checker/java.md)
 ### Example code for [jopt-simple](http://pholser.github.io/jopt-simple/examples.html)
 
