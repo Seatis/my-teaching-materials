@@ -9,6 +9,8 @@ Java gets round this through Abstracts and Interfaces.
 ## Materials & Resources
 
 ### Training
+- After finished with the materials try to do this little exercise: [Exercise before workshop](zoo/zoo.md) 
+
 | Material | Time |
 |:-------- |-----:|
 |[Refresher on Inheritance and Polymorphism (Guru.08)](https://www.youtube.com/watch?v=gWpg3yMiL0M)|3:03|
