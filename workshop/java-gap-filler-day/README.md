@@ -7,7 +7,7 @@
 | Material | Time |
 |:-------- |-----:|
 |[Ternary Opeartor in Java](https://www.youtube.com/watch?v=qdudJfu2C04)| 3:57 |
-|[Java Tutorial For Beginners 24 - The final keyword in Java](https://www.youtube.com/watch?v=aN8znC-ME-w) | 6:32 |
+|[The final keyword in Java](https://www.youtube.com/watch?v=aN8znC-ME-w) | 6:32 |
 |[Final Keyword In Java](http://www.javatpoint.com/final-keyword) | |
 |[Enums](https://www.youtube.com/watch?v=5VyDsO0mFDU)| 9:32 |
 |[Generic Methods](https://www.youtube.com/watch?v=J6B_qauxfuc)| 4:39 |
