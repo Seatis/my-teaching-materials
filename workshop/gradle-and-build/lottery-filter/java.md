@@ -25,7 +25,7 @@ There are three available arguments: `-y <year>`, `-f <file>` and `-o <file>`. `
     - Given the terminal opened in the project directory
     - When the application ran with the `-y 2011 -f input.csv` argument
     - Then it should read the data from `input.csv`
-    - And write every data from 2015 to `output.csv`
+    - And write every data from 2011 to `output.csv`
 
 3.
     - Given the terminal opened in the project directory
