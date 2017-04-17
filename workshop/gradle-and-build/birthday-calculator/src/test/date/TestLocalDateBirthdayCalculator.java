@@ -8,12 +8,12 @@ import java.time.format.DateTimeParseException;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestLocalDateBirthdayCalculator {
+public class TestBirthdayCalculatorWithLocalDate {
 
   private static final String EXPECTED_DATE_STR = "2016-11-30";
   private static final LocalDate EXPECTED_DATE = LocalDate.parse(EXPECTED_DATE_STR, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
-  private BirthdayCalculator<LocalDate> birthdayCalculator = new BirthdayWithJodaTime();
+  private BirthdayCalculator<LocalDate> birthdayCalculator = new BirthdayWithLocalDate();
 
   @Test
   public void testParseDate() throws Exception {
