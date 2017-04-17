@@ -10,25 +10,25 @@
 |[The final keyword in Java](https://www.youtube.com/watch?v=aN8znC-ME-w) | 6:32 |
 |[Final Keyword In Java](http://www.javatpoint.com/final-keyword) | |
 |[Enums](https://www.youtube.com/watch?v=5VyDsO0mFDU)| 9:32 |
+|[Exceptions](https://www.youtube.com/watch?v=EWj60p8esD0)| 15:42 |
 |[Generic Methods](https://www.youtube.com/watch?v=J6B_qauxfuc)| 4:39 |
 |[Implementing a Generic Method](https://www.youtube.com/watch?v=ZoJaD0Qoi0o)| 4:56 |
-|[Exceptions](https://www.youtube.com/watch?v=EWj60p8esD0)| 15:42 |
 |[Intro to Java Annotations](https://www.youtube.com/watch?v=lA1n_HBrFwY)| 9:04 |
 |[Annotation in Java - Basics](https://www.youtube.com/watch?v=JV0atjBcUv4)| 8:33 |
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|[Generic Return Types](https://www.youtube.com/watch?v=QB5pQT45zvg)| 6:04 |
 |[Enums](https://www.youtube.com/watch?v=ZtEyZuXgUoY)| 13:14 |
 |[Java - Exceptions](https://www.tutorialspoint.com/java/java_exceptions.htm) | |
+|[Generic Return Types](https://www.youtube.com/watch?v=QB5pQT45zvg)| 6:04 |
 
 ## Material Review
  - condition `?` true `:` false
  - `final` keyword - variable, method, class
  - `enum`
- - `<T>`
  - Exceptions
+ - `<T>`
  - `@Deprecated`, `@Override`, and `@SuppressWarnings`
 
 ## Workshop
@@ -49,9 +49,6 @@ class Calculator {
   }
 }  
 ```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
 
 ### Final
 ```java
@@ -69,9 +66,6 @@ class Bike {
   }  
 }  
 ```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
 
 ### Enum
 ```java
@@ -85,9 +79,24 @@ public enum Currency {
   } 
 }; 
 ```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
+ - [Parking Lot](workshop/ParkingLot.md)
+ - [Twenty Plus One](workshop/TwentyPlusOne.md)
+
+### Exceptions
+```java
+try {
+  FileInputStream file = new FileInputStream(fileName);
+} catch(FileNotFoundException ex) {
+  ex.printStackTrace();
+} catch(IOException ex) {
+  ex.printStackTrace();
+} catch(Exception ex) {
+  ex.printStackTrace();  
+} finally {
+  System.out.println("In the end...");
+}
+```
+ - [Split Strings](workshop/SplitString.md)
 
 ### Generics
 ```java
@@ -118,27 +127,9 @@ public class GenericMethodTest {
   }
 }
 ```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
-
-### Exceptions
-```java
-try {
-  FileInputStream file = new FileInputStream(fileName);
-} catch(FileNotFoundException ex) {
-  ex.printStackTrace();
-} catch(IOException ex) {
-  ex.printStackTrace();
-} catch(Exception ex) {
-  ex.printStackTrace();  
-} finally {
-  System.out.println("In the end...");
-}
-```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
+ - [Sort The Array](workshop/SortTheArray.md)
+ - [Sum The Array](workshop/SumTheArray.md)
+ - [Calculator](workshop/Calculator.md)
 
 ### Annotations
 ```java
