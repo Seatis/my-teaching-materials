@@ -154,4 +154,4 @@ class Chicken extends Animal {
 ```
  - [Marker Annotation](workshop/MarkerAnnotation.md)
  - [Single Value Annotation](workshop/SingleValueAnnotation.md)
- - [Multi Value Annotation](workshop/MultiValueannotation.md)
+ - [Multi Value Annotation](workshop/MultiValueAnnotation.md)
