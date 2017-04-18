@@ -1,20 +1,25 @@
 # CSS Layout
 Practice layout and positioning with CSS
 
+## Objectives
+- Understand the box model
+- Learn about css positioning
+- Get to know flexbox
+
 ## Materials & Resources
-- https://css-tricks.com/box-sizing/
-- CSS positioning playlist: https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh
-- CSS flex-box playlist: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG
+| Material | Time |
+|:---------|-----:|
+| [Box-sizing article](https://css-tricks.com/box-sizing/) |  |
+| [CSS positioning playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) |  |
+| [CSS flex-box playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG) |  |
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
-- https://css-tricks.com/all-about-floats/
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- http://alistapart.com/article/css-positioning-101
-- http://www.barelyfitz.com/screencast/html-training/css/positioning/
-
-### Bookmark
- - http://yoksel.github.io/flex-cheatsheet/
+| Material | Time |
+|:---------|-----:|
+| [All about floats](https://css-tricks.com/all-about-floats/) |  |
+| [CSS positioning 101](http://alistapart.com/article/css-positioning-101) |  |
+| [CSS positioning screencast](http://www.barelyfitz.com/screencast/html-training/css/positioning/) |  |
 
 ## Material Review
 - box sizing
@@ -43,12 +48,17 @@ Practice layout and positioning with CSS
 ## Workshop
 Build these simple layouts in HTML and CSS
 
- - Create a separate directory for each exercise.
- - Make sure you are using the simplest selectors possible.
- - Avoid code duplication.
- - Use paint, gimp, or something similar to figure out the sizes and colors.
- - You can use any [lorem ipsum generator](http://mashable.com/2013/07/11/lorem-ipsum/#CMethzbNGkqX) for the texts, it is not necessary to have the same
- - Duck: ![duck](duck.png)
+### Bookmark
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- http://yoksel.github.io/flex-cheatsheet/
+
+- Create each in its own, separate directory
+- Try to use the most simple selector when selecting an element
+- Try to avoid duplicating code
+- Use paint, gimp, irfanview or something similar to figure out the sizes and colors
+- You can use any lorem ipsum generator for the texts, *it is not necessary to have the same text*
+
+- Duck: ![duck](duck.png)
 
 ### Exercise 1
 ![first exercise](1.jpg)
