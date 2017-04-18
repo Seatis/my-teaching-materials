@@ -56,10 +56,8 @@ Practice layout and positioning with CSS
   - inline-block
   - none
 - float
-- clear
-- after, before
-- clearfix
-- vendor prefix
+  - clear
+  - clearfix with pseudo elements
 - position:
   - static
   - relative
