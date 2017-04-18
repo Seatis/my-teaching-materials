@@ -15,6 +15,7 @@ Practice layout and positioning with CSS
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*
+
 | Material | Time |
 |:---------|-----:|
 | [All about floats](https://css-tricks.com/all-about-floats/) |  |
@@ -48,10 +49,6 @@ Practice layout and positioning with CSS
 ## Workshop
 Build these simple layouts in HTML and CSS
 
-### Bookmark
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- http://yoksel.github.io/flex-cheatsheet/
-
 - Create each in its own, separate directory
 - Try to use the most simple selector when selecting an element
 - Try to avoid duplicating code
@@ -60,10 +57,39 @@ Build these simple layouts in HTML and CSS
 
 - Duck: ![duck](duck.png)
 
-### Exercise 1
-![first exercise](1.jpg)
+### Bookmarks
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- http://yoksel.github.io/flex-cheatsheet/
 
-### Exercise 2
+### Flexbox
+
+#### Exercise 1.1.
+![flex1](flex/layout_flex_1.png)
+
+#### Exercise 1.2.
+![flex2](flex/layout_flex_2.png)
+
+#### Exercise 1.3.
+![flex3](flex/layout_flex_3.png)
+
+#### Exercise 1.4.
+![flex4](flex/layout_flex_4.png)
+
+#### Exercise 1.5.
+![flex5](flex/layout_flex_5.png)
+
+#### Exercise 1.6.
+![flex6](flex/layout_flex_6.png)
+
+#### Exercise 1.7.
+![flex7](flex/layout_flex_7.png)
+
+#### Exercise 1.8.
+![flex8](flex/layout_flex_8.png)
+
+### Layouts
+
+#### Exercise 2
 ![second exercise](2.jpg)
 
  - It should be centered on the page.
@@ -76,25 +102,39 @@ Build these simple layouts in HTML and CSS
    - Purple: Right sidebar (not main content)
    - Blue: Footer
 
-### Exercise 3
+#### Exercise 3
 ![third exercise](2.jpg)
 
  - It should be wall to wall with fluid width.
  - The sidebars should have fixed with.
 
-### Exercise 4
+#### Exercise 2.1
+
+![layout1_basic](flex/layout_layout1_basic.png)
+
+
+#### Exercise 2.2
+![layout2_basic](flex/layout_layout2_basic.png)
+
+#### Exercise 2.3
+![layout1_advanced](flex/layout_layout1_advanced.png)
+
+#### Exercise 2.4
+![layout2_advanced](flex/layout_layout2_advanced.png)
+
+#### Exercise 4
 ![fourth exercise](4.jpg)
 
  - You can reuse the 1st exercise as background
 
-### Exercise 5
+#### Exercise 5
 ![fifth exercise](5.png)
 
  - Pay attention to the spacing, it will help you eventually
  - The middle rectangle is intentionally off placed
  - Try different approaches to center text in the rectangles
 
-### Exercise 6
+#### Exercise 6
 ![fifth exercise](6-anim.gif)
 
  - Header should be fixed at the top
