@@ -399,3 +399,29 @@ the time.
             }
             ```
 
+## Skills
+
+### Input
+
+ -  Basic keyboard usage
+ -  Browser usage
+ -  Basic search engine usage
+
+### Output
+
+#### Most important skills (minimum expected)
+
+ -  Find special characters on the keyboard
+ -  Tell the magnitude of highest possible stored numbers in Bit and Byte related measures, eg: 2 Bytes -> 65k
+ -  Editor:
+     -  Create files
+     -  Open files
+     -  Edit files
+ -  Developer Tools
+     -  Inspect element
+     -  Edit HTML
+
+#### Tried at least once
+ 
+ -  Follow coding styleguide and indentation
+
