@@ -10,7 +10,19 @@ Practice layout and positioning with CSS
 | Material | Time |
 |:---------|-----:|
 | [Box-sizing article](https://css-tricks.com/box-sizing/) |  |
-| [CSS positioning playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) |  |
+| CSS positioning |  |
+| [1 - Positioning Introduction](https://www.youtube.com/watch?v=7ZXsPj43heo&index=1&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 2:17 |
+| [2 - Box Model Review](https://www.youtube.com/watch?v=d601NaSSqSE&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=2) | 5:57 |
+| [3 - Normal Document Flow](https://www.youtube.com/watch?v=l8NH6YppJFA&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=3) | 3:05 |
+| [4 - Floating Elements](https://www.youtube.com/watch?v=VwxGKpvW8Zk&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=4) | 10:12 |  
+| [5 - Clearing Floats](https://www.youtube.com/watch?v=nE9lIRbIfI0&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=5) | 8:50 |  
+| [6 - Floating Columns](https://www.youtube.com/watch?v=bJJ7jgfSvZY&index=6&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 5:06 |  
+| [7 - Text Columns](https://www.youtube.com/watch?v=W77geg_3B5o&index=7&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 3:44 |  
+| [8 - Position Relative](https://www.youtube.com/watch?v=YBJqKWXL2vg&index=8&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 4:57 |  
+| [9 - Absolute Position](https://www.youtube.com/watch?v=2JMGG_8T-vY&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=9) | 5:21 |  
+| [10 - Fixed Position](https://www.youtube.com/watch?v=8fQWx-d5qc8&index=10&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 4:34 |  
+| [11 - Z - Index & Stacking Order](https://www.youtube.com/watch?v=k4taTzkhzHc&index=11&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh) | 8:31 |  
+| [12 - Clipping Content](https://www.youtube.com/watch?v=ED1mhlAVAGU&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh&index=12) | 8:31 |  
 | [CSS flex-box playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG) |  |
 
 ### Optional
