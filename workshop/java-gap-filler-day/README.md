@@ -15,6 +15,8 @@
 |[Implementing a Generic Method](https://www.youtube.com/watch?v=ZoJaD0Qoi0o)| 4:56 |
 |[Intro to Java Annotations](https://www.youtube.com/watch?v=lA1n_HBrFwY)| 9:04 |
 |[Annotation in Java - Basics](https://www.youtube.com/watch?v=JV0atjBcUv4)| 8:33 |
+|[Annotation in Java - Creating Custom Annotation](https://www.youtube.com/watch?v=rWlHQnvrZcw)| 6:30 |
+|[Annotation in Java - Using Custom Annotation](https://www.youtube.com/watch?v=o9vn4No_ii4)| 8:02 |
 
 ### Optional
 | Material | Time |
@@ -22,6 +24,7 @@
 |[Enums](https://www.youtube.com/watch?v=ZtEyZuXgUoY)| 13:14 |
 |[Java - Exceptions](https://www.tutorialspoint.com/java/java_exceptions.htm) | |
 |[Generic Return Types](https://www.youtube.com/watch?v=QB5pQT45zvg)| 6:04 |
+|[Annotations](https://www.youtube.com/watch?v=rEMybyFBAFM)| 12:47 |
 
 ## Material Review
  - condition `?` true `:` false
@@ -30,6 +33,7 @@
  - Exceptions
  - `<T>`
  - `@Deprecated`, `@Override`, and `@SuppressWarnings`
+ - Custom Annotations
 
 ## Workshop
 
@@ -141,11 +145,12 @@ class Animal {
 
 class Chicken extends Animal {  
   @Override
+  @SuppressWarnings("all")
   public void eatMe() {
     System.out.println("You ate a chicken!");
   }
 }
 ```
- - [Placeholder]()
- - [Placeholder]()
- - [Placeholder]()
+ - [Marker Annotation](workshop/MarkerAnnotation.md)
+ - [Single Value Annotation](workshop/SingleValueAnnotation.md)
+ - [Multi Value Annotation](workshop/MultiValueannotation.md)
