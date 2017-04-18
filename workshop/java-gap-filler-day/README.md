@@ -13,6 +13,7 @@
 |[Exceptions](https://www.youtube.com/watch?v=EWj60p8esD0)| 15:42 |
 |[Generic Methods](https://www.youtube.com/watch?v=J6B_qauxfuc)| 4:39 |
 |[Implementing a Generic Method](https://www.youtube.com/watch?v=ZoJaD0Qoi0o)| 4:56 |
+|[Generic class](https://www.youtube.com/watch?v=bwinfasQbGk)| 4:57 |
 |[Intro to Java Annotations](https://www.youtube.com/watch?v=lA1n_HBrFwY)| 9:04 |
 |[Annotation in Java - Basics](https://www.youtube.com/watch?v=JV0atjBcUv4)| 8:33 |
 |[Annotation in Java - Creating Custom Annotation](https://www.youtube.com/watch?v=rWlHQnvrZcw)| 6:30 |
