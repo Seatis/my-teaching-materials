@@ -1,4 +1,4 @@
-# Created by Gabo Gyorgy (github: gygabor)
+# Created by Gabor Gyorgy (github: gygabor)
 # Copyright: Green Fox Academy
 
 from tkinter import *
