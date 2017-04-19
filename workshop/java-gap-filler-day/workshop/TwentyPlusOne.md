@@ -8,6 +8,6 @@
  - The Deck class holds the instances of the Card classes
  - Create methods for the class(shuffleDeck, pullFirst, pullLast, pullRandom)
  - The Game class is responsible to the game itself
- - It should generate a random number between 15 and 21
- - It should ask the player to continue or to stop
+ - It should have a method that generates a random number between 15 and 21, which will be the opponents score
+ - It should ask the player to continue or to stop drawing cards
  - The game is lost, if the sum of the pulled cards are above 21 or below the random number

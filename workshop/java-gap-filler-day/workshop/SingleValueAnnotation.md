@@ -1,5 +1,5 @@
 # Single Value Annotation
- - Extend 2 class from the previously created screen class
+ - Extend 3 class from the previously created screen class
    - class Screen43
    - class Screen169
    - class Screen219
