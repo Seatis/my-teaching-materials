@@ -30,11 +30,12 @@
 ## Material Review
  - condition `?` true `:` false
  - `final` keyword - variable, method, class
- - `enum`
- - Exceptions
- - `<T>`
+ - `enum`, methods in enum, `values()[i]`
+ - Multiple Exceptions, `finally`
+ - Generic class, methods
+ - `<T extends ...>`
  - `@Deprecated`, `@Override`, and `@SuppressWarnings`
- - Custom Annotations
+ - Custom Annotations, `@Inherited`, `@Target`, `@Retention`
 
 ## Workshop
 
