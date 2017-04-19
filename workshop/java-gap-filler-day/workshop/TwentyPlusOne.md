@@ -4,7 +4,7 @@
  - The Card class has 3 enum properties:
    - One for the color(red, black)
    - One for the suit(clubs, diamonds, hearts, spades)
-   - One for the rank(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)
+   - One for the rank(2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)
  - The Deck class holds the instances of the Card classes
  - Create methods for the class(shuffleDeck, pullFirst, pullLast, pullRandom)
  - The Game class is responsible to the game itself
