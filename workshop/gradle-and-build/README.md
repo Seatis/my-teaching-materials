@@ -35,6 +35,8 @@ Gradle is an advanced general purpose build management system that supports the 
 - gradle wrapper
 - `LocalDateTime`
 - `now();`
+- GroupId
+- ArtifactId
 
 ### Optional
 - gradle tasks
