@@ -1,5 +1,5 @@
 # Split String
- - Write a function that receives a string and an unsigned integer
+ - Write a function that receives a string and an integer
  - The function should return an array of strings, with two string in it
  - The first string should be the first part of the original string
  - Characters in range [0,index-1].
