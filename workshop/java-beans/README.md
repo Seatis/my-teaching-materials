@@ -14,8 +14,9 @@ Java gets round this through Abstracts and Interfaces.
 
 | Material | Time |
 |:-------- |-----:|
-|[]()|:|
-
+|[What is jaba bean?](https://www.javatpoint.com/java-bean)||
+|[Bean Factory](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
+|[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9)|1:18|
 
 
 ### Optional
