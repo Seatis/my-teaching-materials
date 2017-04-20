@@ -1,11 +1,6 @@
 # Beans
-*There are times when we need common features in classes but they don't work on their own.*
 
-In some situations either:-
-- we want to inherit from multiple classes
-- the base classes have expectations in order to be used, or in order to support a much larger framework.  
-
-Java gets round this through Abstracts and Interfaces.
+Java beans are a special type of classes
 
 ## Materials & Resources
 
@@ -14,7 +9,8 @@ Java gets round this through Abstracts and Interfaces.
 
 | Material | Time |
 |:-------- |-----:|
-|[What is jaba bean?](https://www.javatpoint.com/java-bean)||
+|[What is java bean?](https://www.javatpoint.com/java-bean)||
+|[Stateless vs. Stateful beans](https://www.safaribooksonline.com/library/view/head-first-ejb/0596005717/ch04s22.html)||
 |[Bean Factory](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
 |[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9)|1:18|
 |[@Autowired](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9)|1:58|
@@ -29,6 +25,9 @@ Java gets round this through Abstracts and Interfaces.
 
 ## Material Review
 - Bean
+  - Stateless
+  - Stateful
+  - Lifecycle
 - Bean Factory
 - Annotations
   - @Bean
