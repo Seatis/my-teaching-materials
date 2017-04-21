@@ -11,9 +11,19 @@ Create a fully functional image gallery using HTML, CSS and JavaScript
 [Arrow asset](slider.png)
 
 ### User stories  
-- Main window: It should show the currently picked picture. There should be a half-transparent box with title and description under it, but in the main block.
-- On the sides of the main block there sould be two arrow buttons. Clicking them chould change the current pic and description to the next/previous. At the same time, the current picked thumbnail's outline/box-shadow should change.
-- 
+- Main block: It should show the currently picked picture. There should be a half-transparent box with title and description under it, but in the main block.
+- At first, the first picture in the list should appear in the main block, and the related thumbnail should be signed somehow (border/shadows etc.).
+- On the sides of the main block there sould be two arrow buttons. Clicking them chould change the current pic and its description to the next/previous. At the same time, the current thumbnail's outline/box-shadow should change.
+- If your current photo is at the last in the list: by clicking the next arrow, the main block shows the first picture.
+- It should be the same with the first picture of the list and previous arrow.
+- By picking a thumbnail the user choose the photo of the main container.
+- The thumbnails' design, the current showed picture, should behave syncronized with the arrow buttons.
+
+**Extras**:
+- If you hover any of the thumbnails the cursor should be a pointer.
+- If you hover any of the thumbnail, a pop-up should appear whith the title of the picture.
+- There could be 2 arrow buttons even for the thumbnail list, so that the thumbnails
+- The gallery can be controlled by the arrow keys.
 
 
 ### Features (must have)
@@ -42,7 +52,7 @@ Create a fully functional image gallery using HTML, CSS and JavaScript
 - Plan your functions and variables
 
 ### Create your own stories
-- Not necessarily in trello, but its a nice thing to do
+- Not necessarily in gitub projects, but its a nice thing to do
 - Break down the functions to simple ones, like:
     - Show the main image
     - Replace the main image with js
