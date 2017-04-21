@@ -10,6 +10,11 @@ Create a fully functional image gallery using HTML, CSS and JavaScript
 
 [Arrow asset](slider.png)
 
+### User stories  
+- Main window: It should show the currently picked picture. There should be a half-transparent box with title and description under it, but in the main block.
+- On the sides of the main block there sould be two arrow buttons. Clicking them chould change the current pic and description to the next/previous. At the same time, the current picked thumbnail's outline/box-shadow should change.
+- 
+
 
 ### Features (must have)
 - valid html, css, js
