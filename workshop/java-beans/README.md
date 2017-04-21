@@ -5,15 +5,14 @@ Java beans are a special type of classes
 ## Materials & Resources
 
 ### Training
-- After finished with the materials try to do this little exercise: [Exercise before workshop](zoo/zoo.md)
 
 | Material | Time |
 |:-------- |-----:|
 |[What is java bean?](https://www.javatpoint.com/java-bean)||
 |[Stateless vs. Stateful beans](https://www.safaribooksonline.com/library/view/head-first-ejb/0596005717/ch04s22.html)||
 |[Bean Factory](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
-|[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9)|1:18|
-|[@Autowired](https://www.youtube.com/watch?v=P0m1dW0LJeE&t=9)|1:58|
+|[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t)|1:18|
+|[@Autowired](https://www.youtube.com/watch?v=P0m1dW0LJeE&t)|1:58|
 
 
 ### Optional
