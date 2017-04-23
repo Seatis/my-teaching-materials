@@ -21,5 +21,5 @@ You should say hello to the world, the output should be the following:
 SOME RED INFO
 Your message: Hello World!
 ```
-To do this, you will need to create a ```HelloWorldConfig``` and a ```MainApp``` class.
+To do this, you will need to create a `HelloWorldConfig` and a `MainApp` class.
 You should instantiate HelloWorld as bean, then `set` the message to "Hello World!", and then `get` the new message.

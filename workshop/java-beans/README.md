@@ -104,4 +104,9 @@ public class MainApp {
 ```
 
 - [01) Hello World bean project](helloworld/java.md)
-- [02) MessageService](messageservice/java.md)
+- [02) Coloring beans around](coloring/java.md)
+- [03) MessageService](messageservice/java.md)
+
+### Optional
+
+- [04) Test Beans](test/java.md)
