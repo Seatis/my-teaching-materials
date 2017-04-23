@@ -44,8 +44,8 @@ public class AppMusic {
         BassGuitar bassGuitar2 = new BassGuitar(5);
 
         System.out.println("Test 2 Play");
-        guitar.play();
-        bassGuitar.play();
+        guitar2.play();
+        bassGuitar2.play();
     }
 
 }

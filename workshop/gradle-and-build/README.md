@@ -7,7 +7,7 @@ Gradle is an advanced general purpose build management system that supports the 
 |:-------- |-----:|
 |[Why Gradle](https://www.youtube.com/watch?v=VOUmY4_hPeM)| until 00:50|
 |[Getting started with Gradle](https://www.youtube.com/watch?v=wN8bFn9Yp8Q)|7:13|
-|[Gradle intro and some Groovy](https://www.youtube.com/watch?v=mPpncYETnTg&t=319s)|until 11:06|
+|[Gradle intro and some Groovy](https://www.youtube.com/watch?v=mPpncYETnTg&t=1s)|until 11:06|
 |[Gradle Wrapper](https://www.youtube.com/watch?v=wbuwoVbCwAk)|8:08|
 |[Gradle in IntelliJ](https://www.youtube.com/watch?v=3Euo6xzCwY4)|4:19|
 |[Java 8 Date and Time](https://www.youtube.com/watch?v=nvluJ9yf4ho)|11:22|
@@ -19,9 +19,9 @@ Gradle is an advanced general purpose build management system that supports the 
 
 | Material | Time |
 |:-------- |-----:|
-|[Gradle Basics (EP1)](https://www.youtube.com/watch?v=vxKN2VSqTMg&t=361s)|21:26|
-|[Gradle Dependencies and Configurations (EP2)](https://www.youtube.com/watch?v=7alCuE7cNVQ&t=1110s)|21:12|
-|[Gradle Custom Tasks (EP3)](https://www.youtube.com/watch?v=g56O_HeefBE&t=664s)|29:54|
+|[Gradle Basics (EP1)](https://www.youtube.com/watch?v=vxKN2VSqTMg&t=1s)|21:26|
+|[Gradle Dependencies and Configurations (EP2)](https://www.youtube.com/watch?v=7alCuE7cNVQ&t=1s)|21:12|
+|[Gradle Custom Tasks (EP3)](https://www.youtube.com/watch?v=g56O_HeefBE&t=1s)|29:54|
 |[Java 8 Date and Time Melbourne conf](https://www.youtube.com/watch?v=daCUA17yWw4)|24:05|
 |[Java 8 Date and Time reading](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html)|reading|
 |[Package java.time](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html)|reading|
