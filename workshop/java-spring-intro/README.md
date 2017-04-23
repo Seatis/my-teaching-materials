@@ -65,18 +65,18 @@
 ### Create our first Spring Boot Application
 - [Open Start Spring IO site](http://start.spring.io/)
 
-<img src="./spring-start-02.jpg">
+<img src="./spring-start-02.png">
 
 - Use following settings:
-  - Generate a Gradle with Spring Boot 1.4.2.
+  - Generate a Gradle with Spring Boot 1.5.3.
   - Group: com.greenfoxacademy
   - Artifact: springstart
   - Name: springstart
   - Package Name: com.greenfoxacademy.springstart
   - Packaging: jar
-  - Java Version: 1.7
+  - Java Version: 1.8
   - Language: java
-  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools *Note, you have to do these 1 at a time, or you can scroll down and tick them*.
+  - Selected Dependencies: Lombok, Web, Thymeleaf, DevTools
 - Generate Project
 - Extract the downloaded zip to a directory (consider, btw, using the directory where you would like to have the code and not in Download as shown here)
 
@@ -84,14 +84,15 @@
 
 <img src="./spring-start-03.jpg">
 
-<img src="./spring-start-04.jpg">
-
 - Use Gradle external model
 
-<img src="./spring-start-05.jpg">
+<img src="./spring-start-04.png">
 
 - Use Auto import, Create directories for empty..., uncheck: Create separate modules per source set >> Finish
-- Open build.grdle and remove line: "apply plugin: 'eclipse'"
+
+<img src="./spring-start-05.png">
+
+- Open build.gradle and remove line: "apply plugin: 'eclipse'"
 
 <img src="./spring-start-06.jpg">
 
@@ -99,12 +100,12 @@
 
 <img src="./spring-start-06B.jpg">
 
-- Open terminal from bottom of the IDE and start Spring boot app container with: "gradlew bootRun" command
+- Open terminal from bottom of the IDE and start Spring boot app container with: `gradlew bootRun` (or `./gradelw bootRun`) command
 
 <img src="./spring-start-07.jpg" >
 @K okay?
 
-- Open [localhost:8080](http://localhost:8080) in your webbrowse.  You should get the "Whitelabel Error Page".  This means your application is running.
+- Open [localhost:8080](http://localhost:8080) in your webbrowser.  You should get the "Whitelabel Error Page".  This means your application is running.
 
 <img src="./spring-start-08.jpg">
 
