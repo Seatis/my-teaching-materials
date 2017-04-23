@@ -2,6 +2,12 @@
 
 JavaBeans are classes that encapsulate many objects into a single object (the bean).
 
+JavaBeans makes it easy to reuse software components.
+
+Developers can use software components written by others without having to understand their inner workings.
+
+To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, for example, it can simply obtains a radio and make it complete with the rest of the car.
+
 ## Materials & Resources
 
 ### Training
@@ -9,37 +15,96 @@ JavaBeans are classes that encapsulate many objects into a single object (the be
 | Material | Time |
 |:-------- |-----:|
 |[Understanding Dependency Injection](https://www.youtube.com/watch?v=GB8k2-Egfv0)|14:51|
-|[What is java bean?](https://www.javatpoint.com/java-bean)||
+|[What is java bean?](https://www.javatpoint.com/java-bean)|reading|
 |[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t)|1:58|
 |[@Autowired](https://www.youtube.com/watch?v=HFt_q0wYYLU&t)|5:43|
-|[JavaBean annotations](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)
 |[Bean Factory](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
+|[Java Based Configuration](https://www.tutorialspoint.com/spring/spring_java_based_configuration.htm)|reading|
 
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|[Autowired example](https://www.youtube.com/watch?v=HFt_q0wYYLU)|5:43|
-|[Autowired example 2](https://www.tutorialspoint.com/spring/spring_autowired_annotation.htm)||
-|[Serialization](https://www.youtube.com/watch?v=axmrg4pedt0)|5:08|
-|[Stateless vs. Stateful beans](https://www.safaribooksonline.com/library/view/head-first-ejb/0596005717/ch04s22.html)||
+|[Autowired example](https://www.youtube.com/watch?v=xTGkWSZkyNg)|18:20|
+|[Java Bean Annotations](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)|reading|
+|[Serialization](https://www.youtube.com/watch?v=6MisF1sxBTo)|9:24|
+|[Stateless vs. Stateful beans](https://www.safaribooksonline.com/library/view/head-first-ejb/0596005717/ch04s22.html)|reading|
 
 ## Material Review
 - DI
-- Bean
-- Annotations
+- bean
+- spring container
+- object lifecycle
+- bean factory
+- annotations
   - @Bean
   - @Autowired
   - @Component
   - @ComponentScan
   - @Configuration
-- Bean Factory
 
-Optional
-- Serialization
-- Stateless
-- Stateful
-- Lifecycle
+
+#### Optional
+- serialization
+- stateless
+- stateful
 
 ## Workshops
+
+Example of injecting bean dependencies:
+
+```java
+import org.springframework.context.annotation.*;
+
+@Configuration
+public class TextEditorConfig {
+   @Bean
+   public TextEditor textEditor(){
+      return new TextEditor( spellChecker() );
+   }
+
+   @Bean
+   public SpellChecker spellChecker(){
+      return new SpellChecker( );
+   }
+}
+```
+```java
+public class TextEditor {
+   private SpellChecker spellChecker;
+
+   public TextEditor(SpellChecker spellChecker){
+      System.out.println("Inside TextEditor constructor." );
+      this.spellChecker = spellChecker;
+   }
+   public void spellCheck(){
+      spellChecker.checkSpelling();
+   }
+}
+```
+```java
+public class SpellChecker {
+   public SpellChecker(){
+      System.out.println("Inside SpellChecker constructor." );
+   }
+   public void checkSpelling(){
+      System.out.println("Inside checkSpelling." );
+   }
+}
+```
+```java
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.*;
+
+public class MainApp {
+   public static void main(String[] args) {
+      ApplicationContext ctx =
+         new AnnotationConfigApplicationContext(TextEditorConfig.class);
+
+      TextEditor te = ctx.getBean(TextEditor.class);
+      te.spellCheck();
+   }
+}
+```
+
 - [01) ]()
