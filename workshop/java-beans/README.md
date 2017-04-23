@@ -1,12 +1,9 @@
 # Beans
 
-JavaBeans are classes that encapsulate many objects into a single object (the bean).
-
+JavaBeans are classes that encapsulate many objects into a single object (the bean).</br>
 JavaBeans makes it easy to reuse software components.
-
-Developers can use software components written by others without having to understand their inner workings.
-
-To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, for example, it can simply obtains a radio and make it complete with the rest of the car.
+Developers can use software components written by others without having to understand their inner workings.</br>
+To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, he can simply obtains a radio and put it into the car.
 
 ## Materials & Resources
 
@@ -107,4 +104,4 @@ public class MainApp {
 }
 ```
 
-- [01) ]()
+- [01) Hello World bean project]()
