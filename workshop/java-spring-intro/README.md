@@ -5,12 +5,37 @@
 
 ### Training
 
+#### HTTP, REST, JSON
+
 | Material | Time |
 |:---------|-----:|
 |[Basic concepts of web applications, how they work and the HTTP protocol](https://www.youtube.com/watch?v=RsQ1tFLwldY)|7:46|
 |[What is HTTP?](https://www.youtube.com/watch?v=SzSXHv8RKdM)|8:43|
 |[HTTP request methods](https://www.youtube.com/watch?v=IhKteKvOr7k)|3:46|
+|[REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)|TILL 5:47|
+|[JSON tutorial: What is JSON?](https://www.youtube.com/watch?v=40aKlrL-2V8)|3:27|
+
+#### Spring
+
+| Material | Time |
+|:---------|-----:|
+|[What is Spring Boot](https://www.youtube.com/watch?v=99Nw2smMTLg)|2:16|
+|[Spring and some of its problems](https://www.youtube.com/watch?v=YXlSkWq04jk)|6:08|
+|[What Spring Boot gives us](https://www.youtube.com/watch?v=cONbHJ9azvw)|1:53|
+|[Creating a Spring Boot project](https://www.youtube.com/watch?v=bDtZvYAT5Sc)|9:52|
+|[Starting a Spring Boot application](https://www.youtube.com/watch?v=bDtZvYAT5Sc)|6:07|
+|[Spring Boot startup steps](https://www.youtube.com/watch?v=h581CNFdjDc)|3:26|
+|[Adding a REST Controller](https://www.youtube.com/watch?v=oRFCeRVWCNE)|7:55|
+|[Returning Objects From Controller](https://www.youtube.com/watch?v=gDHSLKmG8ZQ)|7:49|
+
+### Optional
+
+| Material | Time |
+|:---------|-----:|
+|[REST-JSON](https://www.youtube.com/watch?v=nrGUUXkCbjw)|7:55|
+|[Introduction to Servlets](https://www.youtube.com/watch?v=7TOmdDJc14s)|TILL 2:32|
 |[Building an Application with Spring Boot](http://spring.io/guides/gs/spring-boot/)|reading ~11 mins|
+
 
 ## Review
 - Web Application
