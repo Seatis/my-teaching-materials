@@ -19,14 +19,15 @@
 
 | Material | Time |
 |:---------|-----:|
-|[What is Spring Boot](https://www.youtube.com/watch?v=99Nw2smMTLg)|2:16|
-|[Spring and some of its problems](https://www.youtube.com/watch?v=YXlSkWq04jk)|6:08|
-|[What Spring Boot gives us](https://www.youtube.com/watch?v=cONbHJ9azvw)|1:53|
-|[Creating a Spring Boot project](https://www.youtube.com/watch?v=bDtZvYAT5Sc)|9:52|
-|[Starting a Spring Boot application](https://www.youtube.com/watch?v=bDtZvYAT5Sc)|6:07|
-|[Spring Boot startup steps](https://www.youtube.com/watch?v=h581CNFdjDc)|3:26|
-|[Adding a REST Controller](https://www.youtube.com/watch?v=oRFCeRVWCNE)|7:55|
-|[Returning Objects From Controller](https://www.youtube.com/watch?v=gDHSLKmG8ZQ)|7:49|
+|[Introduction to the Spring Framework](https://www.youtube.com/watch?v=rO7lCT9BztU)|3:46|
+|[Libraries as JARs](https://www.youtube.com/watch?v=wNlbmVU_XVI)|2:51|
+|[Overview of Gradle to Manage Dependencies](https://www.youtube.com/watch?v=oana9pELkHE)|4:48|
+|[Gradle in Action](https://www.youtube.com/watch?v=ZuomXDq41EU)|4:27|
+|[A HighLevel View of Spring](https://www.youtube.com/watch?v=pehEoNjCuMY)|4:37|
+|[Configuring Gradle for Spring Development](https://www.youtube.com/watch?v=z_RFwVuIUJA)|7:54|
+|[Adding a Spring Configuration File](https://www.youtube.com/watch?v=IoW-KIzBAAM)|5:16|
+|[Create a Controller to Handle HTTP Requests](https://www.youtube.com/watch?v=mSiQehKsZfo)|7:50|
+|[Using Thymeleaf to Serve HTML](https://www.youtube.com/watch?v=HNfYubtHVYc)|9:17|
 
 ### Optional
 
@@ -186,7 +187,7 @@ Hello, World! (It is a web page.)
 ### Say Hello to all the world (Web App)
 You are very happy and would say hello in different languages
 
-According to previous tasks you should create a webb app which say hello in different languages and this hellos have different font sizes and colors.
+According to previous tasks you should create a web app which say hello in different languages and this hellos have different font sizes and colors.
 
 - Use the following greetings:
 ```java
