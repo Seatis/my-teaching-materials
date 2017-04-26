@@ -37,7 +37,6 @@
 |[Introduction to Servlets](https://www.youtube.com/watch?v=7TOmdDJc14s)|TILL 2:32|
 |[Building an Application with Spring Boot](http://spring.io/guides/gs/spring-boot/)|reading ~11 mins|
 
-
 ## Review
 - Web Application
 - Web server
