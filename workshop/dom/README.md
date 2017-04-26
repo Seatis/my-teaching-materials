@@ -19,6 +19,11 @@ Read more about the DOM in the Eloquent Javascript book's relevant chapter:
 http://eloquentjavascript.net/13_dom.html
 
 ## Material Review
+- data types
+  - window
+  - document
+  - node
+  - element
 - accessing elements
   - getElementById
   - getElementsByTagName
