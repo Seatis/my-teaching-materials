@@ -25,6 +25,7 @@ To understand why software components are useful, think of a worker assembling a
 |[Java Bean Annotations](http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html)|reading|
 |[Serialization](https://www.youtube.com/watch?v=6MisF1sxBTo)|9:24|
 |[Stateless vs. Stateful beans](https://www.safaribooksonline.com/library/view/head-first-ejb/0596005717/ch04s22.html)|reading|
+|[Dependency Injection](https://www.youtube.com/watch?v=IKD2-MAkXyQ)|4:46|
 
 ## Material Review
 - DI
