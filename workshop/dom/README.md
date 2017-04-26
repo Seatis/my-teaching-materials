@@ -68,6 +68,10 @@ for (var i = 0; i < asteroids.length; i++) {
 }
 ```
 
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [accessing-elements.html](examples/accessing-elements.html)
+
 #### Exercises
 - [queryselector-1.html](workshop/queryselector-1.html)
 
@@ -78,6 +82,10 @@ console.log(asteroid.innerHTML);
 console.log(asteroid.textContent);
 asteroid.innerHTML = 'This is your <strong>new content!</strong>';
 ```
+
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [element-contents.html](examples/element-contents.html)
 
 #### Exercises
 - [content-1.html](workshop/content-1.html)
@@ -91,6 +99,10 @@ var littlePrince = document.querySelector('img');
 console.log(littlePrince.getAttribute('src'));
 littlePrince.setAttribute('src', 'http://deji.chez.com/dessins/pp1.gif');
 ```
+
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [element-attributes.html](examples/element-attributes.html)
 
 #### Exercises
 - [attribute-1.html](workshop/attribute-1.html)
@@ -109,6 +121,10 @@ littlePrince.setAttribute('src', 'http://deji.chez.com/dessins/pp1.gif');
   console.log('still asteroid?', asteroid.classList.contains('asteroid'));
 ```
 
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [classlist.html](examples/classlist.html)
+
 #### Exercises
 - [classlist-1.html](workshop/classlist-1.html)
 
@@ -125,6 +141,10 @@ var businessAsteroid = document.querySelector('.b328');
 asteroidList.removeChild(businessAsteroid);
 ```
 
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [create-insert-remove.html](examples/create-insert-remove.html)
+
 #### Exercises
 - [createelement-1.html](workshop/createelement-1.html)
 - [createelement-2.html](workshop/createelement-2.html)
@@ -140,6 +160,10 @@ asteroidList.removeChild(businessAsteroid);
   button.addEventListener('click', alertGreenFox);
 ```
 
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [events.html](examples/create-insert-remove.html)
+
 #### Exercises
 - [events-1.html](workshop/events-1.html)
 - [events-2.html](workshop/events-2.html)
@@ -148,6 +172,10 @@ asteroidList.removeChild(businessAsteroid);
 ```HTML
   <a href="javascript:alert('Hello!');">Drag me in the bookmarks bar!</a>
 ```
+
+#### Example
+You can find the inserted Javascript code into an HTML page:
+- [bookmarklet.html](examples/bookmarklet.html)
 
 #### Exercises
 - [bookmarklet-1.html](workshop/bookmarklet-1.html)
