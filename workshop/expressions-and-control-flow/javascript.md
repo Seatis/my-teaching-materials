@@ -4,8 +4,27 @@ Learn your second programming language, get used to the new syntax of JavaScript
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
-| [1-25 of The Net Ninja JavaScript Tutorials](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET) | |
-<!-- TODO remove arrays objects and functions -->
+| [JavaScript Tutorial For Beginners 01 - Introduction](https://www.youtube.com/watch?v=qoSksQ4s_hg) | 3:40 |
+| [JavaScript for Beginners 02 - What is JavaScript?](https://www.youtube.com/watch?v=VB7y0yxZjro) | 4:03 |
+| [JavaScript Tutorial For Beginners 03 - Hello World! in JavaScript](https://www.youtube.com/watch?v=ranSYb-EhrU) | 3:17 |
+| [JavaScript Tutorial For Beginners #4 - Where to put your JS](https://www.youtube.com/watch?v=czlwRUeTCgw) | 5:13 |
+| [JavaScript Tutorial For Beginners #5 - Google Chrome Developer Tools](https://www.youtube.com/watch?v=JzZFccCEgGA) | 4:51 |
+| [JavaScript Tutorial For Beginners #6 - Basic JavaScript Syntax & Rules](https://www.youtube.com/watch?v=QLatPwsbDrQ) | 7:49 |
+| [JavaScript Tutorial For Beginners #7 - JavaScript Variables](https://www.youtube.com/watch?v=u0Mq3FzpsmI) | 8:59 |
+| [JavaScript Tutorial For Beginners #8 - Basic Mathematical Operators](https://www.youtube.com/watch?v=_MC0Gw07w8M) | 6:16 |
+| [JavaScript Tutorial For Beginners #9 - Math Operator Short-hand](https://www.youtube.com/watch?v=Z1eV0RBRam0) | 4:55 |
+| [JavaScript Tutorial For Beginners #10 - Logging to the Console](https://www.youtube.com/watch?v=tH-q9QFNUdA) | 3:38 |
+| [JavaScript Tutorial For Beginners #11 - Booleans in JavaScript](https://www.youtube.com/watch?v=B4ZCFdrBmbE) | 6:13 |
+| [JavaScript Tutorial For Beginners #12 - If Statements](https://www.youtube.com/watch?v=Lp-Du2fKoug) | 8:45 |
+| [JavaScript Tutorial For Beginners #13 - Else If Statements](https://www.youtube.com/watch?v=1v1Bk3Q02Sc) | 4:03 |
+| [JavaScript Tutorial For Beginners #14 - Comparison Operators](https://www.youtube.com/watch?v=LjGaaWX_NbE) | 5:25 |
+| [JavaScript Tutorial For Beginners #15 - Logical Operators](https://www.youtube.com/watch?v=mbT7sSmVUS8) | 6:01 |
+| [JavaScript Tutorial For Beginners #16 - While Loops](https://www.youtube.com/watch?v=PpbFyLTtpWI) | 4:09 |
+| [JavaScript Tutorial For Beginners #17 - For Loops](https://www.youtube.com/watch?v=U87UmD-5h4o) | 7:49 |
+| [JavaScript Tutorial For Beginners 19 - Practical Example using Loops](https://www.youtube.com/watch?v=eZBTLsv2ktM) | 4:02 |
+| [JavaScript Tutorial For Beginners #22 - Numbers](https://www.youtube.com/watch?v=TD3Pfuxgnuc) | 6:09 |
+| [JavaScript Tutorial For Beginners - NaN (Not a Number)](https://www.youtube.com/watch?v=0ZiltZDg9Gg) | 6:34 |
+| [JavaScript Tutorial For Beginners #24 - Strings](https://www.youtube.com/watch?v=k8MIbEVXhE0) | 9:37 |
 
 ### Optional
 | Material | Time |
