@@ -1,15 +1,33 @@
 # Getting Started
-TODO
-?
+This workshop teaches what is a serial port and how to use it in an advanced
+project.
 
 ## Objectives
- - TODO
- - ?
+  - Learn the basic laws in electronics
+  - Get familiar with the SI prefixes
+  - Be a hexadecimal-decimal-binary calculator
+  - Know what is a serial port and how to use it for communication
+
+
 
 ## Materials & Resources
-### Training
 
+### Tools to install at home
+We will use the serial port of the micro:bit in a project. You will need a
+program which allows to send and receive data between your laptop and micro:bit.
+
+**Windows users**
+
+Download and install [RealTerm](https://sourceforge.net/projects/realterm/).
+
+**Linux users**
+
+TODO: chaeck if screen works!
+
+### Training
 #### Electronics
+Watch these videos on the basic laws in electronic and the SI prefixes.
+
 | Material | Time |
 |:---------|-----:|
 | [Electric Current: Crash Course Physics #28](https://www.youtube.com/watch?v=HXOok3mfMLM) | 8:22 |
@@ -61,12 +79,17 @@ Now practice the conversion algorithms! You can use [this tool](https://www.cs.u
  - Binary to octal to hexadecimal
 
 ## Workshop
- - TODO: maybe number system converter? through UART? this can also be done on AVR the next week
+You are going to learn how to use the serial port for communication.
 
 ### Tools
+ - a micro:bit panel with USB cable
  - [micro:bit PXT tool](https://pxt.microbit.org/?lang=en)
+ - [RealTerm](https://sourceforge.net/projects/realterm/) or
+ [screen](https://kb.iu.edu/d/acuy) (depending on operating system)
 
 ### Steps
- - TODO: maybe number system converter? through UART
- - ?
- - ?
+1. Setting up serial communication with micro:bit (mentor guidance)
+  - usage of Serial blocks
+  - usage of terminal software
+2. Make a wireless communication device!
+  - estabilish 
