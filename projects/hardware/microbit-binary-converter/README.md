@@ -3,17 +3,17 @@
 ## Summary
   - [Serial port loopback](#serial-port-loopback)
   - [Wireless chat program](#wireless-chat-program)
-  - [Binary to decimal converter](#Binary to decimal converter)
+  - [Binary to decimal converter](#binary-to-decimal-converter)
   - [Programmer's number translator](#programmer's-number-translator)
   - [Do a custom Project](#do-a-custom-project)
 
 ## Serial port loopback
 
 ### Exercise
-1. Connect the micro:bit to your laptop and establish a serial connection.
-2. Make a program on your micro:bit panel which receives new line terminated
+- Connect the micro:bit to your laptop and establish a serial connection.
+- Make a program on your micro:bit panel which receives new line terminated
 strings from the serial port and sends it back right away.
-3. Try it out!
+- Try it out!
 
 ### Hints
  - serial read line
@@ -23,13 +23,13 @@ strings from the serial port and sends it back right away.
 
 ### Exercise
 
-1. Connect the micro:bit to your laptop and establish a serial connection.
-2. Make a program which:
+- Connect the micro:bit to your laptop and establish a serial connection.
+- Make a program which:
  - receives new line terminated strings on it's serial port and forwards it
  through it's radio interface,
  - receives new line terminated strings on it's radio interface and forwards it
  through it's serial port.
-3. You can send/receive messages on your laptop if two or more micro:bits are
+- You can send/receive messages on your laptop if two or more micro:bits are
 in the same radio group.
 
 ### Hints
@@ -41,14 +41,14 @@ in the same radio group.
 
 ### Excercise
 
-1. Connect the micro:bit to your laptop and establish a serial connection.
-2. Make a program which:
+- Connect the micro:bit to your laptop and establish a serial connection.
+- Make a program which:
  - receives binary numbers as new line terminated strings (see examples)
  on it's serial port,
  - converts the received number to decimal form,
  - sends the converted number as new line terminated string (see examples)
  through it's serial port.
-3. Try it out with different numbers!
+- Try it out with different numbers!
 
 ### Examples
 Input of micro:bit|Output of micro:bit
@@ -64,8 +64,8 @@ Make a program which converts various number formats into each other.
 
 ### Excercise
 
-1. Connect the micro:bit to your laptop and establish a serial connection.
-2. Make a program which:
+- Connect the micro:bit to your laptop and establish a serial connection.
+- Make a program which:
  - receives control messages
  - depending on the control message can go into different modes (see below)
     - can convert binary to decimal
@@ -74,7 +74,7 @@ Make a program which converts various number formats into each other.
     - can convert binary to hex
     - can convert hex to decimal
     - can convert decimal to hex
-3. Try it out with different numbers!
+- Try it out with different numbers!
 
 ### Control messages
 You don't have to implement all the different modes, just pick two of them!
