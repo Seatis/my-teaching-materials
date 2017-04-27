@@ -73,9 +73,9 @@ console.log('Hello world');
 ```
 
 #### Exercises
- - [01](hello-me/hello-me.py)
- - [02](hello-others/hello-others.py)
- - [03](humpty-dumpty/humpty-dumpty.py)
+ - [01](hello-me/hello-me.js)
+ - [02](hello-others/hello-others.js)
+ - [03](humpty-dumpty/humpty-dumpty.js)
 
 ### Comments
 ```javascript
@@ -197,9 +197,9 @@ console.log('My favorite number is: ' + 8); // Prints My favorite number is: 8
 ```
 
 #### Exercises
- -  [04](introduce-yourself/introduce-yourself.py)
- -  [05](two-numbers/two-numbers.py)
- -  [06](coding-hours/coding-hours.py)
+ -  [04](introduce-yourself/introduce-yourself.js)
+ -  [05](two-numbers/two-numbers.js)
+ -  [06](coding-hours/coding-hours.js)
 
 ### Variables
 
@@ -276,13 +276,13 @@ console.log(i); // Prints 11
 ```
 
 #### Exercises
- -  [07](favorite-number/favorite-number.py)
- -  [08](define-basic-info/define-basic-info.py)
- -  [09](bmi/bmi.py)
- -  [10](cuboid/cuboid.py)
- -  [11](seconds-in-a-day/seconds-in-a-day.py)
- -  [12](swap/swap.py)
- -  [13](variable-mutation/variable-mutation.py)
+ -  [07](favorite-number/favorite-number.js)
+ -  [08](define-basic-info/define-basic-info.js)
+ -  [09](bmi/bmi.js)
+ -  [10](cuboid/cuboid.js)
+ -  [11](seconds-in-a-day/seconds-in-a-day.js)
+ -  [12](swap/swap.js)
+ -  [13](variable-mutation/variable-mutation.js)
 
 
 ### Nothings
@@ -359,11 +359,11 @@ if (thirsty && hungry) {
 ```
 
 #### Exercises
- -  [18](odd-even/odd-even.py)
- -  [19](one-two-a-lot/one-two-a-lot.py)
- -  [20](print-bigger/print-bigger.py)
- -  [21](party-indicator/party-indicator.py)
- -  [22](conditional-variable-mutation/conditional-variable-mutation.py)
+ -  [18](odd-even/odd-even.js)
+ -  [19](one-two-a-lot/one-two-a-lot.js)
+ -  [20](print-bigger/print-bigger.js)
+ -  [21](party-indicator/party-indicator.js)
+ -  [22](conditional-variable-mutation/conditional-variable-mutation.js)
 
 ### Loops
 
@@ -382,19 +382,19 @@ for (var j = 0; j < 100; j++) {
 ```
 
 #### Exercises
- -  [23](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.py)
- -  [24](print-even/print-even.py)
- -  [25](count-from-to/count-from-to.py)
- -  [26](multiplication-table/multiplication-table.py)
- -  [27](draw-triangle/draw-triangle.py)
- -  [28](draw-pyramid/draw-pyramid.py)
- -  [29](draw-diamond/draw-diamond.py)
- -  [30](draw-square/draw-square.py)
- -  [31](draw-diagonal/draw-diagonal.py)
- -  [32](fizz-buzz/fizz-buzz.py)
- -  [33](guess-the-number/guess-the-number.py)
- -  [34](parametric-average/parametric-average.py)
- -  [35](draw-chess-table/draw-chess-table.py)
+ -  [23](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.js)
+ -  [24](print-even/print-even.js)
+ -  [25](count-from-to/count-from-to.js)
+ -  [26](multiplication-table/multiplication-table.js)
+ -  [27](draw-triangle/draw-triangle.js)
+ -  [28](draw-pyramid/draw-pyramid.js)
+ -  [29](draw-diamond/draw-diamond.js)
+ -  [30](draw-square/draw-square.js)
+ -  [31](draw-diagonal/draw-diagonal.js)
+ -  [32](fizz-buzz/fizz-buzz.js)
+ -  [33](guess-the-number/guess-the-number.js)
+ -  [34](parametric-average/parametric-average.js)
+ -  [35](draw-chess-table/draw-chess-table.js)
 
 
 ## Individual Workshop Review
