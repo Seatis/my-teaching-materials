@@ -5,6 +5,7 @@ Get a feel of the programmer thinking by hacking with BBC micro:bit.
  - Learn how to use the micro:bit JavaScript Blocks Editor (PXT)
  - Get femiliar with the building blocks
  - Learn how to think as a programmer
+ - Learn the basics of electronics and computer science
 
 ## Materials & Resources
 ### Training
@@ -72,8 +73,10 @@ Watch these videos on the basics of computer science.
 
 ## Workshop
 A mentor will guide your through various blocks provided by the PXT tool.
-There are practice tasks after each segment. Keep in mind that a help info
-will pop up if you keep your mouse pointer on a block.
+There are practice tasks after each segment.
+
+Keep in mind that a help info
+will pop up if you keep your mouse pointer on a block in the PXT tool.
 
 ### Tools
  - [micro:bit PXT tool](https://pxt.microbit.org/?lang=en)
@@ -113,9 +116,9 @@ will pop up if you keep your mouse pointer on a block.
 
 **Loop blocks**
   - Guide through
-    - what is a variable
-    - set
-    - change
+    - repeat
+    - while
+    - for
   - Task
     - Do the previous task with a loop (much shorter solution, isn't it?)
 
@@ -133,7 +136,7 @@ will pop up if you keep your mouse pointer on a block.
       - magnetic force
   - Task
     - Draw an exclamation mark while the board is shaking and button B is pressed
-    - Make a spirit level device (use pitch rotation and some led guidance)
+    - Make a spirit level device (use pitch and roll rotation and the led display)
 
 **Math blocks**
   - Guide through
@@ -143,11 +146,13 @@ will pop up if you keep your mouse pointer on a block.
     - min-max
     - absolute
   - Task
-    -  Make a freefall detector (use the absolute value of the z-axis acceleration value)
+    -  Make a freefall detector (use the absolute value of the z-axis
+      acceleration value)
 
 **Text blocks**
   - Guide through
-    - what is a Text
+    - what is a character
+    - what is a string
     - length
     - join
     - char from

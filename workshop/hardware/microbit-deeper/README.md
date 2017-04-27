@@ -1,14 +1,18 @@
-# Getting Started
+# micro:bit deeper
 This workshop teaches what is a serial port and how to use it in an advanced
 project.
+
+## Summary
+ - [Objectives](#objectives)
+ - [Materials & Resources](#materials-&-resources)
+ - [Material Review](#material-review)
+ - [Workshop](#workshop)
 
 ## Objectives
   - Learn the basic laws in electronics
   - Get familiar with the SI prefixes
   - Be a hexadecimal-decimal-binary calculator
   - Know what is a serial port and how to use it for communication
-
-
 
 ## Materials & Resources
 
@@ -20,13 +24,13 @@ program which allows to send and receive data between your laptop and micro:bit.
 
 Download and install [RealTerm](https://sourceforge.net/projects/realterm/).
 
-**Linux users**
+**Linux and Mac OS X users**
 
-TODO: chaeck if screen works!
+These operating systems contains a serial port terminal program by default.
 
 ### Training
 #### Electronics
-Watch these videos on the basic laws in electronic and the SI prefixes.
+Watch these videos on the basic laws in electronics and on the SI prefixes.
 
 | Material | Time |
 |:---------|-----:|
@@ -50,7 +54,7 @@ First watch theese videos:
 | [How To Convert Binary To Decimal Tutorial (The Easy Way)](https://www.youtube.com/watch?v=tfKe8PPI2zs) | 4:33 |
 | [How To Easily Convert Hexadecimal To Binary And To Decimal Tutorial](https://www.youtube.com/watch?v=t_kA5KQxByc) | 5:40 |
 
-Now practice the conversion algorithms! You can use [this tool](https://www.cs.ucsb.edu/~pconrad/cs16/topics/numberConversions/). The videos don't talk about the octal (base 8) numeral system which is not widely used, so just ignore those tasks. Or you can figure it out on your own :).
+Practice the conversion algorithms! You can use [this tool](https://www.cs.ucsb.edu/~pconrad/cs16/topics/numberConversions/). The videos don't talk about the octal (base 8) numeral system which is not widely used, so just ignore those tasks. Or you can figure it out on your own :).
 
 ## Material Review
 
@@ -91,5 +95,5 @@ You are going to learn how to use the serial port for communication.
 1. Setting up serial communication with micro:bit (mentor guidance)
   - usage of Serial blocks
   - usage of terminal software
-2. Make a wireless communication device!
-  - estabilish 
+2. Start the project of the week
+  - Make a wireless communication device!
