@@ -51,56 +51,71 @@ To understand why software components are useful, think of a worker assembling a
 Example of injecting bean dependencies:
 
 ```java
-import org.springframework.context.annotation.*;
+package com.greenfox.texteditor.config;
+import ...;
 
 @Configuration
 public class TextEditorConfig {
-   @Bean
-   public TextEditor textEditor(){
-      return new TextEditor( spellChecker() );
-   }
+    @Bean
+    public TextEditor textEditor() {
+        return new TextEditor(spellChecker());
+    }
 
-   @Bean
-   public SpellChecker spellChecker(){
-      return new SpellChecker( );
-   }
+    @Bean
+    public SpellChecker spellChecker() {
+        return new SpellChecker();
+    }
 }
 ```
 ```java
+package com.greenfox.texteditor.services;
+import ...
+
 public class TextEditor {
-   private SpellChecker spellChecker;
+    @Autowired
+    SpellChecker spellChecker;
 
-   public TextEditor(SpellChecker spellChecker){
-      System.out.println("Inside TextEditor constructor." );
-      this.spellChecker = spellChecker;
-   }
-   public void spellCheck(){
-      spellChecker.checkSpelling();
-   }
+    public TextEditor(SpellChecker spellChecker) {
+        System.out.println("Inside TextEditor constructor.");
+        this.spellChecker = spellChecker;
+    }
+
+    public void spellCheck() {
+        spellChecker.checkSpelling();
+    }
 }
 ```
 ```java
+package com.greenfox.texteditor.services;
+
 public class SpellChecker {
-   public SpellChecker(){
-      System.out.println("Inside SpellChecker constructor." );
-   }
-   public void checkSpelling(){
-      System.out.println("Inside checkSpelling." );
-   }
+    public SpellChecker(){
+        System.out.println("Inside SpellChecker constructor." );
+    }
+
+    public void checkSpelling(){
+        System.out.println("Inside checkSpelling." );
+    }
 }
 ```
 ```java
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.*;
+package com.greenfox.texteditor;
 
-public class MainApp {
-   public static void main(String[] args) {
-      ApplicationContext ctx =
-         new AnnotationConfigApplicationContext(TextEditorConfig.class);
+import ...
 
-      TextEditor te = ctx.getBean(TextEditor.class);
-      te.spellCheck();
-   }
+@SpringBootApplication
+public class SpellcheckerApplication implements CommandLineRunner {
+	@Autowired
+	TextEditor te;
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpellcheckerApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		te.spellCheck();
+	}
 }
 ```
 

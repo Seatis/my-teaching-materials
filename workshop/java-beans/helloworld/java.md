@@ -1,6 +1,6 @@
 # HelloBeanWorld application
 
-Create a simple Spring project (do not need to use spring initialiser)
+Create a s Spring project.
 
 Use the HelloWorld class as a base and create a bean from it.
 ```java
@@ -10,6 +10,7 @@ public class HelloWorld {
    public void setMessage(String message){
       this.message  = message;
    }
+   
    public void getMessage(){
       System.out.println("Your message: " + message);
    }
@@ -18,8 +19,9 @@ public class HelloWorld {
 
 You should say hello to the world, the output should be the following:
 ```java
-SOME RED INFO
+SOME SPRING INFO
 Your message: Hello World!
+SOME SPRING INFO
 ```
-To do this, you will need to create a `HelloWorldConfig` and a `MainApp` class.
-You should instantiate HelloWorld as bean, then `set` the message to "Hello World!", and then `get` the new message.
+To do this, you will need to create a `HelloWorldConfig` and a `HelloWorldApplication` class (the second one will be created automatically, if you set everything well).
+You should wire HelloWorld as bean, then `set` the message to "Hello World!", and then `get` the new message.
