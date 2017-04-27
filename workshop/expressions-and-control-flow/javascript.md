@@ -359,10 +359,6 @@ if (thirsty && hungry) {
 ```
 
 #### Exercises
- -  [18](odd-even/odd-even.js)
- -  [19](one-two-a-lot/one-two-a-lot.js)
- -  [20](print-bigger/print-bigger.js)
- -  [21](party-indicator/party-indicator.js)
  -  [22](conditional-variable-mutation/conditional-variable-mutation.js)
 
 ### Loops
@@ -384,7 +380,6 @@ for (var j = 0; j < 100; j++) {
 #### Exercises
  -  [23](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.js)
  -  [24](print-even/print-even.js)
- -  [25](count-from-to/count-from-to.js)
  -  [26](multiplication-table/multiplication-table.js)
  -  [27](draw-triangle/draw-triangle.js)
  -  [28](draw-pyramid/draw-pyramid.js)
@@ -392,8 +387,6 @@ for (var j = 0; j < 100; j++) {
  -  [30](draw-square/draw-square.js)
  -  [31](draw-diagonal/draw-diagonal.js)
  -  [32](fizz-buzz/fizz-buzz.js)
- -  [33](guess-the-number/guess-the-number.js)
- -  [34](parametric-average/parametric-average.js)
  -  [35](draw-chess-table/draw-chess-table.js)
 
 
