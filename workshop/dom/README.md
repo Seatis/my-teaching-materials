@@ -6,17 +6,21 @@ You'll learn how the broser builds HTML documents
 
 | Material | Time |
 |:---------|-----:|
-| [What is the DOM in JavaScript? Watch from 32 - 42](https://www.youtube.com/watch?v=H63dVFDuJDM&index=32&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET) | ~60min |
-
-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
-- https://css-tricks.com/dom/
+| [What is the DOM in JavaScript? Watch from 32 - 41](https://www.youtube.com/watch?v=H63dVFDuJDM&index=32&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET) | ~60min |
+| [Introduction to the DOM] (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
+| [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) |
+| [What is the DOM?](https://css-tricks.com/dom/) |
+| [How to Create a JavaScript Bookmarklet](http://www.dev-hq.net/posts/1--create-javascript-bookmarklet) |
 
 #### Digging deeper
 
 Read more about the DOM in the Eloquent Javascript book's relevant chapter:
 
 http://eloquentjavascript.net/13_dom.html
+
+Examples of how to use the bookmarklets:
+
+http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ultimate-list/
 
 ## Material Review
 - data types
