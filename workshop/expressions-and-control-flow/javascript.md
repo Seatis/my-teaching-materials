@@ -394,7 +394,7 @@ for (var j = 0; j < 100; j++) {
 Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javascript.md)
 
 - Is the directory structure and the name of the files correct?
-- Are the includes palced on the top of the files?
+- Is every file in strict mode?
 - Is the indentation good in each file?
 - Is there unnecessary code?
 - Can you find unnecessary code in comments?
@@ -404,4 +404,4 @@ Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javas
 - Is the commit message meaningful?
 - Are the names of things following the styleguide?
 - Are all of the brackets in the perfect place?
-- Whitespaces, where they should be, where shouldn't?
+- Are whitespaces where they should be?
