@@ -1,12 +1,14 @@
 # Getting Started
-TODO: Get a feel of the programmer thinking while creating something with BBC micro:bit.
+Get a feel of the programmer thinking by hacking with BBC micro:bit.
 
 ## Objectives
- - TODO
- - ?
+ - Learn how to use the micro:bit JavaScript Blocks Editor (PXT)
+ - Get femiliar with the building blocks
+ - Learn how to think as a programmer
 
 ## Materials & Resources
 ### Training
+Watch these videos on the basics of electronics.
 #### Electronics
 | Material | Time |
 |:---------|-----:|
@@ -17,6 +19,8 @@ TODO: Get a feel of the programmer thinking while creating something with BBC mi
 | [Battery Energy and Power](https://www.youtube.com/watch?v=u4FpbaMW5sk) | 5:55 |
 
 #### Computer
+Watch these videos on the basics of computer science.
+
 | Material | Time |
 |:---------|-----:|
 | [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
@@ -26,7 +30,6 @@ TODO: Get a feel of the programmer thinking while creating something with BBC mi
 | [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
 
 ## Material Review
-
 ### Computer
  - CPU
  - RAM
@@ -66,15 +69,105 @@ TODO: Get a feel of the programmer thinking while creating something with BBC mi
  - Electric field
  - Electric voltage
  - Electric energy
- - Electric power
 
 ## Workshop
-TODO
+A mentor will guide your through various blocks provided by the PXT tool.
+There are practice tasks after each segment. Keep in mind that a help info
+will pop up if you keep your mouse pointer on a block.
 
 ### Tools
  - [micro:bit PXT tool](https://pxt.microbit.org/?lang=en)
 
 ### Steps
- - TODO
- - ?
- - ?
+
+**Basic blocks**
+  - Guide through
+    - on start
+    - forever
+    - show number
+    - show string
+    - pause
+    - clear screen
+  - Task
+    - Blink an up arrow pattern
+
+**Led blocks**
+  - Guide through
+    - plot
+    - unplot
+    - toggle
+    - point
+    - set brightness
+    - brightness
+    - led enable
+  - Task
+    - Change the blinking brightness to 123
+
+**Variables blocks**
+  - Guide through
+    - what is a variable
+    - set
+    - change
+  - Task
+    - At startup show 4,5,6,7 numbers after each other using a variable
+
+**Loop blocks**
+  - Guide through
+    - what is a variable
+    - set
+    - change
+  - Task
+    - Do the previous task with a loop (much shorter solution, isn't it?)
+
+**Logic blocks and input blocks**
+  - Guide through
+    - if
+    - if-else
+    - comparison
+    - logical operations
+    - events
+    - sensor values
+      - acceleration
+      - temperature
+      - rotation
+      - magnetic force
+  - Task
+    - Draw an exclamation mark while the board is shaking and button B is pressed
+    - Make a spirit level device (use pitch rotation and some led guidance)
+
+**Math blocks**
+  - Guide through
+    - math operators
+    - random values
+    - reminder
+    - min-max
+    - absolute
+  - Task
+    -  Make a freefall detector (use the absolute value of the z-axis acceleration value)
+
+**Text blocks**
+  - Guide through
+    - what is a Text
+    - length
+    - join
+    - char from
+    - parse
+    - substring
+    - compare
+  - Task
+    - Join a string and show it on the led screen
+    - Parse a string which contains a number and show it as a number on the led screen
+
+**Radio blocks**
+  - Guide through
+    - set group
+    - send number
+    - send string
+    - send value
+    - receive events
+  - Task
+    - Send a message to someone and show it on the led screen of the receiver
+      - work together with someone
+      - the transmitter sends the message
+      - the receiver receives the message and shows on the screen
+      - use unique group numbers!

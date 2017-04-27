@@ -13,11 +13,11 @@ TODO
 | Material | Time |
 |:---------|-----:|
 | [Electric Current: Crash Course Physics #28](https://www.youtube.com/watch?v=HXOok3mfMLM) | 8:22 |
+| [Resistors - Ohm's Law is not a real law](https://www.youtube.com/watch?v=G3H5lKoWPpY) | 5:51 |
 | [DC Resistors & Batteries: Crash Course Physics #29](https://www.youtube.com/watch?v=g-wjP1otQWI) | 10:47 |
 | [Circuit Analysis: Crash Course Physics #30](https://www.youtube.com/watch?v=-w-VTw0tQlE) | 10:55 |
-| [Capacitors and Kirchhoff: Crash Course Physics #31](https://www.youtube.com/watch?v=vuCJP_5KOlI) | 10:37 |
-| [Resistors - Ohm's Law is not a real law](https://www.youtube.com/watch?v=G3H5lKoWPpY) | 5:51 |
 | [Capacitors and Capacitance: Capacitor physics and circuit operation](https://www.youtube.com/watch?v=f_MZNsEqyQw) | 10:01 |
+| [Capacitors and Kirchhoff: Crash Course Physics #31](https://www.youtube.com/watch?v=vuCJP_5KOlI) | 10:37 |
 | [EEVblog #486 - Does Current Flow Through A Capacitor?](https://www.youtube.com/watch?v=ppWBwZS4e7A) | 17:16 |
 | [Introduction to SI Prefixes - Real Chemistry](https://www.youtube.com/watch?v=nQDKEzR-vWg) | 17:16 |
 
@@ -37,9 +37,17 @@ Now practice the conversion algorithms! You can use [this tool](https://www.cs.u
 ## Material Review
 
 ### Electronics
- - TODO: add topics from videos
- - RC circuit voltage demonstration with PicoScope
+ - Symbols of battery (voltage source), resistor, capacitor
+ - Ohm's law
+ - Resistance
+ - Electric power
+ - Resistors and capacitors
+ - Resistance vs resistor
+ - Capacitance vs capacitor
+ - SI prefixes
  - Plotting U(t) and I(t) graphs
+ - U-I graph of resistors
+ - RC circuit voltage demonstration with PicoScope
 
 ### Binary numbers
  - Numeral system basics
