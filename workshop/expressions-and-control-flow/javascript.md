@@ -391,7 +391,7 @@ for (var j = 0; j < 100; j++) {
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Python styleguide](../../styleguide/python.md)
+Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javascript.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
