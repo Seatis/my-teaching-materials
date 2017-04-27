@@ -48,6 +48,8 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - classList
 - events
   - addEventListener
+- bookmarklets
+  - javascript protocol
 
 
 ## Workshop
