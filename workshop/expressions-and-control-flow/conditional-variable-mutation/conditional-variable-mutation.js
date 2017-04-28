@@ -2,7 +2,7 @@
 
 var a = 24;
 var out = 0;
-// if w is even increment out by one
+// if a is even increment out by one
 
 
 console.log(out);
