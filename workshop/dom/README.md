@@ -6,8 +6,17 @@ You'll learn how the broser builds HTML documents
 
 | Material | Time |
 |:---------|-----:|
-| [What is the DOM in JavaScript? Watch from 32 - 41](https://www.youtube.com/watch?v=H63dVFDuJDM&index=32&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET) | ~60min |
-| [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
+| [JavaScript Tutorial For Beginners #32 - What is the DOM in JavaScript?](https://youtu.be/H63dVFDuJDM) | 4:31 |
+| [JavaScript Tutorial For Beginners #33 - Traversing the DOM](https://youtu.be/SowaJlX1uKA) | 7:43 |
+| [JavaScript Tutorial For Beginners #34 - Changing Page Content](https://youtu.be/FQuwArzGPYo) | 5:38 |
+| [JavaScript Tutorial For Beginners #35 - Changing Element Attributes](https://youtu.be/V0S0LXvnW-o) | 6:02 |
+| [JavaScript Tutorial For Beginners #36 - Changing CSS Styles](https://youtu.be/97agDBCyxAE) | 4:49 |
+| [JavaScript Tutorial For Beginners #37 - Adding Elements to the DOM](https://youtu.be/TrGI9Yki-24) | 7:43 |
+| [JavaScript Tutorial For Beginners #38 - Removing Elements from the DOM](https://youtu.be/rBGgguNnutE) | 4:12 |
+| [JavaScript Tutorial For Beginners # 39 - Introduction to JavaScript Events](https://youtu.be/bf_9IeihQ0M) | 8:29 |
+| [JavaScript Tutorial For Beginners #40 - The onClick Event](https://youtu.be/XQEfWd1lh4Q) | 8:04 |
+| [JavaScript Tutorial For Beginners #41 - Window onLoad Event](https://youtu.be/RVA4HoEE_q8) | 5:06 |
+| [Introduction to the DOM] (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
 | [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) |
 | [What is the DOM?](https://css-tricks.com/dom/) |
 | [How to Create a JavaScript Bookmarklet](http://www.dev-hq.net/posts/1--create-javascript-bookmarklet) |
