@@ -1,54 +1,70 @@
 # JavaScript image slider
 
 ## Project
-**Image slider**
+Create a fully functional image gallery using HTML, CSS and JavaScript
 
 ### Outline and purpose
 
-| **Input**(that you already know) | **Output** |  
+| **Input Skills** | **Output Skills** |  
 |:----------|-----------:|  
-| Some HTML and CSS experience | More experience in recreating an exact, real layout and design |  
-| Javascript basic expressions | Some experience in writing more complex JS code from the basic building block |  
-| Javascript basic datastructures | Ability to manipulate DOM with JS |  
-| Some experience with DOM | Query selectors and event listeners |  
-| Understand user stories and recreate them to small development tasks | Try to keep JS code clean |  
+| Some HTML and CSS experience | More experience in recreating an exact, given design |  
+| Javascript basic expressions | Some experience in writing more complex JS code from the basic building blocks |  
+| Javascript basic datastructures | Ability to manipulate DOM with JS code |  
+| Some experience with DOM | Interacitve websites: Query selectors and event listeners |  
+| Understand user stories and break them down to small development tasks | Try to keep JS code clean |  
 | Use of kanban board/plan and manage your own work | More experience in alone project management |  
 
 
-## Demo description
-Create a fully functional image gallery using HTML, CSS and JavaScript
+## Design
 
 ![Gallery mockup](slider.png)
 
 [Arrow asset](slider.png)
 
-### User stories
-- As it is an image gallery, it should look nice, the design should be very similar to the example above. Plus, it should have a title as well.   
-- Main block: Here should appear the currently picked photo in a bigger size. On its bottom, there should be a half-transparent box with title and description.
-- At first, the first picture of our collection should appear in the main block, and the related thumbnail should be signed somehow (border/shadows etc.).
-- By clicking on the arrow buttons on the sides, the content of the main block (so the photo and its description) chould change to the next's or the previous' of our collection. At the same time, the current thumbnail's outline/box-shadow should change.
-- If your current photo is the last in our photo list: by clicking the next arrow, the first picture should be shown.
-- It should behave the same way with the first photo of the list and the previous arrow button.
-- By clicking on a thumbnail the user choose the related photo to be shown.
-- The thumbnails' active state, and the currently showed picture, should behave syncronized with the arrow buttons.
+## User stories
 
-**Extras**:
-- If you hover any of the thumbnails the cursor should be a pointer.
-- If you hover any of the thumbnail, a pop-up should appear whith the title of the picture.
-- There could be 2 arrow buttons even for the thumbnail list, so that the thumbnail list could behave like a slider.
-- The gallery can be controlled by the arrow keys.
+### Layout/ Design   
+  - As it is an image gallery, it should look nice, the design should be very similar to the example above. Plus, it should have a title as well.   
+  - It should be in the middle of the screen, with fixed size.
+  - The image side ratio should be 16:9
+  - The gallery's content should be divided into two main parts: to the photo viewer and to the thumbnails.
+  - The photo viewer block should contain the two arrow buttons on the sides and the currently chosen photo in the middle.
+  - The thumbnails part should contain - as its name says - the small thumbnails, under the photo viewer block.
+  - The currently showed photo should have a half transparent description block on the bottom, with the photo's title and story.  
+  - As we open the gallery the first picture from our collection should appear in the photo viewer area
+  - The related (first) thumbnail should be marked as active as well (outline, border.. etc.)
+
+**Extras**
+  - If you hover any of the thumbnails the cursor should be a pointer.
+  - If you hover any of the thumbnail, a pop-up should appear whith the title of the picture.
+
+### Navigation/Interaction  
+  - As we open the gallery the first picture from our collection should appear in the photo viewer area
+  - The related (first) thumbnail should be marked as active as well (outline, border.. etc.)
+  - By clicking on the arrow buttons on the sides, the content of the viewer block (so the photo and its description) chould change to the next's or the previous' of our collection.
+  - At the same time, the current thumbnail's outline/box-shadow should change depending on the currently picked photo.
+  - If the gallery displays the first image, pressing the previous button should show the last one.
+  - If the gallery displays the last image, pressing the next button should show the first one.
+  - By clicking on a thumbnail, the user the related photo need to be shown in the viewer are.
+  - So, the arrow buttons, the viewer area's content, and the thumbnail's outline/border should work syncronously.
+
+**Extras**
+  - The gallery can be controlled by the arrow keys.  
+  - The gallery should handle "infinite amount" of images, so the thumbnails sould be scrollable to (implementaion is up to you)
 
 
 ## How to do dis?
 
 ### Plan ALL the things!
 - Imagine what you have to do
-- Create sketch-up(s)
+- Create sketch-up(s) to help plan your HTML and CSS
+- Figure out gallery data structure
 - Design your code, what will be where
 - Plan your functions and variables
+- Prepare your user events
 
 ### Create your own stories
-- Not necessarily in gitub projects, but its a nice thing to do
+- Not necessarily in gitub projects, but its a nice thing to do on a board
 - Break down the functions to simple ones, like:
     - Show the main image
     - Replace the main image with js
