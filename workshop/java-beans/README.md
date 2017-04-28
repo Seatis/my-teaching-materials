@@ -2,7 +2,7 @@
 
 JavaBeans are classes that encapsulate many objects into a single object (the bean). It makes it easy to reuse software components.</br>
 Developers can use software components written by others without having to understand their inner workings.</br>
-To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, he can simply obtains a radio and put it into the car.
+To understand why software components are useful, think of a worker assembling a car. Instead of building a radio from scratch, the worker can simply obtains a radio and put it into the car.
 
 ## Materials & Resources
 
@@ -49,7 +49,7 @@ Example of injecting bean dependencies:
 
 ```java
 package com.greenfox.texteditor.config;
-import ...;
+import ...
 
 @Configuration
 public class TextEditorConfig {
