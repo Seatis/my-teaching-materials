@@ -1,7 +1,19 @@
 # JavaScript image slider
 
 ## Project
-Image slider
+**Image slider**
+
+### Outline and purpose
+
+| **Input**(that you already know) | **Output** |  
+|:----------|-----------:|  
+| Some HTML and CSS experience | More experience in recreating an exact, real layout and design |  
+| Javascript basic expressions | Some experience in writing more complex JS code from the basic building block |  
+| Javascript basic datastructures | Ability to manipulate DOM with JS |  
+| Some experience with DOM | Query selectors and event listeners |  
+| Understand user stories and recreate them to small development tasks | Try to keep JS code clean |  
+| Use of kanban board/plan and manage your own work | More experience in alone project management |  
+
 
 ## Demo description
 Create a fully functional image gallery using HTML, CSS and JavaScript
