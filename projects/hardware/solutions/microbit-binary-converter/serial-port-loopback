@@ -1,0 +1,5 @@
+let one = ""
+basic.forever(() => {
+    one = serial.readLine()
+    serial.writeLine(one)
+})
