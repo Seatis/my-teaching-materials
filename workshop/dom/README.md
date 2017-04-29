@@ -1,6 +1,6 @@
 # Document object model – DOM
 
-You'll learn how the broser builds HTML documents
+You'll learn how the browser builds HTML documents.
 
 ### Training
 
@@ -195,3 +195,19 @@ You can find the inserted Javascript code into an HTML page:
 #### Exercises
 - [bookmarklet-1.html](workshop/bookmarklet-1.html)
 - [bookmarklet-2.html](workshop/bookmarklet-2.html)
+
+## Individual Workshop Review
+Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javascript.md)
+
+- Is the directory structure and the name of the files correct?
+- Is every file in strict mode?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
+- Are the names of things following the styleguide?
+- Are all of the brackets in the perfect place?
+- Are whitespaces where they should be?
