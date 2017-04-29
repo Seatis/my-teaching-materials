@@ -16,7 +16,7 @@ You'll learn how the broser builds HTML documents
 | [JavaScript Tutorial For Beginners # 39 - Introduction to JavaScript Events](https://youtu.be/bf_9IeihQ0M) | 8:29 |
 | [JavaScript Tutorial For Beginners #40 - The onClick Event](https://youtu.be/XQEfWd1lh4Q) | 8:04 |
 | [JavaScript Tutorial For Beginners #41 - Window onLoad Event](https://youtu.be/RVA4HoEE_q8) | 5:06 |
-| [Introduction to the DOM] (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
+| [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
 | [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) |
 | [What is the DOM?](https://css-tricks.com/dom/) |
 | [How to Create a JavaScript Bookmarklet](http://www.dev-hq.net/posts/1--create-javascript-bookmarklet) |
