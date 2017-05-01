@@ -9,22 +9,22 @@
 | Material | Time |
 |:-------- |-----:|
 | [Spring MVC with Thymeleaf](https://www.youtube.com/watch?v=2LqQwjGRx_A)| 6:58 |
-| [Rapid Introduction to the essentials](https://medium.com/@trevormydata/week-5-thymeleaf-with-spring-mvc-rapid-introduction-to-the-essentials-799f1fba8c07)| |
-| [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| |
-| [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc)| |
+| [Rapid Introduction to the essentials](https://medium.com/@trevormydata/week-5-thymeleaf-with-spring-mvc-rapid-introduction-to-the-essentials-799f1fba8c07)| Text |
+| [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| Text |
+| [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc)| Text |
 | [Spring MVC with Thymeleaf](https://www.youtube.com/watch?v=2LqQwjGRx_A)| 6:58 |
 | [Spring Boot - 007 Thymeleaf Demo](https://www.youtube.com/watch?v=IDOblyh4RBA)| 19:52 |
 | [Introduction to Thymeleaf (Broadleaf)](https://www.youtube.com/watch?v=GNteuJDo1KA&t=374) - focus on the section "Introduction to Thymeleaf", you can keep watching the "Intermediate" Chapter, but this is just to get the basic concepts (@27m00).| 38:00 |
-| [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | |
-| [Spring RequestMapping](http://www.baeldung.com/spring-requestmapping) | |
-| [Spring ModelAttribue](http://www.baeldung.com/spring-mvc-and-the-modelattribute-annotation)|
+| [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | Text |
+| [Spring RequestMapping](http://www.baeldung.com/spring-requestmapping) | Text |
+| [Spring ModelAttribue](http://www.baeldung.com/spring-mvc-and-the-modelattribute-annotation)| Text |
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-| [Spring Forms with Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#creating-a-form) | |
-| [Thymeleaf in a nutshell](https://blog.zenika.com/2013/01/18/introducing-the-thymeleaf-template-engine/)||
-| [Using Thymeleaf (From Paragraph 3 to 7)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | |
+| [Spring Forms with Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#creating-a-form) | Text |
+| [Thymeleaf in a nutshell](https://blog.zenika.com/2013/01/18/introducing-the-thymeleaf-template-engine/)| Text |
+| [Using Thymeleaf (From Paragraph 3 to 7)](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html) | Text |
 
 ## Material Review
 - `@Controller`
