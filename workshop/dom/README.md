@@ -16,6 +16,7 @@ You'll learn how the browser builds HTML documents.
 | [JavaScript Tutorial For Beginners # 39 - Introduction to JavaScript Events](https://youtu.be/bf_9IeihQ0M) | 8:29 |
 | [JavaScript Tutorial For Beginners #40 - The onClick Event](https://youtu.be/XQEfWd1lh4Q) | 8:04 |
 | [JavaScript Tutorial For Beginners #41 - Window onLoad Event](https://youtu.be/RVA4HoEE_q8) | 5:06 |
+| [JavaScript Tutorial For Beginners #42 - JavaScript Timers](https://youtu.be/Az5J_EkhYCY) | 12:11 |
 | [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
 | [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) |
 | [What is the DOM?](https://css-tricks.com/dom/) |
