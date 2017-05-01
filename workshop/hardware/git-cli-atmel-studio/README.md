@@ -45,24 +45,27 @@ Introduction to version control systems and Git.
 #### Electronics
 Watch these videos on electronic signals:
 
-| Material | Time |
+| Material | Duration |
 |:---------|-----:|
 | [What is AC and DC?](https://www.youtube.com/watch?v=vN9aR2wKv0U) | 4:22 |
 | [Difference between Analog and Digital](https://www.youtube.com/watch?v=WxJKXGugfh8) | 4:01 |
 | [Analogue and Digital Signals](https://www.youtube.com/watch?v=XCu6L4kQF3k) | 2:53 |
 
-Also read [this](https://learn.sparkfun.com/tutorials/analog-vs-digital) article
+Also read this article
 about the differences between analog and digital signals.
 The "Analog and Digital Circuits" section is not needed.
 
+| Material | Duration |
+|:---------|-----:|
+| [Analog vs. Digital](https://learn.sparkfun.com/tutorials/analog-vs-digital) | - |
+
 Watch these videos on basic digital components:
 
-| Material | Time |
+| Material | Duration |
 |:---------|-----:|
-| [Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA&t=189s) | 4:01 |
+| [Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA) | 4:01 |
 | [Logic Gates from Transistors: Transistors and Boolean Logic](https://www.youtube.com/watch?v=SW2Bwc17_wA) | 13:59 |
-
-Here is a [good summary of logic gates and their truth tables](http://www.ee.surrey.ac.uk/Projects/CAL/digital-logic/gatesfunc/).
+| [Summary of logic gates and their truth tables](http://www.ee.surrey.ac.uk/Projects/CAL/digital-logic/gatesfunc/) | - |
 
 These gates can be used to do lot's of stuff, every digital circuit is based on
 logic gates. We are going to use a microcontroller during the next workshop, so
@@ -72,7 +75,7 @@ These videos will help you to understand the basic components. You don't have to
 understand every little bit of information, just try to understand the concept of
  ALU, RAM, registers. Magic word: Abstraction!
 
-| Material | Time |
+| Material | Duration |
 |:---------|-----:|
 | [How Computers Calculate - the ALU](https://www.youtube.com/watch?v=1I5ZMmrOfnA) | 11:09 |
 | [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU) | 12:16 |
