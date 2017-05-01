@@ -31,15 +31,15 @@ Introduction to version control systems and Git.
     - Complete installation guide can be found [here](https://github.com/greenfox-academy/totoro-syllabus/blob/master/IDE-Installation-Guide.md).
   - Software needed for this workshop
     - Install git on your system:
-     - Windows (*portable* is good however the *installed* version is better)
-       - Ensure you have the command-line, bash version also which you can find at
-       http://cmder.net/ or https://git-scm.com/download/win
-     - Linux
-       - `sudo apt-get install git` (Ubuntu)
-       - `sudo yum install git` (Fedora)
-     - Mac
-       - http://git-scm.com/download/mac or `brew install git`
-    - Windows users might enjoy [Total Commander](https://www.ghisler.com/)
+       - Windows (*portable* is good however the *installed* version is better)
+         - Ensure you have the command-line, bash version also which you can find at
+         http://cmder.net/ or https://git-scm.com/download/win
+       - Linux
+         - `sudo apt-get install git` (Ubuntu)
+         - `sudo yum install git` (Fedora)
+       - Mac
+         - http://git-scm.com/download/mac or `brew install git`
+      - Windows users might enjoy [Total Commander](https://www.ghisler.com/)
 
 ### Training
 #### Electronics
