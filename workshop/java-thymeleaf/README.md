@@ -17,7 +17,7 @@
 | [Introduction to Thymeleaf (Broadleaf)](https://www.youtube.com/watch?v=GNteuJDo1KA&t=374) - focus on the section "Introduction to Thymeleaf", you can keep watching the "Intermediate" Chapter, but this is just to get the basic concepts (@27m00).| 38:00 |
 | [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | Text |
 | [Spring RequestMapping](http://www.baeldung.com/spring-requestmapping) | Text |
-| [Spring ModelAttribue](http://www.baeldung.com/spring-mvc-and-the-modelattribute-annotation)| Text |
+| [Spring ModelAttribute](http://www.baeldung.com/spring-mvc-and-the-modelattribute-annotation)| Text |
 
 ### Optional
 | Material | Time |
@@ -48,9 +48,9 @@ HTML
 
 - Extensions
   - `th:text` - will replace the text
-  - `th:attrib` 
+  - `th:attr` 
   - `th:utext`
-  - `th:each` - `<li th:each= "book : ${books}>" iterating book which can be used beneath, for each item in the list books
+  - `th:each` - `<li th:each= "book : ${books}>"` iterating book which can be used beneath, for each item in the list books
   - `th:insert`
   - `th:replace`
   - `th:with`
