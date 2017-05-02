@@ -1,0 +1,14 @@
+let _7 = 0
+let _6 = 0
+let _5 = 0
+let _4 = 0
+basic.forever(() => {
+    _4 = 4
+    _5 = 5
+    _6 = 6
+    _7 = 7
+    basic.showNumber(_4)
+    basic.showNumber(_5)
+    basic.showNumber(_6)
+    basic.showNumber(_7)
+})

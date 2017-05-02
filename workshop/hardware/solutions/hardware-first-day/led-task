@@ -1,0 +1,9 @@
+basic.forever(() => {
+    led.plot(2, 2)
+    led.setBrightness(85)
+    basic.pause(1000)
+    led.setBrightness(170)
+    basic.pause(1000)
+    led.setBrightness(255)
+    basic.pause(1000)
+})
