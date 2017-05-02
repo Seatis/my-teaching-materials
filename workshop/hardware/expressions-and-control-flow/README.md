@@ -295,6 +295,17 @@ Please do the excercises with while && do-while && for
  - [25.cpp](workshop/25.cpp)
  - [26.cpp](workshop/26.cpp)
 
+### First embedded C program
+You will program the Atmel development board for the first time. A mentor
+will guide you through the usage of the Atmel Studio.
+
+#### Programming the example code
+
+#### Using a port as output
+
+#### Using a port as input and output
+
+
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
 
