@@ -10,6 +10,8 @@
 ```java
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class Board extends JComponent implements KeyListener {
 
@@ -40,6 +42,7 @@ public class Board extends JComponent implements KeyListener {
     JFrame frame = new JFrame("RPG Game");
     Board board = new Board();
     frame.add(board);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setVisible(true);
     frame.pack();
     // Here is how you can add a key event listener
@@ -71,7 +74,6 @@ public class Board extends JComponent implements KeyListener {
       testBoxY += 100;
     }
     // and redraw to have a new picture with the new coordinates
-    invalidate();
     repaint();
   }
 }
