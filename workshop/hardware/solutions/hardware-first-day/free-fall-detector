@@ -1,0 +1,18 @@
+let falling = 0
+basic.forever(() => {
+    falling = Math.abs(input.acceleration(Dimension.Z))
+    if (falling < 700) {
+        for (let i = 0; i < 3; i++) {
+            basic.showLeds(`
+                . . # . .
+                . . # . .
+                . . # . .
+                . . . . .
+                . . # . .
+                `)
+            basic.pause(300)
+            basic.clearScreen()
+            basic.pause(300)
+        }
+    }
+})

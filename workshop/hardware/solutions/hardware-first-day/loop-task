@@ -1,0 +1,7 @@
+let variable = 0
+variable = 4
+for (let i = 0; i < 4; i++) {
+    basic.showNumber(variable)
+    basic.pause(100)
+    variable += 1
+}
