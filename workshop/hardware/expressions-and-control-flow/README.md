@@ -47,16 +47,40 @@ with LEDs? Watch these videos to find the answers:
 
 | Material | Duration |
 |:---------|-----:|
+| **Instruction** |
 | [Instructions & Programs](https://www.youtube.com/watch?v=zltgXvg6r3k) | 10:35 |
 | [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA) | 6:03 |
 | [Compilers, Assemblers, Linkers, Loaders: A Short Course](https://courses.cs.washington.edu/courses/cse378/97au/help/compilation.html) (only the "Compiling a Program" section)| - |
 | [Setting Up Code Blocks](https://www.youtube.com/watch?v=3DeLiClDd04) | 6:37 |
-| [Setting Up Code Blocks](https://www.youtube.com/watch?v=3DeLiClDd04) | 6:37 |
 | [How Computer Programs Work](https://www.youtube.com/watch?v=iWx3yyFMWQA) | 4:51 |
-| [Print Text on the Screen](https://www.youtube.com/watch?v=oSpmApiUsHw) | 3:32 |
 | [Comments](https://www.youtube.com/watch?v=oX2FpFYXE38) | 3:28 |
+| [C program structure](http://www.w3schools.in/c-tutorial/program-structure/) | - |
+| Printing text |
+| [Print Text on the Screen](https://www.youtube.com/watch?v=oSpmApiUsHw) | 3:32 |
 | [Conversion Characters](https://www.youtube.com/watch?v=To7WA4ijQQ0) | 6:46 |
+| [Format specifiers](http://www.w3schools.in/c-tutorial/format-specifiers/) | - |
+| Variables |
 | [Variables](https://www.youtube.com/watch?v=k1ur8rX-DQQ) | 7:48 |
+| [Data types](http://www.w3schools.in/c-tutorial/data-types/) | - |
+| [Variables](http://www.w3schools.in/c-tutorial/variables/) | - |
+| [Constants](http://www.w3schools.in/c-tutorial/constants/) | - |
+| Math operators |
+| [Basic math operators](https://www.youtube.com/watch?v=T3sj5iTK_0M) | 5:11 |
+| [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
+| [Using braces](https://www.youtube.com/watch?v=rubhV7Bu34E) | 4:58 |
+
+| Decision making |
+| [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
+| [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
+| [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
+| [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
+
+
+
+
+
+
+
 
 
 
