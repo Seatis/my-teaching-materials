@@ -12,7 +12,6 @@
 | [Rapid Introduction to the essentials](https://medium.com/@trevormydata/week-5-thymeleaf-with-spring-mvc-rapid-introduction-to-the-essentials-799f1fba8c07)| Text |
 | [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| Text |
 | [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc)| Text |
-| [Spring MVC with Thymeleaf](https://www.youtube.com/watch?v=2LqQwjGRx_A)| 6:58 |
 | [Spring Boot - 007 Thymeleaf Demo](https://www.youtube.com/watch?v=IDOblyh4RBA)| 19:52 |
 | [Introduction to Thymeleaf (Broadleaf)](https://www.youtube.com/watch?v=GNteuJDo1KA&t=374) - focus on the section "Introduction to Thymeleaf", you can keep watching the "Intermediate" Chapter, but this is just to get the basic concepts (@27m00).| 38:00 |
 | [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | Text |
