@@ -20,6 +20,9 @@ public class MainApp {
 - print out a hello world
 - run & check
 - add devtools dependency
+```
+runtime("org.springframework.boot:spring-boot-devtools")
+```
 - rerun
 - change sg in the template
 - rebuild the template file and check the changes without rerunning the bootRun task
