@@ -300,11 +300,42 @@ You will program the Atmel development board for the first time. A mentor
 will guide you through the usage of the Atmel Studio.
 
 #### Programming the example code
+- Load the example project
+    - Connect the USB cable to your machine
+    - Connect the USB cable's other end to the devboard
+    - Start AtmelStudio
+    - Click on File->New->Example project
+    - In the search field type "ATmega168PB" (without the "" symbols)
+    - Choose the "led example" from the list
+    - Choose the location of the project
+        - keep in mind that the code has to be pushed to your github repository
+        - put the files in the week-x/day-y folder
+            - x is the current week
+            - y is the current day of the week
+    - Click on OK
+- Program the device
+    - Click on Project->Properties
+    - Choose Tools on the left
+    - Select mEDBG from the "Selected debugger/programmer" list
+    - Select debugWire from the "Interface" list
+    - Save settings by hitting Ctrl+S
+    - Click on Debug->Start without debugging
+ - Check if it workshop
+    - If you push the button, the LED is lit
 
 #### Using a port as output
-
-#### Using a port as input and output
-
+- Create a project
+    - Click on New->project
+    - Select GCC C Executable
+    - Give a name to the project
+    - Choose the location of the project
+        - keep in mind that the code has to be pushed to your github repository
+    - In the device selection window type "atmega168pb"
+    - Now only one entry should be in the list
+    - Select it and click on ok
+- Copy the source code of LED_blinker.c into main.c
+- Fill in the code where asked
+- Program the device as described in the previous task
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
