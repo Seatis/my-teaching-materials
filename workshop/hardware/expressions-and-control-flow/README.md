@@ -62,10 +62,14 @@ with LEDs? Watch these videos to find the answers:
 | Variables |
 | [Variables](https://www.youtube.com/watch?v=k1ur8rX-DQQ) | 7:48 |
 | [Data types](http://www.w3schools.in/c-tutorial/data-types/) | - |
+| [More data types](https://www.tutorialspoint.com/cprogramming/c_data_types.htm) | - |
+| [stdint.h types](https://developer.mbed.org/handbook/C-Data-Types)| - |
 | [Variables](http://www.w3schools.in/c-tutorial/variables/) | - |
 | [Constants](http://www.w3schools.in/c-tutorial/constants/) | - |
+| [Keywords](http://www.w3schools.in/c-tutorial/keywords/) | - |
 | Math operators |
 | [Basic math operators](https://www.youtube.com/watch?v=T3sj5iTK_0M) | 5:11 |
+| [Increment Operator](https://www.youtube.com/watch?v=nNSn1uVNyiU) | 5:11 |
 | [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
 | [Using braces](https://www.youtube.com/watch?v=rubhV7Bu34E) | 4:58 |
 | Decision making |
@@ -76,51 +80,23 @@ with LEDs? Watch these videos to find the answers:
 | [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
 | [else-if statement](https://www.youtube.com/watch?v=DZ0ZXipUx-A) | 8:47 |
 | [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
-| TODO| videó|
+| [switch statement](https://www.youtube.com/watch?v=qZRP5hKGHrs) | 7:30 |
 | [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
 | Logical operators |
 | [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
-| [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
-
-
-
-
-
-
-
-
-
-
-
-
-TODO: review of the links!!!
-this series will be better for us https://www.youtube.com/watch?v=3DeLiClDd04
-
-
-| [Hello World!!!](https://www.youtube.com/watch?v=e840YAaK620) | 9:20 |
-| [Understanding Variables](https://www.youtube.com/watch?v=tkPjecc0ViY) | 11:15 |
-| [Constants, Variables, Data types, Keywords](https://www.youtube.com/watch?v=z600MQdQ9lg) | 7:26 |
-| [Creating and Using Variables](https://www.youtube.com/watch?v=5kjOhtniLOs) | 8:19 |
-| [Console Output with Cout](https://www.youtube.com/watch?v=c7foOFAYqbk) | 5:19 |
-| [Cin for Receiving User, Console Input](https://www.youtube.com/watch?v=lW_ZT_OZD1A) | 6:03 |
-| [Comments](https://www.youtube.com/watch?v=uT0c5X1kvq4) | 8:24 |
-| [Arithmetic Operators](https://www.youtube.com/watch?v=RKNgEgm_DP8) | 5:38 |
-| [Increment and Decrement Operators](https://www.youtube.com/watch?v=kwkZpSc6g7Q) | 7:39 |
-| [Modulus, Short-Hand Operators](https://www.youtube.com/watch?v=fy4hJWctkNc) | 5:13 |
-| [IF ELSE](https://www.youtube.com/watch?v=rPyn7kGHZzA) | 8:26 |
-| [Nested IF ELSE and IF ELSEIF](https://www.youtube.com/watch?v=oMrt_87aW-U) | 5:31 |
-| [Logical and Comparison Operators](https://www.youtube.com/watch?v=HLv2gVg6Xtc) | 13:18 |
-| [Ternary Operator (Conditional Operator)](https://www.youtube.com/watch?v=-QVc_fGSJAw) | 4:44 |
-| [While Loop](https://www.youtube.com/watch?v=kcd2FAxC5Ms) | 5:24 |
-| [Do While Loop](https://www.youtube.com/watch?v=IqKweotABQI) | 5:46 |
-| [For Loop](https://www.youtube.com/watch?v=dNmdkIu0qww) | 7:36 |
-
-### Optional
-*If you've got time and/or want to dig deeper, consider the following:*
-
-| Material | Duration |
-|:---------|-----:|
-| [Operators](https://www.tutorialspoint.com/cplusplus/cpp_operators.htm) | |
+| [Or](https://www.youtube.com/watch?v=brC8O7AeCFA) | 5:44 |
+| [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
+| Loops |
+| [while loop](https://www.youtube.com/watch?v=7pAXm7WEA2I) | 8:28 |
+| [while loop](http://www.w3schools.in/c-tutorial/loops/while/) | - |
+| [do-while loop](https://www.youtube.com/watch?v=eU6no0EEJM0) | 10:42 |
+| [do-while loop](http://www.w3schools.in/c-tutorial/loops/do-while/) | - |
+| [for loop](https://www.youtube.com/watch?v=FPjLbPu5BsQ) | 5:19 |
+| [for loop](http://www.w3schools.in/c-tutorial/loops/for/) | - |
+| [break](https://www.youtube.com/watch?v=JKVc02-GmGs) | 6:26 |
+| [continue](https://www.youtube.com/watch?v=4XaaIGBdhaw) | 4:47 |
+| [Loop control statements](http://www.w3schools.in/c-tutorial/loops/) | - |
+| [Why never use goto](https://tr1.cbsistatic.com/hub/i/2015/05/07/294fc704-f487-11e4-940f-14feb5cc3d2a/goto.png) | - |
 
 ## Material Review
 
@@ -128,18 +104,39 @@ this series will be better for us https://www.youtube.com/watch?v=3DeLiClDd04
 TODO
 
 ### C programming language
- - constant, variable, datatype, keyword
- - int, float, char, bool
- - `cin >>` and `cout <<`
- - `//`, `/* .. */`
- - `--i`/`++i` and `i--`/`i++`
- - `+`, `-`, `*`, `/`, `%`
- - `+=`, `-=`, `*=`, `/=`
- - `==`, `>`, `>=`, `<`, `<=`, `!=`
- - `&&`, `||`, `!`
+ - how compilation works
+    - preprocessor
+    - compiler
+    - assembler
+    - linker
+ - printf basics
+ - comments
+ - variables
+    - keywords
+    - datatype
+        - void, int, float, double, char
+        - unsigned int and char
+        - char, short, int, longlong
+        - why do we use instead stdint.h types
+            - `int8_t`, `int16_t`, `int32_t`, `int64_t`
+            - `uint8_t`, `uint16_t`, `uint32_t`, `uint64_t`
+    - constants
+ - math operators
+    - `+`, `-`, `*`, `/`, `%`
+    - `--i`/`++i` and `i--`/`i++`
+    - `+=`, `-=`, `*=`, `/=`
+ - logical operators
+    - `==`, `>`, `>=`, `<`, `<=`, `!=`
+    - `&&`, `||`, `!`
+ - bitwise operators
+    - `<<`, `>>`, `~`, `&`, `|`, `^`
+    - `<<=`, `>>=`, `~=`, `&=`, `|=`, `^=`
  - if statement
  - nested if statement
+ - else
+ - else-if
  - `?:` ternary operator
+ - switch
  - while loop
  - do while loop
  - for loop
