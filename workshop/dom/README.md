@@ -178,7 +178,7 @@ You can find the inserted Javascript code into an HTML page:
 
 #### Example
 You can find the inserted Javascript code into an HTML page:
-- [events.html](examples/create-insert-remove.html)
+- [events.html](examples/events.html)
 
 #### Exercises
 - [events-1.html](workshop/events-1.html)
