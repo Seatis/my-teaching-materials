@@ -121,6 +121,11 @@ TODO
             - `int8_t`, `int16_t`, `int32_t`, `int64_t`
             - `uint8_t`, `uint16_t`, `uint32_t`, `uint64_t`
     - constants
+    - literals
+        - integers
+        - binary (0b011)
+        - hexadecimal (0xFF)
+        - floats (0.125f) vs. double (0.125)
  - math operators
     - `+`, `-`, `*`, `/`, `%`
     - `--i`/`++i` and `i--`/`i++`
@@ -128,6 +133,7 @@ TODO
  - logical operators
     - `==`, `>`, `>=`, `<`, `<=`, `!=`
     - `&&`, `||`, `!`
+    - no boolean datatype by deafult
  - bitwise operators
     - `<<`, `>>`, `~`, `&`, `|`, `^`
     - `<<=`, `>>=`, `~=`, `&=`, `|=`, `^=`
@@ -145,7 +151,10 @@ TODO
 
 ### Hello World
 ```c_cpp
-cout << "Hello World!" << endl;
+#include <stdio.h>
+void main{
+    printf("Hello world!");
+}
 ```
 
 ### Numbers
@@ -156,6 +165,10 @@ cout << "Hello World!" << endl;
 -1
 1.1
 1.0
+0b0011
+0b11001100
+0xFE
+0x12
 
 1 + 1
 2 - 1
@@ -183,18 +196,16 @@ a += 1;
  - [06.cpp](workshop/06.cpp)
 
 
-### Boolean
+### Logical operators
 ```c_cpp
 a == 2
-True
-False
 1 < 2
 1 > 2
 1 == 2
 1 != 2
-True || False
-True && False
-!True
+a || b
+b && c
+!(d && c)
 ```
 
 #### Excercises
@@ -204,12 +215,15 @@ True && False
  - [10.cpp](workshop/10.cpp)
  - [11.cpp](workshop/11.cpp)
 
-### Strings
+### Embedded related datatypes, literals, operators
 ```c_cpp
-#include <string>
-string txt = "alma";
-string txt;
-txt = "alma" + "fa";
+uint8_t a = 60;
+uint8_t b = 0b00111010;
+uint8_t c = 0x3C;
+uint8_t d = 0x3c;
+if(a == b && b == c && c == d){
+    printf("Equal!"); // They are equal
+}
 ```
 
 #### Excercises
@@ -219,30 +233,30 @@ txt = "alma" + "fa";
 
 ### If
 ```c_cpp
-	if (a == 2) {
-	cout << a << endl;
-	}
+if (a == 2) {
+    printf("%d\n", a);
+}
 
-	if (a < 16) {
-	cout << a + 1 << endl;
-	}
-	else if ( a <= 40) {
-	cout << a - 1 << endl;
-	}
-	else {
-	cout << a << endl;
-	}
+if (a < 16) {
+    printf("%d\n", a + 1);
+}
+else if ( a <= 40) {
+    printf("%d\n", a - 1);
+}
+else {
+    printf("%d\n", a);
+}
 
-	if (a <= 40) {
-		if (a < 16) {
-		cout << a + 1 << endl;
-		}
-		else {
-		cout << a - 1 << endl;
-	}
-	else {
-	cout << a << endl;
-	}
+if (a <= 40) {
+    if (a < 16) {
+        printf("%d\n", a + 1);
+    }
+    else {
+        printf("%d\n", a - 1);
+    }
+    else {
+        printf("%d\n", a);
+}
 ```
 
 #### Excercises
@@ -261,16 +275,16 @@ txt = "alma" + "fa";
 int a = 0;
 while (a < 5) {
     a += 1;
-    cout << a << endl;
+    printf("%d\n", a);
 }
 
 do {
     a += 1;
-    cout << a << endl;
+    printf("%d\n", a);
 } while (a < 5);
 
 for (a = 0; a < 5; a++) {
-    cout << a << endl;
+    printf("%d\n", a);
 }
 ```
 
@@ -280,12 +294,9 @@ Please do the excercises with while && do-while && for
  - [24.cpp](workshop/24.cpp)
  - [25.cpp](workshop/25.cpp)
  - [26.cpp](workshop/26.cpp)
- - [27.cpp](workshop/27.cpp)
- - [28.cpp](workshop/28.cpp)
- - [29.cpp](workshop/29.cpp)
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
+Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
 
  - Is the directory structure and the name of the files correct?
  - Are the includes palced on the top of the files?

@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
 	// print the even numbers till 20

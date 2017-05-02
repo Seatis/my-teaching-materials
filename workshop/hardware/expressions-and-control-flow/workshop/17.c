@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
 	float w = 24;
@@ -9,5 +6,3 @@ int main() {
 	// if w is even increment out by one
 	return 0;
 }
-
-

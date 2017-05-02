@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
 	int i = 1357988018575474;

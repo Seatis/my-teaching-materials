@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
 	int a = 3;
