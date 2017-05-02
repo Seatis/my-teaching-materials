@@ -50,9 +50,20 @@ with LEDs? Watch these videos to find the answers:
 | [Instructions & Programs](https://www.youtube.com/watch?v=zltgXvg6r3k) | 10:35 |
 | [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA) | 6:03 |
 | [Compilers, Assemblers, Linkers, Loaders: A Short Course](https://courses.cs.washington.edu/courses/cse378/97au/help/compilation.html) (only the "Compiling a Program" section)| - |
+| [Setting Up Code Blocks](https://www.youtube.com/watch?v=3DeLiClDd04) | 6:37 |
+| [Setting Up Code Blocks](https://www.youtube.com/watch?v=3DeLiClDd04) | 6:37 |
+| [How Computer Programs Work](https://www.youtube.com/watch?v=iWx3yyFMWQA) | 4:51 |
+| [Print Text on the Screen](https://www.youtube.com/watch?v=oSpmApiUsHw) | 3:32 |
+| [Comments](https://www.youtube.com/watch?v=oX2FpFYXE38) | 3:28 |
+| [Conversion Characters](https://www.youtube.com/watch?v=To7WA4ijQQ0) | 6:46 |
+| [Variables](https://www.youtube.com/watch?v=k1ur8rX-DQQ) | 7:48 |
+
+
+
 
 TODO: review of the links!!!
 this series will be better for us https://www.youtube.com/watch?v=3DeLiClDd04
+
 
 | [Hello World!!!](https://www.youtube.com/watch?v=e840YAaK620) | 9:20 |
 | [Understanding Variables](https://www.youtube.com/watch?v=tkPjecc0ViY) | 11:15 |
