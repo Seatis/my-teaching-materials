@@ -1,0 +1,6 @@
+let item = ""
+basic.forever(() => {
+    item = "1234"
+    basic.showString(item)
+    basic.showNumber(parseInt(item))
+})

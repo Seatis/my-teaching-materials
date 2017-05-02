@@ -1,0 +1,7 @@
+input.onButtonPressed(Button.A, () => {
+    radio.sendNumber(101040)
+})
+radio.onDataPacketReceived(({receivedNumber}) => {
+    basic.showNumber(receivedNumber)
+})
+radio.setGroup(1)
