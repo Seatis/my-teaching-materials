@@ -73,7 +73,8 @@ Watch these videos on the basics of computer science.
 
 ## Workshop
 A mentor will guide your through various blocks provided by the PXT tool.
-There are practice tasks after each segment.
+There are practice tasks after each segment. 
+**Please always save the JavaScript code of your solutions!**
 
 Keep in mind that a help info
 will pop up if you keep your mouse pointer on a block in the PXT tool.
