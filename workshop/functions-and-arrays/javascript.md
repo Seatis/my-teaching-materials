@@ -4,8 +4,8 @@ Get to know JavaScript's function, array syntax and its behaviors.
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
-| [Node JS Tutorial for Beginners #5 - Function Expressions](https://www.youtube.com/watch?v=lK42xIMcA0Y) | 4:18 |
 | [JavaScript Tutorial For Beginners #20 - Functions](https://www.youtube.com/watch?v=KH57lIgwe2g) | 9:18 |
+| [Node JS Tutorial for Beginners #5 - Function Expressions](https://www.youtube.com/watch?v=lK42xIMcA0Y) | 4:18 |
 | [JavaScript Tutorial For Beginners #21 - Variable Scope](https://www.youtube.com/watch?v=kjdZ1h3CIs4) | 6:05 |
 | [JavaScript Tutorial For Beginners #26 - Arrays](https://www.youtube.com/watch?v=EUnV-fCY0Pc) | 6:47 |
 
@@ -21,9 +21,10 @@ Get to know JavaScript's function, array syntax and its behaviors.
 
 #### Study these methods:
 
- - [Concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
- - [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
- - [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+ - [Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+ - [ForEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach)
+ - [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+ - [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 
 ## Material Review
