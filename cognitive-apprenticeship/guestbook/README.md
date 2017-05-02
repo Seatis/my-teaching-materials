@@ -84,7 +84,7 @@ public String hitit(Entry entry) {
 }
 ```
 
-## Extend controller to store endpoints
+## Extend controller to store entries
 - initialize an entry list
 - add the entry to it
 - show the size of it on the template
