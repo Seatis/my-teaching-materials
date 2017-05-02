@@ -68,12 +68,20 @@ with LEDs? Watch these videos to find the answers:
 | [Basic math operators](https://www.youtube.com/watch?v=T3sj5iTK_0M) | 5:11 |
 | [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
 | [Using braces](https://www.youtube.com/watch?v=rubhV7Bu34E) | 4:58 |
-
 | Decision making |
+| [if statement](https://www.youtube.com/watch?v=PXwWoL0IG5A) | 7:53 |
 | [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
+| [Nesting if statement](https://www.youtube.com/watch?v=PXwWoL0IG5A) | 4:45 |
+| [if-else statement](https://www.youtube.com/watch?v=KgVzRmUPsdo) | 7:53 |
 | [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
+| [else-if statement](https://www.youtube.com/watch?v=DZ0ZXipUx-A) | 8:47 |
 | [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
+| TODO| videó|
 | [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
+| Logical operators |
+| [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
+| [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
+
 
 
 
