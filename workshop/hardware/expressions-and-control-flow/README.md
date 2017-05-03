@@ -348,7 +348,7 @@ will guide you through the usage of the Atmel Studio.
 Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
 
  - Is the directory structure and the name of the files correct?
- - Are the includes palced on the top of the files?
+ - Are the includes placed on the top of the files?
  - Is the indentation good in each file?
  - Is there unnecessary code?
  - Can you find unnecessary code in comments?
