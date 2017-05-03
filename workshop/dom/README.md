@@ -13,8 +13,7 @@ You'll learn how the browser builds HTML documents.
 | [JavaScript Tutorial For Beginners #36 - Changing CSS Styles](https://youtu.be/97agDBCyxAE) | 4:49 |
 | [JavaScript Tutorial For Beginners #37 - Adding Elements to the DOM](https://youtu.be/TrGI9Yki-24) | 7:43 |
 | [JavaScript Tutorial For Beginners #38 - Removing Elements from the DOM](https://youtu.be/rBGgguNnutE) | 4:12 |
-| [JavaScript Tutorial For Beginners # 39 - Introduction to JavaScript Events](https://youtu.be/bf_9IeihQ0M) | 8:29 |
-| [JavaScript Tutorial For Beginners #40 - The onClick Event](https://youtu.be/XQEfWd1lh4Q) | 8:04 |
+| [JavaScript: Browser - Event Listeners](https://youtu.be/73VikwiXUrQ) | 4:52 |
 | [JavaScript Tutorial For Beginners #41 - Window onLoad Event](https://youtu.be/RVA4HoEE_q8) | 5:06 |
 | [JavaScript Tutorial For Beginners #42 - JavaScript Timers](https://youtu.be/Az5J_EkhYCY) | 12:11 |
 | [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
