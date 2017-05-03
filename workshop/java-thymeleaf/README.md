@@ -12,6 +12,7 @@
 | [Rapid Introduction to the essentials](https://medium.com/@trevormydata/week-5-thymeleaf-with-spring-mvc-rapid-introduction-to-the-essentials-799f1fba8c07)| Text |
 | [Getting started with the Standard dialects in 5 minutes](http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)| Text |
 | [Introduction to Using Thymeleaf in Spring](http://www.baeldung.com/thymeleaf-in-spring-mvc)| Text |
+| [Spring MVC with Thymeleaf](https://www.youtube.com/watch?v=2LqQwjGRx_A)| 6:58 |
 | [Spring Boot - 007 Thymeleaf Demo](https://www.youtube.com/watch?v=IDOblyh4RBA)| 19:52 |
 | [Introduction to Thymeleaf (Broadleaf)](https://www.youtube.com/watch?v=GNteuJDo1KA&t=374) - focus on the section "Introduction to Thymeleaf", you can keep watching the "Intermediate" Chapter, but this is just to get the basic concepts (@27m00).| 38:00 |
 | [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/) | Text |
@@ -60,4 +61,38 @@ HTML
     - to supply a default value ( `(value) ?: (defaultvalue)`)
 	- for if then (`(if) ? (then)`)
 	- for ternary (`(if) ? (then) : (else)`)
-  - `__` - preprocessor - eg `#{selection.__${sel.code}__}` where `{sel.code}` = "ALL" becomes `#{select.ALL}` before evaluating
+
+## Workshop
+
+You can use the following html template for the exercises today!
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="utf-8" />
+</head>
+<body>
+
+</body>
+</html>
+```
+
+### Preparation
+ - Create a new project for the exercises
+ - Don't forget to add Lombok, DevTools, Web and Thymeleaf as dependencies
+ - Create the project outline (controller/model package)
+ - Each exercise will be in the same project with different EndPoints
+   - [Exercise 1](./exercise1.md)
+   - [Exercise 2](./exercise2.md)
+   - [Exercise 3](./exercise3.md)
+   - [Exercise 4](./exercise4.md)
+   - [Exercise 5](./exercise5.md)
+   - [Exercise 6](./exercise6.md)
+   - [Exercise 7](./exercise7.md)
+   - [Exercise 8](./exercise8.md)
+   - [Exercise 9](./exercise9.md)
+   - [Exercise 10](./exercise10.md)
+   - [Exercise 11](./exercise11.md)
