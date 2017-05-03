@@ -95,4 +95,4 @@ You are going to learn how to use the serial port for communication.
 - Setting up serial communication with micro:bit (mentor guidance)
   - usage of Serial blocks
   - usage of terminal software
-- [Start the project of the week](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/hardware/microbit-binary-converter)
+- [Start the project of the week](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/microbit-binary-converter)
