@@ -38,6 +38,7 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - node
   - element
 - accessing elements
+  - getElementdByClassName
   - getElementById
   - getElementsByTagName
   - querySelector
@@ -57,6 +58,9 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - classList
 - events
   - addEventListener
+- timers
+  - setTimeout
+  - setInterval
 - bookmarklets
   - javascript protocol
 
