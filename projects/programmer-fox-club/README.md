@@ -61,9 +61,9 @@
  -  optional: if all the tricks have been learned display a message
     instead of the dropdown
 
-### Optional
+## Optional
 
-## Action History
+### Action History
 
  -  create a `/actionHistory` route
  -  here you should display all the actions that have been made
@@ -73,7 +73,7 @@
  -  display the five latest actions to the information page
      -  upgrade [the information view](assets/views/information-02.png)
 
-## Other ideas
+### Other ideas
 
  -  add amount to food and drink that decreases over time
  -  be able to play the tricks
