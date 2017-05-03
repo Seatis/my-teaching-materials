@@ -1,20 +1,47 @@
-#Functions and Arrays
+# Functions and Arrays
+
 *Meet the base elements of the C++ language by implementing small programs*
 
 ## Objectives
  - Defining and calling functions
- - Iterating on arrays
+ - Using the interrupts with ATmega168PB
+ - Using the timers with ATmega168PB
 
 ## Materials & Resources
 ### Environment
- - Install Eclipse IDE C/C++ on your system!
-	- http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/lunasr1
- - Windows help for installing:
-	- https://www.youtube.com/watch?v=TXbuATMlVNY
+TODO
 
 ### Training
+TODO
+Function syntax
+Return
+multiple return
+Parameters
+inline Functions
+const keyword with functions and Parameters
+sizeof
+recursion
+
+timers
+    wtf?
+    counter
+    capture
+
+interrupts basics
+interrupt datasheet pages
+    - ext
+    - peripheral
+        - timer
+
+
+
+
 | Material | Time |
 |:---------|-----:|
+
+
+
+
 | [Introduction to Array](https://www.youtube.com/watch?v=odTejLbwbnc) | 6:35 |
 | [Introduction to Functions](https://www.youtube.com/watch?v=4bgabzer4OE) | 7:09 |
 | [Function Parameters](https://www.youtube.com/watch?v=WqukJuBnLQU) | 6:39 |
@@ -116,17 +143,15 @@ int main() {
  - [22.cpp](workshop/22.cpp)
  - [23.cpp](workshop/23.cpp)
 
-
 ## Individual Workshop Review
-Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
+Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
 
- - Is the directory structure and the name of the files correct?
- - Are the includes palced on the top of the files?
- - Is the indentation good in each file?
- - Is there unnecessary code?
- - Can you find unnecessary code in comments?
- - Is there unnecessary code duplication?
- - Are there unnecessary empty blocks?
- - Can you spot unused variables?
- - Is the commit message meaningful?
-
+- Is the directory structure and the name of the files correct?
+- Are the includes placed on the top of the files?
+- Is the indentation good in each file?
+- Is there unnecessary code?
+- Can you find unnecessary code in comments?
+- Is there unnecessary code duplication?
+- Are there unnecessary empty blocks?
+- Can you spot unused variables?
+- Is the commit message meaningful?
