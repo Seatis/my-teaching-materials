@@ -345,7 +345,7 @@ will guide you through the usage of the Atmel Studio.
 - Program the device as described in the previous task
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
+Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
 
  - Is the directory structure and the name of the files correct?
  - Are the includes placed on the top of the files?
