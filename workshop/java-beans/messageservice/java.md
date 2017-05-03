@@ -38,9 +38,8 @@ public class MessageserviceApplication implements CommandLineRunner{
 ```
 
 
-One of the two possible results below should look like this:
+One of the two possible results should look like this:
 
-Output:</br>
 SOME SPRING INFO</br>
 `Email Sent to office@greenfox.com with Message=Hi Barba! How are you?`</br>
 SOME SPRING INFO
