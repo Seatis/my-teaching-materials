@@ -47,6 +47,7 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - createElement
   - appendChild
   - removeChild
+  - insertBefore
 - an element's contents
   - innerHTML
   - textContent
