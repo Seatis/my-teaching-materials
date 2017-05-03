@@ -5,7 +5,7 @@
  - Understanding the Compiler
  - Using basic types
  - Creating and reading expressions
- - Declaring and definind variables
+ - Declaring and defining variables
  - Using variables and mutate values
  - Understanding conditionals
  - Using while and for loops
@@ -101,7 +101,14 @@ with LEDs? Watch these videos to find the answers:
 ## Material Review
 
 ### Electronics
-TODO
+ - IDEs installed?
+ - Which register determines the direction of the port (input or output)?
+ - Which register is used to turn on or off an output pin?
+ - Which register can be used to toggle a pin's state?
+ - Which register can be used to read a pin's state?
+ - How can be a pull-up turned on a specific pin?
+ - pull-up/pull-down resistors
+ - current limiting resistors
 
 ### C programming language
  - how compilation works
