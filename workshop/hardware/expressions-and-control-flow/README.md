@@ -195,12 +195,12 @@ a += 1;
 ```
 
 #### Excercises
- - [01.cpp](workshop/01.cpp)
- - [02.cpp](workshop/02.cpp)
- - [03.cpp](workshop/03.cpp)
- - [04.cpp](workshop/04.cpp)
- - [05.cpp](workshop/05.cpp)
- - [06.cpp](workshop/06.cpp)
+ - [01.c](workshop/01.c)
+ - [02.c](workshop/02.c)
+ - [03.c](workshop/03.c)
+ - [04.c](workshop/04.c)
+ - [05.c](workshop/05.c)
+ - [06.c](workshop/06.c)
 
 
 ### Logical operators
@@ -216,11 +216,11 @@ b && c
 ```
 
 #### Excercises
- - [07.cpp](workshop/07.cpp)
- - [08.cpp](workshop/08.cpp)
- - [09.cpp](workshop/09.cpp)
- - [10.cpp](workshop/10.cpp)
- - [11.cpp](workshop/11.cpp)
+ - [07.c](workshop/07.c)
+ - [08.c](workshop/08.c)
+ - [09.c](workshop/09.c)
+ - [10.c](workshop/10.c)
+ - [11.c](workshop/11.c)
 
 ### Embedded related datatypes, literals, operators
 ```c_cpp
@@ -234,9 +234,9 @@ if(a == b && b == c && c == d){
 ```
 
 #### Excercises
- - [12.cpp](workshop/12.cpp)
- - [13.cpp](workshop/13.cpp)
- - [14.cpp](workshop/14.cpp)
+ - [12.c](workshop/12.c)
+ - [13.c](workshop/13.c)
+ - [14.c](workshop/14.c)
 
 ### If
 ```c_cpp
@@ -267,14 +267,14 @@ if (a <= 40) {
 ```
 
 #### Excercises
- - [15.cpp](workshop/15.cpp)
- - [16.cpp](workshop/16.cpp)
- - [17.cpp](workshop/17.cpp)
- - [18.cpp](workshop/18.cpp)
- - [19.cpp](workshop/19.cpp)
- - [20.cpp](workshop/20.cpp)
- - [21.cpp](workshop/21.cpp)
- - [22.cpp](workshop/22.cpp)
+ - [15.c](workshop/15.c)
+ - [16.c](workshop/16.c)
+ - [17.c](workshop/17.c)
+ - [18.c](workshop/18.c)
+ - [19.c](workshop/19.c)
+ - [20.c](workshop/20.c)
+ - [21.c](workshop/21.c)
+ - [22.c](workshop/22.c)
 
 
 ### While / Do - While / For
@@ -297,10 +297,10 @@ for (a = 0; a < 5; a++) {
 
 #### Excercises
 Please do the excercises with while && do-while && for
- - [23.cpp](workshop/23.cpp)
- - [24.cpp](workshop/24.cpp)
- - [25.cpp](workshop/25.cpp)
- - [26.cpp](workshop/26.cpp)
+ - [23.c](workshop/23.c)
+ - [24.c](workshop/24.c)
+ - [25.c](workshop/25.c)
+ - [26.c](workshop/26.c)
 
 ### First embedded C program
 You will program the Atmel development board for the first time. A mentor
