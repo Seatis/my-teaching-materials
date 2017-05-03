@@ -77,6 +77,8 @@ ISR (INT0_vect)
 }
 ```
 
+TODO: link to vector name list?! It's the same as in vector table@datasheet???
+
 To use interrupts you also have to enable it. In most MCUs there is a global interrupt enable bit (somewhere in a register :)) which has to be set to "1" to enable the interrupts globally, then you have to enable the one you would like to use (somewhere in another register :)).
 
 Please read more about this topic in the following document:
@@ -151,103 +153,119 @@ so read it only if you have enough time :).
 |:---------|-----:|
 | [Timers in AVR](http://www.github.com/abcminiuser/avr-tutorials/blob/master/Timers/Output/Timers.pdf?raw=true) | - |
 
-TODO
-
-timers
-    wtf?
-    counter
-    capture
-
-interrupts basics
-interrupt datasheet pages
-    - ext
-    - peripheral
-        - timer
-
 ## Material Review
- - Array
- - Index
- - Function
- - Function paramerter
- - Function prototype
- - `return`
- - Inline function
- - Scope
- - Local variable
- - `break`
- - `continue`
- - `switch`
- - `sizeof`
- - Recursion
+- Functions
+    - syntax
+    - what do we use it
+    - why it is good
+    - how does it look like
+    - parameters
+        - syntax
+        - why it is good
+    - return values
+        - syntax
+        - why it is good
+        - multiple return statements in functions
+    - variable scopes
+        - global
+            - it can be evil
+        - local
+    - standard library functions
+        - printf
+        - sizeof
+            - play with it with different types
+            - char, short, int, long, longlong
+            - uint8_t, int8_t, float, double
+        - TODO input functions which are useful during UART project in the UART ws!
+- Interrupts
+    - what is it
+    - why do we use it (vs. polling)
+    - interrupt vectors (generally speaking)
+    - ATmega168PB specific things
+        - ATmega168PB interrupt vector
+        - how can we use it in C with our compiler
+            - interrupt.h
+            - ISR(...) functions
+            - list of vector names
+        - interrupt enable bits
+            - global interrupt enable/disable
+            - peripheral interrupt enable bits
+                - where can we find them
+                - datasheet!4444!!!!!!4444!
+    - Live coding
+        - button interrupt turns on the LED
+
+- Timers
+    - what is it
+    - why do we use it
+    - for what do we use it
+        - frequency and period measurement
+        - timing applications
+        - time measurement
+        - PWM (we will talk about it later)
+    - general block diagram
+        - counter
+        - clock source
+            - prescaler
+            - how to calculate timer overflow period
+                - with prescaler
+                - bit count dependent
+                - TODO: put this method in material
+        - compare registers
+        - config registers
+        - interrupt generation
+    - block diagram of ATmega168PB TC0
+    - TC0 related registers
+        - what do they responsible for
+        - TCCR0A
+        - TCCR0B
+        - TIMSK0
+        - TCNT0
+        - OCR0A
+        - OCR0B
+        - TIFR0
+- take one deep breath
+- take another deep breath, but this time much more deeper
+- go on
 
 ## Workshop
-### Arrays and sizeof
-```cpp
-int myArray = {1, 2, 3, 4, 5, 6};
-
-cout << myArray[3]; // 4
-
-myArray[1] = 15;
-
-double myDouble = 4.5;
-
-cout << sizeof(myDouble) // 8
-
-```
- - [01.cpp](workshop/01.cpp)
- - [02.cpp](workshop/02.cpp)
- - [03.cpp](workshop/03.cpp)
- - [04.cpp](workshop/04.cpp)
- - [05.cpp](workshop/05.cpp)
- - [06.cpp](workshop/06.cpp)
- - [07.cpp](workshop/07.cpp)
- - [08.cpp](workshop/08.cpp)
+Today we are going to learn how to use functions in C language.
+After we mastered this new "thing", we are moving forward by using the external
+interrupts and timers of the ATmega168PB devboard.
 
 ### Functions
-```cpp
-void greet() {
-  cout << "Hello!";
-}
+- example
+    - int fruitManipulator(int oranges, int apples, unsigned int what2do)
+    - 0 means add
+    - 1 means subtract
+    - elso returns
+- Practice
+    - void function no params
+        - something that is good because reusable
+    - void function with params
+    - non void function no params
+        - ??
+    - non void function with params
+        - ??
+        - error code return
+### Interrupt
+- preactice (with code template)
+    - reproduce button turns on LED project
 
-int main() {
-  greet();
-}
-```
+### Timer
+- Practice
+    - A
+        - config timer as normal operation
+            - human compatible freqency
+            - the min tmr period is 60Hz so fucked up :(
+        - in main poll the timer register value
+        - if matches toggle the LED
+            - effective freq is about 30Hz
+    - B
 
-```cpp
-void sayNumber(int number) {
-  cout << number;
-}
+TODO: DEBUGGER!!!!!!!! Start this whole shit with the debugger
+TODO: clocks of this shitty mcu!
 
-int main() {
-  sayNumber(15);
-}
-```
-
-```cpp
-int add(int a, int b) {
-  return a + b;
-}
-
-int main() {
-  cout << add(1, 2);
-}
-```
- - [09.cpp](workshop/09.cpp)
- - [10.cpp](workshop/10.cpp)
- - [11.cpp](workshop/11.cpp)
- - [12.cpp](workshop/12.cpp)
- - [13.cpp](workshop/13.cpp)
- - [14.cpp](workshop/14.cpp)
- - [15.cpp](workshop/15.cpp)
- - [16.cpp](workshop/16.cpp)
- - [17.cpp](workshop/17.cpp)
- - [18.cpp](workshop/18.cpp)
- - [19.cpp](workshop/19.cpp)
- - [20.cpp](workshop/20.cpp)
- - [21.cpp](workshop/21.cpp)
- - [22.cpp](workshop/22.cpp)
- - [23.cpp](workshop/23.cpp)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
