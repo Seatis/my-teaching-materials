@@ -14,7 +14,8 @@ You will need to set up 2 package directories under com.greenfox.messageservice:
 Hint: Don't forget to scan for components(beans) in the relevant package.
 
 The Application class should be:
-´´´java
+
+```java
 package com.greenfox.messageservice;
 
 import ...
@@ -34,7 +35,7 @@ public class MessageserviceApplication implements CommandLineRunner{
 		messageProceeder.processMessage("Hi Barba, How are you?", "office@greenfox.com");
 	}
 }
-´´´
+```
 
 
 One of the two possible results below should look like this:
