@@ -263,26 +263,75 @@ Try it out with different numbers and print out the returned value in the main f
 - non void function with params
     - [4.c](workshop/CodeBlocks/4.c)
 
-
-- example
-    - int fruitManipulator(int oranges, int apples, unsigned int what2do)
-    - 0 means add
-    - 1 means subtract
-    - elso returns
-- Practice
-    - void function no params
-        - something that is good because reusable
-    - void function with params
-    - non void function no params
-        - ??
-    - non void function with params
-        - ??
-        - error code return
 ### Interrupt
-- preactice (with code template)
-    - reproduce button turns on LED project
+Let's use the interrupt-on-change functionality of the ATmega168PB!
+
+There is a button on the devboard, which is connected to PB7. This pin is also called
+PCINT7 (PinChangeINTerrupt7). We can set up an interrupt which will be fired
+on every state change of PB7. So if you push or release the button that interrupt will run.
+
+#### Tasks
+[Turning on LED with interrupts](workshop\AtmelStudio\button_interrupt.c)
 
 ### Timer
+#### 1. Timer, timer, too fast timer
+The timers. Thay are a little bit complex, but don't be afraid.
+
+At first do the first task. You will configure the TC0 timer to work in normal
+operation, than you will turn the LED on/off depending of the counter register
+value.
+
+[Turning on/off LED depending on counter value](workshop\AtmelStudio\timer_basics_too_fast.c)
+
+You are now confused, why does the LED not flashing??!! It's just vibrating!
+Turn on the camera on your smartphone and watch the devboard on the screen of your smartphone.
+
+Now start to shake the board! You can notice two things:
+    - the green LED makes a continuous line on the screen
+    - the orange LED makes a dashed line on the screen
+
+This is because the green LED is emitting light continuously, while the orange one
+is switched off sometimes. You see? The LED is flashing just your eyes can't notice it
+because the human eyes is little bit slow.
+
+Let's calculate the flashing frequency of the LED!
+The I/O clock frequency is 16MHz, which we devide by 1024, so the timer gets an
+effective clock frequency of 15.625kHz. The counter overflows after every 256th
+clock cycle (because the timer counter register is 8-bit wide), so the counter
+overflows with a frequency of approximately 60Hz. So, we toggle the LED
+in 60 times in every second, hence it flashes with 30Hz. It looks to our eyes
+as a vibration.
+
+What is the solution?
+
+Well, we could
+- Lower the clock frequency of the timer by lowering the system
+clock frequency. On this devboard this is not possible.
+- Lower the timer's clock frequency by setting the prescaler to a
+higher value, but the prescaler is already set to the maximal 1024 value.
+- Not change the bit number of the counter, so it will remain 8-bit wide.
+
+So it looks like this timer is in it's slowest mode. What to do?
+
+We will be tricky :), do the next task.
+
+#### 2. Timer, timer, tricky timer
+[Turning on/off LED depending on counter value, this time slower](workshop\AtmelStudio\timer_basics_speed_okay.c)
+
+See? Now you created a counter from a variable, which counts the overflow of the
+timer's counter register :).
+
+#### 3. Timer interrupts
+The timer can generate various interrupts.
+
+Now let's see the overflow interrupt. Instead of polling the TOV0 flag we can setup
+the MCU to fire az interrupt request when the TOV0 flag is set to 1 by the TC0 timer
+peripheral.
+
+
+
+
+TODO: PCICR reg, sei() macro,
 - Practice
     - A
         - config timer as normal operation
@@ -292,6 +341,7 @@ Try it out with different numbers and print out the returned value in the main f
         - if matches toggle the LED
             - effective freq is about 30Hz
     - B
+        - timer interrupts
 
 TODO: DEBUGGER!!!!!!!! Start this whole shit with the debugger?!
 TODO: clocks of this shitty mcu!
