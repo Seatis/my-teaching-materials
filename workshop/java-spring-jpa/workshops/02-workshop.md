@@ -29,7 +29,9 @@
 
 - Add "spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect"
 
+- Add "spring.logging.level.org.hibernate.SQL = debug"
+
 
 ### Run the program
-- If you did well then a new and empty "todo" table should appear with 4 columns(id, title, isUrgent, isDone)
+- If you did well then a new and empty "todo" table should appear with 4 columns(id, title, isUrgent, isDone) in MySQL.
 - And your webpage should look [like this](../assets/EmptyTodos.PNG).
