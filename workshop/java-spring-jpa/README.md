@@ -57,6 +57,6 @@ Java Persistence API is a collection of classes and methods to persistently stor
 
 The Workshops are:
 - [01 - Listing Todos from embedded database](./workshops/01-workshop.md)
-- [02 - Listing Todos from MySQL](./workshop/02-workshop.md)
-- [JPA, MySQL and relationships between Objects](./workshop/Workshop03.md) - explore JPA
+- [02 - Connection with MySQL](./workshops/02-workshop.md)
+- [03 - Listing Todos from MySQL](./workshops/03-workshop.md) - explore JPA
 - [JPA Querying with MySQL](./Workshop/Workshop04.md)

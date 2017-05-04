@@ -7,7 +7,7 @@
   - Lombok
 
 ### Create classes
-- Add a Todo class with the fields(id:int, title:String, isUrgent:boolean, isDone:boolean)
+- Add a Todo class with the fields(id:int, title:String, isUrgent:boolean(default false), isDone:boolean(default false))
 #### Controller
 - Create a new controller called TodoController which maps to `/todo`
 - Add a single `public String list(Model model)` method which maps to `/` and `/list` in the controller, which returns with "This is my first todo" string. Use the @Responsebody annotation.
@@ -20,7 +20,7 @@
 
 ### Create template
 - Remove @Responsebody from the Controller list method
-- Make sure that the method returns to "todo" template
+- Make sure that the method returns to "todoslist" template
 - Create a new template in the `src/main/resources/templates/todo.html` folder and in its html body display the todos [like this](../assets/ListTodos.PNG).
 
 ### Connect to database
