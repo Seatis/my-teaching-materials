@@ -55,8 +55,8 @@ Java Persistence API is a collection of classes and methods to persistently stor
   - DevTools
   - Lombok
 
-The Workshops are:-
-- [Data Project with JDBC / Spring Boot Gradle build](./workshop/Workshop01.md) - using Spring Initialzr in IntelliJ to create a project, practice understanding JPA and using H2.
-- [JPA with MySQL](./workshop/Workshop02.md)
+The Workshops are:
+- [01 - Listing Todos from embedded database](./workshops/01-workshop.md)
+- [02 - Listing Todos from MySQL](./workshop/02-workshop.md)
 - [JPA, MySQL and relationships between Objects](./workshop/Workshop03.md) - explore JPA
 - [JPA Querying with MySQL](./Workshop/Workshop04.md)
