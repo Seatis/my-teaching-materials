@@ -23,6 +23,7 @@ program which allows to send and receive data between your laptop and micro:bit.
 **Windows users**
 
 Download and install [RealTerm](https://sourceforge.net/projects/realterm/).
+Donwload and install [mbed serial driver](https://developer.mbed.org/handbook/Windows-serial-configuration).
 
 **Linux and Mac OS X users**
 
@@ -62,10 +63,14 @@ Practice the conversion algorithms! You can use [this tool](https://www.cs.ucsb.
  - Symbols of battery (voltage source), resistor, capacitor
  - Ohm's law
  - Resistance
+ - Capacitance
  - Electric power
  - Resistors and capacitors
- - Resistance vs resistor
- - Capacitance vs capacitor
+  - Resistance vs resistor
+  - Capacitance vs capacitor
+ - Circuit analysis
+  - Series connection of resistors/capacitors
+  - Parallell connection of resistors/capacitors
  - SI prefixes
  - Plotting U(t) and I(t) graphs
  - U-I graph of resistors
