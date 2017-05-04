@@ -54,7 +54,7 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - [06 - Add updating function](./workshops/06-workshop.md)
 
 ### Optional
-- Add line item details to the meal, for each part of the meal, to break up the calories
-- Add service package and Service class. Refactor every method from Controller that doesn't relate strictly there.
-learning about how to call a webservice
-Create a calendar view that shows, day by day meals eaten, total calories
+- Make the todo names clickable. On the event a new page should appear with the details of the selected todo.
+- Add date column with date of creation
+- Add `user` table, try to find out the relationship and the connection between `todo` and `user` tables
+- Beautify the app, you can use bootstrap or be creative and work in css
