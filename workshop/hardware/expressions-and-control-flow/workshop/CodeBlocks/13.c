@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
     uint8_t x = 0b11001100;
