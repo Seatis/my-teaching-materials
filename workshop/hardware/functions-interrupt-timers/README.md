@@ -77,7 +77,8 @@ ISR (INT0_vect)
 }
 ```
 
-TODO: link to vector name list?! It's the same as in vector table@datasheet???
+The vector name is usually the same as in the datasheet vector table "Source"
+column (just replace the spaces with the \_ underscore character ).
 
 To use interrupts you also have to enable it. In most MCUs there is a global interrupt enable bit (somewhere in a register :)) which has to be set to "1" to enable the interrupts globally, then you have to enable the one you would like to use (somewhere in another register :)).
 
@@ -145,6 +146,13 @@ In the register description section try to find out the answer for the following
 |:---------|-----:|
 | [ATmega168PB Datasheet - TC0 timer](http://www.atmel.com/Images/Atmel-42176-ATmega48PB-88PB-168PB_Datasheet.pdf) | - |
 
+You can calculate how frequently a timer counter overflow occurs with the following formula:
+overflow_frequency = CPU_freq / prescaler_value / maximum_value_of_timer_counter
+
+For example if the CPU frequency is 16MHz, the prescaler is set to 256 and the timer
+has 16bits, than:
+overflow_frequency = 16000000 / 256 / 65536 = 0.95Hz
+
 #### Optional Material
 This article talks about the timers and it's capabilities. It's a litle bit long,
 so read it only if you have enough time :).
@@ -176,7 +184,6 @@ so read it only if you have enough time :).
             - play with it with different types
             - char, short, int, long, longlong
             - uint8_t, int8_t, float, double
-        - TODO input functions which are useful during UART project in the UART ws!
 - Interrupts
     - what is it
     - why do we use it (vs. polling)
@@ -210,7 +217,6 @@ so read it only if you have enough time :).
             - how to calculate timer overflow period
                 - with prescaler
                 - bit count dependent
-                - TODO: put this method in material
         - compare registers
         - config registers
         - interrupt generation
@@ -328,24 +334,10 @@ Now let's see the overflow interrupt. Instead of polling the TOV0 flag we can se
 the MCU to fire az interrupt request when the TOV0 flag is set to 1 by the TC0 timer
 peripheral.
 
+[Using timer overflow interrupt](workshop\AtmelStudio\timer_overflow_interrupt.c)
 
-
-
-TODO: PCICR reg, sei() macro,
-- Practice
-    - A
-        - config timer as normal operation
-            - human compatible freqency
-            - the min tmr period is 60Hz so litle bit fucked up :(
-        - in main poll the timer register value
-        - if matches toggle the LED
-            - effective freq is about 30Hz
-    - B
-        - timer interrupts
-
-TODO: DEBUGGER!!!!!!!! Start this whole shit with the debugger?!
-TODO: clocks of this shitty mcu!
-
+#### 17812371328. Bonus tasks
+The TC0 timer has other interrupt capabilities. Play with them!
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
