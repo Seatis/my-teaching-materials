@@ -46,7 +46,7 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - @NamedQuery
 
 ## Workshops
-- create a spring project
+- create a SpringBoot project with Gradle
 - add dependencies:
   - JPA
   - Web
