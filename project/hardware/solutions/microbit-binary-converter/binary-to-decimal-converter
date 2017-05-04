@@ -1,0 +1,22 @@
+let exp = 0
+let len = 0
+let decimal = 0
+let index = 0
+let binary = ""
+basic.forever(() => {
+    binary = serial.readLine()
+    index = 0
+    decimal = 0
+    len = binary.length
+    for (let i = 0; i < len; i++) {
+        if (parseInt(binary.charAt(len - 1 - index)) == 1) {
+            exp = 1
+            for (let i = 0; i < index; i++) {
+                exp = exp * 2
+            }
+            decimal = decimal + exp
+        }
+        index += 1
+    }
+    serial.writeValue("x", decimal)
+})

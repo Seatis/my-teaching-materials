@@ -1,10 +1,23 @@
 # Plain SQL Basics
+Get introduced to MySQL
+
+## Objectives
+ - Understand what RDBMS are
+ - Start to think with data in mind
+ - Learn to structure and normalize your data
+
 
 ## Materials & Resources
 ### Environment
 Preparation:
 - Install MySQL for your computer - you'll need to have admin rights to your pc;
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 - Add MySQL Workbench 
+
+### Tools
+Install a GUI client to manage DB tables
+ - [HeidiSQL](http://www.heidisql.com/) - Windows
+ - [Sequel pro](http://www.sequelpro.com/) - OSX
 
 ### Training
 | Material | Time |
@@ -15,7 +28,7 @@ Preparation:
 |[MySQL Tutorial (Bana)](https://www.youtube.com/watch?v=yPu6qV5byu4)|41:09|
 |[Marble](https://www.youtube.com/watch?v=h7mhFTAJvxA)|2:18|
 
-## Assignment review
+## Material review
 - data
 - database
     - navigational
