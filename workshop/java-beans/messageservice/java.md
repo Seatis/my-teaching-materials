@@ -11,7 +11,7 @@ You will need to set up 2 package directories under com.greenfox.messageservice:
 - service
 
 `MessageService` should be injected into `MessageProceeder` class using field-based, constructor-based and setter-based dependency injections, however only one of them should be wired.</br>
-Hint: Don't forget to scan for components(beans) in the relevant package.
+Hint: If it is necessary don't forget to scan for components(beans) in the relevant package.
 
 The Application class should be:
 
