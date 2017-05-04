@@ -1,4 +1,4 @@
-# Workshop03 Listing ToDos from MySQL
+# Listing ToDos from MySQL
 
 - From now on we are going to extend the project, so use the same project as in Workshop02.
 - Populate the "todo" table in MySQL with new ToDos either in CommandLineRunner or directly in MySQL

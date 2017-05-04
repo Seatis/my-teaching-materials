@@ -1,4 +1,4 @@
-# Workshop06 Add updating function
+# Add updating function
 
 - Work on the same project
 - Add new column to your view table with "edit" text

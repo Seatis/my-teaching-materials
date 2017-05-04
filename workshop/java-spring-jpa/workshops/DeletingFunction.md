@@ -1,4 +1,4 @@
-# Workshop05 Add deleting function
+# Add deleting function
 
 - Work on the same project
 - Add new column to your view table with a "delete" text

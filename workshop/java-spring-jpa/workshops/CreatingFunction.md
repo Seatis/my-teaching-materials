@@ -1,4 +1,4 @@
-# Workshop04 Add creating function
+# Add creating function
 
 - Work on the same project
 - Extend the project and add a create todo view and methods

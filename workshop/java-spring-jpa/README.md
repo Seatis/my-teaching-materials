@@ -46,12 +46,12 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - @NamedQuery
 
 ## Workshops
-- [01 - Listing Todos from embedded database](./workshops/01-workshop.md)
-- [02 - Connection with MySQL](./workshops/02-workshop.md)
-- [03 - Listing Todos from MySQL](./workshops/03-workshop.md)
-- [04 - Add creating function](./workshops/04-workshop.md)
-- [05 - Add deleting function](./workshops/05-workshop.md)
-- [06 - Add updating function](./workshops/06-workshop.md)
+- [Listing Todos from embedded database](./workshops/ListingTodosWithH2.md)
+- [Connection with MySQL](./workshops/ConnectionWithMySQL.md)
+- [Listing Todos from MySQL](./workshops/ListingTodosfromMySQL.md)
+- [Add creating function](./workshops/CreatingFunction.md)
+- [Add deleting function](./workshops/DeletingFunction.md)
+- [Add updating function](./workshops/UpdatingFunction.md)
 
 ### Optional
 - Make the todo names clickable. On the event a new page should appear with the details of the selected todo.

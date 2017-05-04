@@ -1,4 +1,4 @@
-# Workshop02 Connection with MySQL
+# Connection with MySQL
 - Create a new Spring project with Gradle
 - Add dependencies:
   - JPA, MySQL, Web, Thymeleaf

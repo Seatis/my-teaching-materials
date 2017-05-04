@@ -1,4 +1,4 @@
-# Workshop01 Listing Todos from embedded database
+# Listing Todos from embedded database
 
 - Create a Spring project with Gradle
 - Add dependencies:
