@@ -1,8 +1,8 @@
 # Advanced JavaScript part 1.
 
 ## Objectives
- - Have an idea about functional programming in JavaScript
  - Get an understanding of how variables work in JavaScript
+ - Get an understanding what scope is and how it works in Javascript
  - Get some routine in Object Creation in JavaScript
 
 ## Materials & Resources
@@ -12,61 +12,28 @@
 |:---------|-----:|
 | [var, let and const - What, why and how - ES6 JavaScript Features](https://www.youtube.com/watch?v=sjyJBL5fkp8) | 19:18 |
 | [The Basics of Scope in JavaScript](https://www.youtube.com/watch?v=ZoFlcv2ByBo) | 8:19 |
-
-### Higher-order Functions and Functional Programming
-| Material | Time |
-|:---------|-----:|
-| [Higher-order functions - Part 1 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=BMUiFMZr7vk) | 10:48 |
-| [Closures - Part 5 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=CQqwU2Ixu-U) | 7:03 |
-
+| Reading: |  |
+| [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript) | |
 
 ### Object Creation
 | Material | Time |
 |:---------|-----:|
-| [bind and this - Object Creation in JavaScript P1 - FunFunFunction #43](https://www.youtube.com/watch?v=GhbhD1HR5vk) | 15:38 |
-| [Prototype basics - Object Creation in JavaScript P3 - FunFunFunction #46](https://www.youtube.com/watch?v=YkoelSTUy7A) | 19:19 |
-| [The 'new' keyword - Object Creation in JavaScript P4 - FunFunFunction #50](https://www.youtube.com/watch?v=Y3zzCY62NYc) | 24:33 |
-
-
-### Optional
-*If you've got time and/or want to dig deeper, consider the following:*
-
-| Material | Time |
-|:---------|-----:|
-| [The rest of the Functional Programming in JavaScript series](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) | lot |
-| [rest of var, let and const - What, why and how - ES6 JavaScript Features](https://www.youtube.com/watch?v=sjyJBL5fkp8) | 8:29 |
-| [The rest of the Object Creation in JavaScript series](https://www.youtube.com/playlist?list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub) | lot |
-
+| [bind and this - Object Creation in JavaScript P1](https://www.youtube.com/watch?v=GhbhD1HR5vk) | 15:38 |
+| [Examples of this and bind - Object Creation in JavaScript P2](https://www.youtube.com/watch?v=PIkA60I0dKU) | 16:33 |
+| [Beginner JavaScript Tutorial - 25 - Creating Our Own Objects](https://www.youtube.com/watch?v=6xLcSTDeB7A) | 9:22 |
+| [Beginner JavaScript Tutorial - 27 - Adding Methods to Our Objects](https://www.youtube.com/watch?v=6lQEtgFnZTY) | 8:53 |
+| Reading: |  |
+| [This, Bind method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) |  |
+| [Gentle explanation of 'this' keyword in JavaScript](https://rainsoft.io/gentle-explanation-of-this-in-javascript) |  |
+| [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) |  |
 
 ## Material Review
- - functional Programming
- - higher order functions
- - closures
+ - var, let, const
  - scope
  - hoisting
  - `this`
- - prototype
+ - `bind()`
  - `new`
+ - constructor
 
 ## Workshop
-
-### Prototype
-```javascript
-function Car(km) {
- this.km = km;
-}
-
-Car.prototype.ride = function(km) {
- this.km += km;
-}
-
-var volvo = new Car(80000);
-volvo.ride(120);
-console.log(volvo.km); // 80120
-```
-
-#### Exercises
-- [01.js](workshop/01.js)
-- [02.js](workshop/02.js)
-- [03.js](workshop/03.js)
-- [04.js](workshop/04.js)
