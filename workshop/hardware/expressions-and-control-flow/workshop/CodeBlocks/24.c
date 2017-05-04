@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
-	int ae = 4
+	uint8_t ae = 4
 	// print "yeeeeeeeey" ae times
 	return 0;
 }
