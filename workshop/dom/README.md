@@ -50,12 +50,14 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - insertBefore
 - an element's contents
   - innerHTML
+  - innerText
   - textContent
 - element attributes
   - getAttribute
   - setAttribute
 - element styles
 - classes
+  - className
   - classList
 - events
   - addEventListener
