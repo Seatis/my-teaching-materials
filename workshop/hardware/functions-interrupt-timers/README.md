@@ -226,7 +226,7 @@ so read it only if you have enough time :).
         - TIFR0
 - take one deep breath
 - take another deep breath, but this time much more deeper
-- go on
+- start the workshop
 
 ## Workshop
 Today we are going to learn how to use functions in C language.
@@ -234,6 +234,36 @@ After we mastered this new "thing", we are moving forward by using the external
 interrupts and timers of the ATmega168PB devboard.
 
 ### Functions
+#### Example
+Here is a function as an example.
+
+```c_cpp
+int FruitManipulator(int oranges, int apples, unsigned int what_to_do){
+    int to_return = 0;
+
+    if(what_to_do == 0){
+        to_return = oranges + apples;
+    } else {
+        to_return = oranges - apples;
+    }
+
+    retunr to_return;
+}
+```
+What does this function do? Find out by calling it from the main function!
+Try it out with different numbers and print out the returned value in the main function!
+
+#### Tasks
+- void function with no parameters
+    - [1.c](workshop/CodeBlocks/1.c)
+- void function with params
+    - [2.c](workshop/CodeBlocks/2.c)
+- non void function no params
+    - [3.c](workshop/CodeBlocks/3.c)
+- non void function with params
+    - [4.c](workshop/CodeBlocks/4.c)
+
+
 - example
     - int fruitManipulator(int oranges, int apples, unsigned int what2do)
     - 0 means add
@@ -257,13 +287,13 @@ interrupts and timers of the ATmega168PB devboard.
     - A
         - config timer as normal operation
             - human compatible freqency
-            - the min tmr period is 60Hz so fucked up :(
+            - the min tmr period is 60Hz so litle bit fucked up :(
         - in main poll the timer register value
         - if matches toggle the LED
             - effective freq is about 30Hz
     - B
 
-TODO: DEBUGGER!!!!!!!! Start this whole shit with the debugger
+TODO: DEBUGGER!!!!!!!! Start this whole shit with the debugger?!
 TODO: clocks of this shitty mcu!
 
 
