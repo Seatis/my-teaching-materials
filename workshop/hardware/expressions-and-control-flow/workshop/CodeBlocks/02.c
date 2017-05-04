@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int k = 1521;
-	// tell if k is dividable by 3 or 5
+	int b = 100;
+	// make it smaller by 7
 	return 0;
 }
