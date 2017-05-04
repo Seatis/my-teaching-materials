@@ -46,17 +46,15 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - @NamedQuery
 
 ## Workshops
-- create a SpringBoot project with Gradle
-- add dependencies:
-  - JPA
-  - Web
-  - Thymeleaf
-- optional dependencies:
-  - DevTools
-  - Lombok
-
-The Workshops are:
 - [01 - Listing Todos from embedded database](./workshops/01-workshop.md)
 - [02 - Connection with MySQL](./workshops/02-workshop.md)
 - [03 - Listing Todos from MySQL](./workshops/03-workshop.md)
 - [04 - Add creating function](./workshops/04-workshop.md)
+- [05 - Add deleting function](./workshops/05-workshop.md)
+- [06 - Add updating function](./workshops/06-workshop.md)
+
+### Optional
+- Add line item details to the meal, for each part of the meal, to break up the calories
+- Add service package and Service class. Refactor every method from Controller that doesn't relate strictly there.
+learning about how to call a webservice
+Create a calendar view that shows, day by day meals eaten, total calories

@@ -1,5 +1,4 @@
 # Workshop02 Connection with MySQL
-
 - Create a new Spring project with Gradle
 - Add dependencies:
   - JPA, MySQL, Web, Thymeleaf
@@ -14,24 +13,25 @@
 
 #### Configuration
 - Configure application.properties file in the needed structure
-- Add url, localhost:3306 (most probably, if not check in Data Sources and Drivers in IntelliJ or in MySQL with 'SHOW variables LIKE "%port%";' command or in Workbench)
 
-- Add MySQL username, password (**you should set it to something general first like "12345", because it will be committed to github**)
+```java
+spring.datasource.url=jdbc:mysql://localhost/reddit
+spring.datasource.username=root
+spring.datasource.password=12345
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+spring.logging.level.org.hibernate.SQL = debug
+spring.jpa.show-sql = true
+```
 
-- Add "spring.jpa.show-sql = true"
-
+- MySQL  password (**set it to something general first like "12345", because it will be committed to github**)
 
 - Add hibernate ddl auto (create, create-drop, update):         
-    - spring.jpa.hibernate.ddl-auto=create
-      - with "create" first
-      - and after first recompiling, with "update", so the database schema will be automatically updated accordingly to java entities found in the project
+  - with "create-drop" first
+  - and after first recompiling, with "update", so the database schema will be automatically updated accordingly to java entities found in the project
 
-
-- Add "spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect"
-
-- Add "spring.logging.level.org.hibernate.SQL = debug"
 
 
 ### Run the program
-- If you did well then a new and empty "todo" table should appear with 4 columns(id, title, isUrgent, isDone) in MySQL.
+- If you did well then a new and empty "todo" table should appear with 4 columns(id, title, isUrgent, isDone) in [MySQL](../assets/EmptyTodosWB.PNG).
 - And your webpage should look [like this](../assets/EmptyTodos.PNG).
