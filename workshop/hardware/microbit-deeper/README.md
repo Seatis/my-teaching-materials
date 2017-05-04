@@ -23,6 +23,7 @@ program which allows to send and receive data between your laptop and micro:bit.
 **Windows users**
 
 Download and install [RealTerm](https://sourceforge.net/projects/realterm/).
+
 Donwload and install [mbed serial driver](https://developer.mbed.org/handbook/Windows-serial-configuration).
 
 **Linux and Mac OS X users**
@@ -95,7 +96,37 @@ You are going to learn how to use the serial port for communication.
  - [micro:bit PXT tool](https://pxt.microbit.org/?lang=en)
  - [RealTerm](https://sourceforge.net/projects/realterm/) or
  [screen](https://kb.iu.edu/d/acuy) (depending on operating system)
-
+ 
+#### Terminal software usage
+##### RealTerm
+- fisrt download the mbed driver if you have earlier versions of win10
+- install the driver when the microbit is connected to the USB port
+- open device manager
+    - plug in microbit
+    - the list will be updated and a serial port will come up
+    - note down the name of the port (usually "COMx", where x is a number between 0-255)
+- open realterm
+    - on the port tab set
+       - 115200 in Baud field
+    - click on Open button
+    - now the port is open, ready to receive data
+    - on the send tab you can send data over the serial port
+    - you can specify which endline character you want to send at the end of the line (CR or LF or both)
+##### Screen
+- install it if you don't have it (see the link in #tools)
+- find the port number of the microbit
+    - in the /dev folder a new file will be available after you plug in the microbit
+    - the file name will start with "tty"
+    - so go to the dev folder (cd /dev)
+    - list the elements which start with "tty" (ls -l -a | grep tty)
+    - try it when microbit is not connected and when is connected
+    - find out which one is the new file
+    - note that name, it is usually "ttyACM0"
+- start screen on the serial port
+    - type in "screen dev/_serial_port_name_comes_here 115200"
+    - for exampe if the serial port is ttyACM0 "screen /dev/ttyACM0 115200"
+    - you can now see that comes from the serial port
+    - you can also send data if you type something in (but that wont be displayed on the screen!)
 ### Steps
 - Setting up serial communication with micro:bit (mentor guidance)
   - usage of Serial blocks
