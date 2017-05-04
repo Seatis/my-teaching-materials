@@ -39,7 +39,7 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - findAllBy...()
 
 
-### Additional
+#### Optional
 - Hibernate
 - Web Layer, Service Layer
 - @Query
@@ -57,4 +57,3 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - Make the todo names clickable. On the event a new page should appear with the details of the selected todo.
 - Add date column with date of creation
 - Add `user` table, try to find out the relationship and the connection between `todo` and `user` tables
-- Beautify the app, you can use bootstrap or be creative and work in css
