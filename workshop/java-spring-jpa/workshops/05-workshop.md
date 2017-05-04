@@ -8,6 +8,6 @@
 - To do this the clicked item should be specified in the path, so we will need a uniq @PathVariable, which in our case is the `long id` of the todo item
 - Use the `delete(id)` method of the repository passing the id in it
 - Don't forget to specify the id in the template when you create the 'delete' link
-- After the user deleted the item we should be redirected to the list page
+- After the user deleted the item the list page should come up
 
 <img src="../assets/DeleteTodos.PNG">
