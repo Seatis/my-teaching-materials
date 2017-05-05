@@ -55,7 +55,7 @@ instructions to handle an interrupt request.
 
 How does it possible? With JUMP instructions! So we can write a long program in
 the other part of the program memory and in the interrupt vector table we can
-only write a JUMP instruction to the program's first instruction's memory address.
+simply write a JUMP instruction to the program's first instruction's memory address.
 
 The compiler will do these things for us, but how can we use them? Simply we write
 a special function for each interrupt sources we want to handle. It's looks like:
@@ -82,11 +82,42 @@ column (just replace the spaces with the \_ underscore character ).
 
 To use interrupts you also have to enable it. In most MCUs there is a global interrupt enable bit (somewhere in a register :)) which has to be set to "1" to enable the interrupts globally, then you have to enable the one you would like to use (somewhere in another register :)).
 
-Please read more about this topic in the following document:
+In AVR MCUs the global interrupt can be enabled or disabled with specific
+assembly instructions. Fortunately there are two functions in the interrupt.h header
+which will do this job for us. The `sei()` function (SetEnableInterrupt) will enable the interrupts globally. The `cli()` function (CLearInterrupt) will disable the interrupts globally.
+They are useful because you can disable/enable all of the interrupts with only one  
+function call!
+
+The individual interrupts can be enabled by writing to specific registers. Usually each
+peripheral has specific registers for this purpose. In the datasheet you can always find them,
+just search for the peripheral that you want to use and read through the register description of the peripheral.
+
+In summary, to enable an interrupt source you have to:
+- find the interrupt enable bit for the specific interrupt source you would like to use
+- enable this interrupt
+- if you have to enable other interrupt sources do the previous steps again
+- enable the interrupts globally (`sei()`)
+
+Please read more about AVR specific interrupt handling in the following document:
 
 | Material | Time |
 |:---------|-----:|
 | [Interrupts in AVR](http://www.github.com/abcminiuser/avr-tutorials/blob/master/Interrupts/Output/Interrupts.pdf?raw=true) | - |
+
+Another important thing about interrupts is volatile variables. They look like this:
+```c_cpp
+volatile uint8_t variable;
+// generally:
+// volatile TYPE VARIABLE_NAME
+```
+This volatile qualifier prevents the compiler from optimizing out this variable.
+
+When do we need to use volatile variables? The thumb rule is that every variable
+which is used in an interrupt handler have to be volatile.
+
+Why? The interrupt handler is seen as a simple function for the compiler, but this
+function is never called implicitly from the other parts of the code. So the compiler thinks, that the variables which are only used in interrupt handlers are never used, hence
+the compiler wants to delete them. The volatile qualifier prevents this.
 
 #### Timers
 A timer is a peripheral which can be found in every MCU. It is basically a counter
@@ -195,10 +226,11 @@ so read it only if you have enough time :).
             - ISR(...) functions
             - list of vector names
         - interrupt enable bits
-            - global interrupt enable/disable
+            - global interrupt enable/disable (sei/cli)
             - peripheral interrupt enable bits
                 - where can we find them
                 - datasheet!4444!!!!!!4444!
+    - volatile qualifier
     - Live coding
         - button interrupt turns on the LED
 
@@ -290,7 +322,7 @@ value.
 [Turning on/off LED depending on counter value](workshop\AtmelStudio\timer_basics_too_fast.c)
 
 You are now confused, why does the LED not flashing??!! It's just vibrating!
-Turn on the camera on your smartphone and watch the devboard on the screen of your smartphone.
+Turn on the camera on your smartphone and watch the devboard on the screen.
 
 Now start to shake the board! You can notice two things:
     - the green LED makes a continuous line on the screen
@@ -312,10 +344,13 @@ What is the solution?
 
 Well, we could
 - Lower the clock frequency of the timer by lowering the system
-clock frequency. On this devboard this is not possible.
+clock frequency.
+    - On this devboard this is not possible.
 - Lower the timer's clock frequency by setting the prescaler to a
-higher value, but the prescaler is already set to the maximal 1024 value.
-- Not change the bit number of the counter, so it will remain 8-bit wide.
+higher value.
+    - The prescaler is already set to the maximal 1024 value.
+- Change the bit number of the counter
+    - We can not change that, it is in the MCU :), so it will remain 8-bit wide.
 
 So it looks like this timer is in it's slowest mode. What to do?
 
@@ -325,7 +360,7 @@ We will be tricky :), do the next task.
 [Turning on/off LED depending on counter value, this time slower](workshop\AtmelStudio\timer_basics_speed_okay.c)
 
 See? Now you created a counter from a variable, which counts the overflow of the
-timer's counter register :).
+timer's counter register. 
 
 #### 3. Timer interrupts
 The timer can generate various interrupts.
