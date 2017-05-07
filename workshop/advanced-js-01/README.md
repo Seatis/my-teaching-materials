@@ -10,7 +10,11 @@
 ### Variables, Scopes, Hoisting
 | Material | Time |
 |:---------|-----:|
+| [JavaScript The Global Environment and The Global Object](https://www.youtube.com/watch?v=byiUGKVeJuY) | 10:58 |
 | [The Basics of Scope in JavaScript](https://www.youtube.com/watch?v=ZoFlcv2ByBo) | 8:19 |
+| [JavaScript Conceptual Aside Javascript and undefined](https://www.youtube.com/watch?v=J7QkYbxfMxo) | 8:04 |
+| [JavaScript The Execution Context Code Execution](https://www.youtube.com/watch?v=FdW0WbvmS3k) | 2:54 |
+| [JavaScript Functions, Context, and Variable Environments](https://www.youtube.com/watch?v=F9o4CPcDq18) | 7:56 |
 | [var, let and const - What, why and how - ES6 JavaScript Features](https://www.youtube.com/watch?v=sjyJBL5fkp8) | 19:18 |
 | Reading: |  |
 | [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript) | |
