@@ -22,6 +22,8 @@
 ### Object Creation
 | Material | Time |
 |:---------|-----:|
+| [JavaScript Functions, Context, and Variable Environments](https://www.youtube.com/watch?v=F9o4CPcDq18) | 7:56 |
+| [Function Statements and Function Expressions](https://www.youtube.com/watch?v=oB5rH_9bqAI) | 28:30 |
 | [bind and this - Object Creation in JavaScript P1](https://www.youtube.com/watch?v=GhbhD1HR5vk) | 15:38 |
 | [Examples of this and bind - Object Creation in JavaScript P2](https://www.youtube.com/watch?v=PIkA60I0dKU) | 16:33 |
 | [Beginner JavaScript Tutorial - 25 - Creating Our Own Objects](https://www.youtube.com/watch?v=6xLcSTDeB7A) | 9:22 |
