@@ -34,9 +34,14 @@
 | [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) |  |
 
 ## Material Review
- - var, let, const
- - scope
+ - execution context
+  - global
+  - this
+  - outer environment
  - hoisting
+ - scope
+ - undefined
+ - var, let, const
  - `this`
  - `bind()`
  - `new`
