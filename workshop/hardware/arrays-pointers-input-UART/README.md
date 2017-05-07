@@ -118,15 +118,33 @@ The following sections are needed:
 - receive error detection (25.8.4)
 - Asynchronous Data Reception (25.9)
 
-
-
-
 ## Material Review
-
 ### C programming language
+#### Arrays
+- char arrays = strings
+- int, float
+- `string.h` functions
 
+### User input
+- `scanf`, `gets`
+- `stdio.h` other functions
+
+### Pointers
+- memory address
+- how does variables stored in memory
+- the `sizeof` function
+- pointer syntax `*`, `&`
+- dereferencing
+- arrays and pointers
+- pass by
+  - reference
+  - value
+  - when to use them
+- arrays and functions
+  - pointer and size
+  - can't return both at the same time
+  
 ### Electronics
-
 ##### Serial communications
 - serial vs paralell communications
   - wire count
