@@ -1,6 +1,6 @@
-// Ferenc Vágási is a good working man. He helps for his friend Góliát for carrying furniture.
+// Ferenc Vágási is a good working man. He helps for his friend Góliát to carrying furniture.
 // Ferenc's wife Jutka wants to know where is his husband. She calls the company. 
-// They tell her Feri is finished today he is drinking a beer at the next kocsma.
+// They tell her Feri has finished today he is drinking at the next pub.
 // Make the code true. Góliát is working now.
 
 const isWorking = true;
