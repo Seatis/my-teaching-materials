@@ -1,12 +1,13 @@
 # Skill input-output list
 
 ## Input skills
-- basic GIT knowladge
-- basic electronics knowladge (voltage, current, resistor)
+- basic GIT knowledge
+- basic electronics knowledge (voltage, current, resistor)
 - experience in binary, hexadecimal, decimal number conversion
-- knowladge of ATmega168PB architecture 
+- knowledge of ATmega168PB architecture
+- knowledge of C expressions and control flow
 
 ## Output skills
-- C expressions and controll flow knowladge
-- Knowladge of how to connect buttons and LEDs to a MCU
-- Knowladge of how to use the GPIO peripheral on AVR MCUs
+- understanding the arrays and pointers in C language
+- knowledge of ATmega168PB's USART peripheral
+- advanced knowledge of serial communications, especially of UART
