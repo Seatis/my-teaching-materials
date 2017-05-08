@@ -54,15 +54,17 @@ Design of user interface is not important, don't spend more than 5 minutes makin
 
 ### Giphy API
 
+Display gifs of a cute/funny topics using:
 https://github.com/Giphy/GiphyAPI
 
- - Find the images in the API
+ - Search/Find the images in the API
  - Display the list of the first 16 results's static thumbnail
  - If the user clicks on the thumbnail, display the animated GIF
 
 
 ### New York Times API
 
+Search interesting articles on:
 http://developer.nytimes.com/
 
 Ask your local mentor for the API key or request your own. Use `localhost` as the website.
@@ -76,26 +78,21 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
  - Create a permalink to that article
 
 
-<!-- ### Movie spreadsheet via Sheetsu
+### Yoda Say
 
-Let's crowdsource a list of good movies supplied by you.
+Rewrite your own sentence in yoda-style, using the given API:
+https://market.mashape.com/ismaelc/yoda-speak
 
-#### Check the spreadsheet here:
+Ask your local mentor for the API key or request your own. Use `localhost` as the website.
 
-https://docs.google.com/spreadsheets/d/1DsBUc4dZhp3_Sgn4IW2P0tnJB7bmIdV6BSYuKts15bU/edit#gid=0
+- Create a very simple HTML:
+  - it should have a label
+  - an input field (text)
+  - and a button
+- The request should be sent to the API by clicking the button
+- If you get the response, you should display your sentence in yoda-style
 
-You'll have to send data to this spreadsheet:
 
-API endpoint: `https://sheetsu.com/apis/v1.0/7654fbe24554`
-
-By requesting the above URL it will return the contents of the spreadsheet.
-
-Read the documentation on how to post data: `https://sheetsu.com/docs/beta#post`
-
- - Create a list of the submitted movies with all the data returned by the API
- - Create a form that sends data to Sheetsu (use your own code, don't use the jQuery example)
- - If the request was successful, reset the form and display a success message
- - If the request failed, display the error -->
 
 ### Todo project backend communication
 
