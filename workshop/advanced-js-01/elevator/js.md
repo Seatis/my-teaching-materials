@@ -4,7 +4,7 @@ Create an elevator simulator program using HTML, CSS and JavaScript.
 
 It should have to work like these basic example:
 
-![elevator](elevator.jpg)
+![elevator](elevator.gif)
 
 ## Specification
 

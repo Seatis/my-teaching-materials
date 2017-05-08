@@ -129,7 +129,7 @@ Introduction to version control systems and Git.
 #### Basics
   - setup your environtment
   - `git config --global user.name "Your Name"`
-  - `git config --global user.email yourname@example.com`
+  - `git config --global user.email "yourname@example.com"`
 
 ---
   - create a repo on github
