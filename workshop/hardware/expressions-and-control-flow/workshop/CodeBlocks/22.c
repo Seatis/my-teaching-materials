@@ -1,13 +1,10 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
 
-
-	TODO
-
-
-	int ac = 8;
-	int time = 120;
+	uint8_t ac = 8;
+	uint8_t time = 120;
 	uint8_t out;
 	// if ac is dividable by 4
 	// and time is not more than 200
