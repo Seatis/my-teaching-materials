@@ -7,6 +7,15 @@ Talking to a server
  - Play with API-s
  - Progress on weekly project's API
 
+## Outline & Purpose  
+
+| *Input Skills* | * Output Skills |  
+|:---------------|----------------:|  
+| HTML, CSS, experience with DOM manipulation | Some experience in work with APIs |  
+| Experience with JS building blocks, more complex functions | Experience in creating httpRequests |  
+| Little experience with async functions (setTimeout, callbacks) | Understanding AJAX |  
+| Little knowledge with object orientation in JS | Experience in DOM manipulation depending request response |  
+
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
