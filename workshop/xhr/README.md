@@ -9,7 +9,7 @@ Talking to a server
 
 ## Outline & Purpose  
 
-| *Input Skills* | * Output Skills |  
+| *Input Skills* | * Output Skills* |  
 |:---------------|----------------:|  
 | HTML, CSS, experience with DOM manipulation | Some experience in work with APIs |  
 | Experience with JS building blocks, more complex functions | Experience in creating httpRequests |  
