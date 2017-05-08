@@ -7,31 +7,33 @@ Talking to a server
  - Play with API-s
  - Progress on weekly project's API
 
-### Training
+## Materials & Resources
 | Material | Time |
 |:---------|-----:|
 | [AJAX Tutorial - 1 - Introduction to AJAX](https://www.youtube.com/watch?v=tp3Gw-oWs2k) | 4:45 |
 | [AJAX Tutorial - 2 - Some Examples of AJAX](https://www.youtube.com/watch?v=-1RLW7a8Gr4) | 3:43 |
 | [Asynchronous JavaScript #2 - AJAX Requests](https://www.youtube.com/watch?v=h0ZUpPiV1ac) | 13:19 |
-| [Fetch API by Google developers](https://www.youtube.com/watch?v=g6-ZwZmRncs) | 5:26 |
-
-#### Reading
-
- - https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
- - https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest ( till Submitting forms and uploading files )
- - https://developer.mozilla.org/en/docs/Web/API/Fetch_API
+| [Fetch API by Google developers](https://www.youtube.com/watch?v=g6-ZwZmRncs) | 5:26 |  
+| [AJAX - Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) | reading |  
+| [AJAX - API - Use of XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)(till Submitting forms and uploading files ) | reading |  
+| [Fetch API](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) | reading |  
 
 ## Material Review
 
  - XMLHttpRequest
+  - request methods
+  - ```.open```
+  - ```.send```
+  - ```.setRequestHeader```
+  - ```.onreadystatechange```
+  - [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+  - ```.readyState```
+  - ```.response```
  - Blocking / non-blocking
  - Callbacks
- - status codes
- - headers
  - XML
  - JSON
  - Fetch API
- - Can I fetch today?
  - Cross domain
 
 ## Workshop
