@@ -22,7 +22,7 @@ Talking to a server
 | [AJAX Tutorial - 1 - Introduction to AJAX](https://www.youtube.com/watch?v=tp3Gw-oWs2k) | 4:45 |
 | [AJAX Tutorial - 2 - Some Examples of AJAX](https://www.youtube.com/watch?v=-1RLW7a8Gr4) | 3:43 |
 | [Asynchronous JavaScript #2 - AJAX Requests](https://www.youtube.com/watch?v=h0ZUpPiV1ac) | 13:19 |  
-| [What is an API](https://www.youtube.com/watch?v=s7wmiS2mSXY) | |  
+| [What is an API](https://www.youtube.com/watch?v=s7wmiS2mSXY) | 3:24 |  
 | [Fetch API by Google developers](https://www.youtube.com/watch?v=g6-ZwZmRncs) | 5:26 |  
 | [AJAX - Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) | reading |  
 | [AJAX - API - Use of XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)(till Submitting forms and uploading files ) | reading |  
