@@ -269,7 +269,7 @@ You will:
 - write a polling function which will wait for an incoming character
 - write a polling function which will send a character
 
-[UART_one_character.c](workshop\AtmelStudio\UART_one_character.c)
+[UART_one_character.c](workshop/AtmelStudio/UART_one_character.c)
 
 Interrupts can be confusing now, we will work with them later!
 
@@ -281,7 +281,7 @@ We have to set somehow the UART interface as standard input and standard output.
 
 Fill in the following code where asked (keep in mind that lot's of code may be the same as before, reuse your code where possible):
 
-[UART_redirected.c](workshop\AtmelStudio\UART_redirected.c)
+[UART_redirected.c](workshop/AtmelStudio/UART_redirected.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
