@@ -11,11 +11,10 @@ int main() {
 	printf("g1=%d\n",g1);
 	printf("g2=%d\n",g2);
 
-	if (g1 > g2){
-        printf("g1 is bigger");
-	}
-    else{
-        printf("g2 is bigger");
+	if (g1 > g2) {
+        	printf("g1 is bigger");
+	} else {
+        	printf("g2 is bigger");
         }
 
 
