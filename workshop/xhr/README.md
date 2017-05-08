@@ -21,10 +21,10 @@ Talking to a server
 
 ## Material Review
 
- - XMLHttpRequest  
-  - request methods
-  - ```.open```
-  - ```.send```
+ - XMLHttpRequest
+  - request methods  
+  - ```.open```  
+  - ```.send```  
   - ```.setRequestHeader```
   - ```.onreadystatechange```
   - [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
@@ -54,7 +54,7 @@ Design of user interface is not important, don't spend more than 5 minutes makin
 
 ### Giphy API
 
-Display gifs of a cute/funny topics using:
+Display gifs of a cute/funny topi using:
 https://github.com/Giphy/GiphyAPI
 
  - Search/Find the images in the API
