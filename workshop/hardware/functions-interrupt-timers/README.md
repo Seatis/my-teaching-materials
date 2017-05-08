@@ -309,7 +309,7 @@ PCINT7 (PinChangeINTerrupt7). We can set up an interrupt which will be fired
 on every state change of PB7. So if you push or release the button that interrupt will run.
 
 #### Tasks
-[Turning on LED with interrupts](workshop\AtmelStudio\button_interrupt.c)
+[Turning on LED with interrupts](workshop/AtmelStudio/utton_interrupt.c)
 
 ### Timer
 #### 1. Timer, timer, too fast timer
@@ -319,7 +319,7 @@ At first do the first task. You will configure the TC0 timer to work in normal
 operation, than you will turn the LED on/off depending of the counter register
 value.
 
-[Turning on/off LED depending on counter value](workshop\AtmelStudio\timer_basics_too_fast.c)
+[Turning on/off LED depending on counter value](workshop/AtmelStudio/timer_basics_too_fast.c)
 
 You are now confused, why does the LED not flashing??!! It's just vibrating!
 Turn on the camera on your smartphone and watch the devboard on the screen.
@@ -357,7 +357,7 @@ So it looks like this timer is in it's slowest mode. What to do?
 We will be tricky :), do the next task.
 
 #### 2. Timer, timer, tricky timer
-[Turning on/off LED depending on counter value, this time slower](workshop\AtmelStudio\timer_basics_speed_okay.c)
+[Turning on/off LED depending on counter value, this time slower](workshop/AtmelStudio/timer_basics_speed_okay.c)
 
 See? Now you created a counter from a variable, which counts the overflow of the
 timer's counter register. 
@@ -369,13 +369,13 @@ Now let's see the overflow interrupt. Instead of polling the TOV0 flag we can se
 the MCU to fire az interrupt request when the TOV0 flag is set to 1 by the TC0 timer
 peripheral.
 
-[Using timer overflow interrupt](workshop\AtmelStudio\timer_overflow_interrupt.c)
+[Using timer overflow interrupt](workshop/AtmelStudio/timer_overflow_interrupt.c)
 
 #### 17812371328. Bonus tasks
 The TC0 timer has other interrupt capabilities. Play with them!
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our C styleguide](../../styleguide/c.md)
+Please follow the styleguide: [Our C styleguide](../../../styleguide/c.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes placed on the top of the files?
