@@ -54,7 +54,7 @@ Design of user interface is not important, don't spend more than 5 minutes makin
 
 ### Giphy API
 
-Display gifs of a cute/funny topi using:
+Display gifs of a cute/funny topic using:
 https://github.com/Giphy/GiphyAPI
 
  - Search/Find the images in the API
@@ -92,6 +92,17 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
 - The request should be sent to the API by clicking the button
 - If you get the response, you should display your sentence in yoda-style
 
+### Get Position (__optional__)
+
+Similar to the yoda-style exercise get your input city's position using this API:
+https://market.mashape.com/dev132/city-geo-location-lookup  
+
+- Create a very simple HTML:
+  - it should have a label
+  - an input field (text)
+  - and a button
+- The request should be sent to the API by clicking the button
+- If you get the response, you should display your city's coordinates: latitude, longitude
 
 
 ### Todo project backend communication
