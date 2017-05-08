@@ -49,8 +49,25 @@
 
 ## Workshop
 
+### variables, scope, hoisting
 
-### methods adn this
+```js
+const numbers = [1, 2];
+var number = 100;
+
+  if (cond) {
+    let sum = numbers[0] + numbers[1];
+    number += sum;
+  }
+
+console.log(number); // prints 103
+```
+
+ - [neighbours01](neighbours/neighbours01.js)
+ - [neighbours02](neighbours/neighbours02.js)
+ - [neighbours03](neighbours/neighbours03.js)
+
+### methods and this
 
 ```js
 var student = {
@@ -66,3 +83,22 @@ student.greet(); // prints greet
  - [Cars](cars/cars.js)
  - [Petrol Station](petrol-station/petrol-station.js)
 
+### objects and constructor0
+
+```js
+function Aircraft(type){
+  this.type = type;
+  this.ammo = 0;
+  this.maxAmmo = 8;
+  this.baseDamage = 30;
+  this.printMaxAmmo = function() {
+    console.log(this.maxAmmo);
+  };
+}
+
+var plane = new Aircraft('F16');
+console.log(plane.type); // prints 'F16'
+plane.printMaxAmmo(); // prints 8
+```
+ - [Animal Farm](animal-farm/js.md)
+ - [Elevator](elevator/js.md)
