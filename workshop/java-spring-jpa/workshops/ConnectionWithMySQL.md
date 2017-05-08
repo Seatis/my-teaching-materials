@@ -24,8 +24,6 @@ spring.logging.level.org.hibernate.SQL = debug
 spring.jpa.show-sql = true
 ```
 
-- MySQL  password (**set it to something general first like "12345", because it will be committed to github**)
-
 - Add hibernate ddl auto (create, create-drop, update):         
   - with "create-drop" first
   - and after first recompiling, with "update", so the database schema will be automatically updated accordingly to java entities found in the project

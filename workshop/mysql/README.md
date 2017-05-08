@@ -90,6 +90,7 @@ Complete all challenges here:
 
 - Install MySQL for your computer
 - (you can install MySQL Workbench as well)
+- set password  to something general flike "12345", because it will be committed to github with the time
 - Create a new database on your computer:
 ```mysql
 CREATE DATABASE bookstore;
