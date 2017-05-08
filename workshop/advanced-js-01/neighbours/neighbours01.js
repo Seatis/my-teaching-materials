@@ -9,7 +9,7 @@ const isWorking = true;
 const worker = 'Feri';
 
 if (isWorking) {
-  let worker = 'Góliát';
+  let worker = 'Goliat';
 }
 
 console.log('Who is working now?', worker);
