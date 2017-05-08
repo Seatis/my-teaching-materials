@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
   int high_number = 2;
