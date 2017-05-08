@@ -49,11 +49,10 @@
 
 ## Workshop
 
-### variables, scope, hoisting
+### Variables, Scope and Hoisting
 
+#### Hoisting
 ```js
-// Hoisting
-
 var pears;
 console.log(pears); // prints undefined
 
@@ -61,23 +60,27 @@ console.log(apples); // prints undefined
 var apples = 12;
 
 console.log(lemons) // error
+```
 
+```js
 let melons;
 console.log(melons); // prints undefined
 
 console.log(blueberries); // error
 let blueberries = 54;
+```
 
+```js
 const oranges = 5;
 console.log(melons); // prints 5
 
 console.log(strawberries); // error
 let strawberries = 54;
+```
 
+### Scope
 
-
-// scope
-
+```js
 if (true) {
   var number = 100;
 }
@@ -89,13 +92,16 @@ for (var i = 0; i < 10; i++) {
 function doSomething() {
   var local = 5;
 }
+
 doSomething();
+
 
 console.log(number); // 100
 console.log(i); // 1
 console.log(local); // error
+```
 
-
+```js
 if (true) {
   let number2 = 100;
 }
@@ -106,18 +112,19 @@ for (let j = 0; j < 10; j++) {
 
 console.log(number2); // error
 console.log(j); // error
+```
 
-
+```js
 if (true) {
   const number3 = 100;
 }
 
 console.log(number3); // error
+```
 
+#### Const
 
-
-// const
-
+```js
 const name = 'John Doe';
 name = 'David Hasselhoff'; // error
 ```
