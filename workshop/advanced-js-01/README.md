@@ -83,7 +83,11 @@ student.greet(); // prints greet
  - [Cars](cars/cars.js)
  - [Petrol Station](petrol-station/petrol-station.js)
 
+<<<<<<< HEAD
 ### objects and constructor0
+=======
+### objects and constructor
+>>>>>>> 126c71f999763664d5015774e54b04c536f29f24
 
 ```js
 function Aircraft(type){
@@ -100,7 +104,10 @@ var plane = new Aircraft('F16');
 console.log(plane.type); // prints 'F16'
 plane.printMaxAmmo(); // prints 8
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 126c71f999763664d5015774e54b04c536f29f24
  - [Sharpie](sharpie/js.md)
  - [Animal Farm](animal-farm/js.md)
  - [Elevator](elevator/js.md)
