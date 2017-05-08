@@ -5,6 +5,7 @@ Get introduced to MySQL
  - Understand what RDBMS are
  - Start to think with data in mind
  - Learn to structure and normalize your data
+ - set password to something general first like "12345", because it will be committed to github
 
 
 ## Materials & Resources
@@ -12,7 +13,13 @@ Get introduced to MySQL
 Preparation:
 - Install MySQL for your computer - you'll need to have admin rights to your pc;
 - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- Add MySQL Workbench 
+- Add MySQL Workbench
+
+### Tools
+Install a GUI client to manage DB tables
+ - [HeidiSQL](http://www.heidisql.com/) - Windows
+ - [Sequel pro](http://www.sequelpro.com/) - OSX
+
 
 ### Optional environment
 Other GUI client to manage DB tables
@@ -47,7 +54,7 @@ Other GUI client to manage DB tables
   - cascading deletes
 - database operations - create, use
 - table operations - create, alter, alter column, drop, describe, insert into ... values()
-- data types 
+- data types
   - text
   - varchar vs char
   - n (text, varchar, char); nvarcharX = n'text'
