@@ -4,7 +4,8 @@
 ### Environment
 Preparation:
 - Install MySQL for your computer - you'll need to have admin rights to your pc;
-- Add MySQL Workbench 
+- Add MySQL Workbench
+- set password  to something general like "12345", because it will be committed to github with the time
 
 ### Training
 | Material | Time |
@@ -34,7 +35,7 @@ Preparation:
   - cascading deletes
 - database operations - create, use
 - table operations - create, alter, alter column, drop, describe, insert into ... values()
-- data types 
+- data types
   - text
   - varchar vs char
   - n (text, varchar, char); nvarcharX = n'text'
