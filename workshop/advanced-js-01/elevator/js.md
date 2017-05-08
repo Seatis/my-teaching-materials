@@ -36,7 +36,7 @@ The object draw the elevator's state to the browser.
 
 ### Extra Features
 
- - Write the number of carried people at every floor
- - Can add, remove more people, floor
+ - Store and write the number of carried people at every floor
+ - Can add, remove more people, floor at once
  - Moving floors should take time
  - Animate the moving of the elevator (CSS transform, transition)
