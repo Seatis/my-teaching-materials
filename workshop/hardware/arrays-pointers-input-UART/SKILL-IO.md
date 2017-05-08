@@ -6,6 +6,7 @@
 - experience in binary, hexadecimal, decimal number conversion
 - knowledge of ATmega168PB architecture
 - knowledge of C expressions and control flow
+- knowledge of C functions
 
 ## Output skills
 - understanding the arrays and pointers in C language
