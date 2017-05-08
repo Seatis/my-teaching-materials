@@ -275,7 +275,7 @@ Interrupts can be confusing now, we will work with them later!
 
 #### Using stdio.h functions
 On an Atmel microcontroller we can use the stdio.h function for string
-input/output (`printf, snacf, puts, gets` etc.).
+input/output (`printf, scanf, puts, gets` etc.).
 
 We have to set somehow the UART interface as standard input and standard output.
 
