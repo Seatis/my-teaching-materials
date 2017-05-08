@@ -22,7 +22,7 @@
 Create a function named **is anagram** following your current language's style guide. It should take two strings and return a boolean value depending on whether its an anagram or not.
 
 ### Examples
-|input 1|input 2|outut|
+|input 1|input 2|output|
 |:-----:|:-----:|:---:|
 |"dog"|"god"|true|
 |"green"|"fox"|false|
