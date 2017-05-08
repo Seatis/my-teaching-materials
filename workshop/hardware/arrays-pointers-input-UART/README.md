@@ -143,7 +143,7 @@ The following sections are needed:
 - arrays and functions
   - pointer and size
   - can't return both at the same time
-  
+
 ### Electronics
 ##### Serial communications
 - serial vs paralell communications
@@ -217,7 +217,7 @@ The following sections are needed:
 - frame formats (25.5)
   - How to set up frame format?
     - UCSR0C
-- USART init (25.6)
+- USART init (25.6)M
   - baud rate
   - frame format
   - interrupt if needed
@@ -239,20 +239,49 @@ The following sections are needed:
   - always keep error minimal
 
 ## Workshop
+### Arrays
+- [Arrays/1.c](workshop/CodeBlocks/Arrays/1.c)
+- [Arrays/2.c](workshop/CodeBlocks/Arrays/2.c)
+- [Arrays/3.c](workshop/CodeBlocks/Arrays/3.c)
 
-TODO:
+### User input
+- [UserInput/1.c](workshop/CodeBlocks/UserInput/1.c)
+- [UserInput/2.c](workshop/CodeBlocks/UserInput/2.c)
 
-- TX pin have to be set to output
-- TASK: write init function (see datasheet)
+### Pointers
+- [Pointers/1.c](workshop/CodeBlocks/Pointers/1.c)
+- [Pointers/2.c](workshop/CodeBlocks/Pointers/2.c)
+- [Pointers/3.c](workshop/CodeBlocks/Pointers/3.c)
+- [Pointers/4.c](workshop/CodeBlocks/Pointers/4.c)
+- [Pointers/5.c](workshop/CodeBlocks/Pointers/5.c)
+- [Pointers/6.c](workshop/CodeBlocks/Pointers/6.c)
+- [Pointers/7.c](workshop/CodeBlocks/Pointers/7.c)
+- [Pointers/8.c](workshop/CodeBlocks/Pointers/8.c)
+- [Pointers/9.c](workshop/CodeBlocks/Pointers/9.c)
+- [Pointers/10.c](workshop/CodeBlocks/Pointers/10.c)
+- [Pointers/11.c](workshop/CodeBlocks/Pointers/11.c)
 
-- TASK A
-  - UART TX polling
-  - UART TX interrupt with UDRE
-- TASK B
-  - UART RX polling
-  - UART RX interrupt
-- TASK C
-  - STDIO
+### MCU UART
+#### Sending/Receiving one character
+Your first task is to fill in the code where asked.
+You will:
+- initialize the USART peripheral in UART 8N1 mode at 9600 baud/sec
+- write a polling function which will wait for an incoming character
+- write a polling function which will send a character
+
+[UART_one_character.c](workshop\AtmelStudio\UART_one_character.c)
+
+Interrupts can be confusing now, we will work with them later!
+
+#### Using stdio.h functions
+On an Atmel microcontroller we can use the stdio.h function for string
+input/output (`printf, snacf, puts, gets` etc.).
+
+We have to set somehow the UART interface as standard input and standard output.
+
+Fill in the following code where asked (keep in mind that lot's of code may be the same as before, reuse your code where possible):
+
+[UART_redirected.c](workshop\AtmelStudio\UART_redirected.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)

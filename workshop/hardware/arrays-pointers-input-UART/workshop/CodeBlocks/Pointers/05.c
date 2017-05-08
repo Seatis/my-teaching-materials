@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
   int numbers[] = {5, 6, 7, 8, 9};
