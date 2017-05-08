@@ -309,7 +309,7 @@ PCINT7 (PinChangeINTerrupt7). We can set up an interrupt which will be fired
 on every state change of PB7. So if you push or release the button that interrupt will run.
 
 #### Tasks
-[Turning on LED with interrupts](workshop/AtmelStudio/utton_interrupt.c)
+[Turning on LED with interrupts](workshop/AtmelStudio/Button_interrupt.c)
 
 ### Timer
 #### 1. Timer, timer, too fast timer
