@@ -1,3 +1,4 @@
+'use strict';
 // Create and object called car
 //  - It should store its petrol level called petrolLevel
 //  - It should store its petrol capacity called petrolCapacity

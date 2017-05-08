@@ -1,3 +1,4 @@
+'use strict';
 // 1st
 // Call the ride method of the volvo, with 42 as a parameter
 

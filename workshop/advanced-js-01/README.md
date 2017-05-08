@@ -55,10 +55,10 @@
 const numbers = [1, 2];
 var number = 100;
 
-  if (cond) {
-    let sum = numbers[0] + numbers[1];
-    number += sum;
-  }
+if (cond) {
+  let sum = numbers[0] + numbers[1];
+  number += sum;
+}
 
 console.log(number); // prints 103
 ```

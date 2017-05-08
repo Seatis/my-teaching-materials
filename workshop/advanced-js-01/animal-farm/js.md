@@ -1,4 +1,4 @@
-# Animal
+# Animal Farm
 
 ## Create an Animal constructor
  - Every animal has a hunger value, which is a number
