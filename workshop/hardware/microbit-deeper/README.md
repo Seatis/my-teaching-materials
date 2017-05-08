@@ -28,7 +28,7 @@ Donwload and install [mbed serial driver](https://developer.mbed.org/handbook/Wi
 
 **Linux and Mac OS X users**
 
-These operating systems contains a serial port terminal program by default.
+Install [cutecom](http://cutecom.sourceforge.net/). It can alsa be installed with apt-get on linux.
 
 ### Training
 #### Electronics
@@ -112,8 +112,8 @@ You are going to learn how to use the serial port for communication.
     - now the port is open, ready to receive data
     - on the send tab you can send data over the serial port
     - you can specify which endline character you want to send at the end of the line (CR or LF or both)
-##### Screen
-- install it if you don't have it (see the link in #tools)
+##### Cutecom
+- install it
 - find the port number of the microbit
     - in the /dev folder a new file will be available after you plug in the microbit
     - the file name will start with "tty"
@@ -122,11 +122,11 @@ You are going to learn how to use the serial port for communication.
     - try it when microbit is not connected and when is connected
     - find out which one is the new file
     - note that name, it is usually "ttyACM0"
-- start screen on the serial port
-    - type in "screen dev/_serial_port_name_comes_here 115200"
-    - for exampe if the serial port is ttyACM0 "screen /dev/ttyACM0 115200"
-    - you can now see that comes from the serial port
-    - you can also send data if you type something in (but that wont be displayed on the screen!)
+- start the program
+    - choose 115200 baud rate
+    - in de device field type in the device path witch you found earlier (for example "ttyACM0")
+    - click on open port
+    
 ### Steps
 - Setting up serial communication with micro:bit (mentor guidance)
   - usage of Serial blocks

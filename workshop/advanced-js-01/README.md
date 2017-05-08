@@ -48,3 +48,20 @@
  - constructor
 
 ## Workshop
+
+
+### methods and this
+
+```js
+var student = {
+  name: "John Doe",
+  greet: function() {
+    console.log(this.name);
+  }
+};
+
+student.greet(); // prints greet
+```
+
+ - [Cars](cars/cars.js)
+ - [Petrol Station](petrol-station/petrol-station.js)

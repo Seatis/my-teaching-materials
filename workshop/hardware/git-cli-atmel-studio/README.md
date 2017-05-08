@@ -81,21 +81,7 @@ The datasheet has 461 pages, it's a lot. Don't start to read it, we will get
 into it later this week.
 
 #### Command-line and GIT
-Watch these videos on our main topic:
-
-| Material | Duration |
-|:---------|-----:|
-| [Linux Terminal Tutorial Episode 1: Back to Basics](https://www.youtube.com/watch?v=2FiQSLdnBqA) | 11:32 |
-| [Code Academy Command Line](https://www.codecademy.com/learn/learn-the-command-line) | - |
-| [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4) | 30:32 |
-
-#### Optional
-*If you've got time and/or want to dig deeper, consider the following:*
-
- - Proceed to read the next 2 chapters of git https://git-scm.com/book/en/v2
- - Try https://try.github.io/
- - GIT, the simple guide: http://rogerdudler.github.io/git-guide/
- - Bookmark: http://ohshitgit.com/
+See the [workshop page](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/command-line) for more!
 
 ## Material Review
 

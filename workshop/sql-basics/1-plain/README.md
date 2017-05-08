@@ -14,8 +14,8 @@ Preparation:
 - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 - Add MySQL Workbench 
 
-### Tools
-Install a GUI client to manage DB tables
+### Optional environment
+Other GUI client to manage DB tables
  - [HeidiSQL](http://www.heidisql.com/) - Windows
  - [Sequel pro](http://www.sequelpro.com/) - OSX
 
