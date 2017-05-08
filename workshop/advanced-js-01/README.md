@@ -52,15 +52,74 @@
 ### variables, scope, hoisting
 
 ```js
-const numbers = [1, 2];
-var number = 100;
+// Hoisting
 
-if (cond) {
-  let sum = numbers[0] + numbers[1];
-  number += sum;
+var pears;
+console.log(pears); // prints undefined
+
+console.log(apples); // prints undefined
+var apples = 12;
+
+console.log(lemons) // error
+
+let melons;
+console.log(melons); // prints undefined
+
+console.log(blueberries); // error
+let blueberries = 54;
+
+const oranges = 5;
+console.log(melons); // prints 5
+
+console.log(strawberries); // error
+let strawberries = 54;
+
+
+
+// scope
+
+if (true) {
+  var number = 100;
 }
 
-console.log(number); // prints 103
+for (var i = 0; i < 10; i++) {
+  // do whatever
+}
+
+function doSomething() {
+  var local = 5;
+}
+doSomething();
+
+console.log(number); // 100
+console.log(i); // 1
+console.log(local); // error
+
+
+if (true) {
+  let number2 = 100;
+}
+
+for (let j = 0; j < 10; j++) {
+  // do whatever
+}
+
+console.log(number2); // error
+console.log(j); // error
+
+
+if (true) {
+  const number3 = 100;
+}
+
+console.log(number3); // error
+
+
+
+// const
+
+const name = 'John Doe';
+name = 'David Hasselhoff'; // error
 ```
 
  - [neighbours01](neighbours/neighbours01.js)
