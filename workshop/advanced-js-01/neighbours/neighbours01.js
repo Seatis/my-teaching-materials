@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 
 // Ferenc Vágási is a good working man. He helps for his friend Góliát to carrying furniture.
