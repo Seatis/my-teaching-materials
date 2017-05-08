@@ -11,10 +11,9 @@ To understand why software components are useful, think of a worker assembling a
 | Material | Time |
 |:-------- |-----:|
 |[Understanding Dependency Injection](https://www.youtube.com/watch?v=GB8k2-Egfv0)|14:51|
-|[What is java bean?](https://www.javatpoint.com/java-bean)|reading|
-|[Beans in Spring](https://www.youtube.com/watch?v=P0m1dW0LJeE&t)|1:58|
-|[@Autowired](https://www.youtube.com/watch?v=HFt_q0wYYLU&t)|5:43|
 |[Bean Factory](https://www.youtube.com/watch?v=xlWwMSu5I70)|6:52|
+|[Spring Annotations, Configuration, Bean](https://www.youtube.com/watch?v=5zUTc-kge8I&feature=youtu.be&t=180)|from 3:00 till 15:55|
+|[Spring Component Autowired](https://www.youtube.com/watch?v=VIaBbNaYDaU)|8:26|
 |[Java Based Configuration](https://www.tutorialspoint.com/spring/spring_java_based_configuration.htm)|reading|
 
 
@@ -49,7 +48,7 @@ Example of injecting bean dependencies:
 
 ```java
 package com.greenfox.texteditor.config;
-import ...
+import ...;
 
 @Configuration
 public class TextEditorConfig {

@@ -20,6 +20,12 @@ Install a GUI client to manage DB tables
  - [HeidiSQL](http://www.heidisql.com/) - Windows
  - [Sequel pro](http://www.sequelpro.com/) - OSX
 
+
+### Optional environment
+Other GUI client to manage DB tables
+ - [HeidiSQL](http://www.heidisql.com/) - Windows
+ - [Sequel pro](http://www.sequelpro.com/) - OSX
+
 ### Training
 | Material | Time |
 |:-------- |-----:|

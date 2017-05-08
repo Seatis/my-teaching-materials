@@ -177,3 +177,6 @@ will pop up if you keep your mouse pointer on a block in the PXT tool.
       - the transmitter sends the message
       - the receiver receives the message and shows on the screen
       - use unique group numbers!
+      
+## Solutions
+[link](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/hardware-first-day)

@@ -53,7 +53,7 @@ in the same radio group.
 ### Examples
 Input of micro:bit|Output of micro:bit
 -----|------
-0010|3
+0010|2
 1110|14
 10010001|145
 
