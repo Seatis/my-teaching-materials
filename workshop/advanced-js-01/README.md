@@ -97,7 +97,7 @@ doSomething();
 
 
 console.log(number); // 100
-console.log(i); // 1
+console.log(i); // 10
 console.log(local); // error
 ```
 
