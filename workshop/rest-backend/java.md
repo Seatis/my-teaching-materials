@@ -15,7 +15,7 @@
 
 ## Workshop
 - [Doubling](exercises/doubling/README.md)
-- [Greeter](exercises/greet/README.md)
+- [Greeter](exercises/greeter/README.md)
 - [Append a](exercises/append-a/README.md)
 - [Do until](exercises/do-until/README.md)
 - [Array handler](exercises/array-handler/README.md)
