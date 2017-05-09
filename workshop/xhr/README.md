@@ -32,13 +32,13 @@ Talking to a server
 
  - XMLHttpRequest
   - request methods  
-  - ```.open```  
-  - ```.send```  
-  - ```.setRequestHeader```
-  - ```.onreadystatechange```
+  - `.open`
+  - `.send`
+  - `.setRequestHeader`
+  - .onreadystatechange`
   - [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
-  - ```.readyState```
-  - ```.response```
+  - `.readyState`
+  - `.response`
  - Blocking / non-blocking
  - Callbacks
  - XML
@@ -61,7 +61,7 @@ httpRequest.onreadystatechange = console.log;
 Design of user interface is not important, don't spend more than 5 minutes making it look pretty.
 
 
-### Giphy API
+### Task 1 : Giphy API
 
 Display gifs of a cute/funny topic using:
 https://github.com/Giphy/GiphyAPI
@@ -71,7 +71,7 @@ https://github.com/Giphy/GiphyAPI
  - If the user clicks on the thumbnail, display the animated GIF
 
 
-### New York Times API
+### Task 2 : New York Times API
 
 Search interesting articles on:
 http://developer.nytimes.com/
@@ -87,7 +87,7 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
  - Create a permalink to that article
 
 
-### Yoda Say
+### Task 3 : Yoda Say
 
 Rewrite your own sentence in yoda-style, using the given API:
 https://market.mashape.com/ismaelc/yoda-speak
@@ -101,7 +101,7 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
 - The request should be sent to the API by clicking the button
 - If you get the response, you should display your sentence in yoda-style
 
-### Get Position (__optional__)
+### Task (__optional__) :  Get Position
 
 Similar to the yoda-style exercise get your input city's position using this API:
 https://market.mashape.com/dev132/city-geo-location-lookup  
@@ -114,8 +114,8 @@ https://market.mashape.com/dev132/city-geo-location-lookup
 - If you get the response, you should display your city's coordinates: latitude, longitude
 
 
-### Todo project backend communication
+<!-- ### Reddit backend communication
 
-Check the documentation of the [Todo project's backend](https://todo-docs.herokuapp.com/docs/#!/default/todosGET)
+Check the documentation of the [Reddit project's backend](https://todo-docs.herokuapp.com/docs/#!/default/todosGET)
 
- - Try to implement all methods without connecting them to you UI
+ - Try to implement all methods without connecting them to you UI -->
