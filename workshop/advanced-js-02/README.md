@@ -10,6 +10,7 @@ Getting to know callbacks inside-out.
 |:---------|-----:|
 | [Higher-order functions - Part 1 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=BMUiFMZr7vk) | 10:48 |
 | [Map - Part 2 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=bCqtb-Z5YGQ) | 9:07 |
+| [[JavaScript Tutorial] 014 Function Statements and Function Expressions](https://www.youtube.com/watch?v=oB5rH_9bqAI) | 28:03 |
 | [Asynchronous JavaScript #1 - What is Asynchronous JavaScript?](https://www.youtube.com/watch?v=YxWMxJONp7E) | 5:46 |
 | [Asynchronous JavaScript #3 - Callback Functions](https://www.youtube.com/watch?v=QRq2zMHlBz4) | 13:49 |
 | [BGTSD - Part 24: Basic Asynchronous Programming](https://www.youtube.com/watch?v=1V7rpblmruw) | 12:58 |
