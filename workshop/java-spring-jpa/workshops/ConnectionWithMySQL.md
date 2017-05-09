@@ -15,7 +15,7 @@
 - Configure application.properties file in the needed structure
 
 ```java
-spring.datasource.url=jdbc:mysql://localhost/reddit
+spring.datasource.url=jdbc:mysql://localhost/todo
 spring.datasource.username=root
 spring.datasource.password=12345
 spring.jpa.hibernate.ddl-auto=create-drop
