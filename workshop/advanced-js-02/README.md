@@ -19,34 +19,94 @@ Getting to know callbacks inside-out.
 | [Closures - Part 5 of Functional Programming in JavaScript](https://www.youtube.com/watch?v=CQqwU2Ixu-U) | 7:03 |
 
 ## Material Review
- - Higher order function
- - `.map()`
- - `.filter()`
- - what is async
- - callbacks
- - setTimeout
- - setInterval
- - clearTimeout
- - clearInterval
- - blocking / non blocking
- - closure
+ -  First class function
+     -  function as variable / value
+     -  function as object
+ -  function statement / function expression
+ -  Higher order function
+ -  `.map()`
+ -  `.filter()`
+ -  what is async
+ -  callbacks
+ -  setTimeout
+ -  setInterval
+ -  clearTimeout
+ -  clearInterval
+ -  blocking / non blocking
+ -  closure
 
 ## Workshop
 
+### First class functions
+```javascript
+function add(a, b) {
+  return a + b;
+}
 
-#### Excercises
- - [01.js](workshop/01.js)
- - [02.js](workshop/02.js)
- - [03.js](workshop/03.js)
- - [04.js](workshop/04.js)
- - [05.js](workshop/05.js)
- - [06.js](workshop/06.js)
- - [07a.js](workshop/07a.js)
- - [07b.js](workshop/07b.js)
- - [07c.js](workshop/07c.js)
- - [08.js](workshop/08.js)
- - [09.js](workshop/09.js)
- - [10.js](workshop/10.js)
+var apple = add;
+console.log(apple(5, 6)); // 11
+```
+
+```javascript
+function substract(a, b) {
+  return a - b;
+}
+
+substract.pear = 45;
+console.log(substract.pear);
+```
+
+### Function as argument
+```javascript
+function provideName(callback) {
+  callback('John Doe');
+}
+
+function printName(name) {
+  console.log(name);
+}
+
+provideName(printName); // prints John Doe
+```
+
+### Higher order functions
+```javascript
+var numbers = [1, 2, 3, 4, 5];
+
+function doubler(num) {
+  return num * 2;
+}
+
+var doubles = numbers.map(doubler);
+
+console.log(doubles); // prints [2, 4, 6, 8, 10]
+```
+ - [01 - Call](call/call.js)
+ - [02 - Map](map/map.js)
+ - [03 - Caller](caller/caller.js)
+
+### SetTimeout
+```javascript
+setTimeout(function() {
+  console.log('apple'); // prints after one second
+}, 1000);
+console.log('pear'); // prints first
+```
+
+```javascript
+var timeoutId = setTimeout(function() {
+  console.log('Yeeey!'); // not going to run
+}, 1000);
+
+clearTimeout(timeoutId);
+
+```
+
+ - [04 - Simple Timeout](simple-timeout/simple-timeout.js)
+ - [05 - Multiple Timeout](multiple-timeout/multiple-timeout.js)
+ - [06 - Delayed Click](delayed-click/delayed-click.md)
+ - [07 - Click Three Times](click-three-times/click-three-times.md)
+ 
 
 #### Candy shop
 
@@ -59,4 +119,3 @@ Find the HTML skeleton of the game in the [candy game](candy-game) folder.
    - Use the 🍭 emoji to display the lollipops you have
  - Display the candy producton rate in the `Candies / Second` row
  - If you press the "make candy rain" button, the candy generation should speed up 10x
- - Create a procedural and OO versions of the same app
