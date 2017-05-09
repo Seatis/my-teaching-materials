@@ -356,3 +356,6 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Are there unnecessary empty blocks?
  - Can you spot unused variables?
  - Is the commit message meaningful?
+ 
+ ## Solutions
+ [Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/expressions-and-control-flow)
