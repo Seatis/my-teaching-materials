@@ -18,7 +18,7 @@ int main() {
 
     // Try with %x
 
-  printf("------------------\n", d);
+    printf("------------------\n", d);
     printf("%x\n", a);
     printf("%x\n", b);
     printf("%x\n", c);
