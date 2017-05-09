@@ -1,0 +1,7 @@
+basic.forever(() => {
+    radio.sendString(serial.readLine())
+})
+radio.onDataPacketReceived(({receivedString}) => {
+    serial.writeLine(receivedString)
+})
+radio.setGroup(2)

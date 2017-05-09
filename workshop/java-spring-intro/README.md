@@ -37,7 +37,6 @@
 |[Introduction to Servlets](https://www.youtube.com/watch?v=7TOmdDJc14s)|TILL 2:32|
 |[Building an Application with Spring Boot](http://spring.io/guides/gs/spring-boot/)|reading ~11 mins|
 
-
 ## Review
 - Web Application
 - Web server
@@ -195,4 +194,8 @@ String[] hellos = {"Mirëdita", "Ahalan", "Parev", "Zdravei", "Nei Ho", "Dobrý 
                 "Guten Tag", "Gia'sou", "Aloha", "Shalom", "Namaste", "Namaste", "Jó napot", "Halló", "Helló", "Góðan daginn", "Halo", "Aksunai", "Qanuipit", "Dia dhuit",
                 "Salve", "Ciao", "Kon-nichiwa", "An-nyong Ha-se-yo", "Salvëte", "Ni hao", "Dzien' dobry", "Olá", "Bunã ziua", "Zdravstvuyte", "Hola", "Jambo", "Hujambo", "Hej",
                 "Sa-wat-dee", "Merhaba", "Selam", "Vitayu", "Xin chào", "Hylo", "Sut Mae", "Sholem Aleychem", "Sawubona"};
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 69224a205b8d22010832ed094615035055b01a63

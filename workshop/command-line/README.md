@@ -129,7 +129,7 @@ Introduction to version control systems and Git.
 #### Basics
   - setup your environtment
   - `git config --global user.name "Your Name"`
-  - `git config --global user.email yourname@example.com`
+  - `git config --global user.email "yourname@example.com"`
 
 ---
   - create a repo on github
@@ -204,7 +204,9 @@ Introduction to version control systems and Git.
 Create a new repo under your username at github called yourgithubusername.github.io
   - Make a local version of it (clone)
       - Pay attention not to clone inside another git repo!
-  - Create an index.html file with content, images and styling or use the ones from first day
+  - Create an index.html file with content, images and styling or
+      - use the ones from first day or
+      - use the provided files (in the template folder)
   - push!
   - see your website at http://githubusername.github.io
   - note, this is another repo, so you should include links in your main README.md

@@ -1,0 +1,11 @@
+basic.forever(() => {
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
+    basic.clearScreen()
+    basic.pause(1000)
+})
