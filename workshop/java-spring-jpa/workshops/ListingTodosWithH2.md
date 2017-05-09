@@ -13,7 +13,7 @@
 - Add a single `public String list(Model model)` method which maps to `/` and `/list` in the controller, which returns with "This is my first todo" string. Use the @Responsebody annotation.
 - Run the application. If all works fine, we can go ahead.
 #### Repository
-- Create a new repository which extends `CrudRepository<Todo, Long>`
+- Create a new interface which extends `CrudRepository<Todo, Long>`
 - Inject the new repository into the controller with @Autowired
 
 - Put the classes into *model, controller, repository* packages
