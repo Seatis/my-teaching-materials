@@ -99,9 +99,9 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
   - an input field (text)
   - and a button
 - The request should be sent to the API by clicking the button
-- If you get the response, you should display your sentence in yoda-style
+- If you get the response, you should display your sentence in yoda-style on the screen
 
-### Task (__optional__) :  Get Position
+### Task (_optional_) :  Get Position
 
 Similar to the yoda-style exercise get your input city's position using this API:
 https://market.mashape.com/dev132/city-geo-location-lookup  
