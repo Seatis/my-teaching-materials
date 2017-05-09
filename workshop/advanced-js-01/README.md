@@ -72,7 +72,7 @@ let blueberries = 54;
 
 ```js
 const oranges = 5;
-console.log(melons); // prints 5
+console.log(oranges); // prints 5
 
 console.log(strawberries); // error
 let strawberries = 54;
