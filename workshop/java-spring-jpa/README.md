@@ -54,6 +54,7 @@ Java Persistence API is a collection of classes and methods to persistently stor
 - [Add updating function](./workshops/UpdatingFunction.md)
 
 ### Optional
-- Make the todo names clickable. On the event a new page should appear with the details of the selected todo.
-- Add date column with date of creation
-- Add `user` table, try to find out the relationship and the connection between `todo` and `user` tables
+- Make the todo names clickable. On the event a new page should appear with the details of the selected todo only.
+- Add date column with date of creation.
+- Let's assume that our application used by more users (i.e. your mother/wife/brother/cat) and can add more things to your todolist. Add `User` model, create any fields with any information content you want to preserve of the user. Extend your main listing table with the name of the user (or with more info, if you want), but preserve every information of the user in a separate table. Extend your adding page with a user field (or fields for more info).
+Try to find out and specify the relationship and the connection between `todo` and `user` tables.
