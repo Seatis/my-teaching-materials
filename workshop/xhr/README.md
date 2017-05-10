@@ -34,13 +34,13 @@ Talking to a server
 
  -  XMLHttpRequest
  -  request methods  
-   -  `.open`
-   -  `.send`
-   -  `.setRequestHeader`
-   -  .onreadystatechange`
-   -  [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
-   -  `.readyState`
-   -  `.response`
+     -  `.open`
+     -  `.send`
+     -  `.setRequestHeader`
+     -  .onreadystatechange`
+     -  [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+     -  `.readyState`
+     -  `.response`
  -  Blocking / non-blocking
  -  Callbacks
  -  XML
@@ -83,9 +83,9 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
  -  Use the [Article Search API](http://developer.nytimes.com/article_search_v2.json)
  -  Find articles about the moon landing by Apollo 11
  -  Display the following fields in a list
-    -  Headline
-    -  Snippet
-    -  Publication date
+     -  Headline
+     -  Snippet
+     -  Publication date
  -  Create a permalink to that article
 
 
@@ -95,9 +95,9 @@ Similar to the yoda-style exercise get your input city's position using this API
 https://market.mashape.com/dev132/city-geo-location-lookup  
 
  -  Create a very simple HTML:
-   -  it should have a label
-   -  an input field (text)
-   -  and a button
+     -  it should have a label
+     -  an input field (text)
+     -  and a button
  -  The request should be sent to the API by clicking the button
  -  If you get the response, you should display your city's coordinates: latitude, longitude
  -  Mark the city on a map, using [Google Maps API](https://developers.google.com/maps/documentation/embed/guide)
@@ -110,9 +110,9 @@ https://market.mashape.com/dev132/city-geo-location-lookup
  Ask your local mentor for the API key or request your own. Use `localhost` as the website.
 
  -  Create a very simple HTML:
- -  it should have a label
- -  an input field (text)
- -  and a button
+     -  it should have a label
+     -  an input field (text)
+     -  and a button
  -  The request should be sent to the API by clicking the button
  -  If you get the response, you should display your sentence in yoda-style on the screen
 
