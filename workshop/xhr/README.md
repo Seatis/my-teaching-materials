@@ -38,7 +38,7 @@ Talking to a server
  -  `.send`
  -  `.setRequestHeader`
  -  `.onreadystatechange`
- -  [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+ -  [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) | [status cats](https://http.cat/)
  -  `.readyState`
  -  `.response`
  -  Blocking / non-blocking
