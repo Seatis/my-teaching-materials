@@ -75,7 +75,7 @@ with LEDs? Watch these videos to find the answers:
 | Decision making |
 | [if statement](https://www.youtube.com/watch?v=PXwWoL0IG5A) | 7:53 |
 | [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
-| [Nesting if statement](https://www.youtube.com/watch?v=PXwWoL0IG5A) | 4:45 |
+| [Nesting if statement](https://www.youtube.com/watch?v=FtZ1YgSFqs0) | 4:45 |
 | [if-else statement](https://www.youtube.com/watch?v=KgVzRmUPsdo) | 7:53 |
 | [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
 | [else-if statement](https://www.youtube.com/watch?v=DZ0ZXipUx-A) | 8:47 |
@@ -356,3 +356,6 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Are there unnecessary empty blocks?
  - Can you spot unused variables?
  - Is the commit message meaningful?
+ 
+ ## Solutions
+ [Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/expressions-and-control-flow)

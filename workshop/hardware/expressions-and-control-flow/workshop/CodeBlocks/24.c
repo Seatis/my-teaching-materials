@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 int main() {
-	uint8_t ae = 4
+	uint8_t ae = 4;
 	// print "yeeeeeeeey" ae times
 	return 0;
 }

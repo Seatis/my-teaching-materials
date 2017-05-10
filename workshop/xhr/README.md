@@ -91,12 +91,14 @@ Ask your local mentor for the API key or request your own. Use `localhost` as th
 
 ### Task 3 :  Get Position
 
-Similar to the yoda-style exercise get your input city's position using this API:
+Get your input city's position using this API:
 https://market.mashape.com/dev132/city-geo-location-lookup  
+
+Ask your local mentor for the API key or request your own. Use `localhost` as the website.  
 
  -  Create a very simple HTML:
      -  it should have a label
-     -  an input field (text)
+     -  an input field (text)  for the name of city
      -  and a button
  -  The request should be sent to the API by clicking the button
  -  If you get the response, you should display your city's coordinates: latitude, longitude
@@ -107,14 +109,13 @@ https://market.mashape.com/dev132/city-geo-location-lookup
  Rewrite your own sentence in yoda-style, using the given API:
  https://market.mashape.com/ismaelc/yoda-speak
 
- Ask your local mentor for the API key or request your own. Use `localhost` as the website.
-
  -  Create a very simple HTML:
      -  it should have a label
      -  an input field (text)
      -  and a button
  -  The request should be sent to the API by clicking the button
  -  If you get the response, you should display your sentence in yoda-style on the screen
+
 
 <!-- ### Reddit backend communication
 

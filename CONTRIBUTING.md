@@ -8,16 +8,24 @@ With the exceptions listed below, we follow the rules contained in
  -  **Lists**: Use `-` as bullets instead of `*`
  -  **Nested list spacing**: Use a single space before a bullet or a numbered list
     ```markdown
-     1. 1 spaces after a numbered list.
-        4 space indent for wrapped text.
-     2. 1 spaces again.
+     1. One space after a numbered list.
+        Four space indent for wrapped text.
+     2. One space again.
 
-     -  2 spaces after a bullet.
-        4 space indent for wrapped text.
-         1. 1 spaces after a numbered list.
-            8 space indent for the wrapped text of a nested list.
+     -  Two spaces after a bullet.
+        Four space indent for wrapped text.
+         1. One space after a numbered list.
+            Eight space indent for the wrapped text of a nested list.
          2. Looks nice, don't it?
-     -  3 spaces after a bullet.
+     -  Three spaces after a bullet.
+
+     -  Two spaces after a bullet.
+        Four space indent for wrapped text.
+         -  Two spaces after a bulleted list.
+            Eight space indent for the wrapped text of a nested list.
+         -  Looks nice, don't it?
+     -  Three spaces after a bullet.
+
     ```
 
 ## Git Commit Guidelines
@@ -32,6 +40,7 @@ With the expectations listed below, we follow the rules contained in
      -  **feat**: A new definition, exercise, workshop or material
      -  **fix**: A bug fix
      -  **refactor**: A code change that neither fixes a bug nor adds a feature
+     -  **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
      -  **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
 ## Submission Guidelines

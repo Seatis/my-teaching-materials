@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stint.h>
+#include <stdint.h>
 
 int main() {
     uint8_t a = 60;
