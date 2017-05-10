@@ -140,15 +140,19 @@ The following sections are needed:
 ## Workshop
 TODO: - next day do a circular buffer struct
 ### Preprocessor macros
-- define
-- ifdef/ifndef
-- if/elif/else/endif (máshogy fordul a program tőle)
-- error
+- [`#define`](workshop/CodeBlocks/Macros/1_define.c)
+- [`#ifdef/#ifndef`](workshop/CodeBlocks/Macros/2_ifnded_ifdef.c)
+- [`#if/#elif/#else`](workshop/CodeBlocks/Macros/3_if_elif_else.c)
+- [`#error`](workshop/CodeBlocks/Macros/4_error.c)
 
 ### UART properly
-- create circular receive and transmtit buffer
-- write TX ISR using the circular tx buffer
-- write RX ISR using the circular rx buffer
+- This task is way too hard for them!
+
+- Create a circular buffer
+    - one for the receiver
+    - one for the transmitter
+- Write the TX ISR routine
+- Write the RX ISR routine
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
