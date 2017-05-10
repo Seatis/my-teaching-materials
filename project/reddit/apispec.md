@@ -65,6 +65,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
+  "body": "lorem ipsum dolor sit amet",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": 0
@@ -88,6 +89,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
+  "body": "lorem ipsum dolor sit amet",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": 1
@@ -111,6 +113,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
+  "body": "lorem ipsum dolor sit amet",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": -1
@@ -135,6 +138,7 @@ Body:
 {
   "id": 25,
   "title": "Dear JavaScript",
+  "body": "lorem ipsum dolor sit amet",
   "timestamp": 1494339525,
   "owner": null,
   "score": 791
@@ -166,6 +170,7 @@ Body:
 {
   "id": 25,
   "title": "modified title",
+  "body": "lorem ipsum dolor sit amet",
   "timestamp": 1494339525,
   "owner": null,
   "score": 791
