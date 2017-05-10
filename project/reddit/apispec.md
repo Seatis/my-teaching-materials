@@ -20,19 +20,19 @@ Body:
   "posts": [
     {
       "id": 25,
-    	"title": "Dear JavaScript",
-      "body": "little description of the post",
-    	"timestamp": 1494339525,
-    	"owner": null,
-    	"score": 791
+      "title": "Dear JavaScript",
+      "href": "http://9gag.com",
+      "timestamp": 1494339525,
+      "owner": null,
+      "score": 791
     },
     {
       "id": 74,
-    	"title": "Crockford",
-      "body": "lorem ipsum dolor sit amet",
-    	"timestamp": 1494138425,
-    	"owner": "kristof4",
-    	"score": 567
+      "title": "Crockford",
+      "href": "http://9gag.com",
+      "timestamp": 1494138425,
+      "owner": "kristof4",
+      "score": 567
     }
   ]
 }
@@ -49,7 +49,7 @@ Body:
 ```json
 {
   "title": "Crockford",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   (Optional) "owner": "Kristof4"
 }
 ```
@@ -65,7 +65,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": 0
@@ -89,7 +89,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": 1
@@ -113,7 +113,7 @@ Body:
 {
   "id": 74,
   "title": "Crockford",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   "timestamp": 1494138425,
   (Optional) "owner": "kristof4",
   "score": -1
@@ -138,7 +138,7 @@ Body:
 {
   "id": 25,
   "title": "Dear JavaScript",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   "timestamp": 1494339525,
   "owner": null,
   "score": 791
@@ -170,7 +170,7 @@ Body:
 {
   "id": 25,
   "title": "modified title",
-  "body": "lorem ipsum dolor sit amet",
+  "href": "http://9gag.com",
   "timestamp": 1494339525,
   "owner": null,
   "score": 791
