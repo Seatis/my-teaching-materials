@@ -1,30 +1,18 @@
 #include <stdio.h>
 
-void sortAscending(int *array, int length);
-//TODO:
-// Implement this function to sort the array in an ascending order.
-
-void sortDescending(int *array, int length);
-//TODO:
-// Implement this function to sort the array in a descending order.
-
-void printArray(int *array, int length) {
-    printf("{");
-    for(int i=0; i<length; i++) {
-        printf("%d",array[i]);
-        if(i<length-1) {
-            printf(", ");
-        }
-    }
-    printf("}\n");
+void safeUnion(int *a, int l_a, int *b, int l_b, int *result, int l_res) {
+    //TODO:
+    // Implement this function to create the union of a and b into the array result!
+    return;
 }
 
 int main(int argc, char** argv) {
-    int example[13] = {34, 56, 26, 84, 29, 3875, 43, 96, 4759, 979, 92, 56, 1987};
-    sortAscending(example, 13);
-    printArray(example, 13);
-    sortDescending(example, 13);
-    printArray(example, 13);
-
+    int a[3] = {1,2,3};
+    int b[3] = {4,5,6};
+    int c[6];
+    safeUnion(a,3,b,3,c,6);
+    for (int i = 0; i<6; i++) {
+        printf("%d\n", c[i]);
+    }
     return 0;
 }
