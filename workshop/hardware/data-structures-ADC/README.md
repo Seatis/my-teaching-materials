@@ -13,17 +13,21 @@ lear how to use analog-to-digital converters*
   - Make sure that Atmel Studio is installed on your machine
 
 ### Training
-#### Buffering
-TODO
+#### Creating .h and .c files
 
 | Material | Duration |
 |:---------|-----:|
-| []() |  |
+| [Creating a Header File](https://www.youtube.com/watch?v=1EeetMPACMI&t=1s) | 9:51 |
+| [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm) | - |
 
-#### Preprocessor macros
+#### Data structures
 TODO
-
-#### UART with interrupt
+https://www.youtube.com/watch?v=VMFKz7Klx7I
+https://www.tutorialspoint.com/cprogramming/c_structures.htm
+https://www.tutorialspoint.com/cprogramming/c_unions.htm
+https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm
+#### Custom types
+https://www.tutorialspoint.com/cprogramming/c_typedef.htm
 TODO
 
 #### Optional materials
