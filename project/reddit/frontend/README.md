@@ -23,6 +23,7 @@ URL in a global config object because you'll have to change it.
 
 #### Notes
 
+ -  This web service can help you [generate random data](http://mockaroo.com/)
  -  no other functionality should be added yet
  -  it's okay to display the elapsed time only in minutes
  -  if the post has no owner it's posted by anonymous
