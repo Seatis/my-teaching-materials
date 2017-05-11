@@ -61,6 +61,7 @@ Modify [the main page](assets/views/main_02.png?raw=true) so that those arrows c
  -  Make sure that you're on the A66 Guest network
  -  Get your partner's local IP address, and change the API's URL
  -  Test out each other's work
+ -  Be kind, backend developers don't bite (usually)
 
 ## Optional features
 
