@@ -22,7 +22,7 @@ ISR(TIMER0_OVF_vect)
     else
     {
         cntr = 0;
-        PORTB ^= 1<<PB5;
+        PINB |= 1 << PINB5;
     }
 }
 
@@ -54,4 +54,3 @@ int main(void)
         //Nothing to do here, everithing is done in interrupt :)
     }
 }
-

@@ -41,7 +41,7 @@ int main(void)
             else
             {
                 cntr = 0;
-                PORTB ^= 1<<PORTB5;
+                PINB |= 1 << PINB5;
             }
         }
 

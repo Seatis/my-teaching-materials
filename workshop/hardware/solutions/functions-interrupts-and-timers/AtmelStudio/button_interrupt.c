@@ -4,7 +4,7 @@
 ISR(PCINT0_vect)
 {
     // Toggle the LED
-    PORTB ^= (1<<PORTB5);
+    PINB |= 1 << PINB5;
 }
 
 // This is an init function, which initializes the MCU for the rest of the program.

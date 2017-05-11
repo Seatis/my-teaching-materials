@@ -21,7 +21,7 @@ int main(void)
         // If TC0 counter overflow occurred (TOV0 flag is set) toggle the LED and write "1" to that flag (this will clear it, i know, it's confusing, but this is how does it work)
         if (TIFR0 & (1<<TOV0))
         {
-            PORTB ^= 1<<PB5;
+            PINB |= 1 << PINB5;
             TIFR0 |= 1<<TOV0;
         }
     }
