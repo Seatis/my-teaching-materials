@@ -4,16 +4,17 @@ We'll create a simple reddit clone frontend, where the users can create posts,
 upvote and downvote existing posts. Later on you can extend this with more
 functionality.
 
-Read the Reddit Application API documentation and you can also check out the
-final version. Store the API's URL in a global variable because you'll have to
-change it.
+Read the Reddit Application API documentation and you can also check out
+[the final version](assets/views/final.png). Store the API's URL in a global
+variable because you'll have to change it.
 
 ## Mandatory features
 
 ### List the posts
 
-Create the HTML structure and the design of the main page using static data.
-Remove the static data and fill the page with posts using the API.
+Create the HTML structure and the design of
+[the main page](assets/views/main_00.png) using static data. Remove the static
+data and fill the page with posts using the API.
 
 #### Notes
 
@@ -24,8 +25,9 @@ Remove the static data and fill the page with posts using the API.
 
 ### Add post
 
-Create the HTML structure and the design of the add post page. Add the
-functionality. Add that nice top navigation bar to the main page.
+Create the HTML structure and the design of
+[the add post page](assets/views/add.png). Add the functionality. Add that nice
+top navigation bar to [the main page](assets/views/main_01.png).
 
 #### Notes
 
@@ -38,8 +40,8 @@ functionality. Add that nice top navigation bar to the main page.
 
 ### Vote
 
-Modify your main page so that those arrows can finally do something useful using
-the API.
+Modify [the main page](assets/views/main_02.png) so that those arrows can
+finally do something useful using the API.
 
 #### Notes
 
@@ -59,7 +61,8 @@ the API.
 
 ### Remove
 
-Modify your main page so it is possible to remove a post using the API.
+Modify [the main page](assets/views/main_03.png) so it is possible to remove a
+post using the API.
 
 #### Notes
 
@@ -71,8 +74,9 @@ Modify your main page so it is possible to remove a post using the API.
 
 ### Modify
 
-Create the HTML structure and the design of the modify post page. Add the
-functionality. Modify your main page so it is possible the modify a post.
+Create the HTML structure and the design of
+[the modify post page](assets/views/modify.png). Add the functionality. Modify
+your main page so it is possible the modify a post.
 
 #### Notes
 
@@ -81,9 +85,9 @@ functionality. Modify your main page so it is possible the modify a post.
 
 ### Login
 
-Create the HTML structure and the design of the login page. Add the
-functionality. Add login link to your navigation bar and modify every request so
-it uses the username.
+Create the HTML structure and the design of
+[the login page](assets/views/login.png). Add the functionality. Add login link
+to your navigation bar and modify every request so it uses the username.
 
 #### Notes
 
