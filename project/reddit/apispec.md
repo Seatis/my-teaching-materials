@@ -133,6 +133,7 @@ Body:
 ### Request
 Headers:
  - Accept: application/json
+ - (Optional) Username: username
 
 ### Response
 Status Code: 200
