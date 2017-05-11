@@ -4,9 +4,9 @@ We'll create a simple reddit clone frontend, where the users can create posts,
 upvote and downvote existing posts. Later on you can extend this with more
 functionality.
 
-Read the Reddit Application API documentation and you can also check out
-[the final version](assets/views/final.png). Store the API's URL in a global
-variable because you'll have to change it.
+Read the [Reddit Application API documentation](../apispec.md) and you can also
+check out [the final version](assets/views/final.png). Store the API's URL in a
+global variable because you'll have to change it.
 
 ## Mandatory features
 
@@ -92,7 +92,7 @@ to your navigation bar and modify every request so it uses the username.
 #### Notes
 
  -  no authentication is required
- -  check out what localStorage is
+ -  check out what [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) is
  -  if username is set it should display **LOGGED IN AS `<username>`** otherwise
     **LOGIN »**
 
