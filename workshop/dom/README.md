@@ -8,6 +8,7 @@ You'll learn how the browser builds HTML documents.
 |:---------|-----:|
 | [JavaScript Tutorial For Beginners #32 - What is the DOM in JavaScript?](https://youtu.be/H63dVFDuJDM) | 4:31 |
 | [JavaScript Tutorial For Beginners #33 - Traversing the DOM](https://youtu.be/SowaJlX1uKA) | 7:43 |
+| [JavaScript: Browser - querySelector(), querySelecto](https://www.youtube.com/watch?v=k69s-XlnVnE) | 5:06 |
 | [JavaScript Tutorial For Beginners #34 - Changing Page Content](https://youtu.be/FQuwArzGPYo) | 5:38 |
 | [JavaScript Tutorial For Beginners #35 - Changing Element Attributes](https://youtu.be/V0S0LXvnW-o) | 6:02 |
 | [JavaScript Tutorial For Beginners #36 - Changing CSS Styles](https://youtu.be/97agDBCyxAE) | 4:49 |
@@ -15,7 +16,6 @@ You'll learn how the browser builds HTML documents.
 | [JavaScript Tutorial For Beginners #38 - Removing Elements from the DOM](https://youtu.be/rBGgguNnutE) | 4:12 |
 | [JavaScript: Browser - Event Listeners](https://youtu.be/73VikwiXUrQ) | 4:52 |
 | [JavaScript Tutorial For Beginners #41 - Window onLoad Event](https://youtu.be/RVA4HoEE_q8) | 5:06 |
-| [JavaScript Tutorial For Beginners #42 - JavaScript Timers](https://youtu.be/Az5J_EkhYCY) | 12:11 |
 | [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) |
 | [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) |
 | [What is the DOM?](https://css-tricks.com/dom/) |
@@ -61,9 +61,6 @@ http://www.hongkiat.com/blog/100-useful-bookmarklets-for-better-productivity-ult
   - classList
 - events
   - addEventListener
-- timers
-  - setTimeout
-  - setInterval
 - bookmarklets
   - javascript protocol
 
