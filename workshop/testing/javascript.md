@@ -10,7 +10,7 @@
 Material | Time |
 |:---------|-----:|
 | [Javascript Tutorial 23 - Try, Catch, Finally](https://www.youtube.com/watch?v=Vv1CLj4vLjE&t=35s) | 9:44 |
-| Reading |  |
+| [Reading |  |
 | [Exceptional Exception Handling in JavaScrip](https://www.sitepoint.com/exceptional-exception-handling-in-javascript/) |  |
 | [try...catch](https://developer.mozilla.org/hu/docs/Web/JavaScript/Reference/Statements/try...catch) |  |
 | [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw) |  |
@@ -21,7 +21,7 @@ Material | Time |
 Material | Time |
 |:---------|-----:|
 | [15.2: What is NPM? - Twitter Bot Tutorial](https://www.youtube.com/watch?v=s70-Vsud9Vk) | 13:26 |
-| Reading |  |
+| [Reading |  |
 | [NPM Documentation](https://docs.npmjs.com/) |  |
 
 ### Unit Testing
@@ -31,9 +31,9 @@ Material | Time |
 | [JavaScript Tutorial: Unit Testing with Tape pt1](https://www.youtube.com/watch?v=5JXx0QrYUXo) | 3:32 |
 | [Writing unit tests for personal projects? - FunFunFunction #29](https://www.youtube.com/watch?v=ib2Pt9_zciA) | 4:26 |
 | [Unit testing: How to get your team started - FunFunFunction #2](https://www.youtube.com/watch?v=TWBDa5dqrl8&t=297s) | 17:24 |
-| Reading |  |
+| [Reading |  |
 | [Writing javascript tests with tape](http://www.catonmat.net/blog/writing-javascript-tests-with-tape/) |  |
-| [Tape Documentation](https://github.com/substack/tape) |  |
+| [Tape Documentation](https://github.com/substack/tape) | Reading |
 
 ## Material Review
 - exception, Error
@@ -42,7 +42,7 @@ Material | Time |
 - NPM package manager
   - `npm init`
   - `npm install`
-  - dependencies, decdependencies
+  - dependencies, devDependencies
 - unit test
 - `module.exports`
 - tape
@@ -94,11 +94,14 @@ try {
 }
 ```
 
+- [Exception](exception/exception.js)
+
 ### NPM
 
 Initialize an npm project in today's working directory.
 
 Install ESLint. It's a linter for JavaScript. Install the Atom ESLint package.
+
 [ESLint](http://eslint.org/)
 
 ```
@@ -108,6 +111,7 @@ eslint --init
 ```
 
 Install tape for testing.
+
 [tape](https://github.com/substack/tape)
 
 ```
@@ -117,6 +121,8 @@ npm install tape --save-dev
 ### Testing
 
 ```javascript
+'use strict';
+
 var add = function (a, b) {
   return a + b;
 }
@@ -124,6 +130,8 @@ var add = function (a, b) {
 module.exports = add;
 ```
 ```javascript
+'use strict';
+
 var test = require('tape');
 var add = require('./add.js');
 
@@ -137,6 +145,9 @@ test('add 2 numbers', function (t) {
 ```
 
 ## Exercises
+
+Test and handle the exceptions too.
+
 - [Apples](apples/java.md)
 - [Sum](sum/java.md)
 - [Anagram](anagram/anagram.md)
