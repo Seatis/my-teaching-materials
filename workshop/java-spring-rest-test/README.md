@@ -9,6 +9,7 @@ For testing HTTP endpoints Spring MVC provides a great support. It provides very
 |[Testing a REST Service](https://spring.io/guides/tutorials/bookmarks/)|"Testing a REST Service" part|
 |[Deeper concept of JSONPath](http://www.baeldung.com/guide-to-jayway-jsonpath)|reading|
 |[Spring Boot Controller Integration Test Example](https://www.youtube.com/watch?v=gNUm14kL7sI)|14:18|
+|[Spring MVC Controllers other example](https://www.petrikainulainen.net/programming/spring-framework/unit-testing-of-spring-mvc-controllers-rest-api/)
 
 
 ### Optional
