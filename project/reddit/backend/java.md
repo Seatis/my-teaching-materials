@@ -55,12 +55,18 @@ spring.jpa.hibernate.ddl-auto=create-drop
 - Save it and respond with the proper object
 
 ## Find a Frontend partner
+- Add this to your Posts controller
+```java
+@CrossOrigin("*")
+```
 - Make sure that every endpoint works according to the api spec with Postman
 - At this point go to the slack channel #reddit
 - Find someone who is developing the frontend part
-- Make sure that you're on the A66 Guest network
-- Find out your local ip address, and exchange it with your partner including the port on what your server is running
-- Test out each other's work
+- Make sure that you're on the same network
+- Find out your local ip address
+- Get together to test out each other's work
+- You can create another controller with an `/` endpoint to render the html and load the JavaScript your partner wrote
+  - set up the server address locally (http://localhost:8080 should work)
 
 ## Extending functionality
 - Add users
