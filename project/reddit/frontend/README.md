@@ -1,12 +1,12 @@
 # The Reddit: Frontend
 
 We'll create a simple reddit clone frontend, where the users can create posts,
-upvote and downvote existing posts. Later on you can extend this with more
+upvote and downvote existing posts. Your job is to create the HTML, CSS, JavaScript code to communicate with an existing backend. Later on you can extend this with more
 functionality.
 
 Read the [Reddit Application API documentation](../apispec.md) and you can also
 check out [the final version](assets/views/final.png?raw=true). Store the API's
-URL in a global variable because you'll have to change it.
+URL in a global config object because you'll have to change it.
 
 [![the final version](assets/views/final.png)](assets/views/final.png?raw=true)
 
@@ -18,9 +18,8 @@ URL in a global variable because you'll have to change it.
 
 ### List the posts
 
-Create the HTML structure and the design of
-[the main page](assets/views/main_00.png?raw=true) using static data. Remove the
-static data and fill the page with posts using the API.
+ - Create the HTML structure and the design of [the main page](assets/views/main_00.png?raw=true) using placeholder data in your markup. 
+ - Remove the static data and fill the page with posts using the API.
 
 #### Notes
 
@@ -33,29 +32,26 @@ static data and fill the page with posts using the API.
 
 [![the add post page](assets/views/add.png)](assets/views/add.png?raw=true)
 
-Create the HTML structure and the design of
-[the add post page](assets/views/add.png?raw=true). Add the functionality. Add
-that nice top navigation bar to
-[the main page](assets/views/main_01.png?raw=true).
+ - Create the HTML structure and the design of [the add post page](assets/views/add.png?raw=true). 
+ - Add the functionality. 
+ - Add that nice top navigation bar to [the main page](assets/views/main_01.png?raw=true).
 
 #### Notes
 
- -  since you have no user handling yet post as anonymous is always on
- -  do not let the user post with empty fields
- -  redirection to the main page after a successful addition would be nice to
-    have
+ -  since you have no user handling yet, display user as anonymous at this point
+ -  do not let the user post with empty fields, throw an `alert()` with a helpful text
+ -  redirection to the main page after a successful submission would be nice to have
  -  use your creativity and replace the page text
  -  that link above will show you a modified main page, make sure to check it
 
-### Vote
+### Upvote
 
-Modify [the main page](assets/views/main_02.png?raw=true) so that those arrows
-can finally do something useful using the API.
+Modify [the main page](assets/views/main_02.png?raw=true) so that those arrows can finally do something useful using the API. The user should be able to upvote or downvote a post. 
 
 #### Notes
 
- -  the score should be updated
- -  the color should change
+ -  the score should be updated after the submission was succesful
+ -  the color should change too
 
 
 ## Find a Backend partner
@@ -68,10 +64,9 @@ can finally do something useful using the API.
 
 ## Optional features
 
-### Remove
+### Remove post
 
-Modify [the main page](assets/views/main_03.png?raw=true) so it is possible to
-remove a post using the API.
+Modify [the main page](assets/views/main_03.png?raw=true) so it is possible to remove a post using the API.
 
 #### Notes
 
@@ -81,7 +76,7 @@ remove a post using the API.
  -  but since it's not mandatory to handle the user you might just enable the
     remove feature for every post
 
-### Modify
+### Modify post
 
 [![the modify post page](assets/views/modify.png?raw=true)](assets/views/modify.png?raw=true)
 
@@ -99,10 +94,9 @@ Modify your main page so it is possible the modify a post.
 
 [![the login page](assets/views/login.png)](assets/views/login.png?raw=true)
 
-Create the HTML structure and the design of
-[the login page](assets/views/login.png?raw=true). Add the functionality. Add
-login link to your navigation bar and modify every request so it uses the
-username.
+ - Create the HTML structure and the design of [the login page](assets/views/login.png?raw=true). 
+ - Add the functionality.
+ - Add login link to your navigation bar and modify every request so it uses the username.
 
 #### Notes
 
@@ -113,4 +107,4 @@ username.
 
 ### Order by score
 
-Modify the main page so the numbering is ordered by the scores.
+Modify the main page so the numbering is ordered by the upvotes.
