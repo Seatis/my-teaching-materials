@@ -81,13 +81,16 @@ functionality. Modify your main page so it is possible the modify a post.
 
 ### Login
 
-Create the HTML structure and the design of the modify post page. Add the
-functionality. Modify everything so it uses the username.
+Create the HTML structure and the design of the login page. Add the
+functionality. Add login link to your navigation bar and modify every request so
+it uses the username.
 
 #### Notes
 
  -  no authentication is required
  -  check out what localStorage is
+ -  if username is set it should display **LOGGED IN AS `<username>`** otherwise
+    **LOGIN »**
 
 ### Order by score
 
