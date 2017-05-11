@@ -85,6 +85,7 @@ your main page so it is possible the modify a post.
 #### Notes
 
  -  use query parameters for identifying the post
+ -  check out what [location.search](http://bfy.tw/BjIf) is
  -  fields should be prefilled with the proper data
 
 ### Login
