@@ -5,9 +5,12 @@ int main() {
 
     //TODO:
     // Get the user's name with scanf
+    printf("Your name is: ");
+    scanf("%s", buffer);
 
     //TODO:
     // Print it out with printf
+    printf("You are: %s\n", buffer);
 
     return 0;
 }
