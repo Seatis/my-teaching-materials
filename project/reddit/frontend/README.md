@@ -8,6 +8,8 @@ Read the [Reddit Application API documentation](../apispec.md) and you can also
 check out [the final version](assets/views/final.png?raw=true). Store the API's
 URL in a global variable because you'll have to change it.
 
+[![the final version](assets/views/final.png)](assets/views/final.png?raw=true)
+
 ## Assets
 
  -  [arrow images](assets/arrows)
@@ -28,6 +30,8 @@ static data and fill the page with posts using the API.
  -  numbering does not need to be in order by score
 
 ### Add post
+
+[![the add post page](assets/views/add.png)](assets/views/add.png?raw=true)
 
 Create the HTML structure and the design of
 [the add post page](assets/views/add.png?raw=true). Add the functionality. Add
@@ -79,6 +83,8 @@ remove a post using the API.
 
 ### Modify
 
+[![the modify post page](assets/views/modify.png?raw=true)](assets/views/modify.png?raw=true)
+
 Create the HTML structure and the design of
 [the modify post page](assets/views/modify.png?raw=true). Add the functionality.
 Modify your main page so it is possible the modify a post.
@@ -90,6 +96,8 @@ Modify your main page so it is possible the modify a post.
  -  fields should be prefilled with the proper data
 
 ### Login
+
+[![the login page](assets/views/login.png)](assets/views/login.png?raw=true)
 
 Create the HTML structure and the design of
 [the login page](assets/views/login.png?raw=true). Add the functionality. Add
