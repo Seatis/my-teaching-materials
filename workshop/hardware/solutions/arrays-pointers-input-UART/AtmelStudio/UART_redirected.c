@@ -18,7 +18,7 @@ void UART_Init() {
 
     //TODO:
     // Set the following frame format: 8N1
-    UCSR0C |= 0b011;
+    // It is set to 8N1 by default
 
     //TODO:
     // Enable TX
