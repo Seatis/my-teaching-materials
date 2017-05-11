@@ -62,7 +62,7 @@ public Response someEndpoint(@RequestHeader("header-name") String headerValue) {
 }
 ```
   - Save the user with the post
-- Add Delete / Update functionality enabled for the users own posts
+- Add [Delete](../apispec.md#delete-postsid) / [Update](../apispec.md#put-postsid) functionality enabled for the users own posts
   - When updating update the timestamp as well
 - Replace score with vote model
   - connect it to a post and the user
