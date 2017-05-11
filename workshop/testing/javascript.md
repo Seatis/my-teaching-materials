@@ -33,7 +33,7 @@ Material | Time |
 | [Unit testing: How to get your team started - FunFunFunction #2](https://www.youtube.com/watch?v=TWBDa5dqrl8&t=297s) | 17:24 |
 | Reading |  |
 | [Writing javascript tests with tape](http://www.catonmat.net/blog/writing-javascript-tests-with-tape/) |  |
-| [Tape Documentation](https://github.com/substack/tape) | Reading |
+| [Tape Documentation](https://github.com/substack/tape) |  |
 
 ## Material Review
 - exception, Error
