@@ -146,11 +146,20 @@ TODO: - next day do a circular buffer struct
 - [`#error`](workshop/CodeBlocks/Macros/4_error.c)
 
 ### UART properly
-- This task is way too hard for them!
+In a previous workshop we have written an UART handler application. In that we
+used the UART interface as a standard input and output. There is a problem with
+that method.
 
-- Create a circular buffer
-    - one for the receiver
-    - one for the transmitter
+Look at [this](#) code. Run it on your ATmega168PB Xplained board, and send two string
+after each other. You will notice that the second string is not complete.
+
+If the processor does something time-consuming while a strings
+arrives on the UART than characters will be lost. This is a big issue, but there is
+a solution for this.
+
+If somehow we could fire an interrupt if a character arrives on UART and we could
+put this character in a buffer, than
+
 - Write the TX ISR routine
 - Write the RX ISR routine
 
