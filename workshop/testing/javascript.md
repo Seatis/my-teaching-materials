@@ -38,9 +38,13 @@ Material | Time |
 ## Material Review
 - exception, Error
   - `try`, `catch`, `finally`
-  - `twrow`
+  - `throw`
 - NPM package manager
+  - `npm init`
+  - `npm install`
+  - dependencies, decdependencies
 - unit test
+- `module.exports`
 - tape
   - methods
     - `t.ok(value, msg)`
@@ -56,5 +60,89 @@ Material | Time |
 
 ## Workshop
 
-```js
+### Exception Handling
+
+```javascript
+function add(a, b){
+  if (typeof a !== 'number'){
+    throw new Error('"a" is not a number');
+  } else if (typeof b !== 'number'){
+    throw new Error('"b" is not a number');
+  }
+  console.log(a + b);
+}
+
+add('string', 'string');
+add(1, 'string');
+add(1, 2);
 ```
+```javascript
+function add(a, b){
+  if (typeof a !== 'number'){
+    throw new Error('"a" is not a number');
+  } else if (typeof b !== 'number'){
+    throw new Error('"b" is not a number');
+  }
+  console.log(a + b);
+}
+
+try {
+	add('string', 'string');
+} catch (err) {
+	console.log('catching error:');
+	console.log(err.message);
+}
+```
+
+### NPM
+
+Initialize an npm project in today's working directory.
+
+Install ESLint. It's a linter for JavaScript. Install the Atom ESLint package.
+[ESLint](http://eslint.org/)
+
+```
+npm init
+npm install eslint --save-dev
+eslint --init
+```
+
+Install tape for testing.
+[tape](https://github.com/substack/tape)
+
+```
+npm install tape --save-dev
+```
+
+### Testing
+
+```javascript
+var add = function (a, b) {
+  return a + b;
+}
+
+module.exports = add;
+```
+```javascript
+var test = require('tape');
+var add = require('./add.js');
+
+test('add 2 numbers', function (t) {
+  var actual = add(1, 2);
+  var expected = 3;
+
+  t.equal(actual, expected);
+  t.end();
+});
+```
+
+## Exercises
+- [Apples](apples/java.md)
+- [Sum](sum/java.md)
+- [Anagram](anagram/anagram.md)
+- [Count Letters](count-letters/count-letters.md)
+- [Fibonacci](fibonacci/fibonacci.md)
+- [Extension](extension/java.md)
+- [Sharpie](sharpie/java.md)
+- [Animal](animal/animal.md)
+- [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)
