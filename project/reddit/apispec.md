@@ -6,6 +6,7 @@
 ### Request
 Headers:
  - Accept: application/json
+ - (Optional) Username: username
 
 ### Response
 Status Code: 200
@@ -23,7 +24,8 @@ Body:
       "href": "http://9gag.com",
       "timestamp": 1494339525,
       "owner": null,
-      "score": 791
+      "score": 791,
+      (Optional) "vote": 1
     },
     {
       "id": 74,
@@ -31,7 +33,8 @@ Body:
       "href": "http://9gag.com",
       "timestamp": 1494138425,
       "owner": "kristof4",
-      "score": 567
+      "score": 567,
+      (Optional) "vote": -1
     }
   ]
 }

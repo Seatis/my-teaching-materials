@@ -79,3 +79,4 @@ public Response someEndpoint(@RequestHeader("header-name") String headerValue) {
   - connect it to a post and the user
   - calculate the score of a post by using this model
   - make sure that every user gets to vote only once on a post
+  - and when listing the posts you return the vote of the user for each post (marked as optional in the apispec)
