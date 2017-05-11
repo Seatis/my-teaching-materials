@@ -30,6 +30,12 @@ the other parts contain advanced information.
 | [The C Preprocessor](https://www.youtube.com/watch?v=pP4laGRP-c0) | 5:57 |
 | [Preprocessor macro list](http://www.w3schools.in/c-tutorial/preprocessors/) | - |
 
+#### Typecasting
+| Material | Duration |
+|:---------|-----:|
+| [Typecasting](https://www.youtube.com/watch?v=ohVRskLlHqM) | 5:35 |
+| [C Typecasting](http://www.w3schools.in/c-tutorial/type-casting/) | - |
+
 #### UART with interrupt
 Take a look at the USART section of the ATmega168PB datasheet, especially looking for
 interrupt related information.
@@ -145,7 +151,12 @@ TODO: - next day do a circular buffer struct
 - [`#if/#elif/#else`](workshop/CodeBlocks/Macros/3_if_elif_else.c)
 - [`#error`](workshop/CodeBlocks/Macros/4_error.c)
 
+### Typecasting
+- [typacasting basics](workshop/CodeBlocks/Typecasting/typecasting_basics.c)
+
+
 ### UART properly
+#### Problem with polling UART handling
 In a previous workshop we have written an UART handler application. In that we
 used the UART interface as a standard input and output. There is a problem with
 that method.
@@ -158,10 +169,13 @@ arrives on the UART than characters will be lost. This is a big issue, but there
 a solution for this.
 
 If somehow we could fire an interrupt if a character arrives on UART and we could
-put this character in a buffer, than
+put this character in a buffer, than the problem could be solved.
 
-- Write the TX ISR routine
-- Write the RX ISR routine
+#### UART receive with interrupt
+Let's implement a circular buffer for the UART receiver. We will also use
+receive interrupt to put received characters to the buffer.
+
+[UART with rx circular buffer](workshop/AtmelStudio/UART_with_rx_circular_buffer.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
@@ -175,3 +189,5 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Are there unnecessary empty blocks?
  - Can you spot unused variables?
  - Is the commit message meaningful?
+
+## Solutions
