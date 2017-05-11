@@ -6,7 +6,6 @@
 ### Request
 Headers:
  - Accept: application/json
- - (Optional) Username: username
 
 ### Response
 Status Code: 200
@@ -44,6 +43,7 @@ Body:
 Headers:
  - Accept: application/json
  - Content-Type: application/json
+ - (Optional) Username: username
 
 Body:
 ```json
@@ -77,6 +77,7 @@ Body:
 ### Request
 Headers:
  - Accept: application/json
+ - (Optional) Username: username
 
 ### Response
 Status Code: 200
@@ -101,6 +102,7 @@ Body:
 ### Request
 Headers:
  - Accept: application/json
+ - (Optional) Username: username
 
 ### Response
 Status Code: 200
@@ -132,6 +134,7 @@ Status Code: 200
 
 Headers:
  - Content-Type: application/json
+ - Username: username
 
 Body:
 ```json
@@ -151,11 +154,13 @@ Body:
 Headers:
  - Accept: application/json
  - Content-Type: application/json
+ - Username: username
 
 Body:
 ```json
 {
-  "title": "modified title"
+  "title": "modified title",
+  "href": "http://facebook.com"
 }
 ```
 
@@ -170,7 +175,7 @@ Body:
 {
   "id": 25,
   "title": "modified title",
-  "href": "http://9gag.com",
+  "href": "http://facebook.com",
   "timestamp": 1494339525,
   "owner": null,
   "score": 791
