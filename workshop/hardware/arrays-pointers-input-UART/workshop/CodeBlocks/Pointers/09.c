@@ -1,17 +1,30 @@
 #include <stdio.h>
 
-void concatenate(char *base, char *addition);
+void sortAscending(int *array, int length);
 //TODO:
-// Write this function so that it appends the variable addition to the other variable base.
-// Base should be changed, addition should remain the same.
+// Implement this function to sort the array in an ascending order.
+
+void sortDescending(int *array, int length);
+//TODO:
+// Implement this function to sort the array in a descending order.
+
+void printArray(int *array, int length) {
+    printf("{");
+    for(int i=0; i<length; i++) {
+        printf("%d",array[i]);
+        if(i<length-1) {
+            printf(", ");
+        }
+    }
+    printf("}\n");
+}
 
 int main(int argc, char** argv) {
-    char a[] = "kuty";
-    char b[] = "a es macska";
+    int example[13] = {34, 56, 26, 84, 29, 3875, 43, 96, 4759, 979, 92, 56, 1987};
+    sortAscending(example, 13);
+    printArray(example, 13);
+    sortDescending(example, 13);
+    printArray(example, 13);
 
-    concatenate(&a, &b);
-
-    cout << "What's the result: " << a << endl;
-    cout << "Did it remain unchanged? " << b << endl;
-
+    return 0;
 }

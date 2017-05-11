@@ -259,7 +259,6 @@ The following sections are needed:
 - [Pointers/08.c](workshop/CodeBlocks/Pointers/08.c)
 - [Pointers/09.c](workshop/CodeBlocks/Pointers/09.c)
 - [Pointers/10.c](workshop/CodeBlocks/Pointers/10.c)
-- [Pointers/11.c](workshop/CodeBlocks/Pointers/11.c)
 
 ### MCU UART
 #### Sending/Receiving one character
