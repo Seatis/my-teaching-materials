@@ -8,6 +8,10 @@ Read the [Reddit Application API documentation](../apispec.md) and you can also
 check out [the final version](assets/views/final.png). Store the API's URL in a
 global variable because you'll have to change it.
 
+## Assets
+
+ -  [arrow images](assets/arrows)
+
 ## Mandatory features
 
 ### List the posts
