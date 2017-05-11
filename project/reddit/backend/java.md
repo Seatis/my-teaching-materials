@@ -15,6 +15,7 @@ There will be RESTful frontend created by other classes. If everybody follows th
 - Think about how many endpoints will be needed
 - Think what type of model will you need, with what fields and methods
 - You don't need to worry about Headers and status codes, that will be set by Spring automatically if you do everything right
+- *Ignore the (Optional) parts at first, those are parts of the optional tasks at the end*
 
 ### The Post
 - Setup a new database called `reddit`

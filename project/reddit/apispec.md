@@ -46,14 +46,13 @@ Body:
 Headers:
  - Accept: application/json
  - Content-Type: application/json
- - (Optional) Username: username
+ - (Optional) Username: Kristof4
 
 Body:
 ```json
 {
   "title": "Crockford",
-  "href": "http://9gag.com",
-  (Optional) "owner": "Kristof4"
+  "href": "http://9gag.com"
 }
 ```
 
@@ -70,8 +69,9 @@ Body:
   "title": "Crockford",
   "href": "http://9gag.com",
   "timestamp": 1494138425,
+  "score": 0,
   (Optional) "owner": "kristof4",
-  "score": 0
+  (Optional) "vote": 0
 }
 ```
 
@@ -95,8 +95,9 @@ Body:
   "title": "Crockford",
   "href": "http://9gag.com",
   "timestamp": 1494138425,
+  "score": 1,
   (Optional) "owner": "kristof4",
-  "score": 1
+  (Optional) "vote": 1
 }
 ```
 
@@ -120,8 +121,9 @@ Body:
   "title": "Crockford",
   "href": "http://9gag.com",
   "timestamp": 1494138425,
+  "score": -1,
   (Optional) "owner": "kristof4",
-  "score": -1
+  (Optional) "vote": -1
 }
 ```
 # Optional Feature endpoints
@@ -146,8 +148,9 @@ Body:
   "title": "Dear JavaScript",
   "href": "http://9gag.com",
   "timestamp": 1494339525,
+  "score": 791,
   "owner": null,
-  "score": 791
+  "vote": 1
 }
 ```
 
@@ -180,7 +183,8 @@ Body:
   "title": "modified title",
   "href": "http://facebook.com",
   "timestamp": 1494339525,
+  "score": 791,
   "owner": null,
-  "score": 791
+  "vote": 1
 }
 ```
