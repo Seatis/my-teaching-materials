@@ -1,6 +1,9 @@
 # The Reddit Java REST backend
 We'll create a simple reddit clone application, where the users can create posts and upvote / downvote existing posts. Later on you can extend this functionality.
 
+This page focuses on the RESTful backend written in Java.
+There will be RESTful frontend created by other classes. If everybody follows the [API Specification](../apispec.md), then you'll be able to connect the frontends with the backends.
+
 ### Create a new Project
 - Set up a new project
 - You'll need these dependencies: web, devtools, data-jpa, mysql
@@ -50,7 +53,15 @@ spring.jpa.hibernate.ddl-auto=create-drop
 - Increment or decrement the score
 - Save it and respond with the proper object
 
-### Extending functionality
+## Find a Frontend partner
+- Make sure that every endpoint works according to the api spec with Postman
+- At this point go to the slack channel #reddit
+- Find someone who is developing the frontend part
+- Make sure that you're on the A66 Guest network
+- Find out your local ip address, and exchange it with your partner including the port on what your server is running
+- Test out each other's work
+
+## Extending functionality
 - Add users
   - User model will be needed
   - Post model will be updated
