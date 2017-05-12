@@ -21,26 +21,69 @@ lear how to use analog-to-digital converters*
 | [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm) | - |
 
 #### Data structures
-TODO
-https://www.youtube.com/watch?v=VMFKz7Klx7I
-https://www.tutorialspoint.com/cprogramming/c_structures.htm
-https://www.tutorialspoint.com/cprogramming/c_unions.htm
-https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm
-#### Custom types
-https://www.tutorialspoint.com/cprogramming/c_typedef.htm
-TODO
 
-#### Optional materials
-*If you have more time and would like to know more about the topic*
-TODOO
+| Material | Duration |
+|:---------|-----:|
+| [Structures](https://www.youtube.com/watch?v=VMFKz7Klx7I) | 10:28 |
+| [C - Structures](https://www.tutorialspoint.com/cprogramming/c_structures.htm) | - |
+| [C - Unions](https://www.tutorialspoint.com/cprogramming/c_unions.htm) | - |
+| [C - Enum](http://www.c4learn.com/c-programming/c-enum/) | - |
+| [C - Bit Fields](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm) | - |
+
+#### Custom types
+| Material | Duration |
+|:---------|-----:|
+| [C - typedef](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) | - |
 
 ## Material Review
-### Buffering
-TODO
-### Preprocessor macros
-TODO
-### UART with interrupt
-TODO
+### Creating .h and .c files
+- why do we do this
+- how this works
+- `#include`
+- include guards
+    - `#ifndef/#define/#endif`
+        - standard
+    - `#pragma once`
+        - non-standard, but usually works
+
+### Data structures
+- Structures
+    - why is it useful
+    - syntax
+        - using with structure tag
+        - using without structure tag (instant structure variable)
+        - mixing
+    - accessing members
+        - if we have the structure variables
+        - if we have a pointer to a structure variable
+    - when to use
+- Unions
+    - why is it useful
+    - syntax
+        - using with union tag
+        - using without union tag (instant union variable)
+        - mixing
+    - when to use
+- Enum
+    - why is it useful
+    - syntax
+        - using with union tag
+        - using without union tag (instant union variable)
+        - mixing
+    - when to use
+- Bit Fields
+    - why is it useful
+    - syntax
+    - when to use
+
+### Custom types
+- why is it useful
+    - typical usage with structures, unions, enums
+    - see the stdint.h
+- automatic number assignment
+- forced number assignment
+- when to use
+    - state machines
 
 ## Workshop
 TODO
