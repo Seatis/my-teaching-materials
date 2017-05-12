@@ -41,7 +41,7 @@ Material | Time |
   - `throw`
 - NPM package manager
   - `npm init`
-  - `npm install`
+  - `npm install`, `npm install -g <package>`, `npm install <package> --save`
   - dependencies, devDependencies
 - unit test
 - `module.exports`
@@ -148,12 +148,12 @@ test('add 2 numbers', function (t) {
 
 Test and handle the exceptions too.
 
-- [Apples](apples/java.md)
+- [Apples](apples/javascript.md)
 - [Sum](sum/java.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
-- [Extension](extension/java.md)
+- [Extension](extension/javascript.md)
 - [Sharpie](sharpie/java.md)
-- [Animal](animal/animal.md)
+- [Animal](animal/javascript.md)
 - [Cows and Bulls](cows-and-bulls/cows-and-bulls.md)
