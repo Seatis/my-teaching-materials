@@ -9,7 +9,7 @@ For testing HTTP endpoints Spring MVC provides a great support. It provides very
 |[Testing a REST Service](https://spring.io/guides/tutorials/bookmarks/)|"Testing a REST Service" part|
 |[Deeper concept of JSONPath](http://www.baeldung.com/guide-to-jayway-jsonpath)|reading|
 |[Spring Boot Controller Integration Test Example](https://www.youtube.com/watch?v=gNUm14kL7sI)|14:18|
-|[Spring MVC Controllers other example](https://www.petrikainulainen.net/programming/spring-framework/unit-testing-of-spring-mvc-controllers-rest-api/)
+|[Spring MVC Controllers other example](https://www.petrikainulainen.net/programming/spring-framework/unit-testing-of-spring-mvc-controllers-rest-api/)|reading|
 
 
 ### Optional
@@ -32,5 +32,49 @@ More aspects, techniques of testing Spring Boot REST Web Services
 - andExpect()
 - andDo()
 - JSONPath
+
+```java
+package com.greenfox.enpointtesting.controller;
+
+import ...
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = EndpointTestingApplication.class)
+@WebAppConfiguration
+@EnableWebMvc
+public class UserControllerTest {
+
+    private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
+            MediaType.APPLICATION_JSON.getSubtype(),
+            Charset.forName("utf8"));
+
+    private MockMvc mockMvc;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private WebApplicationContext webApplicationContext;
+
+    @Before
+    public void setup() throws Exception {
+        this.mockMvc = webAppContextSetup(webApplicationContext).build();
+    }   
+
+   @Test
+   public void testUnsuccessfulSignUp() throws Exception {
+       mockMvc.perform(post("/user/signup")
+               .contentType(MediaType.APPLICATION_JSON)
+               .content("{\"email\": \"name@example.com\", \"password\": \"12345\"}"))
+               .andExpect(status().isOk())
+               .andExpect(content().contentType(contentType))
+               .andExpect(jsonPath("$.result", is("fail")))
+               .andExpect(jsonPath("$.message", is("email address already exists")));
+   }
+
+```
 
 ## Workshops
