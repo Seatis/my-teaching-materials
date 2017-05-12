@@ -21,4 +21,3 @@
 ## Output skills
 - understanding the data structures in C language
 - understanding how to define custom data types in C language
-- basic knowledge of ATmega168PB's ADC peripheral

@@ -1,11 +1,9 @@
-# Data structures and custom types in C, ADC
-*Get familiar with data structures and custom data types in C language and
-lear how to use analog-to-digital converters*
+/# Data structures and custom types in C
+*Get familiar with data structures and custom data types in C language*
 
 ## Objectives
 - Know the different data structures in C language
 - Lear how to define custom data types in C language
-- Use the ADC peripheral in the ATmega168PB
 
 ## Materials & Resources
 ### Environment
@@ -45,6 +43,7 @@ lear how to use analog-to-digital converters*
         - standard
     - `#pragma once`
         - non-standard, but usually works
+    - **ALWAYS** use include guards!
 
 ### Data structures
 - Structures
@@ -64,13 +63,16 @@ lear how to use analog-to-digital converters*
         - using without union tag (instant union variable)
         - mixing
     - when to use
-- Enum
+- Enumerations
     - why is it useful
     - syntax
-        - using with union tag
-        - using without union tag (instant union variable)
+        - using with enum tag
+        - using without enum tag (instant enum variable)
         - mixing
+    - automatic number assignment
+    - forced number assignment
     - when to use
+        - state machines
 - Bit Fields
     - why is it useful
     - syntax
@@ -80,13 +82,14 @@ lear how to use analog-to-digital converters*
 - why is it useful
     - typical usage with structures, unions, enums
     - see the stdint.h
-- automatic number assignment
-- forced number assignment
-- when to use
-    - state machines
 
 ## Workshop
-TODO
+### Creating .h and .c files
+- [01](workshop/CodeBlocks/01)
+
+### Data structures
+-
+
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
