@@ -34,6 +34,7 @@ the other parts contain advanced information.
 | Material | Duration |
 |:---------|-----:|
 | [Typecasting](https://www.youtube.com/watch?v=ohVRskLlHqM) | 5:35 |
+| [C Typecasting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm) | - |
 | [C Typecasting](http://www.w3schools.in/c-tutorial/type-casting/) | - |
 
 #### UART with interrupt
