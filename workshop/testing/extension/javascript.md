@@ -1,6 +1,6 @@
 # Extension
 Check out the [javascript](./javascript) folder. There's a work file and a test file.
-- Run the tests, all 10 should be green (passing).
+- Run the tests, all 15 should be green (passing).
 - The implementations though are not quite good.
 - Create tests that'll fail, and will show how the implementations are wrong
 - After creating the tests, fix the implementations
