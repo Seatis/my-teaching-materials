@@ -3,7 +3,7 @@
 enum CarType {VOLVO, TOYOTA, LAND_ROVER, TESLA};
 
 struct Car {
-  CarType type;
+  enum CarType type;
   double km;
   double gas;
 };

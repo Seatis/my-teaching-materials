@@ -1,14 +1,14 @@
-/# Data structures and custom types in C
-*Get familiar with data structures and custom data types in C language*
+# Data structures, dynamically allocated memory and custom types in C
+*Get familiar with data structures, dynamically allocated memory and custom types in C language*
 
 ## Objectives
 - Know the different data structures in C language
-- Lear how to define custom data types in C language
+- Learn how to define custom data types in C language
+- Learn how to allocate memory during runtime
 
 ## Materials & Resources
 ### Environment
-  - Make sure that Code::Blocks is installed on your machine
-  - Make sure that Atmel Studio is installed on your machine
+- Make sure that Code::Blocks is installed on your machine
 
 ### Training
 #### Creating .h and .c files
@@ -32,6 +32,12 @@
 | Material | Duration |
 |:---------|-----:|
 | [C - typedef](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) | - |
+
+#### Dynamic memory allocation
+| Material | Duration |
+|:---------|-----:|
+| [C Dynamic Memory Allocation](https://www.programiz.com/c-programming/c-dynamic-memory-allocation) | - |
+| [Pointers and memory leaks in C](https://www.ibm.com/developerworks/aix/library/au-toughgame/) | - |
 
 ## Material Review
 ### Creating .h and .c files
@@ -78,6 +84,27 @@
     - syntax
     - when to use
 
+### Dynamic memory allocation
+- `malloc()`
+    - returns `void*`
+    - reserves given number of bytes (`sizeof()`!)
+- `calloc()`
+    - returns `void*`
+    - reserves given number of given sized blocks
+    - fills memory with zeros
+    - useful for arrays
+- `free()`
+    - **ALWAYS** free dynamically allocated memory pointers
+    - memory leak
+- `realloc()`
+    - previously allocated memory size change
+- why don't we allocate dynamically memory in embedded systems
+    - slow
+    - long running code
+        - memory leak is dangerous
+        - fragmentation
+    - not really required
+
 ### Custom types
 - why is it useful
     - typical usage with structures, unions, enums
@@ -85,11 +112,23 @@
 
 ## Workshop
 ### Creating .h and .c files
-- [01](workshop/CodeBlocks/01)
+- [1](workshop\CodeBlocks\MultipleFiles)
+
+### Dynamic memory allocation
+- [1](workshop\CodeBlocks\DynamicMemory\01.c)
+- [2](workshop\CodeBlocks\DynamicMemory\02.c)
+- [3](workshop\CodeBlocks\DynamicMemory\03.c)
+- [4](workshop\CodeBlocks\DynamicMemory\04.c)
 
 ### Data structures
--
-
+- [0](workshop\CodeBlocks\DataStructures\00.c)
+- [1](workshop\CodeBlocks\DataStructures\01.c)
+- [2](workshop\CodeBlocks\DataStructures\02.c)
+- [3](workshop\CodeBlocks\DataStructures\03.c)
+- [4](workshop\CodeBlocks\DataStructures\04.c)
+- [5](workshop\CodeBlocks\DataStructures\05.c)
+- [6](workshop\CodeBlocks\DataStructures\06.c)
+- [7](workshop\CodeBlocks\DataStructures\07.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)

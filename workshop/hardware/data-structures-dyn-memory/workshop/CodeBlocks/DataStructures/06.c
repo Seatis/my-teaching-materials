@@ -1,41 +1,44 @@
-#include <string>
-#include <iostream>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
+typedef enum {MATH, HISTORY, ENGLISH, SCIENCE}Subject;
 
-enum Subject {MATH, HISTORY, ENGLISH, SCIENCE};
+typedef struct {
+    Subject subject;
+    int value;
+}Grade;
 
-struct Grade {
-  Subject subject;
-  int value;
-}
+typedef struct{
+    char name[128];
+    int age;
+    Grade* grades;
+    int grade_count;
+}Student;
 
-struct Student {
-  string name;
-  int age;
-  Grade* grades;
-  int grade_count;
-};
-
+// TODO:
 // Create a function the constructs a Student (returns a pointer to a new student)
 // It should take it's name and it's age as parameter
 // It should allocate 5 grades
 // It should set the grade_count to 0
 
+// TODO:
 // Create a function that takes 3 parameters:
-// A reference to a Student
+// A pointer to a Student
 // A Subject
 // An int (1-5)
 // It should set the last grade's values with the given arguments
 
-// Create a function that takes a Student as a reference and returns the subject
+// TODO:
+// Create a function that takes a Student as a pointer and returns the subject
 // that the student has worst grade in
 
+// TODO:
 // Create a function that deconstructs a Student
 // It should take a pointer that points to the student
-// It should deallocate each Grade and the Student itself
+// It should free each Grade and the Student itself
 
 int main() {
 
-  return 0;
+    return 0;
 }
