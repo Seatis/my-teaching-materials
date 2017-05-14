@@ -24,7 +24,7 @@ More aspects, techniques of testing Spring Boot REST Web Services
 ## Material Review
 - Integration Test
 - Unit Test
-- Business Service
+- Business Layer
 - DispatcherServlet
 - @WebAppConfiguration
 - MockMvc
@@ -49,12 +49,6 @@ public class UserControllerTest {
             Charset.forName("utf8"));
 
     private MockMvc mockMvc;
-
-    @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    private UserService userService;
 
     @Autowired
     private WebApplicationContext webApplicationContext;
