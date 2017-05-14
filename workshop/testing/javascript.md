@@ -43,6 +43,7 @@ Material | Time |
 - NPM package manager
   - `npm init`
   - `npm install`, `npm install -g <package>`, `npm install <package> --save`
+  - package.json, node_modules,
   - dependencies, devDependencies
 - unit test
 - `module.exports`
@@ -150,7 +151,7 @@ test('add 2 numbers', function (t) {
 Test and handle the exceptions too.
 
 - [Apples](apples/javascript.md)
-- [Sum](sum/java.md)
+- [Sum](sum/javascript.md)
 - [Anagram](anagram/anagram.md)
 - [Count Letters](count-letters/count-letters.md)
 - [Fibonacci](fibonacci/fibonacci.md)
