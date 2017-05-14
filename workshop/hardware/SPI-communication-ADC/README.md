@@ -1,30 +1,27 @@
-# Buffers and preprocessor macros in C, UART with interrupt
-*Meet the different buffering techniques, learn how to use preprocessor macros and
-how to use the UART peripheral properly*
+# SPI communication, ADCs ans DACs
+*Learn a new serial communication protocol and get familiar with digital-analog conversions*
 
 ## Objectives
-- Know the most common buffering techniques
-- Practice preprocessor macros
-- Use the UART peripheral properly with interrupt
+- Learn how does the SPI communication protocol works
+- Learn how to use an external DAC
+- Know how to use the ADC peripheral of the ATmega168PB
 
 ## Materials & Resources
 ### Environment
-TODO: codeblocks needed???
-  - Make sure that Code::Blocks is installed on your machine
-  - Make sure that Atmel Studio is installed on your machine
+- Make sure that Atmel Studio is installed on your machine
 
 ### Training
-#### Buffering
+#### SPI communication
 TODO
 
 | Material | Duration |
 |:---------|-----:|
 | []() |  |
 
-#### Preprocessor macros
+#### DACs
 TODO
 
-#### UART with interrupt
+#### ADCs
 TODO
 
 #### Optional materials
@@ -32,11 +29,11 @@ TODO
 TODOO
 
 ## Material Review
-### Buffering
+### SPI communication
 TODO
-### Preprocessor macros
+### DACs
 TODO
-### UART with interrupt
+### ADCs
 TODO
 
 ## Workshop
