@@ -43,7 +43,7 @@ Material | Time |
 - NPM package manager
   - `npm init`
   - `npm install`, `npm install -g <package>`, `npm install <package> --save`
-  - package.json, node_modules, gitignore
+  - package.json, node_modules,
   - dependencies, devDependencies
 - unit test
 - `module.exports`
