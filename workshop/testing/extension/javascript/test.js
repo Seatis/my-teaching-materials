@@ -13,6 +13,11 @@ test('add 4 and 1 is 5', function (t) {
   t.end();
 });
 
+test('add string throw error', function (t) {
+  t.throws(extend.add('string', 1), '');
+  t.end();
+});
+
 test('max of three first', function (t) {
   t.equal(extend.maxOfThree(5, 4, 3), 5);
   t.end();
