@@ -161,7 +161,7 @@ In a previous workshop we have written an UART handler application. In that we
 used the UART interface as a standard input and output. There is a problem with
 that method.
 
-Look at [this](#) code. Run it on your ATmega168PB Xplained board, and send two string
+Look at [this](workshop/AtmelStudio/UART_redirected_problem_demo.c) code. Run it on your ATmega168PB Xplained board, and send two string
 after each other. You will notice that the second string is not complete.
 
 If the processor does something time-consuming while a strings
