@@ -145,7 +145,6 @@ The following sections are needed:
   - always keep error minimal
 
 ## Workshop
-TODO: - next day do a circular buffer struct
 ### Preprocessor macros
 - [`#define`](workshop/CodeBlocks/Macros/1_define.c)
 - [`#ifdef/#ifndef`](workshop/CodeBlocks/Macros/2_ifnded_ifdef.c)
@@ -153,7 +152,7 @@ TODO: - next day do a circular buffer struct
 - [`#error`](workshop/CodeBlocks/Macros/4_error.c)
 
 ### Typecasting
-- [typacasting basics](workshop/CodeBlocks/Typecasting/typecasting_basics.c)
+- [typacasting basics](workshop/CodeBlocks/Typecasting/1.c)
 
 
 ### UART properly
