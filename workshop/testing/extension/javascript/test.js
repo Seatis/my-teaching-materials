@@ -73,11 +73,6 @@ test('translate bemutatkozik', function (t) {
   t.end();
 });
 
-test('translate kirakatbábú', function (t) {
-  t.equal(extend.translate('kirakatbábú'), 'kiviravakavatbávábúvú');
-  t.end();
-});
-
 test('translate number returns error message', function (t) {
   t.equal(extend.translate(12345), 'Invalid value');
   t.end();
