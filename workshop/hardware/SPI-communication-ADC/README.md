@@ -175,7 +175,69 @@ of the datasheet of the ATmega168PB:
                 - format depends on ADLAR bit of ADMUX register
 
 ## Workshop
-TODO
+### SPI DAC
+#### Setting up the hardware
+Make the following connection between the IC and between the ATmega168PB Xplained board
+
+| MCP4821 pin | Pin function | Connect to |
+|-|-|-|
+|1|VDD|+5V|
+|2|!CS|SS (PB2)|
+|3|SCK|SCK (PB5)|
+|4|SDI|MOSI (PB3)|
+|5|!LDAC| GND (0V) |
+|6|!SHDN| x |
+|7|VSS| GND (0V) |
+|8|VOUT| output |
+
+Also:
+- put a 100nF capacitor between the VDD and VSS pins as close as possible to the DAC IC
+- put a 1uF capacitor between the VDD and VSS pins as close as possible to the DAC IC
+- put a 1uF capacitor between the VOUT and VSS pins as close as possible to the DAC IC
+
+[MCP4821](http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf)
+
+[ATmega168PB Xplained user manaul](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
+
+#### Writing driver software
+You are going to write your first external device handler software. It is useful
+to put all the hardware specific code in a separate .c and .h file, so it can be
+reused in another project just be copying those files.
+
+Steps:
+- create a new atmel studio project
+- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- overwrite the files if asked
+- add the files to the project
+- write the code where asked (marked with "TODO")
+    - always test the code after you wrote a few lines of code
+    - write the needed functions in the following order
+        - `MCP4821_Init()`
+        - `MCP4821_SendRawData(uint16_t data)`
+        - `MCP4821_SendData(MCP4821_Data_t* data)`
+- test the driver with the external DAC
+
+### ADC
+#### Setting up the hardware
+Make the following connections:
+- connect the AREF pin to +5V with a low resistance resistor (< 1kohm)
+- connect the potentiometer to the devboard
+    - the middle pin to PC0 (ADC channel 0)
+    - the pin on the left to GND (0V)
+    - the pin on the right to VCC (+5V)
+
+#### Writing driver software
+Like in the previous project we provide you template files.
+
+Steps:
+- create a new atmel studio project
+- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- overwrite the files if asked
+- add the files to the project
+- write the code where asked (marked with "TODO")
+    - always test the code after you wrote a few lines of code
+- test the driver with the potentiometer
+    - for example turn on the LED if the measured voltage is higher than a predefined value
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
