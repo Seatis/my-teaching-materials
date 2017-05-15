@@ -1,4 +1,4 @@
-# SPI communication, ADCs ans DACs
+# SPI communication, ADCs and DACs
 *Learn a new serial communication protocol and get familiar with digital<->analog conversions*
 
 ## Objectives
