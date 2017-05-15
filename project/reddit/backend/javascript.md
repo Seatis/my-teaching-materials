@@ -63,9 +63,9 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
  -  a little hint for headers
 
 ```javascript
-app.get('/', function(request, response) => {
+app.get('/', function(request, response) {
   console.log(request.headers);
-  res.send();
+  response.send();
 });
 ```
 
