@@ -10,7 +10,7 @@
  * int step: the step between the numbers
  *
  * Examples:
- * range(0, 10, 2) -> {0, 2, 3, 4, 5, 6, 8}
+ * range(0, 10, 2) -> {0, 2, 4, 6, 8}
  * range(1, -8, -3) -> {1, -2, -5}
  *
  * It should delete any dynamically allocated resource before the program exits.
