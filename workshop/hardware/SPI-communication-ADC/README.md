@@ -210,9 +210,9 @@ Also:
 - put a 100nF capacitor between the VDD and VSS pins as close as possible to the DAC IC
 - put a 1uF capacitor between the VOUT and VSS pins as close as possible to the DAC IC
 
-[MCP4821](http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf)
+[MCP4821 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf)
 
-[ATmega168PB Xplained user manaul](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
+[ATmega168PB Xplained user manual](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
 
 #### Writing driver software
 You are going to write your first external device handler software. It is useful
