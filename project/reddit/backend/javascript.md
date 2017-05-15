@@ -29,6 +29,7 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
 
  -  create the first endpoint for [listing the posts](../apispec.md#get-posts)
  -  connect your application to your database
+ -  serve some static JSON to test out your API endpoint
  -  make sure that it returns the same type of JSON object as specified
 
 ### Adding
@@ -47,10 +48,10 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
 
 ### Connect to your frontend
 
+ -  [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
  -  create a `public` folder in your project directory
  -  put your frontend files into that directory
  -  modify that your frontend use the api you've just written
- -  [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
 
 ### Extending functionality
 
