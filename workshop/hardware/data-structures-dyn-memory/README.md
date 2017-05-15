@@ -112,23 +112,23 @@
 
 ## Workshop
 ### Creating .h and .c files
-- [1](workshop\CodeBlocks\MultipleFiles)
+- [1](workshop/CodeBlocks/MultipleFiles)
 
 ### Dynamic memory allocation
-- [1](workshop\CodeBlocks\DynamicMemory\01.c)
-- [2](workshop\CodeBlocks\DynamicMemory\02.c)
-- [3](workshop\CodeBlocks\DynamicMemory\03.c)
-- [4](workshop\CodeBlocks\DynamicMemory\04.c)
+- [1](workshop/CodeBlocks/DynamicMemory/01.c)
+- [2](workshop/CodeBlocks/DynamicMemory/02.c)
+- [3](workshop/CodeBlocks/DynamicMemory/03.c)
+- [4](workshop/CodeBlocks/DynamicMemory/04.c)
 
 ### Data structures
-- [0](workshop\CodeBlocks\DataStructures\00.c)
-- [1](workshop\CodeBlocks\DataStructures\01.c)
-- [2](workshop\CodeBlocks\DataStructures\02.c)
-- [3](workshop\CodeBlocks\DataStructures\03.c)
-- [4](workshop\CodeBlocks\DataStructures\04.c)
-- [5](workshop\CodeBlocks\DataStructures\05.c)
-- [6](workshop\CodeBlocks\DataStructures\06.c)
-- [7](workshop\CodeBlocks\DataStructures\07.c)
+- [0](workshop/CodeBlocks/DataStructures/00.c)
+- [1](workshop/CodeBlocks/DataStructures/01.c)
+- [2](workshop/CodeBlocks/DataStructures/02.c)
+- [3](workshop/CodeBlocks/DataStructures/03.c)
+- [4](workshop/CodeBlocks/DataStructures/04.c)
+- [5](workshop/CodeBlocks/DataStructures/05.c)
+- [6](workshop/CodeBlocks/DataStructures/06.c)
+- [7](workshop/CodeBlocks/DataStructures/07.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
