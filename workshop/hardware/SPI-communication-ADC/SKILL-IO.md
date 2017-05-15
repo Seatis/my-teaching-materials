@@ -21,5 +21,7 @@
     - custom data types
 
 ## Output skills
-- basic knowledge of different serial communications
 - understanding how does SPI communication work
+- basic knowledge of ADCs and DACs
+- experience in ATmega168PB ADC usage
+- experience in external DAC usage
