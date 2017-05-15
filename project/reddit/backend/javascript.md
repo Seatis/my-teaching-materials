@@ -1,8 +1,8 @@
-# The Reddit Node.js REST backend
+# The Reddit Javascript REST backend
 
 We'll create a simple reddit clone application, where the users can create posts and upvote / downvote existing posts. Later on you can extend this functionality.
 
-This page focuses on the RESTful backend written in Node.js. If you follow the API Specification, then you'll be able to connect the backend with the frontend.
+This page focuses on the RESTful backend written in Javascript. If you follow the API Specification, then you'll be able to connect the backend with the frontend.
 
 ## Initialize a new npm project
 
