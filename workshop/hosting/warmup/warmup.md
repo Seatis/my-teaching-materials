@@ -9,7 +9,7 @@
  - `git clone https://github.com/greenfox-academy/heroku-project.git`
  - `cd heroku-project`
  - Open it with IntelliJ, check the code, try to run it in localhost.
- - Make it to a [counter app](https://github.com/greenfox-academy/teaching-materials/tree/hosting-gyuri/workshop/java-spring-intro#rest-greet-counter-app) 
+ - Make it to a [counter app](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/java-spring-intro#rest-greet-counter-app) 
  - `heroku create`
  - You should get `Creating app... done` and some weird project name
  - `git push heroku master`
