@@ -1,7 +1,7 @@
 # First Heroku Project
 ## Check the previously installed Heroku CLI
- - Open a cmd/terminal (Heroku is incompatible with git bash/Cygwin/MinGW)
- - `heroku login`
+ - Open a git bash
+ - `winpty heroku login`
  - Log in using the email address and password you used when creating your Heroku account
  - You should get `Logged in as example@mail.com`
 
