@@ -8,7 +8,7 @@ test('addNumbers: add 2 and 3 is 5', function (t) {
   t.end();
 });
 
-test('addNumbers: add 4 and 1 is 5', function (t) {
+test('addNumbers: add 4 and 2 is 6', function (t) {
   t.equal(extend.addNumbers(4, 2), 6);
   t.end();
 });
