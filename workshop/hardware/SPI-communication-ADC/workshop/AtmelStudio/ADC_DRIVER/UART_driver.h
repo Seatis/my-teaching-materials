@@ -3,7 +3,7 @@
 
 #define RX_CIRC_BUFF_LEN 25
 
-struct CircularBuffer {
+volatile struct CircularBuffer {
     char buffer[RX_CIRC_BUFF_LEN];
     char* head;
     char* tail;
