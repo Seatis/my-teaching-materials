@@ -27,8 +27,8 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
 
 ### Wiring in
 
- -  connect your application to your database
  -  create the first endpoint for [listing the posts](../apispec.md#get-posts)
+ -  connect your application to your database
  -  make sure that it returns the same type of JSON object as specified
 
 ### Adding
