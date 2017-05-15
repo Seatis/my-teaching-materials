@@ -386,3 +386,6 @@ Please follow the styleguide: [Our C styleguide](../../../styleguide/c.md)
 - Are there unnecessary empty blocks?
 - Can you spot unused variables?
 - Is the commit message meaningful?
+
+## Solutions
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/functions-interrupts-and-timers)

@@ -258,8 +258,6 @@ The following sections are needed:
 - [Pointers/07.c](workshop/CodeBlocks/Pointers/07.c)
 - [Pointers/08.c](workshop/CodeBlocks/Pointers/08.c)
 - [Pointers/09.c](workshop/CodeBlocks/Pointers/09.c)
-- [Pointers/10.c](workshop/CodeBlocks/Pointers/10.c)
-- [Pointers/11.c](workshop/CodeBlocks/Pointers/11.c)
 
 ### MCU UART
 #### Sending/Receiving one character
@@ -295,3 +293,6 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Are there unnecessary empty blocks?
  - Can you spot unused variables?
  - Is the commit message meaningful?
+
+## Solutions
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/arrays-pointers-input-UART)
