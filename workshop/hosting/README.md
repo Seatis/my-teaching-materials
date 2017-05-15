@@ -1,8 +1,12 @@
 # Hosting (CI & Heroku )
 
-Heroku
+Our Spring servers can run in localhost, but how can we share it with others?
 
 ## Materials & Resources
+### Environment
+ 
+ - Register to [Heroku](https://signup.heroku.com/dc)
+ - Download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#macos-installer)
 
 | Material | Time |
 |:-------- |-----:|
@@ -18,15 +22,17 @@ Heroku
 - Branch
 - Merge
 - Pull request
+- Hosting
 - CI
 - Heroku
 
 https://elements.heroku.com/addons/heroku-postgresql
 
 
+
 ## Workshop
 
 ### Exercises
 
- - [How to create a Heroku project](https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction)
+ - [How to create a Heroku project]()
  
