@@ -1,4 +1,5 @@
 # Create a Heroku database
+
 - Visit your [Heroku dashboard](https://dashboard.heroku.com/apps)
 - Log in (if you haven't done yet)
   Here you can see a list of your apps
@@ -14,3 +15,7 @@
 spring.datasource.username =dxacfgggnugjcm
 spring.datasource.password = 7fc3449af8815e6f6fe201829e3d0b3cff606ad01946850b4467029a8bacb669
 spring.jpa.hibernate.ddl-auto=create-drop`
+
+# Publish your work
+
+- Modify your Reddit and FoxClub projects to use postgres and deploy them to heroku
