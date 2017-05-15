@@ -8,4 +8,7 @@
  ## Initialize the project
  - `git clone https://github.com/greenfox-academy/heroku-project.git`
  - `cd heroku-project`
- -
+ - `heroku create`
+ - You should get `Creating app... done` and some weird project name
+ - `git push heroku master`
+ - `heroku open`
