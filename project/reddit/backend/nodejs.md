@@ -55,6 +55,7 @@ This page focuses on the RESTful backend written in Node.js. If you follow the A
     -  user model will be needed
     -  post model will be updated
     -  extend every request
+    -  save the user with the post
  -  a little hint for headers
 
 ```javascript
@@ -64,6 +65,5 @@ app.get('/', function(request, response) => {
 });
 ```
 
-    -  save the user with the post
  -  add [Delete](../apispec.md#delete-postsid) / [Update](../apispec.md#put-postsid) functionality enabled for the users own posts
     -  when updating update the timestamp as well
