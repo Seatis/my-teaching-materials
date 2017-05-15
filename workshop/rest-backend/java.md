@@ -22,6 +22,13 @@
   - PUT
   - DELETE
 - Json
+- Routing
+  - endpoint
+  - parts of the url
+  - query params
+- Request, Response
+  - headers
+  - body
 - Postman
 - Jackson
 
