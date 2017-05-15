@@ -12,3 +12,4 @@
  - You should get `Creating app... done` and some weird project name
  - `git push heroku master`
  - `heroku open`
+ - Open [Heroku Dashboard](https://dashboard.heroku.com/apps). You can manage your projects here.

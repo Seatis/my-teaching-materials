@@ -26,13 +26,10 @@ Our Spring servers can run in localhost, but how can we share it with others?
 - CI
 - Heroku
 
-https://elements.heroku.com/addons/heroku-postgresql
-
-
-
 ## Workshop
 
 ### Exercises
 
  - [How to create a Heroku project](warmup/warmup.md)
+ - [Create a Heroku database](db/db.md)
  
