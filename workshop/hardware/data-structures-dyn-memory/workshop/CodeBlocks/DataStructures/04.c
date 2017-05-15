@@ -17,7 +17,7 @@ struct Pirate {
 // richest that has wooden leg
 
 int main() {
-    struct Pirate priates[] = {
+    struct Pirate pirates[] = {
         {"Jack", 0, 18},
         {"Uwe", 1, 8},
         {"Hook", 1, 12},
