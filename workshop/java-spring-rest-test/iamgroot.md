@@ -1,4 +1,4 @@
-#I am groot!
+# I am groot!
 
 - First create a new spring project
 - Add dependencies: web, devtools
