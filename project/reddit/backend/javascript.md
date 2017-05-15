@@ -8,7 +8,8 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
 
  -  use `npm init`
  -  you'll need `express`, `body-parser` and `mysql` as dependencies
- -  do not forget to use `--save`
+ -  do not forget to use `--save` command line flag to automatically add the packages to your package.json
+ -  exclude node_modules in your .gitignore
 
 ## Check out the API Specification
 
