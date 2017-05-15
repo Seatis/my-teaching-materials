@@ -31,7 +31,7 @@
     - if the user gives too low voltage put out the minimal voltage
     - if the user gives too high voltage put out the maximal voltage
 - Output voltage minimum is 0V
-- Output voltage maximum is 4.095V
+- Output voltage maximum is 4.096V
 
 ### Example
 | UART input | Voltage on the output of the DAC |
@@ -61,7 +61,7 @@
     - if the user gives too low voltage put out the minimal voltage
     - if the user gives too high voltage put out the maximal voltage
 - Output peak-to-peak voltage minimum is 0V
-- Output peak-to-peak voltage maximum is 4.095V
+- Output peak-to-peak voltage maximum is 4.096V
 
 ### Example
 | UART input | Voltage on the output of the DAC |
@@ -73,7 +73,10 @@
 ### Hints
 - Use the DC function generator code as a starting point
 - Use the ADC as an oscilloscope to verify your solution
+- Use the `sin()` function from the `math.h` library
 - You will probably need a timer interrupt to put out the sine voltage
+    - We suggest to use CTC timer interrupt
+    - [Here](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/hardware/solutions/arrays-pointers-input-UART/AtmelStudio/CA_TC0_CTC_mode_example.c) you can find an example code
 
 ## Variable frequency sine wave function generator
 ### Specification
@@ -86,8 +89,9 @@
     - about 2V DC offset
     - if the user gives too low voltage put out the minimal voltage
     - if the user gives too high voltage put out the maximal voltage
+    - you can define minimal and maximal frequency values, but you should check what the user have entered
 - Output peak-to-peak voltage minimum is 0V
-- Output peak-to-peak voltage maximum is 4.095V
+- Output peak-to-peak voltage maximum is 4.096V
 
 ### Example
 | UART input | Voltage on the output of the DAC |
