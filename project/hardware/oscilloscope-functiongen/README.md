@@ -26,7 +26,7 @@
 ## Function generator
 ### Exercises
 - DC voltage mode
-- Fixed frequency sine wave mode
+- Fixed frequency sine wave modes
 - Variable frequency sine wave mode
 
 ### Specification
@@ -59,7 +59,7 @@
 
 #### Mode selection specification
 | UART control string | Goes into mode | param1 | param2 | Example |
-|:|:|
+|:|:|:|:|:|
 | -DC,**param1**\r\n | DC mode | DC voltage level [V] (float) | - | -DC,1.25\r\n |
 | -SINEFIX,**param1**\r\n | Fixed frequency SINE mode | Peak-to-peak voltage level [V] (float) | - | -SINEFIX,0.5\r\n |
 | -SINEVAR,**param1**,**param2**\r\n | Variable frequency SINE mode | Peak-to-peak voltage level [V] (float) | Frequency [Hz] (integer) | -SINEVAR,1.12,11\r\n |
