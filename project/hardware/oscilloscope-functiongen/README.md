@@ -21,7 +21,7 @@
     - Set up an Oscilloscope object with the serial port as the input
 
 ### Hints
-- Use [this](#) workshop ADC material as a starting point
+- Use [this workshop's](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC) ADC code as a starting point
 
 ## Function generator
 ### Exercises
@@ -67,7 +67,7 @@
 ### Hints
 - Use the basic oscilloscope code as a starting point
 - Add the MCP4821 driver files to the project
-    - It was written on a [previous workshop](#)
+    - It was written on a [previous workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC)
 - Use the ADC as an oscilloscope to verify your solution
 - For sine wave generation
     - Use the math.h `sin()` functions
