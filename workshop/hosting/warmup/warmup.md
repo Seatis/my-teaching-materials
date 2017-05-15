@@ -12,4 +12,7 @@
  - You should get `Creating app... done` and some weird project name
  - `git push heroku master`
  - `heroku open`
- - Open [Heroku Dashboard](https://dashboard.heroku.com/apps). You can manage your projects here.
+ - You should get a freshly opened new web browser tab, containing your online server's frontend
+ - `heroku logs` show you the application logs
+ - Also try `heroku logs --tail`. It is continuously waiting for new lines, and display them as they appear 
+ - Open [Heroku Dashboard](https://dashboard.heroku.com/apps). You can manage your projects here. You can also check the logs, application status here.
