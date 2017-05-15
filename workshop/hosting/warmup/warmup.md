@@ -6,7 +6,8 @@
  - You should get `Logged in as example@mail.com`
 
  ## Initialize the project
- - `git clone https://github.com/greenfox-academy/heroku-project.git`
+ - fork this repository: `https://github.com/greenfox-academy/heroku-project`
+ - clone it
  - `cd heroku-project`
  - Open it with IntelliJ, check the code, try to run it in localhost.
  - Make it to a [counter app](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/java-spring-intro#rest-greet-counter-app) 
