@@ -20,7 +20,7 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
 
 ## The Post
 
- -  setup a new database called `reddit`
+ -  setup a new local MySQL database called `reddit`
  -  think about and create the tables you'll need
 
 ## Wiring in
