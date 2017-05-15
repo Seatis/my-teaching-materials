@@ -1,5 +1,5 @@
 # SPI communication, ADCs ans DACs
-*Learn a new serial communication protocol and get familiar with digital-analog conversions*
+*Learn a new serial communication protocol and get familiar with digital<->analog conversions*
 
 ## Objectives
 - Learn how does the SPI communication protocol works
@@ -9,6 +9,16 @@
 ## Materials & Resources
 ### Environment
 - Make sure that Atmel Studio is installed on your machine
+- Install Data Visualizer plugin to Atmel Studio
+    - Open Atmel Studio
+    - Tools -> Extensions and updates
+    - Click on "Available downloads"
+    - Type "data visualizer" in the search field on the top-right of the window
+    - Click on "Data Visualizer Extension" (not the "Data Visualizer")
+    - Click on "Download"
+    - After the installation finishes click on the "Restart Now" button
+    - After Atmel Studio restarts click on "Tools" menu
+    - You can now see a "Data Visualizer" entry and if you click on it a new window will open
 
 ### Training
 
@@ -63,6 +73,8 @@ of the datasheet of the ATmega168PB:
 | Material | Duration |
 |:---------|-----:|
 | [GreatScott! - ADC (Analog to Digital Converter)](https://www.youtube.com/watch?v=EnfjYwe2A0w) | 6:47 |
+| [Potentiometers - How They Work, Disassembly and Exploration](https://www.youtube.com/watch?v=rUkrpqEmXb8&t=356s) | 9:21 |
+
 
 ## Material Review
 ### SPI communication
@@ -110,6 +122,7 @@ of the datasheet of the ATmega168PB:
 - Voltage divider
     - schematic
     - thumb rule
+    - potentiometer
 - DAC
     - how does it works
     - parameters
@@ -173,6 +186,9 @@ of the datasheet of the ATmega168PB:
             - ADCL and ADCH
                 - result data registers
                 - format depends on ADLAR bit of ADMUX register
+- Potentiometers
+    - how to use them
+    - variable voltage divider
 
 ## Workshop
 ### SPI DAC
@@ -181,7 +197,7 @@ Make the following connection between the IC and between the ATmega168PB Xplaine
 
 | MCP4821 pin | Pin function | Connect to |
 |-|-|-|
-|1|VDD|+5V|
+|1|VDD|VCC|
 |2|!CS|SS (PB2)|
 |3|SCK|SCK (PB5)|
 |4|SDI|MOSI (PB3)|
@@ -206,7 +222,7 @@ reused in another project just be copying those files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/ADC_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
@@ -220,11 +236,10 @@ Steps:
 ### ADC
 #### Setting up the hardware
 Make the following connections:
-- connect the AREF pin to +5V with a low resistance resistor (< 1kohm)
 - connect the potentiometer to the devboard
     - the middle pin to PC0 (ADC channel 0)
     - the pin on the left to GND (0V)
-    - the pin on the right to VCC (+5V)
+    - the pin on the right to VCC
 
 #### Writing driver software
 Like in the previous project we provide you template files.
@@ -236,8 +251,12 @@ Steps:
 - add the files to the project
 - write the code where asked (marked with "TODO")
     - always test the code after you wrote a few lines of code
-- test the driver with the potentiometer
-    - for example turn on the LED if the measured voltage is higher than a predefined value
+    - write the needed functions in the following order
+        - `ADC_Init()`
+        - `ADC_Read()`
+- test the driver with the potentiometer, for example
+    - turn on the LED if the measured voltage is higher than a predefined value or
+    - send the data to your PC via serial port
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
