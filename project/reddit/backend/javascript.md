@@ -19,6 +19,11 @@ This page focuses on the RESTful backend written in Javascript. If you follow th
  -  think about how many endpoints will be needed
  -  *ignore the (Optional) parts at first, those are parts of the optional tasks at the end*
 
+### Start your server
+
+ -  create a simple get endpoint for `/hello`
+ -  it should return the string `hello world`
+ -  start your server and check if it works
 
 ### The Post
 
