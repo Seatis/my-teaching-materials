@@ -40,7 +40,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.greenfoxacademy.RestFrontendApplication;
-import com.greenfoxacademy.models.Until;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
