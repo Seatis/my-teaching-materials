@@ -2,10 +2,10 @@
 
 ## Summary
 - [Basic oscilloscope](#basic-oscilloscope)
-- [Function generator](#function-generator)
-    - DC voltage mode
-    - Fixed frequency sine wave mode
-    - Variable frequency sine wave mode
+- [DC Function generator](#DC Function generator)
+- [Fixed frequency sine wave function generator](#fixed-frequency-sine-wave-function-generator)
+- [Variable frequency sine wave function generator](#variable-frequency-sine-wave-function-generator)
+- [Hardcore mode function generator](#hardcore-mode-function-generator)
 
 ## Tools
 - Atmel Studio with Data Visualizer Extension
@@ -23,55 +23,100 @@
 ### Hints
 - Use [this workshop's](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC) ADC code as a starting point
 
-## Function generator
-### Exercises
-- DC voltage mode
-- Fixed frequency sine wave modes
-- Variable frequency sine wave mode
-
+## DC Function generator
 ### Specification
-- The function generator should be controlled via UART
-- DC voltage mode
-    - Description
-        - Gets a DC voltage level on UART
-        - The given voltage level should appear on the output of the DAC
-    - Parameters
-        - Voltage level (float)
-- sine generator (fixed frequency) mode
-    - Description
-        - Gets a peak-to-peak voltage level on UART
-        - A fixed 1Hz sine wave should appear on the output of the DAC
-            - With a DC level of Vref/2
-            - With a peak-to-peak voltage level as given with UART
-    - Parameters
-        - peak-to-peak voltage (float)
-- sine generator (variable frequency) mode
-    - Description
-        - Gets a peak-to-peak voltage level on UART
-        - Gets a frequency value on UART
-        - A sine wave should appean on the output of the DAC
-            - With a DC level of Vref/s
-            - With the given peak-to-peak voltage
-            - With the given frequency
-    - Parameters
-        - peak-to-peak (float)
-        - frequency (Hz)
+- The DC function generator should be controlled via UART
+- It receives a floating point number in Volts
+- This received voltage then appears on the output of the DAC
+    - if the user gives too low voltage put out the minimal voltage
+    - if the user gives too high voltage put out the maximal voltage
+- Output voltage minimum is 0V
+- Output voltage maximum is 4.095V
 
-#### Mode selection specification
-| UART control string | Goes into mode | param1 | param2 | Example |
-|--|--|--|--|--|
-| -DC,**param1**\r\n | DC mode | DC voltage level [V] (float) | - | -DC,1.25\r\n |
-| -SINEFIX,**param1**\r\n | Fixed frequency SINE mode | Peak-to-peak voltage level [V] (float) | - | -SINEFIX,0.5\r\n |
-| -SINEVAR,**param1**,**param2**\r\n | Variable frequency SINE mode | Peak-to-peak voltage level [V] (float) | Frequency [Hz] (integer) | -SINEVAR,1.12,11\r\n |
+### Example
+| UART input | Voltage on the output of the DAC |
+|------------|----------------------------------|
+|1.42|1.42V|
+|0|0V|
+|52|4.096V|
 
 ### Hints
 - Use the basic oscilloscope code as a starting point
 - Add the MCP4821 driver files to the project
     - It was written on a [previous workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC)
 - Use the ADC as an oscilloscope to verify your solution
-- For sine wave generation
-    - Use the math.h `sin()` functions
-- The sine generators may only work properly using interrupts
-    - You have to send the data to the DAC at fixed time intervals
-    - You may want to use timer interrupts to trigger the SPI data sending
-    - In the variable frequency mode you have to modify the fixed time intervals
+- You will probably need a function to check if the user sent control message via UART
+    - The circular buffer's read and write pointers are pointing to the same address if the buffer is empty
+- Use the `gets()` function to read the user string
+- Use the `atof()` function to convert a string to a float number
+
+## Fixed frequency sine wave function generator
+### Specification
+- The fixed frequency sine wave function generator should be controlled via UART
+- It receives a floating point number in Volts
+- A sine wave should appear on the output of the DAC with:
+    - predefined custom frequency
+    - a peak-to-peak voltage as given in the received voltage level
+    - about 2V DC offset
+    - if the user gives too low voltage put out the minimal voltage
+    - if the user gives too high voltage put out the maximal voltage
+- Output peak-to-peak voltage minimum is 0V
+- Output peak-to-peak voltage maximum is 4.095V
+
+### Example
+| UART input | Voltage on the output of the DAC |
+|------------|----------------------------------|
+|1|sine wave between about 1.5V and 2.5V|
+|0|0V|
+|52|sine wave between about 0V and 4V|
+
+### Hints
+- Use the DC function generator code as a starting point
+- Use the ADC as an oscilloscope to verify your solution
+- You will probably need a timer interrupt to put out the sine voltage
+
+## Variable frequency sine wave function generator
+### Specification
+- The variable frequency sine wave function generator should be controlled via UART
+- It receives a floating point number in Volts
+- It also receives an integer in Hz
+- A sine wave should appear on the output of the DAC with:
+    - the given frequency
+    - a peak-to-peak voltage as given in the received voltage level
+    - about 2V DC offset
+    - if the user gives too low voltage put out the minimal voltage
+    - if the user gives too high voltage put out the maximal voltage
+- Output peak-to-peak voltage minimum is 0V
+- Output peak-to-peak voltage maximum is 4.095V
+
+### Example
+| UART input | Voltage on the output of the DAC |
+|------------|----------------------------------|
+|1,2|2Hz sine wave between about 1.5V and 2.5V|
+|3.42,10|10Hz sine wave between about 0.29V and 3.71V
+|52,12|12Hz sine wave between about 0V and 4V|
+
+### Hints
+- Use the fixed frequency function generator code as a starting point
+- Use the ADC as an oscilloscope to verify your solution
+- Take a look at the `strtok()` function
+- You will probably need a timer interrupt to put out the sine voltage
+
+## **HARDCORE MODE** function generator
+### Specification
+- The function generator can be controlled via UART
+- It can put out
+    - DC voltage
+    - fixed frequency sine wave
+    - variable frequency sine wave
+- The modes can be adjusted by UART commands
+
+### Command list
+| UART input | Mode |
+|------------|----------------------------------|
+|-DC,1|DC voltage, 1V output|
+|-SF,3.42|fixed freq. sine wave mode, custom frequency sine wave between about 0.29V and 3.71V |
+|-SV,52,12|variable freq. sine wave mode, 12Hz sine wave between about 0V and 4V|
+
+### Hints
+- Use the previous exercises as staring point
