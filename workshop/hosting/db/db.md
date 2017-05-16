@@ -11,7 +11,9 @@
 - From now you can check the username, password and url for your database under `Database Credentials`
 - Set the correct data in your properies file to connect: username, password, etc
   like:
-`spring.datasource.url=jdbc:postgresql://ec2-54-247-119-245.eu-west-1.compute.amazonaws.com:5432/da0ifqee69o5v6?sslmode=require
-spring.datasource.username =dxacfgggnugjcm
-spring.datasource.password = 7fc3449af8815e6f6fe201829e3d0b3cff606ad01946850b4467029a8bacb669
-spring.jpa.hibernate.ddl-auto=create-drop`
+```
+spring.datasource.url=jdbc:postgresql://ec2-54-247-119-245.eu-west-1.compute.amazonaws.com:5432/da0ifqee69o5v6?sslmode=require
+spring.datasource.username=dxacfgggnugjcm
+spring.datasource.password=7fc3449af8815e6f6fe201829e3d0b3cff606ad01946850b4467029a8bacb669
+spring.jpa.hibernate.ddl-auto=create-drop
+```
