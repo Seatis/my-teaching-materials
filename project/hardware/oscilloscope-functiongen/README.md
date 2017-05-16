@@ -2,7 +2,7 @@
 
 ## Summary
 - [Basic oscilloscope](#basic-oscilloscope)
-- [DC Function generator](#DC Function generator)
+- [DC Function generator](#dc-function-generator)
 - [Fixed frequency sine wave function generator](#fixed-frequency-sine-wave-function-generator)
 - [Variable frequency sine wave function generator](#variable-frequency-sine-wave-function-generator)
 - [Hardcore mode function generator](#hardcore-mode-function-generator)
