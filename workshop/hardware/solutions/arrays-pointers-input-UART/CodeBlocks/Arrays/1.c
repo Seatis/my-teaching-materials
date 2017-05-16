@@ -3,7 +3,7 @@
 int main() {
     char my_name_array[] = "My Name";
 
-	//TODO:
+    //TODO:
     // Print out the array character-by-character
     for(int i = 0; i < 7; i++) {
         printf("%c", my_name_array[i]);

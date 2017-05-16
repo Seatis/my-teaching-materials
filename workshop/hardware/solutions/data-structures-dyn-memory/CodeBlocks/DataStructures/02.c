@@ -9,8 +9,7 @@ struct RectangularCuboid {
 // TODO:
 // Write a function called "GetSurface" that takes a RectangularCuboid
 // and returns it's surface
-int GetSurface(struct RectangularCuboid rect_cub)
-{
+int GetSurface(struct RectangularCuboid rect_cub) {
     return (2*rect_cub.a*rect_cub.b + 2*rect_cub.a*rect_cub.c + 2*rect_cub.c*rect_cub.b);
 }
 
@@ -18,8 +17,7 @@ int GetSurface(struct RectangularCuboid rect_cub)
 // TODO:
 // Write a function called "GetVolume" that takes a RectangularCuboid
 // and returns it's volume
-int GetVolume (struct RectangularCuboid rect_cub)
-{
+int GetVolume (struct RectangularCuboid rect_cub) {
     return (rect_cub.a*rect_cub.b*rect_cub.c);
 }
 

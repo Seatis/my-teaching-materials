@@ -7,7 +7,7 @@ void safeUnion(int *a, int l_a, int *b, int l_b, int *result, int l_res) {
     for(i = 0; i < l_a; i++) {
         result[i] = a[i];
     }
-    for(int j = 0; j < l_b; j++){
+    for(int j = 0; j < l_b; j++) {
         result[j+i] = b[j];
     }
     return;

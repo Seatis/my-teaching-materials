@@ -4,19 +4,18 @@
 // Define the TOTORO macro which holds the number of students in our class
 #define TOTORO 19
 
-int main()
-{
+int main() {
     // Use the #ifdef and #ifndef macros!
 
     // If the TOTORO macro is not defined print out 32
-    #ifndef TOTORO
+#ifndef TOTORO
     printf("32");
-    #endif// TOTORO
+#endif// TOTORO
 
     // If the TOTORO macro is defined print out it's value
-    #ifdef TOTORO
+#ifdef TOTORO
     printf("%d", TOTORO);
-    #endif
+#endif
 
     return 0;
 }

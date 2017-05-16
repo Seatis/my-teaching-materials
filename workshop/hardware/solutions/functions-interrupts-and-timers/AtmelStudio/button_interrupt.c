@@ -1,8 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-ISR(PCINT0_vect)
-{
+ISR(PCINT0_vect) {
     // Toggle the LED
     PINB |= 1 << PINB5;
 }
@@ -12,8 +11,7 @@ ISR(PCINT0_vect)
 // and everything that is needed at the start of your program. It is like the "on start" block in a micro:bit,
 // or like the "setup" in arduino.
 
-void init()
-{
+void init() {
     // The button is connected to PB7 pin, which is the PCINT7 pin (PinChangeINTerrupt7 pin)
     PORTB &= ~(1 << PORTB7);
     // If we anable this interupt on every pin state changes the interrupt handler will be fired.
@@ -33,13 +31,11 @@ void init()
 
 }
 
-int main(void)
-{
+int main(void) {
     // Never forget to cal the init function if you have it :)
     init();
 
-    while (1)
-    {
+    while (1) {
 
     }
 }

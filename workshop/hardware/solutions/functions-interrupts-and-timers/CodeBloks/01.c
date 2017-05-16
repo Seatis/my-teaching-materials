@@ -12,16 +12,15 @@ Name this function as "TotoroLogoPrinter" and call it from the main function!*/
 
 void TotoroLogoPrinter(void);
 
-int main(){
-	TotoroLogoPrinter();
+int main() {
+    TotoroLogoPrinter();
     return 0;
 }
 
-void TotoroLogoPrinter()
-{
-	printf("------------\n");
-	printf("-- TOTORO --\n");
-	printf("------------\n");
-	printf("- GREENFOX -\n");
-	printf("------------\n");
+void TotoroLogoPrinter() {
+    printf("------------\n");
+    printf("-- TOTORO --\n");
+    printf("------------\n");
+    printf("- GREENFOX -\n");
+    printf("------------\n");
 }

@@ -12,22 +12,17 @@ const uint8_t cntr_max = 10;
 // If the counter not reached the maximum then increment it.
 // Else toggle the LED and set the counter to zero.
 // This time you don't have to do anything with the flags, the MCU does it automatically.
-ISR(TIMER0_OVF_vect)
-{
+ISR(TIMER0_OVF_vect) {
     // Toggle the LED
-    if (cntr < cntr_max)
-    {
+    if (cntr < cntr_max) {
         cntr++;
-    }
-    else
-    {
+    } else {
         cntr = 0;
         PINB |= 1 << PINB5;
     }
 }
 
-void init()
-{
+void init() {
     // Set the prescaler to 1024 division. See at the TC0 control register in the datasheet!
     // With this you also set the clock source to CLK_io and you will also turn on the timer!
     TCCR0B |= 1 << CS02;
@@ -44,13 +39,11 @@ void init()
     sei();
 }
 
-int main(void)
-{
+int main(void) {
     // Don't forget to call the init function!
     init();
 
-    while (1)
-    {
+    while (1) {
         //Nothing to do here, everithing is done in interrupt :)
     }
 }
