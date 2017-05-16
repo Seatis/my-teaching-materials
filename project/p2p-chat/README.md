@@ -59,7 +59,7 @@ Please use your github username es yout uniq id.
 
 Create a new page at the `/register` path.
 
-![register](register.png)
+![register](assets/register.png)
 
 If the register button is clicked it should create a new user in the database and redirect to the main page.
 
@@ -72,7 +72,7 @@ If the user is present in the database the register page should redirect to the 
 
 Create a form under the title that consists a text input and an update button.
 
-![username](username.png)
+![username](assets/username.png)
 
 The text input should store the username of the user, if the update button is cliecked, then it should update the username.
 After the update the application should redirect to the main page.
@@ -92,7 +92,7 @@ All the other messages should appear under this message.
 
 Under the messages there should be a form that can add a new message.
 
-![add message](add-message.png)
+![add message](assets/add-message.png)
 
 If the send button is clicked it should store a new message in the database. And it should show up in the list.
 Each message should have a stored:
