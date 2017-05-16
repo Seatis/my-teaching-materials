@@ -73,25 +73,17 @@ void UART_SendCharacter(char character) {
 char UART_GetCharacter() {
     //TODO:
     // Wait for data in the circular buffer, this can be detected if the write and read pointers are pointing to the same memory block
-    while(rx_circ_buff_read_ptr == rx_circ_buff_write_ptr);
 
     //TODO:
     // Save the data to a temporary variable
-    char to_return = *rx_circ_buff_read_ptr;
 
     //TODO:
     // Increment the read ptr
     // Be aware that the read ptr might point to the end of the buffer.
     // In this case you have to set it back to the start of the buffer
-    if(rx_circ_buff_read_ptr == rx_circ_buff_tail) {
-        rx_circ_buff_read_ptr = rx_circ_buff_head;
-    } else {
-        rx_circ_buff_read_ptr++;
-    }
 
     //TODO:
     // Return the read character
-    return to_return;
 }
 
 int main(void) {
