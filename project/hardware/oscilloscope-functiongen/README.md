@@ -15,10 +15,10 @@
 - Set up the UART interface of the ATmega168PB
 - Set up the ADC peripheral of the ATmega168PB
 - Send data to the PC via serial port
-    - Send the data as a number (not as a string!)
+    - Send the data as a number (not as a string!) in tha main while loop
     - Open the Data Visualizer Extension
-    - Set up the serial port
-    - Set up an Oscilloscope object with the serial port as the input
+        - Set up the serial port
+        - Set up an Oscilloscope object with the serial port as the input
 
 ### Hints
 - Use [this workshop's](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC) ADC code as a starting point
@@ -36,9 +36,9 @@
 ### Example
 | UART input | Voltage on the output of the DAC |
 |------------|----------------------------------|
-|1.42|1.42V|
-|0|0V|
-|52|4.096V|
+|1.42\r\n|1.42V|
+|0\r\n|0V|
+|52\r\n|4.096V|
 
 ### Hints
 - Use the basic oscilloscope code as a starting point
@@ -66,9 +66,9 @@
 ### Example
 | UART input | Voltage on the output of the DAC |
 |------------|----------------------------------|
-|1|sine wave between about 1.5V and 2.5V|
-|0|0V|
-|52|sine wave between about 0V and 4V|
+|1\r\n|sine wave between about 1.5V and 2.5V|
+|0\r\n|0V|
+|52\r\n|sine wave between about 0V and 4V|
 
 ### Hints
 - Use the DC function generator code as a starting point
@@ -96,9 +96,9 @@
 ### Example
 | UART input | Voltage on the output of the DAC |
 |------------|----------------------------------|
-|1,2|2Hz sine wave between about 1.5V and 2.5V|
-|3.42,10|10Hz sine wave between about 0.29V and 3.71V
-|52,12|12Hz sine wave between about 0V and 4V|
+|1,2\r\n|2Hz sine wave between about 1.5V and 2.5V|
+|3.42,10\r\n|10Hz sine wave between about 0.29V and 3.71V
+|52,12\r\n|12Hz sine wave between about 0V and 4V|
 
 ### Hints
 - Use the fixed frequency function generator code as a starting point
@@ -118,9 +118,9 @@
 ### Command list
 | UART input | Mode |
 |------------|----------------------------------|
-|-DC,1|DC voltage, 1V output|
-|-SF,3.42|fixed freq. sine wave mode, custom frequency sine wave between about 0.29V and 3.71V |
-|-SV,52,12|variable freq. sine wave mode, 12Hz sine wave between about 0V and 4V|
+|-DC,1\r\n|DC voltage, 1V output|
+|-SF,3.42\r\n|fixed freq. sine wave mode, custom frequency sine wave between about 0.29V and 3.71V |
+|-SV,52,12\r\n|variable freq. sine wave mode, 12Hz sine wave between about 0V and 4V|
 
 ### Hints
 - Use the previous exercises as staring point
