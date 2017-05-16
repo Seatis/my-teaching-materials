@@ -61,11 +61,9 @@ void UART_SendCharacter(char character) {
     // Write this function, which can send a character through UART will polling method
     // See page 247 of the datasheet for hints, be aware that the code in the datasheet has a problem :)
 
-    //TODO:
     // Wait for empty USART buffer register
     while ( !( UCSR0A & (1<<UDRE0)) );
 
-    //TODO:
     // Put data to USART buffer register
     UDR0 = character;
 }
