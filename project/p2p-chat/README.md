@@ -46,9 +46,60 @@ If the environment is set to `ERROR` it should only print the error messages, an
 
 Try your environment variables on heroku as well: [This article](https://devcenter.heroku.com/articles/config-vars)
 
+### Client Id, Peer address
+
+Each application should store a uniq id (string), that is different from each of the other.
+Each application should store an IP address of an other application that it will connect to.
+Both of the values should be loaded from environment variables like:
+`CHAT_APP_UNIQ_ID`, `CHAT_APP_PEER_ADDRESSS`
+
+Please use your github username es yout uniq id.
+
+### Register
+
+Create a new page at the `/register` path.
+
+![register](register.png)
+
+If the register button is clicked it should create a new user in the database and redirect to the main page.
+
+If the username is not specified it should show an error on the top of the page: "The username field is empty".
+
+If the user is not present in the database then the main page should redirect to the register page.
+If the user is present in the database the register page should redirect to the main page.
+
+### Username
+
+Create a form under the title that consists a text input and an update button.
+
+![username](username.png)
+
+The text input should store the username of the user, if the update button is cliecked, then it should update the username.
+After the update the application should redirect to the main page.
+
+If the username is not specified it should show an error on the top of the page: "The username field is empty".
+
 ### Save new message
 
-### Client id and peer address
+Add a list of messages to your main page, each message should have a user and a text field.
+
+The page should have a default message in its list: 
+
+ - Username: App
+ - Text: Hi there! Submit your message using the send button!
+
+All the other messages should appear under this message.
+
+Under the messages there should be a form that can add a new message.
+
+![add message](add-message.png)
+
+If the send button is clicked it should store a new message in the database. And it should show up in the list.
+Each message should have a stored:
+
+ - Username
+ - Text
+ - Random generated id (between 1000000 - 9999999)
 
 ### Receive new message
 
@@ -61,3 +112,5 @@ Try your environment variables on heroku as well: [This article](https://devcent
 ### Better looking frontend
 
 ### Auto refresh
+
+### List of users
