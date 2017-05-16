@@ -191,3 +191,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/buffers-macros-UART-interrupt)
