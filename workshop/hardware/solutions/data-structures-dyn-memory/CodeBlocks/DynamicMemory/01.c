@@ -10,12 +10,14 @@ int main() {
 
     pointer = (int*) calloc(5, sizeof(int));
     for (int i=0; i<5; i++) {
-        *(pointer+i) = i;
+        pointer[i] = i;
     }
 
     for (int i=0; i<5; i++) {
         printf("%d\n", *(pointer+i));
     }
+
+	free(pointer);
 
     return 0;
 }
