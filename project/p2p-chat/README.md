@@ -58,18 +58,18 @@ Both of the values should be loaded from environment variables like:
 
 Please use your github username as your unique id.
 
-### Register
+### Enter
 
-Create a new page at the `/register` path.
+Create a new page at the `/enter` path.
 
-![register](assets/register.png)
+![enter](assets/enter.png)
 
-If the register button is clicked it should create a new user in the database and redirect to the main page.
+If the "Enter" button is clicked it should create a new user in the database and redirect to the main page.
 
 If the username is not specified it should show an error on the top of the page: "The username field is empty".
 
-If the user is not present in the database then the main page should redirect to the register page.
-If the user is present in the database the register page should redirect to the main page.
+If the user is not present in the database then the main page should redirect to the enter page.
+If the user is present in the database the enter page should redirect to the main page.
 
 ### Username
 
