@@ -46,6 +46,9 @@ If the environment is set to `ERROR` it should only print the error messages, an
 
 Try your environment variables on heroku as well: [This article](https://devcenter.heroku.com/articles/config-vars)
 
+[Read the logs](https://devcenter.heroku.com/articles/logging) on heroku not just on your local machine, to
+achive it first install the [heroku toolbelt](https://devcenter.heroku.com/articles/heroku-cli)
+
 ### Client Id, Peer address
 
 Each application should store a uniq id (string), that is different from each of the other.
@@ -102,6 +105,8 @@ Each message should have a stored:
  - Random generated id (between 1000000 - 9999999)
 
 ### Receive new message
+
+
 
 ### Broadcast new message
 
