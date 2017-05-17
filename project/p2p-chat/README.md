@@ -152,6 +152,12 @@ desscribed in [this article](https://docs.spring.io/spring-boot/docs/current/ref
 
 ### Broadcast new message
 
+When the user is posted a new message on the page the application should broadcast that message to
+the stored address. It should send an HTTP request to `/api/message/receive` endpoint on the configured address.
+You can use the [RestTemplate](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
+object. You have to include it in your gradle file.
+The request should send your client id, and all of the fields about the message.
+
 ### Forward received message
 
 ### Receive own message
