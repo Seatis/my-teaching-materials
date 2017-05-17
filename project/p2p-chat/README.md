@@ -150,6 +150,9 @@ Please test your endpoint using MockMvc.
 You can even check your database in the tests using the following method
 desscribed in [this article](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test).
 
+Add a refresh link to your application:
+![refresh](assets/refresh.png)
+
 ### Broadcast new message
 
 When the user is posted a new message on the page the application should broadcast that message to
@@ -160,12 +163,20 @@ The request should send your client id, and all of the fields about the message.
 
 ### Forward received message
 
-### Receive own message
+When the application receives a message from a peer, and the message is not originally broadcasted by the application,
+then it should forward the message to the stored peer by submiting an HTTP request to the `/api/message/receive` endpoint.
+All the message and client details should be the same as the received message.
+If the message was broadcasted originally by the application, than it should not forward it again.
 
 ### Try it with your fellows
+
+Find one of your classmates and connect your deployed applications by setting the IP addresses,
+in the environment variables. If it works invite more and more peers to the circle.
+The goal is to make a circle from each of the applications written by the Green Foxers.
 
 ### Better looking frontend
 
 ### Auto refresh
 
 ### List of users
+
