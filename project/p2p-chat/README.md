@@ -36,7 +36,7 @@ The log message should have the following fields:
 The log should look like this:
 `2017-05-16 21:47:19.040 INFO Request /message POST text=apple`
 
-The logs should be configurable by an environment variable called `CHAT_APP_LOGLLEVEL`
+The logs should be configurable by an environment variable called `CHAT_APP_LOGLEVEL`
 
 About environment variables: [Windows](https://www.youtube.com/watch?v=bEroNNzqlF4), [Linux + Mac](https://www.youtube.com/watch?v=pjh9rU9h22Q)
 
@@ -51,12 +51,12 @@ achive it first install the [heroku toolbelt](https://devcenter.heroku.com/artic
 
 ### Client Id, Peer address
 
-Each application should store a uniq id (string), that is different from each of the other.
+Each application should store a unique id (string), that is different from each of the other.
 Each application should store an IP address of an other application that it will connect to.
 Both of the values should be loaded from environment variables like:
-`CHAT_APP_UNIQ_ID`, `CHAT_APP_PEER_ADDRESSS`
+`CHAT_APP_UNIQUE_ID`, `CHAT_APP_PEER_ADDRESSS`
 
-Please use your github username es yout uniq id.
+Please use your github username as your unique id.
 
 ### Register
 
@@ -77,7 +77,7 @@ Create a form under the title that consists a text input and an update button.
 
 ![username](assets/username.png)
 
-The text input should store the username of the user, if the update button is cliecked, then it should update the username.
+The text input should store the username of the user, if the update button is clicked, then it should update the username.
 After the update the application should redirect to the main page.
 
 If the username is not specified it should show an error on the top of the page: "The username field is empty".
@@ -97,7 +97,7 @@ Under the messages there should be a form that can add a new message.
 
 ![add message](assets/add-message.png)
 
-If the send button is clicked it should store a new message in the database. And it should show up in the list.
+If the send button is clicked it should store a new message in the database and it should show up in the list.
 Each message should have a stored:
 
  - Username
