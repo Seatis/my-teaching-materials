@@ -39,10 +39,7 @@
     - `eeprom_write/read/update_byte/word/dword/float/block`
 
 ## Workshop
-- eeprom functions
 - eeprom with EEMEM
-    - usage
-    - default values
 - enum state machine
 - UART command change state
 
