@@ -11,29 +11,17 @@
 - Make sure that Atmel Studio is installed on your machine
 
 ### Training
-#### Function pointers
-| Material | Duration |
-|:---------|-----:|
-| [How to declare a pointer to a function?](http://www.geeksforgeeks.org/how-to-declare-a-pointer-to-a-function/) | - |
-| [Function Pointer in C](http://www.geeksforgeeks.org/function-pointer-in-c/) | - |
-
 #### State machines
 | Material | Duration |
 |:---------|-----:|
-| [State Machines with C Callbacks](http://codeandlife.com/2013/10/06/tutorial-state-machines-with-c-callbacks/) | - |
+| [Microcontroller state machine with enum tutorial](https://www.baldengineer.com/state-machine-with-enum-tutorial.html) | - |
 
 #### EEPROM
 | Material | Duration |
 |:---------|-----:|
-
-#### Optional materials
-*If you have more time and would like to know more about the topic*
-TODO: eeprom advanced
+| [Using the EEPROM in AVR-GCC](http://www.github.com/abcminiuser/avr-tutorials/blob/master/EEPROM/Output/EEPROM.pdf?raw=true) | - |
 
 ## Material Review
-### Function pointers
-- why??!!
-- syntax
 
 ### State machines
 - why we use them
@@ -51,11 +39,12 @@ TODO: eeprom advanced
     - `eeprom_write/read/update_byte/word/dword/float/block`
 
 ## Workshop
-- storing data in EEPROM
-- reading data from EEPROM
+- eeprom functions
+- eeprom with EEMEM
+    - usage
+    - default values
 - enum state machine
-- function pointer wtfing
-- state machine with function pointers
+- UART command change state
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
