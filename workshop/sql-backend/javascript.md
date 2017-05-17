@@ -4,7 +4,7 @@
 | Material | Time |
 |:---------|-----:|
 | [How to Connect to MySQL Database from Node.Js](https://www.youtube.com/watch?v=XuLRKMqozwA) | 13:33 |
-| [Using node mysql JavaScript client](https://www.sitepoint.com/using-node-mysql-javascript-client/) | 30 min |
+| [Using node mysql JavaScript client](https://www.sitepoint.com/using-node-mysql-javascript-client/) (you can ignore the grunt part and advanced use is not needed) | 29.9 min |
 
 ## Docs for today's library
 https://github.com/mysqljs/mysql
