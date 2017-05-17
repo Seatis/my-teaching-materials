@@ -20,7 +20,7 @@ struct House {
 // (if the price is lower than the calculated price from it's area)
 #define MARKET_PRICE    400
 int IsWorthToBuy(struct House* house) {
-    if(MARKET_PRICE <= (house->price_eur / house->area_sqm)) {
+    if(MARKET_PRICE >= (house->price_eur / house->area_sqm)) {
         return 1;
     } else {
         return 0;
@@ -34,7 +34,7 @@ int GetWorthToBuyCount(struct House* houses, int len) {
     int cntr = 0;
 
     for(int i = 0; i < len; i++) {
-        if(IsWorthToBuy(houses[i])) {
+        if(IsWorthToBuy(&houses[i])) {
             cntr++;
         }
     }
@@ -43,6 +43,26 @@ int GetWorthToBuyCount(struct House* houses, int len) {
 }
 
 int main() {
+    struct House house1 = {
+        "1117, Budapest, Irinyi Jozsef utca 42.",
+        200e6,
+        288,
+        12568
+    };
+    struct House house2 = {
+        "1234, Az, Utca utca 23.",
+        100,
+        2,
+        40
+    };
 
-  return 0;
+    struct House array[2];
+    array[0] = house1;
+    array[1] = house2;
+
+    printf("%d\n", IsWorthToBuy(&house1));
+    printf("%d\n", IsWorthToBuy(&house2));
+    printf("%d\n", GetWorthToBuyCount(array,2));
+
+    return 0;
 }
