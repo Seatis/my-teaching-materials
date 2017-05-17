@@ -221,7 +221,7 @@ reused in another project just be copying those files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](workshop/AtmelStudio/ADC_DRIVER) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/MC4821_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
@@ -245,7 +245,7 @@ Like in the previous project we provide you template files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/ADC_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
