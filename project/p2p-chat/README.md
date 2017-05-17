@@ -174,7 +174,15 @@ Find one of your classmates and connect your deployed applications by setting th
 in the environment variables. If it works invite more and more peers to the circle.
 The goal is to make a circle from each of the applications written by the Green Foxers.
 
-### Better looking frontend
+### Better looking main page
+
+Make the main page pretty using bootsrap.
+Your page should look like this:
+![pretty](assets/pretty.png)
+
+## Optional Tasks
+
+### Better looking enter page
 
 ### Auto refresh
 
