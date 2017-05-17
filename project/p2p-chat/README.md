@@ -102,17 +102,57 @@ Each message should have a stored:
 
  - Username
  - Text
+ - Timestamp when the message was created
  - Random generated id (between 1000000 - 9999999)
+
+![more messages](assets/more-messages.png)
 
 ### Receive new message
 
+Create a JSON endpoint called `/api/message/receive`.
 
+It should expect a JSON input:
+
+```json
+{
+  "message": {
+    "id": 7655482,
+    "username": "EggDice",
+    "text": "How you doin'?",
+    "timestamp": 1322018752992 
+  },
+  "client": {
+    "id": "EggDice"
+  }
+}
+```
+
+When the endpoint is requested, it should save the message into the database.
+Then it should response with a simple JSON object and a 200 as response code:
+
+```json
+{
+  "status": "ok"
+}
+```
+
+If any of the fields are missing it should respond with 401 as status and a JSON
+object like this:
+
+```json
+{
+  "status": "error",
+  "message": "Missing field(s): message.timestamp, client.id"
+}
+```
 
 ### Broadcast new message
 
+### Forward received message
+
 ### Receive own message
 
-### Try it with your fellowa
+### Try it with your fellows
 
 ### Better looking frontend
 
