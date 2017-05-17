@@ -146,6 +146,10 @@ object like this:
 }
 ```
 
+Please test your endpoint using MockMvc.
+You can even check your database in the tests using the following method
+desscribed in [this article](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test).
+
 ### Broadcast new message
 
 ### Forward received message
