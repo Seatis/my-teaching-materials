@@ -14,4 +14,7 @@ As functions are the first liners in the code, we have to learn how to write the
 - do one thing
 - the stepdown rule
 - always use talkative names
-- 
+- ideal number of arguments
+- function/argument aka. verb/noun pair
+- no side effects
+- avoid repeating yourself
