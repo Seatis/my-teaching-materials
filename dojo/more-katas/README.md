@@ -6,12 +6,12 @@ Get more familiar with refactoring.
 ### Training
 | Material | Time |
 |:---------|-----:|
-|[Clean Code](http://lmgtfy.com/?q=clean+code+pdf)|Chapter 1,2,3,6|
+|[Clean Code](http://lmgtfy.com/?q=clean+code+pdf)|Chapter 1,2,3,10|
 
 ### Optional
 | Material | Time |
 |:---------|-----:|
-|[Clean Code](http://lmgtfy.com/?q=clean+code+pdf)|Chapter 7,9,10,11|
+|[Clean Code](http://lmgtfy.com/?q=clean+code+pdf)|Chapter 6,7,9,11|
 
 
 ### Requirements

@@ -1,6 +1,4 @@
 # Clean Code: Meaningful Names
-*"Writing clean code is what you must do in order to call yourself a professional.
-There is no reasonable excuse for doing anything less than your best."*
 
 ## Objectives
  - We name and name and name. Because we do so much of it, we’d better do it well. Learn some simple rules for creating good names.
@@ -9,12 +7,6 @@ There is no reasonable excuse for doing anything less than your best."*
 | Material | Time |
 |:---------|-----:|
 | [Clean Code - A Handbook of Agile Software Craftsmanship: Chapter 2: Meaningful Names ](http://lmgtfy.com/?q=clean+code+pdf) | ~30min read |
-
-### Optional
-
-| Material | Time |
-|:---------|-----:|
-| [Clean Code - A Handbook of Agile Software Craftsmanship: Chapter 1: Clean Code ](http://lmgtfy.com/?q=clean+code+pdf) | ~35min read |
 
 ## Material Review
 - naming variables
