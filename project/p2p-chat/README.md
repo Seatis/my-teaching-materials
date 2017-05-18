@@ -68,8 +68,9 @@ If the "Enter" button is clicked it should create a new user in the database and
 
 If the username is not specified it should show an error on the top of the page: "The username field is empty".
 
-If the user is not present in the database then the main page should redirect to the enter page.
-If the user is present in the database the enter page should redirect to the main page.
+At this point we handle only one user for the application:
+- The enter page should redirect to the main page if the user is present in the database
+- The main page should redirect to the enter page if the user is not present in the database.
 
 ### Username
 
@@ -86,7 +87,7 @@ If the username is not specified it should show an error on the top of the page:
 
 Add a list of messages to your main page, each message should have a user and a text field.
 
-The page should have a default message in its list: 
+The page should have a default message in its list:
 
  - Username: App
  - Text: Hi there! Submit your message using the send button!
@@ -102,19 +103,100 @@ Each message should have a stored:
 
  - Username
  - Text
+ - Timestamp when the message was created
  - Random generated id (between 1000000 - 9999999)
+
+![more messages](assets/more-messages.png)
 
 ### Receive new message
 
+Create a JSON endpoint called `/api/message/receive`.
 
+It should expect a JSON input:
+
+```json
+{
+  "message": {
+    "id": 7655482,
+    "username": "EggDice",
+    "text": "How you doin'?",
+    "timestamp": 1322018752992
+  },
+  "client": {
+    "id": "EggDice"
+  }
+}
+```
+(Where the client id is the identifier of the application client detailed in the next story)
+
+When the endpoint is requested, it should save the message into the database.
+Then it should response with a simple JSON object and a 200 as response code:
+
+```json
+{
+  "status": "ok"
+}
+```
+
+If any of the fields are missing it should respond with 401 as status and a JSON
+object like this:
+
+```json
+{
+  "status": "error",
+  "message": "Missing field(s): message.timestamp, client.id"
+}
+```
+
+This method will be called by other applications, so
+don't forget to add `@CrossOrigin("*")` to your method!
+
+Please test your endpoint using MockMvc.
+You can even check your database in the tests using the following method
+desscribed in [this article](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test).
+
+Add a refresh link to your application:
+![refresh](assets/refresh.png)
 
 ### Broadcast new message
 
-### Receive own message
+When the user is posted a new message on the page the application should broadcast that message to
+the stored address. It should send an HTTP request to `/api/message/receive` endpoint on the configured address.
+Either you can use the [RestTemplate](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
+object which is already included in spring-boot or the [Retrofit](http://square.github.io/retrofit/) library what we previously tried out on gradle day.
+The request should send your client id, and all of the fields about the message.
+Where the client id is the CHAT_APP_UNIQUE_ID environment variable.
 
-### Try it with your fellowa
+### Forward received message
 
-### Better looking frontend
+When the application receives a message from a peer, and the message is not originally broadcasted by the application,
+then it should forward the message to the stored peer by submiting an HTTP request to the `/api/message/receive` endpoint.
+All the message and client details should be the same as the received message.
+If the message was broadcasted originally by the application, than it should not forward it again.
+
+### Try it with your fellows
+
+Find one of your classmates and connect your deployed applications by setting the IP addresses,
+in the environment variables. If it works invite more and more peers to the circle.
+The goal is to make a circle from each of the applications written by the Green Foxers.
+
+### GitHub repository
+
+- Create a GitHub repository under greenfox-academy for your application, naming it with the following pattern: `username-p2p`
+- Add the new remote to your project: `git remote add origin https://github.com...`
+- Push your existing commits to this new remote.
+- Configure heroku to use the github repository instead of its built in version
+- Don't forget to tag the repository with the class tag
+
+### Better looking main page
+
+Make the main page pretty using bootsrap.
+Your page should look like this:
+![pretty](assets/pretty.png)
+
+## Optional Tasks
+
+### Better looking enter page
 
 ### Auto refresh
 
