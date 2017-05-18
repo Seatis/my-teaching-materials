@@ -198,6 +198,13 @@ Your page should look like this:
 
 ### Better looking enter page
 
-### Auto refresh
+Make the enter page pretty using bootstrap.
+Your page should look like this:
+![pretty enter](assets/pretty-enter.png)
 
 ### List of users
+
+Create a list on the main page that shows all the usernames that occured in
+the messages. All the usernames should be marked that has written a message less
+than 10 minutes ago.
+
