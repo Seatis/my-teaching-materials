@@ -1,6 +1,5 @@
 # Coding Dojo
 
-
 ## Materials & Resources
 
 ### Training
@@ -43,3 +42,8 @@ to tennis: scores from zero to three points are described as “love”,
 scores are equal, the score is “deuce”.
 4. If at least three points have been scored by each side and a player
 has one more point than his opponent, the score of the game is “advantage” for the player in the lead.
+
+You should not need to change the tests, only run them often as you refactor. Below you can find your coding language:
+
+[Java](java/)</br>
+[Javascript](javascript/)
