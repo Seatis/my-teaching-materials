@@ -9,4 +9,4 @@ There is no reasonable excuse for doing anything less than your best."*
 - [Clean Code: Clean Code](clean-code/)
 - [Clean Code: Meaningful Names](meaningful-names/)
 - [Clean Code: Functions](functions/)
-- [Clean Code: Classes](classes/)
+- [Clean Code: Objects](objects-and-data-structures/)
