@@ -58,7 +58,7 @@ Both of the values should be loaded from environment variables like:
 
 Please use your github username as your unique id.
 
-### Register
+### Enter
 
 Create a new page at the `/register` path.
 
@@ -68,8 +68,9 @@ If the register button is clicked it should create a new user in the database an
 
 If the username is not specified it should show an error on the top of the page: "The username field is empty".
 
-If the user is not present in the database then the main page should redirect to the register page.
-If the user is present in the database the register page should redirect to the main page.
+At this point we handle only one user for the application:
+- The register page should redirect to the main page if the user is present in the database
+- The main page should redirect to the register page if the user is not present in the database.
 
 ### Username
 
@@ -86,7 +87,7 @@ If the username is not specified it should show an error on the top of the page:
 
 Add a list of messages to your main page, each message should have a user and a text field.
 
-The page should have a default message in its list: 
+The page should have a default message in its list:
 
  - Username: App
  - Text: Hi there! Submit your message using the send button!
@@ -119,13 +120,14 @@ It should expect a JSON input:
     "id": 7655482,
     "username": "EggDice",
     "text": "How you doin'?",
-    "timestamp": 1322018752992 
+    "timestamp": 1322018752992
   },
   "client": {
     "id": "EggDice"
   }
 }
 ```
+(Where the client id is the identifier of the application client detailed in the next story)
 
 When the endpoint is requested, it should save the message into the database.
 Then it should response with a simple JSON object and a 200 as response code:
@@ -146,6 +148,9 @@ object like this:
 }
 ```
 
+This method will be called by other applications, so
+don't forget to add `@CrossOrigin("*")` to your method!
+
 Please test your endpoint using MockMvc.
 You can even check your database in the tests using the following method
 desscribed in [this article](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-jpa-test).
@@ -157,9 +162,10 @@ Add a refresh link to your application:
 
 When the user is posted a new message on the page the application should broadcast that message to
 the stored address. It should send an HTTP request to `/api/message/receive` endpoint on the configured address.
-You can use the [RestTemplate](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
-object. You have to include it in your gradle file.
+Either you can use the [RestTemplate](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
+object which is already included in spring-boot or the [Retrofit](http://square.github.io/retrofit/) library what we previously tried out on gradle day.
 The request should send your client id, and all of the fields about the message.
+Where the client id is the CHAT_APP_UNIQUE_ID environment variable.
 
 ### Forward received message
 
@@ -174,6 +180,14 @@ Find one of your classmates and connect your deployed applications by setting th
 in the environment variables. If it works invite more and more peers to the circle.
 The goal is to make a circle from each of the applications written by the Green Foxers.
 
+### GitHub repository
+
+- Create a GitHub repository under greenfox-academy for your application, naming it with the following pattern: `username-p2p`
+- Add the new remote to your project: `git remote add origin https://github.com...`
+- Push your existing commits to this new remote.
+- Configure heroku to use the github repository instead of its built in version
+- Don't forget to tag the repository with the class tag
+
 ### Better looking main page
 
 Make the main page pretty using bootsrap.
@@ -187,4 +201,3 @@ Your page should look like this:
 ### Auto refresh
 
 ### List of users
-
