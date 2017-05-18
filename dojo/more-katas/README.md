@@ -1,4 +1,5 @@
 # Coding Dojo
+Get more familiar with refactoring.
 
 ## Materials & Resources
 
@@ -43,6 +44,7 @@ scores are equal, the score is “deuce”.
 4. If at least three points have been scored by each side and a player
 has one more point than his opponent, the score of the game is “advantage” for the player in the lead.
 
+There are three versions of this refactoring kata, each with their own challenges. I suggest you start with the first one, with the class "TennisGame1".
 You should not need to change the tests, only run them often as you refactor. Below you can find your coding language:
 
 [Java](java/)</br>
