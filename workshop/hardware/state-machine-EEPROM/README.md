@@ -27,7 +27,7 @@
 - why we use them
 - for what we use them
 - solution with enum
-- solution with function pointers
+- UARTing
 
 ### EEPROM
 - how does it work
