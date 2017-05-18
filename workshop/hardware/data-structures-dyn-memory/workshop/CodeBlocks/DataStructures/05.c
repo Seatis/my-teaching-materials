@@ -17,11 +17,6 @@
 // Create a function that takes an array of houses (and it's length), and counts the
 // houses that are worth to buy.
 
-// TODO:
-// Create a function that takes an array of houses (and it's length),
-// then it creates a new array that consists new houses with the calculated price,
-// but all the other properties are the same.
-
 int main() {
 
   return 0;

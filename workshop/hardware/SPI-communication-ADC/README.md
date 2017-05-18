@@ -204,7 +204,7 @@ Make the following connection between the IC and between the ATmega168PB Xplaine
 |5|!LDAC| GND (0V) |
 |6|!SHDN| VCC through a 10k resistor |
 |7|VSS| GND (0V) |
-|8|VOUT| output |
+|8|VOUT| x |
 
 Also:
 - put a 100nF capacitor between the VDD and VSS pins as close as possible to the DAC IC
@@ -221,7 +221,7 @@ reused in another project just be copying those files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](workshop/AtmelStudio/ADC_DRIVER) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/MC4821_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
@@ -245,7 +245,7 @@ Like in the previous project we provide you template files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/ADC_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
