@@ -10,6 +10,7 @@
 | [Clean Code - A Handbook of Agile Software Craftsmanship: Chapter 1: Clean Code ](http://lmgtfy.com/?q=clean+code+pdf) | ~35min read |
 
 ## Material Review
+- 'broken window theory'
 - messy code
 - defend the code
 - straightforward logic
