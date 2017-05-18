@@ -39,9 +39,37 @@
     - `eeprom_write/read/update_byte/word/dword/float/block`
 
 ## Workshop
-- eeprom with EEMEM
-- enum state machine
-- UART command change state
+### Using the EEPROM in the ATmega168PB
+This exercise's goal is to practice the usage of eeprom related library functions.
+We are going to write something to the EEPROM and read it back from it.
+
+[Exercise](workshop/AtmelStudio/EEPROM_basics)
+
+### The EEMEM specifier
+This exercise's goal is to practice the usage of the EEMEM specifier.
+We are going to write something to the EEPROM in an other way than earlier.
+
+[Exercise](workshop/AtmelStudio/EEPROM_EEMEM)
+
+### State machines with enum
+This exercise's goal is to learn how to implement a basic state machine on
+the ATmega168PB MCU.
+We are going to make a device, which can receive various commands through UART,
+and these command will push the MCU into different states.
+
+| Command string | State | What it does in this state |
+|:---------------|:------|:---------------------------|
+|LED_BLINKER|LED_BLINKER|It blinks the LED on PB5|
+|LED_PUSHBUTTON|LED_PUSHBUTTON|The LED on PB5 is lit when the button on PB7 is pressed|
+|TURN_LED_ON|TURN_LED_ON|The LED on PB5 is lit|
+|TURN_LED_OFF|TURN_LED_OFF|The LED on PB5 is unlit|
+
+[Exercise](workshop/AtmelStudio/state_machine_enum)
+
+### State save/load to EEPROM
+Complete the previous exercise:
+- the program should read the state from the EEPROM at startup
+- the program should save the new state to the EEPROM when the state changes (when a new valid command arrives)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
