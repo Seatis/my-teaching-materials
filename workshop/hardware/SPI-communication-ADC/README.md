@@ -204,7 +204,7 @@ Make the following connection between the IC and between the ATmega168PB Xplaine
 |5|!LDAC| GND (0V) |
 |6|!SHDN| VCC through a 10k resistor |
 |7|VSS| GND (0V) |
-|8|VOUT| output |
+|8|VOUT| x |
 
 Also:
 - put a 100nF capacitor between the VDD and VSS pins as close as possible to the DAC IC
