@@ -22,8 +22,8 @@
 ### Prototype
 | Material | Time |
 |:---------|-----:|
-| [Prototypes in JavaScript - FunFunFunction #16](https://www.youtube.com/watch?v=riDVvXZ_Kb4) | 11:55 |
 | [Prototype basics - Object Creation in JavaScript P3 ](https://www.youtube.com/watch?v=YkoelSTUy7A) | 19:18 |
+| [Prototypes in JavaScript - FunFunFunction #16](https://www.youtube.com/watch?v=riDVvXZ_Kb4) | 11:55 |
 | [Prototypes in Javascript](https://www.youtube.com/watch?v=hS_WqkyUah8) | 19:23 |
 | READING |  |
 | [A Plain English Guide to JavaScript Prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/) |  |
