@@ -12,6 +12,10 @@
 |:---------|-----:|
 | [JavaScript Closures](https://www.youtube.com/watch?v=R_ZvxMyFSCU) | 3:24 |
 | [Understanding Variable Scope & Closures Without Losing your Mind from 6:00](https://youtu.be/iSlSxDNarDY?t=6m1s) | 14:48 |
+
+#### Optional
+| Material | Time |
+|:---------|-----:|
 | [JavaScript Closure - p5.js Tutorial](https://www.youtube.com/watch?v=-jysK0nlz7A) | 12:14 |
 
 ### Prototype
