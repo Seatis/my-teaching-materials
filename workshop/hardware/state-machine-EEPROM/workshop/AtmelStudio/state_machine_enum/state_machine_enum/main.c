@@ -15,7 +15,6 @@
 	- LED on mode
 	- LED off mode
 */
-typedef enum {LED_BLINKER, LED_PUSHBUTTON, TURN_OFF_LED, TURN_ON_LED} ProgramState_t;
 
 void Init() {
     // Initialize the UART interface with 115200 baud/sec
@@ -43,51 +42,18 @@ int main(void) {
 
     // TODO:
     // Create a variable with your custom program state type enum
-    ProgramState_t state;
 
     // TODO:
     // Initialize the state to LED blinker mode
-    state = LED_BLINKER;
 
     // Infinite loop
     while (1) {
         // TODO:
         // Check the UART input buffer. If it's not empty process the string in it,
         // maybe it is a command!
-        if(!UART_IsBufferEmpty()) {
-            char command[64];
-            gets(command);
-            if(!strcmp(command, "LED_BLINKER\r")) {
-                state = LED_BLINKER;
-            } else if(!strcmp(command, "TURN_OFF_LED\r")) {
-                state = TURN_OFF_LED;
-            } else if(!strcmp(command, "TURN_ON_LED\r")) {
-                state = TURN_ON_LED;
-            } else if(!strcmp(command, "LED_PUSHBUTTON\r")) {
-                state = LED_PUSHBUTTON;
-            }
-        }
 
         // TODO:
         // Do the tasks based on the state, hint: use switch-case
-        switch(state) {
-        case LED_BLINKER:
-            PINB |= 1 << PINB5;
-            _delay_ms(500);
-            break;
-        case LED_PUSHBUTTON:
-            if(PINB & (1 << PINB)) {
-                PORTB |= 1 << PORTB5;
-            } else {
-                PORTB &= ~(1 << PORTB5);
-            }
-            break;
-        case TURN_ON_LED:
-            PORTB |= 1 << PORTB5;
-            break;
-        case TURN_OFF_LED:
-            PORTB &= ~(1 << PORTB5);
-            break;
-        }
+
     }
 }
