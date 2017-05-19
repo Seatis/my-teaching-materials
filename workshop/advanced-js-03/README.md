@@ -2,12 +2,12 @@
 
 ## Objectives
  - Have an idea about functional programming in JavaScript
- - Digging deeper into what the closer is
+ - Digging deeper into what the closure is
  - Get an understanding of what the prototype inheritance is in JavaScript
 
 ## Materials & Resources
 
-### Closer
+### Closure
 | Material | Time |
 |:---------|-----:|
 | [JavaScript Closures](https://www.youtube.com/watch?v=R_ZvxMyFSCU) | 3:24 |
@@ -26,5 +26,5 @@
 
 
 ## Material Review
- - closer
+ - closure
  - prototype
