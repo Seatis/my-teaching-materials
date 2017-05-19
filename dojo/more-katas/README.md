@@ -6,7 +6,7 @@ Get more familiar with refactoring.
 ### Training
 | Material | Time |
 |:---------|-----:|
-|[Clean Code](http://lmgtfy.com/?q=clean+code+pdf)|Chapter 1,2,3,6|
+|[Clean Code](https://github.com/greenfox-academy/teaching-materials/tree/master/material/clean-code)|Chapter 1,2,3,6|
 
 ### Optional
 | Material | Time |
