@@ -13,7 +13,6 @@
 #### PWM
 | Material | Duration |
 |:---------|-----:|
-
 | [PWM (Pulse Width Modulation) as Fast As Possible](https://www.youtube.com/watch?v=ISzRh5eN_Pg) | 5:16 |
 | [What is PWM? Pulse Width Modulation tutorial!](https://www.youtube.com/watch?v=YmPziPfaByw) | 3:06 |
 
@@ -88,7 +87,7 @@ OC0A pin of the MCU.
 
 Fist connect a LED (with a current limiting resistor) to the ATmega168PB to the OC0A pin!
 
-<img src="img/GF-ATmega168PB-PWM-LED.svg" width="50%"></img>
+<img src="img/GF-ATmega168PB-PWM-LED.png" width="50%"></img>
 
 Exercise steps:
 - Create a new AtmelStudio project
@@ -105,7 +104,7 @@ level.
 
 At first add a potentiometer to the previous circuit.
 
-<img src="img/GF-ATmega168PB-PWM-LED-POT.svg" width="50%"></img>
+<img src="img/GF-ATmega168PB-PWM-LED-POT.png" width="50%"></img>
 
 Exercise steps:
 - Create a new AtmelStudio project
@@ -122,7 +121,7 @@ It's time to control a FAN with PWM!
 
 Make the following changes on the circuit:
 
-<img src="img/GF-ATmega168PB-PWM-FAN-POT.svg" width="50%"></img>
+<img src="img/GF-ATmega168PB-PWM-FAN-POT.png" width="50%"></img>
 
 You can use the previous exercise code to control the FAN.
 
