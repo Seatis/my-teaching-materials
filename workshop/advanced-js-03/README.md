@@ -12,6 +12,7 @@
 |:---------|-----:|
 | [JavaScript Closures](https://www.youtube.com/watch?v=R_ZvxMyFSCU) | 3:24 |
 | [Understanding Variable Scope & Closures Without Losing your Mind from 6:00](https://youtu.be/iSlSxDNarDY?t=6m1s) | 14:48 |
+| [Closures - Beau teaches JavaScript](https://youtu.be/1JsJx1x35c0) | 4:47 |
 
 #### Optional
 | Material | Time |
