@@ -13,13 +13,18 @@
 |:---------|-----:|
 | [JavaScript Closures](https://www.youtube.com/watch?v=R_ZvxMyFSCU) | 3:24 |
 | [Understanding Variable Scope & Closures Without Losing your Mind from 6:00](https://youtu.be/iSlSxDNarDY?t=6m1s) | 14:48 |
+| [Closures - Beau teaches JavaScript](https://youtu.be/1JsJx1x35c0) | 4:47 |
+
+#### Optional
+| Material | Time |
+|:---------|-----:|
 | [JavaScript Closure - p5.js Tutorial](https://www.youtube.com/watch?v=-jysK0nlz7A) | 12:14 |
 
 ### Prototype
 | Material | Time |
 |:---------|-----:|
-| [Prototypes in JavaScript - FunFunFunction #16](https://www.youtube.com/watch?v=riDVvXZ_Kb4) | 11:55 |
 | [Prototype basics - Object Creation in JavaScript P3 ](https://www.youtube.com/watch?v=YkoelSTUy7A) | 19:18 |
+| [Prototypes in JavaScript - FunFunFunction #16](https://www.youtube.com/watch?v=riDVvXZ_Kb4) | 11:55 |
 | [Prototypes in Javascript](https://www.youtube.com/watch?v=hS_WqkyUah8) | 19:23 |
 | READING |  |
 | [A Plain English Guide to JavaScript Prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/) |  |
