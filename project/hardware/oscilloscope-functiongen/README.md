@@ -124,3 +124,6 @@
 
 ### Hints
 - Use the previous exercises as staring point
+
+## Solutions
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/oscilloscope-functiongen)
