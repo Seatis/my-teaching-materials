@@ -19,7 +19,7 @@ More possibilities
 
 | Material | Time |
 |:---------|-----:|
-|[JS related posibilities](http://getbootstrap.com/css/)|just scroll through|
+|[JS related posibilities](http://getbootstrap.com/javascript/)|just scroll through|
 
 
 ## Material Review
