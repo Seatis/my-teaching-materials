@@ -1,5 +1,132 @@
-# Week 1: Introduction and playing with Micro:bit
-- Electronics
+# Hardware Programming - Foundation expectations
+
+## Source code handling
+- Version control (GIT)
+    - fork
+    - init
+    - clone
+    - add
+    - stage
+    - commit
+    - push
+    - pull
+- Command line
+    - copy, move, delete and modify file
+- Styleguide
+
+## Electronics theory
+- Basics
+    - Current
+    - Voltage
+    - Power
+    - Resistors
+    - Capacitors
+- Analog circuit analysis
+    - Series and parallel resistors
+    - Voltage dividers
+- Digital circuits
+    - AND, OR, XOR, NAND, NOR gates
+    - What is inside an MCU
+- SI prefixes
+    - from pico to tera
+- Binary numbers
+    - Conversion between binary-decimal-hexadecimal systems
+- Digital communication protocols
+    - basics
+        - Synchronous/Asynchronous
+        - Duplex/Half-duplex/Simplex
+    - UART (RS-232, aka. serial port)
+        - signals, voltage levels (physical layer)
+        - protocol
+            - frame formats
+            - baud rate
+    - SPI
+        - signals, voltage levels (physical layer)
+        - protocol
+            - master/slave
+            - SS
+            - bit order
+            - modes (CPOL, CPHA)
+
+## C
+- The C Compiler
+    - preprocessor
+    - compiler
+    - assembler
+    - linker
+- Expressions and control flow
+    - Comments and Keywords
+    - Variables
+        - Datatypes
+        - stding.h types
+        - Constants (const)
+        - Literals
+            - integers (12)
+            - binary (0b1100)
+            - hex (0xC)
+            - float (12.0)
+    - Operators
+        - Math operators
+        - Logical operators
+        - Bitwise operators
+    - Control flow
+        - if statement
+        - else, else-if
+        - nested if
+        - ternary operator (?: operator)
+        - switch
+    - Loops
+        - while
+        - do-while
+        - for loop
+        - nested loops
+
+## Embedded C
+- ATmega168PB architecture
+    - what is inside
+    - interrupt system
+        - vector table
+        - global interrupt mask bit
+        - individual interrupt mask bits
+- GPIO usage
+    - input
+    - output
+    - interrupt-on-change
+- Timer usage
+    - Normal mode
+        - overflow interrupt
+    - CTC mode
+        - compare interrupt
+- USART usage
+    - in UART mode (RS-232, aka. serial port)
+    - receive/transmit interrupt
+- circular buffers
+    - usage
+    - implementation
+    - using with UART receive
+- SPI usage
+    - without interrupt
+    - with interrupt
+- ADC usage
+    - without interrupt
+    - with interrupt
+- DAC (MCP4821) usage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Electronics theory
     - Electrons, Protons, Atom
     - Conductor
     - Insulators
@@ -53,7 +180,7 @@
     - Octal system
     - Hexadecimal to Octal to Binary
     - Binary to Octal to Hexadecimal
-    
+
 # Week 2: C Programming and Getting Started with The ARV
 - Electronics and Computer
     - AC vs DC signals
