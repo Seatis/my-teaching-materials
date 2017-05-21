@@ -23,7 +23,7 @@ More possibilities
 
 
 ## Material Review
-- responsibility
+- responsive
 - grid system
 - Bootstrap
 - jquery (just a few words)
