@@ -4,7 +4,7 @@
 typedef struct {
 	int x;
 	int y;
-}Point;
+} Point;
 
 // TODO:
 // Create a function the constructs a Point (returns a pointer to a new point)
