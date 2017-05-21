@@ -1,4 +1,4 @@
-# Hardware Programming - Foundation expectations
+# Foundation phase expectations
 
 ## Source code handling
 - Version control (GIT)
@@ -48,7 +48,7 @@
             - bit order
             - modes (CPOL, CPHA)
 
-## C
+## C programming language
 - The C Compiler
     - preprocessor
     - compiler
@@ -80,6 +80,49 @@
         - do-while
         - for loop
         - nested loops
+- Functions
+    - syntax
+    - parameters
+    - return value
+    - variable scopes
+- Arrays
+    - syntax
+    - usage
+    - sizeof()
+- Pointers
+    - memory address
+    - operators
+        - declaration (\*)
+        - dereferencing (\*)
+        - address (&)
+    - pass by pointer vs. pass by value
+    - arrays and pointers
+    - arrays as function parameters
+- Dynamic memory allocation
+    - malloc()
+    - calloc()
+    - free()
+    - realloc()
+    - avoiding memory leak
+- Data structures
+    - struct
+    - bit field
+    - unions
+    - operators
+        - accessing member of variable (.)
+        - accessing member of pointer (->)
+    - enum
+- Preprocessor macros
+    - #include
+    - #define/#undef
+    - #if/#elif/#else/#endif
+    - #ifdef/#ifndef/#endif
+    - #error
+    - inclusion guards
+- Standard library functions
+    - stdio.h (Standard Input/Output)
+    - stdlib.h (Standard Library)
+    - string.h (String library)
 
 ## Embedded C
 - ATmega168PB architecture
@@ -111,274 +154,3 @@
     - without interrupt
     - with interrupt
 - DAC (MCP4821) usage
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- Electronics theory
-    - Electrons, Protons, Atom
-    - Conductor
-    - Insulators
-    - Electric Charge
-    - Electric Field
-    - Voltage, Electric Energy, and Capacitors
-    - Basic of the voltage and the current law
-    - Battery Energy and Power
-    - Electric current
-    - Resistors (Ohm's law is not a real law)
-    - Resistance vs Resistor
-    - DC Resistor and Batterys
-    - Circuit Analysis
-    - Capacitors and Capacitance
-    - Capacitors and Krichhoff
-    - Does Current Flow Through A Capacitor?
-    - SI Prefixes
-    - Symbols of the Battery, Resistor, Capacitor
-    - Series connection of resistors/capacitors
-    - Parallell connection of resistors/capacitors
-    - Plotting U(t) and I(t) graphs
-    - U-I graph of resistors
-- Computer
-    - CPU
-    - RAM
-    - ROM
-    - ASCII
-    - GigaHz
-    - Bit,Byte, KiloByte
-    - HDD
-    - Thread
-    - Processor Core
-    - Programming Language
-    - Source Code
-    - Machine Code
-    - Compiler
-    - Memory Address
-    - Instruction, Instruction set
-    - Jump
-    - Input, Output
-    - ALU
-    - Register
-    - BUS
-- Binary numbers
-    - Numeral system Basic
-    - Decimal to Binary
-    - Binary to Decimal
-    - Hexadecimal System   
-    - Hexadecimal to Binary
-    - Binary to Hexadecimal
-    - Octal system
-    - Hexadecimal to Octal to Binary
-    - Binary to Octal to Hexadecimal
-
-# Week 2: C Programming and Getting Started with The ARV
-- Electronics and Computer
-    - AC vs DC signals
-    - Analog Signal Properties (amplitude, period, frequency)
-    - Truth Tables
-    - Logic Gates and Symbols (NOT, NOR/OR, AND/NAND, XOR)
-    - ALU (Abstraction levels, OP code)
-    - RAM and Registers (address, data, RS flip-flop)
-    - CPU (Instruction address registers, instruction registers, flags)
-    - Clock
-    - Pull Up Resistors and Buttons
-    - Everything about LED
-    - Register Determination
-    - Pin Input/Output
-    - Toggle a pin's state
-    - Read a pin's state
-    - Current Limiting Resistors
-    - Serial vs Paralell Communicatinos(wire count, clock skew, crosstalk, price)
-    - PISO/SIPO
-    - Asynchronous vs Synchronous
-    - Full Duplex, Half Duplex, Simplex
-    - Baud rate vs bi/sec
-    - Signals
-        - Tx, Rx
-        - flow control(RTS/CTS)
-    - Logic levels
-        - TTL(5V System)
-        - LVTTL(3V3 System)
-        - RS-232(+- votages)
-        - Loopback test(TX and RX connected on one device)
-    - USART peripheral
-        - Universal Sync. Async. Receiver Transmitter
-        - serial port physical layer (RX/TX)
-        - flow control only in specific MCUs
-        - baud rate
-        - frame buildup(default bus state, start bit, data bits, parity, stop bit)
-    - USART in ATmega168PB
-        - block diagram
-            - clock generators
-            - data registers
-            - shift registers
-            - parity generators
-            - pin control
-        - clock geneeration
-            - UBRRL and UBRRH
-            - baud rate calculation: UBBR = fosc/(BAUD*x)-1(x = 16 is normal mode, x = 8  is double speed mode)
-            - frame format (UCSR0C)
-            - USART init (baud rate, frame format, interrupt if needed)
-            - USART transmtter(blocking mode, interrupt)
-            - USART receiver (blocking mode, interrupt)
-            - Baud rate setup examples
-- Command Line and Git
-    - Git Basic (Staging, Commit, Push, Cloning)
-    - Command Line Basic (copy, move, delete and modify files)
-- C Programming Language and a little bit of AVR
-    - Compilation (Preprocessor, Compiler, Assembler, Linker)
-    - printf() basic
-    - Comments
-    - Variables (Keywords, Datatypes)
-    - Constants
-    - Literals (integers, binary, hexadecimal, floats, double)
-    - Math operators
-    - Loical operators
-    - Bitwise operators
-    - if statement
-    - else, else-if
-    - ternary operator
-    - switch
-    - while loop
-    - do while loop
-    - for loop
-    - Functions
-        - syntax
-        - parameters
-        - return values
-        - variable scopes
-        - standard libary functions
-    - Interrupts
-        - usage
-        - interrupt vectors
-        - ATmega168PB specific things
-        - interrupt enable bits
-        - volatile qualifier
-    - Timers
-        - usage
-        - frequency and period measurement
-        - timing applications
-        - time measurement
-        - counter
-        - clock source
-        - coompare registers
-        - config registers
-        - interrupt generations
-        - block diagram of ATmega168PB TC0 and TC0 related registers
-    - Arrays
-        - char arrays
-        - int, float
-        - string.h functions
-    - User Input
-        - scanf(), gets()
-        - stdio.h other functions
-    - Pointers
-        - memory address
-        - sizeof() function
-        - pointer syntax
-        - dereferencing
-        - arrays and pointers
-        - pass by (reference, value)
-        - arrays and functions
-
-# Week 3: Advanced C programming and more MCU peripherals
-- C Programming Language
-    - Preprocessor Macros
-        - substitution
-            - #include
-            - #define/#undef
-            - #ifdef/#ifndef
-        - inclusion
-            - #if/#elif/#else/#endif
-        - compiler control
-            - #error
-    - Creating .h and .c files
-        - #include
-        - include guard
-        - #pragma once
-    - Data Structures
-        - syntax
-        - accessing members
-        - when to use
-    - Unions
-        - syntax
-        - when to use
-    - Enumerations
-        - syntax
-        - when to use
-        - automatic number assignment
-        - forced number assignment
-    - Bit Fields
-        - syntax
-        - when to use
-    - Dynamic memory allocation
-        - malloc()
-            - returns void*
-            - reverses given number of bytes (sizeof()!)
-        - calloc()
-            - returns void*
-            - reverses given number of given sized blocks
-            - fills memory with zeros
-            - useful for arrasy
-        - free()
-            - always free dynamically allocated memory pointers
-            - memory leak
-        - realloc()
-            - previously allocated memory size change
-        - custom types
-- Buffering
-    - Date buffer
-    - FIFO
-    - LIFO
-    - Non-circular buffer
-    - Circular buffer
-- UART with interrupt
-    - block diagram
-        - clock generator
-        - data register
-        - shift register
-        - parity generators
-        - pin control
-    - frame format
-    - USART transmitter
-        - blocking mode (polling TX)
-        - interrupt (UDRE, TXC)
-    - USART reciver
-        - blocking mode (polling RXC bit)
-        - interrupt (RXC- ReceiveComplete)
-- SPI communiction
-    - Serial peripheral Bus
-    - Basic info
-        - Master/Slave
-    - Physical layer
-        - Signals (MISO, MOSI, SS, SCK)
-        - 8-bit shift registers
-        - Data transfering (SS, Shift-out/Shift-in)
-        - Multiple slaves
-        - SPI modes(CPOL-clock parity, CPHA-clock phase)
-    - SPI of ATmega168PB
-        - registers
-            - SPCR control register
-            - SPSR status register
-            - SPDR data register
-        - typical init procedure
-- DACs
-    - Voltage divider
-    - DAC
-    - MCP4821
-- ADCs
-    - types(flash, SAR)
-    - parameters(sampling rate, bits, reference voltage)
-- Potentiometers
-    - usage
-    - variable voltage divider
