@@ -10,9 +10,10 @@
 ### Resources
 - [Install Android Studio](https://developer.android.com/studio/index.html)
 - Follow the instructions on the [install page](https://developer.android.com/studio/install.html)
-- Bring an Android phone for today with a data cable (USB-microUSB)
+- Bring an Android phone for today with a data cable (USB-microUSB), if you have one
   - Try it with your computer. If connected the phone should appear as a file storage or camera.
   - The best is if the Android version is above 4.0.0. You can check that on the phone in Settings / About Phone / Android Version.
+  - This is not mandatory, you can work with emulator on your computer, its just more fun
 
 ## Material Review
 - Activity
