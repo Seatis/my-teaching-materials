@@ -2,11 +2,6 @@
 *Get the feeling of creating Android applications*
 
 ## Materials & Resources
-### Training
-| Material | Time |
-|:---------|-----:|
-|[Writing your first Android app – everything you need to know](https://www.youtube.com/watch?v=mAJeK283j0I)|16:49|
-
 ### Resources
 - [Install Android Studio](https://developer.android.com/studio/index.html)
 - Follow the instructions on the [install page](https://developer.android.com/studio/install.html)
@@ -14,6 +9,11 @@
   - Try it with your computer. If connected the phone should appear as a file storage or camera.
   - The best is if the Android version is above 4.0.0. You can check that on the phone in Settings / About Phone / Android Version.
   - This is not mandatory, you can work with emulator on your computer, its just more fun
+
+### Training
+| Material | Time |
+|:---------|-----:|
+|[Writing your first Android app – everything you need to know](https://www.youtube.com/watch?v=mAJeK283j0I)|16:49|
 
 ## Material Review
 - Activity
