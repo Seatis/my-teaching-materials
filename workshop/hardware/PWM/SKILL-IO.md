@@ -6,10 +6,12 @@
 - experience in binary, hexadecimal, decimal number conversion
 - knowledge of data buffers (FIFO, LIFO, circular)
 - knowledge of ATmega168PB architecture
-    - GPIO
-    - interrupts
-    - UART polling usage
+	- GPIO
+	- Timers
+    	- interrupts
+    	- UART polling usage
 	- UART interrupt usage
+	- ADC usage
 - knowledge of C
     - expressions and control flow
     - functions
@@ -21,5 +23,5 @@
     - custom data types
 
 ## Output skills
-- know how to implement a state machine
-- understanding how does the EEPROM works in ATmega168PB
+- know how to implement a PWM generator
+- understanding how does the timer peripheral works in PWM mode in ATmega168PB
