@@ -5,18 +5,17 @@
 #define F_CPU	16000000
 #include <avr/delay.h>
 
-void SystemInit() {
+void system_init() {
     // This will initialize the LED pin also!
-    TCO_FastPwmInit();
+    TCO_fast_pwm_init();
 
-    ADC_Init();
+    ADC_init();
 }
 
 int main(void) {
-    SystemInit();
+    system_init();
     while (1) {
-        float adc_data = ADC_Read();
-        SetDuty(adc_data/ADC_DATA_MAX * 100);
+        float adc_data = ADC_read();
+        set_duty(adc_data/ADC_DATA_MAX * 100);
     }
 }
-

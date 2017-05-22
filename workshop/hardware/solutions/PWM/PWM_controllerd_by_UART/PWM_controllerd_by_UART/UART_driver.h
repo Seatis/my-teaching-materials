@@ -5,7 +5,7 @@
 
 #define RX_CIRC_BUFF_LEN 25
 
-volatile struct CircularBuffer {
+volatile struct circular_buffer {
     char buffer[RX_CIRC_BUFF_LEN];
     char* head;
     char* tail;
@@ -13,8 +13,8 @@ volatile struct CircularBuffer {
     char* read_ptr;
 } rx_buffer;
 
-void UART_Init();
-void UART_SendCharacter(char character);
-char UART_GetCharacter();
-uint8_t UART_IsBufferEmpty();
+void UART_init();
+void UART_send_character(char character);
+char UART_get_character();
+uint8_t UART_is_buffer_empty();
 #endif /* _UART_DRIVER_H_ */
