@@ -26,12 +26,10 @@ A detailed birds-eye explanation and gudie how to proceed with the app developme
 	- finalize REST API
 	- finalize App/UI
 
-# Polishing the app
-
-In case you need to add 
+## Polishing the app
 
 - Have fun adding things like:
-	- waveform visualization
+	- waveform visualization (p5.js)
 	- more keyboard shortcuts
 	- loading animation
 	- animated fox head
