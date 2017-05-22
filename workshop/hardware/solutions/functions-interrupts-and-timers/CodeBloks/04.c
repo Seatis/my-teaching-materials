@@ -17,8 +17,31 @@ int main() {
     return 0;
 }
 
+int fib(int N) {
+    int fibo_n_minus_2 = 0;
+    int fibo_n_minus_1 = 1;
+    int fibo_n = 0;
+
+    if(N < 1) {
+        return -1;
+    } else if(N == 1) {
+        return 0;
+    } else if(N == 2) {
+        return 1;
+    } else {
+        for(int i = 0; i < (N-2); i++) {
+            fibo_n = fibo_n_minus_1 + fibo_n_minus_2;
+            fibo_n_minus_2 = fibo_n_minus_1;
+            fibo_n_minus_1 = fibo_n;
+        }
+        return fibo_n;
+    }
+}
+
+/* Soltuion with recursion, advanced!
 int fib(int x) {
     if (x <= 1)
         return x;
     return fib(x-1) + fib(x-2);
 }
+*/
