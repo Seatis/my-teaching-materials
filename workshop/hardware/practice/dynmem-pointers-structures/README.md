@@ -24,7 +24,7 @@ Read and understand our [styleguide](https://github.com/greenfox-academy/totoro-
 - [01_memory_address.c](workshop/Pointers/01_memory_address.c)
 - [02_value.c](workshop/Pointers/02_value.c)
 - [03_update.c](workshop/Pointers/03_update.c)
-- [04_add_2_numbers_with pointers.c](workshop/Pointers/04_add_2_numbers_with pointers.c)
+- [04_add_2_numbers_with_pointers.c](workshop/Pointers/04_add_2_numbers_with_pointers.c)
 - [05_adress_and_values.c](workshop/Pointers/05_adress_and_values.c)
 - [06_arrays.c](workshop/Pointers/06_arrays.c)
 - [07_arrays_reloaded.c](workshop/Pointers/07_arrays_reloaded.c)
