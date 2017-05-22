@@ -55,8 +55,9 @@ We'll create an Android client for our existing p2p chat application step by ste
 Button sendButton = (Button) findViewById(R.id.button);
 ```
 - Check the type of the widgets in the editor and store them in the correct type of field
+  - (Button should be Button, ListView should be ListView, but the Plain Text should be EditText)
 - Check the id of the widgets and use those ids
-- (Button should be Button, ListView should be ListView, but the Plain Text should be EditText)
+  - (Buttons and EditTexts will have generated ids by default, you can change those to your liking, but the ListView wont have any, so assign one)
 
 ### Create a simple layout for one message
 - Find the layout folder and place a new Layout Resource file in it called `message.xml`
@@ -80,7 +81,7 @@ MessageAdapter(Context context) {
 }
 ```
 - Override the `getView(...)` method
-- This have a position parameter, which will be actually the position of the current row we trying to create
+- This have a position parameter, which will be actually the position of the current row we're trying to create
 - The ArrayAdapter has a built in ArrayList, so we don't need to create one, we can just use the existing one
   - since we defined the type of ArrayAdapter when extending, this list will contain Messages
 - So get the current message, and store it in a local variable:
