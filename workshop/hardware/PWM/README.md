@@ -1,5 +1,5 @@
 # PWM
-*Learn how to use the timer peripher af the ATmega168PB to generate PWM signals*
+*Learn how to use the timer peripheral of the ATmega168PB to generate PWM signals*
 
 ## Objectives
 - know how to use the timer peripherals as PWM generators
@@ -25,7 +25,12 @@
 ## Material Review
 
 ### PWM
--
+- What is it
+- Why is it useful
+- Duty cycle
+    - usually measured in %
+    - ton/T
+- Changing the average of the output
 
 ### PWM in AVR MCUs
 - Timers can generate PWM signals
@@ -93,14 +98,13 @@ Exercise steps:
 - Create a new AtmelStudio project
 - Create the PWM related functions, definitions, variables etc. in a separate .c and .h file! This is necessary, because later on we will add more files to the project!
 - Write a function which initializes the TC0 timer in Fast PWM mode
-- Write a function which sets the duty cycle (0-100) of PWM signal on the OC0A pin
-    - The function shuld have one uint8_t parameter which value is between 0-100
+- Write a function which sets the duty cycle (0-100) of the PWM signal on the OC0A pin
+    - The function should have one uint8_t parameter which value is between 0-100
 - Try out the init function and the duty cycle setter function
     - You should change the light intensity of the LED
 
 ### Dimming a LED with a potentiometer
-The goal is to change the LED's light intensity based on the potentiometer's voltage
-level.
+The goal is to change the LED's light intensity based on the potentiometer's voltage level.
 
 At first add a potentiometer to the previous circuit.
 
