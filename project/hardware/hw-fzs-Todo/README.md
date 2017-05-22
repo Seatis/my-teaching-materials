@@ -7,9 +7,8 @@
 
 
 ## Materials & Resources
-### Training
-| Material - Day 1 | Time |
-|:---------|-----:|
+
+ - [What is a Toso App?](https://opensource.com/sites/default/files/images/life-uploads/todolist.png)
 
 ## Workshop
 ### Tasks
@@ -17,7 +16,7 @@
 
 - [Print usage](#print-usage)
 - [List tasks](#list-tasks)
-- [List tasks by prio](#list-tasks-by-prio)
+- [List tasks by priority](#list-tasks-by-priority)
 - [Empty list](#empty-list)
 - [Add new task](#add-new-task)
 - [Check task](#check-task)
@@ -27,49 +26,51 @@
 ### Print usage
  - The application ran by exectuing `..\project_folder\bin\Debug\your_project_name.exe`
  - Then it should print the usage information:
-```
-CLI Todo application
-====================
 
+```
+Todo application
+====================
 Command line arguments:
  - l   Lists all the tasks
- - lp   Lists all the tasks by prio
+ - lp  Lists all the tasks by priority
+ - p   Add priority to a task
  - a   Adds a new task
  - r   Removes an task
  - c   Completes an task
-```
-
+ ```
 
 #### List tasks
  - When the application is ran by executing `-l`
- - Then it should print the todos that are stored in the file and it should add numbers before them when it prints it
-- use `\t` to formating the todos
-
-  So in this case for example the content of the file is:
-
-```
-Num | Tasks
-1   - Walk the dog
-2   - Buy milk
-3   - Do homework
-```
-
-#### List tasks by prio
- - When the application is ran by executing `-lp`
- - Then it should print the todos and it should list by priority numbers before them when it prints it.
-- use `\t` to formating the todos.
+ - Then it should print the todos, it should add numbers before them when it prints it
+ - use `\t` to formating
 
  So in this case for example the content of the file is:
- ```
-Prio | Tasks
- 3   - Walk the dog
- 1   - Buy milk
-      - Do homework
- ```
-##### Help
- - [Handling command line arguments](http://www.cplusplus.com/articles/DEN36Up4/)
- - Ignore the storage file in the git repository using .gitignore
 
+```
+List by number
+====================
+Num | Tasks | Prio
+1   - Walk the dog - 3
+2   - Buy milk
+3   - Do homework - 1
+4   - Do something
+```
+
+#### List tasks by priority
+ - When the application is ran by executing `-lp`
+ - Then it should print the todos, it should list by priority numbers before them when it prints it.
+ - use `\t` to formating
+
+So in this case for example the content of the file is:
+```
+List by priority
+====================
+Num | Tasks | Prio
+1   - Walk the dog - 3
+3   - Do homework - 1
+2   - Buy milk
+4   - Do something
+```
 
 #### Empty List
  - When the application is ran by executing `-l` and the file is empty
@@ -77,11 +78,31 @@ Prio | Tasks
 
 ### Add new task
  - When the application is ran by executing `-a "Feed the monkey"`
- - Then it should add a new todo task (with the content `Feed the monkey`) to the file, if the todos are listed it should show up on the end
+ - Then it should add a new todo task (with the content `Feed the monkey`), if the todos are listed it should show up on the end
 
 #### Add task error handling
  - When the application is ran by executing `-a`
  - Then it should show an error message like: `Unable to add: No task is provided`
+
+### Add prority to a task
+  - When the application is ran by executing `-p "Feed the monkey" "2"`
+  - Then it should add a priority to task (with the content `Feed the monkey`) if the todos are listed it should show up on the end
+
+  ```
+  List by priority
+  ====================
+  Num | Tasks | Prio
+  1   - Walk the dog - 3
+  5   - Feed the Monkey - 2
+  3   - Do homework - 1
+  2   - Buy milk
+  4   - Do something
+  ```
+
+#### Add task error handling
+  - When the application is ran by executing `-a`
+  - Then it should show an error message like: `Unable to add: No task is provided`
+
 
 #### Remove task
  - When the application is ran by executing `-r 2`
@@ -106,22 +127,24 @@ Prio | Tasks
  - When the application is ran by executing `-g` or with any other not listed arguments
  - Then it should show an error message like: `Unsupported argument`, also it should print the usage information
 
+#### Check task
+
+  - When the application is ran by executing `-c 3`
+  - Then it should check the second item from the file, if it is listed it should show up as checked
+
 #### Checked state
 
  - When the application is ran by executing `-l`
  - Then it should show the checked state for each task like:
 
 ```
+Num | Tasks
 1 - [ ] Walk the dog
 2 - [ ] Buy milk
 3 - [x] Do homework
+4 - [ ] Do something
 ```
 The state of the todos should be stored in the storage file. (CSV is recommended)
-
-#### Check task
-
- - When the application is ran by executing `-c 2`
- - Then it should check the second item from the file, if it is listed it should show up as checked
 
 #### Check task error handling
 1:
@@ -141,7 +164,7 @@ The state of the todos should be stored in the storage file. (CSV is recommended
  - Make the higher prio tasks to red lower yellow...the task that's done green
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our C++ styleguide](https://github.com/greenfox-academy/totoro-syllabus/blob/master/STYLEGUIDE.md)
+Please follow the styleguide: [Our C++ styleguide] (https://github.com/greenfox-academy/totoro-syllabus/blob/master/STYLEGUIDE.md)
 
  - Is the directory structure and the name of the files correct?
  - Are the includes palced on the top of the files?
