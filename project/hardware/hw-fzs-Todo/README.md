@@ -1,0 +1,156 @@
+# Command Line Todo App
+*Create a bigger program*
+
+## Objectives
+ - Read and interpret user stories
+ - Create a bigger project
+
+
+## Materials & Resources
+### Training
+| Material - Day 1 | Time |
+|:---------|-----:|
+
+## Workshop
+### Tasks
+#### Basics (mandatory):
+
+- [Print usage](#print-usage)
+- [List tasks](#list-tasks)
+- [List tasks by prio](#list-tasks-by-prio)
+- [Empty list](#empty-list)
+- [Add new task](#add-new-task)
+- [Check task](#check-task)
+- [Remove task](#remove-task)
+- [Argument error handling](#argument-error-handling)
+
+### Print usage
+ - The application ran by exectuing `..\project_folder\bin\Debug\your_project_name.exe`
+ - Then it should print the usage information:
+```
+CLI Todo application
+====================
+
+Command line arguments:
+ - l   Lists all the tasks
+ - lp   Lists all the tasks by prio
+ - a   Adds a new task
+ - r   Removes an task
+ - c   Completes an task
+```
+
+
+#### List tasks
+ - When the application is ran by executing `-l`
+ - Then it should print the todos that are stored in the file and it should add numbers before them when it prints it
+- use `\t` to formating the todos
+
+  So in this case for example the content of the file is:
+
+```
+Num | Tasks
+1   - Walk the dog
+2   - Buy milk
+3   - Do homework
+```
+
+#### List tasks by prio
+ - When the application is ran by executing `-lp`
+ - Then it should print the todos and it should list by priority numbers before them when it prints it.
+- use `\t` to formating the todos.
+
+ So in this case for example the content of the file is:
+ ```
+Prio | Tasks
+ 3   - Walk the dog
+ 1   - Buy milk
+      - Do homework
+ ```
+##### Help
+ - [Handling command line arguments](http://www.cplusplus.com/articles/DEN36Up4/)
+ - Ignore the storage file in the git repository using .gitignore
+
+
+#### Empty List
+ - When the application is ran by executing `-l` and the file is empty
+ - Then it should show a message like this: `No todos for today! :)`
+
+### Add new task
+ - When the application is ran by executing `-a "Feed the monkey"`
+ - Then it should add a new todo task (with the content `Feed the monkey`) to the file, if the todos are listed it should show up on the end
+
+#### Add task error handling
+ - When the application is ran by executing `-a`
+ - Then it should show an error message like: `Unable to add: No task is provided`
+
+#### Remove task
+ - When the application is ran by executing `-r 2`
+ - Then it should remove the second item from the file, if it is listed it should not show up
+
+#### Remove task error handling
+
+1:
+ - When the application is ran by executing `-r`
+ - Then it should show an error message like: `Unable to remove: No index is provided`
+
+2:
+ - When the application is ran by executing `-r 20`
+ - Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
+
+3:
+ - When the application is ran by executing `-r apple`
+ - Then it should show an error message like: `Unable to remove: Index is not a number`
+
+#### Argument error handling
+
+ - When the application is ran by executing `-g` or with any other not listed arguments
+ - Then it should show an error message like: `Unsupported argument`, also it should print the usage information
+
+#### Checked state
+
+ - When the application is ran by executing `-l`
+ - Then it should show the checked state for each task like:
+
+```
+1 - [ ] Walk the dog
+2 - [ ] Buy milk
+3 - [x] Do homework
+```
+The state of the todos should be stored in the storage file. (CSV is recommended)
+
+#### Check task
+
+ - When the application is ran by executing `-c 2`
+ - Then it should check the second item from the file, if it is listed it should show up as checked
+
+#### Check task error handling
+1:
+ - When the application is ran by executing `-c`
+ - Then it should show an error message like: `Unable to check: No index is provided`
+
+2:
+ - When the application is ran by executing `-c 20`
+ - Then it should show an error message, if there is no todo item on that index, like: `Unable to check: Index is out of bound`
+
+3:
+ - When the application is ran by executing `-c apple`
+ - Then it should show an error message like: `Unable to check: Index is not a number`
+
+ ## Extra
+ Take a look to [conio.h](https://code-reference.com/c/conio.h) and play with it.
+ - Make the higher prio tasks to red lower yellow...the task that's done green
+
+## Individual Workshop Review
+Please follow the styleguide: [Our C++ styleguide](https://github.com/greenfox-academy/totoro-syllabus/blob/master/STYLEGUIDE.md)
+
+ - Is the directory structure and the name of the files correct?
+ - Are the includes palced on the top of the files?
+ - Is the indentation good in each file?
+ - Is there unnecessary code?
+ - Can you find unnecessary code in comments?
+ - Is there unnecessary code duplication?
+ - Are there unnecessary empty blocks?
+ - Can you spot unused variables?
+ - Is the commit message meaningful?
+ - Are the allocated resources deleted when necessary?
+ - Is there any potential memory leak?
