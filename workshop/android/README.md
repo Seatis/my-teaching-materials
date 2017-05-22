@@ -153,7 +153,7 @@ button.setOnClickListener(new View.OnClickListener() {
 - Don't forget to add a converter for json mapping (gson or jackson)
   - `compile 'com.squareup.retrofit2:converter-jackson:2.3.0'`
 - Create a Retrofit interface for your backend's api
-  - [Here's a sample for it, if you get stuck](assets/services/ApiService.java)
+  - [Here's a sample for it, if you get stuck](assets/service/ApiService.java)
 - Instantiate it in your `onCreate` method (and store it as a field):
 ```java
 Retrofit retrofit = new Retrofit.Builder()
