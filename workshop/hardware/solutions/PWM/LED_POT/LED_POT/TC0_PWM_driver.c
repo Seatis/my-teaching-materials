@@ -2,7 +2,7 @@
 #include <avr/io.h>
 #include <stdint.h>
 
-void TCO_FastPwmInit() {
+void TCO_fast_pwm_init() {
     // Set FAST PWM mode, with comparison of OCRA
     TCCR0A |= 1 << WGM01;
     TCCR0A |= 1 << WGM00;
@@ -21,6 +21,6 @@ void TCO_FastPwmInit() {
     OCR0A = 10;	// 255 is max duty cycle
 }
 
-void SetDuty(uint8_t duty) {
+void set_duty(uint8_t duty) {
     OCR0A = 255 * (float)(duty) / 100;
 }

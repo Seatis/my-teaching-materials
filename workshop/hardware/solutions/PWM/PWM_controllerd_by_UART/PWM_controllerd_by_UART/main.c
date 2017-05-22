@@ -9,36 +9,35 @@
 #define F_CPU	16000000
 #include <avr/delay.h>
 
-void SystemInit() {
+void system_init() {
     // This will initialize the LED pin also!
-    TCO_FastPwmInit();
+    TCO_fast_pwm_init();
 
-    UART_Init();
+    UART_init();
 
-    ADC_Init();
+    ADC_init();
 
     sei();
 }
 
 int main(void) {
-    SystemInit();
+    system_init();
 
     // Setting up STDIO input and output buffer
     // You don't have to understand this!
     //----- START OF STDIO IO BUFFER SETUP
-    FILE UART_output = FDEV_SETUP_STREAM(UART_SendCharacter, NULL, _FDEV_SETUP_WRITE);
+    FILE UART_output = FDEV_SETUP_STREAM(UART_send_character, NULL, _FDEV_SETUP_WRITE);
     stdout = &UART_output;
-    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_GetCharacter, _FDEV_SETUP_READ);
+    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_get_character, _FDEV_SETUP_READ);
     stdin = &UART_input;
     //----- END OF STDIO IO BUFFER SETUP
 
     while (1) {
-        if(!UART_IsBufferEmpty()) {
+        if(!UART_is_buffer_empty()) {
             char command[64];
             gets(command);
             uint8_t duty = atoi(command);
-            SetDuty(duty);
+            set_duty(duty);
         }
     }
 }
-

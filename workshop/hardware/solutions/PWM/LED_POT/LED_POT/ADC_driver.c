@@ -2,7 +2,7 @@
 #include <avr/io.h>
 #include <stdint.h>
 
-void ADC_Init() {
+void ADC_init() {
     // TODO:
     // Set the reference voltage to AVcc.
     ADMUX = (0x3F & ADMUX) | (0b01 << REFS0);
@@ -23,7 +23,7 @@ void ADC_Init() {
     ADCSRA |= 1 << ADEN;
 }
 
-uint16_t ADC_Read() {
+uint16_t ADC_read() {
     // TODO:
     // Start a conversion with ADSC bit setup
     ADCSRA |= 1 << ADSC;

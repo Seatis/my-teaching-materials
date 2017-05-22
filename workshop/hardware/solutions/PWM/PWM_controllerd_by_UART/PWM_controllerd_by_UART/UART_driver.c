@@ -17,7 +17,7 @@ ISR(USART_RX_vect) {
     }
 }
 
-void UART_Init() {
+void UART_init() {
     // See the datasheet on page 246 for hints and table 25-9.
 
     // At first set the baud rate to 115200
@@ -45,7 +45,7 @@ void UART_Init() {
     rx_buffer.write_ptr = rx_buffer.head;
 }
 
-void UART_SendCharacter(char character) {
+void UART_send_character(char character) {
     // This function can send a character through UART with polling method
     // See page 247 of the datasheet for hints, be aware that the code in the datasheet has a problem :)
 
@@ -56,7 +56,7 @@ void UART_SendCharacter(char character) {
     UDR0 = character;
 }
 
-char UART_GetCharacter() {
+char UART_get_character() {
     // Wait for data in the circular buffer, this can be detected if the write and read pointers are pointing to the same memory block
     while((rx_buffer.read_ptr) == (rx_buffer.write_ptr));
 
@@ -76,7 +76,7 @@ char UART_GetCharacter() {
     return to_return;
 }
 
-uint8_t UART_IsBufferEmpty() {
+uint8_t UART_is_buffer_empty() {
     if(rx_buffer.read_ptr == rx_buffer.write_ptr) {
         return 1;
     } else {
