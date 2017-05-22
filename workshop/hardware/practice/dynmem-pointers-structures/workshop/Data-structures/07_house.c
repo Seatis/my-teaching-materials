@@ -17,7 +17,8 @@
 // Create a function that takes an array of houses (and it's length), and counts the
 // houses that are worth to buy.
 
-int main() {
+int main()
+{
 
-  return 0;
+    return 0;
 }

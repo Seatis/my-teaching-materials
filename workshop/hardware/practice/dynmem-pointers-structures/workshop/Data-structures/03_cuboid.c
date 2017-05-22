@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct RectangularCuboid {
+struct rectangular_cuboid {
     double a;
     double b;
     double c;
@@ -14,7 +14,8 @@ struct RectangularCuboid {
 // Write a function called "GetVolume" that takes a RectangularCuboid
 // and returns it's volume
 
-int main() {
+int main()
+{
 
     return 0;
 }

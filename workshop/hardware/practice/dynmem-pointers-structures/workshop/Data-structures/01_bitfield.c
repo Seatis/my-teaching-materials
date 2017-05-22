@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-struct Bitfield{
+struct bitfield {
     uint8_t boolean_value_1:1;
     uint8_t boolean_value_2:1;
     uint8_t boolean_value_3:1;
@@ -12,7 +12,7 @@ struct Bitfield{
     uint8_t boolean_value_8:1;
 };
 
-struct NotBitfield{
+struct not_bitfield {
     uint8_t boolean_value_1;
     uint8_t boolean_value_2;
     uint8_t boolean_value_3;
@@ -23,7 +23,8 @@ struct NotBitfield{
     uint8_t boolean_value_8;
 };
 
-int main() {
+int main()
+{
     // TODO:
     // Print out the size of both structs (use sizeof() function)
 

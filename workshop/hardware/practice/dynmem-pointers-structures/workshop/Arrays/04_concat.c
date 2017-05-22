@@ -6,7 +6,8 @@ TODO: Implement a function that concatenates 2 strings (dest and source).
 The return value should be the concatenated strings.
 */
 
-int main() {
+int main()
+{
 
     return 0;
 }

@@ -8,7 +8,8 @@ print out the values with and without pointer
  */
 
 
-int main() {
+int main()
+{
     int number = 2017;
     float Pi = 3.14;
     char letter = 't';

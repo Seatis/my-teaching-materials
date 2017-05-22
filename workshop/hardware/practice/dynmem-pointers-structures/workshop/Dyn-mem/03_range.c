@@ -16,7 +16,8 @@
  * It should delete any dynamically allocated resource before the program exits.
  */
 
-int main() {
+int main()
+{
 
-  return 0;
+    return 0;
 }

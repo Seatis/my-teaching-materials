@@ -6,7 +6,8 @@
 // the numbers of characters in the string.
 // Don't use the strlen() function!
 
-int main() {
+int main()
+{
 
     return 0;
 }

@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char my_name_array[] = "My Name";
 
-	//TODO:
+    //TODO:
     // Print out the array character-by-character
 
     return 0;

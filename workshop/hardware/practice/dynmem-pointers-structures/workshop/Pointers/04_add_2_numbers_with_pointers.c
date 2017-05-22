@@ -8,7 +8,8 @@ Add two numbers using pointers
 */
 
 
-int main() {
+int main()
+{
 
     int a  = 20;
     int b = 17;

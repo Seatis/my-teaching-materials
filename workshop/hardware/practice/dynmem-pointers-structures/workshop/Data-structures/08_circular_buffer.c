@@ -24,7 +24,8 @@
 // TODO:
 // Try all the functions in the main function, plase deallocate any buffer and the array inside it after using them
 
-int main() {
+int main()
+{
 
-  return 0;
+    return 0;
 }

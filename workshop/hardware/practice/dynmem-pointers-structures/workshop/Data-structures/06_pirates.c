@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct Pirate {
+struct pirate {
     char name[256];
     int has_wooden_leg;
     short int gold_count;
@@ -16,8 +16,9 @@ struct Pirate {
 // Create a function that takes an array of pirates (and it's length) then returns the name of the
 // richest that has wooden leg
 
-int main() {
-    struct Pirate pirates[] = {
+int main()
+{
+    struct pirate pirates[] = {
         {"Jack", 0, 18},
         {"Uwe", 1, 8},
         {"Hook", 1, 12},

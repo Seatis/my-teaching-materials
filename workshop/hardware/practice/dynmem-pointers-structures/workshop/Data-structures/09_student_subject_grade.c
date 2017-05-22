@@ -2,19 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum {MATH, HISTORY, ENGLISH, SCIENCE}Subject;
+typedef enum {MATH, HISTORY, ENGLISH, SCIENCE} subject_t;
 
 typedef struct {
-    Subject subject;
+    subject_t subject;
     int value;
-}Grade;
+} grade_t;
 
-typedef struct{
+typedef struct {
     char name[128];
     int age;
-    Grade* grades;
+    grade_t* grades;
     int grade_count;
-}Student;
+} student_t;
 
 // TODO:
 // Create a function the constructs a Student (returns a pointer to a new student)
@@ -38,7 +38,8 @@ typedef struct{
 // It should take a pointer that points to the student
 // It should free each Grade and the Student itself
 
-int main() {
+int main()
+{
 
     return 0;
 }

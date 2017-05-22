@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int high_number = 6655;
     int low_number = 2;
 

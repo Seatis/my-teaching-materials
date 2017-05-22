@@ -14,7 +14,8 @@
 // It allocates a new array, and loads into it the elements which are under the average.
 // It returns a pointer to the new array.
 
-int main() {
+int main()
+{
 
     return 0;
 }
