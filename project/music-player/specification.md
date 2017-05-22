@@ -17,7 +17,7 @@ Let's break down the main pats of the player:
 
 Not visible parts: 
 
- - Modal dialogs
+ - Modal dialogs (optional)
  	- Add track to playlist
  	- Crate playlist
 
@@ -43,9 +43,10 @@ Not visible parts:
  - Total length time
 
 ### Seekbar
+ - This can be the `<audio>` tag's default UI
  - It should be the slider that you picked from the stories
  
-### Shuffle
+### Shuffle (optional)
  - A toggle button
  - If active it must be blue
  - When active, the next track should be a random choice, but the one that actually plays
@@ -58,8 +59,9 @@ Not visible parts:
 
 
 ## Playlists
- - There are two playlists that are there by default
- - They cannot be deleted
+ - There are two playlists that are there by default, they cannot be deleted
+ 	- All tracks
+ 	- Favorites
  - User crated playlists must have a delete button
 
 ### All tracks
@@ -84,6 +86,10 @@ Not visible parts:
 
 
 ## Artwork
+ - Load a `.jpg` from the file system identical to the MP3 name.
+
+### Optional artwork loading
+
  - Display the currently playing artist from Last.fm
  - Description is in the stories section
  - If the artist can't be found, use the [music placeholder](img/music-placeholder.png) image instead
@@ -106,7 +112,6 @@ Not visible parts:
  - It immediately adds the currently playing track to the special "favorites" playlist
  - The star is immediately turned to light blue
  - When a new track starts to play, this icon must turn to light blue if the track is part if of the favorites playlist
-
 
 ## Tracks
  - A simple list of tracks
@@ -145,6 +150,16 @@ Not visible parts:
 `GET /playlists`
  - Lists all the playlists
 
+```
+[
+	{ "id": 1, "title": "Favorites", "system": 1},
+	{ "id": 2, "title": "Music for programming", "system": 0},
+	{ "id": 3, "title": "Driving", "system": 0},
+	{ "id": 5, "title": "Fox house", "system": 0},
+]
+```
+
+
 `POST /playlists`
  - Creates a new playlist
  - Required field is only a "playlist" property that contains the name of the playlist
@@ -161,10 +176,10 @@ Not visible parts:
 
 The `id` URL parameter is always required since it identifies the playlist you want to have some operation with.
 
-`GET /playlis-tracks/`
+`GET /playlist-tracks/`
  - Without a `playlist_id` it should return all tracks in the `root` folder. Subfolders should be explored recursively.
 
-`GET /playlis-tracks/:playlist_id`
+`GET /playlist-tracks/:playlist_id`
  - Lists all the tracks added to the playlist
 
 ```
@@ -176,7 +191,6 @@ The `id` URL parameter is always required since it identifies the playlist you w
 
 `POST /playlist-tracks/:playlist_id`
  - Adds the track to the playlist provided `playlist_id`
- - System playlist cannot be created by the client
 
 `DELETE /playlist-tracks/:playlist_id/:track_id`
  - Deletes the given track with the `track_id` from the playlist with the `playlist_playlist`
