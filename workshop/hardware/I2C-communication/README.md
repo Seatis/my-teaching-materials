@@ -1,5 +1,5 @@
 # I2C communication
-*Learn a new serial communication protocol
+*Learn a new serial communication protocol*
 
 ## Objectives
 - Learn how does the I2C communication protocol works
@@ -64,19 +64,19 @@ Also read the corresponding pages of the datasheet of ATmega168PB (278-314). OK,
         - set bit rate
         - enable I2C interrupt if needed
         - enable I2C peripheral
+
 ## Workshop
 ### I2C
 #### Setting up the hardware
 Make the following connection between the IC and the ATmega168PB Xplained board
 
-| TC74 pin | Pin function | Connect to |
+| TC74 pin | Pin function | Connect to ATmega168PB pin|
 |-|-|-|
 |1|NC|NC|
 |2|SDA|SDA (PC4)|
 |3|GND|GND (0V)|
-|4|SCLK|CLK (PC5)|
+|4|SCLK|SCL (PC5)|
 |5|VDD| VCC |
-
 
 Also:
  - don't forget the pull up resistors (external or internal)
