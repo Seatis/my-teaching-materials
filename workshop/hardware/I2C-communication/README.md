@@ -35,13 +35,6 @@ Also read the corresponding pages of the datasheet of ATmega168PB (278-314). OK,
 
  - 27.9. Register Description
 
- ## Extra
-
-
- | Material | Duration |
- |:---------|-----:|
- | [Everything about I2c](https://www.i2c-bus.org/i2c-interface/) | - |
-
 ## Material Review
 ### I2C communication
 - Inter-Integrated Circuits
