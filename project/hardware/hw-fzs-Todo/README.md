@@ -8,22 +8,24 @@
 
 ## Materials & Resources
 
- - [What is a Toso App?](https://opensource.com/sites/default/files/images/life-uploads/todolist.png)
+- [What is a ToDo App?](https://opensource.com/sites/default/files/images/life-uploads/todolist.png)
+- [File I/O in C](https://www.tutorialspoint.com/cprogramming/c_file_io.htm)
 
 ## Workshop
 ### Tasks
 #### Basics (mandatory):
 
 - [Print usage](#print-usage)
+- [Add new task](#add-new-task)
+- [Write to file](#write-to-file)
 - [List tasks](#list-tasks)
 - [List tasks by priority](#list-tasks-by-priority)
 - [Empty list](#empty-list)
-- [Add new task](#add-new-task)
 - [Check task](#check-task)
 - [Remove task](#remove-task)
 - [Argument error handling](#argument-error-handling)
 
-### Print usage
+#### Print usage
  - The application ran by exectuing `..\project_folder\bin\Debug\your_project_name.exe`
  - Then it should print the usage information:
 
@@ -31,19 +33,38 @@
 Todo application
 ====================
 Commands:
- - l   Lists all the tasks
- - lp  Lists all the tasks by priority
- - p   Add priority to a task
- - a   Adds a new task
- - r   Removes a task
- - c   Completes a task
- - e   Empty the list
+ -l   Lists all the tasks
+ -lp  Lists all the tasks by priority
+ -p   Add priority to a task
+ -a   Adds a new task
+ -r   Removes a task
+ -c   Completes a task
+ -e   Empty the list
  ```
 
+#### Data structure
+- store a todo in a structured form
+- the structure should contain
+    - the task's name
+    - the priority
+    - the completeness
+
+#### Add new task
+- While the application is running and `-a "Feed the monkey"` is entered
+- Then it should add a new todo task (with the content `Feed the monkey`), if the todos are listed it should show up on the end
+- You should store the todos in an array
+
+#### Write to
+
+#### File I/O
+- all the tasks should be stored in a file
+- the program can read and write this file if needed
+
+
 #### List tasks
- - When the application is ran by executing `-l`
- - Then it should print the todos, it should add numbers before them when it prints it
- - use `\t` to formating
+ - By entering `-l`
+ - It should print the todos, it should add numbers before them when it prints it
+ - use `\t` to formatting
 
  So in this case for example the content is:
 
@@ -76,10 +97,6 @@ Num | Tasks | Prio
 #### Empty the list
  - When the application is ran by executing `-e` and the struct is empty
  - Then it should show a message like this: `No todos for today! :)`
-
-### Add new task
- - When the application is ran by executing `-a "Feed the monkey"`
- - Then it should add a new todo task (with the content `Feed the monkey`), if the todos are listed it should show up on the end
 
 #### Add task error handling
  - When the application is ran by executing `-a`
