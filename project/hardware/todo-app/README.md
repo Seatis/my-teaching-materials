@@ -12,191 +12,179 @@
 - [File I/O in C](https://www.tutorialspoint.com/cprogramming/c_file_io.htm)
 
 ## Workshop
-### Tasks
-#### Basics (mandatory):
+This is a quite long project, at first read the whole specification. Try to figure out
+what kind of data storing technique (for example structure, array etc.) would fit
+for this project. Try to make a concept in your head about how you will implement the
+application.
+
+### Basics (mandatory) tasks
 
 - [Print usage](#print-usage)
 - [Add new task](#add-new-task)
 - [Write to file](#write-to-file)
+- [Read from file](#read-from-file)
 - [List tasks](#list-tasks)
-- [List tasks by priority](#list-tasks-by-priority)
-- [Empty list](#empty-list)
-- [Check task](#check-task)
+- [Empty the list](#empty-the-list)
 - [Remove task](#remove-task)
-- [Argument error handling](#argument-error-handling)
 
-#### Print usage
- - The application ran by exectuing `..\project_folder\bin\Debug\your_project_name.exe`
- - Then it should print the usage information:
+### Advanced tasks
+
+- [Check task](#check-task)
+- [Checked state](#checked-state)
+- [Add priority to a task](#add-priority-to-a-task)
+- [List tasks by priority](#list-tasks-by-priority)
+- [Add task error handling](#add-task-error-handling)
+- [Remove task error handling](#remove-task-error-handling)
+- [Command error handling](#command-error-handling)
+- [Check task error handling](#check-task-error-handling)
+
+### Print usage
+ - At application startup the following message should be shown:
 
 ```
 Todo application
 ====================
 Commands:
- -l   Lists all the tasks
- -lp  Lists all the tasks by priority
- -p   Add priority to a task
  -a   Adds a new task
+ -wr  Write current todos to file
+ -rd  Read todos from a file
+ -l   Lists all the tasks
+ -e   Empty the list
  -r   Removes a task
  -c   Completes a task
- -e   Empty the list
+ -p   Add priority to a task
+ -lp  Lists all the tasks by priority
  ```
 
-#### Data structure
-- store a todo in a structured form
-- the structure should contain
-    - the task's name
-    - the priority
-    - the completeness
-
-#### Add new task
+### Add new task
 - While the application is running and `-a "Feed the monkey"` is entered
-- Then it should add a new todo task (with the content `Feed the monkey`), if the todos are listed it should show up on the end
-- You should store the todos in an array
+- Then it should add a new todo task (with the content `Feed the monkey`)
+- If the todos are listed it should show up on the end
 
-#### Write to
+### Write to file
+- While the application is running and `-wr "file.txt"` is entered
+- Then it should write the todos from the memory into `file.txt`
 
-#### File I/O
-- all the tasks should be stored in a file
-- the program can read and write this file if needed
+### Read from file
+- While the application is running and `-rd "file.txt"` is entered
+- Then it should read the todos into the memory from `file.txt`
 
+### List tasks
+- By entering `-l`
+- It should print the todos, it should add numbers before them when it prints it
+- use `\t` to formatting
 
-#### List tasks
- - By entering `-l`
- - It should print the todos, it should add numbers before them when it prints it
- - use `\t` to formatting
+For example the content is:
 
- So in this case for example the content is:
+```
+List by number
+====================
+Num | Tasks
+1   - Walk the dog
+2   - Buy milk
+3   - Do homework
+4   - Do something
+```
+
+### Empty the list
+- While the application is running and `-e` is entered
+- Then all the todos should be deleted
+- Also it should show a message like this: `No todos for today! :)`
+
+### Remove task
+- While the application is running and `-r 2` is entered
+- Then it should remove the second item from the list
+- If it is listed it should not show up
+
+### Check task
+- While the application is running and `-c 3` is entered
+- Then it should check the third item from the list
+- If it is listed it should show up as checked
+
+### Checked state
+- While the application is running and `-l` is entered
+- Then it should show the checked state for each task like:
 
 ```
 List by number
 ====================
 Num | Tasks | Prio
-1   - Walk the dog - 3
-2   - Buy milk
-3   - Do homework - 1
-4   - Do something
+1 - [ ] Walk the dog
+2 - [ ] Buy milk
+3 - [x] Do homework
+4 - [ ] Do something
+5 - [ ] Feed the Monkey
 ```
 
-#### List tasks by priority
- - When the application is ran by executing `-lp`
- - Then it should print the todos, it should list by priority numbers before them when it prints it.
- - use `\t` to formating
+### Add priority to a task
+- While the application is running and `-p "Feed the monkey" 2` is entered
+- Then it should add a tast with the content `Feed the monkey` and with priority `2`
+- If the todos are listed it should show up on the end, for example:
+
+```
+List by priority
+====================
+Num | Tasks | Prio
+1 - [ ] Walk the dog - 3
+2 - [ ] Buy milk
+3 - [ ] Do homework - 1
+4 - [ ] Do something
+5 - [ ] Feed the Monkey - 2
+```
+
+### List tasks by priority
+- While the application is running and `-lp` is entered
+- Then it should print the todos, it should list by priority numbers before them when it prints it.
+- use `\t` to formating
 
 So in this case for example the content is:
 ```
 List by priority
 ====================
 Num | Tasks | Prio
-1   - Walk the dog - 3
-3   - Do homework - 1
-2   - Buy milk
-4   - Do something
-```
-
-#### Empty the list
- - When the application is ran by executing `-e` and the struct is empty
- - Then it should show a message like this: `No todos for today! :)`
-
-#### Add task error handling
- - When the application is ran by executing `-a`
- - Then it should show an error message like: `Unable to add: No task is provided`
-
-### Add prority to a task
-  - When the application is ran by executing `-p "Feed the monkey" "2"`
-  - Then it should add a priority to task (with the content `Feed the monkey`) if the todos are listed it should show up on the end
-
-  ```
-  List by priority
-  ====================
-  Num | Tasks | Prio
-  1   - Walk the dog - 3
-  5   - Feed the Monkey - 2
-  3   - Do homework - 1
-  2   - Buy milk
-  4   - Do something
-  ```
-
-#### Add task error handling
-    - When the application is ran by executing `-p`
-    - Then it should show an error message like: `Unable to add priority: No task is provided`
-
-#### Add task error handling
-  - When the application is ran by executing `-a`
-  - Then it should show an error message like: `Unable to add: No task is provided`
-
-
-#### Remove task
- - When the application is ran by executing `-r 2`
- - Then it should remove the second item from the list, if it is listed it should not show up
-
-#### Remove task error handling
-
-1:
- - When the application is ran by executing `-r`
- - Then it should show an error message like: `Unable to remove: No index is provided`
-
-2:
- - When the application is ran by executing `-r 20`
- - Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
-
-3:
- - When the application is ran by executing `-r apple`
- - Then it should show an error message like: `Unable to remove: Index is not a number`
-
-#### Argument error handling
-
- - When the application is ran by executing `-g` or with any other not listed arguments
- - Then it should show an error message like: `Unsupported argument`, also it should print the usage information
-
-#### Check task
-
-  - When the application is ran by executing `-c 3`
-  - Then it should check the third item from the list, if it is listed it should show up as checked
-
-#### Checked state
-
- - When the application is ran by executing `-l`
- - Then it should show the checked state for each task like:
-
-```
-List by number
-====================
-Num | Tasks | Prio
 1 - [ ] Walk the dog - 3
-2 - [ ] Buy milk
-3 - [x] Do homework - 1
-4 - [ ] Do something
 5 - [ ] Feed the Monkey - 2
+3 - [ ] Do homework - 1
+2 - [ ] Buy milk
+4 - [ ] Do something
 ```
-#### Check task error handling
-1:
- - When the application is ran by executing `-c`
- - Then it should show an error message like: `Unable to check: No index is provided`
 
-2:
- - When the application is ran by executing `-c 20`
- - Then it should show an error message, if there is no todo item on that index, like: `Unable to check: Index is out of bound`
+### Add task error handling
+- While the application is running and `-a` is entered
+- Thenit should show an error message like: `Unable to add: No task is provided`
 
-3:
- - When the application is ran by executing `-c apple`
- - Then it should show an error message like: `Unable to check: Index is not a number`
+### Add priority error handling
+- While the application is running and `-p` is entered
+- Then it should show an error message like: `Unable to add priority: No task is provided`
 
- ## Extra
- Take a look to [conio.h](https://code-reference.com/c/conio.h) and play with it.
- - Make the higher prio tasks to red lower yellow...the task that's done green
+### Remove task error handling
 
-## Individual Workshop Review
-Please follow the styleguide: [Our C++ styleguide] (https://github.com/greenfox-academy/totoro-syllabus/blob/master/STYLEGUIDE.md)
+1)
+- While the application is running and `-r` is entered
+- Then it should show an error message like: `Unable to remove: No index is provided`
 
- - Is the directory structure and the name of the files correct?
- - Are the includes palced on the top of the files?
- - Is the indentation good in each file?
- - Is there unnecessary code?
- - Can you find unnecessary code in comments?
- - Is there unnecessary code duplication?
- - Are there unnecessary empty blocks?
- - Can you spot unused variables?
- - Is the commit message meaningful?
- - Are the allocated resources deleted when necessary?
- - Is there any potential memory leak?
+2)
+- While the application is running and `-r 20` is entered
+- Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
+
+3)
+- While the application is running and `-r apple` is entered
+- Then it should show an error message like: `Unable to remove: Index is not a number`
+
+### Command error handling
+
+- While the application is running and `-g` or with any other not listed commands
+- Then it should show an error message like: `Unsupported argument`, also it should print the usage information
+
+### Check task error handling
+1)
+- While the application is running and `-c` is entered
+- Then it should show an error message like: `Unable to check: No index is provided`
+
+2)
+- While the application is running and `-c 20` is entered
+- Then it should show an error message, if there is no todo item on that index, like: `Unable to check: Index is out of bound`
+
+3)
+- While the application is running and `-c apple` is entered
+- Then it should show an error message like: `Unable to check: Index is not a number`
