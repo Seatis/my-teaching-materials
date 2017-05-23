@@ -35,8 +35,8 @@ Command line arguments:
  - lp  Lists all the tasks by priority
  - p   Add priority to a task
  - a   Adds a new task
- - r   Removes an task
- - c   Completes an task
+ - r   Removes a task
+ - c   Completes a task
  ```
 
 #### List tasks
@@ -130,7 +130,7 @@ Num | Tasks | Prio
 #### Check task
 
   - When the application is ran by executing `-c 3`
-  - Then it should check the second item from the file, if it is listed it should show up as checked
+  - Then it should check the third item from the file, if it is listed it should show up as checked
 
 #### Checked state
 
@@ -138,11 +138,14 @@ Num | Tasks | Prio
  - Then it should show the checked state for each task like:
 
 ```
-Num | Tasks
-1 - [ ] Walk the dog
+List by number
+====================
+Num | Tasks | Prio
+1 - [ ] Walk the dog - 3
 2 - [ ] Buy milk
-3 - [x] Do homework
+3 - [x] Do homework - 1
 4 - [ ] Do something
+5 - [ ] Feed the Monkey - 2
 ```
 The state of the todos should be stored in the storage file. (CSV is recommended)
 
