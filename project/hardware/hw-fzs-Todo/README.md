@@ -30,13 +30,14 @@
 ```
 Todo application
 ====================
-Command line arguments:
+Commands:
  - l   Lists all the tasks
  - lp  Lists all the tasks by priority
  - p   Add priority to a task
  - a   Adds a new task
  - r   Removes a task
  - c   Completes a task
+ - e   Empty the list
  ```
 
 #### List tasks
@@ -44,7 +45,7 @@ Command line arguments:
  - Then it should print the todos, it should add numbers before them when it prints it
  - use `\t` to formating
 
- So in this case for example the content of the file is:
+ So in this case for example the content is:
 
 ```
 List by number
@@ -61,7 +62,7 @@ Num | Tasks | Prio
  - Then it should print the todos, it should list by priority numbers before them when it prints it.
  - use `\t` to formating
 
-So in this case for example the content of the file is:
+So in this case for example the content is:
 ```
 List by priority
 ====================
@@ -72,8 +73,8 @@ Num | Tasks | Prio
 4   - Do something
 ```
 
-#### Empty List
- - When the application is ran by executing `-l` and the file is empty
+#### Empty the list
+ - When the application is ran by executing `-e` and the struct is empty
  - Then it should show a message like this: `No todos for today! :)`
 
 ### Add new task
@@ -100,13 +101,17 @@ Num | Tasks | Prio
   ```
 
 #### Add task error handling
+    - When the application is ran by executing `-p`
+    - Then it should show an error message like: `Unable to add priority: No task is provided`
+
+#### Add task error handling
   - When the application is ran by executing `-a`
   - Then it should show an error message like: `Unable to add: No task is provided`
 
 
 #### Remove task
  - When the application is ran by executing `-r 2`
- - Then it should remove the second item from the file, if it is listed it should not show up
+ - Then it should remove the second item from the list, if it is listed it should not show up
 
 #### Remove task error handling
 
@@ -130,7 +135,7 @@ Num | Tasks | Prio
 #### Check task
 
   - When the application is ran by executing `-c 3`
-  - Then it should check the third item from the file, if it is listed it should show up as checked
+  - Then it should check the third item from the list, if it is listed it should show up as checked
 
 #### Checked state
 
@@ -147,8 +152,6 @@ Num | Tasks | Prio
 4 - [ ] Do something
 5 - [ ] Feed the Monkey - 2
 ```
-The state of the todos should be stored in the storage file. (CSV is recommended)
-
 #### Check task error handling
 1:
  - When the application is ran by executing `-c`
