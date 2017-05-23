@@ -21,9 +21,9 @@ application.
 
 - [Print usage](#print-usage)
 - [Add new task](#add-new-task)
+- [List tasks](#list-tasks)
 - [Write to file](#write-to-file)
 - [Read from file](#read-from-file)
-- [List tasks](#list-tasks)
 - [Empty the list](#empty-the-list)
 - [Remove task](#remove-task)
 
@@ -61,14 +61,6 @@ Commands:
 - Then it should add a new todo task (with the content `Feed the monkey`)
 - If the todos are listed it should show up on the end
 
-### Write to file
-- While the application is running and `-wr "file.txt"` is entered
-- Then it should write the todos from the memory into `file.txt`
-
-### Read from file
-- While the application is running and `-rd "file.txt"` is entered
-- Then it should read the todos into the memory from `file.txt`
-
 ### List tasks
 - By entering `-l`
 - It should print the todos, it should add numbers before them when it prints it
@@ -85,6 +77,14 @@ Num | Tasks
 3   - Do homework
 4   - Do something
 ```
+
+### Write to file
+- While the application is running and `-wr "file.txt"` is entered
+- Then it should write the todos from the memory into `file.txt`
+
+### Read from file
+- While the application is running and `-rd "file.txt"` is entered
+- Then it should read the todos into the memory from `file.txt`
 
 ### Empty the list
 - While the application is running and `-e` is entered
