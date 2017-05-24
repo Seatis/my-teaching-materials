@@ -52,6 +52,7 @@ We'll create an Android client for our existing p2p chat application step by ste
   - If there are no constraints the views will be on top of each other in the upper left corner, no matter how the editor displays it
   - You can easily add automatic constraints for an existing arrangement with the two yellow starz icon ![starz icon](assets/images/starz.png)
   - Or before doing anything you can enable automatic constraint creation on the flow with the magnet button ![magnet button](assets/images/magnet.png)
+    - (hint: the other buttons on that line are useful too)
   - If you need more detail on [how layouts work](https://developer.android.com/training/constraint-layout/index.html)
 - In your `MainActivity`'s `onCreate` method instantiate the placed widgets and store them as class fields
   - Don't touch anything that's already there, just do everything after
