@@ -45,7 +45,7 @@ We'll create an Android client for our existing p2p chat application step by ste
 ### Design the Activity
 - Remove the Hello World text from the middle
 - Put a ListView, a Plain Text (EditText) and a Button and arrange it like this:
-[![app design](assets/views/app.png)](assets/views/app.png?raw=true)
+[![app design](assets/views/app.png | height=400)](assets/views/app.png?raw=true)
 
 - The ListView should be occupying the whole top area
   - Note that your root layout is called `ConstraintLayout` which arranges the views based on constraints
