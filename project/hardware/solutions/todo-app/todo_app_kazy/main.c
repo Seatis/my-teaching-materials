@@ -1,17 +1,54 @@
 #include "printer.h"
 #include "todo.h"
 #include <stdlib.h>
+#include <string.h>
+
+#define COMMAND_LIST_TODOS "-l"
+#define COMMAND_ADD_TODOS "-a"
+#define COMMAND_WRITE_TODOS "-wr"
 
 int main()
 {
+	struct todostorage storage = {NULL, 0};
+
 	print_usage();
 
-	struct todostorage storage = {NULL, 0};
-	add_todo(&storage, "Ez kell");
-	add_todo(&storage, "Az kell");
-	list_todo(&storage);
-	write_todo(&storage, "tmp.txt");
-	read_todo(&storage, "tmp.txt");
-	list_todo(&storage);
+    char command[256];
+
+	while(1) {
+        // Get command string
+        gets(command);
+        // Search for command
+        if(strstr(command, COMMAND_LIST_TODOS) != NULL) {
+            list_todo(&storage);
+        } else if (strstr(command, COMMAND_ADD_TODOS) != NULL) {
+            char todo_name[256];
+            // Get parameter
+            char *p;
+            p = strtok(command, "\"");  // Get the substring before the first "
+            p = strtok(NULL, "\"");     // Get the second substring (between the two ")
+
+            // Copy the todo name
+            strcpy(todo_name, p);
+
+            // Save to file
+            add_todo(&storage, todo_name);
+
+        } else if (strstr(command, COMMAND_WRITE_TODOS) != NULL) {
+            char filename[256];
+            // Get parameter
+            char *p;
+            p = strtok(command, "\"");  // Get the substring before the first "
+            p = strtok(NULL, "\"");     // Get the second substring (between the two ")
+
+            // Copy the filename
+            strcpy(filename, p);
+
+            // Save to file
+            write_todo(&storage, filename);
+
+        }
+	}
+
 	return 0;
 }
