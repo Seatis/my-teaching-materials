@@ -9,7 +9,12 @@ typedef enum {
     ADD_NO_TASK,
     RM_NO_INDEX,
     RM_INV_INDEX,
-    RM_NOT_NUMBER
+    RM_NOT_NUMBER,
+    CHECK_NO_INDEX,
+    CHECK_INV_INDEX,
+    CHECK_NOT_NUMBER,
+    PRIO_NO_TASK,
+    PRIO_NOT_NUMBER
 } todoerr_t;
 
 void print_usage();

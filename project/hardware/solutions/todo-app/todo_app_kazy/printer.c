@@ -32,12 +32,17 @@ int list_todo(struct todostorage *storage)
     clear_screen();
     printf("List by number\n");
     printf("====================\n");
-    printf("Num \t|\t Tasks\n");
+    printf("Num - Tasks - Prio\n");
 
     for(int i = 0; i < storage->length; i++) {
-        printf("%d\t-\t", i + 1);
+        printf("%d - [", i + 1);
+
+        if(storage->array[i].checked)
+            printf("x] ");
+        else
+            printf(" ] ");
         printf(storage->array[i].name);
-        printf("\n");
+        printf(" - %d\n", storage->array[i].prio);
     }
 
     return 0;
@@ -63,6 +68,21 @@ void print_error(todoerr_t err)
         break;
     case RM_INV_INDEX:
         printf("Unable to remove: Index is out of bound\n");
+        break;
+    case CHECK_NO_INDEX:
+        printf("Unable to check: No index is provided\n");
+        break;
+    case CHECK_NOT_NUMBER:
+        printf("Unable to check: Index is not a number\n");
+        break;
+    case CHECK_INV_INDEX:
+        printf("Unable to check: Index is out of bound\n");
+        break;
+    case PRIO_NO_TASK:
+        printf("Unable to add task with priority: No task is provided\n");
+        break;
+    case PRIO_NOT_NUMBER:
+        printf("Unable to add task with priority: Index is not a number\n");
         break;
     default:
         break;

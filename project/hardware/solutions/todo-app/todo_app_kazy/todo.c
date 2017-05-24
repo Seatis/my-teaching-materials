@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int add_todo(struct todostorage *storage, char *name)
+int add_todo(struct todostorage *storage, char *name, int checked, int prio)
 {
 	// Error handling
 	if(storage == NULL || name == NULL)
@@ -22,6 +22,10 @@ int add_todo(struct todostorage *storage, char *name)
 	int index = storage->length - 1;
 	strcpy(storage->array[index].name, name);
 
+	// Initialize other members
+	storage->array[index].checked = checked;
+	storage->array[index].prio = prio;
+
 	return 0;
 }
 
@@ -36,8 +40,13 @@ int write_todo(struct todostorage *storage, char *path)
     if(file == NULL)
 		return -1;
 
+    // Write data to file
 	for(int i = 0; i < storage->length; i++) {
-		fprintf(file, "%s\n", storage->array[i].name);
+		fprintf(file, "%s %d %d\n",
+          storage->array[i].name,
+          storage->array[i].checked,
+          storage->array[i].prio
+          );
 	}
 
 	fclose(file);
@@ -55,15 +64,22 @@ int read_todo(struct todostorage *storage, char *path)
     if(file == NULL)
 		return -1;
 
+    char name[MAX_TODO_NAME_LEN];
+    int checked, prio;
+    while(fscanf(file, "%s %d %d\n", name, &checked, &prio) == 3) {
+        add_todo(storage, name, checked, prio);
+    }
+
+    /*
 	char buffer[MAX_TODO_NAME_LEN];
 
     while(fgets(buffer, MAX_TODO_NAME_LEN, file) != NULL) {
 		// Remove \n
 		buffer[strlen(buffer) - 1] = '\0';
 		// Add to storage
-        add_todo(storage, buffer);
+        add_todo(storage, buffer, 0, 0);
     }
-
+*/
 	fclose(file);
 	return 0;
 }
@@ -103,5 +119,19 @@ int remove_todo(struct todostorage *storage, int num)
         storage->array[num - 1 + i] = tmp[i];
     }
     free(tmp);
+    return 0;
+}
+
+int check_todo(struct todostorage *storage, int num)
+{
+	// Error handling
+	if(storage == NULL || (num > storage->length))
+		return -1;
+
+    if(storage->array[num - 1].checked == 0)
+        storage->array[num - 1].checked = 1;
+    else
+        storage->array[num - 1].checked = 0;
+
     return 0;
 }

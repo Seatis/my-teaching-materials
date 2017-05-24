@@ -23,10 +23,11 @@ struct todostorage {
 /*******************************
  *    FUNCTION DECLARATIONS    *
  *******************************/
-int add_todo(struct todostorage *storage, char *name);
+int add_todo(struct todostorage *storage, char *name, int checked, int prio);
 int write_todo(struct todostorage *storage, char *path);
 int read_todo(struct todostorage *storage, char *path);
 int empty_todo(struct todostorage *storage);
 int remove_todo(struct todostorage *storage, int num);
+int check_todo(struct todostorage *storage, int num);
 
 #endif // TODO_H_INCLUDED
