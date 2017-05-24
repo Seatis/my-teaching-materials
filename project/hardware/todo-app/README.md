@@ -159,10 +159,10 @@ List by priority
 ====================
 Num | Tasks | Prio
 1 - [ ] Walk the dog - 3
-5 - [ ] Feed the Monkey - 2
+2 - [ ] Feed the Monkey - 2
 3 - [ ] Do homework - 1
-2 - [ ] Buy milk
-4 - [ ] Do something
+4 - [ ] Buy milk
+5 - [ ] Do something
 ```
 
 
