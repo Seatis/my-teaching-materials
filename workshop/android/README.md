@@ -109,6 +109,7 @@ convertView = LayoutInflater.from(getContext()).inflate(R.layout.message, parent
 TextView username = (TextView) convertView.findViewById(R.id.username);
 username.setText(current.getUsername());
 ```
+- When everything is set up, our convertView is ready to be displayed (as a row of the list), that was our job here, so this is what we need to return.
 
 ### Set it up
 - In your `MainActivity`'s `onCreate` method instantiate a MessageAdapter
