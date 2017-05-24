@@ -19,6 +19,7 @@
  * It should delete any dynamically allocated resource before the program exits.
  */
 
+/* One kind of solution:
 int* range(int from, int to, int step) {
     int place_to_allocate = 0;
 
@@ -35,7 +36,7 @@ int* range(int from, int to, int step) {
     int* ptr;
     ptr = malloc(place_to_allocate * sizeof(*ptr));
 
-    // feltöltés
+    // feltÃ¶ltÃ©s
     int s = 0;
     if (from > to) {
         s = 0;
@@ -53,6 +54,48 @@ int* range(int from, int to, int step) {
 
     return ptr;
 }
+*/
+
+/* Another solution:
+int* range(int from, int to, int step)
+{
+    if(from == to) {
+        return NULL;
+    }
+
+    if(from < to) {
+        int size = 0;
+        int tmp = from;
+        while(tmp < to) {
+            tmp = tmp + step;
+            size++;
+        }
+
+        int *array = (int*) calloc(size, sizeof(int));
+
+        for(int i = 0; i < size; i++) {
+            array[i] = from + step * i;
+        }
+
+        return array;
+    } else {
+        int size = 0;
+        int tmp = from;
+        while(tmp > to) {
+            tmp = tmp + step;
+            size++;
+        }
+
+        int *array = (int*) calloc(size, sizeof(int));
+
+        for(int i = 0; i < size; i++) {
+            array[i] = from + step * i;
+        }
+
+        return array;
+    }
+}
+*/
 
 int main()
 {
