@@ -12,6 +12,7 @@
 #define COMMAND_REMOVE_TODOS    "-r"
 #define COMMAND_CHECK_TODOS     "-c"
 #define COMMAND_ADD_TODOS_PRIO  "-p"
+#define COMMAND_LIST_TODOS_BY_PRIO  "-lp"
 
 char *parser(char *command, char *token, int substring)
 {
@@ -38,8 +39,8 @@ int main()
         // Get command string
         gets(command);
         // Search for command
-        if(strstr(command, COMMAND_LIST_TODOS) != NULL) {
-            list_todo(&storage);
+        if(strstr(command, COMMAND_LIST_TODOS_BY_PRIO) != NULL) {
+            list_todo_by_prio(&storage);
         } else if (strstr(command, COMMAND_ADD_TODOS) != NULL) {
             char todo_name[256];
 
@@ -156,6 +157,10 @@ int main()
 
             if(!error)
                 add_todo(&storage, todo_name, 0, prio);
+        } else if(strstr(command, COMMAND_LIST_TODOS) != NULL) {
+            list_todo(&storage);
+        } else {
+
         }
     }
 

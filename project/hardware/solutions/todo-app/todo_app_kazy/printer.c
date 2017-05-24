@@ -2,6 +2,7 @@
 #include "todo.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 void print_usage()
 {
@@ -87,4 +88,52 @@ void print_error(todoerr_t err)
     default:
         break;
     }
+}
+
+int list_todo_by_prio(struct todostorage *storage)
+{
+    if(storage == NULL)
+        return -1;
+
+    clear_screen();
+    printf("List by number\n");
+    printf("====================\n");
+    printf("Num - Tasks - Prio\n");
+
+    // Search for min and max priority
+    int max_prio = INT_MIN;
+    int min_prio = INT_MAX;
+    for(int i = 0; i < storage->length; i++) {
+        if(storage->array[i].prio > max_prio)
+            max_prio = storage->array[i].prio;
+
+        if(storage->array[i].prio < min_prio)
+            min_prio = storage->array[i].prio;
+    }
+
+    // Allocate space for tmp array
+    struct todo *tmp = (struct todo*)calloc(storage->length, sizeof(struct todo));
+    struct todo *ptr_to_curr_item = tmp;
+
+    // In the tmp array copy the todos in prioirty order from storage
+    for(int curr_prio = max_prio; curr_prio >= min_prio; curr_prio--) {
+        for(int j = 0; j < storage->length; j++) {
+            if(storage->array[j].prio == curr_prio) {
+                *ptr_to_curr_item = storage->array[j];
+                ptr_to_curr_item++;
+            }
+        }
+    }
+
+    // Create a storage
+    struct todostorage tmp_storage;
+    tmp_storage.array = tmp;
+    tmp_storage.length = storage->length;
+
+    // Print the todos
+    list_todo(&tmp_storage);
+
+    // Free memory
+    free(tmp);
+    return 0;
 }

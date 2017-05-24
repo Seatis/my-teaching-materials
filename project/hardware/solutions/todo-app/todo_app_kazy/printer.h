@@ -20,6 +20,7 @@ typedef enum {
 void print_usage();
 void clear_screen();
 int list_todo(struct todostorage *storage);
+int list_todo_by_prio(struct todostorage *storage);
 void print_empty();
 void print_error(todoerr_t err);
 #endif // PRINTER_H_INCLUDED
