@@ -85,6 +85,10 @@ void print_error(todoerr_t err)
     case PRIO_NOT_NUMBER:
         printf("Unable to add task with priority: Index is not a number\n");
         break;
+    case INV_ARGUMENT:
+        print_usage();
+        printf("Unsupported command\n");
+        break;
     default:
         break;
     }

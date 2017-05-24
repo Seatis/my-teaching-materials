@@ -160,7 +160,7 @@ int main()
         } else if(strstr(command, COMMAND_LIST_TODOS) != NULL) {
             list_todo(&storage);
         } else {
-
+            print_error(INV_ARGUMENT);
         }
     }
 

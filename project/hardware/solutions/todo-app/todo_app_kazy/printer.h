@@ -14,7 +14,8 @@ typedef enum {
     CHECK_INV_INDEX,
     CHECK_NOT_NUMBER,
     PRIO_NO_TASK,
-    PRIO_NOT_NUMBER
+    PRIO_NOT_NUMBER,
+    INV_ARGUMENT
 } todoerr_t;
 
 void print_usage();
