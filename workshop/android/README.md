@@ -18,6 +18,7 @@
 ## Material Review
 - Activity
 - Layout
+- View
 - Handling Click events
 - Toast
 - Resources
@@ -47,7 +48,11 @@ We'll create an Android client for our existing p2p chat application step by ste
 [![app design](assets/views/app.png)](assets/views/app.png?raw=true)
 
 - The ListView should be occupying the whole top area
-- If you need more detail on [how layouts work](https://developer.android.com/training/constraint-layout/index.html)
+  - Note that your root layout is called `ConstraintLayout` which arranges the views based on constraints
+  - If there are no constraints the views will be on top of each other in the upper left corner, no matter how the editor displays it
+  - You can easily add automatic constraints for an existing arrangement with the two yellow starz icon ![starz icon](assets/images/starz.png)
+  - Or before doing anything you can enable automatic constraint creation on the flow with the magnet button ![magnet button](assets/images/magnet.png)
+  - If you need more detail on [how layouts work](https://developer.android.com/training/constraint-layout/index.html)
 - In your `MainActivity`'s `onCreate` method instantiate the placed widgets and store them as class fields
   - Don't touch anything that's already there, just do everything after
 - Eg.
