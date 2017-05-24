@@ -109,6 +109,7 @@ convertView = LayoutInflater.from(getContext()).inflate(R.layout.message, parent
 TextView username = (TextView) convertView.findViewById(R.id.username);
 username.setText(current.getUsername());
 ```
+- The same is needed for every other content you want to display (eg. text, date...)
 - When everything is set up, our convertView is ready to be displayed (as a row of the list), that was our job here, so this is what we need to return.
 
 ### Set it up
@@ -170,7 +171,7 @@ Retrofit retrofit = new Retrofit.Builder()
 
 service = retrofit.create(ApiService.class);
 ```
-- At the end of the creating the activity enqueue a get messages request:
+- At the end of creating the activity enqueue a get messages request:
 ```java
 service.getMessages().enqueue(new Callback<MessageResponse>() {
   @Override
@@ -191,7 +192,7 @@ service.getMessages().enqueue(new Callback<MessageResponse>() {
 - And add the actual messages (`adapter.addAll(messages)`)
 
 ### Send the message to the server
-- Change the current behaviour of your OnClickListener on the button
+- Change the current behavior of your OnClickListener on the button
 - Instead of locally adding the message to the adapter
 - Send it with the retrofit service, if the request is successful, add it to the adapter as before
 
