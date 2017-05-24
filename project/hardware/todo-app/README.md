@@ -18,7 +18,6 @@ for this project. Try to make a concept in your head about how you will implemen
 application.
 
 ### Basics (mandatory) tasks
-
 - [Print usage](#print-usage)
 - [Add new task](#add-new-task)
 - [List tasks](#list-tasks)
@@ -26,15 +25,14 @@ application.
 - [Read from file](#read-from-file)
 - [Empty the list](#empty-the-list)
 - [Remove task](#remove-task)
+- [Add task error handling](#add-task-error-handling)
+- [Remove task error handling](#remove-task-error-handling)
 
 ### Advanced tasks
-
 - [Check task](#check-task)
 - [Checked state](#checked-state)
 - [Add priority to a task](#add-priority-to-a-task)
 - [List tasks by priority](#list-tasks-by-priority)
-- [Add task error handling](#add-task-error-handling)
-- [Remove task error handling](#remove-task-error-handling)
 - [Command error handling](#command-error-handling)
 - [Check task error handling](#check-task-error-handling)
 
@@ -96,6 +94,24 @@ Num | Tasks
 - Then it should remove the second item from the list
 - If it is listed it should not show up
 
+### Add task error handling
+- While the application is running and `-a` is entered
+- Thenit should show an error message like: `Unable to add: No task is provided`
+
+### Remove task error handling
+
+1)
+- While the application is running and `-r` is entered
+- Then it should show an error message like: `Unable to remove: No index is provided`
+
+2)
+- While the application is running and `-r 20` is entered
+- Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
+
+3)
+- While the application is running and `-r apple` is entered
+- Then it should show an error message like: `Unable to remove: Index is not a number`
+
 ### Check task
 - While the application is running and `-c 3` is entered
 - Then it should check the third item from the list
@@ -149,27 +165,10 @@ Num | Tasks | Prio
 4 - [ ] Do something
 ```
 
-### Add task error handling
-- While the application is running and `-a` is entered
-- Thenit should show an error message like: `Unable to add: No task is provided`
 
 ### Add priority error handling
 - While the application is running and `-p` is entered
 - Then it should show an error message like: `Unable to add priority: No task is provided`
-
-### Remove task error handling
-
-1)
-- While the application is running and `-r` is entered
-- Then it should show an error message like: `Unable to remove: No index is provided`
-
-2)
-- While the application is running and `-r 20` is entered
-- Then it should show an error message, if there is no todo item on that index, like: `Unable to remove: Index is out of bound`
-
-3)
-- While the application is running and `-r apple` is entered
-- Then it should show an error message like: `Unable to remove: Index is not a number`
 
 ### Command error handling
 
