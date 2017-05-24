@@ -7,4 +7,4 @@
 
 ## Workshop
 - Complete the tasks from the [previous workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/practice/dynmem-pointers-structures)
-- Start the [project of the week](#)
+- Start the [project of the week](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/todo-app)
