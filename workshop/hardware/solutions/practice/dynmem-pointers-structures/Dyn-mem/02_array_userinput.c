@@ -19,7 +19,7 @@ int main()
     int* pointer = (int*)calloc(count, sizeof(int));
 
     for(int i=0; i<count; i++) {
-        printf("please add number: \n", *(pointer+i));
+        printf("please add number: \n");
         scanf("%d", &temp_int);
         sum = sum + temp_int;
     }
