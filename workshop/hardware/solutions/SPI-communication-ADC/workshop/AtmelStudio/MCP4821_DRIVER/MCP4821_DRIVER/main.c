@@ -6,18 +6,18 @@
 #endif
 #include <avr/delay.h>
 
-void SystemInit() {
+void system_init() {
     // Call the DAC driver init function
-    MCP4821_Init();
+    MCP4821_init();
 }
 
 int main(void) {
     // Don't forget to call the init function :)
-    SystemInit();
+    system_init();
 
     // DAC test data
     // gain = 2, data is 0xFFF so the output voltage should be 4.048V
-    MCP4821_Data_t DAC_data;
+    MCP4821_data_t DAC_data;
     DAC_data.start_zero = 0;
     DAC_data.dont_care = 0;
     DAC_data.gain = 0;
@@ -25,11 +25,10 @@ int main(void) {
     DAC_data.data = 0xFFF;
 
     // Send the data structure
-    MCP4821_SendData(&DAC_data);
+    MCP4821_send_data(&DAC_data);
 
     // Infinite loop
     while (1) {
         _delay_ms(250);
     }
 }
-

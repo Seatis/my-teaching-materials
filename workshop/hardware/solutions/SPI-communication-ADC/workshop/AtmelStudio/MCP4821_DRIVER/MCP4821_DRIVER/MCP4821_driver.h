@@ -28,15 +28,15 @@
 // The "data" member will be stored at first in the memory
 // The "shutdown" bit will come after that, and so on
 typedef struct {
-    uint16_t data:12;
-    uint16_t shutdown:1;
-    uint16_t gain:1;
-    uint16_t dont_care:1;
-    uint16_t start_zero:1;
-} MCP4821_Data_t;
+    uint16_t data: 12;
+    uint16_t shutdown: 1;
+    uint16_t gain: 1;
+    uint16_t dont_care: 1;
+    uint16_t start_zero: 1;
+} MCP4821_data_t;
 
-void MCP4821_Init();
-void MCP4821_SendRawData(uint16_t data);
-void MCP4821_SendData(MCP4821_Data_t* data);
+void MCP4821_init();
+void MCP4821_send_raw_data(uint16_t data);
+void MCP4821_send_data(MCP4821_data_t *data);
 
 #endif // _MCP4821_DRIVER_H

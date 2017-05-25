@@ -16,18 +16,18 @@
 #define LED_PORT		PORTB
 #define LED_PORT_POS	PORTB5
 
-void SystemInit() {
+void system_init() {
     // Initialize the LED pin as output
     LED_DDR |= 1 << LED_DDR_POS;
     // Set the LED to off as deafault
     LED_PORT &= ~(1 << LED_PORT_POS);
 
     // Call the DAC driver init function
-    ADC_Init();
+    ADC_init();
 
     // Call the UART driver init function
     // Keep in mind that the UART will run at 115200 baud/sec
-    UART_Init();
+    UART_init();
 
     // Enable interrupts globally, UART uses interrupts
     sei();
@@ -37,14 +37,14 @@ int main(void) {
     uint16_t adc_data;
 
     // Don't forget to call the init function :)
-    SystemInit();
+    system_init();
 
     // Setting up STDIO input and output buffer
     // You don't have to understand this!
     //----- START OF STDIO IO BUFFER SETUP
-    FILE UART_output = FDEV_SETUP_STREAM(UART_SendCharacter, NULL, _FDEV_SETUP_WRITE);
+    FILE UART_output = FDEV_SETUP_STREAM(UART_send_character, NULL, _FDEV_SETUP_WRITE);
     stdout = &UART_output;
-    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_GetCharacter, _FDEV_SETUP_READ);
+    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_get_character, _FDEV_SETUP_READ);
     stdin = &UART_input;
     //----- END OF STDIO IO BUFFER SETUP
 
@@ -54,7 +54,7 @@ int main(void) {
     // Infinite loop
     while (1) {
         // ADC tester code
-        adc_data = ADC_Read();
+        adc_data = ADC_read();
         //printf("%d\r\n", adc_data);
 
         // Send data as a number, not as a string.
@@ -62,7 +62,6 @@ int main(void) {
         // If we want to display the result on the oscilloscope of the Data Visualizer plugin
         // we have to send the result on 8bits. If we shift down 2 times, we will get the top 8
         // bits of the data.
-        UART_SendCharacter(adc_data >> 2);
+        UART_send_character(adc_data >> 2);
     }
 }
-

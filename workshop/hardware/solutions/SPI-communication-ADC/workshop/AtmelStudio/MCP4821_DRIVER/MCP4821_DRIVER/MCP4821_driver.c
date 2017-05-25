@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include "MCP4821_driver.h"
 
-void MCP4821_Init() {
+void MCP4821_init() {
     // TODO:
     // Initialize the SPI related pins. Use the definitions from MCP4821_driver.h!
     SPI_MOSI_DDR |= 1 << SPI_MOSI_DDR_POS;
@@ -16,10 +16,10 @@ void MCP4821_Init() {
 
     // TODO:
     // Set the SPI mode (CPOL and CPHA). Use the definitions from MCP4821_driver.h!
-    if(SPI_CPOL == 1) {
+    if (SPI_CPOL == 1) {
         SPCR |= 1 << CPOL;
     }
-    if(SPI_CPHA == 1) {
+    if (SPI_CPHA == 1) {
         SPCR |= 1 << CPHA;
     }
 
@@ -36,7 +36,7 @@ void MCP4821_Init() {
     SPCR |= 1 << SPE;
 }
 
-void MCP4821_SendRawData(uint16_t data) {
+void MCP4821_send_raw_data(uint16_t data) {
     // TODO:
     // Pull SS low
     SPI_SS_PORT &= ~(1 << SPI_SS_PORT_POS);
@@ -47,7 +47,7 @@ void MCP4821_SendRawData(uint16_t data) {
 
     // TODO:
     // Wait for the end of the transmission
-    while(!(SPSR & (1<<SPIF) ));
+    while (!(SPSR & (1 << SPIF) ));
     // You have to read the SPDR register to clear the SPIF flag after the end of transmission
     volatile uint8_t dummy_variable = SPDR;
 
@@ -57,7 +57,7 @@ void MCP4821_SendRawData(uint16_t data) {
 
     // TODO:
     // Wait for the end of the transmission
-    while(!(SPSR & (1<<SPIF) ));
+    while (!(SPSR & (1 << SPIF) ));
     // You have to read the SPDR register to clear the SPIF flag after the end of transmission
     dummy_variable = SPDR;
 
@@ -66,12 +66,12 @@ void MCP4821_SendRawData(uint16_t data) {
     SPI_SS_PORT |= (1 << SPI_SS_PORT_POS);
 }
 
-void MCP4821_SendData(MCP4821_Data_t* data) {
+void MCP4821_send_data(MCP4821_data_t *data) {
     // TODO:
     // Write this function!
     // Try to convert the data variable to a 16bit number with memcpy()
     // Then use the MCP4821_SendRawData() function to send the data
     uint16_t buffer;
-    memcpy(&buffer, data, sizeof(MCP4821_Data_t));
-    MCP4821_SendRawData(buffer);
+    memcpy(&buffer, data, sizeof(MCP4821_data_t));
+    MCP4821_send_raw_data(buffer);
 }
