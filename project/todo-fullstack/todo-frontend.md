@@ -37,6 +37,7 @@
 ### Create the JS
 - on page load, get all todos from the API
 - when adding a new todo
+	 	- the todo's title needs to be at least 3 charachter long, otherwise the app should throw an error
     - send the todo to the API
     - and also display it in the list for the client (when the response is success)
 - when deleting a todo
