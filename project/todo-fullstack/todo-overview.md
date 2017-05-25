@@ -8,7 +8,7 @@ The project: create a fullstack todo application with database. The app's aim, t
 
 Don't waste too much time with the UI, concentrate on the functionality. The main thing is to practice the client-server communication, sending and receiving proper http requests and building/handling database. In addition, writing tests where they are really needed.
 
-### Specification     
+## Specification     
 [**Frontend**](todo-frontend.md)  
 [**Backend**](todo-backend.md)  
 
