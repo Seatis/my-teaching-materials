@@ -11,9 +11,9 @@ The main goal is to
 
 ## Technology
 
-The backend microservices are Spring Boot applications deployed to Heroku.
-The communication is mostly solved by HTTP calls on REST APIs that invoke web sockets,
-in some cases the channel is offloaded by RabbitMQ message queues.
+The back end microservices are Spring Boot applications deployed to Heroku.
+The communication is mostly solved by HTTP calls on REST APIs that invoke web sockets.
+In some cases the channel is offloaded by RabbitMQ message queues.
 The database layer is using Postgre SQL and JPA.
 The frontend is a multi page application, implemented using
 Angular 4, none of the pages are rendered on the backend side.
