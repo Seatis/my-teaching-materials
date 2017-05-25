@@ -11,7 +11,7 @@ The main goal is to
 
 ## Technology
 
-The back end microservices are Spring Boot applications deployed to Heroku.
+The back end service is a Spring Boot application deployed to Heroku.
 The communication is mostly solved by HTTP calls on REST APIs that invoke web sockets.
 In some cases the channel is offloaded by RabbitMQ message queues.
 The database layer is using Postgre SQL and JPA.
