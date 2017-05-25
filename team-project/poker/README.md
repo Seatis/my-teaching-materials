@@ -13,7 +13,6 @@ The main goal is to
 
 The back end service is a Spring Boot application deployed to Heroku.
 The communication is mostly solved by HTTP calls on REST APIs that invoke web sockets.
-In some cases the channel is offloaded by RabbitMQ message queues.
 The database layer is using Postgre SQL and JPA.
 The frontend is a multi page application, implemented using
 Angular 4, none of the pages are rendered on the backend side.
@@ -25,12 +24,11 @@ During the continous developement process we use test and producation environmen
 ## Main features
 
  - View ongoing games without login
- - Login with OAuth 2 autentication (allows Google and Github autentication)
+ - Login with own autentication and session handling
  - Profile page with personal statistics
  - Main screen with running poker tables
  - Join to an existing table and play poker with others
  - Create a new poker table and wait for others to join the game
- - Fake money payment system
 
 ## Project Teams
  
