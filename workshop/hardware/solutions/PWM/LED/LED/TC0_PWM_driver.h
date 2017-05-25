@@ -4,6 +4,6 @@
 #include <stdint.h>
 
 void TCO_fast_pwm_init();
-void set_duty(uint8_t);
+void TC0_set_duty(uint8_t);
 
 #endif /* TC0_PWM_DRIVER_H_ */
