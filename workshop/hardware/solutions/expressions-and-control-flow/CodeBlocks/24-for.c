@@ -4,14 +4,14 @@
 //ws-24
 //for
 
-int main() {
-    uint8_t ae = 4;
-    int a;
-    // print "yeeeeeeeey" ae times
+int main()
+{
+	uint8_t ae = 4;
+	int a;
+	// print "yeeeeeeeey" ae times
 
-    for(a = 0; a < ae; a++) {
-        printf("yeeeeeey\n");
-    }
+	for (a = 0; a < ae; a++)
+		printf("yeeeeeey\n");
 
-    return 0;
+	return 0;
 }

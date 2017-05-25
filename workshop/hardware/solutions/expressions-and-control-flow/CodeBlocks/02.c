@@ -2,13 +2,14 @@
 
 //ws-o2
 
-int main() {
-    int b = 100;
+int main()
+{
+	int b = 100;
 
-// make it smaller by 7
+	// make it smaller by 7
 
-    printf("%d, \n", b);
-    b -= 7;
-    printf("%d",b);
-    return 0;
+	printf("%d, \n", b);
+	b -= 7;
+	printf("%d", b);
+	return 0;
 }

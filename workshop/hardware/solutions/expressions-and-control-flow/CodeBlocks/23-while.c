@@ -4,15 +4,16 @@
 //ws-23
 //while
 
-int main() {
-    uint8_t ad = 6;
-    int a = 0;
-    // print the numbers till ad from 0
+int main()
+{
+	uint8_t ad = 6;
+	int a = 0;
+	// print the numbers till ad from 0
 
-    while(a <= ad) {
-        printf("%d\n",a);
-        a += 1;
-    }
+	while (a <= ad) {
+		printf("%d\n", a);
+		a++;
+	}
 
-    return 0;
+	return 0;
 }

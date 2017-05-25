@@ -3,13 +3,14 @@
 
 //ws-15
 
-int main() {
-    uint8_t u = 123;
-    printf("%d\n",u);
-    // print 'Hooray!' if the number is bigger than 100
+int main()
+{
+	uint8_t u = 123;
+	printf("%d\n", u);
+	// print 'Hooray!' if the number is bigger than 100
 
-    if(u > 100) {
-        printf("Hooray");
-    }
-    return 0;
+	if (u > 100)
+		printf("Hooray");
+
+	return 0;
 }

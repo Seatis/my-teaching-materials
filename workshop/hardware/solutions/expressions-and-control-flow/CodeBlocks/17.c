@@ -2,17 +2,19 @@
 
 //ws-17
 
-int main() {
-    float w = 24;
-    int out = 0;
-    printf("%f\n", w);
-    printf("%d\n", out);
-    // if w is even increment out by one
+int main()
+{
+	float w = 24;
+	int out = 0;
+	printf("%f\n", w);
+	printf("%d\n", out);
+	// if w is even increment out by one
 
-    if((int)w%2 == 0) {
-        out += 1;
-        printf("%d\n", out);
-    }
+	int wi = w;
+	if (wi % 2 == 0)
+		out += 1;
 
-    return 0;
+	printf("%d\n", out);
+
+	return 0;
 }
