@@ -21,7 +21,7 @@ void UART_init()
 {
 	// See the datasheet on page 246 for hints and table 25-9.
 
-	// At first set the baud rate to 9600
+	// At first set the baud rate to 115200
 	// The CPU clock frequency is 16MHz
 	uint16_t ubbr = 8;
 	UBRR0H = ubbr >> 8;
