@@ -1,8 +1,8 @@
-# Todo app - endpoints
+# Backend API Specification
 
 #### Routes
 
-All routes expects and returns JSON documents.
+All routes expects and returns JSON strings.
 
 ##### `GET /todos`
 
@@ -27,7 +27,7 @@ List all todo items.
         }
     ]
 
-##### `GET /todod/:id`
+##### `GET /todos/:id`
 
 Get a single todo item.
 
@@ -97,7 +97,7 @@ Delete a todo item.
 
 ##### Errors
 
-If a todo item is not found `404` is returned
+If a todo item is not found `404` status code should be set in the response
 
     $ curl localhost:3000/todos/42 -i
     HTTP/1.1 404 Not Found
@@ -108,7 +108,7 @@ If a todo item is not found `404` is returned
     Date: Sat, 09 Jan 2016 18:29:55 GMT
     Connection: keep-alive
 
-##### Frontend
+### Frontend
 
 Connect the application with your frontend, by serving the applications html
 on: `localhost:3000/index.html`
