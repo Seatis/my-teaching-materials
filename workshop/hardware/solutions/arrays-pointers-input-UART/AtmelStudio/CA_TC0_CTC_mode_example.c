@@ -23,7 +23,7 @@ ISR(TIMER0_COMPA_vect)
 	}
 }
 
-void Init()
+void init()
 {
 	// Sat LED pin as output
 	DDRB |= 1 << DDRB5;
@@ -54,11 +54,10 @@ int main(void)
 	/* Replace with your application code */
 
 	// Never forget to call Init function
-	Init();
+	init();
 
 	while (1) {
 		// Toggle LED
 		_delay_ms(500);
 	}
 }
-
