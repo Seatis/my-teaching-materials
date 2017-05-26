@@ -19,54 +19,56 @@
  * It should delete any dynamically allocated resource before the program exits.
  */
 
-int* range(int from, int to, int step) {
-    int place_to_allocate = 0;
+int *range(int from, int to, int step)
+{
+	int place_to_allocate = 0;
 
-    if (from < to) {
-        for (int i = from; i < to; i += step) {
-            ++place_to_allocate;
-        }
-    } else if (from > to) {
-        for (int i = from; i > to; i += step) {
-            ++place_to_allocate;
-        }
-    }
+	if (from < to) {
+		for (int i = from; i < to; i += step)
+			++place_to_allocate;
 
-    int* ptr;
-    ptr = malloc(place_to_allocate * sizeof(*ptr));
+	} else if (from > to) {
+		for (int i = from; i > to; i += step)
+			++place_to_allocate;
 
-    // feltöltés
-    int s = 0;
-    if (from > to) {
-        s = 0;
-        for (int i = 0; i<place_to_allocate, s> to; i++) {
-            ptr[i] = from + s;
-            s += step;
-        }
-    } else {
-        s = 0;
-        for (int i = 0; i < place_to_allocate, s < to; i++) {
-            ptr[i] = from + s;
-            s += step;
-        }
-    }
+	}
 
-    return ptr;
+	int *ptr;
+	ptr = malloc(place_to_allocate * sizeof(*ptr));
+
+	// feltöltés
+	int s = 0;
+	if (from > to) {
+		s = 0;
+		for (int i = 0; i < place_to_allocate && s > to; i++) {
+			ptr[i] = from + s;
+			s += step;
+		}
+	} else {
+		s = 0;
+		for (int i = 0; i < place_to_allocate && s < to; i++) {
+			ptr[i] = from + s;
+			s += step;
+		}
+	}
+
+	return ptr;
 }
 
-int main() {
-    int* array1 = range(0, 10, 2);
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", array1[i]);
-    }
+int main()
+{
+	int *array1 = range(0, 10, 2);
+	for (int i = 0; i < 5; i++)
+		printf("%d\n", array1[i]);
 
-    printf("\n\n");
 
-    int* array2 = range(1, -13, -3);
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", array2[i]);
-    }
-    free(array1);
-    free(array2);
-    return 0;
+	printf("\n\n");
+
+	int *array2 = range(1, -13, -3);
+	for (int i = 0; i < 5; i++)
+		printf("%d\n", array2[i]);
+
+	free(array1);
+	free(array2);
+	return 0;
 }

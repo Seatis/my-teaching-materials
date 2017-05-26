@@ -9,25 +9,25 @@
 int main()
 {
 
-    int count;
-    int sum = 0;
-    int temp_int = 0;
-    printf("please add the value of the count: \n");
-    scanf("%d", &count);
-    printf("%d\n", count);
+	int count;
+	int sum = 0;
+	int temp_int = 0;
 
-    int* pointer = (int*)calloc(count, sizeof(int));
+	printf("please add the value of the count: \n");
+	scanf("%d", &count);
+	printf("%d\n", count);
 
-    for(int i=0; i<count; i++)
-    {
-        printf("please add number: \n", *(pointer+i));
-        scanf("%d", &temp_int);
-        sum = sum + temp_int;
-    }
+	int *pointer = (int *)calloc(count, sizeof(int));
 
-    printf("The average of the numbers :%d", sum/count);
+	for (int i = 0; i < count; i++) {
+		printf("please add number: \n", *(pointer + i));
+		scanf("%d", &temp_int);
+		sum = sum + temp_int;
+	}
 
-    free(*pointer);
+	printf("The average of the numbers: %d", sum / count);
 
-    return 0;
+	free(pointer);
+
+	return 0;
 }
