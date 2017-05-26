@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <string.h>
+
+int palindromeSearch(char* a);
+
+int main()
+{
+   char original_string[100], current_string[100];
+    printf("Enter the string to check if it is a palindrome\n");
+    gets(original_string);
+
+    int i;
+   for(i=0; i<strlen(original_string)-2; i++) {
+        int j;
+        for(j=2; i+j<strlen(original_string); j++) {
+            strncpy(current_string, original_string+i, j+1);
+            //strcpy(current_string, original_string+i);
+            current_string[j+1] = 0;
+            //printf("%s\n", current_string);
+            if(palindromeSearch(current_string)) {
+                printf("%s\n", current_string);
+            }
+        }
+    }
+
+   return 0;
+}
+
+int palindromeSearch(char* a) {
+
+   char b[100];
+    strcpy(b,a);
+    strrev(b);
+
+   if (strcmp(a,b) == 0)
+        return 1;
+    else
+        return 0;
+
+}
