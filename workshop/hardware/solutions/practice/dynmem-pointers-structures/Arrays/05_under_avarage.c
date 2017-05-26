@@ -7,11 +7,11 @@
 
 double avarage(double array[], int length)
 {
-    double avarage = 0;
-    for(int i=0; i<length; i++) {
-        avarage += array[i];
-    }
-    return (avarage/length);
+	double avarage = 0;
+	for (int i = 0; i < length; i++)
+		avarage += array[i];
+
+	return (avarage / length);
 }
 
 // TODO:
@@ -19,13 +19,12 @@ double avarage(double array[], int length)
 // It calculates how much elements are under the avarage, and returns with that.
 int under_avarage(double array[], int length, float avarage)
 {
-    int num_of_under_avarage=0;
-    for(int i=0; i<length; i++) {
-        if(array[i]<avarage) {
-            num_of_under_avarage++;
-        }
-    }
-    return num_of_under_avarage;
+	int num_of_under_avarage = 0;
+	for (int i = 0; i < length; i++) {
+		if (array[i] < avarage)
+			num_of_under_avarage++;
+	}
+	return num_of_under_avarage;
 }
 
 // TODO:
@@ -34,33 +33,33 @@ int under_avarage(double array[], int length, float avarage)
 // It returns a pointer to the new array.
 double *create_array_with_under_avg(double array[], int length, double avg)
 {
-    double *new_array = (double*)calloc(length, sizeof(double));
-    int index=0;
-    for (int i=0; i<length; i++) {
-        if (array[i]<avg) {
-            new_array[index]=array[i];
-            index++;
-        }
-    }
-    return new_array;
+	double *new_array = (double *)calloc(length, sizeof(double));
+	int index = 0;
+	for (int i = 0; i < length; i++) {
+		if (array[i] < avg) {
+			new_array[index] = array[i];
+			index++;
+		}
+	}
+	return new_array;
 }
 
 int main()
 {
-    double array[]={5.0, 3.3, 4.0, 6.6, 7.1};
-    int n = sizeof(array)/sizeof(array[0]);
+	double array[] = {5.0, 3.3, 4.0, 6.6, 7.1};
+	int n = sizeof(array) / sizeof(array[0]);
 
-    float avg = avarage(array, n);
-    printf("%f\n", avg);
+	float avg = avarage(array, n);
+	printf("%f\n", avg);
 
-    int under = under_avarage(array, n, avg);
-    printf("%d", under);
+	int under = under_avarage(array, n, avg);
+	printf("%d", under);
 
-    printf("\nNumbers under the avarage:\n");
-    double *array_under_avg = create_array_with_under_avg(array, n, avg);
-    for(int i=0; i<under; i++) {
-        printf("%f\n", array_under_avg[i]);
-    }
+	printf("\nNumbers under the avarage:\n");
+	double *array_under_avg = create_array_with_under_avg(array, n, avg);
+	for (int i = 0; i < under; i++)
+		printf("%f\n", array_under_avg[i]);
 
-    return 0;
+
+	return 0;
 }
