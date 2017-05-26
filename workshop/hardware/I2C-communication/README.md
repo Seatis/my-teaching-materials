@@ -17,8 +17,6 @@ Read these articles on I2C communication.
 In "Inter-Integrated Circuits – I2C " just get a global
 understanding of the usage of the peripheral.
 
-
-
 | Material | Duration |
 |:---------|-----:|
 | [maxEmbedded - I2C Basics](http://maxembedded.com/2014/02/inter-integrated-circuits-i2c-basics/) | - |
@@ -92,25 +90,24 @@ Also:
 #### Writing driver software
 You are going to write I2C external device handler software. It is useful
 to put all the hardware specific code in a separate .c and .h file, so it can be
-reused in another project just be copying those files.
+reused in another project just by copying those files.
 
 Steps:
-- create a new atmel studio project
+- create a new AtmelStudio project
 - copy the [following files](workshop/AtmelStudio/TC74_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
     - always test the code after you wrote a few lines of code
     - write the needed functions in the following order
-        - `TWIStart(void)`
-        - `TWIWrite(uint8_t u8data)`
-        - `TWIStop(void)`
-        - `TWIReadNACK(void)`
-        - `TWIReadACK(void)`
-        - `TWIInit()`
+        - `TWI_start(void)`
+        - `TWI_write(uint8_t u8data)`
+        - `TWI_stop(void)`
+        - `TWI_read_nack(void)`
+        - `TWI_read_ack(void)`
+        - `TWI_init()`
         - `read_temp(uint8_t u8data)`
 - test the driver with the external ic
-
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
