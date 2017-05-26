@@ -7,7 +7,7 @@
 ## Materials & Resources
 ### Environment
 - Make sure that Atmel Studio is installed on your machine
-- Make sure that Data Visualizer plugin installed in Atmel Studio
+- Make sure that Data Visualizer plugin working correctly in Atmel Studio
 
 ### Training
 
@@ -25,6 +25,8 @@ understanding of the usage of the peripheral.
 | [Easy I2C: Introduction to I2C](https://www.youtube.com/watch?v=qeJN_80CiMU) | 3:50 |
 | [ATmega168PB datasheet](http://www.atmel.com/Images/Atmel-42176-ATmega48PB-88PB-168PB_Datasheet.pdf) | - |
 
+The name TWI was introduced by Atmel and other companies to avoid conflicts with trademark issues related to I2C.
+
 Also read the corresponding pages of the datasheet of ATmega168PB (278-314). OK, little bit long, check the main thing such as communication modes, frame format, registers, pins and wiring:
  - 27.2. Two-Wire Serial Interface Bus Definition
  - 27.3. Data Transfer and Frame Format
@@ -32,7 +34,6 @@ Also read the corresponding pages of the datasheet of ATmega168PB (278-314). OK,
  - 27.6. Using the TWI
     - Figure 27-10. Interfacing the Application to the TWI in a Typical Transmission!!!444!!!
  - 27.7. Transmission Modes
-
  - 27.9. Register Description
 
 ## Material Review
@@ -48,7 +49,10 @@ Also read the corresponding pages of the datasheet of ATmega168PB (278-314). OK,
        - Master Transmitter (MT)
        - Master Receiver (MR)
        - Slave Transmitter (ST)
-       - Slave Receiver (SR)  
+       - Slave Receiver (SR)
+       - Start
+       - Stop
+       - ACK
     - Multiple slaves
 - I2C of ATmega168PB
     - registers
@@ -86,40 +90,27 @@ Also:
 [ATmega168PB Xplained user manual](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
 
 #### Writing driver software
-You are going to write your first external device handler software. It is useful
+You are going to write I2C external device handler software. It is useful
 to put all the hardware specific code in a separate .c and .h file, so it can be
 reused in another project just be copying those files.
 
 Steps:
 - create a new atmel studio project
-- copy the [following files](workshop/AtmelStudio/MC4821_DRIVER) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/TC74_DRIVER) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
     - always test the code after you wrote a few lines of code
     - write the needed functions in the following order
-        - `MCP4821_Init()`
-        - `MCP4821_SendRawData(uint16_t data)`
-        - `MCP4821_SendData(MCP4821_Data_t* data)`
+        - `TWIStart(void)`
+        - `TWIWrite(uint8_t u8data)`
+        - `TWIStop(void)`
+        - `TWIReadNACK(void)`
+        - `TWIReadACK(void)`
+        - `TWIInit()`
+        - `read_temp(uint8_t u8data)`
 - test the driver with the external ic
 
-
-#### Writing driver software
-Like in the previous project we provide you template files.
-
-Steps:
-- create a new atmel studio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
-- overwrite the files if asked
-- add the files to the project
-- write the code where asked (marked with "TODO")
-    - always test the code after you wrote a few lines of code
-    - write the needed functions in the following order
-        - `ADC_Init()`
-        - `ADC_Read()`
-- test the driver with the potentiometer, for example
-    - turn on the LED if the measured voltage is higher than a predefined value or
-    - send the data to your PC via serial port
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)

@@ -21,4 +21,4 @@
 
 ## Output skills
 - understanding how does I2C communication work
-- experience in ATmega168PB I2C usage
+- experience in ATmega168PB TWI usage
