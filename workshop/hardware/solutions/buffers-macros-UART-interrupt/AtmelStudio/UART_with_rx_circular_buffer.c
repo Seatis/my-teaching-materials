@@ -36,7 +36,7 @@ ISR(USART_RX_vect) {
     }
 }
 
-void UART_Init() {
+void UART_init() {
     // Write this function
     // See the datasheet on page 246 for hints and table 25-9.
 
@@ -71,7 +71,7 @@ void UART_Init() {
     sei();
 }
 
-void UART_SendCharacter(char character) {
+void UART_send_character(char character) {
     // Write this function, which can send a character through UART will polling method
     // See page 247 of the datasheet for hints, be aware that the code in the datasheet has a problem :)
 
@@ -84,7 +84,7 @@ void UART_SendCharacter(char character) {
     UDR0 = character;
 }
 
-char UART_GetCharacter() {
+char UART_get_character() {
     //TODO:
     // Wait for data in the circular buffer, this can be detected if the write and read pointers are pointing to the same memory block
     while(rx_circ_buff_read_ptr == rx_circ_buff_write_ptr);
@@ -112,14 +112,14 @@ int main(void) {
     char buffer[255];
 
     //Don't forget to call the init function :)
-    UART_Init();
+    UART_init();
 
     // Setting up STDIO input and output buffer
     // You don't have to understand this!
     //----- START OF STDIO IO BUFFER SETUP
-    FILE UART_output = FDEV_SETUP_STREAM(UART_SendCharacter, NULL, _FDEV_SETUP_WRITE);
+    FILE UART_output = FDEV_SETUP_STREAM(UART_send_character, NULL, _FDEV_SETUP_WRITE);
     stdout = &UART_output;
-    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_GetCharacter, _FDEV_SETUP_READ);
+    FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_get_character, _FDEV_SETUP_READ);
     stdin = &UART_input;
     //----- END OF STDIO IO BUFFER SETUP
 

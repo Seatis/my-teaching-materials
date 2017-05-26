@@ -9,6 +9,6 @@ int main() {
 #ifndef TOTORO
 #error
 #endif
-    printf("Class members: %d", TOTORO);
+    printf("TOTORO is: %d", TOTORO);
     return 0;
 }
