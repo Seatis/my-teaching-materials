@@ -10,13 +10,13 @@ Add two numbers using pointers
 int main()
 {
 
-    int a  = 20;
-    int b = 17;
+	int a  = 20;
+	int b = 17;
 
-    int *ptra = &a;
-    int *ptrb = &b;
+	int *ptra = &a;
+	int *ptrb = &b;
 
-    printf("a+b=%d", *ptra+*ptrb);
+	printf("a+b=%d", *ptra + *ptrb);
 
-    return 0;
+	return 0;
 }

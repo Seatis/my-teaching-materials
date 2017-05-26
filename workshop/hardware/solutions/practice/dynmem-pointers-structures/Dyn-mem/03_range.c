@@ -19,98 +19,98 @@
  * It should delete any dynamically allocated resource before the program exits.
  */
 
-/* One kind of solution:
-int* range(int from, int to, int step) {
-    int place_to_allocate = 0;
-
-    if (from < to) {
-        for (int i = from; i < to; i += step) {
-            ++place_to_allocate;
-        }
-    } else if (from > to) {
-        for (int i = from; i > to; i += step) {
-            ++place_to_allocate;
-        }
-    }
-
-    int* ptr;
-    ptr = malloc(place_to_allocate * sizeof(*ptr));
-
-    // feltöltés
-    int s = 0;
-    if (from > to) {
-        s = 0;
-        for (int i = 0; i<place_to_allocate, s> to; i++) {
-            ptr[i] = from + s;
-            s += step;
-        }
-    } else {
-        s = 0;
-        for (int i = 0; i < place_to_allocate, s < to; i++) {
-            ptr[i] = from + s;
-            s += step;
-        }
-    }
-
-    return ptr;
-}
-*/
-
-/* Another solution:
-int* range(int from, int to, int step)
+/* One kind of solution: */
+int *range(int from, int to, int step)
 {
-    if(from == to) {
-        return NULL;
-    }
+	int place_to_allocate = 0;
 
-    if(from < to) {
-        int size = 0;
-        int tmp = from;
-        while(tmp < to) {
-            tmp = tmp + step;
-            size++;
-        }
+	if (from < to) {
+		for (int i = from; i < to; i += step)
+			++place_to_allocate;
 
-        int *array = (int*) calloc(size, sizeof(int));
+	} else if (from > to) {
+		for (int i = from; i > to; i += step)
+			++place_to_allocate;
 
-        for(int i = 0; i < size; i++) {
-            array[i] = from + step * i;
-        }
+	}
 
-        return array;
-    } else {
-        int size = 0;
-        int tmp = from;
-        while(tmp > to) {
-            tmp = tmp + step;
-            size++;
-        }
+	int *ptr;
+	ptr = malloc(place_to_allocate * sizeof(*ptr));
 
-        int *array = (int*) calloc(size, sizeof(int));
+	// feltöltés
+	int s = 0;
+	if (from > to) {
+		s = 0;
+		for (int i = 0; i < place_to_allocate && s > to; i++) {
+			ptr[i] = from + s;
+			s += step;
+		}
+	} else {
+		s = 0;
+		for (int i = 0; i < place_to_allocate && s < to; i++) {
+			ptr[i] = from + s;
+			s += step;
+		}
+	}
 
-        for(int i = 0; i < size; i++) {
-            array[i] = from + step * i;
-        }
-
-        return array;
-    }
+	return ptr;
 }
-*/
+
+/* Another solution: */
+int *range(int from, int to, int step)
+{
+	if (from == to)
+		return NULL;
+
+
+	if (from < to) {
+		int size = 0;
+		int tmp = from;
+		while (tmp < to) {
+			tmp = tmp + step;
+			size++;
+		}
+
+		int *array = (int *) calloc(size, sizeof(int));
+
+		for (int i = 0; i < size; i++)
+			array[i] = from + step * i;
+
+
+		return array;
+	} else {
+		int size = 0;
+		int tmp = from;
+		while (tmp > to) {
+			tmp = tmp + step;
+			size++;
+		}
+
+		int *array = (int *) calloc(size, sizeof(int));
+
+		for (int i = 0; i < size; i++)
+			array[i] = from + step * i;
+
+
+		return array;
+	}
+}
+
 
 int main()
 {
-    int* array1 = range(0, 10, 2);
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", array1[i]);
-    }
+	int *array1 = range(0, 10, 2);
+	for (int i = 0; i < 5; i++)
+		printf("%d\n", array1[i]);
 
-    printf("\n\n");
 
-    int* array2 = range(1, -13, -3);
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", array2[i]);
-    }
-    free(array1);
-    free(array2);
-    return 0;
+	printf("\n\n");
+
+	int *array2 = range(1, -13, -3);
+	for (int i = 0; i < 5; i++)
+		printf("%d\n", array2[i]);
+
+	free(array1);
+	free(array2);
+	return 0;
 }

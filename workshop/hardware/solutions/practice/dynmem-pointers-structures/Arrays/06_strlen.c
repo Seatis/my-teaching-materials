@@ -8,19 +8,19 @@
 
 int strlen(char *string)
 {
-    int i=0;
-    while(string[i]!='\0') {
-        i++;
-    }
-    return i;
+	int i = 0;
+	while (string[i] != '\0')
+		i++;
+
+	return i;
 }
 
 
 int main()
 {
-    char mystring[] = "hello";
+	char mystring[] = "hello";
 
-    printf("%d", strlen(mystring));
+	printf("%d", strlen(mystring));
 
-    return 0;
+	return 0;
 }
