@@ -9,17 +9,19 @@ The totoro operation does the following on two variables (let's say we have "a"
  and "b")
 result = a*b+(a+b)+a*a*a+b*b*b+3.14159265358979
 */
-void TotoroOperation(float, float);
+void totoro_operation(float, float);
 
-int main() {
+int main()
+{
 
-    float a = 5.00;
-    float b = 4.00;
+	float a = 5.00;
+	float b = 4.00;
 
-    TotoroOperation(a, b);
+	totoro_operation(a, b);
 
-    return 0;
+	return 0;
 }
-void TotoroOperation(float a, float b) {
-    printf("%f", a*b+(a+b)+a*a*a+b*b*b+3.14159265358979);
+void totoro_operation(float a, float b)
+{
+	printf("%f", a * b + (a + b) + a * a * a + b * b * b + 3.14159265358979);
 }

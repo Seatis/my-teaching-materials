@@ -8,19 +8,21 @@
 ------------
 - GREENFOX -
 ------------
-Name this function as "TotoroLogoPrinter" and call it from the main function!*/
+Name this function as "totoro_logo_printer" and call it from the main function!*/
 
-void TotoroLogoPrinter(void);
+void totoro_logo_printer(void);
 
-int main() {
-    TotoroLogoPrinter();
-    return 0;
+int main()
+{
+	totoro_logo_printer();
+	return 0;
 }
 
-void TotoroLogoPrinter() {
-    printf("------------\n");
-    printf("-- TOTORO --\n");
-    printf("------------\n");
-    printf("- GREENFOX -\n");
-    printf("------------\n");
+void totoro_logo_printer()
+{
+	printf("------------\n");
+	printf("-- TOTORO --\n");
+	printf("------------\n");
+	printf("- GREENFOX -\n");
+	printf("------------\n");
 }

@@ -9,33 +9,35 @@ What the hack is a fibonacci number? Search it on wikipedia!
 
 int fib(int);
 
-int main() {
+int main()
+{
 
-    int xth_fib_num = fib(6);
-    printf("%d", xth_fib_num);
+	int xth_fib_num = fib(6);
+	printf("%d", xth_fib_num);
 
-    return 0;
+	return 0;
 }
 
-int fib(int N) {
-    int fibo_n_minus_2 = 0;
-    int fibo_n_minus_1 = 1;
-    int fibo_n = 0;
+int fib(int n)
+{
+	int fibo_n_minus_2 = 0;
+	int fibo_n_minus_1 = 1;
+	int fibo_n = 0;
 
-    if(N < 1) {
-        return -1;
-    } else if(N == 1) {
-        return 0;
-    } else if(N == 2) {
-        return 1;
-    } else {
-        for(int i = 0; i < (N-2); i++) {
-            fibo_n = fibo_n_minus_1 + fibo_n_minus_2;
-            fibo_n_minus_2 = fibo_n_minus_1;
-            fibo_n_minus_1 = fibo_n;
-        }
-        return fibo_n;
-    }
+	if (n < 1) {
+		return -1;
+	} else if (n == 1) {
+		return 0;
+	} else if (n == 2) {
+		return 1;
+	} else {
+		for (int i = 0; i < (n - 2); i++) {
+			fibo_n = fibo_n_minus_1 + fibo_n_minus_2;
+			fibo_n_minus_2 = fibo_n_minus_1;
+			fibo_n_minus_1 = fibo_n;
+		}
+		return fibo_n;
+	}
 }
 
 /* Soltuion with recursion, advanced!
