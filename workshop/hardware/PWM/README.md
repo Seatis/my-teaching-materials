@@ -15,6 +15,7 @@
 |:---------|-----:|
 | [PWM (Pulse Width Modulation) as Fast As Possible](https://www.youtube.com/watch?v=ISzRh5eN_Pg) | 5:16 |
 | [What is PWM? Pulse Width Modulation tutorial!](https://www.youtube.com/watch?v=YmPziPfaByw) | 3:06 |
+| [MOSFETs and How to Use Them AddOhms #11](https://www.youtube.com/watch?v=GrvvkYTW_0k) | 7:45 |
 
 #### PWM in AVR MCUs
 | Material | Duration |
@@ -84,6 +85,12 @@
         - B compare register
     - TIFRn
         - interrupt flag register
+        
+### MOSFET
+  - Why we use those magical things?
+  - Pinout
+  - How do we control them
+  - Signals, and key features
 
 ## Workshop
 ### Dimming a LED in Fast PWM mode
@@ -91,6 +98,8 @@ In this exercise the goal is to change the light intensity of a LED with PWM. Yo
 OC0A pin of the MCU.
 
 Fist connect a LED (with a current limiting resistor) to the ATmega168PB to the OC0A pin!
+
+[ATmega168PB Xplained user manual](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
 
 <img src="img/GF-ATmega168PB-PWM-LED.png" width="50%"></img>
 
