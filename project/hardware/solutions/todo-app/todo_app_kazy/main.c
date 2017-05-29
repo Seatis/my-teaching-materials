@@ -94,14 +94,13 @@ int main()
 				int num = strtol(number, &ptr, 10);
 
 				// Error handling
-				if (ptr == number) {
+				if (ptr == number)
 					print_error(RM_NOT_NUMBER);
-				} else if (num > storage.length || num <= 0) {
+				else if (num > storage.length || num <= 0)
 					print_error(RM_INV_INDEX);
-				} else {
+				else
 					// Remove todo
 					remove_todo(&storage, num);
-				}
 			}
 		} else if (strstr(command, COMMAND_CHECK_TODOS) != NULL) {
 			char number[256];
@@ -119,13 +118,12 @@ int main()
 				int num = strtol(number, &ptr, 10);
 
 				// Error handling
-				if (ptr == number) {
+				if (ptr == number)
 					print_error(CHECK_NOT_NUMBER);
-				} else if (num > storage.length || num <= 0) {
+				else if (num > storage.length || num <= 0)
 					print_error(CHECK_INV_INDEX);
-				} else {
+				else
 					check_todo(&storage, num);
-				}
 			}
 		} else if (strstr(command, COMMAND_ADD_TODOS_PRIO) != NULL) {
 			char todo_name[256];
