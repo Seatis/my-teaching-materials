@@ -3,41 +3,42 @@
 #include <stdint.h>
 #include "TC74_driver.h"
 
-void TWIInit(void)
+void TWI_init(void)
 {
 	// TODO:
 	// Set Prescaler to 4
 
-	
+
 	// TODO:
 	// Set SCL frequency = 11059200 / (16 + 2 * 48 * 4) = 27.648Khz
-	//So set the correct register to 0x30 
-  
-	
+	//So set the correct register to 0x30
+
+
 	// TODO
 	//Enable TWI
 
 }
 
-void TWIStart(void)
+void TWI_start(void)
 {
 	//TODO
 	//Send start signal
 
-	
+
 	// TODO:
 	// Wait for TWINT Flag set. This indicates that
-	//the START condition has been transmitted.
+	//the START condition has been transmitted.
+
 }
 
-void TWIStop(void)
+void TWI_stop(void)
 {
 	//TODO
 	//Send stop signal
 
 }
 
-uint8_t TWIReadACK(void)
+uint8_t TWI_read_ack(void)
 {
 	//TODO
 	//Read byte with ACK
@@ -48,7 +49,7 @@ uint8_t TWIReadACK(void)
 }
 
 
-uint8_t TWIReadNACK(void)
+uint8_t TWI_read_nack(void)
 {
 	//TODO
 	//Read byte with NACK
@@ -58,11 +59,11 @@ uint8_t TWIReadNACK(void)
 
 }
 
-void TWIWrite(uint8_t u8data)
+void TWI_write(uint8_t u8data)
 {
 	//TODO
 	//Load DATA into TWDR Register. Clear TWINT
-	//bit in TWCR to start transmission of data. 
+	//bit in TWCR to start transmission of data.
 	//Wait for TWINT Flag set. This indicates that
 	//the DATA has been transmitted, and ACK/
 	//NACK has been received.
@@ -78,6 +79,6 @@ void TWIWrite(uint8_t u8data)
 
 //TODO Advanced:
 //Calculate the average of the last 16 data, and returns with that.
-//TODO Advanced+: 
+//TODO Advanced+:
 //Select the outstanding (false data) before average it.
 //These data don't needed, mess up your datas, get rid of it.
