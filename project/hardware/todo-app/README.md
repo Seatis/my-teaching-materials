@@ -187,3 +187,6 @@ Num | Tasks | Prio
 3)
 - While the application is running and `-c apple` is entered
 - Then it should show an error message like: `Unable to check: Index is not a number`
+
+## Solution
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/todo-app/todo_app_kazy)
