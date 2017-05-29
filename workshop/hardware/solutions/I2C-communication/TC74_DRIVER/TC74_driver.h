@@ -9,11 +9,11 @@
 #define TC_ADDRESS	0b1001000	//TC74A0 address
 
 uint8_t read_temp (uint8_t address);
-void TWIInit(void);
-void TWIStart(void);
-void TWIWrite(uint8_t u8data);
-void TWIStop(void);
-uint8_t TWIReadNACK(void);
-uint8_t TWIReadACK(void);
+void TWI_init(void);
+void TWI_start(void);
+void TWI_write(uint8_t u8data);
+void TWI_stop(void);
+uint8_t TWI_read_nack(void);
+uint8_t TWI_read_ack(void);
 
 #endif // _TC74_DRIVER_H

@@ -16,26 +16,28 @@
 #define LED_PORT		PORTB
 #define LED_PORT_POS	PORTB5
 
-void SystemInit() {
+void system_init()
+{
 	//TODO
 	// Call the TWI driver init function
-	TWIInit();
+	TWI_init();
 	//TODO
 	//Init the uart
-	UART_Init();
+	UART_init();
 }
 
-int main(void) {
+int main(void)
+{
 
 	// Don't forget to call the init function :)
-	SystemInit();
+	system_init();
 
 	// Setting up STDIO input and output buffer
 	// You don't have to understand this!
 	//----- START OF STDIO IO BUFFER SETUP
-	FILE UART_output = FDEV_SETUP_STREAM(UART_SendCharacter, NULL, _FDEV_SETUP_WRITE);
+	FILE UART_output = FDEV_SETUP_STREAM(UART_send_character, NULL, _FDEV_SETUP_WRITE);
 	stdout = &UART_output;
-	FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_GetCharacter, _FDEV_SETUP_READ);
+	FILE UART_input = FDEV_SETUP_STREAM(NULL, UART_get_character, _FDEV_SETUP_READ);
 	stdin = &UART_input;
 	//----- END OF STDIO IO BUFFER SETUP
 
@@ -51,9 +53,9 @@ int main(void) {
 		//TODO
 		//Advanced: Don't use delay, use timer.
 		_delay_ms(1000);
-		printf("temp: %d [°C]\r\n",read_temp(TC_ADDRESS));
+		printf("temp: %d [°C]\r\n", read_temp(TC_ADDRESS));
 		//TODO
 		//Blink the led to make sure the code is running
-		PINB |= 1 <<LED_PORT_POS;
+		PINB |= 1 << LED_PORT_POS;
 	}
 }
