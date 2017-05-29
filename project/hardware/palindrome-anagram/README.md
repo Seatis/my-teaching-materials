@@ -10,3 +10,6 @@ use the UART (serial port) interface. On your PC use the [RealTerm](https://real
 
 ## Project
 Project details can be found [here](https://github.com/greenfox-academy/teaching-materials/tree/master/project/basics).
+
+## Solution
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/palindrome-anagram)
