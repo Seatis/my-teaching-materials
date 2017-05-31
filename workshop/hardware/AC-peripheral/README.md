@@ -17,7 +17,7 @@ Get a global understanding of the usage of the peripheral.
 
 | Material | Duration |
 |:---------|-----:|
-| [Analogue Comparator Explanation](https://www.youtube.com/watch?v=Xc9hmoGeiLE) | 3:10 |
+| [Analog Comparator Explanation](https://www.youtube.com/watch?v=Xc9hmoGeiLE) | 3:10 |
 | [Comparator](https://www.youtube.com/watch?v=Xc9hmoGeiLE) | - |
 
 Also read the corresponding pages of the datasheet of ATmega168PB (315-321). Check the main things:
@@ -57,44 +57,31 @@ Also read the corresponding pages of the datasheet of ATmega168PB (315-321). Che
 ## Workshop
 ### Analog Comparator
 #### Setting up the hardware
-Make the following connection between the IC and the ATmega168PB Xplained board
+Make the following connection between the reflective opto sensor and the ATmega168PB Xplained board:
 
-| TC74 pin | Pin function | Connect to ATmega168PB pin|
-|-|-|-|
-|1|NC|NC|
-|2|SDA|SDA (PC4)|
-|3|GND|GND (0V)|
-|4|SCLK|SCL (PC5)|
-|5|VDD| VCC |
+<img src="img/GF-ATmega168PB-rotation-measurement.png" width="50%"></img>
 
-Also:
- - don't forget the pull up resistors (external or internal)
-
-[TC74A0 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf)
+[TCRT5000 datasheet](http://www.vishay.com/docs/83760/tcrt5000.pdf)
 
 [ATmega168PB Xplained user manual](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
 
 #### Writing driver software
-You are going to write I2C external device handler software. It is useful
-to put all the hardware specific code in a separate .c and .h file, so it can be
-reused in another project just by copying those files.
+You are going to write a software which can measure time difference between two
+impulses. This can be used to measure frequency.
+It is useful to put all the hardware specific code in a separate .c and .h file, so it can be reused in another project just by copying those files.
 
 Steps:
 - create a new AtmelStudio project
-- copy the [following files](workshop/AtmelStudio/TC74_DRIVER) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
 - write the code where asked (marked with "TODO")
     - always test the code after you wrote a few lines of code
     - write the needed functions in the following order
-        - `TWI_start(void)`
-        - `TWI_write(uint8_t u8data)`
-        - `TWI_stop(void)`
-        - `TWI_read_nack(void)`
-        - `TWI_read_ack(void)`
-        - `TWI_init()`
-        - `read_temp(uint8_t u8data)`
-- test the driver with the external ic
+        - TODO
+        - TODO
+        - TODO
+- test the driver with the FAN
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
