@@ -7,7 +7,6 @@
 ## Materials & Resources
 ### Environment
 - Make sure that Atmel Studio is installed on your machine
-- Make sure that Data Visualizer plugin working correctly in Atmel Studio
 
 ### Training
 
