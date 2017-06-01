@@ -10,4 +10,5 @@ int get_port_name();
 int open_port();
 int close_port();
 int log_data();
+int get_average();
 #endif // PARSER_H_INCLUDED

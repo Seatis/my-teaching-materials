@@ -46,6 +46,12 @@ int main()
             case 'c':
                 close_port();
                 break;
+            case 'r':
+                get_read_file_name();
+                break;
+            case 'a':
+                get_average();
+                break;
             default:
                 break;
             }

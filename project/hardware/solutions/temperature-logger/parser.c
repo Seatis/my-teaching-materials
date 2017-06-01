@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 #include "rs232/rs232.h"
 #include "parser.h"
 #include "printer.h"
@@ -116,5 +117,53 @@ int log_data()
         write_data_to_file(buff);
     }
 
+    return 0;
+}
+
+time_t get_date_from_user()
+{
+    struct tm date;
+    int year, month, day, hour, min, sec;
+    fflush(stdin);
+    int input_count = scanf("%d-%d-%d %d:%d:%d",
+                                  &year,
+                                  &month,
+                                  &day,
+                                  &hour,
+                                  &min,
+                                  &sec);
+    if (input_count != 6)
+        return -1;
+
+    time_t raw_time = time(NULL);
+    date = *localtime(&raw_time);
+    date.tm_year = year - 1900;
+    date.tm_mon = month - 1;
+    date.tm_mday = day;
+    date.tm_hour = hour;
+    date.tm_min = min;
+    date.tm_sec = sec;
+
+    return mktime(&date);
+}
+
+int get_average()
+{
+    printf("Enter period start date (YYYY-MM-DD HH-mm-SS): \t");
+    time_t start = get_date_from_user();
+    if (start < 0) {
+        printf("The entered date is invalid.\n");
+        return -1;
+    }
+
+    printf("Enter period end date (YYYY-MM-DD HH-mm-SS): \t");
+    time_t end = get_date_from_user();
+    if (end < 0) {
+        printf("The entered date is invalid.\n");
+        return -1;
+    }
+
+    float avg = get_average_from_file(start, end);
+    printf("%f\n", avg);
     return 0;
 }
