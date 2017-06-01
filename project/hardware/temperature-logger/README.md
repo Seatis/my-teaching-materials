@@ -2,9 +2,8 @@
 *Create a program on the MCU and on your PC which can communicate with each other*
 
 ## Objectives
- - Read and interpret user stories
  - Create a bigger project
-
+ - Learn how to use the serial port in a PC software
 
 ## Materials & Resources
 
@@ -22,16 +21,20 @@ is used as a gateway between the PC and the temperature sensor.
 The program can take few different commands. Please use the `getch()` function
 to implement them.
 
-### Tasks
+### Basic tasks
 - [Print usage](#print-usage)
-- [Add new task](#add-new-task)
-- [List tasks](#list-tasks)
-- [Write to file](#write-to-file)
-- [Read from file](#read-from-file)
-- [Empty the list](#empty-the-list)
-- [Remove task](#remove-task)
-- [Add task error handling](#add-task-error-handling)
-- [Remove task error handling](#remove-task-error-handling)
+- [Show the command list](#show-the-command-list)
+- [Exit from the program](#exit-from-the-program)
+- [List available ports](#list-available-ports)
+- [Set port name](#set-port-name)
+- [Set write filename](#set-write-filename)
+- [Open port](#open-port)
+- [Start logging / Stop logging](#start-logging-stop-logging)
+- [Close port](#close-port)
+
+### Advanced tasks
+- [Set read filename](#set-read-filename)
+- [Calculate average in given period](#calculate-average-in-given-period)
 
 ### Print usage
  - At application startup the following message should be shown:
@@ -41,6 +44,7 @@ Todo application
 ====================
 Commands:
  h      Show the command list
+ e      Exit from the program
  l      List available ports
  p      Set port name
  w      Set write filename
@@ -54,6 +58,10 @@ Commands:
 ### Show the command list
 - if the user presses the "h" button
 - the program should print out the command list (like at startup)
+
+### Exit from the program
+- if the user presses the "e" button
+- the program exits
 
 ### List available ports
 - if the user presses the "l" button
@@ -83,13 +91,13 @@ Commands:
 - the logfile shold look like this:
 
 ```
-2017-05-31 10:46:22 23.6°C
-2017-05-31 10:46:23 23.7°C
-2017-05-31 10:46:24 23.8°C
-2017-05-31 10:46:25 23.9°C
-2017-05-31 10:46:26 23.2°C
-2017-05-31 10:46:27 23.5°C
-2017-05-31 10:46:28 23.4°C
+2017-05-31 10:46:22     23.6
+2017-05-31 10:46:23     23.7
+2017-05-31 10:46:24     23.8
+2017-05-31 10:46:25     23.9
+2017-05-31 10:46:26     23.2
+2017-05-31 10:46:27     23.5
+2017-05-31 10:46:28     23.4
 ```
 
 ### Close port
