@@ -42,6 +42,7 @@ int open_port()
         return -1;
     }
 
+    close_port(parser_port);
     if (!comOpen(parser_port, BAUD_RATE)) {
         printf("Port can not be opened. Try to set the port again!\n");
         return -1;
