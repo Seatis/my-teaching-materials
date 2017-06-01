@@ -28,6 +28,9 @@ int main()
         case 'w':
             get_write_file_name();
             break;
+        case 'o':
+            open_port();
+            break;
         default:
             break;
         }
