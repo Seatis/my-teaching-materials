@@ -43,6 +43,9 @@ int main()
                     printf("Logging started\n");
                 }
                 break;
+            case 'c':
+                close_port();
+                break;
             default:
                 break;
             }

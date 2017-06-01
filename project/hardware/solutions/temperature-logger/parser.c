@@ -51,6 +51,20 @@ int open_port()
     }
 }
 
+int close_port()
+{
+    clear_screen();
+    if (parser_port < 0) {
+        printf("Port not set!\n");
+        return -1;
+    }
+
+    comClose(parser_port);
+    printf("Port closed.\n");
+    return 0;
+}
+
+
 int get_line_from_port(char *buff, int buff_len)
 {
     if (parser_port < 0) {
