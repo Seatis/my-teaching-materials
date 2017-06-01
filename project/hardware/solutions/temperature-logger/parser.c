@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include "rs232/rs232.h"
 #include "parser.h"
 #include "printer.h"
+
+int parser_port = -1;
 
 int get_port_name()
 {
