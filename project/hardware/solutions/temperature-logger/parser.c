@@ -2,8 +2,11 @@
 #include "rs232/rs232.h"
 #include "parser.h"
 #include "printer.h"
+#include "string.h"
+#include "file.h"
 
 int parser_port = -1;
+
 
 int get_port_name()
 {
@@ -46,4 +49,57 @@ int open_port()
         printf("Port opened successfully!\n");
         return 0;
     }
+}
+
+int get_line_from_port(char *buff, int buff_len)
+{
+    if (parser_port < 0) {
+        printf("Port not set!\n");
+        return -1;
+    }
+
+    // Put data into the
+    char ch;
+    int i = 0;
+    int bytes = comRead(parser_port, &ch, 1);
+    // If there is no data on the port, exit
+    if (bytes <= 0) {
+        return 0;
+    }
+    // This loop will read until a \n character. If the buffer is too small, then
+    // the characters will be discarded after the size limit is reached.
+    while (ch != '\n') {
+        // Check if there is enough space in the buffer
+        if (i < (buff_len - 1)) {
+            // Check if we are not near the end of the line (cr character)
+            if (ch != '\r') {
+                buff[i] = ch;
+                i++;
+            }
+        }
+        while (comRead(parser_port, &ch, 1) == 0);
+    }
+    // Put terminating zero at the end
+    buff[i] = '\0';
+
+    return i;
+}
+
+int log_data()
+{
+    // Check if port set up properly
+    if (parser_port < 0) {
+        printf("Port not set!\n");
+        return -1;
+    }
+
+    // Get a line of data from the port
+    // If there is no data on the port, then do nothing
+    char buff[PORT_BUFFER_LEN];
+    if (get_line_from_port(buff, PORT_BUFFER_LEN) > 0) {
+        // Put the data into the logfile
+        write_data_to_file(buff);
+    }
+
+    return 0;
 }
