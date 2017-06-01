@@ -6,6 +6,7 @@
 
 int main()
 {
+    comEnumerate();
     print_startup_message();
 
     while (1)
@@ -16,8 +17,8 @@ int main()
         case 'h':
             print_startup_message();
             break;
-        case 'h':
-            print_startup_message();
+        case 'l':
+            print_port_list();
             break;
         }
 
@@ -28,5 +29,7 @@ int main()
         }
     }
 
+    comCloseAll();
+    comTerminate();
     return 0;
 }
