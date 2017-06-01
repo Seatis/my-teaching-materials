@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-
-void startup_message()
+#include "printer.h"
+void print_startup_message()
 {
+    clear_screen();
     printf("Todo application\n");
     printf("====================\n");
     printf("Commands:\n");
@@ -15,4 +16,9 @@ void startup_message()
     printf(" c      Close port\n");
     printf(" r      Set read filename\n");
     printf(" a      Calculate average in given period\n");
+}
+
+void clear_screen()
+{
+    system("cls");
 }
