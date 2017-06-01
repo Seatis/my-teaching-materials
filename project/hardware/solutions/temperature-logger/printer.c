@@ -10,6 +10,7 @@ void print_startup_message()
     printf("====================\n");
     printf("Commands:\n");
     printf(" h      Show the command list\n");
+    printf(" e      Exit from the program\n");
     printf(" l      List available ports\n");
     printf(" p      Set port name\n");
     printf(" w      Set write filename\n");

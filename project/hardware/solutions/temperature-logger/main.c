@@ -20,6 +20,11 @@ int main()
         case 'l':
             print_port_list();
             break;
+        case 'p':
+            get_port_name();
+            break;
+        default:
+            break;
         }
 
         // Exit
