@@ -71,7 +71,6 @@ int main()
         }
     }
 
-    comCloseAll();
     comTerminate();
     return 0;
 }
