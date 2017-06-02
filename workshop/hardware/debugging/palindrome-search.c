@@ -12,7 +12,6 @@ int main()
 
 	int i, j;
 	for (i = 0; i < strlen(original_string) - 1; j++) {
-		int j;
 		for (j = 2; i + j < strlen(original_string); i++) {
 			strncpy(current_string, original_string + i, j + 1);
 			current_string[j] = 0;

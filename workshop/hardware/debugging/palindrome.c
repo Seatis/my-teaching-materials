@@ -3,18 +3,18 @@
 #include <string.h>
 #include <conio.h>
 
-void  palindrome(char input[]);
+void  palindrome(char *input);
 
 int main()
 {
-    char input[100];
-    printf("please enter a world: \n");
+	char input[100];
+	printf("please enter a word: \n");
 	scanf("%s", input);
 	palindrome(input[100]);
 	return 0;
 }
 
-void  palindrome(char input[])
+void  palindrome(char input)
 {
 	printf("%s", input);
 	int *number_pointer;
