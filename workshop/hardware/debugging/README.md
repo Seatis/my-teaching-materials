@@ -15,7 +15,6 @@ the problems and correct them?
 - [Palindrome search](workshop/palindrome-search.c)
 - [ToDo app](workshop/todo-app.c)
 
-
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
 
