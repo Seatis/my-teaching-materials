@@ -1,14 +1,77 @@
 # Analog comparator peripheral
-*Learn a new serial communication protocol*
+*TODO*
 
 ## Objectives
-- Learn how AC peripheral works, when use it
+- Learn how to measure the frequency of an analog signal with an MCU
+- Know more about the input capture timer mode
+- Learn how does the AC peripheral works
 
 ## Materials & Resources
 ### Environment
 - Make sure that Atmel Studio is installed on your machine
 
 ### Training
+#### Input capture unit of timers
+Usually MCU timers have an "Input Capture unit".
+
+Take a look at the [ATmega168PB's datasheet](http://www.atmel.com/Images/Atmel-42176-ATmega48PB-88PB-168PB_Datasheet.pdf) at page 170. You can see the TC1 timer's input capture unit. Let's talk about what
+you can see on the diagram!
+
+The timer has an input pin (ICP1), which is connected to an edge detector circuit.
+This edge detector will emit an impulse on it's output if an edge (falling or rising, depending on the value of the ICES bit) is detected on the ICP1 pin. When this impulse is emitted, the value of the 16-bit wide TCNT1 register will be
+copied to the 16-bit wide ICR1 register.
+
+So basically the TC1 timer's counter register value is saved to an another register
+if an edge is detected in the ICP1 pin's signal.
+
+This feature could be very useful, for example you can measure the frequency of a
+signal with it.
+
+#### Measuring frequency with input capture unit
+The basic idea behind this technique is to get a clock signal with a known period, then
+count how many clock period will pass between two edges of the input signal. An
+MCU timer can do the trick, basically it counts the periods of it's input clock frequency.
+If we could save the timer counter register's value on the edge of the input signal, than based on the clock period and the last two register value we could determine the
+signal's period, and with that, the frequency:
+
+signal's period = clock period * (latest register value - previous register value)
+
+signal's frequency = 1 / signal's period
+
+The input capture unit works exactly this way, but in real life there is a problem
+with it: if the counter overflows between two input signal edge, then the difference
+of the register values won't give us the correct result, we have to count the overflows.
+
+Take a look the following diagram as an example. With green you can see the signal
+on the ICP1 pin, it's period is marked with "T". With blue you can see the TC1
+counter register's value as the time passes by, the vertical lines are representing
+the register overflows.
+
+<img src="img/input_capture.png" width="50%"></img>
+
+Let's say that the counter input clock frequency, Tclk is 1us. The T period can be
+calculated if the Tclk and the counter steps between two neighboring rising edges are
+multiplied.
+
+How many counter steps are between the first two rising edges? At the first
+rising edge the counter value is 48544, then the counter overflows twice, then
+the at the next rising edge the counter value is 14563. This can be written like:
+
+steps = (65535 - 48544) + 65535 + 14563 = 2 * 65535 + 14563 - 48544
+
+In general:
+
+steps = overflows * counter_max + latest_counter_value - previous_counter_value
+
+Then the T period can be calculated:
+
+T = Tclk * steps
+
+In this example:
+
+T = 1us * 194177 = 194.177ms
+
+f = 1 / T = 5.15 Hz
 
 #### AC peripheral
 Read these articles on comparators.
