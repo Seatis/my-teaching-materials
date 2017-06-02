@@ -9,28 +9,35 @@ The main goal is to
 - clearly separate back end and front end functionality
 - implement proper APIs and web sockets for back end - front end communication
 
-## Technology
-
-The back end service is a Spring Boot application deployed to Heroku.
-The communication is mostly solved by HTTP calls on REST APIs that invoke web sockets.
-The database layer is using Postgre SQL and JPA.
-The frontend is a multi page application, implemented using
-Angular 4, none of the pages are rendered on the backend side.
-The deploy is solved by codeship on the back end and the front end side as well.
-Each of the applications (both front end and back end) are deployed in a separate
-pipeline. All the tests and stylecheck runs before the deploys.
-During the continous developement process we use test and producation environments.
 
 ## Main features
 
  - View ongoing games without login
- - Login with own autentication and session handling
+ - Registration and Login with own autentication and session handling
  - Profile page with personal statistics
  - Main screen with running poker tables
  - Join to an existing table and play poker with others
  - Create a new poker table and wait for others to join the game
 
+
+## Technology
+
+- Java backend
+	- Spring
+	- relational databases
+	- HTTP request handling with REST APIs
+	- endpoint testing
+- React frontend
+	- multi page
+	- SASS
+- Common
+	- web sockets
+	- multi-environments
+	- deployment with CircleCI
+	- unit testing
+
+
 ## Project Teams
  
- - [Poker frontend team]()
- - [Poker backend team]()
+ - [Poker React frontend team]() | with Tibi
+ - [Poker Java backend team]() | with Kond
