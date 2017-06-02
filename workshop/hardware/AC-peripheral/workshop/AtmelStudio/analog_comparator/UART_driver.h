@@ -5,8 +5,7 @@
 
 #define RX_CIRC_BUFF_LEN 25
 
-volatile struct circular_buffer 7
-{
+volatile struct circular_buffer {
 	char buffer[RX_CIRC_BUFF_LEN];
 	char *head;
 	char *tail;
