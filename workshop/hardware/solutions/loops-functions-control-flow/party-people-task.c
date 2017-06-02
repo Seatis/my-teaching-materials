@@ -15,29 +15,26 @@
 // It should print: Sausage party
 // If no girls are coming, regardless the count of the people
 
-int main(){
+int main()
+{
 
-    int boys_number = 0;
-    int girls_number = 0;
-    printf("Hello first please enter the number of boys: ");
-    scanf("%d", &boys_number);
-    printf("\nNow please enter the number of girls: ");
-    scanf("%d", &girls_number);
+	int boys_number = 0;
+	int girls_number = 0;
+	printf("Hello first please enter the number of boys: ");
+	scanf("%d", &boys_number);
+	printf("\nNow please enter the number of girls: ");
+	scanf("%d", &girls_number);
 
-    if(boys_number+girls_number>20){
-        if(boys_number==girls_number){
-            printf("Excellent party!");
-        }
-        else if(girls_number<1){
-            printf("Sasuge party.");
-        }
-        else{
-            printf("Quite cool party.");
-        }
-    }
-    if(boys_number+girls_number<20){
-        printf("Average party...");
-    }
+	if (boys_number + girls_number > 20) {
+		if (boys_number == girls_number)
+			printf("Excellent party!");
+		else if (girls_number < 1)
+			printf("Sasuge party.");
+		else
+			printf("Quite cool party.");
+	}
+	if (boys_number + girls_number < 20)
+		printf("Average party...");
 
-    return 0;
+	return 0;
 }

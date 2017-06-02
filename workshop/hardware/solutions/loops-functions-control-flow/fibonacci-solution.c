@@ -20,33 +20,30 @@ prints out the "N"th Fibonacci number, where "N" is the user given number.
 Alert the user if he/she entered invalid value.
 */
 
-int FibonacciNumber(int x);
+int fibonacci_number(int x);
 
-int main(){
-    int x = 8;
-    if(x>0){
-        printf("%d\n",FibonacciNumber(x));
-    }
-    else if(x<0){
-        printf("-1");
-    }
-    return 0;
+int main()
+{
+	int x = 8;
+	if (x > 0)
+		printf("%d\n", fibonacci_number(x));
+	else if (x < 0)
+		printf("-1");
+	return 0;
 }
 
-int FibonacciNumber(int x){
-    if(x < 1)
-        return 0;
+int fibonacci_number(int x)
+{
+	if (x < 1)
+		return 0;
 
+	int a = 0;
+	int b = 1;
+	for (int i = 0; i < x; i++) {
+		int temp = a;
+		a = b;
+		b = b + temp;
+	}
 
-    int a = 0;
-    int b = 1;
-    for(int i=0; i<x; i++)
-    {
-        int temp = a;
-        a = b;
-        b = b + temp;
-
-    }
-
-    return a;
+	return a;
 }
