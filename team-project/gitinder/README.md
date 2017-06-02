@@ -5,7 +5,7 @@
 A Tinder-like coder buddy finder application.
 
 
-Two teams work on this project: a back end team and an Android client team.
+Two teams work on this project: a Java back end team and an Android client team.
 
 
 The main goals are to:
@@ -19,7 +19,7 @@ The main goals are to:
 
 - Github authentication
 - coder buddy finder based on:
-  - location
+	- location
 	- language preferences
 	- indentation
 	- code beauty
