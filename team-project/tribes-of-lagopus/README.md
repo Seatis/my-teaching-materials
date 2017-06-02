@@ -35,6 +35,7 @@ The main goals are to:
 	- HTTP request handling with REST APIs
 	- endpoint testing
 - Android client
+	- HTTP request initiating to REST APIs
   - App Components
   - Notifications
   - Component testing
