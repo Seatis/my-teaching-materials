@@ -12,3 +12,6 @@
 - [Party](workshop/party_people_task.c)
 - [Choices](workshop/choice_task.c)
 - [Snake](workshop/snake.c)
+
+## Solution
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/practice/loops-functions-control-flow)
