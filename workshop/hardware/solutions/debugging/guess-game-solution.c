@@ -35,9 +35,9 @@ int main()
 		}
 
 		if (guess > rand_num)
-			printf("Too big, You have %d, lives left\n", x - 3 - count);
+			printf("Too big, You have %d lives left\n", x - 3 - count);
 		else
-			printf("Too low, You have %d, lives left\n", x - 3 - count);
+			printf("Too low, You have %d lives left\n", x - 3 - count);
 
 	}
 
