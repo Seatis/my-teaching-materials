@@ -17,10 +17,10 @@ int main()
 void  palindrome(char input)
 {
 	printf("%s", input);
-	int *number_pointer;
+	int *pointer;
 	int i;
 	for (i = 0; i < strlen(input); i++) {
-		number_pointer = &input[strlen(input) - i - 1];
-		printf("%c", *number_pointer);
+		pointer = &input[strlen(input) - i - 1];
+		printf("%c", *pointer);
 	}
 }
