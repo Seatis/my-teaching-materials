@@ -25,6 +25,7 @@ pipeline. All the tests and stylecheck runs before the deploys.
  - List possible bookings
  - Filtering
  - Rating
+ - Email notifications
  - Availability management
  - Monitoring
  - Trafic analytics
@@ -35,11 +36,11 @@ pipeline. All the tests and stylecheck runs before the deploys.
 
 ## Project Teams
  
- - [Booking and Listing Backend Service]()
- - [Availability and Resource Backend Service]()
- - [Currency and Payment Backend Service]()
- - [Monitoring and Analytics Backend Service]()
- - [User Profile and Authentication Backend Service]()
- - [Image resize and Geo Location Backend Services]()
- - [Booking Frontend]()
- - [Administration Frontend]()
+ - [Booking and Resource Backend Service](booking.md)
+ - [Notification Backend Service](notificatation.md)
+ - [Currency and Payment Backend Service](currency.md)
+ - [Monitoring and Analytics Backend Service](monitoring.md)
+ - [User Profile and Authentication Backend Service](user.md)
+ - [Image resize and Geo Location Backend Services](resize.md)
+ - [Booking Frontend](booking-frontend.md)
+ - [Administration Frontend](admin-frontend.md)
