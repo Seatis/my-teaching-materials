@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <conio.h>
+#include <stdlib.h>
+
+/**
+Discover and understand the working method of this program
+find and fix all the bugs
+*/
 
 struct task {
 	char name[50];
@@ -18,14 +24,14 @@ void tasks_prio();
 void new_task();
 void rm_task(int index_task);
 void complete_task(int index_cmp);
+void clear_screen();
 
 int main()
 {
-
 	start_srceen();
 	char choice = '1';
 
-	while ('1' < choice < '5') {
+	while ('1' <= choice  && choice <= '5') {
 
 		printf("Please enter what you want to do: ");
 		choice = getchar();
@@ -57,17 +63,15 @@ int main()
             scanf("%d", &index_cmp);
             getchar();
             complete_task(index_cmp);
-        } else
-
+        } else {
             printf("Please choose from the given options\n");
-
+        }
     }
-
 		return 0;
 	}
 
-void start_srceen() {
-
+void start_srceen()
+{
     printf("CLI Todo application\n");
     printf("====================\n");
     printf("- to see all the tasks press 1\n");
@@ -79,23 +83,19 @@ void start_srceen() {
 
 }
 
-void see_tasks() {
-
+void see_tasks()
+{
     printf("Num | Tasks\n");
     for (int i = 0; i < num_tasks; i++) {
         if (tasks[i].done)
-
             printf("%d [x] - %s\n", i + 1, tasks[i].name);
-
         else
-
             printf("%d [ ] - %s\n", i + 1, tasks[i].name);
-
     }
 }
 
-void tasks_prio() {
-
+void tasks_prio()
+{
     printf("Prio | Tasks\n");
     for (int j = 5; j > 0; j-- ) {
         for (int i = 0; i < num_tasks; i++) {
@@ -105,10 +105,10 @@ void tasks_prio() {
     }
 }
 
-void new_task() {
-
+void new_task()
+{
     printf("Enter the name of the task: \n");
-    gets(&tasks[num_tasks].name);
+    gets(tasks[num_tasks].name);
     printf("Enter the priority of the task: \n");
     scanf("%d", &tasks[num_tasks].prio);
     getchar();
@@ -117,8 +117,8 @@ void new_task() {
 
 }
 
-void rm_task(int index_task) {
-
+void rm_task(int index_task)
+{
     num_tasks--;
     for (int i = index_task - 1; i < num_tasks; i++) {
         strcpy(tasks[i].name, tasks[i + 1].name);
@@ -128,12 +128,13 @@ void rm_task(int index_task) {
 
 }
 
-void complete_task(int index_cmp) {
-
+void complete_task(int index_cmp)
+{
     tasks[index_cmp - 1].done = 1;
     start_srceen();
 }
 
-void clear_screen() {
+void clear_screen()
+{
     system("cls");
 }
