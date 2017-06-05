@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void printf_numbers(int from, int to)
+void printf_numbers(unsigned int from, unsigned int to)
 {
-	for (int i = from; i < to; i++)
+	for (unsigned int i = from; i < to; i++)
 		printf("%u,", i);
 }
 
 int main()
 {
-	printf_numbers(21474836, 21474846);
+	printf_numbers(2147483600, 2147484600);
 	return 0;
 }
