@@ -37,7 +37,7 @@ pipeline. All the tests and stylecheck runs before the deploys.
 ## Project Teams
  
  - [Booking and Resource Backend Service](booking.md)
- - [Notification Backend Service](notificatation.md)
+ - [Notification Backend Service](notification.md)
  - [Currency and Payment Backend Service](currency.md)
  - [Monitoring and Analytics Backend Service](monitoring.md)
  - [User Profile and Authentication Backend Service](user.md)
