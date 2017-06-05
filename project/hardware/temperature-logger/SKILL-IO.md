@@ -1,0 +1,23 @@
+# Input skills
+- basic GIT knowledge
+- basic electronics knowledge
+    - voltage
+    - current
+    - resistor
+- experience in binary, hexadecimal, decimal number conversion
+- knowledge of ATmega168PB architecture
+    - GPIO
+    - interrupts
+    - UART polling usage
+	- UART interrupt usage
+    - I2C peripheral
+- TC74A0 I2C temperature sensor usage
+- knowledge of C
+    - expressions and control flow
+    - functions
+    - arrays and pointers
+    - user input handling
+    - buffering techniques
+    - preprocessor macros
+    - data structures
+    - custom data types
