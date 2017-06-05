@@ -16,13 +16,13 @@ int main()
 	fflush(stdin);
 	scanf("%f", &result);
 
-    // Never compare two float or double variable with ==
-    // Instead check if the variable is in a range
-    float result_calc = pow(number, 2);
-    float range_min = result_calc * (1 - FLOAT_COMPARE_CONST);
-    float range_max = result_calc * (1 + FLOAT_COMPARE_CONST);
+	// Never compare two float or double variable with ==
+	// Instead check if the variable is in a range
+	float result_calc = pow(number, 2);
+	float range_min = result_calc * (1 - FLOAT_COMPARE_CONST);
+	float range_max = result_calc * (1 + FLOAT_COMPARE_CONST);
 
-    if (result > range_min && result < range_max)
+	if (result > range_min && result < range_max)
 		printf(":)\n");
 	else
 		printf(":(\n");
