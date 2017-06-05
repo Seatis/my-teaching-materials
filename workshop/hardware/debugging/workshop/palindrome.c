@@ -3,7 +3,7 @@
 #include <string.h>
 #include <conio.h>
 
-void  palindrome(char *input);
+void  palindrome(char input);
 
 int main()
 {
