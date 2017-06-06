@@ -1,5 +1,5 @@
 # Analog comparator peripheral
-*TODO*
+*Measure the rotation speed of a DC fan*
 
 ## Objectives
 - Learn how to measure the frequency of an analog signal with an MCU
@@ -41,20 +41,18 @@ The input capture unit works exactly this way, but in real life there is a probl
 with it: if the counter overflows between two input signal edge, then the difference
 of the register values won't give us the correct result, we have to count the overflows.
 
-Take a look the following diagram as an example. With green you can see the signal
+Take a look at the following diagram as an example. With green you can see the signal
 on the ICP1 pin, it's period is marked with "T". With blue you can see the TC1
-counter register's value as the time passes by, the vertical lines are representing
-the register overflows.
+counter register's value as the time passes by.
 
 <img src="img/input_capture.png" width="50%"></img>
 
 Let's say that the counter input clock frequency, Tclk is 1us. The T period can be
-calculated if the Tclk and the counter steps between two neighboring rising edges are
-multiplied.
+calculated by multiplying the Tclk and the counter steps (between two neighboring rising edges).
 
 How many counter steps are between the first two rising edges? At the first
 rising edge the counter value is 48544, then the counter overflows twice, then
-the at the next rising edge the counter value is 14563. This can be written like:
+at the next rising edge the counter value is 14563. This can be written like:
 
 steps = (65535 - 48544) + 65535 + 14563 = 2 * 65535 + 14563 - 48544
 
@@ -75,8 +73,11 @@ f = 1 / T = 5.15 Hz
 #### Reflective optical sensor
 Our goal during the workshop to measure the rotational speed of a DC fan.
 We are going to use a reflective optical sensor, the [TCRT5000](http://www.vishay.com/docs/83760/tcrt5000.pdf). It has two main components:
-a LED which emits infrared light, and a phototransistor, which is basically an
-infrared light controlled switch. If the light coming from the LED reflects to
+- a LED which emits infrared light
+- a phototransistor, which is basically an
+infrared light controlled switch
+
+If the light coming from the LED reflects to
 the phototransistor, the transistor will turn on.
 
 Please spend about 5 minutes with reading it's datasheet to get a global understanding of this device.
@@ -214,6 +215,13 @@ Steps:
         - tick "Use vprintf library"
         - save the settings with Ctrl+S
 - write the code :)
+
+```c_cpp
+while (1) {
+    if (need_help)
+        ask_mentor();
+}
+```
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
