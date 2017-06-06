@@ -4,8 +4,10 @@ Learn how we can use Git for working in teams
 ### Training
 | Material | Time |
 |:---------|-----:|
-| [Learn Git Branching](http://learngitbranching.js.org/) | ? |
-
+|[Learn Git Branching](http://learngitbranching.js.org/) | play with the modules 2/3 |
+|[GIT Branching](https://www.youtube.com/watch?v=a6D-9MIdWKk)|6:32|
+|[Working with Branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)|6:36|
+|[Pull requests](https://www.youtube.com/watch?v=FQsBmnZvBdc)|5:58|
 
 ## Workshop for Teams
 ### Do this as a Team in a group
