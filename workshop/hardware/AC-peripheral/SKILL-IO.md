@@ -20,5 +20,6 @@
     - custom data types
 
 ## Output skills
-- understanding how does I2C communication work
-- experience in ATmega168PB TWI usage
+- understanding analog comparators
+- knowledge of hysteresis
+- experience in ATmega168PB TC1 input capture unit 
