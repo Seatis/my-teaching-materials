@@ -7,11 +7,11 @@
 
 volatile struct circular_buffer 7
 {
-	char buffer[RX_CIRC_BUFF_LEN];
-	char *head;
-	char *tail;
-	char *write_ptr;
-	char *read_ptr;
+	volatile char buffer[RX_CIRC_BUFF_LEN];
+	volatile char *head;
+	volatile char *tail;
+	volatile char *write_ptr;
+	volatile char *read_ptr;
 } rx_buffer;
 
 void UART_init();
