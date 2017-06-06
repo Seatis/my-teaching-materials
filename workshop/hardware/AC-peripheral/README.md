@@ -152,12 +152,30 @@ Whit this you connected the LED pin to the ICP1 pin.
 The goal is to write a program, which can measure a digital signal's frequency, which
 is connected to the ICP1 pin (PD6). You should use the TC1 timer's input capture unit!
 
-Steps:
 - create a new AtmelStudio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/freq-measurement) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
-- write the code where asked (marked with "TODO")
+- set up the compiler to compile printf with floating point support
+    - in the solution explorer
+        - right click on "Libraries"
+        - click on "Add library"
+        - in the opened windows tick "libprintf_flt"
+        - click on the "OK" button
+    - in the Project->Properties window
+        - click on "Toolchain"
+        - search for "AVR/GNU linker"
+        - click on "General"
+        - tick "Use vprintf library"
+        - save the settings with Ctrl+S
+- write the code :)
+
+```c_cpp
+while (1) {
+    if (need_help)
+        ask_mentor();
+}
+```
 
 ## RPM measurement
 ### Setting up the hardware
@@ -170,22 +188,32 @@ Make the following connection between the reflective opto sensor and the ATmega1
 [ATmega168PB Xplained user manual](http://www.atmel.com/Images/Atmel-42381-ATmega168PB-Xplained-Mini_UserGuide.pdf)
 
 #### Writing driver software
-You are going to write a software which can measure time difference between two
-impulses. This can be used to measure frequency.
-It is useful to put all the hardware specific code in a separate .c and .h file, so it can be reused in another project just by copying those files.
+The goal is to write a software (based on the frequency measurement program),
+which can measure the RPM of a DC fan. The reflective optical sensor gives out
+an analog periodic voltage, which frequency is proportional to the rotation speed
+of the fan.
+
+To do this, we convert this analog signal to a digital signal, which can trigger
+an input capture event in the TC1 timer.
 
 Steps:
 - create a new AtmelStudio project
-- copy the [following files](#) to the project folder (next to the automatically generated main.c file)
+- copy the [following files](workshop/AtmelStudio/rpm-measurement) to the project folder (next to the automatically generated main.c file)
 - overwrite the files if asked
 - add the files to the project
-- write the code where asked (marked with "TODO")
-    - always test the code after you wrote a few lines of code
-    - write the needed functions in the following order
-        - TODO
-        - TODO
-        - TODO
-- test the driver with the FAN
+- set up the compiler to compile printf with floating point support
+    - in the solution explorer
+        - right click on "Libraries"
+        - click on "Add library"
+        - in the opened windows tick "libprintf_flt"
+        - click on the "OK" button
+    - in the Project->Properties window
+        - click on "Toolchain"
+        - search for "AVR/GNU linker"
+        - click on "General"
+        - tick "Use vprintf library"
+        - save the settings with Ctrl+S
+- write the code :)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
