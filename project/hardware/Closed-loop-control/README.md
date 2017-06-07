@@ -28,7 +28,6 @@ This program will be control the fan speed, first with open loop control, at the
 - [Open loop control](#Open loop control)
 - [Closed loop control, P](#Closed loop control, P)
 - [Closed loop control, PI](#Closed loop control, PI)
-- [Connect all the thing](#Connect all the thing)
 
 ### Advanced tasks
 - [Set read filename](#set-read-filename)
@@ -46,17 +45,24 @@ Just make it work:
 All the hardware (fan, potentiometer, AC, resistors, capacitors, the FET, the wiring) and all the codes, librarys need to be tested and together in one big project.
 
 ### Open loop control
- Just make it work:
-  - The serial port
-  - Read and print out the ADC value
-  - Set up and validate the PWM peripheral
-  - Set up and validate the AC peripheral, measure the fan speed, print it out
-  These peripherals need to be together in one project.
+Let's use multiple peripherals with each other. It will be an open loop "controller"
+  - Read the ADC value and set a PWM signal according to it. So, if in the ADC is 5V set 100% PWM duty, if the ADC 0V set 0% PWM duty.
+  - Print out the PWM duty cycle and the measured PRM of the ventilator.
 
+  Why is it bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning, if it's turning, so it' not really CONTROL the hole progress, it just set the PWM and something will be happen. No feedback from the ventilator is used.
+
+### Closed loop control, P
+
+Let's use the feedback from the ventilator. It will be a proportional controller, it will regulate the PWM according to the measured RPM.
+
+So:
+- Read the ADC value, it will be the setpoint (SP)
+- The process variable (PV) will be the measured RPM
+- Calculate the error (SP-PV)
+- Calculate the output value with the proportional gain (P)
+- Advanced: Make the Kp adjustable via UART
 
 ### Connect all the thing
-
-<img src="img/connect-all-the-things.jpg" width="50%"></img>
 
 
 ## Solution
