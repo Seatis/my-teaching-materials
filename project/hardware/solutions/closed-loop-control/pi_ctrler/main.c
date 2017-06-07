@@ -3,6 +3,7 @@
 #include "AC_driver.h"
 #include "TC2_PWM_driver.h"
 #include "ADC_driver.h"
+#include "control.h"
 #include <avr/io.h>
 #include <stdio.h>
 #include <avr/interrupt.h>
@@ -49,37 +50,23 @@ int main(void)
 	// Try printf
 	printf("Startup...\r\n");
 
-	float ref = 2500;
-	float P = 0.05;
-	float I = 0.02;
-	float integ = 0;
+	volatile float rpm = 0;
+	volatile uint16_t averages = 0;
+	volatile const uint16_t averages_max = 20;
 
 	// Infinite loop
 	while (1) {
-		// Generating an about 1Hz signal on the LED pin.
-		// The printf call will also take some time, so this won't be exactly 1Hz.
-		LED_PORT |= 1 << LED_PORT_POS;
-		_delay_ms(50);
-		LED_PORT &= ~(1 << LED_PORT_POS);
-		_delay_ms(50);
-
-		float rpm = get_rpm();
-		float err = ref - rpm;
-		integ += err;
-		float duty = err * P + integ * I;
-
-		if (duty < 0) {
-			integ -= err;
-			duty = 0;
+		if (averages < averages_max) {
+			rpm = rpm + get_rpm();
+			averages++;
+		} else {
+			LED_PIN |= 1 << LED_PIN_POS;
+			rpm = rpm / averages;
+			float ref_rpm = (float)ADC_read() / ADC_DATA_MAX * 4500;
+			pi_control(ref_rpm, rpm);
+			averages = 0;
+			rpm = 0;
 		}
-		if (duty > 100) {
-			integ -= err;
-			duty = 100;
-		}
-
-
-		TC2_set_duty(duty);
-		printf("%f \%\r\n", duty);
-		printf("%f RPM\r\n", rpm);
+		_delay_ms(1);
 	}
 }
