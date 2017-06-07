@@ -1,121 +1,63 @@
-# Temperature logger
-*Create a program on the MCU and on your PC which can communicate with each other*
+# Closed loop control
+*Create a program on the MCU which can control the fan speed*
 
 ## Objectives
  - Create a bigger project
- - Learn how to use the serial port in a PC software
+ - Get familiar with control loops
 
 ## Materials & Resources
 
-- [time.h](http://www.cplusplus.com/reference/ctime/)
-- [RS232 library](https://github.com/Marzac/rs232)
+- [Proportional control](https://en.wikipedia.org/wiki/Proportional_control)
+- [RS232 library](https://www.youtube.com/watch?v=4jgBy1aOltU&t=11s) video
+
+### Advanced Control loops
+- [The PID controller](https://en.wikipedia.org/wiki/PID_controller)
+- [Calculate average in given period](#calculate-average-in-given-period)
+https://www.youtube.com/watch?v=WsUau1GTNF0
 
 ## Workshop
-This project is based on the [I2C workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/I2C-communication).
+This project is based on the [PWM](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/PWM), [AC-peripheral](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/AC-peripheral) and a litle bit on [ADC workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/SPI-communication-ADC).
 
-A program should be written which can log temperature data on a PC. The ATmega168PB Xplained board
-is used as a gateway between the PC and the temperature sensor.
+This program will be control the fan speed, first with open loop control, at the end of the project with closed loop control. The speed need to be measured as we did in the AC workshop, the required speed need to be adjusted with a potentiometer and measured with the ADC.
+
 
 <img src="img/GF-ATmega168PB-TempLogger.png" width="50%"></img>
 
-The program can take few different commands. Please use the `getch()` function
-to implement them.
-
 ### Basic tasks
-- [Print usage](#print-usage)
-- [Show the command list](#show-the-command-list)
-- [Exit from the program](#exit-from-the-program)
-- [List available ports](#list-available-ports)
-- [Set port name](#set-port-name)
-- [Set write filename](#set-write-filename)
-- [Open port](#open-port)
-- [Start logging / Stop logging](#start-logging-stop-logging)
-- [Close port](#close-port)
+- [Make it work](#Make it work)
+- [Open loop control](#Open loop control)
+- [Closed loop control, P](#Closed loop control, P)
+- [Closed loop control, PI](#Closed loop control, PI)
+- [Connect all the thing](#Connect all the thing)
 
 ### Advanced tasks
 - [Set read filename](#set-read-filename)
 - [Calculate average in given period](#calculate-average-in-given-period)
 
-### Print usage
- - At application startup the following message should be shown:
+### Make it work
+Just make it work:
+ - The serial port
+ - Read and print out the ADC value
+ - Set up and validate the PWM peripheral
+ - Set up and validate the AC peripheral, measure the fan speed, print it out
 
-```
-Todo application
-====================
-Commands:
- h      Show the command list
- e      Exit from the program
- l      List available ports
- p      Set port name
- w      Set write filename
- o      Open port
- s      Start logging / Stop logging
- c      Close port
- r      Set read filename
- a      Calculate average in given period
- ```
+<img src="img/connect-all-the-things.jpg" width="25%"></img>
 
-### Show the command list
-- if the user presses the "h" button
-- the program should print out the command list (like at startup)
+All the hardware (fan, potentiometer, AC, resistors, capacitors, the FET, the wiring) and all the codes, librarys need to be tested and together in one big project.
 
-### Exit from the program
-- if the user presses the "e" button
-- the program exits
+### Open loop control
+ Just make it work:
+  - The serial port
+  - Read and print out the ADC value
+  - Set up and validate the PWM peripheral
+  - Set up and validate the AC peripheral, measure the fan speed, print it out
+  These peripherals need to be together in one project.
 
-### List available ports
-- if the user presses the "l" button
-- the program should list out the available serial ports
 
-### Set port name
-- if the user presses the "p" button
-- the program should ask the user to enter a port name
-- the user input errors should be handled
+### Connect all the thing
 
-### Set write filename
-- if the user presses the "w" button
-- the program should ask the user to enter a file name
-- this file will be used as the log file
-- the user input errors should be handled
+<img src="img/connect-all-the-things.jpg" width="50%"></img>
 
-### Open port
-- if the user presses the "o" button
-- the program should open the previously set COM port
-- the errors should be handled
-
-### Start logging / Stop logging
-- if the user presses the "s" button
-- the program should start logging from the opened port into the set write file
-- if the program is already logging, then the logging should be stopped
-- the errors should be handled
-- the logfile shold look like this:
-
-```
-2017-05-31 10:46:22     23.6
-2017-05-31 10:46:23     23.7
-2017-05-31 10:46:24     23.8
-2017-05-31 10:46:25     23.9
-2017-05-31 10:46:26     23.2
-2017-05-31 10:46:27     23.5
-2017-05-31 10:46:28     23.4
-```
-
-### Close port
-- if the user presses the "c" button
-- the program should close the opened port
-- the errors should be handled
-
-### Set read filename
-- if the user presses the "r" button
-- the program should ask the user to enter a file name
-- this file will be used as the input file for the average calculation
-- the user input errors should be handled
-
-### Calculate average in given period
-- if the user presses the "a" button
-- the program should ask the user to enter a date period
-- the program then reads data from the read file and calculates the average temperature in the given period
-- the errors should be handled
 
 ## Solution
 [Solution](#)
