@@ -41,7 +41,7 @@ Let's say we have the following variables:
 |:---------|:-----|
 | ```ref``` | the reference input |
 | ```ctrler_out``` | the output of the controller |
-| ```sensor_value``` | the output signal of the hardware, which is measured by a sensor |
+| ```process_variable``` | the output signal of the hardware, which is measured by a sensor |
 | ```ctrler_out_min``` | the minimum output of the controller |
 | ```ctrler_out_max``` | the maximum output of the controller |
 | ```P``` | the P constant |
@@ -54,7 +54,7 @@ We have to limit the output to these levels.
 
 The pseudocode of a P controller would look like:
 ```c_cpp
-err = ref - sensor_value;
+err = ref - process_variable;
 ctrler_out = P * err;
 
 if (ctrler_out < ctrler_out_min)
@@ -73,9 +73,9 @@ Let's say we have the following variables:
 
 | variable name | functionality |
 |:---------|:-----|
-| ```ref``` | the reference input |
+| ```ref``` | the reference input, or setpoint |
 | ```ctrler_out``` | the output of the controller |
-| ```sensor_value``` | the output signal of the hardware, which is measured by a sensor |
+| ```process_variable``` | the output signal of the hardware, which is measured by a sensor |
 | ```ctrler_out_min``` | the minimum output of the controller |
 | ```ctrler_out_max``` | the maximum output of the controller |
 | ```P``` | the P constant |
@@ -97,7 +97,7 @@ In case of limiting, the integral part has to be decreased by the error to avoid
 
 The pseudocode of a PI controller would look like:
 ```c_cpp
-err = ref - sensor_value;
+err = ref - process_variable;
 integral = integral + err;
 ctrler_out = P * err + I * integral;
 
@@ -136,7 +136,7 @@ The rotational speed need to be measured, as we did in the AC workshop.
 <img src="img/connect-all-the-things.jpg" width="25%"></img>
 <img src="img/GF-ATmega168PB-controller.png" width="60%"></img>
 
-From the previous workshops cope the necessary driver files and put them together.
+From the previous workshops copy the necessary driver files and put them together.
 Make sure that the follwing features are working:
 - You can send float values through UART
 - You can read the voltage of the R8 potentiometer
@@ -152,13 +152,12 @@ the register and bit names in the TC0 driver to get the TC2 driver.
 
 ### Open loop control
 Let's use multiple peripherals with each other. It will be an open loop "controller"
-  - Read the ADC value and set a PWM signal according to it. So, if in the ADC is 5V set 100% PWM duty, if the ADC 0V set 0% PWM duty.
-  - Print out the PWM duty cycle and the measured PRM of the ventilator.
+- Read the ADC value and set a PWM signal according to it. So, if in the ADC is 5V set 100% PWM duty, if the ADC 0V set 0% PWM duty.
+- Print out the PWM duty cycle and the measured PRM of the ventilator.
 
-  Why is it bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning, if it's turning, so it' not really CONTROL the hole progress, it just set the PWM and something will be happen. No feedback from the ventilator is used.
+Why is it bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning, if it's turning, so it' not really CONTROL the hole progress, it just set the PWM and something will happen. No feedback from the ventilator is used.
 
 ### Closed loop control, P
-
 Let's use the feedback from the ventilator. It will be a proportional controller, it will regulate the PWM according to the measured RPM.
 
 So:
