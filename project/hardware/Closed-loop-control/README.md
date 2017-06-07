@@ -127,17 +127,17 @@ The rotational speed need to be measured, as we did in the AC workshop.
 - [Closed loop control, P](#Closed loop control, P)
 - [Closed loop control, PI](#Closed loop control, PI)
 
-### Advanced tasks
-- [Set read filename](#set-read-filename)
-- [Calculate average in given period](#calculate-average-in-given-period)
+### Advanced
+- [Advanced tasks](#Advanced tasks)
 
 ### Make it work
 
 <img src="img/connect-all-the-things.jpg" width="25%"></img>
-<img src="img/GF-ATmega168PB-controller.png" width="60%"></img>
+
+<img src="img/GF-ATmega168PB-controller.png" width="100%"></img>
 
 From the previous workshops copy the necessary driver files and put them together.
-Make sure that the follwing features are working:
+Make sure that the following features are working:
 - You can send float values through UART
 - You can read the voltage of the R8 potentiometer
 - You can measure the RPM of the FAN
@@ -145,7 +145,7 @@ Make sure that the follwing features are working:
 
 Whit the last one you will probably have a problem. During the PWM workshop we
 used the TC0 timer to generate PWM signal on the PD6 pin. This time we could not
-use the PD6 pin as the PWM output because the comparator potitive input is on that pin.
+use the PD6 pin as the PWM output because the comparator positive input is on that pin.
 The solution to that problem is to use the TC2 timer as the PWM signal generator.
 Don't be afraid! The TC0 and TC2 timers are very similar, you just have to change
 the register and bit names in the TC0 driver to get the TC2 driver.
@@ -165,10 +165,14 @@ So:
 - The process variable (PV) will be the measured RPM
 - Calculate the error (SP-PV)
 - Calculate the output value with the proportional gain (P)
-- Advanced: Make the P adjustable via UART
 
-### Connect all the thing
+### Closed loop control, PI
+ - Use the pseudocode to pimp your controller
+ - Play with the P, I values (a lot)
 
+### Advanced tasks:
+ - Make the P, I values adjustable via UART, play with it
+- Use Atmel studio data visualiser tool to visualise the controlling parameters
 
 ## Solution
 [Solution](#)
