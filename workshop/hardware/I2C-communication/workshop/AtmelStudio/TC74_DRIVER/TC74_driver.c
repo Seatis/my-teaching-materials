@@ -10,7 +10,7 @@ void TWI_init(void)
 
 
 	// TODO:
-	// Set SCL frequency = 11059200 / (16 + 2 * 48 * 4) = 27.648Khz
+	// Set SCL frequency = 16000000 / (16 + 2 * 48 * 4) = 27.648Khz
 	//So set the correct register to 0x30
 
 
