@@ -166,7 +166,7 @@ So:
 - The process variable (PV) will be the measured RPM
 - Calculate the error (SP-PV)
 - Calculate the output value with the proportional gain (P)
-- Advanced: Make the Kp adjustable via UART
+- Advanced: Make the P adjustable via UART
 
 ### Connect all the thing
 
