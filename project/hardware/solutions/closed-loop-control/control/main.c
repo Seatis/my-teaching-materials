@@ -29,6 +29,10 @@ enum {
 	USE_OPEN_LOOP = 2
 } ctrler_state;
 
+// Create controller variables
+p_ctrler_t p_ctrler;
+pi_ctrler_t pi_ctrler;
+
 void system_init()
 {
 	LED_DDR |= 1 << LED_DDR_POS;
@@ -41,9 +45,64 @@ void system_init()
 	_delay_ms(1000);
 }
 
+void handle_user_input()
+{
+	TC2_set_duty(0);	// Stop the fan before handling user input!
+	uint8_t mode;
+	float p;
+	float i;
+	float rpm;
+	uint8_t valid_command = 0;
+	char command = 0;
+	command = getchar();
+	if (command == 'r') {
+		printf("Enter desired reference RPM value!\r\n");
+		UART_clear_buffer();
+		if (scanf("%f", &rpm) > 0) {
+			printf("ref:%f RPM\r\n", rpm);
+			switch (ctrler_state) {
+			case USE_OPEN_LOOP:
+				break;
+			case USE_P:
+				p_ctrler.ref = rpm;
+				break;
+			case USE_PI:
+				pi_ctrler.ref = rpm;
+				break;
+			default:
+				printf("Unknown control type, using open loop.\r\n");
+				ctrler_state = USE_OPEN_LOOP;
+				break;
+			}
+		}
+	} else if (command == 's') {
+		printf("Enter settings: mode p i\r\n");
+		UART_clear_buffer();
+		if (scanf("%u %f %f\r\n", &mode, &p, &i) > 0) {
+			printf("mode:%u p:%f i:%f\r\n", mode, p, i);
+			ctrler_state = mode;
+			switch (ctrler_state) {
+			case USE_OPEN_LOOP:
+				break;
+			case USE_P:
+				p_ctrler.p = p;
+				break;
+			case USE_PI:
+				pi_ctrler.p = p;
+				pi_ctrler.i = i;
+				break;
+			default:
+				printf("Unknown control type, using open loop.\r\n");
+				ctrler_state = USE_OPEN_LOOP;
+				break;
+			}
+		}
+	}
+	UART_clear_buffer();
+}
+
 int main(void)
 {
-
 	// Don't forget to call the init function :)
 	system_init();
 
@@ -59,10 +118,6 @@ int main(void)
 	// Try printf
 	printf("Startup...\r\n");
 
-	// Create controller variables
-	p_ctrler_t p_ctrler;
-	pi_ctrler_t pi_ctrler;
-
 	// Init variables
 	p_init(&p_ctrler);
 	pi_init(&pi_ctrler);
@@ -76,60 +131,7 @@ int main(void)
 	while (1) {
 		// Get command from the user
 		if (!UART_is_buffer_empty()) {
-			TC2_set_duty(0);	// Stop the fan before handling user input!
-			uint8_t mode;
-			float p;
-			float i;
-			float rpm;
-			uint8_t valid_command = 0;
-			char command = 0;
-			command = getchar();
-			if (command == 'r') {
-				printf("Enter desired reference RPM value!\r\n");
-				UART_clear_buffer();
-				if (scanf("%f", &rpm) > 0) {
-					printf("ref:%f RPM\r\n", rpm);
-					switch (ctrler_state) {
-					case USE_OPEN_LOOP:
-						break;
-					case USE_P:
-						p_ctrler.ref = rpm;
-						break;
-					case USE_PI:
-						pi_ctrler.ref = rpm;
-						break;
-					default:
-						printf("Unknown control type, using open loop.\r\n");
-						ctrler_state = USE_OPEN_LOOP;
-						break;
-					}
-				}
-				UART_clear_buffer();
-
-			} else if (command == 's') {
-				printf("Enter settings: mode p i\r\n");
-				UART_clear_buffer();
-				if (scanf("%u %f %f\r\n", &mode, &p, &i) > 0) {
-					printf("mode:%u p:%f i:%f\r\n", mode, p, i);
-					ctrler_state = mode;
-					switch (ctrler_state) {
-					case USE_OPEN_LOOP:
-						break;
-					case USE_P:
-						p_ctrler.p = p;
-						break;
-					case USE_PI:
-						pi_ctrler.p = p;
-						pi_ctrler.i = i;
-						break;
-					default:
-						printf("Unknown control type, using open loop.\r\n");
-						ctrler_state = USE_OPEN_LOOP;
-						break;
-					}
-				}
-				UART_clear_buffer();
-			}
+			handle_user_input();
 		}
 
 		uint8_t duty;
