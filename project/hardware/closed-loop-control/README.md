@@ -151,28 +151,48 @@ Don't be afraid! The TC0 and TC2 timers are very similar, you just have to chang
 the register and bit names in the TC0 driver to get the TC2 driver.
 
 ### Open loop control
-Let's use multiple peripherals with each other. It will be an open loop "controller"
-- Read the ADC value and set a PWM signal according to it. So, if in the ADC is 5V set 100% PWM duty, if the ADC 0V set 0% PWM duty.
-- Print out the PWM duty cycle and the measured PRM of the ventilator.
+Let's use multiple peripherals together. The task is to make an open loop RPM controller.
+- Read the ADC value and set a PWM signal according to it. So, if the ADC measures 5V, then set 100% PWM duty cycle. Similarly, if the ADC measures 0V then set 0% PWM duty cycle.
+- Print out the PWM duty cycle and the measured PRM of the ventilator to the terminal with UART.
 
-Why is it bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning, if it's turning, so it' not really CONTROL the hole progress, it just set the PWM and something will happen. No feedback from the ventilator is used.
+Why this control technique is bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning (if it's turning at all), so it' not really CONTROLS the hole progress, it just sets the PWM and something will happen. No feedback from the ventilator is used.
 
-### Closed loop control, P
-Let's use the feedback from the ventilator. It will be a proportional controller, it will regulate the PWM according to the measured RPM.
+### Closed loop P control
+Let's use feedback from the ventilator. The task is to make a proportional controller, which will regulate the PWM duty cycle according to the measured RPM and the reference
+RPM value.
 
-So:
-- Read the ADC value, it will be the setpoint (SP)
-- The process variable (PV) will be the measured RPM
-- Calculate the error (SP-PV)
-- Calculate the output value with the proportional gain (P)
+- Use the P controller pseudocode to make your controller
+- Try to run the control algorithm periodically
+- Play with the P value
+- The algorithm run period and the P value determines how will the controller work
+    - A good starting value for the period is ?
+    - A good starting value for the P value is ?
 
-### Closed loop control, PI
- - Use the pseudocode to pimp your controller
- - Play with the P, I values (a lot)
+Try to apply force to the fan. Ideally, a controller should rise the duty cycle,
+and the fan will produce bigger torque to keep the rotational speed constant. The
+P controller can't do this exactly. Why?
+
+### Closed loop PI control
+The task is to make a proportional ant integrating controller, which will regulate the PWM duty cycle according to the measured RPM and the reference
+RPM value.
+
+- Use the P controller pseudocode to make your controller
+- Try to run the control algorithm periodically, play with the period value
+- Play with the P, I value
+- The algorithm run period, the P and the I value determines how will the controller work
+    - A good starting value for the period is ?
+    - A good starting value for the P value is ?
+    - A good starting value for the I value is ?
+
+Try to apply force to the fan again. The PI controller should compensate out the
+disturbance and the RPM should remain constant. Of course, if you apply too much force
+100% duty cycle will be set and the motor maybe can not produce enough counterforce to
+keep the RPM constant. This is not the controller's fault, simply the fan is not
+strong enough.
 
 ### Advanced tasks:
- - Make the P, I values adjustable via UART, play with it
-- Use Atmel studio data visualiser tool to visualise the controlling parameters
+- Make the P, I values adjustable via UART, play with it
+- Use Atmel studio data visualizer tool to visualize the controlling parameters
 
 ## Solution
 [Solution](#)
