@@ -1,4 +1,5 @@
 #include <avr/io.h>
+#include <float.h>
 #include "AC_driver.h"
 #include "freq_meas.h"
 
@@ -27,5 +28,9 @@ void AC_driver_init()
 
 float get_rpm()
 {
-	return (get_freq() * FREQ_TO_RPM_CONST);
+	float freq = get_freq();
+	if (freq < 0)
+		return -1;
+	else
+		return (freq * FREQ_TO_RPM_CONST);
 }

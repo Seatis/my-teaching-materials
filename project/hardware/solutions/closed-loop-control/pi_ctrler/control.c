@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 float integ = 0;
-float p_const = 0.02;
+float p_const = 0.01;
 float i_const = 0.01;
 
 void pi_control(float ref_rpm, float rpm)

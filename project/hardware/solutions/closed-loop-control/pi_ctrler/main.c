@@ -52,7 +52,7 @@ int main(void)
 
 	volatile float rpm = 0;
 	volatile uint16_t averages = 0;
-	volatile const uint16_t averages_max = 20;
+	volatile const uint16_t averages_max = 10;
 
 	// Infinite loop
 	while (1) {
@@ -67,6 +67,6 @@ int main(void)
 			averages = 0;
 			rpm = 0;
 		}
-		_delay_ms(1);
+		_delay_ms(2);
 	}
 }
