@@ -3,6 +3,8 @@
 #include "AC_driver.h"
 #include "freq_meas.h"
 
+float prev_valid_rpm = 0;
+
 void AC_driver_init()
 {
 	/*************
@@ -29,8 +31,13 @@ void AC_driver_init()
 float get_rpm()
 {
 	float freq = get_freq();
-	if (freq < 0)
-		return -1;
-	else
-		return (freq * FREQ_TO_RPM_CONST);
+	float rpm = freq * FREQ_TO_RPM_CONST;
+
+	// Check if freq is invalid
+	if (freq < 0) {
+		return prev_valid_rpm;
+	} else {
+		prev_valid_rpm = rpm;
+		return rpm;
+	}
 }

@@ -17,4 +17,5 @@ void UART_init();
 void UART_send_character(char character);
 char UART_get_character();
 uint8_t UART_is_buffer_empty();
+void UART_clear_buffer();
 #endif /* _UART_DRIVER_H_ */

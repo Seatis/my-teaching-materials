@@ -87,3 +87,8 @@ uint8_t UART_is_buffer_empty()
 	else
 		return 0;
 }
+
+void UART_clear_buffer()
+{
+	rx_buffer.read_ptr = rx_buffer.write_ptr;
+}
