@@ -52,13 +52,14 @@ void handle_user_input()
 	float p;
 	float i;
 	float rpm;
-	uint8_t valid_command = 0;
+	char buff[64];
 	char command = 0;
 	command = getchar();
 	if (command == 'r') {
 		printf("Enter desired reference RPM value!\r\n");
 		UART_clear_buffer();
-		if (scanf("%f", &rpm) > 0) {
+		gets(buff);
+		if (sscanf(buff, "%f", &rpm) > 0) {
 			printf("ref:%f RPM\r\n", rpm);
 			switch (ctrler_state) {
 			case USE_OPEN_LOOP:
@@ -78,7 +79,8 @@ void handle_user_input()
 	} else if (command == 's') {
 		printf("Enter settings: mode p i\r\n");
 		UART_clear_buffer();
-		if (scanf("%u %f %f\r\n", &mode, &p, &i) > 0) {
+		gets(buff);
+		if (sscanf(buff, "%u %f %f", &mode, &p, &i) > 0) {
 			printf("mode:%u p:%f i:%f\r\n", mode, p, i);
 			ctrler_state = mode;
 			switch (ctrler_state) {
@@ -121,10 +123,10 @@ int main(void)
 	// Init variables
 	p_init(&p_ctrler);
 	pi_init(&pi_ctrler);
-	p_ctrler->out_max = 100;	// Duty cycle max
-	p_ctrler->out_min = 0;		// Duty cycle min
-	pi_ctrler->out_max = 100;	// Duty cycle max
-	pi_ctrler->out_min = 0;		// Duty cycle min
+	p_ctrler.out_max = 100;	// Duty cycle max
+	p_ctrler.out_min = 0;		// Duty cycle min
+	pi_ctrler.out_max = 100;	// Duty cycle max
+	pi_ctrler.out_min = 0;		// Duty cycle min
 	ctrler_state = USE_OPEN_LOOP;
 
 	// Infinite loop
@@ -134,27 +136,32 @@ int main(void)
 			handle_user_input();
 		}
 
-		uint8_t duty;
+		uint8_t duty = 0;
+		float ref = (float)ADC_read() / ADC_DATA_MAX * REF_MAX;
+		float rpm = get_rpm();
+
 		switch (ctrler_state) {
 		case USE_OPEN_LOOP:
-			duty = (uint8_t)((float)ADC_read() / ADC_DATA_MAX * 100);	// Duty max is 100
+			duty = ref / REF_MAX * 100.0;	// Duty max is 100
 			break;
 		case USE_P:
-			p_ctrler->ref = (float)ADC_read() / ADC_DATA_MAX * REF_MAX;
-			p_ctrler->sense = get_rpm();
+			p_ctrler.sense = rpm;
 			duty = (uint8_t)(p_control(&p_ctrler));
+			ref = p_ctrler.ref;
 			break;
 		case USE_PI:
-			p_ctrler->ref = (float)ADC_read() / ADC_DATA_MAX * REF_MAX;
-			p_ctrler->sense = get_rpm();
+			pi_ctrler.sense = rpm;
 			duty = (uint8_t)(pi_control(&pi_ctrler));
+			ref = pi_ctrler.ref;
 			break;
 		default:
+			duty = 0;
 			printf("Unknown control type!\r\n");
 			break;
 		}
 
 		TC2_set_duty(duty);
+		printf("%.0f RPM \t%u\t%.0f RPM\r\n", ref, duty, rpm);
 
 		_delay_ms(DEFAULT_DELAY);
 	}

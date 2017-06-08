@@ -66,7 +66,7 @@ float get_freq()
 
 	// If you divide with zero in C the result will be NaN (not a number)
 	// Check if the frequency is Nan, and return negative number in this case
-	if (isnan(freq))
+	if (isnan(freq) || isinf(freq))
 		return -1;
 	else
 		return freq;
