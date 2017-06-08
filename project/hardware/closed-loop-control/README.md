@@ -165,8 +165,8 @@ RPM value.
 - Try to run the control algorithm periodically
 - Play with the P value
 - The algorithm run period and the P value determines how will the controller work
-    - A good starting value for the period is ?
-    - A good starting value for the P value is ?
+    - A good starting value for the period is 10ms
+    - A good starting value for the P value is 0.1
 - You should print out the duty cycle and the measured RPM to the terminal at least
     - This is useful to check what is going on inside the MCU
 
@@ -182,9 +182,9 @@ RPM value.
 - Try to run the control algorithm periodically, play with the period value
 - Play with the P, I value
 - The algorithm run period, the P and the I value determines how will the controller work
-    - A good starting value for the period is ?
-    - A good starting value for the P value is ?
-    - A good starting value for the I value is ?
+    - A good starting value for the period is 10ms
+    - A good starting value for the P value is 0.05
+    - A good starting value for the I value is 0.01
 - You should print out the duty cycle and the measured RPM to the terminal at least
     - This is useful to check what is going on inside the MCU
 
