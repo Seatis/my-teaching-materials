@@ -18,3 +18,56 @@ It has to handle the session using JWT tokens.
  -  Hotel room management and availability
  -  Booking management
  -  Payment and transaction management
+
+## [Repository](https://github.com/greenfox-academy/hotel-booking-admin-frontend)
+
+## Stories
+
+### Front page
+
+The front page should display a title: "Hotel Booking Admin"
+
+```gherkin
+Feature: Front page and title
+
+Scenario: Front page is accesable form '/' path
+ Given the browser path set to '/'
+  When the page is loaded
+  Then it should display 'Hotel Booking Admin'
+```
+
+#### Techincal Requirements
+
+You can use the Angular CLI for initialize the project.
+The title on the front page should be a component.
+Please cover the component with unit tests.
+
+### Continuous Integration
+
+Set up a Continuous Integration server for continuous deployment and testing,
+using [Codeship](https://codeship.com/).
+
+#### Technical Requirements
+
+Codeship should detect each change on the master branch of your repository on Github.
+When the change is detected Codeship should run all the unit tests, if none the tests
+failed it should deploy the latest version of the application to Heroku.
+The application should run by Heroku using the Angular CLI serve feature.
+
+### Login Page
+
+The application should have a separate login page for logging in users.
+
+```gherkin
+Feature: Login page route
+
+Scenario: Load login route
+ Given the browser path set to '/login'
+  When the page is loaded
+  Then it should display 'Login'
+```
+
+#### Technical Requirements
+
+Please create a separate component for the login page, also cover it with unit
+tests. Use the Angular Router module for handling the routes.
