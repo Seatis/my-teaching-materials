@@ -122,13 +122,13 @@ The input reference voltage will be adjusted with a potentiometer (which is meas
 The rotational speed need to be measured, as we did in the AC workshop.
 
 ### Basic tasks
-- [Make it work](#Make it work)
-- [Open loop control](#Open loop control)
-- [Closed loop control, P](#Closed loop control, P)
-- [Closed loop control, PI](#Closed loop control, PI)
+- [Make it work](#make-it-work)
+- [Open loop control](#open-loop-control)
+- [Closed loop P control](#closed-loop-p-control)
+- [Closed loop PI control](#closed-loop-pi-control)
 
 ### Advanced
-- [Advanced tasks](#Advanced tasks)
+- [Advanced tasks](#advanced-tasks)
 
 ### Make it work
 
@@ -167,6 +167,8 @@ RPM value.
 - The algorithm run period and the P value determines how will the controller work
     - A good starting value for the period is ?
     - A good starting value for the P value is ?
+- You should print out the duty cycle and the measured RPM to the terminal at least
+    - This is useful to check what is going on inside the MCU
 
 Try to apply force to the fan. Ideally, a controller should rise the duty cycle,
 and the fan will produce bigger torque to keep the rotational speed constant. The
@@ -183,6 +185,8 @@ RPM value.
     - A good starting value for the period is ?
     - A good starting value for the P value is ?
     - A good starting value for the I value is ?
+- You should print out the duty cycle and the measured RPM to the terminal at least
+    - This is useful to check what is going on inside the MCU
 
 Try to apply force to the fan again. The PI controller should compensate out the
 disturbance and the RPM should remain constant. Of course, if you apply too much force
