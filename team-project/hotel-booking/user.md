@@ -21,7 +21,7 @@ API using OAuth.
  -  Facebook authentication
 
 
-## [Repository](https://github.com/greenfox-academy/hotel-booking-currency-service)
+## [Repository](https://github.com/greenfox-academy/hotel-booking-user-service)
 
 ## Stories
 
