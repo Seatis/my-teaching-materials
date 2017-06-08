@@ -123,4 +123,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
-[Solutions](#)
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/I2C-communication/TC74_DRIVER)
