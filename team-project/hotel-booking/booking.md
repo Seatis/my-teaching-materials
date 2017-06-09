@@ -84,3 +84,15 @@ using [Codeship](https://codeship.com/).
 Codeship should detect each change on the master branch of your repository on Github.
 When the change is detected Codeship should run all the unit tests, if none the tests
 failed it should deploy the latest version of the application to Heroku.
+
+### Database Migration On Production Environment
+
+Create a database migration using [flyway](https://flywaydb.org/getstarted/)
+
+#### Technical Requirements
+
+Add flyway as a dependency to your project. Alter your heartbeat table by adding
+a new autoincrement id column to it,
+alter it in a way that all the stored records are remaining in the table on 
+the production environment. Use the flywaydb to proceed with the migration.
+
