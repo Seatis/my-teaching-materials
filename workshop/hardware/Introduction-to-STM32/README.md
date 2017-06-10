@@ -17,7 +17,7 @@
 | Material to read |
 |:--------:|
 | [Getting started with the STM32 board](http://www.st.com/content/ccc/resource/technical/document/user_manual/47/af/1e/94/ef/a2/49/e6/DM00180213.pdf/files/DM00180213.pdf/jcr:content/translations/en.DM00180213.pdf)|
-| [Embedded software](https://www.youtube.com/watch?v=Va8c9g3NclA)|
+| [Embedded software](https://www.youtube.com/watch?v=TA-_Zw8Vv3o)|
 Notice that the article is for an other board, try to understand the core things.
 
 | Material to watch | Duration |
@@ -63,5 +63,6 @@ If you have some free time to read about [Embedded software engineering ](https:
 #### Embedded software
 - What is it good for
 - Usage in our class
+- Real time operation
 
 ## Workshop
