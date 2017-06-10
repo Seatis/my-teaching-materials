@@ -14,13 +14,13 @@
 #### STM32 programming
 ##### Basic
 
-| Material to read |
+| Materials to read |
 |:--------:|
 | [Getting started with the STM32 board](http://www.st.com/content/ccc/resource/technical/document/user_manual/47/af/1e/94/ef/a2/49/e6/DM00180213.pdf/files/DM00180213.pdf/jcr:content/translations/en.DM00180213.pdf)|
 | [Embedded software](http://internetofthingsagenda.techtarget.com/definition/embedded-software)|
 Notice that the article is for an other board, try to understand the core things.
 
-| Material to watch | Duration |
+| Materials to watch | Duration |
 |:---------|-----:|
 | [Dive into abstraction](https://www.youtube.com/watch?v=X8QSymRlEEY)| 5:27 |
 | [Hardware abstraction layer](https://www.youtube.com/watch?v=Va8c9g3NclA)| 9:58 |
