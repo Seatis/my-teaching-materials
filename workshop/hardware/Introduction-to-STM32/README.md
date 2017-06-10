@@ -42,9 +42,9 @@ A short specification about the STM32 board :
 - Absolute digital output barometer
 - 2 push-buttons
 
-| If you have some free time |
-|:---------|-----:|
-| [Embedded software engineering vs. software development](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan)|
+If you have some free time to read about [Embedded software engineering ](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan) .
+
+
 
 
 
