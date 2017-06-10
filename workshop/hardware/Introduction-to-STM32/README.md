@@ -46,6 +46,8 @@ A short specification about the STM32 board :
 |:---------|-----:|
 | [Embedded software engineering vs. software development](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan)|
 
+
+
 ## Material Review
 ### Microcontroller
 #### Abstraction
