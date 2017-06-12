@@ -42,7 +42,7 @@ A short specification about the STM32 board :
 - Absolute digital output barometer
 - 2 push-buttons
 
-Before getting started with todays workshop, please have a look at  [this](https://github.com/greenfox-academy/teaching-materials/tree/hw-introduction-to-STM32_/workshop/hardware/Introduction-to-STM32/debugging)
+Before getting started with todays workshop, please have a look at  [this](https://github.com/greenfox-academy/teaching-materials/blob/hw-introduction-to-STM32_/workshop/hardware/introdution-to-stm32/debugging/bug.md)
 
 If you have some free time to read about [Embedded software engineering ](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan) .
 
