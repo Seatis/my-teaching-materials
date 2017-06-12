@@ -69,4 +69,4 @@ A short specification about the STM32 board :
 - Real time operation
 
 ## Workshop
-Before getting started with todays workshop, please have a look at  [this](https://github.com/greenfox-academy/teaching-materials/tree/hw-introduction-to-STM32_/workshop/hardware/Introduction-to-STM32/debugging)
+Before getting started with todays workshop, please have a look at  [this](B-L475E-IOT01A2/hardware-is-faulty.md).
