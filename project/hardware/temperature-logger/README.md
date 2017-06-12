@@ -118,4 +118,4 @@ Commands:
 - the errors should be handled
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/temperature-logger)
