@@ -1,6 +1,9 @@
 #include <avr/io.h>
+#include <float.h>
 #include "AC_driver.h"
 #include "freq_meas.h"
+
+float prev_valid_rpm = 0;
 
 void AC_driver_init()
 {
@@ -27,5 +30,14 @@ void AC_driver_init()
 
 float get_rpm()
 {
-	return (get_freq() * FREQ_TO_RPM_CONST);
+	float freq = get_freq();
+	float rpm = freq * FREQ_TO_RPM_CONST;
+
+	// Check if freq is invalid
+	if (freq < 0) {
+		return prev_valid_rpm;
+	} else {
+		prev_valid_rpm = rpm;
+		return rpm;
+	}
 }

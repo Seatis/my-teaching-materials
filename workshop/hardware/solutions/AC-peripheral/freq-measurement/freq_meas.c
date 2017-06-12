@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <stdint.h>
 #include <avr/interrupt.h>
-#include <float.h>
+#include <math.h>
 #include "freq_meas.h"
 
 static volatile uint16_t last_reg_value;
@@ -62,10 +62,12 @@ float get_freq()
 
 	// One of the variables should be casted to float
 	float period = TC1_STEP_TIME_S * (float)steps;
+	float freq =  1 / period;
 
-	// Chech if period is zero. In this case the 1/period would results NaN.
-	if (period == 0.0)
-		return FLT_MAX;
+	// If you divide with zero in C the result will be NaN (not a number)
+	// Check if the frequency is Nan, and return negative number in this case
+	if (isnan(freq) || isinf(freq))
+		return -1;
 	else
-		return (1 / period);
+		return freq;
 }
