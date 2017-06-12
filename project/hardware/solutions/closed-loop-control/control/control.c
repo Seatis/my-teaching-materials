@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 #define DEFAULT_P			0.01
-#define DEFAULT_PI_P		0.01
+#define DEFAULT_PI_P		0.05
 #define DEFAULT_PI_I		0.01
 
 void pi_init(pi_ctrler_t *ctrler)

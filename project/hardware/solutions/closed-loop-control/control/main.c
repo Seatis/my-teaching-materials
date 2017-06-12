@@ -45,10 +45,40 @@ void system_init()
 	_delay_ms(1000);
 }
 
+/*
+ This function should be called if the UART buffer is not empty.
+ It will parse the UART input buffer and will execute the commands if
+ one is present.
+ Commands:
+ r - goes into set RPM mode
+ s - goest into set mode mode
+
+ In RPM mode the user can enter the referenece RPM value
+ This will only affect the P or PI controllers!
+
+ In Set mode mode the user can set the mode:
+ mode P I
+ mode:
+	0 - PI control
+	1 - P control
+	2 - open loop control, reference from ADC
+ P - the P paramter of the P or PI controller (depending on mode)
+ I - the I parameter of the P or PI controller (depending on mode)
+
+ Example:
+	1. For P=0.01 I=0.02 PI controller
+		- enter "s" and hit enter
+		- the program will ask to enter mode and paramteres
+		- enter "0 0.01 0.02" and hit enter
+	2. For P=1 P controller
+		- enter "s" and hit enter
+		- the program will ask to enter mode and paramteres
+		- enter "1 0.01 0" and hit enter
+ */
 void handle_user_input()
 {
 	TC2_set_duty(0);	// Stop the fan before handling user input!
-	uint8_t mode;
+	unsigned int mode;
 	float p;
 	float i;
 	float rpm;
@@ -132,9 +162,8 @@ int main(void)
 	// Infinite loop
 	while (1) {
 		// Get command from the user
-		if (!UART_is_buffer_empty()) {
+		if (!UART_is_buffer_empty())
 			handle_user_input();
-		}
 
 		uint8_t duty = 0;
 		float ref = (float)ADC_read() / ADC_DATA_MAX * REF_MAX;
