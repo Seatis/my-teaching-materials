@@ -6,12 +6,12 @@
 ### `POST /register`
 
 #### Request parameters
-- username [String]
-- password [String, optional]
-- kingdom [String, optional, defaults to "`username`'s kingdom"]
+- `username` [String]
+- `password` [String, optional]
+- `kingdom` [String, optional, defaults to "`username`'s kingdom"]
 
 #### Response
-- a mock User object:
+- a mock `User` object:
 ```
 {
   "id" : 1,
@@ -25,11 +25,11 @@
 ### `POST /login`
 
 #### Request parameters
-- username [String]
-- password [String, optional]
+- `username` [String]
+- `password` [String, optional]
 
 #### Response
-- a mock User object:
+- a mock `User` object:
 ```
 {
   "id" : 1,
@@ -43,7 +43,7 @@
 ### `GET /[userId]/kingdom`
 
 #### Response
-- a mock Kingdom object:
+- a mock `Kingdom` object:
 ```
 {
   "id" : 1,
@@ -59,13 +59,13 @@
 ### `PUT /[userId]/kingdom`
 
 #### Request parameters (all optional)
-- name [String]
-- userId [long]
-- locationX [int]
-- locationY [int]
+- `name` [String]
+- `userId` [long]
+- `locationX` [int]
+- `locationY` [int]
 
 #### Response
-- a mock Kingdom object:
+- a mock `Kingdom` object:
 ```
 {
   "id" : 1,
