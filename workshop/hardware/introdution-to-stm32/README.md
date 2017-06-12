@@ -68,5 +68,12 @@ A short specification about the STM32 board :
 - Usage in our class
 - Real time operation
 
+#### System Workbench for STM32
+- opening existing project
+- parallel build setup
+- enabling specific HAL drivers to compile in ```stm32l4xx_hal_conf.h```
+- how to git this
+- how to use our solutions
+
 ## Workshop
 Before getting started with todays workshop, please have a look at  [this](B-L475E-IOT01A2/hardware-is-faulty.md).
