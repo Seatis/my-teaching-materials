@@ -9,16 +9,21 @@
 ### Environment
   - Make sure that System Workbench for STM32 is installed on your machine (see [IDE-Installation-Guide](https://github.com/greenfox-academy/totoro-syllabus/blob/master/IDE-Installation-Guide.md) for further information)
   - Make sure that [STM32CubeL4 libary package](http://www.st.com/en/embedded-software/stm32cubel4.html) is installed on your machine
+      - In the "GET SOFTWARE" section click on the "Get Software" button to download the package
+      - An ST registration will be required
+      - A .zip file will be downloaded, which contains a lot's of source files
+      - Unzip it to a folder
+      - You can version control that folder with GIT
+          - Be sure not to push all the source code to you github account
+          - It is an enormous amount of code, we will deal with it properly later
 
 ### Training
-#### STM32 programming
-##### Basic
 
 | Materials to read |
-|:--------:|
-| [Getting started with the STM32 board](http://www.st.com/content/ccc/resource/technical/document/user_manual/47/af/1e/94/ef/a2/49/e6/DM00180213.pdf/files/DM00180213.pdf/jcr:content/translations/en.DM00180213.pdf)|
+|:--------|
+|[Embedded software engineering](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan)|
+| [Getting started with STM32CubeL4 for STM32L4 Series](https://my.st.com/content/ccc/resource/technical/document/user_manual/74/09/3d/80/f9/39/4c/c7/DM00157440.pdf/files/DM00157440.pdf/jcr:content/translations/en.DM00157440.pdf)|
 | [Embedded software](http://internetofthingsagenda.techtarget.com/definition/embedded-software)|
-Notice that the article is for an other board, try to understand the core things.
 
 | Materials to watch | Duration |
 |:---------|-----:|
@@ -42,22 +47,21 @@ A short specification about the STM32 board :
 - Absolute digital output barometer
 - 2 push-buttons
 
-Before getting started with todays workshop, please have a look at  [this](https://github.com/greenfox-academy/teaching-materials/tree/hw-introduction-to-STM32_/workshop/hardware/Introduction-to-STM32/debugging)
-
-If you have some free time to read about [Embedded software engineering ](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan) .
-
-
 ## Material Review
 ### Microcontroller
 #### Abstraction
 - Meaning of abstarction
-    - example in a C code
-- Microcontroller
-    - BSP Driver
-    - Low Layer (LL)
-    - Core drivers
-    - hardware absztaction layer (HAL)
-    - Middleware components
+    - example from a [previous workshop](#)
+- STM32CubeL4
+    - Level 0
+        - Low Layer (LL)
+        - Core drivers
+        - BSP Driver
+        - Hardware Abstraction Layer (HAL)
+    - Level 1
+        - Middleware components
+    - Level 2
+        - Application
 
 #### Embedded software
 - What is it good for
@@ -65,3 +69,4 @@ If you have some free time to read about [Embedded software engineering ](https:
 - Real time operation
 
 ## Workshop
+Before getting started with todays workshop, please have a look at  [this](https://github.com/greenfox-academy/teaching-materials/tree/hw-introduction-to-STM32_/workshop/hardware/Introduction-to-STM32/debugging)
