@@ -30,45 +30,42 @@ int main(){
     printf("- to close the program please press 0\n");
 
     while('1'<choice<'5') {
-
         printf("Please enter what you want to do: ");
         choice = getchar();
         char c = 0;
         while (c != '\n')
             c = getchar();
 
-            if (choice == '0'){
+            if (choice == '0') {
                 printf("program will end now");
                 break;
             }
-            else if (choice == '1'){
+            else if (choice == '1') {
                 see_tasks();
             }
-            else if (choice == '2'){
+            else if (choice == '2') {
                 tasks_prio();
             }
-            else if (choice == '3'){
+            else if (choice == '3') {
                 new_task();
             }
-            else if (choice == '4'){
+            else if (choice == '4') {
                 int index_task;
                 printf("Enter the index of the task\n");
                 scanf("%d", &index_task);
                 getchar();
                 rm_task(index_task);
             }
-            else if (choice == '5'){
+            else if (choice == '5') {
                 int index_cmp;
                 printf("Enter the index of the task\n");
                 scanf("%d", &index_cmp);
                 getchar();
                 complete_task(index_cmp);
-            }
-            else {
+            } else {
                 printf("Please choose from the given options\n");
             }
         }
-
     return 0;
 }
 
@@ -86,7 +83,6 @@ void see_tasks(){
 }
 
 void tasks_prio(){
-
     for (int j = 5; j > 0; j-- ){
         for (int i = 0;i < num_tasks; i++){
             if (tasks[i].prio == j){
@@ -98,7 +94,6 @@ void tasks_prio(){
 }
 
 void new_task(){
-
     printf("Enter the name of the task: \n");
     gets(&tasks[num_tasks].name);
     printf("Enter the priority of the task: \n");
@@ -106,22 +101,18 @@ void new_task(){
     getchar();
     tasks[num_tasks].done = 0;
     num_tasks++;
-
 }
 
 void rm_task(int index_task){
-
     num_tasks--;
     for (int i = index_task-1; i < num_tasks; i++){
         strcpy(tasks[i].name, tasks[i+1].name);
         tasks[i].prio = tasks[i+1].prio;
         tasks[i].done = tasks[i+1].done;
     }
-
 }
 
-void complete_task(int index_cmp){
-
+void complete_task(int index_cmp)
+{
     tasks[index_cmp-1].done = 1;
-
 }
