@@ -12,7 +12,7 @@
 
 #### Response
 - a mock User object:
-```
+```json
 {
   "id" : 1,
   "username" : "Bond",
@@ -30,7 +30,7 @@
 
 #### Response
 - a mock User object:
-```
+```json
 {
   "id" : 1,
   "username" : "Bond",
@@ -44,7 +44,7 @@
 
 #### Response
 - a mock Kingdom object:
-```
+```json
 {
   "id" : 1,
   "name" : "London",
@@ -66,7 +66,7 @@
 
 #### Response
 - a mock Kingdom object:
-```
+```json
 {
   "id" : 1,
   "name" : "London",
@@ -74,8 +74,9 @@
   "buildings": [],
   "resources": [],
   "troops": [],
-  "location": [1, 1]
+  "location": {
+    "x": 1,
+    "y": 1
+  }
 }
 ```
-
-
