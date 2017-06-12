@@ -52,7 +52,10 @@
   "buildings": [],
   "resources": [],
   "troops": [],
-  "location": [1, 1]
+  "location": {
+    "x": 1,
+    "y": 1
+  }
 }
 ```
 
