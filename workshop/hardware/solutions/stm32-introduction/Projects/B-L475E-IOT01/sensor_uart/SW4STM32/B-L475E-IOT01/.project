@@ -336,6 +336,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/startup_stm32l475xx.s</locationURI>
 		</link>
 		<link>
+			<name>Example/SW4STM32/syscalls.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/syscalls.c</locationURI>
+		</link>
+		<link>
 			<name>Example/User/main.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Src/main.c</locationURI>
@@ -349,6 +354,36 @@
 			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c</name>
 			<type>1</type>
 			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_gyro.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_gyro.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_magneto.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_magneto.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/Components/hts221</name>

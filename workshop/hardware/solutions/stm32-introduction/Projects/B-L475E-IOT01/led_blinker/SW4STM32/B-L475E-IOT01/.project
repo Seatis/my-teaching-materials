@@ -336,6 +336,11 @@
 			<locationURI>copy_PARENT12/startup_stm32l475xx.s</locationURI>
 		</link>
 		<link>
+			<name>Example/SW4STM32/syscalls.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/syscalls.c</locationURI>
+		</link>
+		<link>
 			<name>Example/User/main.c</name>
 			<type>1</type>
 			<locationURI>copy_PARENT/Src/main.c</locationURI>

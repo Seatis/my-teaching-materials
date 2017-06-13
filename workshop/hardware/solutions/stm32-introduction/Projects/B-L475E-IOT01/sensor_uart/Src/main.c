@@ -50,6 +50,18 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+
+extern UART_HandleTypeDef hDiscoUart;
+#ifdef __GNUC__
+/* With GCC/RAISONANCE, small msg_info (option LD Linker->Libraries->Small msg_info
+   set to 'Yes') calls __io_putchar() */
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#define GETCHAR_PROTOTYPE int __io_getchar(void)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#define GETCHAR_PROTOTYPE int fgetc(FILE *f)
+#endif /* __GNUC__ */
+
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 
@@ -80,12 +92,99 @@ int main(void)
 
   /* Add your application code here
      */
+  hDiscoUart.Instance = DISCOVERY_COM1;
+  hDiscoUart.Init.BaudRate = 115200;
+  hDiscoUart.Init.WordLength = UART_WORDLENGTH_8B;
+  hDiscoUart.Init.StopBits = UART_STOPBITS_1;
+  hDiscoUart.Init.Parity = UART_PARITY_NONE;
+  hDiscoUart.Init.Mode = UART_MODE_TX_RX;
+  hDiscoUart.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  hDiscoUart.Init.OverSampling = UART_OVERSAMPLING_16;
+  hDiscoUart.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  hDiscoUart.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+
+  BSP_COM_Init(COM1, &hDiscoUart);
+
+  printf("Hali\r\n");
+
+  BSP_ACCELERO_Init();
+  BSP_MAGNETO_Init();
+  BSP_GYRO_Init();
+  BSP_TSENSOR_Init();
+  BSP_PSENSOR_Init();
+  BSP_HSENSOR_Init();
 
   /* Infinite loop */
   while (1)
   {
+	  int16_t acc[3];
+	  BSP_ACCELERO_AccGetXYZ(acc);
+	  int16_t magneto[3];
+	  BSP_MAGNETO_GetXYZ(magneto);
+	  float gyro[3];
+	  BSP_GYRO_GetXYZ(gyro);
+	  float temp = BSP_TSENSOR_ReadTemp();
+	  float press = BSP_PSENSOR_ReadPressure();
+	  float humidity = BSP_HSENSOR_ReadHumidity();
+
+	  printf("--------------------------------\r\n");
+	  printf("--------------------------------\r\n");
+	  printf("--------------------------------\r\n");
+	  printf("acc_x: %d\r\n", acc[0]);
+	  printf("acc_y: %d\r\n", acc[1]);
+	  printf("acc_z: %d\r\n", acc[2]);
+	  printf("--------------------------------\r\n");
+	  printf("mag_x: %d\r\n", magneto[0]);
+	  printf("mag_y: %d\r\n", magneto[1]);
+	  printf("mag_z: %d\r\n", magneto[2]);
+	  printf("--------------------------------\r\n");
+	  printf("gyro_x: %.2f\r\n", gyro[0]);
+	  printf("gyro_y: %.2f\r\n", gyro[1]);
+	  printf("gyro_z: %.2f\r\n", gyro[2]);
+	  printf("--------------------------------\r\n");
+	  printf("temp: %.2f\r\n", temp);
+	  printf("--------------------------------\r\n");
+	  printf("pressure: %.2f\r\n", press);
+	  printf("--------------------------------\r\n");
+	  printf("humidity: %.2f\r\n", humidity);
+	  HAL_Delay(1000);
   }
 }
+
+
+/**
+  * @brief Retargets the C library msg_info function to the USART.
+  * @param None
+  * @retval None
+  */
+PUTCHAR_PROTOTYPE
+{
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the serial port and Loop until the end of transmission */
+  while (HAL_OK != HAL_UART_Transmit(&hDiscoUart, (uint8_t *) &ch, 1, 30000))
+  {
+    ;
+  }
+  return ch;
+}
+
+/**
+  * @brief Retargets the C library scanf function to the USART.
+  * @param None
+  * @retval None
+  */
+GETCHAR_PROTOTYPE
+{
+  /* Place your implementation of fgetc here */
+  /* e.g. readwrite a character to the USART2 and Loop until the end of transmission */
+  uint8_t ch = 0;
+  while (HAL_OK != HAL_UART_Receive(&hDiscoUart, (uint8_t *)&ch, 1, 30000))
+  {
+    ;
+  }
+  return ch;
+}
+
 
 /**
   * @brief  System Clock Configuration
