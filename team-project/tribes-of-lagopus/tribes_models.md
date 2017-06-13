@@ -1,5 +1,6 @@
 # Tribes of Lagopus models
-
+[Project description](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes-of-lagopus)
+[API specification](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes_API_specification.md)
 
 ## Building
 ```json
@@ -22,11 +23,11 @@
 ## Troop
 ```json
 {
-	"id": <long>,
-	"level": <int>,
-	"hp": <int>,
-	"attack": <int>,
-	"defence": <int>
+  "id": <long>,
+  "level": <int>,
+  "hp": <int>,
+  "attack": <int>,
+  "defence": <int>
 }
 ```
 - id: unique identifier of the troop
@@ -39,9 +40,9 @@
 ## Resource
 ```json
 {
-	"type": <food|gold>,
-	"amount": <int>,
-	"generation": <int>
+  "type": <food|gold>,
+  "amount": <int>,
+  "generation": <int>
 }
 ```
 - type: type of the resource. The available types>
@@ -54,9 +55,9 @@
 ## Player (user)
 ```json
 {
-	"id": <long>,
-	"username": <string>,
-	"kingdomId": <long>
+  "id": <long>,
+  "username": <string>,
+  "kingdomId": <long>
 }
 ```
 - id: unique identifier of the user
@@ -68,8 +69,8 @@
 ## Location
 ```json
 {
-	"x": 1,
-	"y": 1
+  "x": 1,
+  "y": 1
 }
 ```
 - the kingdom's `x` location on the map
