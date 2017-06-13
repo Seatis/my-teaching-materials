@@ -21,8 +21,13 @@ e.g.:
 ```
 
 #### Response
+<<<<<<< HEAD
 - if all required parameters provided, returns a `HTTP 200` status with a mock `User` object:
 ```
+=======
+- a mock User object:
+```json
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 {
   "id" : 1,
   "username" : "Bond",
@@ -55,8 +60,13 @@ e.g.:
 ```
 
 #### Response
+<<<<<<< HEAD
 - if all parameters are provided and username equals "Bond", it returns a `HTTP 200` status with a mock `User` object:
 ```
+=======
+- a mock User object:
+```json
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 {
   "id" : 1,
   "username" : "Bond",
@@ -94,12 +104,18 @@ e.g.:
 Gets all data of a kingdom.
 
 #### Response
+<<<<<<< HEAD
 - a mock `Kingdom` object:
 ```
+=======
+- a mock Kingdom object:
+```json
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 {
   "id" : 1,
   "name" : "London",
   "userId" : 1,
+<<<<<<< HEAD
   "buildings": [
     {
       "id" : 1,
@@ -130,6 +146,15 @@ Gets all data of a kingdom.
     }
   ],
   "location": [1, 1]
+=======
+  "buildings": [],
+  "resources": [],
+  "troops": [],
+  "location": {
+    "x": 1,
+    "y": 1
+  }
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 }
 ```
 
@@ -148,12 +173,18 @@ e.g.:
 ```
 
 #### Response
+<<<<<<< HEAD
 - a mock `Kingdom` object:
 ```
+=======
+- a mock Kingdom object:
+```json
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 {
   "id" : 1,
   "name" : "London",
   "userId" : 1,
+<<<<<<< HEAD
   "buildings": [
     {
       "id" : 1,
@@ -184,7 +215,14 @@ e.g.:
     }
   ],
   "location": [1, 1]
+=======
+  "buildings": [],
+  "resources": [],
+  "troops": [],
+  "location": {
+    "x": 1,
+    "y": 1
+  }
+>>>>>>> fadb9d00e17b966349db557c007621b897ca07d4
 }
 ```
-
-
