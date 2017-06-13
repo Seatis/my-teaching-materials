@@ -71,3 +71,28 @@ Scenario: Load login route
 
 Please create a separate component for the login page, also cover it with unit
 tests. Use the Angular Router module for handling the routes.
+
+### Mock login backend
+
+Create a simple backend application for simulating authentication.
+
+```gherkin
+Feature: Login endpoint
+
+Scenario: Post valid data
+ Given the running mock backend application
+  When the '/api/login/' is requested with a 'POST' request
+   And the body is: '{"username": "TestAdmin", "password": "1234"}'
+  Then it should response: '{"status": "ok", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"}'
+
+Scenario: Post invalid data
+ Given the running mock backend application
+  When the '/api/login/' is requested with a 'POST' request
+   And the body is: '{"username": "TestAdmin", "password": "123"}'
+  Then it should response: '{"status": "error", "message": "Mismatched username and password"}'
+```
+
+#### Technical Requirements
+
+You should deploy the application to [Glitch](https://glitch.com/).
+
