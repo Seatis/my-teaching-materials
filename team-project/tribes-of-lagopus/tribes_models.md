@@ -65,6 +65,16 @@
 - avatar: URL of the user's uploaded avatar image. Can be null if it's not uploaded yet.
 - points: the user's sum game points (default 0)
 
+## Location
+```
+{
+	"x": 1,
+	"y": 1
+}
+```
+- the kingdom's `x` location on the map
+- the kingdom's `y` location on the map
+
 ## Kingdom
 ```
 {

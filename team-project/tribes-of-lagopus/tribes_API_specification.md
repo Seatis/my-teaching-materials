@@ -13,7 +13,7 @@ Creates a new User.
 
 
 e.g.:
-```
+```json
 {
   "username" : "Bond",
   "password" : "password123",
@@ -33,7 +33,7 @@ e.g.:
 ```
 
 - if a required parameter is missing, returns a `HTTP 400` status with the following message:
-```
+```json
 {
   "status" : "error",
   "message" : "Missing parameter(s): username!"
@@ -51,7 +51,7 @@ Authenticates a user.
 
 
 e.g.:
-```
+```json
 {
   "username" : "Bond",
   "password" : "password123"
@@ -69,7 +69,7 @@ e.g.:
 ```
 
 - if all parameters are provided and username doesn't equals "Bond", it returns a `HTTP 401` status with the following message:
-```
+```json
 {
   "status" : "error",
   "message" : "No such user: <username>!"
@@ -77,7 +77,7 @@ e.g.:
 ```
 
 - if all parameters are provided and password doesn't equals "password123", it returns a `HTTP 401` status with the following message:
-```
+```json
 {
   "status" : "error",
   "message" : "Wrong password!"
@@ -85,7 +85,7 @@ e.g.:
 ```
 
 - if a required parameter is missing, returns a `HTTP 400` status with the following message:
-```
+```json
 {
   "status" : "error",
   "message" : "Missing parameter(s): <comma separated list of missing parameters>!"
@@ -133,7 +133,10 @@ Gets all data of a kingdom.
       "defence": 1
     }
   ],
-  "location": [1, 1]
+  "location": {
+    "x": 1,
+    "y": 1
+  }
 }
 ```
 
@@ -147,7 +150,7 @@ Modifies data of a kingdom.
 
 
 e.g.: 
-```
+```json
 {
   "name" : "MI5"
 }
@@ -189,6 +192,9 @@ e.g.:
       "defence": 1
     }
   ],
-  "location": [1, 1]
+  "location": {
+    "x": 1,
+    "y": 1
+  }
 }
 ```
