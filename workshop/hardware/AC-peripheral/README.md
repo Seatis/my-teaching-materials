@@ -151,7 +151,7 @@ Whit this you connected the LED pin to the ICP1 pin.
 
 ## Writing the code
 The goal is to write a program, which can measure a digital signal's frequency, which
-is connected to the ICP1 pin (PD6). You should use the TC1 timer's input capture unit!
+is connected to the ICP1 pin (PB0). You should use the TC1 timer's input capture unit!
 
 - create a new AtmelStudio project
 - copy the [following files](workshop/AtmelStudio/freq-measurement) to the project folder (next to the automatically generated main.c file)
