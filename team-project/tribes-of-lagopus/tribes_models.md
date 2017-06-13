@@ -85,7 +85,7 @@
   "buildings": [list of `Building` objects],
   "resources": [list of `Resource` objects],
   "troops": [list of `Troop` objects],
-  "location": <Location object>
+  "location": <`Location` object>
 }
 ```
 - id: the unique identifier of the kingdom
@@ -94,5 +94,5 @@
 - buildings: the list of `Building` objects found in this kingdom
 - resources: the list of `Resource` objects of this kingdom. A kingdom could have maximum one food type and one gold type resources.
 - troops: the list of `Troop` objects in this kingdom (default empty)
-- location: a list of two integers that stores the `x` and `y` coordinate of the kingdom on the map. Can be null if the kingdom is not settled yet.
+- location: a `Location` object, that stores the coordinate of the kingdom on the map. Can be null if the kingdom is not settled yet.
 
