@@ -14,7 +14,7 @@
       - A .zip file will be downloaded, which contains a lot's of source files
       - Unzip it to a folder
       - You can version control that folder with GIT
-          - Be sure not to push all the source code to you github account
+          - Be sure not to push all the source code to your github account
           - It is an enormous amount of code, we will deal with it properly later
 
 ### Training
