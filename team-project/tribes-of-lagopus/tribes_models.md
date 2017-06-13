@@ -1,6 +1,6 @@
 # Tribes of Lagopus models
-[Project description](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes-of-lagopus)
-[API specification](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes_API_specification.md)
+- [Project description](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes-of-lagopus)
+- [API specification](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes_API_specification.md)
 
 ## Building
 ```json
