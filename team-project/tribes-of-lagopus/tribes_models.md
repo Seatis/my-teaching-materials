@@ -2,7 +2,7 @@
 
 
 ## Building
-```
+```json
 {
   "id": <long>,
   "type": townhall|mine|farm|barrack>,
@@ -20,7 +20,7 @@
 - hp: health point of the building
 
 ## Troop
-```
+```json
 {
 	"id": <long>,
 	"level": <int>,
@@ -37,7 +37,7 @@
 
 
 ## Resource
-```
+```json
 {
 	"type": <food|gold>,
 	"amount": <int>,
@@ -52,7 +52,7 @@
 
 
 ## Player (user)
-```
+```json
 {
 	"id": <long>,
 	"username": <string>,
@@ -66,7 +66,7 @@
 - points: the user's sum game points (default 0)
 
 ## Location
-```
+```json
 {
 	"x": 1,
 	"y": 1
@@ -76,7 +76,7 @@
 - the kingdom's `y` location on the map
 
 ## Kingdom
-```
+```json
 {
   "id" : <long>,
   "name" : <string>,
