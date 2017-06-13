@@ -6,7 +6,7 @@
 ```json
 {
   "id": <long>,
-  "type": townhall|mine|farm|barrack>,
+  "type": townhall|mine|farm|barracks>,
   "level": <int>,
   "hp": <int>
 }
@@ -16,7 +16,7 @@
 	- townhall: only one townhall allowed in a `Kingdom`. Certain townhall level needs for other building level upgrades
 	- mine: produces gold
 	- farm: produces food
-	- barrack: can create `Troop`
+	- barracks: can create `Troop`
 - level: level of the building (default: 1)
 - hp: health point of the building
 
@@ -61,7 +61,7 @@
 }
 ```
 - id: unique identifier of the user
-- username: name of the user
+- username: unique name of the user
 - kingdomId: the id of the user's `Kingdom`. One user can have only one Kingdom.
 - avatar: URL of the user's uploaded avatar image. Can be null if it's not uploaded yet.
 - points: the user's sum game points (default 0)
