@@ -85,7 +85,7 @@
   "buildings": [list of `Building` objects],
   "resources": [list of `Resource` objects],
   "troops": [list of `Troop` objects],
-  "location": [<int> x, <int> y]
+  "location": <Location object>
 }
 ```
 - id: the unique identifier of the kingdom
