@@ -10,6 +10,8 @@ Creates a new User.
 - `username` [String]
 - `password` [String, optional]
 - `kingdom` [String, optional, defaults to "`username`'s kingdom"]
+
+
 e.g.:
 ```
 {
@@ -46,6 +48,8 @@ Authenticates a user.
 #### Request parameters
 - `username` [String]
 - `password` [String, optional]
+
+
 e.g.:
 ```
 {
@@ -55,7 +59,6 @@ e.g.:
 ```
 
 #### Response
-<<<<<<< HEAD
 - if all parameters are provided and username equals "Bond", it returns a `HTTP 200` status with a mock `User` object:
 ```json
 {
@@ -95,7 +98,7 @@ e.g.:
 Gets all data of a kingdom.
 
 #### Response
-- `HTTP 200` status with a mock Kingdom object:
+- `HTTP 200` status with a mock `Kingdom` object:
 ```json
 {
   "id" : 1,
@@ -141,6 +144,8 @@ Modifies data of a kingdom.
 - `name` [String]
 - `locationX` [int]
 - `locationY` [int]
+
+
 e.g.: 
 ```
 {
@@ -149,7 +154,7 @@ e.g.:
 ```
 
 #### Response
-- `HTTP 200` status with a mock Kingdom object:
+- `HTTP 200` status with a mock `Kingdom` object:
 ```json
 {
   "id" : 1,
