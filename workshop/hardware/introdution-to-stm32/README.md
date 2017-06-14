@@ -7,8 +7,9 @@
 
 ## Materials & Resources
 ### Environment
-  - Make sure that System Workbench for STM32 is installed on your machine (see [IDE-Installation-Guide](https://github.com/greenfox-academy/totoro-syllabus/blob/master/IDE-Installation-Guide.md) for further information)
-  - Make sure that [STM32CubeL4 libary package](http://www.st.com/en/embedded-software/stm32cubel4.html) is installed on your machine
+  - Make sure that System Workbench for STM32 is installed on your machine
+    - [IDE-Installation-Guide](https://github.com/greenfox-academy/totoro-syllabus/blob/master/IDE-Installation-Guide.md)
+  - Make sure that [STM32CubeF7 library package](https://my.st.com/content/my_st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32cube-embedded-software/stm32cubef7.license%3d1497432583192.html) is installed on your machine
       - In the "GET SOFTWARE" section click on the "Get Software" button to download the package
       - An ST registration will be required
       - A .zip file will be downloaded, which contains a lot's of source files
@@ -18,41 +19,56 @@
           - It is an enormous amount of code, we will deal with it properly later
 
 ### Training
+We are going to use the [32F746GDISCOVERY    kit](http://www.st.com/en/evaluation-tools/32f746gdiscovery.html). It was built
+around the STM32F746NGH6 microcontroller. Watch and/or read the following materials!
 
-| Materials to read |
-|:--------|
-|[Embedded software engineering](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan)|
-| [Getting started with STM32CubeL4 for STM32L4 Series](https://my.st.com/content/ccc/resource/technical/document/user_manual/74/09/3d/80/f9/39/4c/c7/DM00157440.pdf/files/DM00157440.pdf/jcr:content/translations/en.DM00157440.pdf)|
-| [Embedded software](http://internetofthingsagenda.techtarget.com/definition/embedded-software)|
-
-| Materials to watch | Duration |
+| Material | Duration |
 |:---------|-----:|
+|[Embedded software engineering](https://www.linkedin.com/pulse/5-differences-between-embedded-maharajan)|-|
+| [Embedded software](http://internetofthingsagenda.techtarget.com/definition/embedded-software)|-|
 | [Dive into abstraction](https://www.youtube.com/watch?v=X8QSymRlEEY)| 5:27 |
 | [Hardware abstraction layer](https://www.youtube.com/watch?v=Va8c9g3NclA)| 9:58 |
+| [Getting started with STM32CubeL4 for STM32L4 Series](https://my.st.com/content/ccc/resource/technical/document/user_manual/74/09/3d/80/f9/39/4c/c7/DM00157440.pdf/files/DM00157440.pdf/jcr:content/translations/en.DM00157440.pdf)|-|
+|[32F746GDISCOVERY kit user manual](http://www.st.com/content/ccc/resource/technical/document/user_manual/f0/14/c1/b9/95/6d/40/4d/DM00190424.pdf/files/DM00190424.pdf/jcr:content/translations/en.DM00190424.pdf)|-|
 
+Difference between the ATmega168PB and the STM32F746NGH6 MCU:
 
-A short specification about the STM32 board :
-- Core: ARM® 32-bit Cortex®-M4 CPU with FPU
-- 1 MB Flash
-- 128 KB of SRAM
-- USB OTG 2.0
-- Bluetooth® V4.1 module
-- Sub-GHz RF module
-- Wi-Fi® module
-- NFC tag
-- Digital omnidirectional microphones
-- Capacitive digital sensor for relative humidity and temperature
-- 3-axis magnetometer
-- 3D accelerometer and 3D gyroscope
-- Absolute digital output barometer
-- 2 push-buttons
+| Parameter | ATmega168PB | STM32F746NGH6 |
+|-----------|-------------|---------------|
+| Vcc | 1.8V – 5.5V | 1.71V - 3.6V |
+| Max. clock speed | 20MHz | 80MHz |
+| RAM | 1kB | 320kB |
+| FLASH | 16kB | 1MB |
+| ADC | 1x10bitx8ch | 3x12bitx24ch |
+| Timers | 2x8bit, 1x16bit| 2x16bit motor control TMR, 10x16bit, 2x32bit |
+| RTC | 1x | 1x |
+| PWM | 6ch | many |
+| USART | 1x | 4x|
+| SPI | 1x | 6x |
+| I2C | 1x | 4x |
+| AC | 1x | - |
+
+More STM32F746NGH6 features:
+- 2xUSB
+- TFT LCD controller
+- HDMI-CEC
+- 3xI^S
+- Camera interface
+- Ethernet
+- 2xCAN
+- 1xSDMMC
+- LIN, smartcard, IrDA, modem control
+- 2xSAI
+- SPDIF input x4
+- floating point unit
+- DMA
+- True random number generator
 
 ## Material Review
-### Microcontroller
-#### Abstraction
+### Abstraction
 - Meaning of abstarction
     - example from a [previous workshop](#)
-- STM32CubeL4
+- STM32CubeF7
     - Level 0
         - Low Layer (LL)
         - Core drivers
@@ -63,17 +79,21 @@ A short specification about the STM32 board :
     - Level 2
         - Application
 
-#### Embedded software
+### Embedded software
 - What is it good for
 - Usage in our class
 - Real time operation
 
-#### System Workbench for STM32
-- opening existing project
-- parallel build setup
+### System Workbench for STM32 and CubeL4
+- opening an existing project
+- how to set up parallel building
+- how to build, run, debug in the IDE
+- how to use the provided workshop source files
 - enabling specific HAL drivers to compile in ```stm32l4xx_hal_conf.h```
-- how to git this
-- how to use our solutions
+- how to GIT this
 
 ## Workshop
-Before getting started with todays workshop, please have a look at  [this](B-L475E-IOT01A2/hardware-is-faulty.md).
+### Setting up the environment
+### LED blinker
+### Pushbutton handling
+### UART on STM32
