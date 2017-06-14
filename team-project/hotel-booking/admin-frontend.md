@@ -124,7 +124,7 @@ Scenario: Login
 Scenario: Logged in user
  Given a user logged in
   When the '/login' page is visited
-  Then it should redirect to '/'7
+  Then it should redirect to '/'
 ```
 
 #### Technical Requirements
