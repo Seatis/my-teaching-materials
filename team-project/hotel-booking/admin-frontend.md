@@ -82,13 +82,13 @@ Feature: Login endpoint
 Scenario: Post valid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
-   And the body is: '{"username": "TestAdmin", "password": "1234"}'
+   And the body is: '{"email": "test@example.com", "password": "1234"}'
   Then it should response: '{"status": "ok", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"}'
 
 Scenario: Post invalid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
-   And the body is: '{"username": "TestAdmin", "password": "123"}'
+   And the body is: '{"email": "test@example.com", "password": "123"}'
   Then it should response: '{"status": "error", "message": "Mismatched username and password"}'
 ```
 
@@ -96,3 +96,37 @@ Scenario: Post invalid data
 
 You should deploy the application to [Glitch](https://glitch.com/).
 
+### Login form
+
+Create a login form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+#### Technical Requirements
+
+ - The form should not send any http request if any of the fields are missing
+ - Use angular form validation
+
+### Session
+
+```gherkin
+Feature: Required login
+
+Scenario: Logged out user
+ Given a user logged out
+  When the '/' page is visited
+  Then it should redirect to '/login'
+
+Scenario: Login
+ Given a user logged out
+  When the '/login' page is visited
+   And the form is submitted correctly
+  Then it should redirect to '/'
+
+Scenario: Logged in user
+ Given a user logged in
+  When the '/login' page is visited
+  Then it should redirect to '/'7
+```
+
+#### Technical Requirements
+
+The session should be solved by saving the JWT token in sessionStorage
