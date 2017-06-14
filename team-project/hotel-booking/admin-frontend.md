@@ -134,7 +134,7 @@ The session should be solved by saving the JWT token in sessionStorage
 
 ### Logout
 
-Add a logout link to the header
+Add a logout link to the header, that only shows when the user is logged in
 
 ```gherkin
 Scenario: Logout user
@@ -143,3 +143,4 @@ Scenario: Logout user
    And the logout link is clicked
   Then it should redirect to '/login'
 ```
+
