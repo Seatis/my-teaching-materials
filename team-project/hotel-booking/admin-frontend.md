@@ -89,7 +89,7 @@ Scenario: Post invalid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
    And the body is: '{"email": "test@example.com", "password": "123"}'
-  Then it should response: '{"status": "error", "message": "Mismatched username and password"}'
+  Then it should response: '{"status": "error", "message": "Mismatched email and password"}'
 ```
 
 #### Technical Requirements
@@ -103,6 +103,7 @@ Create a login form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop
 #### Technical Requirements
 
  - The form should not send any http request if any of the fields are missing
+ - The form should validate on the email field if the given input is a valid email address
  - Use angular form validation
 
 ### Session
@@ -130,3 +131,15 @@ Scenario: Logged in user
 #### Technical Requirements
 
 The session should be solved by saving the JWT token in sessionStorage
+
+### Logout
+
+Add a logout link to the header
+
+```gherkin
+Scenario: Logout user
+ Given a user logged in
+  When the '/' page is visited
+   And the logout link is clicked
+  Then it should redirect to '/login'
+```
