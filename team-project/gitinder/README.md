@@ -14,6 +14,8 @@ The main goals are to:
 - implement proper APIs
 - use OAuth authentication
 
+[Api specification](api-spec.md)
+
 
 ## Main features
 
@@ -51,6 +53,6 @@ The main goals are to:
 	- unit testing
 
 ## Project Teams
- 
+
  - [GiTinder Java back end team]() | with Kond
  - [GiTinder Android client team]() | with Aze

@@ -1,0 +1,130 @@
+# GiTinder API specification
+- [Project description](README.md)
+- [Model descriptions](models.md)
+
+## Login
+
+### `POST /login`
+Creates and/or logs in the user.
+
+#### Request parameters (all required)
+- `username` [String]
+- `accessToken` [String]
+
+e.g.:
+```json
+{
+  "username" : "Bond",
+  "accessToken" : "abcd1234"
+}
+```
+#### Response
+- if all required parameters provided, returns a `HTTP 200` status with an "ok" status and the "abc123" token (later this will be the application generated unique id (String) as a token of the user):
+
+```json
+{
+  "status" : "ok",
+  "token" : "abc123"
+}
+```
+- if a required parameter is missing, returns a HTTP 400 status with the following message:
+```json
+{
+  "status" : "error",
+  "message" : "Missing parameter(s): username!"
+}
+```
+
+## Profile
+
+### `GET /profile`
+
+#### Request header parameter
+
+- X-GiTinder-token [String]
+
+
+#### Response
+
+- if X-GiTinder-token header parameter is provided and not empty, return with a mock `Profile` object:
+
+```json
+{
+  "login" : "kondfox",
+  "avatarUrl" : "https://avatars1.githubusercontent.com/u/26329189?v=3",
+  "repos" : [
+    "repo 1",
+    "repo 2"
+  ],
+  "languages" : [
+    "Java",
+    "Javascript"
+  ]
+}
+```
+- if the header parameter is missing or empty, returns a HTTP 403 status with the following message:
+```json
+{
+  "status" : "error",
+  "message" : "Unauthorized request!"
+}
+```
+
+## List of GiTinderers
+
+### `GET /available/{page}`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Request url parameter
+- Page [integer, optional]
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with a list of `Profile` objects
+- a `count` field that shows how many profiles are in the returned list
+- an `all` field that shows how many profiles are available
+- if `page` is not provided the list should contain the first 10 profiles
+- if `page` is provided, than the list should contain the `page`-th 10 profiles
+
+```json
+{
+  "profiles": [
+    <Profile Object 1>,
+    <Profile Object 2>
+    <Profile Object 3>,
+    <Profile Object 4>
+    <Profile Object 5>,
+    <Profile Object 6>
+    <Profile Object 7>,
+    <Profile Object 8>
+    <Profile Object 9>,
+    <Profile Object 10>
+  ],
+  "count": 10,
+  "all": 39
+}
+```
+
+- if the header parameter is missing or empty, returns a HTTP 403 status with the following message:
+
+```json
+{
+  "status" : "error",
+  "message" : "Unauthorized request!"
+}
+```
+
+## Swiping
+
+### `PUT /profiles/{username}/{direction}`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Request url parameter
+- username [String]
+- direction [enum]: `left` or `right`
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with a status object:
