@@ -36,7 +36,7 @@ Difference between the ATmega168PB and the STM32F746NGH6 MCU:
 | Parameter | ATmega168PB | STM32F746NGH6 |
 |-----------|-------------|---------------|
 | Vcc | 1.8V – 5.5V | 1.71V - 3.6V |
-| Max. clock speed | 20MHz | 80MHz |
+| Max. clock speed | 20MHz | 216MHz |
 | RAM | 1kB | 320kB |
 | FLASH | 16kB | 1MB |
 | ADC | 1x10bitx8ch | 3x12bitx24ch |
