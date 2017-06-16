@@ -199,4 +199,4 @@ strong enough.
 - Use Atmel studio data visualizer tool to visualize the controlling parameters
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/closed-loop-control/control  )
