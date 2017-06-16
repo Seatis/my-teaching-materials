@@ -93,8 +93,28 @@ More STM32F746NGH6 features:
 
 ## Workshop
 ### Setting up the environment
--
+- unzip the CubeF7 to a folder
+- copy the [following "Projects" folder] into the CubeF7 root folder
+    - there should already be a "Projects" folder in that root folder
+    - there won't be any overwriting issues, don't be afraid
+- open the SWSTM32 IDE
+- "File"->"Open Projects from File System"
+- In the "Import source" cell enter ```YOUR_CUBEF7_ROOT_PATH\Projects\STM32746G-Discovery\led_blinker\SW4STM32\STM32746G_Discovery_led_blinker```
+- Click on finish
+- The selected project will appear on the left side of the screen in the "Project Explorer"
+- Build the project
+    - Right click on the project in the "Project Explorer"
+    - Select "Clean project"
+    - After the process ends right click again
+    - Select "Build project"
+    - A quite long process will start, be patient
+- Run the project
+    - with `Ctrl+F5`
+    - or with `Run`->`Run`
+- The green LED should be lit on your board
 
 ### LED blinker
+
+
 ### Pushbutton handling
 ### UART on STM32
