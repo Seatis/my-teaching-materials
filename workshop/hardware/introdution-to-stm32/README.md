@@ -89,11 +89,12 @@ More STM32F746NGH6 features:
 - how to set up parallel building
 - how to build, run, debug in the IDE
 - how to use the provided workshop source files
-- enabling specific HAL drivers to compile in ```stm32l4xx_hal_conf.h```
 - how to GIT this
 
 ## Workshop
 ### Setting up the environment
+-
+
 ### LED blinker
 ### Pushbutton handling
 ### UART on STM32
