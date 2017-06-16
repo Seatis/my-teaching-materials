@@ -89,3 +89,120 @@ a new autoincrement id column to it,
 alter it in a way that all the stored records are remaining in the table on 
 the production environment. Use the flywaydb to proceed with the migration.
 
+### Logging
+
+Create a simple unit that is able to log any message to the standatd out.
+The application should have 4 different log levels, in the following increasing priority:
+
+ -  **debug**: Logging any debugging related information, that is only
+    informative for the current temporary debugging situation. Typically not
+    logged in production environment.
+ -  **info**: Generally useful information to log (service start/stop,
+    configuration assumptions, etc). Info I want to always have available but
+    usually don't care about under normal circumstances. This is my
+    out-of-the-box config level.
+ -  **warn**: Anything that can potentially cause application oddities, but for
+    which I am automatically recovering. (Such as switching from a primary to
+    backup server, retrying an operation, missing secondary data, etc.)
+ -  **error**: Any error which is fatal to the operation, but not the service
+    or application (can't open a required file, missing data, etc.).
+    These errors will force user (administrator, or direct user) intervention.
+    These are usually reserved (in my apps) for incorrect connection strings,
+    missing services, etc.
+
+#### Technical Requirements
+
+The unit should have a method for each log level and it should take the log message
+as a prameter. It should print the level, the hostname, and the message.
+in a format like:
+
+```
+INFO some-service.herokuapp.com message
+```
+
+The debug and info levels should log to the standard out and the warn and error
+levels should log to the standard error.
+
+### Logging time
+
+The logging unit should log the current date in standard format.
+It should use the ISO 8601 standard with combined date and time in UTC.
+Each log message should look like something similar:
+
+```
+INFO 2017-06-12T17:39:29Z some-service.herokuapp.com message
+```
+
+### Configurable logging levels
+
+The log levels should be configurable by an environment variable.
+If the called methods priority is the same or higher than the stored log level,
+then it should log the message otherwise it should not.
+So it for example it should log a `warn` level message if the environment variable is
+set to `info`, but it should not log anything if the message level is `info` and
+the variable is set to `error`.
+The default log level should be `info` if the environment variable is not present.
+
+### RabbitMQ in hearthbeat
+
+The hearthbeat endpoint should check the RabbitMQ connection and push and consume a message.
+
+```gherkin
+Feature: Hearthbeat endpoint should check message queue availability.
+
+Scenario: Monitor queue that has no items
+ Given the application running
+   And connected to RabbitMQ
+   And the 'heartbeat' queue is empty
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should send a message to the 'heartbeat' queue and consume that message right after
+   And it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "ok"}'
+
+Scenario: Monitor queue that has items
+ Given the application running
+   And connected to RabbitMQ
+   And the 'heartbeat' queue is not empty
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
+
+Scenario: Monitor queue that is not connected
+ Given the application running
+   And not connected to RabbitMQ
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
+```
+
+### Send Event
+
+Create a unit that is able to send an event to the 'events' message queue, to track events
+for further analytics.
+
+#### Technical Requirements
+
+If the dispach method is called on the unit it should send an event to a message queue
+thats configuration is saved in environment variables. The message should be in JSON
+format and it should consist these information:
+
+ - time
+ - hostname
+ - message
+
+### Endpoint logging
+
+Each http endpoint should be logged by the application
+
+```gherkin
+Feature: Logging on endpoints
+
+Scenario: Good request
+ Given the application running
+  When any of the endpoints is requested
+  Then it should log 'HTTP-REQUEST /path' in 'info' level
+
+Scenario: Bad request
+ Given the application running
+  When any of the endpoints is requested
+   And the response has any error
+  Then it should log 'HTTP-ERROR /path' in 'error' level
+```
+

@@ -71,3 +71,76 @@ Scenario: Load login route
 
 Please create a separate component for the login page, also cover it with unit
 tests. Use the Angular Router module for handling the routes.
+
+### Mock login backend
+
+Create a simple backend application for simulating authentication.
+
+```gherkin
+Feature: Login endpoint
+
+Scenario: Post valid data
+ Given the running mock backend application
+  When the '/api/login/' is requested with a 'POST' request
+   And the body is: '{"email": "test@example.com", "password": "1234"}'
+  Then it should response: '{"status": "ok", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"}'
+
+Scenario: Post invalid data
+ Given the running mock backend application
+  When the '/api/login/' is requested with a 'POST' request
+   And the body is: '{"email": "test@example.com", "password": "123"}'
+  Then it should response: '{"status": "error", "message": "Mismatched email and password"}'
+```
+
+#### Technical Requirements
+
+You should deploy the application to [Glitch](https://glitch.com/).
+
+### Login form
+
+Create a login form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+#### Technical Requirements
+
+ - The form should not send any http request if any of the fields are missing
+ - The form should validate on the email field if the given input is a valid email address
+ - Use angular form validation
+
+### Session
+
+```gherkin
+Feature: Required login
+
+Scenario: Logged out user
+ Given a user logged out
+  When the '/' page is visited
+  Then it should redirect to '/login'
+
+Scenario: Login
+ Given a user logged out
+  When the '/login' page is visited
+   And the form is submitted correctly
+  Then it should redirect to '/'
+
+Scenario: Logged in user
+ Given a user logged in
+  When the '/login' page is visited
+  Then it should redirect to '/'
+```
+
+#### Technical Requirements
+
+The session should be solved by saving the JWT token in sessionStorage
+
+### Logout
+
+Add a logout link to the header, that only shows when the user is logged in
+
+```gherkin
+Scenario: Logout user
+ Given a user logged in
+  When the '/' page is visited
+   And the logout link is clicked
+  Then it should redirect to '/login'
+```
+
