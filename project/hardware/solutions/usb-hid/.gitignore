@@ -11,4 +11,3 @@ Projects/*/*/SW4STM32/*/*
 !.project
 !*.ld
 !*.s
-*.cfg
