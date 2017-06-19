@@ -96,12 +96,12 @@ More STM32F746NGH6 features:
 ## Workshop
 ### Setting up the environment
 - unzip the CubeF7 to a folder
-- copy the [following "Projects" folder](#) into the CubeF7 root folder
+- copy the [following "Projects" folder](workshop) into the CubeF7 root folder
     - there should already be a "Projects" folder in that root folder
     - there won't be any overwriting issues, don't be afraid
 - open the SWSTM32 IDE
 - "File"->"Open Projects from File System"
-- In the "Import source" cell enter ```YOUR_CUBEF7_ROOT_PATH\Projects\STM32746G-Discovery\led_blinker\SW4STM32\STM32746G_Discovery_led_blinker```
+- In the "Import source" cell enter ```YOUR_CUBEF7_ROOT_PATH\Projects\STM32746G-Discovery\GreenFox\led_blinker\SW4STM32\STM32746G_Discovery_led_blinker```
 - Click on finish
 - The selected project will appear on the left side of the screen in the "Project Explorer"
 - Build the project
@@ -124,7 +124,7 @@ to start, take a look at the BSP of the STM32F746G-DISCOVERY board.
 
 ### Pushbutton handling
 In the [Setting up the environment](#setting-up-the-environment) section
-you copied another template project, which is located in `Projects\STM32746G-Discovery\push_button\SW4STM32\STM32746G_Discovery_push_button`.
+you copied another template project, which is located in `Projects\STM32746G-Discovery\GreenFox\push_button\SW4STM32\STM32746G_Discovery_push_button`.
 
 Open this project in SWSTM32, and modify the code! The task is to make the LED lit
 if the user pushbutton is pressed. If the button is not pressed, the LED should not
@@ -132,8 +132,15 @@ be lit.
 
 ### UART on STM32
 In the [Setting up the environment](#setting-up-the-environment) section
-you copied another template project, which is located in `Projects\STM32746G-Discovery\uart\SW4STM32\STM32746G_Discovery_uart`.
+you copied another template project, which is located in `Projects\STM32746G-Discovery\GreenFox\uart\SW4STM32\STM32746G_Discovery_uart`.
 
 Open this project in SWSTM32, and modify the code! The COM1 port of the board should
 be initialized. The goal is to be able to send data through UART to a PC terminal program.
 You should try out the HAL UART functions, but `printf()` should work too.
+
+### Basic LCD usage
+In the [Setting up the environment](#setting-up-the-environment) section
+you copied another template project, which is located in `Projects\STM32746G-Discovery\GreenFox\lcd_basic\SW4STM32\STM32746G_Discovery_lcd_basic`.
+
+Open this project in SWSTM32, and modify the code! Try to print
+out strings on the LCD, play around with the BSP LCD functions (strings, basic shapes, colors, etc.).
