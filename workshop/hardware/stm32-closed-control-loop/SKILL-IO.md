@@ -1,0 +1,22 @@
+# Input skills
+- basic GIT knowledge
+- basic electronics knowledge
+    - voltage
+    - current
+    - resistor
+- experience in binary, hexadecimal, decimal number conversion
+- knowledge of 32F746GDISCOVERY architecture
+    - GPIO
+    - interrupts
+    - UART with interrupts
+    - how to generate PWM signal
+    - the input capture unit
+- knowledge of C
+    - expressions and control flow
+    - functions
+    - arrays and pointers
+    - user input handling
+    - buffering techniques
+    - preprocessor macros
+    - data structures
+    - custom data types
