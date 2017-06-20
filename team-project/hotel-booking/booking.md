@@ -213,3 +213,227 @@ Scenario: Bad request
   Then it should log 'HTTP-ERROR /path' in 'error' level
 ```
 
+### Hotel list
+
+Create a REST endpoint for managing hotels
+
+```gherkin
+Feature: List hotels
+
+Scenario: Good request
+ Given the application running
+  When the '/hotels' endpoint is requested with a 'GET' request
+  Then it should return a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels"
+     }
+     "data": [{
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "full-service",
+         "stars": 5
+       }
+     }]
+   } 
+   """
+```
+
+#### Technical Requirements
+
+The API should follow the [JSON-API](http://jsonapi.org/) specification guidelines.
+The hotels should be stored in the database.
+
+### Hotel pagination
+
+The rest endpoint should have pagination if there are more than 20 hotels
+
+```gherkin
+Feature: Hotel pagination
+
+Scenario: More than 20
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels",
+       "next": "https://your-hostname.com/hotels?page=2",
+       "last": "https://your-hostname.com/hotels?page=10",
+     }
+     "data": [{
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "full-service",
+         "stars": 5
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+```gherkin
+Feature: Hotel pagination
+
+Scenario: Second page
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels?page=2' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels?page=2",
+       "next": "https://your-hostname.com/hotels?page=3",
+       "last": "https://your-hostname.com/hotels?page=10",
+     }
+     "data": [{
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "full-service",
+         "stars": 5
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+### Add Hotel
+
+Create a rest endpoint for creating new hotels
+
+```gherkin
+Feature: Add hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "full-service",
+         "stars": 5
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "full-service",
+         "stars": 5
+       }
+     }
+   }
+   """
+
+Feature: Add hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "meal_plan": "full-service"
+       }
+     }
+   }
+   """
+  Then it should send a 400 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "The attribute fields: \"stars\", \"has_gym\" are missing"
+     }]
+   }
+   """
+```
+
+
