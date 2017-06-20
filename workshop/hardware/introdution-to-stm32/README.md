@@ -145,5 +145,5 @@ you copied another template project, which is located in `Projects\STM32746G-Dis
 Open this project in SWSTM32, and modify the code! Try to print
 out strings on the LCD, play around with the BSP LCD functions (strings, basic shapes, colors, etc.).
 
-##Solution
+## Solution
 [Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/stm32-introduction)
