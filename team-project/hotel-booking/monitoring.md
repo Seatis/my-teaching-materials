@@ -205,3 +205,37 @@ Scenario: Bad request
   Then it should log 'HTTP-ERROR /path' in 'error' level
 ```
 
+### Monitoring services
+
+Create a monitor endpoint that checks all the microservices.
+
+```gherkin
+Feature: Monitoring
+
+Scenario: Monitor
+ Given the application running
+   And a config file "monitoring-services.json":
+   """
+   {
+     "services": [{
+       "host": "service1.herokuapp.com",
+       "contact": "dev1@hotel-booking.com"
+     }]
+   }
+   """
+  When the '/monitor' endpoint is requested with a 'GET' request
+  Then it should call the '/heartbeat' endpoint on 'service1.herokuapp.com'
+   And if the service responses "ok" response:
+   """
+   {
+     "statuses": [{
+       "name": "service1.herokuapp.com",
+       "status": "ok"
+     }]
+   }
+   """
+```
+
+#### Technical Requirements
+
+The endpoint should check each of the services that are saved in the config file.

@@ -209,3 +209,41 @@ Scenario: Bad request
   Then it should log 'HTTP-ERROR /path' in 'error' level
 ```
 
+### Registration email
+
+Create an endpoint that sends a registration email
+
+```gherkin
+Feature: Registration email
+
+Scenario: Send registration email
+ Given the application running
+  When the '/email/registration' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "email",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "name": "john.doe",
+         "url": "https://hotel-booking.com/confirm/sdfkksdfa"
+       }
+     }
+   }
+   """
+  Then it should send a registration email to 'john.doe@example.org':
+   """
+   Dear john.doe,
+
+   Please confirm your email address here: https://hotel-booking.com/confirm/sdfkksdfa !
+
+   Regards,
+   The Hotel Booking site
+   """
+ 
+```
+
+#### Technical Requirements
+
+Use the SendGrid heroku addon for sending emails.
+
