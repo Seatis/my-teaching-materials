@@ -144,3 +144,50 @@ Scenario: Logout user
   Then it should redirect to '/login'
 ```
 
+### Mock register backend
+
+Create a simple backend endpoint for simulating registration.
+
+```gherkin
+Feature: Register endpoint
+
+Scenario: Post valid data
+ Given the running mock backend application
+  When the '/api/register/' is requested with a 'POST' request
+   And the body is:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "password": "suchsecret"
+       }
+     }
+   }
+   """
+  Then it should response:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "id": "1",
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+```
+
+### Register form
+
+Create a register form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+### Hotel list backend
+
+Create a simple backend endpoint for simulating user 
+
+

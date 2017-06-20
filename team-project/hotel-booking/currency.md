@@ -153,7 +153,7 @@ Scenario: Monitor queue that has no items
  Given the application running
    And connected to RabbitMQ
    And the 'heartbeat' queue is empty
-  When the '/hearthbeat' endpoint is requested with 'GET' method
+  When the '/heartbeat' endpoint is requested with 'GET' method
   Then it should send a message to the 'heartbeat' queue and consume that message right after
    And it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "ok"}'
 
@@ -167,7 +167,7 @@ Scenario: Monitor queue that has items
 Scenario: Monitor queue that is not connected
  Given the application running
    And not connected to RabbitMQ
-  When the '/hearthbeat' endpoint is requested with 'GET' method
+  When the '/heartbeat' endpoint is requested with 'GET' method
   Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
 ```
 
@@ -204,4 +204,148 @@ Scenario: Bad request
    And the response has any error
   Then it should log 'HTTP-ERROR /path' in 'error' level
 ```
+
+### Payment page for 50 Eur
+
+Create a simple page for payments that is includable by frontend services.
+
+```gherkin
+Feature: Payment form
+
+Scenario: Open form
+ Given the application running
+  When the '/checkout' page is requested
+  Then it should render the checkout form for 50 'Euro'
+```
+
+#### Technical Requirements
+
+The checkout for should use the [Stripe checkout](https://stripe.com/checkout).
+ - The currency should be Euros
+ - The amount should be 50
+ - The form should get the Stripe public key from an environment variable.
+
+### Charge
+
+The checkout form should send the payment to the server
+
+```gherkin
+Feature: Charge
+
+Scenario: Charge
+ Given the application running
+  When the checkout for is submitted to '/charge'
+  Then it should submit the transaction to Stripe
+   And save the transaction to the database
+   And render a page with a success message
+```
+
+#### Technical Requirements
+
+Use the stripe Java API to submit the charge to Stripe.
+
+### Checkout tracking
+
+Track transactions in the database
+
+```gherkin
+Feature: Checkout
+
+Scenario: Create checkout
+ Given the application running
+   And 0 checkouts in the 
+  When the '/api/checkouts' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "checkout",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR"
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1"
+     }
+     "data": {
+       "type": "checkout",
+       "id": "1",
+       "attributes": {
+         "id": "1",
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }
+   }
+   """
+
+Feature: Missing field
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "checkout",
+       "attributes": {
+         "user_id": "1",
+         "currency": "EUR"
+       }
+     }
+   }
+   """
+  Then it should send a 400 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "The attribute fields: \"booking_id\", \"amount\" are missing"
+     }]
+   }
+   """
+```
+
+### Checkout tracking payment page
+
+```gherkin
+Feature: Payment page tracking
+
+Scenario: Paymanet page with checkout id
+ Given a checkout in the database:
+  | id | user_id | booking_id | amount | currency |  status |
+  |  1 |       1 |          1 |   8000 |      EUR | pending |
+  When the '/checkout?checkout_id=1' page is requested
+  Then it should render the checkout form for 80 'Euro'
+```
+
+### Checkout tracking charge
+
+The checkout form should send the payment to the server
+
+```gherkin
+Feature: Charge tracking
+
+Scenario: Charge with checkout_id
+ Given a checkout in the database:
+  | id | user_id | booking_id | amount | currency |
+  |  1 |       1 |          1 |   8000 |      EUR | 
+  When the checkout for is submitted to '/charge'
+  Then it should send the checkout_id as a parameter
+   And it should submit the transaction to Stripe
+   And save the transaction to the database
+   And render a page with a success message
+   And it should update the checkout status to success
+```
+
 
