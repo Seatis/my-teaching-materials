@@ -31,6 +31,31 @@
 			<locationURI>PARENT-2-PROJECT_LOC/readme.txt</locationURI>
 		</link>
 		<link>
+			<name>CtrlLoop/SW4STM32/startup_stm32f746xx.s</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/startup_stm32f746xx.s</locationURI>
+		</link>
+		<link>
+			<name>CtrlLoop/User/control.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/control.c</locationURI>
+		</link>
+		<link>
+			<name>CtrlLoop/User/main.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/main.c</locationURI>
+		</link>
+		<link>
+			<name>CtrlLoop/User/stm32f7xx_hal_msp.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f7xx_hal_msp.c</locationURI>
+		</link>
+		<link>
+			<name>CtrlLoop/User/stm32f7xx_it.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f7xx_it.c</locationURI>
+		</link>
+		<link>
 			<name>Drivers/CMSIS/system_stm32f7xx.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Src/system_stm32f7xx.c</locationURI>
@@ -149,31 +174,6 @@
 			<name>Drivers/STM32F7xx_HAL_Driver/stm32f7xx_ll_fmc.c</name>
 			<type>1</type>
 			<locationURI>PARENT-6-PROJECT_LOC/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.c</locationURI>
-		</link>
-		<link>
-			<name>Example/SW4STM32/startup_stm32f746xx.s</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/startup_stm32f746xx.s</locationURI>
-		</link>
-		<link>
-			<name>Example/User/control.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Src/control.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/main.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Src/main.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/stm32f7xx_hal_msp.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f7xx_hal_msp.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/stm32f7xx_it.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f7xx_it.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/BSP/Components/ft5336.c</name>

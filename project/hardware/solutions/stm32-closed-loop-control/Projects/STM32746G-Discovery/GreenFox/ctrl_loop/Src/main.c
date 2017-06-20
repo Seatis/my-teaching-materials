@@ -71,8 +71,6 @@ input_capture_data_t ic_cntr = {0, 0, 0};
 uint32_t ovf_cntr = 0;
 float prev_rpm_value = 0;
 
-uint8_t clear_string[] = "                ";
-
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
@@ -163,15 +161,15 @@ int main(void)
 
 	  uint8_t buffer[100];
 	  sprintf((char*)buffer, "ref   %.f", ref);
-	  BSP_LCD_DisplayStringAtLine(1, clear_string);
+	  BSP_LCD_ClearStringLine(1);
 	  BSP_LCD_DisplayStringAtLine(1, buffer);
 
 	  sprintf((char*)buffer, "sense %.f", rpm);
-	  BSP_LCD_DisplayStringAtLine(2, clear_string);
+	  BSP_LCD_ClearStringLine(2);
 	  BSP_LCD_DisplayStringAtLine(2, buffer);
 
 	  sprintf((char*)buffer, "duty  %.f", duty);
-	  BSP_LCD_DisplayStringAtLine(3, clear_string);
+	  BSP_LCD_ClearStringLine(3);
 	  BSP_LCD_DisplayStringAtLine(3, buffer);
 
 	  HAL_Delay(10);
