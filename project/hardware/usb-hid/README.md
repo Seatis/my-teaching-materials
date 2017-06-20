@@ -34,4 +34,4 @@ The board should work like an external touch pad if the user connects the board
 to the PC (with the `USB_FS` connector).
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/usb-hid)
