@@ -55,6 +55,9 @@ typedef struct {
 } input_capture_data_t;
 
 /* Private define ------------------------------------------------------------*/
+//#define USE_P_CTRLER
+
+
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef pwm_handle;
@@ -68,6 +71,8 @@ input_capture_data_t ic_cntr = {0, 0, 0};
 uint32_t ovf_cntr = 0;
 float prev_rpm_value = 0;
 
+uint8_t clear_string[] = "                ";
+
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
@@ -80,10 +85,9 @@ void adc_init();
 uint16_t adc_measure();
 void ic_init();
 float get_freq();
-
+float get_rpm();
 
 /* Private functions ---------------------------------------------------------*/
-
 
 /**
   * @brief  Main program
@@ -128,23 +132,57 @@ int main(void)
   BSP_LCD_DisplayOn();
   BSP_LCD_Clear(LCD_COLOR_BLACK);
 
+  p_ctrler_t p_ctrler;
+  pi_ctrler_t pi_ctrler;
+
+  p_init(&p_ctrler);
+  p_ctrler.out_max = 100;
+  p_ctrler.out_min = 0;
+  pi_init(&pi_ctrler);
+  pi_ctrler.out_max = 100;
+  pi_ctrler.out_min = 0;
+
   /* Infinite loop */
   while (1)
   {
-	  pwm_set_duty(adc_measure() / 4095.0 * 100.0);
-	  uint8_t buffer[100];
+	  float ref = (float)adc_measure() / 4095 * 4500;
+	  float rpm = get_rpm();
+	  p_ctrler.ref = ref;
+	  p_ctrler.sense = rpm;
+	  pi_ctrler.ref = ref;
+	  pi_ctrler.sense = rpm;
 
-	  BSP_LCD_Clear(LCD_COLOR_BLACK);
-	  sprintf((char*)buffer, "U %d", adc_measure());
+#ifdef USE_P_CTRLER
+	  float duty = p_control(&p_ctrler);
+
+#else
+	  float duty = pi_control(&pi_ctrler);
+#endif
+
+	  pwm_set_duty(duty);
+
+	  uint8_t buffer[100];
+	  sprintf((char*)buffer, "ref   %.f", ref);
+	  BSP_LCD_DisplayStringAtLine(1, clear_string);
 	  BSP_LCD_DisplayStringAtLine(1, buffer);
-	  sprintf((char*)buffer, "f %f", get_freq());
+
+	  sprintf((char*)buffer, "sense %.f", rpm);
+	  BSP_LCD_DisplayStringAtLine(2, clear_string);
 	  BSP_LCD_DisplayStringAtLine(2, buffer);
 
-	  HAL_Delay(100);
+	  sprintf((char*)buffer, "duty  %.f", duty);
+	  BSP_LCD_DisplayStringAtLine(3, clear_string);
+	  BSP_LCD_DisplayStringAtLine(3, buffer);
+
+	  HAL_Delay(10);
   }
 }
 
-
+/**
+  * @brief  This function will be called if a timer input capture interrupt occures
+  * @param  Timer handle, which identifies which timer input capture triggered the interrupt
+  * @retval None
+  */
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
 	ic_cntr.prev = ic_cntr.last;
@@ -153,12 +191,21 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 	ovf_cntr = 0;
 }
 
+/**
+  * @brief  This function will be called if a timer overflow occures
+  * @param  Timer handle, which identifies which timer had overflow
+  * @retval None
+  */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	ovf_cntr++;
 }
 
-
+/**
+  * @brief  Initializes TIM3 as PWM source
+  * @param  None
+  * @retval None
+  */
 void pwm_init()
 {
 	// TIM3 init as PWM
@@ -180,6 +227,11 @@ void pwm_init()
 	HAL_TIM_PWM_ConfigChannel(&pwm_handle, &pwm_oc_init, TIM_CHANNEL_1);
 }
 
+/**
+  * @brief  Sets the duty cycle of TIM3 CH1
+  * @param  duty - duty cycle to set (0.0-100.0)
+  * @retval None
+  */
 void pwm_set_duty(float duty)
 {
 	uint32_t pulse = pwm_handle.Init.Period * (duty / 100.0);
@@ -188,6 +240,11 @@ void pwm_set_duty(float duty)
 	HAL_TIM_PWM_Start(&pwm_handle, TIM_CHANNEL_1);
 }
 
+/**
+  * @brief  Initializes ADC3 to measure voltage on CH0
+  * @param  None
+  * @retval None
+  */
 void adc_init()
 {
 	adc_handle.State = HAL_ADC_STATE_RESET;
@@ -209,6 +266,11 @@ void adc_init()
 	HAL_ADC_ConfigChannel(&adc_handle, &adc_ch_conf);
 }
 
+/**
+  * @brief  Measures the voltage with ADC3 on CH0
+  * @param  None
+  * @retval Measured value (0-4095)
+  */
 uint16_t adc_measure()
 {
 	HAL_ADC_Start(&adc_handle);
@@ -216,6 +278,11 @@ uint16_t adc_measure()
 	return HAL_ADC_GetValue(&adc_handle);
 }
 
+/**
+  * @brief  Initializes TIM2 in input capture mode (CH1)
+  * @param  None
+  * @retval None
+  */
 void ic_init()
 {
 	ic_handle.Instance = TIM2;
@@ -238,6 +305,11 @@ void ic_init()
 	HAL_TIM_IC_Start_IT(&ic_handle, TIM_CHANNEL_1);
 }
 
+/**
+  * @brief  Calculates measured signal frequency based on timer values
+  * @param  None
+  * @retval frequency in Hz
+  */
 float get_freq()
 {
 	HAL_NVIC_DisableIRQ(TIM2_IRQn);
@@ -256,6 +328,11 @@ float get_freq()
 		return signal_freq;
 }
 
+/**
+  * @brief  Calculates fan RPM
+  * @param  None
+  * @retval RPM in RPM
+  */
 float get_rpm()
 {
 	float rpm = get_freq() * 60 / 7;

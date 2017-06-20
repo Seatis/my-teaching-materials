@@ -156,6 +156,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/startup_stm32f746xx.s</locationURI>
 		</link>
 		<link>
+			<name>Example/User/control.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/control.c</locationURI>
+		</link>
+		<link>
 			<name>Example/User/main.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Src/main.c</locationURI>

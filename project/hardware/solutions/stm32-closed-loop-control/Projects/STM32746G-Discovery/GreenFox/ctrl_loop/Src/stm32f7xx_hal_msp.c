@@ -117,7 +117,7 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
 	GPIO_InitTypeDef GPIO_Init;
 	GPIO_Init.Pin = GPIO_PIN_15;
 	GPIO_Init.Speed = GPIO_SPEED_FAST;
-	GPIO_Init.Pull = GPIO_PULLDOWN;
+	GPIO_Init.Pull = GPIO_NOPULL;
 	GPIO_Init.Mode = GPIO_MODE_AF_OD;
 	GPIO_Init.Alternate = GPIO_AF1_TIM2;
 	HAL_GPIO_Init(GPIOA, &GPIO_Init);
