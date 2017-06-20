@@ -4,13 +4,10 @@
     - voltage
     - current
     - resistor
+    - schematic reading
 - experience in binary, hexadecimal, decimal number conversion
 - knowledge of 32F746GDISCOVERY architecture
-    - GPIO
-    - interrupts
-    - UART with interrupts
-    - how to generate PWM signal
-    - the input capture unit
+    - CubeF7 BSP usage
 - knowledge of C
     - expressions and control flow
     - functions
