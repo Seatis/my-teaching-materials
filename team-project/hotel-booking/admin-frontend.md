@@ -186,8 +186,6 @@ Scenario: Post valid data
 
 Create a register form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
 
-### Hotel list backend
+### Add hotel
 
-Create a simple backend endpoint for simulating user 
-
-
+Create a page for adding hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
