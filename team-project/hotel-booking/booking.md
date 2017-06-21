@@ -244,7 +244,7 @@ Scenario: Good request
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "has_gym": true,
-         "meal_plan": "full-service",
+         "meal_plan": "american-plan",
          "stars": 5
        }
      }]
@@ -291,7 +291,7 @@ Scenario: More than 20
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "has_gym": true,
-         "meal_plan": "full-service",
+         "meal_plan": "american-plan",
          "stars": 5
        }
      }, {
@@ -331,7 +331,7 @@ Scenario: Second page
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "has_gym": true,
-         "meal_plan": "full-service",
+         "meal_plan": "american-plan",
          "stars": 5
        }
      }, {
@@ -366,7 +366,7 @@ Feature: Add hotel
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "has_gym": true,
-         "meal_plan": "full-service",
+         "meal_plan": "american-plan",
          "stars": 5
        }
      }
@@ -393,7 +393,7 @@ Feature: Add hotel
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "has_gym": true,
-         "meal_plan": "full-service",
+         "meal_plan": "american-plan",
          "stars": 5
        }
      }
@@ -419,7 +419,7 @@ Feature: Add hotel
          "has_bar": true,
          "has_swimming_pool": true,
          "has_air_conditioning": true,
-         "meal_plan": "full-service"
+         "eal_plan": "american-plan"
        }
      }
    }

@@ -189,3 +189,61 @@ Create a register form based on [this](https://app.moqups.com/tamas.kokeny@lab.c
 ### Add hotel
 
 Create a page for adding hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+```
+Feature: Add hotel endpoint
+
+Scenario: Mock endpoint
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "american-plan",
+         "stars": 5
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "american-plan",
+         "stars": 5
+       }
+     }
+   }
+   """
+```
+
+The form should submit a hotel to this endpoint
