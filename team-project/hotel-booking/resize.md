@@ -206,3 +206,85 @@ Scenario: Bad request
   Then it should log 'HTTP-ERROR /path' in 'error' level
 ```
 
+### Save image
+
+Create an enpoint for saving images
+
+```gherkin
+Feature: Add image
+
+Scenario: Upload request
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1"
+       }
+     }
+   }
+   """
+```
+
+### Upload image to S3
+
+The /images endpoint should upload the image to S3
+
+```gherkin
+Feature: Upload image
+
+Scenario: Upload request
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should upload the given image to S3
+   And it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1",
+         "url": "s3-eu-west-1.amazonaws.com/somebucket/filename.jpg"
+       }
+     }
+   }
+   """
+```
+
+#### Technical Requirements
+
+Use the official [AWS java API](http://docs.aws.amazon.com/AmazonS3/latest/dev/UploadObjSingleOpJava.html)
+for uploading images to S3. Store the Amazon credentials in environment variables, do not commit them.
+
+### Rename image
+
+The /images endpoint should give the image a uniq name
+
+```gherkin
+Feature: Rename image
+
+Scenario: Generate name
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should generate a uniq 12 character name for the file.
+   And it should upload the given image to S3
+   And it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1",
+         "url": "s3-eu-west-1.amazonaws.com/somebucket/hj2rtk4ds7pl.jpg"
+       }
+     }
+   }
+   """
+```
+
