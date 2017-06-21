@@ -314,6 +314,7 @@ Scenario: Second page
      "links": {
        "self": "https://your-hostname.com/hotels?page=2",
        "next": "https://your-hostname.com/hotels?page=3",
+       "prev": "https://your-hostname.com/hotels",
        "last": "https://your-hostname.com/hotels?page=10",
      }
      "data": [{
