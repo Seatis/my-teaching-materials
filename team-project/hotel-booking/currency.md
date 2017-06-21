@@ -272,7 +272,7 @@ Scenario: Create checkout
    """
    {
      "links": {
-       "self": "https://your-hostname.com/hotels/1"
+       "self": "https://your-hostname.com/checkout/1"
      }
      "data": {
        "type": "checkout",
