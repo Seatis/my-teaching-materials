@@ -235,7 +235,7 @@ Let's use multiple peripherals together. The task is to make an open loop RPM co
 - Read the ADC value and set a PWM signal according to it. So, if the ADC measures 5V, then set 100% PWM duty cycle. Similarly, if the ADC measures 0V then set 0% PWM duty cycle.
 - Print out the PWM duty cycle and the measured PRM of the ventilator to the terminal with UART.
 
-Why this control technique is bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning (if it's turning at all), so it' not really CONTROLS the hole progress, it just sets the PWM and something will happen. No feedback from the ventilator is used.
+Why this control technique is bad? Our open loop "controller" doesn't care about what RPM is the ventilator turning (if it's turning at all), so it' not really CONTROLS the whole progress, it just sets the PWM and something will happen. No feedback from the ventilator is used.
 
 #### Closed loop P control
 Let's use feedback from the ventilator. The task is to make a proportional controller, which will regulate the PWM duty cycle according to the measured RPM and the reference
@@ -255,7 +255,7 @@ and the fan will produce bigger torque to keep the rotational speed constant. Th
 P controller can't do this exactly. Why?
 
 #### Closed loop PI control
-The task is to make a proportional ant integrating controller, which will regulate the PWM duty cycle according to the measured RPM and the reference
+The task is to make a proportional and integrating controller, which will regulate the PWM duty cycle according to the measured RPM and the reference
 RPM value.
 
 - Use the P controller pseudocode to make your controller
