@@ -83,13 +83,34 @@ Scenario: Post valid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
    And the body is: '{"email": "test@example.com", "password": "1234"}'
-  Then it should response: '{"status": "ok", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"}'
+  Then it should response:
+  """
+  {
+    "data": {
+      "type": "auth",
+      "attributes": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"
+      }
+    }
+  }
+  """
+
 
 Scenario: Post invalid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
    And the body is: '{"email": "test@example.com", "password": "123"}'
-  Then it should response: '{"status": "error", "message": "Mismatched email and password"}'
+  Then it should response:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "Mismatched email and password"
+     }]
+   }
+   """
+
 ```
 
 #### Technical Requirements
