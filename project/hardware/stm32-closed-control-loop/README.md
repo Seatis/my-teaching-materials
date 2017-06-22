@@ -184,7 +184,7 @@ Your task is to:
   - Turn on the ADC clock
   - Turn on the GPIO clock
   - Initialize the STM32F746G-DISCOVERY A0 pin as analog input
-    - The **A0 is not equal with GPIOA0!**
+    - The **A0 is may be not equal with GPIOA0!**
     - it is connected to an MCU pin, which has a different name!
   - You does not want to use interrupts or DMA
 - Initialize the ADC with `HAL_ADC_Init()`
