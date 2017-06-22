@@ -6,13 +6,13 @@
 
 int main()
 {
-    printf("\t\tPing a random address!\n");
+    printf("\t\tPing google.com!\n");
     printf("\t\tPress enter to start!\n\n");
     char c = 0;
     while (c != '\n')
         c = getchar();
 
-    if (system("ping www.google.hu") == 0)
+    if (system("ping www.google.com") == 0)
         printf("\n\n\t\tThe ping succeeded!\n");
 
     return 0;
