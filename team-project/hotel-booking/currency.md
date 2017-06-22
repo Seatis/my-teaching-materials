@@ -309,7 +309,7 @@ Feature: Missing field
      "errors": [{
        "status": "400",
        "title": "Bad Request",
-       "detail": "The attribute fields: \"booking_id\", \"amount\" are missing"
+       "detail": "The attribute fields: \"booking_id\", \"amount\" are missingo"
      }]
    }
    """
@@ -347,4 +347,99 @@ Scenario: Charge with checkout_id
    And it should update the checkout status to success
 ```
 
+### Checkout CRUD
 
+Create anendpoint for listing, creating, removing updating and deleting checkout entities.
+
+```gherkin
+Feature: List checkouts
+
+Scenario: Good request
+ Given the application running
+  When the '/api/checkouts' endpoint is requested with a 'GET' request
+  Then it should return a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts"
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }]
+   } 
+   """
+```
+
+
+```gherkin
+Feature: Checkouts pagination
+
+Scenario: More than 20
+ Given the application running
+   And 200 xheckouts in the database
+  When the '/api/checkouts' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts",
+       "next": "https://your-hostname.com/api/checkouts?page=2",
+       "last": "https://your-hostname.com/api/checkouts?page=10",
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+```gherkin
+Feature: Checkouts pagination
+
+Scenario: Second page
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts?page=2' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts?page=2",
+       "next": "https://your-hostname.com/api/checkouts?page=3",
+       "prev": "https://your-hostname.com/api/checkouts",
+       "last": "https://your-hostname.com/api/checkouts?page=10",
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
