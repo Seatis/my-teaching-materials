@@ -115,6 +115,15 @@ e.g.:
 }
 ```
 
+- if we don't have new profiles for the given page parameter, returns a HTTP 204 status with the following message:
+
+```json
+{
+  "status" : "ok",
+  "message" : "No more available profiles for you!"
+}
+```
+
 ## Swiping
 
 ### `PUT /profiles/{username}/{direction}`
