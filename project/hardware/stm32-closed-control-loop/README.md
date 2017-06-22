@@ -151,7 +151,7 @@ to the ATmega168PB based circuit.
 
 [LM393 datasheet](http://www.ti.com/lit/ds/symlink/lm393-n.pdf)
 
-<img src="img/GF-STM32F746G-controller.png" width="50%"></img>
+<img src="img/GF-STM32F746G-controller.png" width="85%"></img>
 
 ### Tasks
 - Peripherals to use
