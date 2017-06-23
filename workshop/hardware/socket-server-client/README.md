@@ -17,27 +17,38 @@
 | [HTTP and HTML](https://www.youtube.com/watch?v=1K64fWX5z4U) | 7:06 |
 | [Encryption and public keys](https://www.youtube.com/watch?v=6-JjHa-qLPk) | 6:39 |
 | [The OSI Model Demystified](https://www.youtube.com/watch?v=HEEnLZV2wGI)| 18:40 |
+| [Hub, Switch or Router? Network Devices Explained](https://www.youtube.com/watch?v=Ofjsh_E4HFY)| 7:39 |
 | [TCP: Transmission control protocol  Networking tutorial (12 of 13)](https://www.youtube.com/watch?v=4IMc3CaMhyY) | 8:28 |
 | [TCP and UDP](https://www.youtube.com/watch?v=TKrTnPz7gvk) | 3:06 |
 | [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8) | 11:34 |
+
+**Bonus task:** Explain someone how the internet works! To your grandma, dad, kid, neighbor in the elevator, cat, you name it.
+
+The following materials could be used during the project. At home please start reading it
+only if you have a lot's of time.
+
+| Material | Time |
+|:---------|-----:|
 | [winsock2.h usage](http://www.winsocketdotnetworkprogramming.com/winsock2programming/winsock2advancedcode1chap.html) |-|
 | [Creating a TCP Client in C++](https://www.youtube.com/watch?v=0Zr_0Jy8mWE) | 22:11 |
-| [Creating a TCP Server in C++)](https://www.youtube.com/watch?v=WDn-htpBlnU&t=822s) | 30:30 |
+| [Creating a TCP Server in C++](https://www.youtube.com/watch?v=WDn-htpBlnU&t=822s) | 30:30 |
 
-Bonus task: Explain someone how the internet works! To your grandma, dad, kid, neighbor in the elevator, cat, you name it.
 
 ## Material Review
- - What is IP and DNS?
- - What are packets, what is the router's work?
- - What is HTTP and HTML?
- - What is encryption and public keys
- - What is a server?
- - What is a client?
- - What should be transmitted?
- - Which OSI layer does an SDL client and server use?
- - What is a message?
- - What makes a message UNIQUE?
- - What is the most important question to You after reading and listening to al this?
+- OSI model
+  - MAC vs. IP and DNS
+- What are packets?
+- What does the
+  - Hub
+  - Switch
+  - Router
+  - Gateway do?
+- What is HTTP and HTML?
+- What is encryption and public keys?
+- What is a server?
+- What is a client?
+- What is TCP and UDP?
+- What are the differences?
 
 ### Excercises
 First you need to be link to the linker the ws2_32.lib:
