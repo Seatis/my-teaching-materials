@@ -239,3 +239,165 @@ Scenario: Monitor
 #### Technical Requirements
 
 The endpoint should check each of the services that are saved in the config file.
+
+### Refactor Logging 
+
+Refactor the logging of enpoints using Aspect Oriented Programming.
+Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
+Refactor your code to use aspects for logging on each endpoint.
+
+### Page view
+
+Create an endpoint that returns the aggregated page view events.
+
+```gherkin
+Feature: Page view tracking
+
+Scenario: Aggregating page view
+ Given the application running
+  When a page view event is received in the queue
+  Then it should save and aggregate it into the database
+
+Scenario: Page view endpoint
+ Given the application running
+  When the '/pageviews' endpoint is requested with a "GET" request
+  Then it should response:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/pageviews"
+     },
+     "data": [{
+       "type": "pageviews",
+       "id": 1,
+       "attributes": {
+         "path": "/search",
+         "count: 123
+       }
+     }, {  
+       "type": "pageviews",
+       "id": 2,
+       "attributes": {
+         "path": "/checkout",
+         "count: 12
+       }
+     }]
+   }
+   """
+```
+
+### Technical requirements
+
+Each event should be stored as JSON in the message queue. Each event should have
+a `type` key.
+A typical page view event:
+```json
+{
+  "type": "page-view",
+  "path": "/search",
+  "trackingId": "5431325134"
+}
+```
+
+### Pageview pagination
+
+The rest endpoint should have pagination if there are more than 20 pageview
+
+```gherkin
+Feature: Pageview pagination
+
+Scenario: More than 20
+ Given the application running
+   And 200 pageviews in the database
+  When the '/pageviews' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/pageviews",
+       "next": "https://your-hostname.com/pageviews?page=2",
+       "last": "https://your-hostname.com/pageviews?page=10",
+     }
+     "data": [{
+       "type": "pageviews",
+       "id": "1",
+       "attributes": {
+         "path": "/search",
+         "count: 123
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+```gherkin
+Feature: Pageviews pagination
+
+Scenario: Second page
+ Given the application running
+   And 200 pageviews in the database
+  When the '/pageviews?page=2' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/pageviews?page=2",
+       "next": "https://your-hostname.com/pageviews?page=3",
+       "prev": "https://your-hostname.com/pageviews",
+       "last": "https://your-hostname.com/pageviews?page=10",
+     }
+     "data": [{
+       "type": "pageviews",
+       "id": "1",
+       "attributes": {
+         "path": "/search",
+         "count: 123
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+### Pageviews filtering
+
+The pageview endpoint should be able to filter on path.
+
+```gherkin
+Feature: filter by path
+
+Scenario: by path
+ Given the application running
+   And 10 pageviews in the database
+   And one of them is '/search'
+  When the '/pageviews?path=%2fsearch' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/pageviews?path=%2fsearch"
+     }
+     "data": [{
+       "type": "pageviews",
+       "id": "1",
+       "attributes": {
+         "path": "/search",
+         "count: 123
+       }
+     }]
+   }
+   """
+
+```
+
+### Pageview min max
+
+The pageview endpoint should have a `min` and a `max` filter parameter, both holding
+a number value. If the `min` parameter is present, it should only show page views that
+have a higher count than the given parameter. The `max` parameter should work the same
+way just showing the events with the lower counts.
+
+### Daily Aggregation

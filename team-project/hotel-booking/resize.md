@@ -288,3 +288,10 @@ Scenario: Generate name
    """
 ```
 
+### Refactor Logging 
+
+Refactor the logging of enpoints using Aspect Oriented Programming.
+Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
+Refactor your code to use aspects for logging on each endpoint.
+
+

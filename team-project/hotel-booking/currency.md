@@ -443,3 +443,206 @@ Scenario: Second page
    }
    """
 ```
+
+### Refactor Logging 
+
+Refactor the logging of enpoints using Aspect Oriented Programming.
+Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
+Refactor your code to use aspects for logging on each endpoint.
+
+### Pageviews filtering
+
+The checkout endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by currency
+
+Scenario: by currency
+ Given the application running
+   And 10 checkouts in the database
+  When the '/checkouts?currency=EUR' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/checkouts?currency=EUR"
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }]
+   }
+   """
+
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+
+### Get Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+   }
+   """
+   And delete the checkout with id 1
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "currency": "USD"
+       }
+     }
+   }
+   """
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "USD",
+         "status": "pending"
+       }
+     }
+   }
+   """
+   And update the attributes of the checkout entity
+
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
+```
+
+
