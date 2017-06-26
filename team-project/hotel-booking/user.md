@@ -285,3 +285,86 @@ Scenario: No auth token
    }
    """
 ```
+
+```gherkin
+Feature: Required auth
+
+Scenario: Auth token
+ Given the application running
+   And a valid token: "apple"
+  When the '/user/1' endpoint is requested with a 'GET' request
+   And with a header: Authorization: Bearer apple
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "id": "1",
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Required auth
+
+Scenario: Auth token
+ Given the application running
+   And a valid token: "apple"
+  When the '/user/1' endpoint is requested with a 'GET' request
+   And with a header: Authorization: Bearer pear
+  Then it should send a 401 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "401",
+       "title": "Unauthorized",
+       "detail": "No token is provided"
+     }]
+   }
+   """
+```
+
+### Login
+
+Create a simple endpoint for logging the user in
+
+```gherkin
+Feature: Register
+
+Scenario: Register
+ Given the application running
+   And 0 users in the database
+  When the '/login' endpoint is requested with a 'POST' request:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "password": "suchsecret"
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "id": "1",
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+```
+
