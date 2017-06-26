@@ -265,3 +265,114 @@ Refactor the logging of enpoints using Aspect Oriented Programming.
 Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
 Refactor your code to use aspects for logging on each endpoint.
 
+### Exponential retry of emails
+
+If the service failed to send an email it should retry it with a delay.
+The delay time should be stored in an environment variable. On each retry
+the delay time of the current email sending should increase by its double.
+It should retry it till a certain amount that is stored in a environment variable.
+
+### Ticking queue
+
+Create a RabbitMQ consumer and a corresponding queue. The consumer should
+consume an event in every 5 minutes and push it back to the queue. The event should
+store a simple number, that is incremented by one on each read. The consumer should
+log this value in debug level.
+
+### Unsubscribe
+
+Create a rest endpoint for creating new unsubscriptions
+
+```gherkin
+Feature: Add unsubscription
+ Given the application running
+   And 0 unsubscription in the database
+  When the '/unsubscribtions' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "unsubscribtions",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/unsubscriptions/1"
+     }
+     "data": {
+       "type": "unsubscriptions",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }
+   }
+   """
+
+Feature: Add unsubscription
+ Given the application running
+   And 0 unsubscriptions in the database
+  When the '/unsubscriptions' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "unsubscriptions",
+       "attributes": {
+         "email": "john.doe@example.org",
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/unsubscriptions/1"
+     }
+     "data": {
+       "type": "unsubscriptions",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }
+   }
+   """
+
+Feature: Add unsubscription
+ Given the application running
+   And 0 unsubscriptions in the database
+  When the '/unsubscriptions' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "unsubscriptions",
+       "attributes": {
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }
+   }
+   """
+  Then it should send a 400 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "The attribute field: \"email\" is missing"
+     }]
+   }
+   """
+```
+
+
+
+
