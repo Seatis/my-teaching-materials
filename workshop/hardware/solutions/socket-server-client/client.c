@@ -3,96 +3,97 @@
 #include <stdlib.h>
 #include <winsock2.h>
 
-int flag;
-char buff[1024];
+#define SERVER_IP           "127.0.0.1"
+#define SERVER_PORT         1234
+#define DATA_BUFFER_SIZE    1024
 
-SOCKET client_sock;
-
-int send_message()
-    {
-    char msg[1024];
-    //Küldés
-    printf("your message:");
-    gets(msg);
-    flag = send (client_sock, msg, sizeof(msg), 0);
-	if(msg[0] == 'c')
-        return -1;
-    if(flag<0)
-        handle_error("Kuldes");
-    printf("%dB elkuldve a %dB-bol.\n", flag, sizeof(msg));
-    return 1;
-    }
-
-void handle_error(const char* error_string)
+void handle_error(const char *error_string)
 {
-    printf("Hiba: %s\nHibakod: %d", error_string, WSAGetLastError());
-    WSACleanup();
-    exit(EXIT_FAILURE);
+	printf("Error: %s\nError code: %d\n", error_string, WSAGetLastError());
+	WSACleanup();
+	printf("Press any key to exit from the program...");
+	while (!kbhit());
+	exit(EXIT_FAILURE);
 }
+
 void wsa_init()
 {
-    WSADATA wsaData;
-    int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
-    if (iResult != NO_ERROR)
-    {
-        wprintf(L"WSAStartup failed with error: %ld\n", iResult);
-        return 1;
-    }
+	WSADATA wsaData;
+	int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != NO_ERROR)
+		handle_error("WSAStartup() ");
 }
-void net_init()
+
+void connect_to_server(SOCKET *client_sock, unsigned int server_ip, char *server_port)
 {
-    //Inicializálás
+	// Creating client socket
+	(*client_sock) = socket(PF_INET, SOCK_STREAM, IPPROTO_IP);
+	if (client_sock < 0)
+		handle_error("socket() ");
 
-    char server_ip[]="127.0.0.1";
-    short int server_port=1234;
+	// Creating server address
+	struct sockaddr_in addr_in;
+	addr_in.sin_family = AF_INET;
+	addr_in.sin_port = htons(server_port);
+	addr_in.sin_addr.s_addr = inet_addr(server_ip);
 
-    struct sockaddr* addr;
-    struct sockaddr_in addr_in;
+	// Connecting the client socket to the server
+	int connect_retval = connect(*client_sock, (struct sockaddr *)&addr_in, sizeof(addr_in));
+	if (connect_retval < 0)
+		handle_error("connect() ");
 
-    client_sock=socket(PF_INET,SOCK_STREAM,IPPROTO_IP);
-    if(client_sock<0)
-        handle_error("Socket letrehozas");
-
-    //Címösszeállítás
-    addr_in.sin_family=AF_INET;
-    addr_in.sin_port=htons(server_port);
-    addr_in.sin_addr.s_addr=inet_addr(server_ip);
-
-    addr=(struct sockaddr*)&addr_in;
-
-//Kapcsolódás
-    flag=connect(client_sock, addr, sizeof(*addr));
-    if(flag<0)
-        handle_error("Kapcsolodas");
-    printf("Kapcsolodva - %s:%d\n", server_ip, server_port);
+	printf("Connected to %s:%d\n", SERVER_IP, SERVER_PORT);
 }
+
+int send_message(SOCKET *socket)
+{
+	// Get the message from the user
+	char msg[DATA_BUFFER_SIZE];
+	printf("\nEnter the message to send: ");
+	gets(msg);
+	// Send the message to the servers
+	int sent_bytes = send(*socket, msg, strlen(msg), 0);
+	if (sent_bytes < 0)
+		handle_error("send() ");
+
+	return sent_bytes;
+}
+
 int main()
 {
-wsa_init();
-net_init();
-flag=1;
+	// Initialize the WSA
+	wsa_init();
 
-while (flag!=0)
-{
-    if (send_message() == -1)
-    {
-        flag=0;
-    } else {
-        //Fogadás
-        flag = recv (client_sock, buff, sizeof(buff)-1, 0);
-        if (flag != 0)
-        {
-            buff[flag] = 0;
-            printf ("%s\n", buff);
-        }
-    }
-}
+	// Connect to server
+	SOCKET client_socket;
+	connect_to_server(&client_socket, SERVER_IP, SERVER_PORT);
 
-//Lezárás
-closesocket(client_sock);
-printf("SOCKET closed, exiting");
-WSACleanup();
-return 0;
+	// Local variables used in the do-while loop
+	int sent_bytes;
+	int received_bytes;
+	char recv_buff[DATA_BUFFER_SIZE];
+	do {
+		// Send data to the server
+		sent_bytes = send_message(&client_socket);
+		// Receive the answer if message was sent
+		if (sent_bytes > 0) {
+			received_bytes = recv(client_socket, recv_buff, DATA_BUFFER_SIZE, 0);
+			// Error handling
+			if (received_bytes < 0) {
+				handle_error("recv() ");
+			} else {
+				// Printing out received string
+				recv_buff[received_bytes] = '\0';
+				printf("Received string: %s\n", recv_buff);
+			}
+		}
+	} while (sent_bytes > 0);
+
+	printf("Closing the socket...\n");
+	closesocket(client_socket);
+	printf("Cleaning up memory...\n");
+	WSACleanup();
+	return 0;
 
 }
 

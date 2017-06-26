@@ -1,4 +1,8 @@
 #define _WIN32_WINNT 0x0501
+#define QUEUE_SIZE 1
+#define SERVER_IP           "127.0.0.1"
+#define SERVER_PORT         1234
+#define DATA_BUFFER_SIZE    1024
 
 #include <stdio.h>
 #include <string.h>
@@ -7,156 +11,93 @@
 #include <conio.h>
 #include <math.h>
 
-/*
-#include <fstream>
-#include <ctime>
-#include <iostream>
-using namespace std;
-
-ofstream myfile;
-
-const std::string currentDateTime() {
-time_t     now = time(0);
-struct tm  tstruct;
-char       buf[80];
-tstruct = *localtime(&now);
-// Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
-// for more information about date/time format
-strftime(buf, sizeof(buf), "%Y-%m-%d %X", &tstruct);
-
-return buf;
-}
-
-void print_data(char* buff)
+void handle_error(const char *error_string)
 {
-unsigned char* buff2=(unsigned char*)buff;
-double ST=buff2[0]*256.0+buff2[1];
-
-double SRH=buff2[2];
-SRH=SRH*256.0+buff2[3];
-
-double Vbat=buff2[5];
-Vbat=Vbat*256.0+buff2[4];
-
-double temp=175.0*ST/(65535.0)-45.0;
-double humidity=100.0*SRH/65535.0;
-
-cout<<"Data Bytes:"<<endl;
-for(int i=0; i<6; i++)
-    cout<<(double)(buff2[i])<<endl;
-0
-cout<<currentDateTime()<<endl;
-cout<<"Temperature: "<<temp<<"oC"<<endl;
-cout<<"Humidity: "<<humidity<<"\%"<<endl;
-cout<<"Vbat: "<<Vbat<<"mV"<<endl;
-myfile<<currentDateTime()<<"\t"<<temp<<"\t"<<humidity<<"\t"<<Vbat<<endl;
+	printf("Error: %s\nError code: %d\n", error_string, WSAGetLastError());
+	WSACleanup();
+	printf("Press any key to exit from the program...");
+	while (!kbhit());
+	exit(EXIT_FAILURE);
 }
 
-*/
-
-void handle_error(const char* error_string)
-{
-printf("Hiba: %s\nHibakod: %d", error_string, WSAGetLastError());
-WSACleanup();
-exit(EXIT_FAILURE);
-}
-int getip(char* saveto, const struct sockaddr* from)
-{
-struct sockaddr_in* from_in;
-from_in=(struct sockaddr_in*)from;
-//    saveto[0]=from_in->sin_addr.S_un.S_un_b.s_b1);
-//    saveto[1]='.';
-//    saveto[2]=from.sa_data[1];
-//    saveto[3]='.';
-//    saveto[4]=from.sa_data[2];
-//    saveto[5]='.';
-//    saveto[6]=from.sa_data[3];
-//    saveto[7]=':';
-//    saveto[8]=from.sa_data[4];
-//    saveto[9]=0;
-return 0;
-}
 int main()
 {
+	WSADATA wsaData;
+	int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != NO_ERROR) {
+		printf("WSAStartup failed with error: %d\n", iResult);
+		return 1;
+	}
 
-// myfile.open("data.txt", fstream::app);
+	// Server address structure initialization
+	struct sockaddr_in addr_in;                                 // Inet address structure definition
+	addr_in.sin_family = AF_INET;                               // This address is an internet address
+	addr_in.sin_port = htons(SERVER_PORT);                      // Server port
+	addr_in.sin_addr.s_addr = inet_addr(SERVER_IP);             // Server IP
+	struct sockaddr *addr = (struct sockaddr *)&addr_in;        // Make a struct sockaddr pointer, which points to the address stucture
 
+	// Creating the socket
+	SOCKET master_sock = socket(PF_INET, SOCK_STREAM, 0);
+	// Check if socket is ok
+	if (master_sock < 0)
+		handle_error("socket() ");
 
-WSADATA wsaData;
-int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
-if (iResult != NO_ERROR) {
-    wprintf(L"WSAStartup failed with error: %ld\n", iResult);
-    return 1;
-}
-//Inicializálás
-SOCKET master_sock, slave_sock;
-int flag;
+	// Start binding the socket to the previously set address
+	int flag = bind(master_sock, addr, sizeof(*addr));
+	// Check if the binding is ok
+	if (flag < 0)
+		handle_error("bind() ");
 
-unsigned int queue_size=1;
-char server_ip[]="127.0.0.1";
-short int server_port=1234;
+	// Start listening on with the set socket with a predefined queue size
+	flag = listen(master_sock, QUEUE_SIZE);
+	// Check is listening is ok
+	if (flag < 0)
+		handle_error("listen() ");
 
-struct sockaddr* addr;
-struct sockaddr_in addr_in;
-struct sockaddr client_addr;
-char client_ip[10];
-char buff[1024];
+	printf("Server is initialized, waiting for connections at %s:%d\n", SERVER_IP, SERVER_PORT);
 
-master_sock=socket(PF_INET,SOCK_STREAM,0);
-if(master_sock<0)
-    handle_error("Socket letrehozas");
+	// Create variables which will be used in the while loop
+	struct sockaddr client_addr;    // Client address structure
+	SOCKET slave_sock;              // Slave socket definition, this will be used to store the incoming socket
+	char buff[DATA_BUFFER_SIZE];                // Buffer for incoming and outgoing data
+	int cntr = 1;                   // Counter for incoming connections
+	while (!kbhit()) {
+		// Accept the connection and save the incoming socket
+		slave_sock = accept(master_sock, &client_addr, NULL);
+		// Check if the socket is valid
+		if (slave_sock < 0)
+			handle_error("accept()");
 
-//Címösszeállítás
-addr_in.sin_family=AF_INET;
-addr_in.sin_port=htons(server_port);
-addr_in.sin_addr.s_addr=inet_addr(server_ip);
-addr=(struct sockaddr*)&addr_in;
+		printf("%d. connection accepted\n", cntr);
 
-//Figyelés
-flag=bind(master_sock,addr,sizeof(*addr));
-if(flag<0)
-    handle_error("Bind");
-flag=listen(master_sock, queue_size);
-if(flag<0)
-    handle_error("Listen");
-printf("A szerver kesz, kapcsolatra var - %s:%d\n", server_ip, server_port);
+		// Receive the data sent by the client
+		int received_bytes;
+		do {
+			received_bytes = recv(slave_sock, buff, DATA_BUFFER_SIZE, 0);
+			if (received_bytes == 0) {
+				printf("Connection closed, waiting for an other connection!\n");
+			} else if (received_bytes == SOCKET_ERROR) {
+				printf("Something went wrong with the client socket, trying to close it...\n");
+				break;
+			} else {
+				// Terminate the string with zero
+				buff[received_bytes] = '\0';
+				// Print out the received data
+				printf("Received string: %s \n", buff);
+				// Send back the received string
+				send(slave_sock, buff, received_bytes, 0);
+			}
+		} while (received_bytes > 0);
 
-int cntr=1;
+		closesocket(slave_sock);
+		printf("%d. client socket closed\n\n", cntr);
+		cntr++;
+	}
 
-while(!kbhit())
-{
-//Fogadás
-    slave_sock=accept(master_sock, &client_addr, NULL);
-    if(slave_sock<0)
-        handle_error("Accept");
-    //getip(client_ip, &client_addr);
-    printf("%d. Kapcsolat fogadva.\n",cntr);
-    flag=1;
-
-    do{
-        flag=recv(slave_sock, buff, sizeof(buff), 0);
-        if(buff[0] == 'c' | flag == -1)
-        {
-            printf("waiting to an other connection!\n");
-        } else {
-            buff[flag]=0;
-            printf("Most erkezett: %s \n",buff);
-
-            //puts(buff);
-            send(slave_sock,buff, sizeof(buff), 0);
-        }
-    } while(flag > 0);
-
-    closesocket(slave_sock);
-    cntr++;
-}
-
-//Lezárás
-closesocket(master_sock);
-printf("socket clodes exiting");
-
-WSACleanup();
-//myfile.close();
-// getchar();
-return 0;
+	// Cleaning up used memory
+	printf("Closing server socket\n");
+	closesocket(master_sock);
+	printf("Cleaning up WSA\n");
+	WSACleanup();
+	return 0;
 }
