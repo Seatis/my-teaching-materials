@@ -443,3 +443,21 @@ Scenario: Single Hotel
    """
 ```
 
+### Hotel page
+
+The list of the hotels should consist a toggle-able add form under the '/hotels' path.
+The list of the hotels shoud be requested like: `https://domain.com/api/hotels?user_id=1`
+Create a page for listing hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+### Delete button
+
+The delete button should remove the hotel, and it should send the request to the server.
+
+### Single hotel page
+
+Create a page for single hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+The single hotel page url is: `/hotels/1`.
+
+### Autosave
+
+It saves on every blur event (click on other element, tab, etc) and if nothing happens after 2 seconds.
