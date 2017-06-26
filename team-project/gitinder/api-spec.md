@@ -128,12 +128,51 @@ e.g.:
 
 #### Response
 - if X-GiTinder-token header parameter is provided and not empty, return with a status object:
-  - where `match_status` is if that is a match already or not
+  - where the `match` object is sent if that is a match already or not
 ```json
 {
   "status" : "ok",
   "message" : "success",
-  "match_status": <true/false>
+  "match": {
+    "username": "jondoe",
+    "matched_at": 123456789,
+    "messages": []
+  }
+}
+```
+
+- if the header parameter is missing or empty, returns a HTTP 403 status with the following message:
+
+```json
+{
+  "status" : "error",
+  "message" : "Unauthorized request!"
+}
+```
+
+## Matches
+
+### `GET /matches`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with a matches list:
+```json
+{
+  "matches": [
+    {
+      "username": "jondoe",
+      "matched_at": 123456789,
+      "messages": []
+    },
+    {
+      "username": "jondoe2",
+      "matched_at": 123456789,
+      "messages": []
+    }
+  ]
 }
 ```
 
