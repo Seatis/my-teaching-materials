@@ -56,9 +56,10 @@ First you need to be link to the linker the ws2_32.lib:
   - Under the Link libraries, push the Add button, and type "ws2_32" --> click OK--> and OK again
 
 #### Basics (mandatory) tasks
-  - [Ping Google](#Ping Google)
-  - [Create a server](#Create a server)
-  - [Extend the server](#Extend the server)
+  - [Ping Google](#Ping-Google)
+  - [Create a server](#Create-a-server)
+ #### Advanced task
+  - [Extend the server](#Extend-the-server)
 
 Make sure to comment each section in the code that does something significant!
 Also make sure that you handle errors.
