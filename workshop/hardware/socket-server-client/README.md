@@ -9,6 +9,10 @@
  - Try out stuff and have some experience before jumping into the deep end...
 
 ## Materials & Resources
+### Environment
+- Windows operating system
+- [CodeBlocks](http://www.codeblocks.org/downloads/26) on windows
+
 ### Training
 | Material | Time |
 |:---------|-----:|
@@ -53,7 +57,7 @@ only if you have a lot's of time.
 ### Excercises
 First you need to be link to the linker the ws2_32.lib:
   - Project --> project build options --> Linker settings
-  - Under the Link libraries, push the Add button, and type "ws2_32" --> click OK--> and OK again
+  - Under the Link libraries, push the Add button, and type `ws2_32` --> click OK--> and OK again
 
 #### Basics (mandatory) tasks
   - [Ping Google](#Ping Google)
@@ -65,22 +69,24 @@ Also make sure that you handle errors.
 
 #### Ping Google
 
-Create a client app that ping the google.com to get than latency, and print it out.
+Create a client app that pings `google.com` and gets the latency. Print out the result!
  - [ping.c](workshop/CodeBlocks/ping.c)
 
 Hint: Use the [ICMP protocol](https://hu.wikipedia.org/wiki/ICMP)
 
 #### Create a server
 
-- Create the server app that respond to the communication from the client app, and send back that received.
-- Create a client app that connect to your server app, send a message to the server, wait the response print out the response.
-Yepp, the server app is running on your computer also, but the message goes out and coms in from the internet.
+- Create the server app that responds to the communication from the client app. It simply
+sends back what it has received.
+- Create a client app that connects to your server app. It sends a message to the server, waits for the response and prints out the response.
+Yepp, the server app is running on your computer also, but the message goes out and comes in from the internet.
 
 - [send_msg.c](workshop/CodeBlocks/send_msg.c)
 
 #### Extend the server
 
-Extend your server application so that every interaction is logged and is identifiable for example timestamp.
+Extend your server application so that every interaction is logged into a file. Make sure
+to use something unique in the log file for each entry, for example use timestamps.
  - [Extended_server.c](workshop/CodeBlocks/Extended_server.c)
 
 ## Individual Workshop Review
@@ -96,5 +102,5 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
 - Can you spot unused variables?
 - Is the commit message meaningful?
 
- ## Solutions
- [Solutions](#)
+## Solutions
+[Solutions](#)
