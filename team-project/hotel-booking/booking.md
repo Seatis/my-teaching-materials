@@ -443,4 +443,220 @@ Refactor the logging of enpoints using Aspect Oriented Programming.
 Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
 Refactor your code to use aspects for logging on each endpoint.
 
+### Hotel filtering
+
+The hotel endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by wifi
+
+Scenario: by wifi
+ Given the application running
+   And 10 hotels in the database
+  When the '/hotels?has_wifi=true' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels?has_wifi=true"
+     }
+     "data": [{
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+       }
+     }]
+   }
+   """
+
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+### Get Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 200 hotels in the database
+  When the '/api/hotels/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+   }
+   """
+   And delete the hotel with id 1
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "name": "Apartment Molnar utca"
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Apartment Molnar utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "USD",
+         "status": "pending"
+       }
+     }
+   }
+   """
+   And update the attributes of the hotel entity
+
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 checkouts in the database
+  When the '/hotels/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
 

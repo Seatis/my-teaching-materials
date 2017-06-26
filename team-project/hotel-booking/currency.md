@@ -603,7 +603,7 @@ Scenario: Single Checkout
      }
    }
    """
-  Then it should send a 404 response with a JSON:
+  Then it should send a 200 response with a JSON:
    """
    {
      "links": {
@@ -644,5 +644,4 @@ Scenario: Single Checkout
    }
    """
 ```
-
 
