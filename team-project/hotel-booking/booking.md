@@ -628,7 +628,6 @@ Scenario: Single Checkout
          "has_swimming_pool": true,
          "has_air_conditioning": true,
          "eal_plan": "american-plan"
-         "user_id": "1",
          "booking_id": "1",
          "amount": "50",
          "currency": "USD",
@@ -660,3 +659,101 @@ Scenario: Single Hotel
    """
 ```
 
+### Reviews
+
+Create an endpoint for reviews.
+
+The needed attributes for reviews:
+
+ - **id**: number, unique referencce
+ - **rating**: number, a number between 0-5
+ - **created_at**: timestamp, the creation date
+ - **description**: text, the description of the review
+
+The endpoint path: `hotels/1/reviews`, where the 1 is the id of the hotel.
+
+Please follow the JSON-api guidelines and create a full CRUD functionallity.
+The api should be able to:
+ 
+ - Create a new review
+ - List all reviews
+ - Paginate in listing
+ - Filter in listing by attributes
+ - Get a review by id
+ - Delete a review by id
+ - Update a review by id
+ - Hande errors and provide error responses
+
+All the reviews should store a reference to the hotel and the user.
+
+### Review as relation in Hotel
+
+A hotel object should consist its lates reviews
+
+```gherkin
+Feature: Single Hotel with reviews
+
+Scenario: Single Hotel with reviews
+ Given the application running
+   And 200 hotels in the database
+   And 2 reviews for hotel_id: 1 in the database
+  When the '/api/hotels/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+       }
+     },
+     "relationships": {
+       "reviews": {
+         "links": {
+           "self": "https://your-hostname/api/hotels/1/relationships/reviews",
+           "related": "https://your-hostname/api/hotels/1/reviews"
+         }
+       },
+       "data": [
+         { "type": "reviews", "id": "1" }
+         { "type": "reviews", "id": "2" }
+       ]
+     },
+     "included": [{
+       "type": "reviews",
+       "id": "1",
+       "attributes": {
+         "rating": 5,
+         "description": "Cool place, cool people",
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }, {
+       "type": "reviews",
+       "id": "2",
+       "attributes": {
+         "rating": 5,
+         "description": "Awesomesauce! Best place ever!",
+         "created_at": 2017-06-26T14:05:10+0000
+       }
+     }]
+   }
+   """
+```
+
+#### Technical requirements
+
+Both the self and related links should work for the relationships objects.
