@@ -153,7 +153,7 @@ Scenario: Monitor queue that has no items
  Given the application running
    And connected to RabbitMQ
    And the 'heartbeat' queue is empty
-  When the '/hearthbeat' endpoint is requested with 'GET' method
+  When the '/heartbeat' endpoint is requested with 'GET' method
   Then it should send a message to the 'heartbeat' queue and consume that message right after
    And it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "ok"}'
 
@@ -167,7 +167,7 @@ Scenario: Monitor queue that has items
 Scenario: Monitor queue that is not connected
  Given the application running
    And not connected to RabbitMQ
-  When the '/hearthbeat' endpoint is requested with 'GET' method
+  When the '/heartbeat' endpoint is requested with 'GET' method
   Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
 ```
 
@@ -203,5 +203,445 @@ Scenario: Bad request
   When any of the endpoints is requested
    And the response has any error
   Then it should log 'HTTP-ERROR /path' in 'error' level
+```
+
+### Payment page for 50 Eur
+
+Create a simple page for payments that is includable by frontend services.
+
+```gherkin
+Feature: Payment form
+
+Scenario: Open form
+ Given the application running
+  When the '/checkout' page is requested
+  Then it should render the checkout form for 50 'Euro'
+```
+
+#### Technical Requirements
+
+The checkout for should use the [Stripe checkout](https://stripe.com/checkout).
+ - The currency should be Euros
+ - The amount should be 50
+ - The form should get the Stripe public key from an environment variable.
+
+### Charge
+
+The checkout form should send the payment to the server
+
+```gherkin
+Feature: Charge
+
+Scenario: Charge
+ Given the application running
+  When the checkout for is submitted to '/charge'
+  Then it should submit the transaction to Stripe
+   And save the transaction to the database
+   And render a page with a success message
+```
+
+#### Technical Requirements
+
+Use the stripe Java API to submit the charge to Stripe.
+
+### Checkout tracking
+
+Track transactions in the database
+
+```gherkin
+Feature: Checkout
+
+Scenario: Create checkout
+ Given the application running
+   And 0 checkouts in the 
+  When the '/api/checkouts' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "checkout",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR"
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/checkout/1"
+     }
+     "data": {
+       "type": "checkout",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }
+   }
+   """
+
+Feature: Missing field
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "checkout",
+       "attributes": {
+         "user_id": "1",
+         "currency": "EUR"
+       }
+     }
+   }
+   """
+  Then it should send a 400 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "The attribute fields: \"booking_id\", \"amount\" are missingo"
+     }]
+   }
+   """
+```
+
+### Checkout tracking payment page
+
+```gherkin
+Feature: Payment page tracking
+
+Scenario: Paymanet page with checkout id
+ Given a checkout in the database:
+  | id | user_id | booking_id | amount | currency |  status |
+  |  1 |       1 |          1 |   8000 |      EUR | pending |
+  When the '/checkout?checkout_id=1' page is requested
+  Then it should render the checkout form for 80 'Euro'
+```
+
+### Checkout tracking charge
+
+The checkout form should send the payment to the server
+
+```gherkin
+Feature: Charge tracking
+
+Scenario: Charge with checkout_id
+ Given a checkout in the database:
+  | id | user_id | booking_id | amount | currency |
+  |  1 |       1 |          1 |   8000 |      EUR | 
+  When the checkout for is submitted to '/charge'
+  Then it should send the checkout_id as a parameter
+   And it should submit the transaction to Stripe
+   And save the transaction to the database
+   And render a page with a success message
+   And it should update the checkout status to success
+```
+
+### Checkout CRUD
+
+Create anendpoint for listing, creating, removing updating and deleting checkout entities.
+
+```gherkin
+Feature: List checkouts
+
+Scenario: Good request
+ Given the application running
+  When the '/api/checkouts' endpoint is requested with a 'GET' request
+  Then it should return a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts"
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }]
+   } 
+   """
+```
+
+
+```gherkin
+Feature: Checkouts pagination
+
+Scenario: More than 20
+ Given the application running
+   And 200 xheckouts in the database
+  When the '/api/checkouts' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts",
+       "next": "https://your-hostname.com/api/checkouts?page=2",
+       "last": "https://your-hostname.com/api/checkouts?page=10",
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+```gherkin
+Feature: Checkouts pagination
+
+Scenario: Second page
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts?page=2' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts?page=2",
+       "next": "https://your-hostname.com/api/checkouts?page=3",
+       "prev": "https://your-hostname.com/api/checkouts",
+       "last": "https://your-hostname.com/api/checkouts?page=10",
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+### Refactor Logging 
+
+Refactor the logging of enpoints using Aspect Oriented Programming.
+Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
+Refactor your code to use aspects for logging on each endpoint.
+
+### Pageviews filtering
+
+The checkout endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by currency
+
+Scenario: by currency
+ Given the application running
+   And 10 checkouts in the database
+  When the '/checkouts?currency=EUR' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/checkouts?currency=EUR"
+     }
+     "data": [{
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }]
+   }
+   """
+
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+
+### Get Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "EUR",
+         "status": "pending"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+   }
+   """
+   And delete the checkout with id 1
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "currency": "USD"
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/checkouts/1"
+     }
+     "data": {
+       "type": "checkouts",
+       "id": "1",
+       "attributes": {
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "USD",
+         "status": "pending"
+       }
+     }
+   }
+   """
+   And update the attributes of the checkout entity
+
+```
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 0 checkouts in the database
+  When the '/api/checkouts/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No checkouts found by id: 1"
+     }]
+   }
+   """
 ```
 

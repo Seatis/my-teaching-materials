@@ -1,0 +1,19 @@
+# Input skills
+- basic GIT knowledge
+- basic electronics knowledge
+    - voltage
+    - current
+    - resistor
+    - schematic reading
+- experience in binary, hexadecimal, decimal number conversion
+- knowledge of 32F746GDISCOVERY architecture
+    - CubeF7 BSP usage
+- knowledge of C
+    - expressions and control flow
+    - functions
+    - arrays and pointers
+    - user input handling
+    - buffering techniques
+    - preprocessor macros
+    - data structures
+    - custom data types

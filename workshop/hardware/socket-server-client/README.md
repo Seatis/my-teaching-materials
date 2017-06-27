@@ -73,7 +73,7 @@ Also make sure that you handle errors.
 Create a client app that pings `google.com` and gets the latency. Print out the result!
  - [ping.c](workshop/CodeBlocks/ping.c)
 
-Hint: Use the [ICMP protocol](https://hu.wikipedia.org/wiki/ICMP)
+Hint: Use the built-in windows [ping](https://technet.microsoft.com/en-us/library/bb490968.aspx) command with the [system](http://www.cplusplus.com/reference/cstdlib/system/?kw=system) function!
 
 #### Create a server
 

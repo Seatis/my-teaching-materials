@@ -83,13 +83,34 @@ Scenario: Post valid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
    And the body is: '{"email": "test@example.com", "password": "1234"}'
-  Then it should response: '{"status": "ok", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"}'
+  Then it should response:
+  """
+  {
+    "data": {
+      "type": "auth",
+      "attributes": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlRlc3RBZG1pbiIsImFkbWluIjp0cnVlfQ.nhC1EDI5xLGM4yZL2VMZyvHcbcWiXM2RVS7Y8Pt0Zuk"
+      }
+    }
+  }
+  """
+
 
 Scenario: Post invalid data
  Given the running mock backend application
   When the '/api/login/' is requested with a 'POST' request
    And the body is: '{"email": "test@example.com", "password": "123"}'
-  Then it should response: '{"status": "error", "message": "Mismatched email and password"}'
+  Then it should response:
+   """
+   {
+     "errors": [{
+       "status": "400",
+       "title": "Bad Request",
+       "detail": "Mismatched email and password"
+     }]
+   }
+   """
+
 ```
 
 #### Technical Requirements
@@ -144,3 +165,299 @@ Scenario: Logout user
   Then it should redirect to '/login'
 ```
 
+### Mock register backend
+
+Create a simple backend endpoint for simulating registration.
+
+```gherkin
+Feature: Register endpoint
+
+Scenario: Post valid data
+ Given the running mock backend application
+  When the '/api/register/' is requested with a 'POST' request
+   And the body is:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "password": "suchsecret"
+       }
+     }
+   }
+   """
+  Then it should response:
+   """
+   {
+     "data": {
+       "type": "user",
+       "attributes": {
+         "id": "1",
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+```
+
+### Register form
+
+Create a register form based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+### Add hotel
+
+Create a page for adding hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+```
+Feature: Add hotel endpoint
+
+Scenario: Mock endpoint
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "american-plan",
+         "stars": 5
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "has_gym": true,
+         "meal_plan": "american-plan",
+         "stars": 5
+       }
+     }
+   }
+   """
+```
+
+The form should submit a hotel to this endpoint
+
+### Mock single hotel endpoint 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 200 hotels in the database
+  When the '/api/hotels/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Hotel Ipoly utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Checkout 
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+   }
+   """
+   And delete the hotel with id 1
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single
+
+Create an endpoint for a single checkout
+
+```gherkin
+Feature: Single Checkout
+
+Scenario: Single Checkout
+ Given the application running
+   And 200 hotels in the database
+  When the '/hotels/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "name": "Apartment Molnar utca"
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1"
+     }
+     "data": {
+       "type": "hotels",
+       "id": "1",
+       "attributes": {
+         "location": "Budapest",
+         "name": "Apartment Molnar utca",
+         "main_image_src: "https://path-to-your-image/",
+         "has_wifi": true,
+         "has_parking": true,
+         "has_pets": true,
+         "has_restaurant": true,
+         "has_bar": true,
+         "has_swimming_pool": true,
+         "has_air_conditioning": true,
+         "eal_plan": "american-plan"
+         "user_id": "1",
+         "booking_id": "1",
+         "amount": "50",
+         "currency": "USD",
+         "status": "pending"
+       }
+     }
+   }
+   """
+   And update the attributes of the hotel entity
+
+```
+
+```gherkin
+Feature: Single Hotel
+
+Scenario: Single Hotel
+ Given the application running
+   And 0 checkouts in the database
+  When the '/hotels/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No hotels found by id: 1"
+     }]
+   }
+   """
+```
+
+### Hotel page
+
+The list of the hotels should consist a toggle-able add form under the '/hotels' path.
+The list of the hotels shoud be requested like: `https://domain.com/api/hotels?user_id=1`
+Create a page for listing hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+### Delete button
+
+The delete button should remove the hotel, and it should send the request to the server.
+
+### Single hotel page
+
+Create a page for single hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+The single hotel page url is: `/hotels/1`.
+
+### Autosave
+
+It saves on every blur event (click on other element, tab, etc) and if nothing happens after 2 seconds.
