@@ -278,4 +278,4 @@ strong enough.
 - Make the P, I values adjustable via UART, play with it
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/stm32-closed-loop-control)
