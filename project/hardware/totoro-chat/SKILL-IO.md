@@ -1,5 +1,8 @@
 # Input skills
 - basic GIT knowledge
+- experience in winsock2 soocket programming
+    - creating a server
+    - creating a client
 - knowledge of C
     - expressions and control flow
     - functions

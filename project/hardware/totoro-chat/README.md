@@ -1,11 +1,9 @@
 # The TOTORO chat
-*Create a bigger program*
+*Create a chat program*
 
 ## Objectives
 
 <img src="img/game.jpg" width="50%"></img>
-
-The first of you write to us get a very special price for the performance to make it first.
 
 ## Materials & Resources
 
@@ -13,10 +11,7 @@ The first of you write to us get a very special price for the performance to mak
 - [xxx](#)
 
 ## Workshop
-This is a quite long project, at first read the specification. Try to figure out
-what kind of data storing technique (for example structure, array etc.) would fit
-for this project. Try to make a concept in your head about how you will implement the
-application.
+This is a quite long project, at first read the specification. Try to make a concept in your head about how you will implement the application. Only after that start working!
 
 ### Basics (mandatory) tasks
 You create an app hat explore the network and find the totoro chat partners, than you can write to the avaiable members. So:
