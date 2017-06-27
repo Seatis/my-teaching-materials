@@ -263,7 +263,7 @@ for uploading images to S3. Store the Amazon credentials in environment variable
 
 ### Rename image
 
-The /images endpoint should give the image a uniq name
+The `/images` endpoint should give the image a uniq name
 
 ```gherkin
 Feature: Rename image
@@ -294,4 +294,306 @@ Refactor the logging of enpoints using Aspect Oriented Programming.
 Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
 Refactor your code to use aspects for logging on each endpoint.
 
+### Add Thumbnail
+
+Create a rest endpoint for creating new thumbnails
+
+```gherkin
+Feature: Add thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "attributes": {
+         "is_main": true
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+
+Feature: Add thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "attributes": {
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+```
+
+### Thumbnail Listing`
+
+Create a rest endpoint for listing thumbnails
+
+```gherkin
+Feature: Add thumbnail
+ Given the application running
+   And 2 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'GET' request
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails"
+     }
+     "data": [
+       {
+         "type": "thumbnails",
+         "id": "1",
+         "attributes": {
+           "is_main": true,
+           "uploaded": false,
+           "created_at": "2017-06-26T14:05:10+0000",
+           "content_url": "https://your-hostname.com/media/images/1/content
+         }
+       },
+       {
+         "type": "thumbnails",
+         "id": "2",
+         "attributes": {
+           "is_main": false,
+           "uploaded": false,
+           "created_at": "2017-06-26T14:05:10+0000",
+           "content_url": "https://your-hostname.com/media/images/2/content
+         }
+       }
+     ]
+   }
+   """
+```
+
+
+### Thumbnail filtering
+
+The thumbnail endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by is_main
+
+Scenario: by is_main
+ Given the application running
+   And 10 hotels in the database
+  When the '/hotels/1/thumbnails?is_main=true' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails?is_main=true"
+     }
+     "data": [{
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }]
+   }
+   """
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+### Get Single Thumbnail
+
+Create an endpoint for a single Thumbnail
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Thumbnail 
+
+Create an endpoint for a single thumbnail
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single thumbnail
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+   }
+   """
+   And delete the thumbnail with id 1
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single Thumbnails
+
+Create an endpoint for a single thumbnails
+
+```gherkin
+Feature: Single Thumbnails
+
+Scenario: Single Thumbnails
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+   And update the attributes of the thumbnail entity
+
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
 

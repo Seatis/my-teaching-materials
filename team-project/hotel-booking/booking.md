@@ -486,7 +486,7 @@ Scenario: by wifi
 
 It should accept all the attributes as filter paramters.
 
-### Get Single Checkout 
+### Get Single Hotel
 
 Create an endpoint for a single checkout
 
@@ -739,7 +739,7 @@ Scenario: Single Hotel with reviews
        "attributes": {
          "rating": 5,
          "description": "Cool place, cool people",
-         "created_at": 2017-06-26T14:05:10+0000
+         "created_at": "2017-06-26T14:05:10+0000"
        }
      }, {
        "type": "reviews",
@@ -747,7 +747,7 @@ Scenario: Single Hotel with reviews
        "attributes": {
          "rating": 5,
          "description": "Awesomesauce! Best place ever!",
-         "created_at": 2017-06-26T14:05:10+0000
+         "created_at": "2017-06-26T14:05:10+0000"
        }
      }]
    }
