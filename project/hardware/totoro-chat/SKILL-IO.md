@@ -1,8 +1,8 @@
 # Input skills
 - basic GIT knowledge
-- experience in winsock2 soocket programming
-    - creating a server
-    - creating a client
+- experience in winsock2 socket programming
+    - creating a TCP server
+    - creating a TCP client
 - knowledge of C
     - expressions and control flow
     - functions

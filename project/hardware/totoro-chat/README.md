@@ -6,13 +6,34 @@
 <img src="img/game.jpg" width="50%"></img>
 
 ## Materials & Resources
-- multithreading
-- broadcasting
-- winsock2 Broadcast
-  - setsockopt
-  - sendto
-  - recfrom
-- winsock2 reference
+
+| Material | Duration |
+|:---------|---------:|
+|[Threads](https://simple.wikipedia.org/wiki/Thread_(computer_science))| - |
+|[Broadcast example](https://cboard.cprogramming.com/c-programming/131008-udp-broadcast-client-server.html)| - |
+
+You will have to use multiple threads in the application. You will only need to
+run different tasks simultaneously. The easiest way to do that is to use the
+`_beginthread()` function which is provided by `process.h`.
+
+```
+#include <process.h>
+
+void thread_to_run()
+{
+  while (1) {
+    //it does something
+  }
+}
+
+void main()
+{
+  _beginthread(thread_to_run, 0, NULL);
+  while (1) {
+    // it does simething else
+  }
+}
+```
 
 ## Workshop
 This is a quite long project, at first read the whole specification. Try to figure out
@@ -81,6 +102,11 @@ The program can store the discovered user information:
 - [List users](#listen-users)
 - [Send discovery request](#send-discovery-request)
 - [Send message](#send-message)
+
+### Advanced features
+- [Save and Load user info](#save-and-load-user-info)
+- [Message logging](#message-logging)
+- [Logged message reading](#logged-message-reading)
 
 ### Storage for users
 - the program can store user information
@@ -174,6 +200,16 @@ IP              port      name
 - the program will ask the user to enter message in the following format:
   - `user_name_of_the_recipient message`
 - if the user entered the message the program will send the message to the user
+
+### Save and Load user info
+- the program can save the user storage to a file
+- also the program can load the user storage from a file
+
+### Message logging
+- the program can log the sent and received messages to a file
+
+### Logged message reading
+- the program can load the message log file and can display it on the screen
 
 ## Solution
 [Solution](#)
