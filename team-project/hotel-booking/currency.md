@@ -645,3 +645,65 @@ Scenario: Single Checkout
    """
 ```
 
+### Transactions
+
+Create an endpoint for requesting transactions.
+
+The path should look like this: `/api/hotel/1/transactions`.
+It should store the transactions for the hotel with 1 as id. 
+Each transaction should store the following values:
+
+ - **id**: number
+ - **currency**: string
+ - **amount**: number
+ - **created_at**: timestamp
+
+The endpoint should list the transactions, and it should be filterable by query parameters.
+Also it should handle adding a new transaction.
+
+Implement an endpoint for single transactions as well like: `/api/hotel/1/transactions/1`.
+The endpoint should handle reading, updating and deleting.
+
+Please handle all the errors that could occure, and use the corresponding http status.
+
+### Save transactions on checkout
+
+On each successful checkout, save a transaction entity to the database.
+
+### Balance
+
+Create and endpoint for aggregated balances from transactions.
+The path of the endpoint: `/api/hotels/1/balances/`
+
+```gherkin
+Feature: Balance
+
+Scenario: balance
+ Given the application running
+   And 4 transactions in the database for the hotet with 1 as id:
+    | id | currency | amount |                created_at |
+    |  1 |     eur  |   5000 | 2017-06-28T15:10:33+00:00 |
+    |  2 |     huf  |  50000 | 2017-06-28T15:10:33+00:00 |
+    |  3 |     eur  |   4000 | 2017-06-28T15:10:33+00:00 |
+    |  4 |     usd  |   3000 | 2017-06-28T15:10:33+00:00 |
+  When the '/api/hotel/1/balance' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/balances"
+     }
+     "data": {
+       "type": "balances",
+       "attributes": {
+         "eur": 9000,
+         "huf": 50000,
+         "usd": 3000
+       }
+     }
+   }
+   """
+
+```
+
+
