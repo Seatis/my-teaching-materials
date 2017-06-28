@@ -2,6 +2,10 @@
 - [Project description](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes-of-lagopus)
 - [Model descriptions](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes_models.md)
 
+## Mandatory request header parameter to all endpoints except the `/register` and `/login`:
+`X-tribes-token=<token>`
+
+
 ## Registration
 
 ### `POST /register`
@@ -71,9 +75,8 @@ e.g.:
 - if all parameters are provided and username equals "Bond", it returns a `HTTP 200` status with a mock `User` object:
 ```json
 {
-  "id" : 1,
-  "username" : "Bond",
-  "kingdomId" : 1
+  "status" : "ok",
+  "token" : "sdfghjkl214124312"
 }
 ```
 
