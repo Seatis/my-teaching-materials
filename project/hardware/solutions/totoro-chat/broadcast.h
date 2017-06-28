@@ -10,7 +10,7 @@
 #define BROADCAST_MSG_LEN           1024
 #define TCP_MSG_LEN                 1024
 
-#define BROADCAST_LISTENING_PORT    1234    // Same for every device
+#define BROADCAST_LISTENING_PORT    12345    // Same for every device
 
 int send_broadcast_msg(char *msg, uint16_t dest_port);
 void broadcast_listener();

@@ -57,7 +57,9 @@ int main()
                 // TODO:
                 // Send discovery request
                 printf("Sending discovery request...\n");
-                if (send_broadcast_msg("TOTORO 12344", BROADCAST_LISTENING_PORT) < 0)
+                char buff[BROADCAST_MSG_LEN];
+                sprintf(buff, "TOTORO %d", DISC_PORT);
+                if (send_broadcast_msg(buff, BROADCAST_LISTENING_PORT) < 0)
                     printf("Error in discovery request sending\n\n");
                 else
                     printf("Discovery request sent\n\n");

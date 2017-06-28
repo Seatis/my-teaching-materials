@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-#define MSG_PORT        12345
-#define DISC_PORT       12344
+#define MSG_PORT        54264
+#define DISC_PORT       54265
 
 #define MSG_BUFF_LEN         4096
 #define DISC_BUFF_LEN        4096
