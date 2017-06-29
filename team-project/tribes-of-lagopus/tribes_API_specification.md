@@ -76,7 +76,7 @@ e.g.:
 ```json
 {
   "status" : "ok",
-  "token" : "sdfghjkl214124312"
+  "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ"
 }
 ```
 
@@ -106,11 +106,17 @@ e.g.:
 
 ## Kingdom
 
-### `GET /[userId]/kingdom`
-Gets all data of a kingdom.
+### `GET /kingdom`
+Gets all data of a kingdom that belongs to the user encoded in the token.
 
 #### Response
-- if userId is an existing userId, it returns a `HTTP 200` status with a mock `Kingdom` object:
+- if the token is valid, it returns a `HTTP 200` status with the `Kingdom` object of the user
+
+### `GET /kingdom/[userId]`
+Gets all data of a kingdom that belongs to the given userId.
+
+#### Response
+- if userId is an existing userId, it returns a `HTTP 200` status with the `Kingdom` object of the user:
 ```json
 {
   "id" : 1,
@@ -160,8 +166,8 @@ Gets all data of a kingdom.
 }
 ```
 
-### `PUT /[userId]/kingdom`
-Modifies data of a kingdom.
+### `PUT /kingdom`
+Modifies data of a kingdom belongs to the user encoded in the token.
 
 #### Request parameters (all optional)
 - `name` [String]
@@ -177,7 +183,7 @@ e.g.:
 ```
 
 #### Response
-- if userId is an existing userId, it returns a `HTTP 200` status with a mock `Kingdom` object:
+- if the token is valid, it returns a `HTTP 200` status with the `Kingdom` object of the user:
 ```json
 {
   "id" : 1,
@@ -217,21 +223,13 @@ e.g.:
 }
 ```
 
-- if userId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "UserId not found"
-}
-```
-
 ## Buildings
 
-### `GET /[userId]/kingdom/buildings`
-Get the list of buildings of the kingdom
+### `GET /kingdom/buildings`
+Get the list of buildings of the kingdom belongs to the user encoded in the token.
 
 #### Response
-- if userId is an existing userId, it returns a `HTTP 200` status with a mock list of `Building` objects:
+- if token is valid, it returns a `HTTP 200` status with the list of `Building` objects of the user:
 ```json
 {
   "buildings" : [{
@@ -249,20 +247,12 @@ Get the list of buildings of the kingdom
 }
 ```
 
-- if userId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "UserId not found"
-}
-```
-
-### `GET /[userId]/kingdom/buildings/[buildingId]`
-Get the details of the certain building
+### `GET /kingdom/buildings/[buildingId]`
+Get the details of the certain building belongs to the user encoded in the token.
 
 #### Response
 
-- if userId and buildingId are existing ids, it returns a `HTTP 200` status with a mock `Building` object:
+- if token is valid and buildingId is an existing ids, it returns a `HTTP 200` status with a `Building` object:
 ```json
 {
   "id" : 1,
@@ -272,7 +262,7 @@ Get the details of the certain building
 }
 ```
 
-- if userId and/or buildingId doesn't exist, it returns a `HTTP 404` status and the following error message:
+- if buildingId doesn't exist, it returns a `HTTP 404` status and the following error message:
 ```json
 {
   "status" : "error",
@@ -280,8 +270,8 @@ Get the details of the certain building
 }
 ```
 
-### POST /[userId]/kingdom/buildings
-Creates a new building in the kingdom
+### POST /kingdom/buildings
+Creates a new building in the kingdom belongs to the user encoded in the token
 
 #### Request parameters
 - `type` [String, farm|mine|barracks]
@@ -321,16 +311,8 @@ e.g.:
 }
 ```
 
-- if userId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "UserId not found"
-}
-```
 
-
-### PUT /[userId]/kingdom/buildings/[buildingId]
+### PUT /kingdom/buildings/[buildingId]
 Upgrades or downgrades a building in the kingdom to a certain level
 
 #### Request parameters
@@ -373,22 +355,14 @@ Upgrades or downgrades a building in the kingdom to a certain level
 }
 ```
 
-- if userId and/or buildingId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "<id> not found"
-}
-```
-
 
 ## Resources
 
-### `GET /[userId]/kingdom/resources`
+### `GET /kingdom/resources`
 Get the list of resources of the kingdom
 
 #### Response
-- if userId is an existing userId, it returns a `HTTP 200` status with a mock list of `Resource` objects:
+- if token is valid, it returns a `HTTP 200` status with a mock list of `Resource` objects:
 ```json
 {
   "resources": [{
@@ -404,20 +378,13 @@ Get the list of resources of the kingdom
 }
 ```
 
-- if userId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "UserId not found"
-}
-```
 
-### GET /[userId]/kingdom/resources/[resourceType]
+### GET /kingdom/resources/[resourceType]
 Get the details of a certain resource type
 
 #### Response
 
-- if userId is an existing id and resourceType is a valid resource type, it returns a `HTTP 200` status with a mock `Resource` object:
+- if token is valid and resourceType is a valid resource type, it returns a `HTTP 200` status with a mock `Resource` object:
 ```json
 {
   "type" : "gold",
@@ -426,7 +393,7 @@ Get the details of a certain resource type
 }
 ```
 
-- if userId and/or resource type doesn't exist, it returns a `HTTP 404` status and the following error message:
+- if resource type doesn't exist, it returns a `HTTP 404` status and the following error message:
 ```json
 {
   "status" : "error",
@@ -436,11 +403,11 @@ Get the details of a certain resource type
 
 ## Troops
 
-### `GET /[userId]/kingdom/troops`
+### `GET /kingdom/troops`
 Get the list of troops in the kingdom
 
 #### Response
-- if userId is an existing userId, it returns a `HTTP 200` status with a mock list of `Troop` objects:
+- if token is valid, it returns a `HTTP 200` status with a mock list of `Troop` objects:
 ```json
 {
   "troops": [
@@ -461,21 +428,13 @@ Get the list of troops in the kingdom
 }
 ```
 
-- if userId doesn't exist, it returns a `HTTP 404` status and the following error message:
-```json
-{
-  "status" : "error",
-  "message" : "UserId not found"
-}
-```
 
-
-### GET /[userId]/kingdom/troops/[troopId]
+### GET /kingdom/troops/[troopId]
 Get the detail of a certain troop
 
 #### Response
 
-- if userId and troopId are existing ids, it returns a `HTTP 200` status with a mock `Troop` object:
+- if token is valid and troopId is an existing ids, it returns a `HTTP 200` status with a mock `Troop` object:
 ```json
 {
   "id": 1,
@@ -486,7 +445,7 @@ Get the detail of a certain troop
 }
 ```
 
-- if userId and/or troopId doesn't exist, it returns a `HTTP 404` status and the following error message:
+- if troopId doesn't exist, it returns a `HTTP 404` status and the following error message:
 ```json
 {
   "status" : "error",
