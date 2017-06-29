@@ -2,6 +2,10 @@
 - [Project description](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes-of-lagopus)
 - [Model descriptions](https://github.com/greenfox-academy/teaching-materials/tree/master/team-project/tribes_models.md)
 
+## Mandatory request header parameter to all endpoints except the `/register` and `/login`:
+`X-tribes-token=<token>`
+
+
 ## Registration
 
 ### `POST /register`
@@ -71,9 +75,8 @@ e.g.:
 - if all parameters are provided and username equals "Bond", it returns a `HTTP 200` status with a mock `User` object:
 ```json
 {
-  "id" : 1,
-  "username" : "Bond",
-  "kingdomId" : 1
+  "status" : "ok",
+  "token" : "sdfghjkl214124312"
 }
 ```
 
@@ -484,6 +487,82 @@ Get the detail of a certain troop
 ```
 
 - if userId and/or troopId doesn't exist, it returns a `HTTP 404` status and the following error message:
+```json
+{
+  "status" : "error",
+  "message" : "<id> not found"
+}
+```
+
+### POST /kingdom/troops
+Creates a new troop in the kingdom (gets the user's id from the token provided in the header).
+
+#### Response
+
+- if the token is valid, and the user has enough gold to create a troop, it returns a `HTTP 200` response with the create `Troop` object:
+```json
+{
+  "id": 1,
+  "level": 1,
+  "hp": 1,
+  "attack": 1,
+  "defence": 1
+}
+```
+
+- if the user doesn't have enough money for the create a troop, it returns a `HTTP 400` response with the following error message:
+```json
+{
+  "status" : "error",
+  "message" : "Not enough gold!"
+}
+```
+
+### PUT /kingdom/troops/[troopId]
+Upgrades or downgrades a troop in the kingdom to a certain level (gets the user's id from the token provided in the header).
+
+#### Request parameters
+- `level` [int]
+
+#### Response
+
+- if level parameter is provided and it's more than 0 and the user has enough money for the upgrade, it returns a `HTTP 200` response with the modified `Troop` object:
+```json
+{
+  "id": 1,
+  "level": 2,
+  "hp": 1,
+  "attack": 1,
+  "defence": 1
+}
+```
+
+- if level parameter is provided and it's more than 0 BUT the user doesn't have enough money for the upgrade, it returns a `HTTP 400` response with the following error message:
+```json
+{
+  "status" : "error",
+  "message" : "Not enough gold!"
+}
+```
+
+
+- if level parameter is provided, but it's less then 0 or not integer, it returns a `HTTP 400` response with the following error message:
+```json
+{
+  "status" : "error",
+  "message" : "Invalid troop level!"
+}
+```
+
+- if level parameter is missing, it returns a `HTTP 400` status and the following error message:
+```json
+{
+  "status" : "error",
+  "message" : "Missing parameter(s): type!"
+}
+```
+
+- if troopId doesn't exist, it returns a `HTTP 404` status and the following error message:
 ```json
 {
   "status" : "error",
