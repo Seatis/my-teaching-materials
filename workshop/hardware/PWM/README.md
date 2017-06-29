@@ -136,6 +136,8 @@ Make the following changes on the circuit:
 
 <img src="img/GF-ATmega168PB-PWM-FAN-POT.png" width="50%"></img>
 
+[IPS090N03LGAKMA1 datasheet](http://www.infineon.com/dgdl/Infineon-IPD090N03LG-DS-v01_09-en.pdf?fileId=db3a304327b897500127d89522867181)
+
 You can use the previous exercise code to control the FAN.
 
 ### Controlling PWM duty cycle via UART
@@ -168,3 +170,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/PWM)

@@ -77,3 +77,523 @@ using [Codeship](https://codeship.com/).
 Codeship should detect each change on the master branch of your repository on Github.
 When the change is detected Codeship should run all the unit tests, if none the tests
 failed it should deploy the latest version of the application to Heroku.
+
+### Database Migration On Production Environment
+
+Create a database migration using [flyway](https://flywaydb.org/getstarted/)
+
+#### Technical Requirements
+
+Add flyway as a dependency to your project. Alter your heartbeat table by adding
+a new autoincrement id column to it,
+alter it in a way that all the stored records are remaining in the table on 
+the production environment. Use the flywaydb to proceed with the migration.
+
+### Logging
+
+Create a simple unit that is able to log any message to the standatd out.
+The application should have 4 different log levels, in the following increasing priority:
+
+ -  **debug**: Logging any debugging related information, that is only
+    informative for the current temporary debugging situation. Typically not
+    logged in production environment.
+ -  **info**: Generally useful information to log (service start/stop,
+    configuration assumptions, etc). Info I want to always have available but
+    usually don't care about under normal circumstances. This is my
+    out-of-the-box config level.
+ -  **warn**: Anything that can potentially cause application oddities, but for
+    which I am automatically recovering. (Such as switching from a primary to
+    backup server, retrying an operation, missing secondary data, etc.)
+ -  **error**: Any error which is fatal to the operation, but not the service
+    or application (can't open a required file, missing data, etc.).
+    These errors will force user (administrator, or direct user) intervention.
+    These are usually reserved (in my apps) for incorrect connection strings,
+    missing services, etc.
+
+#### Technical Requirements
+
+The unit should have a method for each log level and it should take the log message
+as a prameter. It should print the level, the hostname, and the message.
+in a format like:
+
+```
+INFO some-service.herokuapp.com message
+```
+
+The debug and info levels should log to the standard out and the warn and error
+levels should log to the standard error.
+
+### Logging time
+
+The logging unit should log the current date in standard format.
+It should use the ISO 8601 standard with combined date and time in UTC.
+Each log message should look like something similar:
+
+```
+INFO 2017-06-12T17:39:29Z some-service.herokuapp.com message
+```
+
+### Configurable logging levels
+
+The log levels should be configurable by an environment variable.
+If the called methods priority is the same or higher than the stored log level,
+then it should log the message otherwise it should not.
+So it for example it should log a `warn` level message if the environment variable is
+set to `info`, but it should not log anything if the message level is `info` and
+the variable is set to `error`.
+The default log level should be `info` if the environment variable is not present.
+
+### RabbitMQ in hearthbeat
+
+The hearthbeat endpoint should check the RabbitMQ connection and push and consume a message.
+
+```gherkin
+Feature: Hearthbeat endpoint should check message queue availability.
+
+Scenario: Monitor queue that has no items
+ Given the application running
+   And connected to RabbitMQ
+   And the 'heartbeat' queue is empty
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should send a message to the 'heartbeat' queue and consume that message right after
+   And it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "ok"}'
+
+Scenario: Monitor queue that has items
+ Given the application running
+   And connected to RabbitMQ
+   And the 'heartbeat' queue is not empty
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
+
+Scenario: Monitor queue that is not connected
+ Given the application running
+   And not connected to RabbitMQ
+  When the '/hearthbeat' endpoint is requested with 'GET' method
+  Then it should return a JSON like: '{"status": "ok", "database": "ok", "queue": "error"}'
+```
+
+### Send Event
+
+Create a unit that is able to send an event to the 'events' message queue, to track events
+for further analytics.
+
+#### Technical Requirements
+
+If the dispach method is called on the unit it should send an event to a message queue
+thats configuration is saved in environment variables. The message should be in JSON
+format and it should consist these information:
+
+ - time
+ - hostname
+ - message
+
+### Endpoint logging
+
+Each http endpoint should be logged by the application
+
+```gherkin
+Feature: Logging on endpoints
+
+Scenario: Good request
+ Given the application running
+  When any of the endpoints is requested
+  Then it should log 'HTTP-REQUEST /path' in 'info' level
+
+Scenario: Bad request
+ Given the application running
+  When any of the endpoints is requested
+   And the response has any error
+  Then it should log 'HTTP-ERROR /path' in 'error' level
+```
+
+### Save image
+
+Create an enpoint for saving images
+
+```gherkin
+Feature: Add image
+
+Scenario: Upload request
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1"
+       }
+     }
+   }
+   """
+```
+
+### Upload image to S3
+
+The /images endpoint should upload the image to S3
+
+```gherkin
+Feature: Upload image
+
+Scenario: Upload request
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should upload the given image to S3
+   And it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1",
+         "url": "s3-eu-west-1.amazonaws.com/somebucket/filename.jpg"
+       }
+     }
+   }
+   """
+```
+
+#### Technical Requirements
+
+Use the official [AWS java API](http://docs.aws.amazon.com/AmazonS3/latest/dev/UploadObjSingleOpJava.html)
+for uploading images to S3. Store the Amazon credentials in environment variables, do not commit them.
+
+### Rename image
+
+The `/images` endpoint should give the image a uniq name
+
+```gherkin
+Feature: Rename image
+
+Scenario: Generate name
+ Given the application running
+   And 0 images in the database
+  When the '/images' endpoint is requested with a 'POST' request with a jpg file
+  Then it should generate a uniq 12 character name for the file.
+   And it should upload the given image to S3
+   And it should send a 201 response with a JSON:
+   """
+   {
+     "data": {
+       "type": "images",
+       "attributes": {
+         "id": "1",
+         "url": "s3-eu-west-1.amazonaws.com/somebucket/hj2rtk4ds7pl.jpg"
+       }
+     }
+   }
+   """
+```
+
+### Refactor Logging 
+
+Refactor the logging of enpoints using Aspect Oriented Programming.
+Learn about Spect Oriented Programming in Spring [here](https://www.youtube.com/playlist?list=PLE37064DE302862F8).
+Refactor your code to use aspects for logging on each endpoint.
+
+### Add Thumbnail
+
+Create a rest endpoint for creating new thumbnails
+
+```gherkin
+Feature: Add thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "attributes": {
+         "is_main": true
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+
+Feature: Add thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "attributes": {
+       }
+     }
+   }
+   """
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+```
+
+### Thumbnail Listing`
+
+Create a rest endpoint for listing thumbnails
+
+```gherkin
+Feature: Add thumbnail
+ Given the application running
+   And 2 thumbnails in the database
+  When the '/hotels/1/thumbnails' endpoint is requested with a 'GET' request
+  Then it should send a 201 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails"
+     }
+     "data": [
+       {
+         "type": "thumbnails",
+         "id": "1",
+         "attributes": {
+           "is_main": true,
+           "uploaded": false,
+           "created_at": "2017-06-26T14:05:10+0000",
+           "content_url": "https://your-hostname.com/media/images/1/content
+         }
+       },
+       {
+         "type": "thumbnails",
+         "id": "2",
+         "attributes": {
+           "is_main": false,
+           "uploaded": false,
+           "created_at": "2017-06-26T14:05:10+0000",
+           "content_url": "https://your-hostname.com/media/images/2/content
+         }
+       }
+     ]
+   }
+   """
+```
+
+
+### Thumbnail filtering
+
+The thumbnail endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by is_main
+
+Scenario: by is_main
+ Given the application running
+   And 10 hotels in the database
+  When the '/hotels/1/thumbnails?is_main=true' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/hotels/1/thumbnails?is_main=true"
+     }
+     "data": [{
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }]
+   }
+   """
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+### Get Single Thumbnail
+
+Create an endpoint for a single Thumbnail
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": true,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single Thumbnail 
+
+Create an endpoint for a single thumbnail
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single thumbnail
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+   }
+   """
+   And delete the thumbnail with id 1
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single Thumbnails
+
+Create an endpoint for a single thumbnails
+
+```gherkin
+Feature: Single Thumbnails
+
+Scenario: Single Thumbnails
+ Given the application running
+   And 200 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/hotels/1/thumbnails/1"
+     }
+     "data": {
+       "type": "thumbnails",
+       "id": "1",
+       "attributes": {
+         "is_main": false,
+         "uploaded": false,
+         "created_at": "2017-06-26T14:05:10+0000",
+         "content_url": "https://your-hostname.com/media/images/1/content
+       }
+     }
+   }
+   """
+   And update the attributes of the thumbnail entity
+
+```
+
+```gherkin
+Feature: Single Thumbnail
+
+Scenario: Single Thumbnail
+ Given the application running
+   And 0 thumbnails in the database
+  When the '/hotels/1/thumbnails/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No thumbnails found by id: 1"
+     }]
+   }
+   """
+```
+

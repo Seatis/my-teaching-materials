@@ -1,0 +1,14 @@
+# Input skills
+- basic GIT knowledge
+- experience in winsock2 socket programming
+    - creating a TCP server
+    - creating a TCP client
+- knowledge of C
+    - expressions and control flow
+    - functions
+    - arrays and pointers
+    - user input handling
+    - buffering techniques
+    - preprocessor macros
+    - data structures
+    - custom data types
