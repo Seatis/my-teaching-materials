@@ -6,9 +6,8 @@
 - experience in binary, hexadecimal, decimal number conversion
 - basic microcontroller usage knowledge
     - reading datasheets
-    - setting up an UART environment
-- knowledge of STM32
-    - levels
+- knowledge of STM33CubeF7
+    - usage of HAL, BSP
     - running existing projects in System Workbench
 - knowledge of C
     - expressions and control flow
@@ -19,10 +18,10 @@
     - preprocessor macros
     - data structures
     - custom data types
+- experience in Berkley Socket programming
+    - TCP server
+    - TCP client
 
 ## Output skills
-- understanding how does the System Workbench operates
-    - file system
-    - writing code
-- experience in STM32 LED and UART basic usage
-- experience commiting System Workbench projects
+- experience in lwIP socket programming
+- deeper understanding how does network communication works
