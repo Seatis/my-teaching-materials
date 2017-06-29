@@ -166,11 +166,11 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
-
+/*
    .ARM.attributes 0 : { *(.ARM.attributes) }
   .RxDecripSection : { *(.RxDescripSection) } >Memory_B1
   .TxDescripSection : { *(.TxDescripSection) } >Memory_B2
   .RxarraySection : { *(.RxBUF) } >Memory_B3
-  .TxarraySection : { *(.TxBUF) } >Memory_B4 
+  .TxarraySection : { *(.TxBUF) } >Memory_B4 */
 }
 
