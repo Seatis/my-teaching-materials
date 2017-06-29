@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <winsock2.h>
+#include <conio.h>
 
 #define SERVER_IP           "127.0.0.1"
 #define SERVER_PORT         1234
@@ -24,7 +25,7 @@ void wsa_init()
 		handle_error("WSAStartup() ");
 }
 
-void connect_to_server(SOCKET *client_sock, unsigned int server_ip, char *server_port)
+void connect_to_server(SOCKET *client_sock, unsigned int server_port, char *server_ip)
 {
 	// Creating client socket
 	(*client_sock) = socket(PF_INET, SOCK_STREAM, IPPROTO_IP);
@@ -66,7 +67,7 @@ int main()
 
 	// Connect to server
 	SOCKET client_socket;
-	connect_to_server(&client_socket, SERVER_IP, SERVER_PORT);
+	connect_to_server(&client_socket, SERVER_PORT, SERVER_IP);
 
 	// Local variables used in the do-while loop
 	int sent_bytes;
@@ -96,4 +97,3 @@ int main()
 	return 0;
 
 }
-
