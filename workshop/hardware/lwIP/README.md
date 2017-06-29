@@ -22,11 +22,12 @@
 | [What is the difference between real time operating system and non real time operating system?](https://www.quora.com/What-is-the-difference-between-real-time-operating-system-and-non-real-time-operating-system) | - |
 | [CMSIS-RTOS - Generic RTOS Interface](http://www.keil.com/pack/doc/CMSIS/RTOS/html/genRTOSIF.html) | - |
 
-The following material could be useful during the workshop, it is the reference of the CMSIS-RTOS functions.
+The following material could be useful during the workshop.
 
 | Material | Duration |
 |:---------|-----:|
 | [CMSIS-RTOS - Function Overview](http://www.keil.com/pack/doc/CMSIS/RTOS/html/functionOverview.html) | - |
+| [lwIP Socket API](http://www.nongnu.org/lwip/2_0_x/group__socket.html#gade2b17671b5a4b18e941fbf7e1060310) |-|
 
 ## Material Review
 ### OS basics
@@ -77,8 +78,14 @@ The following material could be useful during the workshop, it is the reference 
     - waits for a specified time with osSleep()
   - always use osSleep() or osWait() in every task, or it will block other tasks
 
+### lwIP
+- The light weight IP library
+- Used in low resource systems for networking
+- Lot's of APIs
+- Berkley sockets
+
 ## Workshop
-### Loading the templete onto the board
+### Loading the template onto the board
 - Open the template project in System Workbench for STM32
 - You have to set up the board's MAC address to a unique one
   - Open the `stm32f7xx_hal_conf.h` header file
@@ -108,13 +115,30 @@ The following material could be useful during the workshop, it is the reference 
 - Program the board
 - Connect the board to the network with an UTP cable
 - Push the reset button on the board
+- After a few seconds the board should print out the IP of the the board
+  - If not ask a mentor to help find the problem!
 
+### Trying out the `LCD_Log` utility
+- Try to use the following functions
+  - LCD_UsrLog()
+  - LCD_ErrLog()
+  - LCD_DbgLog()
 
-- Set proper MAC address in hal_conf!
-- Use the LCD_Log utility
-  - function list...
--
+### Socket server
+The lwIP library has the same sockets as the winsock2 sockets. It can be used the same way as
+we used the sockets in a [previous workshop](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/socket-server-client).
 
+The task is to implement a socket server on the STM32F746G-DISCOVERY board, which can
+accept TCP connections and receive messages, then it sends back the received message to the sender.
+
+There are `//TODO:` comments in the template where you may have to write code.
+
+Run the TCP client on your PC. You can use your or our solution for this purpose.
+
+### Advanced - Find the board with your PC program
+Implement a broadcast server on the STM32F746G-DISCOVERY board which listens on the
+network for specific message, which contains a port number, just like you did in
+[this project](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/totoro-chat).
 
 ## Solution
 [Solution](#)
