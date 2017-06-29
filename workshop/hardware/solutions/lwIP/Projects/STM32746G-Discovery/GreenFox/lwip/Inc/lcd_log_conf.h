@@ -82,7 +82,7 @@
 #define     LCD_LOG_TEXT_COLOR                    LCD_COLOR_DARKBLUE
 #define     LCD_LOG_DEFAULT_COLOR                 LCD_COLOR_DARKBLUE
 
-#define     LCD_LOG_SOLID_BACKGROUND_COLOR        LCD_COLOR_BLUE
+#define     LCD_LOG_SOLID_BACKGROUND_COLOR        0XFF3CB479
 #define     LCD_LOG_SOLID_TEXT_COLOR              LCD_COLOR_WHITE
 
 /* Define the cache depth */

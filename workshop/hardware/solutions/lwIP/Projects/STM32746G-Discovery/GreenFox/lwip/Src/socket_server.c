@@ -41,7 +41,7 @@ void socket_server_thread(void const *argument)
 	// Create server socket
 	int server_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
 	if (server_socket < 0) {
-		LCD_UsrLog("Socket server - can't create socket\n");
+		LCD_ErrLog("Socket server - can't create socket\n");
 		terminate_thread();
 	}
 	LCD_UsrLog("Socket server - socket created\n");
@@ -52,14 +52,14 @@ void socket_server_thread(void const *argument)
 	server_addr.sin_port = htons(SERVER_PORT);
 	server_addr.sin_addr.s_addr = INADDR_ANY;
 	if (bind(server_socket, (struct sockaddr*)&(server_addr), sizeof(server_addr)) < 0) {
-		LCD_UsrLog("Socket server - can't bind socket\n");
+		LCD_ErrLog("Socket server - can't bind socket\n");
 		terminate_thread();
 	}
 	LCD_UsrLog("Socket server - socket bind ok\n");
 
 	// Start listening
 	if (listen(server_socket, SERVER_QUEUE_SIZE) < 0) {
-		LCD_UsrLog("Socket server - can't listen\n");
+		LCD_ErrLog("Socket server - can't listen\n");
 		terminate_thread();
 	}
 	LCD_UsrLog("Socket server - listening...\n");
@@ -74,7 +74,7 @@ void socket_server_thread(void const *argument)
 		LCD_UsrLog("Socket server - connection accepted\n");
 		// Check the client socket
 		if (client_socket < 0) {
-			LCD_UsrLog("Socket server - invalid client socket\n");
+			LCD_ErrLog("Socket server - invalid client socket\n");
 		} else {
 			// Define buffer for incoming message
 			char buff[SERVER_BUFF_LEN];
@@ -84,7 +84,7 @@ void socket_server_thread(void const *argument)
 				received_bytes = recv(client_socket, buff, SERVER_BUFF_LEN, 0);
 				// Check for error
 				if (received_bytes < 0) {
-					LCD_UsrLog("Socket server - can't receive\n");
+					LCD_ErrLog("Socket server - can't receive\n");
 				} else {
 					// Close the string
 					buff[received_bytes] = '\0';
