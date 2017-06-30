@@ -212,4 +212,4 @@ IP              port      name
 - the program can load the message log file and can display it on the screen
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/totoro-chat)
