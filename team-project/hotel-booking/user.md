@@ -357,8 +357,8 @@ Scenario: Register
    {
      "data": {
        "type": "user",
+       "id": "1",
        "attributes": {
-         "id": "1",
          "email": "john.doe@example.org",
          "admin": false,
          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
@@ -367,4 +367,282 @@ Scenario: Register
    }
    """
 ```
+
+### Users CRUD
+
+Create anendpoint for listing, creating, removing updating and deleting user entities.
+
+```gherkin
+Feature: List users
+
+Scenario: Good request
+ Given the application running
+  When the '/api/users' endpoint is requested with a 'GET' request
+  Then it should return a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/users"
+     }
+     "data": [{
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }]
+   } 
+   """
+```
+
+
+```gherkin
+Feature: Users pagination
+
+Scenario: More than 20
+ Given the application running
+   And 200 users in the database
+  When the '/api/users' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/users",
+       "next": "https://your-hostname.com/api/users?page=2",
+       "last": "https://your-hostname.com/api/users?page=10",
+     }
+     "data": [{
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+```gherkin
+Feature: users pagination
+
+Scenario: Second page
+ Given the application running
+   And 200 users in the database
+  When the '/api/users?page=2' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/users?page=2",
+       "next": "https://your-hostname.com/api/users?page=3",
+       "prev": "https://your-hostname.com/api/users",
+       "last": "https://your-hostname.com/api/users?page=10",
+     }
+     "data": [{
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }, {
+       ...
+     } ...]
+   }
+   """
+```
+
+### User filtering
+
+The user endpoint should be able to filter on the attributes.
+
+```gherkin
+Feature: filter by admin
+
+Scenario: by admin
+ Given the application running
+   And 10 users in the database
+  When the '/api/users?admin=true' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/users?currency=EUR"
+     }
+     "data": [{
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }]
+   }
+   """
+
+```
+
+#### Technical requirements
+
+It should accept all the attributes as filter paramters.
+
+
+### Get Single User 
+
+Create an endpoint for a single user 
+
+```gherkin
+Feature: Single User
+
+Scenario: Single user
+ Given the application running
+   And 200 users in the database
+  When the '/api/users/1' endpoint is requested with a 'GET' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/users/1"
+     }
+     "data": {
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": false,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+```
+
+```gherkin
+Feature: Single user
+
+Scenario: Single user
+ Given the application running
+   And 0 users in the database
+  When the '/api/users/1' endpoint is requested with a 'GET' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No users found by id: 1"
+     }]
+   }
+   """
+```
+
+
+### Delete Single user 
+
+Create an endpoint for a single user
+
+```gherkin
+Feature: Single user
+
+Scenario: Single user
+ Given the application running
+   And 200 users in the database
+  When the '/api/users/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 200 response with a JSON:
+   """
+   {
+   }
+   """
+   And delete the user with id 1
+```
+
+```gherkin
+Feature: Single user
+
+Scenario: Single user
+ Given the application running
+   And 0 users in the database
+  When the '/api/users/1' endpoint is requested with a 'DELETE' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No users found by id: 1"
+     }]
+   }
+   """
+```
+
+### Update Single
+
+Create an endpoint for a single user
+
+```gherkin
+Feature: Single user
+
+Scenario: Single user
+ Given the application running
+   And 200 users in the database
+  When the '/api/users/1' endpoint is requested with a 'PATCH' request
+   """
+   {
+     "data": {
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "admin": "true"
+       }
+     }
+   }
+   """
+  Then it should send a 200 response with a JSON:
+   """
+   {
+     "links": {
+       "self": "https://your-hostname.com/api/users/1"
+     }
+     "data": {
+       "type": "users",
+       "id": "1",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "admin": true,
+         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUub3JnIiwiYWRtaW4iOmZhbHNlfQ.UK8Z1BNeHWvaFElWrrSxhO6oxTRaMW_66DO5yjkqOhM"
+       }
+     }
+   }
+   """
+   And update the attributes of the user entity
+
+```
+
+```gherkin
+Feature: Single user
+
+Scenario: Single user
+ Given the application running
+   And 0 users in the database
+  When the '/api/users/1' endpoint is requested with a 'PATCH' request
+  Then it should send a 404 response with a JSON:
+   """
+   {
+     "errors": [{
+       "status": "404",
+       "title": "Not Found",
+       "detail": "No users found by id: 1"
+     }]
+   }
+   """
+```
+
 
