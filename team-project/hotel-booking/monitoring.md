@@ -400,4 +400,50 @@ a number value. If the `min` parameter is present, it should only show page view
 have a higher count than the given parameter. The `max` parameter should work the same
 way just showing the events with the lower counts.
 
-### Daily Aggregation
+### Funnel
+
+Create an endpoint that stores funnels. The path of the endpoint should be: `/api/funnels`, the endpoint should handle full CRUD operations. And it should follow the [JSON-api](http://jsonapi.org/) documentation.
+A funnel JSON representation should look like this:
+```
+{
+  "links": {
+    "self": "https://your-domain/funnels/1"
+  }
+  "data":
+    "type": "funnels",
+    "id": 1,
+    "relationships": {
+      "steps": {
+        "links": {
+          "self": "https://your-domain/funnels/1/relationships/steps",
+          "related": "https://your-domain/funnels/1/steps"
+        },
+        "data": [
+          { "type": "steps", "id": 1 },
+          { "type": "steps", "id": 2 }
+        ]
+      }
+    },
+    "included": [{
+      "type": "steps",
+      "id": 1,
+      "attributes": {
+        "pagename": "/",
+        "count": 550,
+        "percent": 10000
+      }
+    }, {
+      "type": "steps",
+      "id": 2,
+      "attributes": {
+        "pagename": "/search",
+        "count": 110,
+        "percent": 2000
+      }
+    }]
+}
+```
+
+### Daily aggregation
+
+Create a message queue called aggregation. It stores events for aggregation. Create an event that triggers the funnel aggregation. If the event is present in the message queue the microservice should recalculate all the funnels based on the pageview events. After the aggregation is ready it should push back the event to aggregation queue, with a one day delay on the event.
