@@ -56,6 +56,7 @@
 #include "app_ethernet.h"
 #include "lcd_log.h"
 #include "socket_server.h"
+#include "socket_client.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -135,8 +136,9 @@ static void StartThread(void const * argument)
   osThreadCreate (osThread(DHCP), &gnetif);
 
 #ifdef SERVER
+  // TODO:
   // Define and start the server thread
-  osThreadDef(SOCKET_SERVER, socket_server_thread, osPriorityNormal, 0, configMINIMAL_STACK_SIZE * 2);
+  osThreadDef(SOCKET_SERVER, socket_server_thread, osPriorityBelowNormal, 0, configMINIMAL_STACK_SIZE * 2);
   osThreadCreate (osThread(SOCKET_SERVER), NULL);
 #endif
 

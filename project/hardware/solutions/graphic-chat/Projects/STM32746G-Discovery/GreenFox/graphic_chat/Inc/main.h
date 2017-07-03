@@ -63,14 +63,16 @@
 /* Exported constants --------------------------------------------------------*/
 
 #define USE_DHCP       /* enable DHCP, if disabled static address is used*/
-//#define SERVER
+
+/* SERVER or CLIENT role selection (or both)*/
+#define SERVER
 #define CLIENT
  
 /*Static IP ADDRESS*/
 #define IP_ADDR0   192
 #define IP_ADDR1   168
 #define IP_ADDR2   0
-#define IP_ADDR3   11
+#define IP_ADDR3   10
    
 /*NETMASK*/
 #define NETMASK_ADDR0   255
