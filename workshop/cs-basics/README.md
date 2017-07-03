@@ -13,7 +13,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
 - Let`s create a simple Hello World Application:
   - Open the installed IDE
   - Create a new `Console Application`
-  ![alt text](assets/create.jpg)
+  ![create](assets/create.jpg)
   - Open `Program.cs` and use `Console.WriteLine();` in our `Main()`, which works same as `System.out.println();`
   - Build and Run the solution!
   - If you see what we are expecting, then you are ready to go with the materials :)
@@ -59,3 +59,91 @@ C# is an elegant and type-safe object-oriented language that enables developers 
 - `IDisposable`
   - `using`
 - Exceptions
+
+## Workshop
+
+### Properties
+```cs
+private string _name;
+public string Name 
+{
+    get
+    {
+        return _name;
+    }
+    set
+    {
+        _name = value;
+    }
+}
+
+public int Age { get; private set; }
+```
+
+### LINQ
+```cs
+int[] scores = new int[] { 97, 92, 81, 60, 69, 12, 95, 15 };
+
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;   
+
+IEnumerable<int> scoreQueryWithLambda = scores.Where(y => y > 80);
+```
+Practice Exercises:
+ - [Exercise1](./workshop/exercise1.md)
+ - [Exercise2](./workshop/exercise2.md)
+ - [Exercise3](./workshop/exercise3.md)
+
+### Abstract Class
+```cs
+public abstract class Character
+{
+    public virtual string Name()
+    {
+        return "Yondu";
+    }
+
+    public abstract int Age();
+}
+```
+
+### IDisposable
+```cs
+private void FlipBitmap()
+{
+    using (Bitmap image = Bitmap.FromFile("@\image.bmp"))
+    {
+        image.RotateFlip(RotateFlipType.Rotate180FlipY);
+        image.Save("@\flippedimage.bmp")
+    }    
+}
+```
+
+### Exception Handling
+```cs
+try
+{
+    Console.WriteLine("Executing the try statement.");
+    throw new NullReferenceException();
+}
+catch (NullReferenceException e)
+{
+    Console.WriteLine("{0} Caught NullRefferenceException.", e);
+}
+catch
+{
+    Console.WriteLine("Caught Exception.");
+}
+finally
+{
+    Console.WriteLine("Executing finally block.");
+}
+```
+
+## Mini Project
+Pro tip: For C# questions and examples 
+[MSDN Library](https://msdn.microsoft.com/en-us/library/mt472912(v=vs.110).aspx) could be just as helpful as stackoverflow!
+
+[Battleship](./workshop/battleship.md)
