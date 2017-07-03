@@ -212,7 +212,7 @@ static void BSP_Config(void)
   LCD_LOG_Init();
   
   /* Show Header and Footer texts */
-  LCD_LOG_SetHeader((uint8_t *)"TOTORO socket echo server");
+  LCD_LOG_SetHeader((uint8_t *)"TOTORO graphic chat");
   LCD_LOG_SetFooter((uint8_t *)"STM32746G-DISCO - GreenFoxAcademy");
   
   LCD_UsrLog ((char *)"Notification - Ethernet Initialization ...\n");
