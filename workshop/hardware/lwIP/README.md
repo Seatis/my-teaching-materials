@@ -141,4 +141,4 @@ network for specific message, which contains a port number, just like you did in
 [this project](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/totoro-chat).
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hardware/solutions/lwIP)
