@@ -597,3 +597,87 @@ Scenario: Single Thumbnail
    """
 ```
 
+### Refactor add image
+
+Remove the old `/images` endpoint and replace it with: `/media/images/{id}`.
+A POST request on the new endpoint should upload the posted image to S3 and
+give it a unique name like in the old endpoint. A GET request on the new endpoint
+should redirect to the uploaded image.
+
+### Error on image size
+
+If the uploaded image is bigger than 1MB the endpoint should not upload it to S#
+and it should response a 413 response like:
+```
+{
+  "errors": [{
+    "status": "413",
+    "title": "Payload Too Large",
+    "detail": "The image cannot be bigger than 1MB"
+  }]
+}
+```
+
+### Resize image
+
+When an image is uploaded to S3, the service should upload a resized version as well,
+beside the original version. First it should crop the image to 4:3 portait ratio, from
+the middle of the image. Then it should resize it to 200x150 pixels. Then it should upload the image
+to S3, with a `_200x150` postfix. (if the image name is `hj2rtk4ds7pl.jpg` then
+the resized image should be: `hj2rtk4ds7pl_200x150.jpg`)
+
+### Image validation
+
+If the uploaded image type is not supported or it is smaller than 200x150 in any
+dimension it should response a 406 response.
+
+The rsponse on unsupported type:
+```
+{
+  "errors": [{
+    "status": "406",
+    "title": "Not Acceptable",
+    "detail": "The image type should be one of the following: jpeg, gif, png"
+  }]
+}
+```
+
+The resonse on not sufficient size:
+```
+{
+  "errors": [{
+    "status": "413",
+    "title": "Not Acceptable",
+    "detail": "The image cannot be smaller than 200x150"
+  }]
+}
+```
+
+### Reach images
+
+The `/media/iamges/{id}` endpoint should response the original image.
+The `/media/images/{id}/resize/200/150` should response the resized image.
+Any other size parameter should be handeled as an error and response 400 like:
+```
+{
+  "errors": [{
+    "status": "400",
+    "title": "Bad Request",
+    "detail": "Unsupported image size. Supported sizes: 200x150"
+  }]
+}
+```
+
+### Thumbnail ready
+
+If the images are both uploaded it should set `uploaded` flag on the corresponding
+thumbnail to true.
+
+### Reliable image resize
+
+If an image is uploaded to S3 the microservice should not start the resize right away.
+It should put a resize event into a message queue, and a consumer should read the
+events from the queue and resize and upload them 1 by 1. If anything fails during
+the process it should push back the event to the message queue.
+
+
