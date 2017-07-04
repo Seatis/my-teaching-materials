@@ -59,6 +59,11 @@ e.g.:
   "languages" : [
     "Java",
     "Javascript"
+  ],
+  "snippets": [
+    "https://raw-snippet-url-1",
+    "https://raw-snippet-url-2",
+    "https://raw-snippet-url-3"
   ]
 }
 ```
@@ -81,7 +86,7 @@ e.g.:
 - Page [integer, optional]
 
 #### Response
-- if X-GiTinder-token header parameter is provided and not empty, return with a list of `Profile` objects
+- if X-GiTinder-token header parameter is provided and not empty, return with a list of `Profile` objects (the same as the `GET /profile` endpoint returns)
 - a `count` field that shows how many profiles are in the returned list
 - an `all` field that shows how many profiles are available
 - if `page` is not provided the list should contain the first 10 profiles
