@@ -1,6 +1,6 @@
 int led = 2;
 
-// The switch is connected to D3 pin. "D" means that this pin is a digital pin, it can has a LOW or HIGH state.
+// The switch is connected to D3 pin. "D" means that this pin is a digital pin, it can have a LOW or HIGH state.
 // give this pin a name:
 int button = 3;
 
