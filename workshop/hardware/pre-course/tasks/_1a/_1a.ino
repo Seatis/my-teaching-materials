@@ -21,7 +21,7 @@
 // Let's start your first project!
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// The red LED is connected to D2 pin. "D" means that this pin is a digital pin, it can has a LOW or HIGH state. 
+// The red LED is connected to D2 pin. "D" means that this pin is a digital pin, it can have a LOW or HIGH state. 
 // give this pin a name:
 int led = 2;
 
