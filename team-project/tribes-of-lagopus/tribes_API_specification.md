@@ -127,7 +127,9 @@ Gets all data of a kingdom that belongs to the given userId.
       "id" : 1,
       "type" : "townhall",
       "level": 1,
-      "hp": 1
+      "hp": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ],
   "resources": [
@@ -148,7 +150,9 @@ Gets all data of a kingdom that belongs to the given userId.
       "level": 1,
       "hp": 1,
       "attack": 1,
-      "defence": 1
+      "defence": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ],
   "location": {
@@ -175,7 +179,7 @@ Modifies data of a kingdom belongs to the user encoded in the token.
 - `locationY` [int]
 
 
-e.g.: 
+e.g.:
 ```json
 {
   "name" : "MI5"
@@ -194,7 +198,9 @@ e.g.:
       "id" : 1,
       "type" : "townhall",
       "level": 1,
-      "hp": 1
+      "hp": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ],
   "resources": [{
@@ -213,7 +219,9 @@ e.g.:
       "level": 1,
       "hp": 1,
       "attack": 1,
-      "defence": 1
+      "defence": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ],
   "location": {
@@ -236,12 +244,16 @@ Get the list of buildings of the kingdom belongs to the user encoded in the toke
       "id" : 1,
       "type" : "townhall",
       "level": 1,
-      "hp": 1
+      "hp": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }, {
       "id" : 2,
       "type" : "farm",
       "level": 1,
-      "hp": 1
+      "hp": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ]
 }
@@ -258,7 +270,9 @@ Get the details of the certain building belongs to the user encoded in the token
   "id" : 1,
   "type" : "townhall",
   "level": 1,
-  "hp": 1
+  "hp": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 
@@ -291,7 +305,9 @@ e.g.:
   "id" : 2,
   "type" : "farm",
   "level": 1,
-  "hp": 1
+  "hp": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 
@@ -326,7 +342,9 @@ Upgrades or downgrades a building in the kingdom to a certain level
   "id" : 2,
   "type" : "farm",
   "level": 1,
-  "hp": 1
+  "hp": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 
@@ -416,13 +434,17 @@ Get the list of troops in the kingdom
       "level": 1,
       "hp": 1,
       "attack": 1,
-      "defence": 1
+      "defence": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }, {
       "id": 2,
       "level": 1,
       "hp": 1,
       "attack": 1,
-      "defence": 1
+      "defence": 1,
+      "started_at": 12345789,
+      "finished_at": 12399999
     }
   ]
 }
@@ -441,7 +463,9 @@ Get the detail of a certain troop
   "level": 1,
   "hp": 1,
   "attack": 1,
-  "defence": 1
+  "defence": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 
@@ -465,7 +489,9 @@ Creates a new troop in the kingdom (gets the user's id from the token provided i
   "level": 1,
   "hp": 1,
   "attack": 1,
-  "defence": 1
+  "defence": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 
@@ -492,7 +518,9 @@ Upgrades or downgrades a troop in the kingdom to a certain level (gets the user'
   "level": 2,
   "hp": 1,
   "attack": 1,
-  "defence": 1
+  "defence": 1,
+  "started_at": 12345789,
+  "finished_at": 12399999
 }
 ```
 

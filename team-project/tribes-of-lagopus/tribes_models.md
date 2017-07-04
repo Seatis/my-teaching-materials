@@ -8,7 +8,9 @@
   "id": <long>,
   "type": townhall|mine|farm|barracks>,
   "level": <int>,
-  "hp": <int>
+  "hp": <int>,
+  "started_at": <long>,
+  "finished_at": <long>
 }
 ```
 - id: unique identifier of the building
@@ -19,6 +21,8 @@
 	- barracks: can create `Troop`
 - level: level of the building (default: 1)
 - hp: health point of the building
+- started_at: the timestamp when the building create request was sent from the client
+- finished_at: (could be future) timestamp when the building is finished and useable
 
 ## Troop
 ```json
@@ -27,7 +31,9 @@
   "level": <int>,
   "hp": <int>,
   "attack": <int>,
-  "defence": <int>
+  "defence": <int>,
+  "started_at": <long>,
+  "finished_at": <long>
 }
 ```
 - id: unique identifier of the troop
@@ -35,6 +41,8 @@
 - hp: health point of the troop
 - attack: attack value of the troop
 - defence: defence value of the troop
+- started_at: the timestamp when the troop training request was sent from the client
+- finished_at: (could be future) timestamp when the troop's training is finished and useable
 
 
 ## Resource
@@ -95,4 +103,3 @@
 - resources: the list of `Resource` objects of this kingdom. A kingdom could have maximum one food type and one gold type resources.
 - troops: the list of `Troop` objects in this kingdom (default empty)
 - location: a `Location` object, that stores the coordinate of the kingdom on the map. Can be null if the kingdom is not settled yet.
-
