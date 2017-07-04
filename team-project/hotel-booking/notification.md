@@ -373,6 +373,13 @@ Feature: Add unsubscription
    """
 ```
 
+### Unsubscribe filtering
 
+Before sending the emails it should check if the email address is present in the
+unsubscribe list. If it is present it should not send the email.
 
+### Booking reminder
 
+If the ticking queue is triggered it should read the bookings from the booking service
+using the `/bookings` endpoint. It should send a reminder email 1, 7 and 14 days before
+the start date of the booking.

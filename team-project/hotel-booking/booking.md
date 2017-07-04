@@ -757,3 +757,54 @@ Scenario: Single Hotel with reviews
 #### Technical requirements
 
 Both the self and related links should work for the relationships objects.
+
+### Average rating
+
+Every hotel should have an attribute called `average_rating` that represents
+the aggregated average of all the reviews about the hotel.
+
+### Rooms
+
+Create a new relationship under hotels.
+It should be accessable from the `/api/hotels/{id}/relationships/rooms`.
+
+The needed attributes for rooms:
+
+ - **id**: number, unique referencce
+ - **price**: number, the price of the room
+ - **currency**: string: the currency of the price
+ - **description**: text, the description of the review
+ - **max_occupancy**: number, the maximum occupancy of the team
+
+
+### Booking
+
+Create an endpoint for bookings.
+
+The needed attributes for reviews:
+
+ - **id**: number, unique reference
+ - **guests**: number, the number of guests
+ - **start_date**: timestamp, the start date
+ - **end_date**: timestamp, the end date
+ - **created_at**: timestamp, the creation date
+ - **description**: text, the description of the review
+
+The endpoint path: `hotels/1/bookings`, where the 1 is the id of the hotel.
+It should be accessable form `users/1/bookings` and `/bookings` as well.
+
+Please follow the JSON-api guidelines and create a full CRUD functionallity.
+The api should be able to:
+ 
+ - Create a new bookings
+ - List all bookings by hotel and user
+ - Paginate in listing
+ - Filter in listing by attributes
+ - Get a booking by id
+ - Delete a booking by id
+ - Update a booking by id
+ - Hande errors and provide error responses
+
+All the booking should store a reference to the hotel and the user.
+
+
