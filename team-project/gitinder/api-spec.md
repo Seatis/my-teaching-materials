@@ -198,3 +198,72 @@ e.g.:
   "message" : "Unauthorized request!"
 }
 ```
+
+## Settings
+
+### `GET /settings`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with the user's settings:
+```json
+{
+  "enable_notifications": true,
+  "enable_background_sync": true,
+  "max_distance": 100,
+  "preferred_languages": [
+    "Java",
+    "Python",
+    "Javascript"
+  ]
+}
+```
+
+- if the header parameter is missing or empty, returns a HTTP 403 status with the following message:
+
+```json
+{
+  "status" : "error",
+  "message" : "Unauthorized request!"
+}
+```
+
+### `PUT /settings`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Request body
+- a JSON object containing a subset of the possible setting fields (none of the fields are required), e.g.:
+```
+{
+  "max_distance": 100,
+  "enable_notifications": true
+}
+```
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with the user's settings:
+```json
+{
+  "enable_notifications": true,
+  "enable_background_sync": true,
+  "max_distance": 100,
+  "preferred_languages": [
+    "Java",
+    "Python",
+    "Javascript"
+  ]
+}
+```
+
+- if the header parameter is missing or empty, returns a HTTP 403 status with the following message:
+
+```json
+{
+  "status" : "error",
+  "message" : "Unauthorized request!"
+}
+```
