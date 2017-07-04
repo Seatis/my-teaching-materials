@@ -773,7 +773,8 @@ The needed attributes for rooms:
  - **id**: number, unique referencce
  - **price**: number, the price of the room
  - **currency**: string: the currency of the price
- - **description**: text, the description of the review
+ - **name**: text, the name of the room
+ - **description**: text, the description of the room
  - **max_occupancy**: number, the maximum occupancy of the team
 
 
