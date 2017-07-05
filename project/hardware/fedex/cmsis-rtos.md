@@ -1,4 +1,4 @@
-Read the [fuc*in manual](https://www.keil.com/pack/doc/cmsis/RTOS/html/group__CMSIS__RTOS__ThreadMgmt.html)!!! Try to understand the functions you can work with. 
+Read the [fuc*in manual](https://www.keil.com/pack/doc/cmsis/RTOS/html/group__CMSIS__RTOS__ThreadMgmt.html)!!! Try to understand the functions you can work with.
 
 ```
 #include "cmsis_os.h"
