@@ -24,7 +24,7 @@ it is useful to improve your teamworking skills and you can also learn a lot for
     - pwm
     - timer
     - ADC
-- The lwIP library with RTOS:
+- [The lwIP library with RTOS]((C:\Users\Lenovo\Desktop\stuff\teaching-materials\teaching-materials\project\hardware\fedex\cmsis-rtos.md):
     - lwIP Socket API
     - CMSIS - RTOS functions
 
@@ -45,5 +45,7 @@ on a greater project (you can manage multiple tasks)
 |[Don't forget the lcd touch screen](https://www.youtube.com/watch?v=BJ6oXZlA7X8)|8:26 |
 |[More lcd](http://www.embedded-wizard.de/)| -|
 |[Some forum topics](http://www.openstm32.org/tiki-view_forum.php?forumId=7)|-|
+
+
 
 Don't forget, you have to demo your project. Try to take a project that fits for your team.
