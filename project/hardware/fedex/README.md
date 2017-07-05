@@ -2,6 +2,8 @@
 
 *It's called FedEx Day because, you choose a project and have to deliver it.*
 
+![](http://s1.q4cdn.com/714383399/files/design/slider/fedex-ground-truck-courier1.jpg)
+
 Before you start working please read this [document](https://docs.google.com/document/d/1FNR_Jm0eEhtq7Z_DPYTfiqPqFVs8z5YOxRZyW_Lzf28/edit#).
 
 ## Additional informations about the fedex day that you might have missed:
