@@ -178,11 +178,13 @@ e.g.:
   "matches": [
     {
       "username": "jondoe",
+      "avatar_url": "http://avatar.url",
       "matched_at": 123456789,
       "messages": []
     },
     {
       "username": "jondoe2",
+      "avatar_url": "http://avatar2.url",
       "matched_at": 123456789,
       "messages": []
     }
