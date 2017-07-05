@@ -51,3 +51,7 @@ on a greater project (you can manage multiple tasks)
 
 
 Don't forget, you have to demo your project. Try to take a project that fits for your team.
+
+##### Summary
+
+Your task is for the next two days is to learn to read the **fuc*in maunal!** At first it is not easy. You have to try out the functions. You have to understand the example codes with time and experience you will get better and better. If there is a procejt from the past weeks what you haven't finished look up the solutions try to reproduce them. Talk through codes with your classmates. **Last but not least: have fun!**
