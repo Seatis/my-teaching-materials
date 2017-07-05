@@ -2,6 +2,8 @@
 
 *It's called FedEx Day because, you choose a project and have to deliver it.*
 
+![](http://s1.q4cdn.com/714383399/files/design/slider/fedex-ground-truck-courier1.jpg)
+
 Before you start working please read this [document](https://docs.google.com/document/d/1FNR_Jm0eEhtq7Z_DPYTfiqPqFVs8z5YOxRZyW_Lzf28/edit#).
 
 ## Additional informations about the fedex day that you might have missed:
@@ -20,11 +22,11 @@ it is useful to improve your teamworking skills and you can also learn a lot for
 - UART on STM32
 - Basic LCD usage
 - USB HID (human interface device)
-- Closed loop control on STM32:
+- [Closed loop control on STM32](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/pwm-timer-ADC.md):
     - pwm
     - timer
     - ADC
-- The lwIP library with RTOS:
+- [The lwIP library with RTOS](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/cmsis-rtos.md):
     - lwIP Socket API
     - CMSIS - RTOS functions
 
@@ -46,4 +48,10 @@ on a greater project (you can manage multiple tasks)
 |[More lcd](http://www.embedded-wizard.de/)| -|
 |[Some forum topics](http://www.openstm32.org/tiki-view_forum.php?forumId=7)|-|
 
+
+
 Don't forget, you have to demo your project. Try to take a project that fits for your team.
+
+##### Summary
+
+Your task is for the next two days is to learn to read the **fuc*in maunal!** At first it is not easy. You have to try out the functions. You have to understand the example codes with time and experience you will get better and better. If there is a procejt from the past weeks what you haven't finished look up the solutions try to reproduce them. Talk through codes with your classmates. **Last but not least: have fun!**
