@@ -24,7 +24,7 @@ it is useful to improve your teamworking skills and you can also learn a lot for
     - pwm
     - timer
     - ADC
-- [The lwIP library with RTOS]((C:\Users\Lenovo\Desktop\stuff\teaching-materials\teaching-materials\project\hardware\fedex\cmsis-rtos.md):
+- [The lwIP library with RTOS](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/cmsis-rtos.md):
     - lwIP Socket API
     - CMSIS - RTOS functions
 
