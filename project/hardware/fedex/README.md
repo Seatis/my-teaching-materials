@@ -20,7 +20,7 @@ it is useful to improve your teamworking skills and you can also learn a lot for
 - UART on STM32
 - Basic LCD usage
 - USB HID (human interface device)
-- Closed loop control on STM32:
+- [Closed loop control on STM32](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/pwm-timer-ADC.md):
     - pwm
     - timer
     - ADC
