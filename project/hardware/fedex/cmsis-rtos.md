@@ -1,3 +1,5 @@
+# CMSIS-RTOS
+
 Read the [fuc*in manual](https://www.keil.com/pack/doc/cmsis/RTOS/html/group__CMSIS__RTOS__ThreadMgmt.html)!!! Try to understand the functions you can work with.
 
 ```
@@ -27,5 +29,8 @@ void ThreadCreate_example (void) {
   osThreadTerminate (id3);                                  // stop the thread with id3
 }
 ```
+
+## Exercise
+
 You can find example codes like this in the link above. Your task is to
 learn how to use these example codes. Try the functions out! Think of something simple and create it! For example do a simple project on your STM board where you use the CMSIS RTOS functions and the BSP for printing out things on the LCD screen with threads.
