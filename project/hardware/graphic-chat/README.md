@@ -49,4 +49,6 @@ The boards should detect each other on the network (the IP address is
 detected automatically).
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/graphic-chat)
+
+Don't forget to set the MAC address differently on the two boards, and to configure the IP properly.
