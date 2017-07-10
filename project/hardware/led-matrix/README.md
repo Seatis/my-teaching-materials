@@ -37,17 +37,38 @@
 ## Workshop
 [LED matrix datasheet](http://www.tme.eu/hu/Document/361f1f02acd9affe00be9c253ebe9536/LMD20057AUE-101A.pdf)
 
+Based on the provided LED matrix datasheet and on the User manual of the STM32F746G-DISCOVERY board make the connections between them. Don't forget
+to connect `100R` resistors in series with every LED!
+
+**If you are ready to go further then ask a mentor to verify the hardware.
+You can ruin your board with a simple mistake!**
+
 ### LED matrix driver with multiple threads
-Using mutexes.
+The first task is to write the driver or the LED matrix. Use the provided
+template project! You will find ``TODO:`` comments in the code.
+
+The goal is to be able to run simple animations on the LED matrix. The program should store each LED state in a 2D array. A thread should continuously update
+the LED matrix based on the information in the 2D array. The animation should
+run on a different thread and should only modify the state storage 2D array.
+
+Because the updater thread and the animation thread is accessing the same
+memory (the 2D array), they can mess up each other's data. Hence please use
+a mutex to protect the 2D array from multiple simultaneous access!
 
 ### Change animation speed with a potentiometer
-Using message queues.
+Connect a potentiometer to the board (don't forget that the board runs on 3.3V voltage!) onto the `A0` pin.
+
+Add a new thread to your program. This thread should read the voltage of the potentiometer with an ADC and put the data into a message queue continuously.
+
+Modify the animation thread to get the ADC data from the message queue,
+and based on that value modify the speed of the animation.
 
 ### Characters on the matrix
-Show characters on the LED matrix.
+Make the program capable of displaying characters on the LED matrix!
+You can use lookup tables or any other methods to solve the task.
 
 ### Characters from the network
-Running a socket server and receiving strings.
+Start a socket server in an other thread and show the received string on the LED matrix!
 
 ## Solution
 [Solution](#)
