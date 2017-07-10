@@ -63,6 +63,11 @@ Add a new thread to your program. This thread should read the voltage of the pot
 Modify the animation thread to get the ADC data from the message queue,
 and based on that value modify the speed of the animation.
 
+### Dot based on touch panel coordinate
+Based on the touch screen data show a dot on the LED matrix.
+For example if the user touches the bottom left corner of the screen
+the bottom left LED should be lit on the matrix. 
+
 ### Characters on the matrix
 Make the program capable of displaying characters on the LED matrix!
 You can use lookup tables or any other methods to solve the task.
