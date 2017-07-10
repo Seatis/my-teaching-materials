@@ -16,6 +16,8 @@ Preparation:
 | [Unit Testing in C#](https://msdn.microsoft.com/en-us/library/hh694602.aspx) | Text |
 
 ### Optional
+| Material | Time |
+|:---------|-----:|
 | [C# Unit Testing](https://www.youtube.com/watch?v=8YFZBNFm0OM) | 59:01 |
 
 ## Material Review
