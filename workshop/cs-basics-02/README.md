@@ -22,11 +22,50 @@ Preparation:
 
 ## Material Review
  - NuGet
- - EF
- - Test Class & Test Method
+ - Test Class
+ - Test Method
+ - Test Initialize
+ - ExpectedException
+ - Entity Framework
+   - Database-First
+   - Code-First
+   - (Model-First)
 
 ## Workshop
 
-### Database
-
 ### Testing
+```cs
+[TestMethod]  
+public void Withdraw_ValidAmount_ChangesBalance()  
+{  
+    // arrange  
+    double currentBalance = 10.0;  
+    double withdrawal = 1.0;  
+    double expected = 9.0;  
+    var account = new CheckingAccount("JohnDoe", currentBalance);  
+    // act  
+    account.Withdraw(withdrawal);  
+    double actual = account.Balance;  
+    // assert  
+    Assert.AreEqual(expected, actual);  
+}  
+  
+[TestMethod]  
+[ExpectedException(typeof(ArgumentException))]  
+public void Withdraw_AmountMoreThanBalance_Throws()  
+{  
+    // arrange  
+    var account = new CheckingAccount("John Doe", 10.0);  
+    // act  
+    account.Withdraw(20.0);  
+    // assert is handled by the ExpectedException  
+}  
+```
+- [Anagram](../testing/anagram/anagram.md)
+- [Count Letters](../testing/count-letters/count-letters.md)
+- [Fibonacci](../testing/fibonacci/fibonacci.md)
+- [Animal](../testing/animal/animal.md)
+- [Cows and Bulls](../testing/cows-and-bulls/cows-and-bulls.md)
+
+### Database
+- [TODO App](./workshop/todo.md)
