@@ -706,3 +706,14 @@ Scenario: balance
 
 ```
 
+### Balance filtering
+
+The `/api/hotels/1/balances/` endpiont should be configurable by dates.
+A `from` and `to` query parameter could be provided, then it should only consider
+transactions between these dates. Both parameters are optional.
+
+### Exchange
+
+The `/api/hotels/1/balances/` endpoint should have a possible `currency` parameter.
+If it is provided it should give back the whole balance in only that currency.
+Use [fixer](http://fixer.io/) for the exchange rate. The current exchange rate is sufficient.
