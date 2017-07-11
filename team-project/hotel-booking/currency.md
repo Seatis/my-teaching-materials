@@ -717,3 +717,10 @@ transactions between these dates. Both parameters are optional.
 The `/api/hotels/1/balances/` endpoint should have a possible `currency` parameter.
 If it is provided it should give back the whole balance in only that currency.
 Use [fixer](http://fixer.io/) for the exchange rate. The current exchange rate is sufficient.
+
+### Exchange on real date
+
+When the `/api/hotels/1/balances/` endpoint exchanges the balances, it should convert
+the currencies based on the date of the transactions. The program should cache the
+exchange rates to the database to not initiate the http request on each transaction
+exchange.
