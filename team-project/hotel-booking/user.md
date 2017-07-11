@@ -645,4 +645,36 @@ Scenario: Single user
    """
 ```
 
+### Authentication microserrvice
 
+Create a separate microservice for handling authentication, and refactor the
+current microservice to only focus on user storage.
+
+The new microservice should have the `/login` and `/register` endpoints, 
+the old should have the full CRUD operation for users. The authentication service
+should call the user microservice for reading the user properties or creating a new user.
+
+The authentication microservice should proxy the user CRUD endpoint, by guarding
+the read of users by tokens.
+
+Any admin role user should be able to:
+ - Create a new user
+ - List any user
+ - Update any user
+ - Delete any user
+
+Any normal role user shoud be able to:
+ - List any user
+ - Update itself
+ - Delete itself
+
+### Logging package
+
+Create a separate package that is include-able from gradle. The package should
+contain the logging unit and both microservices should use this package for logging.
+Try to avoid almost all possible code duplication between the services.
+
+Implement the package in a separate github repository, with full continous integration
+pipeline. The package should be independent from any hotel booking related feature.
+
+The package should be obtainable from maven central.
