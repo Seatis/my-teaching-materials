@@ -383,3 +383,87 @@ unsubscribe list. If it is present it should not send the email.
 If the ticking queue is triggered it should read the bookings from the booking service
 using the `/bookings` endpoint. It should send a reminder email 1, 7 and 14 days before
 the start date of the booking.
+
+### Email templates
+
+Create an endpoint for storing email templates that can perform full CRUD operations.
+An email temlate response should look like this:
+
+{
+	"links": {
+		"self": "https://your-hostname.com/api/emails/1"
+	}
+	"data": {
+		"type": "emails",
+		"id": "1",
+		"attributes": {
+			"fields": ["name", "token"],
+			"name": "Register"
+		}
+	},
+	"relationships": {
+		"reviews": {
+			"links": {
+				"self": "https://your-hostname/api/emails/1/relationships/templates",
+				"related": "https://your-hostname/api/emails/1/templates"
+			}
+		},
+		"data": [
+			{ "type": "templates", "id": "1" }
+			{ "type": "templates", "id": "2" }
+		]
+	},
+	"included": [{
+		"type": "templates",
+		"id": "1",
+		"attributes": {
+			"language": "en",
+			"text": "Hi ${name}, here is your token: ${token}"
+		}
+	}, {
+		"type": "reviews",
+		"id": "2",
+		"attributes": {
+			"language": "en",
+			"text": "Szervusz ${name}, itt a tokened: ${token}"
+		}
+	}]
+}
+
+### Send templated mail
+
+Create an endpoint that sends an email based on a template.
+
+```gherkin
+Feature: Registration email
+
+Scenario: Send registration email
+ Given the application running
+ Given an email template in the database:
+  | fields         | id | en-text                      |
+  | ["name", "id"] |  1 | "Hi ${mame}, your id: ${id}" |
+  When the '/send/1' endpoint is requested with a 'POST' request with data like:
+   """
+   {
+     "data": {
+       "type": "email",
+       "attributes": {
+         "email": "john.doe@example.org",
+         "fields": [
+           "name": "John",
+           "id": 1
+         ],
+         "language": "en"
+       }
+     }
+   }
+   """
+  Then it should send an email to 'john.doe@example.org':
+   """
+   Hi John, your id: 1
+   """
+```
+
+
+
+
