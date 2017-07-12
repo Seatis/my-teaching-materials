@@ -461,3 +461,10 @@ The single hotel page url is: `/hotels/1`.
 ### Autosave
 
 It saves on every blur event (click on other element, tab, etc) and if nothing happens after 2 seconds.
+
+### upload image
+
+Create a page for single hotels based on [this](https://app.moqups.com/tamas.kokeny@lab.coop/6PDcDVJ2ne/view) mockup.
+
+It should call the endpoint based on the resize team's api
+
