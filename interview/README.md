@@ -36,6 +36,7 @@
 - What is difference between Array and ArrayList ? When will you use Array over ArrayList ?
 - What's the difference between an ArrayList and a LinkedList?
 - How can you use Comparator and Comparable?
+- What is a StringBuilder, how do you use it and why?
 - What is JDBC ?
 
 ## Java Tricks Questions
