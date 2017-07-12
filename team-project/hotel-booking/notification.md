@@ -389,6 +389,7 @@ the start date of the booking.
 Create an endpoint for storing email templates that can perform full CRUD operations.
 An email temlate response should look like this:
 
+```json
 {
 	"links": {
 		"self": "https://your-hostname.com/api/emails/1"
@@ -429,6 +430,7 @@ An email temlate response should look like this:
 		}
 	}]
 }
+```
 
 ### Send templated mail
 
