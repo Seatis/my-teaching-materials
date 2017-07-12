@@ -393,7 +393,7 @@ An email temlate response should look like this:
 {
 	"links": {
 		"self": "https://your-hostname.com/api/emails/1"
-	}
+	},
 	"data": {
 		"type": "emails",
 		"id": "1",
