@@ -239,7 +239,7 @@ e.g.:
 
 #### Request body
 - a JSON object containing a subset of the possible setting fields (none of the fields are required), e.g.:
-```
+```json
 {
   "max_distance": 100,
   "enable_notifications": true
@@ -267,5 +267,56 @@ e.g.:
 {
   "status" : "error",
   "message" : "Unauthorized request!"
+}
+```
+
+## Messages
+
+### `GET /messages`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with the user's settings:
+```json
+{
+  "messages": [
+    {
+      "from": "`<username>`",
+      "to": "`<username>`",
+      "created_at": "`<timestamp>`",
+      "message": "`<String>`"
+    }
+  ]
+}
+```
+
+### `POST /messages`
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Request body
+- a JSON object containing a subset of the possible setting fields (none of the fields are required), e.g.:
+```json
+{
+  "to": "`<username>`",
+  "message": "<String>"
+}
+```
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with the user's settings:
+```json
+{
+  "status" : "ok",
+  "message":
+    {
+      "from": "`<username>`",
+      "to": "`<username>`",
+      "created_at": "`<timestamp>`",
+      "message": "`<String>`"
+    }
 }
 ```
