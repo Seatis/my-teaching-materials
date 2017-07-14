@@ -273,6 +273,7 @@ e.g.:
 ## Messages
 
 ### `GET /messages`
+Lists the requester user's messages.
 
 #### Request header parameter
 - X-GiTinder-token [String]
@@ -283,7 +284,8 @@ e.g.:
 {
   "messages": [
     {
-      "from": `<username>`,
+      "id": `<Long>`,
+      "from": `<username>`,
       "to": `<username>`,
       "created_at": `<timestamp>`,
       "message": `<String>`
@@ -293,6 +295,7 @@ e.g.:
 ```
 
 ### `POST /messages`
+Sends a new message.
 
 #### Request header parameter
 - X-GiTinder-token [String]
@@ -313,6 +316,7 @@ e.g.:
   "status" : "ok",
   "message":
     {
+      "id": `<Long>`,
       "from": `<username>`,
       "to": `<username>`,
       "created_at": `<timestamp>`,
@@ -320,3 +324,16 @@ e.g.:
     }
 }
 ```
+
+### `DELETE /messages/{id}`
+Deletes the message with the given id.
+
+#### Request header parameter
+- X-GiTinder-token [String]
+
+#### Response
+- if X-GiTinder-token header parameter is provided and not empty, return with:
+```json
+{
+  "status": "ok"
+}
