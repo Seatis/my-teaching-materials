@@ -283,10 +283,10 @@ e.g.:
 {
   "messages": [
     {
-      "from": "`<username>`",
-      "to": "`<username>`",
-      "created_at": "`<timestamp>`",
-      "message": "`<String>`"
+      "from": `<username>`,
+      "to": `<username>`,
+      "created_at": `<timestamp>`,
+      "message": `<String>`
     }
   ]
 }
@@ -301,8 +301,8 @@ e.g.:
 - a JSON object containing a subset of the possible setting fields (none of the fields are required), e.g.:
 ```json
 {
-  "to": "`<username>`",
-  "message": "<String>"
+  "to": `<username>`,
+  "message": `<String>`
 }
 ```
 
@@ -313,10 +313,10 @@ e.g.:
   "status" : "ok",
   "message":
     {
-      "from": "`<username>`",
-      "to": "`<username>`",
-      "created_at": "`<timestamp>`",
-      "message": "`<String>`"
+      "from": `<username>`,
+      "to": `<username>`,
+      "created_at": `<timestamp>`,
+      "message": `<String>`
     }
 }
 ```
