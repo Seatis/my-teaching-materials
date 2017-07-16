@@ -76,4 +76,4 @@ You can use lookup tables or any other methods to solve the task.
 Start a socket server in an other thread and show the received string on the LED matrix!
 
 ## Solution
-[Solution](#)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/led-matrix)
