@@ -692,7 +692,7 @@ Scenario: balance
    {
      "links": {
        "self": "https://your-hostname.com/api/hotels/1/balances"
-     }
+     },
      "data": {
        "type": "balances",
        "attributes": {
@@ -724,3 +724,52 @@ When the `/api/hotels/1/balances/` endpoint exchanges the balances, it should co
 the currencies based on the date of the transactions. The program should cache the
 exchange rates to the database to not initiate the http request on each transaction
 exchange.
+
+### Monthly fee
+
+Create an endpoint that returns the fee for the current month for the hotels.
+The endpoint `/api/hotel/1/fee?currency=eur` should response something similar:
+
+```json
+{
+  "links": {
+    "self": "https://your-hostname.com/api/hotels/1/fee"
+  },
+  "data": {
+    "type": "fee",
+    "attributes": {
+      "eur": 23400
+    }
+  }
+}
+```
+
+It should require the currency query parameter, and it should validate if it is
+a valid currency or not.
+
+It should take the 5% of each transaction and convert to the requested currency as a fee.
+
+### Fee tresholds
+
+If the `FEE_TRESHOLD` environment variable is set, then it should ignore the 5% rule
+and caluculate the fee based on the tresholds.
+
+The environment variable should be a JSON like:
+
+```json
+{
+  "tresholds": [
+    {
+      "percent": 4,
+      "min-amount": 1000
+    },
+    {
+      "percent": 2,
+      "max-amount": 3000  
+    }
+  ]
+}
+```
+The fee should be calculated by transactions. If the transaction value is higher
+than any of the min-amount of the tresholds in euros than it should use the corresponding
+percentage.
