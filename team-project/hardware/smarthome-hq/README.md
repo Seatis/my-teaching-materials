@@ -13,6 +13,7 @@ The main goal is to
 ## Main features
 - Detects peripherals on the network
 - Runs a server which is able to receive data from the peripherals
+- Saves incoming data to SD card
 - Provides WEB interface (SD card as storage)
 - Provides GUI interface (SD card as storage if needed)
 - Provides secure WEB access
