@@ -29,6 +29,7 @@ The main goals are to:
 - CMSIS-OS (freeRTOS)
 - STM32F7 HAL
 - STM32L4 HAL
+- STM32 GUI framework
 - SD card
 - lwIP
 - Matlab
