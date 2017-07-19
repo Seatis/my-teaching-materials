@@ -728,7 +728,7 @@ exchange.
 ### Monthly fee
 
 Create an endpoint that returns the fee for the current month for the hotels.
-The endpoint `/api/hotel/1/fee?currency=eur` should response something similar:
+The endpoint `/api/hotels/1/fee?currency=eur` should response something similar:
 
 ```json
 {
@@ -773,3 +773,49 @@ The environment variable should be a JSON like:
 The fee should be calculated by transactions. If the transaction value is higher
 than any of the min-amount of the tresholds in euros than it should use the corresponding
 percentage.
+
+### Error handling
+
+On any of the endpoints that has currency as query parameter, the parameter is
+not a walid currency. It should response with the following error, with 400 as error status:
+
+```json
+{
+  "errors": [{
+     "title": "Bad Request",
+     "detail": "Unsuported currency: xyz"
+  }]
+}
+```
+
+### Custom tresholds
+
+Create an enpoint that is able to set tresholds for individual hotels.
+It should store the tresholds in the database. If tresholds are setted for the hotel,
+it shoudl ignore the global settings. The tresholds should be accesable from the
+`/api/hotels/1/tresholds` endpoint, and implement the full CRUD operations.
+The individual tresholds should be accesable on: `/api/hotels/1/tresholds/1`
+
+A single hotel treshold list should look like this:
+
+```json
+{
+  "links": {
+    "self": "https://your-hostname.com/api/hotels/1/tresholds"
+  },
+  "data": [{
+    "type": "tresholds",
+    "id": "1",
+    "attributes": {
+      "percent": 3,
+      "min-amount": 1000
+    }
+  }, {
+    "type": "tresholds",
+    "id": "1",
+    "attributes": {
+      "percent": 1,
+      "min-amount": 3000
+    }
+  }]
+}
