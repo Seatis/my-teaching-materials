@@ -2,15 +2,13 @@
 
 ## Description
 
-Create a self-driving modellcar.
-
-One teams work on this project.
+Create a self-driving car, with a bunch of sensors and tune the car to get better and better. The main board will be a STM32F746G-DISCO, the secondary sensor and communication board a B-L475E-IOT01A. One teams work on this project.
 
 The main goals are to:
 - Follow a track (line)
 - Implement proper motor control
 - Get familiar with Matlab
-- Log data
+- Log data and do telemetry
 
 ## Main features
 
@@ -28,11 +26,9 @@ The main goals are to:
 
 ## Technology
 
-- Boards:
- - STM32F746G-DISCO
- - B-L475E-IOT01A
 - CMSIS-OS (freeRTOS)
 - STM32F7 HAL
+- STM32L4 HAL
 - SD card
 - lwIP
 - Matlab

@@ -2,14 +2,11 @@
 
 ## Description
 
-A PLC-like system with PLC structure.
-
-One teams work on this project.
+A PLC-like system with PLC structure. The Master(CPU) unit a STM32F746G-DISCO board, the slaves are NUCLEO-L476RG. The Slaves are the I/O-s, the master is the brain. One teams work on this project.
 
 The main goals are to:
-- create a working system with the most used IO-s
-- Choose and design proper backbus communication
-- Proper task handling
+- Create a working system with the most used IO-s
+- Choose and design proper backbus communication, task handling
 - SQL data upload
 - Use a real PLC at the end
 
@@ -19,24 +16,23 @@ The main goals are to:
 - Slave IO functions:
 	- DIN/DOUT board
 	- AIN/AOUT board
-	- PWM out/Freq meas board
+	- PWM out/Freq measurement board
 - Proper backbus communication
 - Proper task handling
 - WEB interface
 - SQL data upload
 - GUI
-- Design a minimalistic prog language
+- Design a minimalistic programming language
 - Programing software on PC
 - Reads program from SD card
 
 ## Technology
 
-- Boards:
- - STM32F746G-DISCO
- - NUCLEO-L476RG
 - CMSIS-OS (freeRTOS)
 - STM32F7 HAL
+- STM32L4 HAL
 - SD card
 - SQL
 - PLC programming
 - lwIP
+- STM32 GUI framework

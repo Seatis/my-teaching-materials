@@ -2,9 +2,7 @@
 
 ## Description
 
-A 3 axis plotter robot arm.
-
-One teams work on this project.
+A 3 axis plotter robot arm, based on STM32F746G-DISCO. One teams work on this project.
 
 The main goals are to:
 - Can be used as regular robot arm
@@ -31,9 +29,13 @@ The main goals are to:
 
 ## Technology
 
-- Board:
- - STM32F746G-DISCO
+
 - CMSIS-OS (freeRTOS)
 - STM32F7 HAL
 - SD card
-- lwIP
+- Front-end
+  - STM32 GUI framework
+  - HTML
+  - javascript
+- Back-end
+  - lwIP
