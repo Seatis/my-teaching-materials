@@ -114,14 +114,14 @@
 ```
 if (x == y) {
     break;
-}```
+}
+```
 *This program ends if the value of x and y are the same*
 
 ```
-{
-    int a = 10;
-    int b = 20;
-}```
+int a = 10;
+int b = 20;
+```
 *These lines simply assign the given value to the declared variables*
 
 ## Workshop
