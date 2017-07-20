@@ -22,11 +22,11 @@ it is useful to improve your teamworking skills and you can also learn a lot for
 - UART on STM32
 - Basic LCD usage
 - USB HID (human interface device)
-- [Closed loop control on STM32](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/pwm-timer-ADC.md):
+- [Closed loop control on STM32](https://github.com/greenfox-academy/teaching-materials/blob/master/project/hardware/fedex/pwm-timer-ADC.md):
     - pwm
     - timer
     - ADC
-- [The lwIP library with RTOS](https://github.com/greenfox-academy/teaching-materials/blob/hw-fedex/project/hardware/fedex/cmsis-rtos.md):
+- [The lwIP library with RTOS]https://github.com/greenfox-academy/teaching-materials/blob/master/project/hardware/fedex/cmsis-rtos.md):
     - lwIP Socket API
     - CMSIS - RTOS functions
 
