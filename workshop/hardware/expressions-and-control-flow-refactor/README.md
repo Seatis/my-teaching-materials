@@ -162,7 +162,26 @@ int a = 1;
 int a;
 a = a + 1;
 a += 1;
+float b = 3.14;
+char c = 'g';
 ```
+
+The size of these objects is also machine-dependent. There are also arrays, structures and unions of these basic types, pointers to them, and functions that return them, all of which we will meet in due course.
+
+### Printing out Variables
+
+| Method | Output |
+|:---------|:|
+| %d | print as a decimal integer|
+| %6d | print as a decimal integer, at least 6 characters long |
+|%f| print as a floating point|
+|%6f| print as a floating point, at least 6 characters long|
+|%.2f|print as a floating point, 2 characters after decimal point |
+|%6.2f| print as a floating point, 6 decimal characters and 2 characters after decimal point|
+| %o | for octal|
+| %x | for hexadecimal|
+| %c | for character|
+| %s | for string|
 
 #### Excercises
  - [01.c](workshop/01.c)
