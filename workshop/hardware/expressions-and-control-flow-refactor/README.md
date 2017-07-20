@@ -159,7 +159,7 @@ void main{
 ### Variables
 ```c_cpp
 int a = 1;
-int a;
+int b = 8;
 a = a + 1;
 a += 1;
 float b = 3.14;
@@ -293,3 +293,26 @@ Please do the excercises with while && do-while && for
 
 
 ##### Advanced Excercises
+
+- [27.c](Workshop/27.c)
+- [28.c](Workshop/28.c)
+- [29.c](Workshop/29.c)
+- [30.c](Workshop/30.c)
+
+
+### Switch
+
+```
+switch(expressions){
+
+case(condition_1):
+    execute your code;
+case(condition_2):
+    execute your code;
+...
+defaul:
+    execute your code;
+}
+```
+
+#### Excercises
