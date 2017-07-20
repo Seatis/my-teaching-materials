@@ -171,7 +171,7 @@ The size of these objects is also machine-dependent. There are also arrays, stru
 ### Printing out Variables
 
 | Method | Output |
-|:---------|:|
+|:---------|:-----|
 | %d | print as a decimal integer|
 | %6d | print as a decimal integer, at least 6 characters long |
 |%f| print as a floating point|
