@@ -165,12 +165,12 @@ a += 1;
 ```
 
 #### Excercises
- - [01.c](workshop/CodeBlocks/01.c)
- - [02.c](workshop/CodeBlocks/02.c)
- - [03.c](workshop/CodeBlocks/03.c)
- - [04.c](workshop/CodeBlocks/04.c)
- - [05.c](workshop/CodeBlocks/05.c)
- - [06.c](workshop/CodeBlocks/06.c)
+ - [01.c](workshop/01.c)
+ - [02.c](workshop/02.c)
+ - [03.c](workshop/03.c)
+ - [04.c](workshop/04.c)
+ - [05.c](workshop/05.c)
+ - [06.c](workshop/06.c)
 
 
 ### Logical operators
@@ -186,11 +186,11 @@ b && c
 ```
 
 #### Excercises
- - [07.c](workshop/CodeBlocks/07.c)
- - [08.c](workshop/CodeBlocks/08.c)
- - [09.c](workshop/CodeBlocks/09.c)
- - [10.c](workshop/CodeBlocks/10.c)
- - [11.c](workshop/CodeBlocks/11.c)
+ - [07.c](workshop/07.c)
+ - [08.c](workshop/08.c)
+ - [09.c](workshop/09.c)
+ - [10.c](workshop/10.c)
+ - [11.c](workshop/11.c)
 
 ### Embedded related datatypes, literals, operators
 ```c_cpp
@@ -204,9 +204,9 @@ if(a == b && b == c && c == d){
 ```
 
 #### Excercises
- - [12.c](workshop/CodeBlocks/12.c)
- - [13.c](workshop/CodeBlocks/13.c)
- - [14.c](workshop/CodeBlocks/14.c)
+ - [12.c](workshop/12.c)
+ - [13.c](workshop/13.c)
+ - [14.c](workshop/14.c)
 
 ### If
 ```c_cpp
@@ -237,14 +237,14 @@ if (a <= 40) {
 ```
 
 #### Excercises
- - [15.c](workshop/CodeBlocks/15.c)
- - [16.c](workshop/CodeBlocks/16.c)
- - [17.c](workshop/CodeBlocks/17.c)
- - [18.c](workshop/CodeBlocks/18.c)
- - [19.c](workshop/CodeBlocks/19.c)
- - [20.c](workshop/CodeBlocks/20.c)
- - [21.c](workshop/CodeBlocks/21.c)
- - [22.c](workshop/CodeBlocks/22.c)
+ - [15.c](workshop/15.c)
+ - [16.c](workshop/16.c)
+ - [17.c](workshop/17.c)
+ - [18.c](workshop/18.c)
+ - [19.c](workshop/19.c)
+ - [20.c](workshop/20.c)
+ - [21.c](workshop/21.c)
+ - [22.c](workshop/22.c)
 
 
 ### While / Do - While / For
@@ -267,7 +267,10 @@ for (a = 0; a < 5; a++) {
 
 #### Excercises
 Please do the excercises with while && do-while && for
- - [23.c](workshop/CodeBlocks/23.c)
- - [24.c](workshop/CodeBlocks/24.c)
- - [25.c](workshop/CodeBlocks/25.c)
- - [26.c](workshop/CodeBlocks/26.c)
+ - [23.c](workshop/23.c)
+ - [24.c](workshop/24.c)
+ - [25.c](workshop/25.c)
+ - [26.c](workshop/26.c)
+
+
+##### Advanced Excercises
