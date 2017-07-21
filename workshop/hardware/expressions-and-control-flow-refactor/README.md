@@ -353,5 +353,5 @@ Please do the excercises with while && do-while && for
 - [30.c](Workshop/30.c)
 - [30.c](Workshop/30.c)
 - [30.c](Workshop/30.c)
-- [30.c](Workshop/30.c)
+- [39.c](Workshop/39.c)
 - [40.c](Workshop/40.c)
