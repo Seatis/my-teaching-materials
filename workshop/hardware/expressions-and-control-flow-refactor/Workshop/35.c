@@ -9,5 +9,6 @@ But this time, use switch
 */
 
 int main() {
-    
+ 
+    return 0;    
 }
