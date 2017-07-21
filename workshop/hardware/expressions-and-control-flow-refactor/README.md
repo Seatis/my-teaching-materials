@@ -316,3 +316,12 @@ defaul:
 ```
 
 #### Excercises
+
+
+### If vs. Switch
+Programming languages provide various constructs to support this
+requirement, e.g., the if-statement (which often supports checking against a single value) and the switchstatement
+(which supports the checking against a set of values). Measurements show that approximately
+every fifth statement is a selection statement. The last sentence sums up great why should we talk about it.
+
+You can already tell that switch is unnecessary, there is not such a task or problem where you have to use switch-statement. One of the main reasons using switch-statement is compiler optimalization. Right now it might not be such a big deal, but it is an important skill to know how to optimalize a code or what can you do to lower the run time. I have to mention that switch-statement also requiers less developer effort in certain situations.
