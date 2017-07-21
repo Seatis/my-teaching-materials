@@ -124,6 +124,19 @@ int b = 20;
 ```
 *These lines simply assign the given value to the declared variables*
 
+- bitwise operators
+   - `<<`, `>>`, `~`, `&`, `|`, `^`
+   - `<<=`, `>>=`, `~=`, `&=`, `|=`, `^=`
+- if statement
+- nested if statement
+- else
+- else-if
+- `?:` ternary operator
+- switch
+- while loop
+- do while loop
+- for loop
+
 ## Workshop
 
 ### Hello World
