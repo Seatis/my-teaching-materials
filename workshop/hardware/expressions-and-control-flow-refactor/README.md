@@ -305,6 +305,45 @@ Please do the excercises with while && do-while && for
  - [25.c](Workshop/25.c)
  - [26.c](Workshop/26.c)
 
+ ### Switch
+
+ ```
+ switch(expressions){
+
+ case(condition_1):
+     execute your code;
+ case(condition_2):
+     execute your code;
+ ...
+ defaul:
+     execute your code;
+ }
+ ```
+
+ #### Excercises
+
+ - [31.c](Workshop/31.c)
+ - [32.c](Workshop/32.c)
+ - [33.c](Workshop/33.c)
+ - [34.c](Workshop/34.c)
+ - [35.c](Workshop/35.c)
+
+ ### If vs. Switch
+ Programming languages provide various constructs to support this
+ requirement, e.g., the if-statement (which often supports checking against a single value) and the switchstatement
+ (which supports the checking against a set of values). Measurements show that approximately
+ every fifth statement is a selection statement. The last sentence sums up great why should we talk about it.
+
+ You can already tell that switch is unnecessary, there is not such a task or problem where you have to use switch-statement. One of the main reasons using switch-statement is compiler optimalization. Right now it might not be such a big deal, but it is an important skill to know how to optimalize a code or what can you do to lower the run time. I have to mention that switch-statement also requiers less developer effort in certain situations.
+
+ Common constraints on the use of the switch-statements include:
+ - the value must be known at translation time
+ - and that value must be representable as an integer type
+
+ #### Excercises
+
+ - [36.c](Workshop/36.c)
+
 
 ##### Advanced Excercises
 
@@ -312,41 +351,7 @@ Please do the excercises with while && do-while && for
 - [28.c](Workshop/28.c)
 - [29.c](Workshop/29.c)
 - [30.c](Workshop/30.c)
-
-
-### Switch
-
-```
-switch(expressions){
-
-case(condition_1):
-    execute your code;
-case(condition_2):
-    execute your code;
-...
-defaul:
-    execute your code;
-}
-```
-
-#### Excercises
-
-- [31.c](Workshop/31.c)
-- [32.c](Workshop/32.c)
-- [33.c](Workshop/33.c)
-- [34.c](Workshop/34.c)
-- [35.c](Workshop/35.c)
-
-### If vs. Switch
-Programming languages provide various constructs to support this
-requirement, e.g., the if-statement (which often supports checking against a single value) and the switchstatement
-(which supports the checking against a set of values). Measurements show that approximately
-every fifth statement is a selection statement. The last sentence sums up great why should we talk about it.
-
-You can already tell that switch is unnecessary, there is not such a task or problem where you have to use switch-statement. One of the main reasons using switch-statement is compiler optimalization. Right now it might not be such a big deal, but it is an important skill to know how to optimalize a code or what can you do to lower the run time. I have to mention that switch-statement also requiers less developer effort in certain situations.
-
-Common constraints on the use of the switch-statements include:
-- the value must be known at translation time
-- and that value must be representable as an integer type
-
-#### Excercises
+- [30.c](Workshop/30.c)
+- [30.c](Workshop/30.c)
+- [30.c](Workshop/30.c)
+- [40.c](Workshop/40.c)
