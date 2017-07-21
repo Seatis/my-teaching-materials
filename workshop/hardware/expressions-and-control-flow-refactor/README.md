@@ -57,6 +57,7 @@
 | [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
 | [switch statement](https://www.youtube.com/watch?v=qZRP5hKGHrs) | 7:30 |
 | [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
+| [switch vs if](http://www.geeksforgeeks.org/switch-vs-else/) | - |
 | Logical operators |
 | [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
 | [Or](https://www.youtube.com/watch?v=brC8O7AeCFA) | 5:44 |
@@ -330,6 +331,11 @@ defaul:
 
 #### Excercises
 
+- [31.c](Workshop/31.c)
+- [32.c](Workshop/32.c)
+- [33.c](Workshop/33.c)
+- [34.c](Workshop/34.c)
+- [35.c](Workshop/35.c)
 
 ### If vs. Switch
 Programming languages provide various constructs to support this
@@ -338,3 +344,9 @@ requirement, e.g., the if-statement (which often supports checking against a sin
 every fifth statement is a selection statement. The last sentence sums up great why should we talk about it.
 
 You can already tell that switch is unnecessary, there is not such a task or problem where you have to use switch-statement. One of the main reasons using switch-statement is compiler optimalization. Right now it might not be such a big deal, but it is an important skill to know how to optimalize a code or what can you do to lower the run time. I have to mention that switch-statement also requiers less developer effort in certain situations.
+
+Common constraints on the use of the switch-statements include:
+- the value must be known at translation time
+- and that value must be representable as an integer type
+
+#### Excercises
