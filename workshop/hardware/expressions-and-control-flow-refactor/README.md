@@ -305,7 +305,7 @@ Please do the excercises with while && do-while && for
  - [25.c](Workshop/25.c)
  - [26.c](Workshop/26.c)
 
- ### Switch
+### Switch
 
  ```
  switch(expressions){
@@ -320,7 +320,7 @@ Please do the excercises with while && do-while && for
  }
  ```
 
- #### Excercises
+#### Excercises
 
  - [27.c](Workshop/27.c)
  - [28.c](Workshop/28.c)
@@ -328,7 +328,7 @@ Please do the excercises with while && do-while && for
  - [30.c](Workshop/30.c)
  - [31.c](Workshop/31.c)
 
- ### If vs. Switch
+### If vs. Switch
  Programming languages provide various constructs to support this
  requirement, e.g., the if-statement (which often supports checking against a single value) and the switchstatement
  (which supports the checking against a set of values). Measurements show that approximately
@@ -340,7 +340,7 @@ Please do the excercises with while && do-while && for
  - the value must be known at translation time
  - and that value must be representable as an integer type
 
- #### Excercises
+#### Excercises
 
  - [32.c](Workshop/32.c)
 
@@ -355,3 +355,13 @@ Please do the excercises with while && do-while && for
 - [38.c](Workshop/38.c)
 - [39.c](Workshop/39.c)
 - [40.c](Workshop/40.c)
+- [41.c](Workshop/41.c)
+- [42.c](Workshop/42.c)
+
+###### Algorithms
+
+- [euclid.c](Workshop/euclid.c)
+- [pascal.c](Workshop/pascal.c)
+
+####### Project
+- [project.c](Workshop/project.c)

@@ -12,7 +12,7 @@ you can match the numbers with the name of the days
 write this program first with if and else-if statements
 then do it again with switch-statement
 take the conclusion:
-    - which method was fater?
+    - which method was faster?
     - which was shorter?
     - which one did you find easier?
 */
