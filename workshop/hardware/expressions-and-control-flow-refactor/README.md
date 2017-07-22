@@ -340,7 +340,7 @@ Please do the excercises with while && do-while && for
  - the value must be known at translation time
  - and that value must be representable as an integer type
 
-#### Excercises
+#### Excercise
 
  - [32.c](Workshop/32.c)
 
@@ -363,5 +363,5 @@ Please do the excercises with while && do-while && for
 - [euclid.c](Workshop/euclid.c)
 - [pascal.c](Workshop/pascal.c)
 
-####### Project
+###### Project
 - [project.c](Workshop/project.c)
