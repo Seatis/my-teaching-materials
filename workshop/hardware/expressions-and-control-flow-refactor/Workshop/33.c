@@ -1,18 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /*
-write a program that decides which number is bigger
-use switch-statement
+store your age, height(for example: 1.85 in meters) as different variables
+print them out, using only one printf function
+use correct variables for each
 */
 
-int main()
-{
-    int num1;
-    int num2;
+int main() {
 
-    num1 = 85;
-    num2 = 96;
-
-    return 0;
+	return 0;
 }

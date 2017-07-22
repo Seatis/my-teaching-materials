@@ -322,11 +322,11 @@ Please do the excercises with while && do-while && for
 
  #### Excercises
 
+ - [27.c](Workshop/27.c)
+ - [28.c](Workshop/28.c)
+ - [29.c](Workshop/29.c)
+ - [30.c](Workshop/30.c)
  - [31.c](Workshop/31.c)
- - [32.c](Workshop/32.c)
- - [33.c](Workshop/33.c)
- - [34.c](Workshop/34.c)
- - [35.c](Workshop/35.c)
 
  ### If vs. Switch
  Programming languages provide various constructs to support this
@@ -342,16 +342,16 @@ Please do the excercises with while && do-while && for
 
  #### Excercises
 
- - [36.c](Workshop/36.c)
+ - [32.c](Workshop/32.c)
 
 
 ##### Advanced Excercises
 
-- [27.c](Workshop/27.c)
-- [28.c](Workshop/28.c)
-- [29.c](Workshop/29.c)
-- [30.c](Workshop/30.c)
-- [30.c](Workshop/30.c)
-- [30.c](Workshop/30.c)
+- [33.c](Workshop/33.c)
+- [34.c](Workshop/34.c)
+- [35.c](Workshop/35.c)
+- [36.c](Workshop/36.c)
+- [37.c](Workshop/37.c)
+- [38.c](Workshop/38.c)
 - [39.c](Workshop/39.c)
 - [40.c](Workshop/40.c)

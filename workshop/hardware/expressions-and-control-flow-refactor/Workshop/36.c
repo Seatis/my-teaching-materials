@@ -1,23 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+/* Write a program that has to int variables girls_number, and boys_number
+The first number represents the number of girls that comes to a party, the
+second the boys.
 
-/*
-create a program which prints out the days from monday to sunday
-use a loop and variables to do that
-for example:
-for(int i = 0; i < 6; i++){
-    printf("%d\n", i);
-}
-you can match the numbers with the name of the days
-write this program first with if and else-if statements
-then do it again with switch-statement
-take the conclusion:
-    - which method was fater?
-    - which was shorter?
-    - which one did you find easier?
+It should print "The party is excellent!" if the the number of girls and
+boys are equal and there are more people coming than 20
+
+It should print "Quite cool party!"
+if there are more than 20 people coming but the girl - boy ratio is not 1-1
+
+It should print: "Average party..."
+if there are less people coming than 20
+
+It should print: "Sausage party"
+if no girls are coming, regardless the count of the people
+
+Run your program at least 3-4 times, change the variables to see the diferent outputs
 */
-
-int main()
-{
-    return 0;
-}

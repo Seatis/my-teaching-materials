@@ -1,19 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
-modify the previous program to print the table reverse order
-for example:
-
-Fahrenheit       Celsius
-300               148.9
-280               137.8
-260               126.7
-240               115.6
-...
-print out at least 10 lines
+write a program that decides which number is bigger
+use switch-statement
 */
 
-int main() {
+int main()
+{
+    int num1;
+    int num2;
 
-	return 0;
+    num1 = 85;
+    num2 = 96;
+
+    return 0;
 }

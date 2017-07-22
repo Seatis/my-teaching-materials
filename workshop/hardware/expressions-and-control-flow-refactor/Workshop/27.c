@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
-store your age, height(for example: 1.85 in meters) as different variables
-print them out, using only one printf function
-use correct variables for each
+create a simple program which checks if the num is odd or even 
 */
 
-int main() {
+int main()
+{
+    int num;
+    num = 13;
 
-	return 0;
+    return 0;
 }

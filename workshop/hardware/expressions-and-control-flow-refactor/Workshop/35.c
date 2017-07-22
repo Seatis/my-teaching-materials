@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 /*
-Write a program that prints the numbers from 1 to 100.
-But for multiples of three print "Fizz" instead of the number
-and for the multiples of five print "Buzz".
-For numbers which are multiples of both three and five print "FizzBuzz".
-But this time, use switch
+modify the previous program to print the table reverse order
+for example:
+
+Fahrenheit       Celsius
+300               148.9
+280               137.8
+260               126.7
+240               115.6
+...
+print out at least 10 lines
 */
 
 int main() {
- 
-    return 0;    
+
+	return 0;
 }

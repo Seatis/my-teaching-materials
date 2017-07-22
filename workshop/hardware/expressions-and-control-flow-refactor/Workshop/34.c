@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /*
-write a simple program which can help you decide is it hot enough to turn on the AC or not
-for example if temperature 20 or less the output is :
-it is too cold for the AC
-or, the temperature is between 21-24:
-it is up to you to turn on the AC
+create a program which converts the fahrenheit to celsius
+the output should look like this:
+
+Fahrenheit       Celsius
+  0               -17.8
+ 20                -6.7
+ 40                 4.4
+ 60                15.6
 ...
+print out at least 10 lines
 */
 
-int main()
-{
-    int temperature;
-    temperature = 23;
+int main() {
 
-    return 0;
+	return 0;
 }
