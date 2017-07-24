@@ -2,10 +2,10 @@
 
 ## Description
 
-A PLC-like system with PLC structure. The Master(CPU) unit a STM32F746G-DISCO board, the slaves are NUCLEO-L476RG. The Slaves are the I/O-s, the master is the brain. One teams work on this project.
+A PLC-like system with PLC structure. The Master(CPU) unit is a STM32F746G-DISCO board, the slaves are NUCLEO-L476RG. The Slaves are the I/O-s, the master is the brain. One team works on this project.
 
 The main goals are to:
-- Create a working system with the most used IO-s
+- Create a working system with the commonly used IO-s
 - Choose and design proper backbus communication, task handling
 - SQL data upload
 - Use a real PLC at the end
