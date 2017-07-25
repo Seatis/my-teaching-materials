@@ -63,7 +63,7 @@ Create a class that represents an aircraft-carrier
 #### getStatus
 It should give back a string about it's and all of its aircrafts status like:
 ```
-Aircraft count: 4, Ammo Storage: 2300, Total damage: 2280
+HP: 5000, Aircraft count: 4, Ammo Storage: 2300, Total damage: 2280
 Aircrafts:
 Type F35, Ammo: 12, Base Damage: 50, All Damage: 600
 Type F35, Ammo: 12, Base Damage: 50, All Damage: 600
