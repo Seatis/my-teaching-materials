@@ -180,7 +180,6 @@ float b = 3.14;
 char c = 'g';
 ```
 
-The size of these objects is also machine-dependent. There are also arrays, structures and unions of these basic types, pointers to them, and functions that return them, all of which we will meet in due course.
 
 ### Printing out Variables
 
