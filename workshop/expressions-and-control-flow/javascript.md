@@ -62,6 +62,10 @@ Learn your second programming language, get used to the new syntax of JavaScript
 
 Your best friend in the next few weeks will be Mozilla's JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+💪: If you see this emoji, it means that you can skip the exercise if you are
+in lack of time. You can practice with these exercises later to deepen your
+knowledge (or to prepare for the exam).
+
 ### Printing to the terminal window
 
 #### Hello World
