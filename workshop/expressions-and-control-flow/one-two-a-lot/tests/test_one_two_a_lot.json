@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "ex_input": [0],
+      "ex_output": ["Not enough"]
+    },
+    {
+      "ex_input": [-5],
+      "ex_output": ["Not enough"]
+    },
+    {
+      "ex_input": [-2147483648],
+      "ex_output": ["Not enough"]
+    },
+    {
+      "ex_input": [1],
+      "ex_output": ["One"]
+    },
+    {
+      "ex_input": [2],
+      "ex_output": ["Two"]
+    },
+    {
+      "ex_input": [3],
+      "ex_output": ["A lot"]
+    },
+    {
+      "ex_input": [3],
+      "ex_output": ["A lot"]
+    },
+    {
+      "ex_input": [2147483647],
+      "ex_output": ["A lot"]
+    }
+  ]
+}
