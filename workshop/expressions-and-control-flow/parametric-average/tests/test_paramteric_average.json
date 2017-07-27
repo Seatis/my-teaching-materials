@@ -1,8 +1,8 @@
 {
   "cases": [
     {
-      "ex_input": [3, 5, 19, 2],
-      "ex_outout": ["^Sum: 29, Average: 7.25$"]
+      "ex_input": [3, 10, 2, 4.5],
+      "ex_outout": ["^Sum: 16.5, Average: 5.5$"]
     }
   ]
 }
