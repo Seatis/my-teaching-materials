@@ -8,6 +8,6 @@ to keep it simple we say every year is 365 days long, every month is 30 days
 
 int main()
 {
-
+    int days = 3243;
     return 0;
 }

@@ -15,6 +15,6 @@ and the output should be:
 
 int main()
 {
-
+    int amount_of_money = 57545;
     return 0;
 }
