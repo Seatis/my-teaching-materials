@@ -67,6 +67,10 @@ Get into *real* programming, installing a development environment and then runni
 
 ## Workshop
 
+💪: If you see this emoji, it means that you can skip the exercise if you are
+in lack of time. You can practice with these exercises later to deepen your
+knowledge (or to prepare for the exam).
+
 ### Printing to the terminal window
 
 #### Hello World
@@ -81,9 +85,9 @@ public class HelloWorld {
 ```
 
 #### Exercises
- -  [01](hello-me/HelloMe.java)
- -  [02](hello-others/HelloOthers.java)
- -  [03](humpty-dumpty/HumptyDumpty.java)
+ -  [01 - HelloMe](hello-me/HelloMe.java)
+ -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.java)
+ -  [03 - HelloOthers](hello-others/HelloOthers.java)
 
 ### Types
 
@@ -213,9 +217,9 @@ public class Strings {
 ```
 
 #### Exercises
- -  [04](introduce-yourself/IntroduceYourself.java)
- -  [05](two-numbers/TwoNumbers.java)
- -  [06](coding-hours/CodingHours.java)
+ -  [04 - IntroduceYourself](introduce-yourself/IntroduceYourself.java)
+ -  [05 - TwoNumbers](two-numbers/TwoNumbers.java)
+ -  [06 - CodingHours](coding-hours/CodingHours.java)
 
 ### Variables
 
@@ -306,13 +310,13 @@ public class Variables {
 ```
 
 #### Exercises
- -  [07](favorite-number/FavoriteNumber.java)
- -  [08](define-basic-info/DefineBasicInfo.java)
- -  [09](bmi/Bmi.java)
- -  [10](cuboid/Cuboid.java)
- -  [11](seconds-in-a-day/SecondsInADay.java)
- -  [12](swap/Swap.java)
- -  [13](variable-mutation/VariableMutation.java)
+ -  [07 - FavoriteNumber](favorite-number/FavoriteNumber.java)
+ -  [08 - Swap](swap/Swap.java)
+ -  [09 - Bmi 💪](bmi/Bmi.java)
+ -  [10 - DefineBasicInfo](define-basic-info/DefineBasicInfo.java)
+ -  [11 - VariableMutation](variable-mutation/VariableMutation.java)
+ -  [12 - Cuboid 💪](cuboid/Cuboid.java)
+ -  [13 - SecondsInADay](seconds-in-a-day/SecondsInADay.java)
 
 ### User input (scanner)
 
@@ -340,10 +344,10 @@ public class UserInput {
 }
 ```
 #### Exercises
- -  [14](hello-user/HelloUser.java)
- -  [15](mile-to-km-converter/MileToKmConverter.java)
- -  [16](animals-and-legs/AnimalsAndLegs.java)
- -  [17](average-of-input/AverageOfInput.java)
+ -  [14 - HelloUser](hello-user/HelloUser.java)
+ -  [15 - MileToKmConverter](mile-to-km-converter/MileToKmConverter.java)
+ -  [16 - AnimalsAndLegs 💪](animals-and-legs/AnimalsAndLegs.java)
+ -  [17 - AverageOfInput 💪](average-of-input/AverageOfInput.java)
 
 ### Conditionals
 
@@ -396,11 +400,11 @@ public class Conditionals {
 ```
 
 #### Exercises
- -  [18](odd-even/OddEven.java)
- -  [19](one-two-a-lot/OneTwoALot.java)
- -  [20](print-bigger/PrintBigger.java)
- -  [21](party-indicator/PartyIndicator.java)
- -  [22](conditional-variable-mutation/ConditionalVariableMutation.java)
+ -  [18 - OddEven](odd-even/OddEven.java)
+ -  [19 - OneTwoALot](one-two-a-lot/OneTwoALot.java)
+ -  [20 - PrintBigger 💪](print-bigger/PrintBigger.java)
+ -  [21 - PartyIndicator](party-indicator/PartyIndicator.java)
+ -  [22 - ConditionalVariableMutation 💪](conditional-variable-mutation/ConditionalVariableMutation.java)
 
 ### Loops
 
@@ -421,19 +425,19 @@ public class Conditionals {
 ```
 
 #### Exercises
- -  [23](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
- -  [24](print-even/PrintEven.java)
- -  [25](count-from-to/CountFromTo.java)
- -  [26](multiplication-table/MultiplicationTable.java)
- -  [27](draw-triangle/DrawTriangle.java)
- -  [28](draw-pyramid/DrawPyramid.java)
- -  [29](draw-diamond/DrawDiamond.java)
- -  [30](draw-square/DrawSquare.java)
- -  [31](draw-diagonal/DrawDiagonal.java)
- -  [32](fizz-buzz/FizzBuzz.java)
- -  [33](guess-the-number/GuessTheNumber.java)
- -  [34](parametric-average/ParametricAverage.java)
- -  [35](draw-chess-table/DrawChessTable.java)
+ -  [23 - IWontCheatOnTheExams](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
+ -  [24 - PrintEven](print-even/PrintEven.java)
+ -  [25 - MultiplicationTable](multiplication-table/MultiplicationTable.java)
+ -  [26 - CountFromTo](count-from-to/CountFromTo.java)
+ -  [27 - FizzBuzz](fizz-buzz/FizzBuzz.java)
+ -  [28 - DrawTriangle](draw-triangle/DrawTriangle.java)
+ -  [29 - DrawPyramid 💪](draw-pyramid/DrawPyramid.java)
+ -  [30 - DrawDiamond 💪](draw-diamond/DrawDiamond.java)
+ -  [31 - DrawSquare 💪](draw-square/DrawSquare.java)
+ -  [32 - DrawDiagonal](draw-diagonal/DrawDiagonal.java)
+ -  [33 - GuessTheNumber](guess-the-number/GuessTheNumber.java)
+ -  [34 - ParametricAverage 💪](parametric-average/ParametricAverage.java)
+ -  [35 - DrawChessTable](draw-chess-table/DrawChessTable.java)
 
 
 ## Individual Workshop Review
