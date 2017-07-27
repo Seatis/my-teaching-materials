@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "ex_input": [2],
+      "ex_output": ["Even"]
+    },
+    {
+      "ex_input": [1],
+      "ex_output": ["Odd"]
+    }
+  ]
+}
