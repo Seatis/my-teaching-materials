@@ -238,7 +238,7 @@ else
  - [20.c](Workshop/20.c)
  - [21.c](Workshop/21.c)
  - [22.c](Workshop/22.c)
- 
+
 #### Advanced Excercises
 
 - [23.c](Workshop/23.c)
@@ -246,3 +246,16 @@ else
 - [27.c](Workshop/27.c)
 - [28.c](Workshop/28.c)
 - [29.c](Workshop/29.c)
+
+## Individual Workshop Review
+Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
+
+ - Is the directory structure and the name of the files correct?
+ - Are the includes placed on the top of the files?
+ - Is the indentation good in each file?
+ - Is there unnecessary code?
+ - Can you find unnecessary code in comments?
+ - Is there unnecessary code duplication?
+ - Are there unnecessary empty blocks?
+ - Can you spot unused variables?
+ - Is the commit message meaningful?
