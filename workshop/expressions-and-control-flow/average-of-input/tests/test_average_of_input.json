@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "ex_input" : ["1, 2"],
+      "ex_output" : ["^Sum: 3, Average: 1.5$"]
+    }
+    {
+      "ex_input" : ["5, 1"],
+      "ex_output" : ["^Sum: 6, Average: 3$"]
+    }
+    {
+      "ex_input" : ["0, 1"],
+      "ex_output" : ["^Sum: 1, Average: 0.5$"]
+    }
+    {
+      "ex_input" : ["1, 0"],
+      "ex_output" : ["^Sum: 1, Average: 0.5$"]
+    }
+    {
+      "ex_input" : ["11, 25"],
+      "ex_output" : ["^Sum: 36, Average: 13$"]
+    }
+  ]
+}
