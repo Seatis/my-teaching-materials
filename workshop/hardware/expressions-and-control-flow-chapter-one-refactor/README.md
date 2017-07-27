@@ -1,4 +1,4 @@
-# Expressions and Control flow
+# Expressions and Control flow chapter one
 *Meet the base elements of the C language by implementing small programs*
 
 ## Objectives
@@ -55,24 +55,6 @@
 | [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
 | [else-if statement](https://www.youtube.com/watch?v=DZ0ZXipUx-A) | 8:47 |
 | [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
-| [switch statement](https://www.youtube.com/watch?v=qZRP5hKGHrs) | 7:30 |
-| [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
-| [switch vs if](http://www.geeksforgeeks.org/switch-vs-else/) | - |
-| Logical operators |
-| [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
-| [Or](https://www.youtube.com/watch?v=brC8O7AeCFA) | 5:44 |
-| [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
-| Loops |
-| [while loop](https://www.youtube.com/watch?v=7pAXm7WEA2I) | 8:28 |
-| [while loop](http://www.w3schools.in/c-tutorial/loops/while/) | - |
-| [do-while loop](https://www.youtube.com/watch?v=eU6no0EEJM0) | 10:42 |
-| [do-while loop](http://www.w3schools.in/c-tutorial/loops/do-while/) | - |
-| [for loop](https://www.youtube.com/watch?v=FPjLbPu5BsQ) | 5:19 |
-| [for loop](http://www.w3schools.in/c-tutorial/loops/for/) | - |
-| [break](https://www.youtube.com/watch?v=JKVc02-GmGs) | 6:26 |
-| [continue](https://www.youtube.com/watch?v=4XaaIGBdhaw) | 4:47 |
-| [Loop control statements](http://www.w3schools.in/c-tutorial/loops/) | - |
-| [Why never use goto](https://tr1.cbsistatic.com/hub/i/2015/05/07/294fc704-f487-11e4-940f-14feb5cc3d2a/goto.png) | - |
 
 ## Material Review
 
@@ -133,10 +115,6 @@ int b = 20;
 - else
 - else-if
 - `?:` ternary operator
-- switch
-- while loop
-- do while loop
-- for loop
 
 ## Workshop
 
@@ -242,30 +220,14 @@ if(a == b && b == c && c == d){
 
 ### If
 ```c_cpp
-if (a == 2) {
-    printf("%d\n", a);
-}
+if (a < 100)
+    printf("small\n");
+else if (a < 1000)
+    printf("medium\n");
+else
+    printf("large\n");
 
-if (a < 16) {
-    printf("%d\n", a + 1);
-}
-else if ( a <= 40) {
-    printf("%d\n", a - 1);
-}
-else {
-    printf("%d\n", a);
-}
 
-if (a <= 40) {
-    if (a < 16) {
-        printf("%d\n", a + 1);
-    }
-    else {
-        printf("%d\n", a - 1);
-    }
-    else {
-        printf("%d\n", a);
-}
 ```
 
 #### Excercises
