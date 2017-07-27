@@ -1,8 +1,13 @@
 #include <stdio.h>
-#include <stdint.h>
+#include <stdlib.h>
 
-int main() {
-	uint8_t ae = 4;
-	// print "yeeeeeeeey" ae times
-	return 0;
+/*
+Create a program which converts days to years, months, weeks and days
+to keep it simple we say every year is 365 days long, every month is 30 days
+*/
+
+int main()
+{
+    int days = 3243;
+    return 0;
 }

@@ -1,6 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-	// print the even numbers till 20
-	return 0;
+/*
+write a program to find the largest number of three
+*/
+
+int main()
+{
+    int a = 13;
+    int b = 29,
+    int c = 7;
+    
+    return 0;
 }

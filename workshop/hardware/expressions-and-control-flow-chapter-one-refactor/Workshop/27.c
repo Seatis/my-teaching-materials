@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /*
-create a simple program which checks if the num is odd or even 
+swap the values of the to number
+print out first the original values then print out the swaped values
+but this time use bitwise operators only
 */
 
 int main()
 {
-    int num;
-    num = 13;
+    int x = 32;
+    int y = 20;
 
-    return 0;
 }

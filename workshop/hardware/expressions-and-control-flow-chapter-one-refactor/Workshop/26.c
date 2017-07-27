@@ -1,9 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-	// Write a program that prints the numbers from 1 to 100.
-	// But for multiples of three print "Fizz" instead of the number
-	// and for the multiples of five print "Buzz".
-	// For numbers which are multiples of both three and five print "FizzBuzz".
-	return 0;
+/*
+swap the values of the to number
+print out first the original values then print out the swaped values
+*/
+
+int main()
+{
+    int x = 32;
+    int y = 20;
 }
