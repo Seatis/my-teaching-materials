@@ -233,10 +233,10 @@ print(e) # Prints 5
 #### Exercises
  -  [07 favorite_number](favorite-number/favorite-number.py)
  -  [08 swap](swap/swap.py)
- -  [💪 09 bmi](bmi/bmi.py)
+ -  [09 bmi 💪](bmi/bmi.py)
  -  [10 define_basic_info](define-basic-info/define-basic-info.py)
  -  [11 variable_mutation](variable-mutation/variable-mutation.py)
- -  [💪 12 cuboid](cuboid/cuboid.py)
+ -  [12 cuboid 💪](cuboid/cuboid.py)
  -  [13 seconds_in_a_day](seconds-in-a-day/seconds-in-a-day.py)
 
 ### User input (scanner)
@@ -258,8 +258,8 @@ print(user_input_3)
 #### Exercises
  -  [14 hello_user](hello-user/hello-user.py)
  -  [15 mile_to_km_converter](mile-to-km-converter/mile-to-km-converter.py)
- -  [💪 16 animals_and_legs](animals-and-legs/animals-and-legs.py)
- -  [💪 17 average_of_input](average-of-input/average-of-input.py)
+ -  [16 animals_and_legs 💪](animals-and-legs/animals-and-legs.py)
+ -  [17 average_of_input 💪](average-of-input/average-of-input.py)
 
 ### Conditionals
 
@@ -305,9 +305,9 @@ else:
 #### Exercises
  -  [18 odd_even](odd-even/odd-even.py)
  -  [19 one_two_a_lot](one-two-a-lot/one-two-a-lot.py)
- -  [💪 20 print_bigger](print-bigger/print-bigger.py)
+ -  [20 print_bigger 💪](print-bigger/print-bigger.py)
  -  [21 party_indicator](party-indicator/party-indicator.py)
- -  [💪 22 conditional_variable_mutation](conditional-variable-mutation/conditional-variable-mutation.py)
+ -  [22 conditional_variable_mutation 💪](conditional-variable-mutation/conditional-variable-mutation.py)
 
 ### Loops
 
@@ -328,12 +328,12 @@ for i in range(0, 100):
  -  [26 count_from_to](count-from-to/count-from-to.py)
  -  [27 fizz_buzz](fizz-buzz/fizz-buzz.py)
  -  [28 draw_triangle](draw-triangle/draw-triangle.py)
- -  [💪 29 draw_pyramid](draw-pyramid/draw-pyramid.py)
- -  [💪 30 draw_diamond](draw-diamond/draw-diamond.py)
- -  [💪 31 draw_square](draw-square/draw-square.py)
+ -  [29 draw_pyramid 💪](draw-pyramid/draw-pyramid.py)
+ -  [30 draw_diamond 💪](draw-diamond/draw-diamond.py)
+ -  [31 draw_square 💪](draw-square/draw-square.py)
  -  [32 draw_diagonal](draw-diagonal/draw-diagonal.py)
  -  [33 guess_the_number](guess-the-number/guess-the-number.py)
- -  [💪 34 parametric_average](parametric-average/parametric-average.py)
+ -  [34 parametric_average 💪](parametric-average/parametric-average.py)
  -  [35 draw_chess_table](draw-chess-table/draw-chess-table.py)
 
 
