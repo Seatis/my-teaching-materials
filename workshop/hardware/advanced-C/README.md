@@ -16,6 +16,7 @@
 | [Euclid's method](https://www.youtube.com/watch?v=JUzYl1TYMcU&t=102s)   | 4:09    |   
 | [Cocktail shaker sort](https://www.youtube.com/watch?v=njClLBoEbfI)   | 0:41 |   
 | [The sieve of Eratosthenes](https://www.youtube.com/watch?v=V08g_lkKj6Q)   |5:30 |
+| [Linked list](https://www.youtube.com/watch?v=NobHlGUjV3g)   |17:12 |
 
 #### Material review
 - Euclid's method
@@ -44,7 +45,10 @@ First implement Euclid's algorithm to find the greatest common divisor. Don't us
 - **Advanced task:** compute the greatest common divisor of three integers (*x, y and z*)
 
 ##### 2
-Create an array and store some numbers in it:
+Cearte an array and fill it with integers:
 - find the minimum value of the array
 - find the maximum value of the array
 - calculate the average and the moving average
+
+##### 3
+Implement a linked list using some resources from the internet, your goal is to understand how they work. Take your time don't rush just to finish this exercise.
