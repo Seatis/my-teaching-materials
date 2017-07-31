@@ -2,7 +2,7 @@
 
 Use the brief intro in the main readme of the preparation folder. Try to expand it to 2-4 sentences.
 
-# Self assesment
+## Self assesment
 
 Don't forget to open the personal wiki spreadhseet and explain the concepts for this given time period. 
 
