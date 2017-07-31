@@ -3,6 +3,8 @@
 These materials are intended for students joining Greenfox Academy. It will be sent out via email each week to help them prepare the 4 month course. 
 The preparation phase is 4 weeks long and requires no more than 1 hour / day attention.
 
+During these 4 weeks we ask you to monitor your progress and write your personal dictonary about concepts you encounter. See the last pragraph in this document.
+
 ## Brief outline
 
 What will happen on each week?
@@ -35,3 +37,17 @@ https://typing.io/ Practice typing with special characters. It’s OK to not und
 Bonus task: You have Hungarian keyboard layout on your computer? Set it to English, try it out with that. See how much easier your life just got?
 
 https://typing.io/lesson/javascript/jquery/traversing.js/1 
+
+### Github
+
+It's the Facebook for programmers, make sure you have an account.
+
+### Visual Studio Code
+
+A great code editor for programming. Get it at https://code.visualstudio.com
+
+## Write your personal wiki
+
+Visit [insert link here] this spreadsheet and make a copy of it. You'll find questions and keywords for concepts. Make sure you write a 1 liner explanation with your own words. 
+
+We will build cool stuff on this wiki on your first week. It's also a good tool to track your progress. 
