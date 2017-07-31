@@ -10,39 +10,38 @@ Don't forget to open the spreadhseet and explain the concepts for this given tim
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
-| Title            | Duration |
-| ---------------- | --------:|
+| Title             | Duration |
+| :---------------- | --------:|
 | [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
 
 ## Tuesday
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
-| Title            | Duration |
-| ---------------- | --------:|
+| Title             | Duration |
+| :---------------- | --------:|
 | [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
 
 ## Wednesday
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
-| Title            | Duration |
-| ---------------- | --------:|
+| Title             | Duration |
+| :---------------- | --------:|
 | [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
 
 ## Thursday
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
-| Title            | Duration |
-| ---------------- | --------:|
+| Title             | Duration |
+| :---------------- | --------:|
 | [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
 
 ## Firday
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
-| Title            | Duration |
-| ---------------- | --------:|
+| Title             | Duration |
+| :---------------- | --------:|
 | [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
-
