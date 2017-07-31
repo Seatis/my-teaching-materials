@@ -9,7 +9,7 @@ During these 4 weeks we ask you to monitor your progress and write your personal
 
 What will happen on each week?
 
-### Week 1: Computers and the Internet
+### Week 1: [Computers and the Internet](computers-and-internet)
 
 How these information processing beasts work and how are they connected across the globe?
 
