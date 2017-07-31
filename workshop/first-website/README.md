@@ -12,7 +12,7 @@ Focus on text styling, basic layout and header image.
 
 ## Materials & Resources
 ### Environment
- - Download and install [Atom](https://atom.io/)
+ - Download and install [Visual Studio Code](https://code.visualstudio.com/)
  - Download and install [Google Chrome](https://www.google.com/chrome)
  - Register to [Github](https://github.com/)
 
