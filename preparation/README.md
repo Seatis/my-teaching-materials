@@ -21,7 +21,9 @@ Meet the building blocks of all web pages. With these technologies you can displ
 
 ### Week 4: Scratch and Processing
 
-Now that you've seen how to describe documents for the web let's write some code to instruct your computer on a deeper level.
+Now that you've seen how to describe documents for the web let's write some code to instruct your computer on a deeper level. 
+
+You'll also review the HTML/CSS stuff to better prepare your first week at the academy.
 
 ## Additional tools
 
