@@ -16,6 +16,7 @@ Your laptop and phone are the result of a rapid evolution, but they still use th
 | [Representing Numbers and Letters with Binary](https://www.youtube.com/watch?v=1GSjbWt0c9M) | 10:45 |
 | [How Computers Calculate - the ALU](https://www.youtube.com/watch?v=1I5ZMmrOfnA) | 11:09 |
 | [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU) | 12:16 |
+| [Using computers](https://www.youtube.com/watch?v=8d4RtvMQp10) | 1:34 | 
 
 ### Optional
 
