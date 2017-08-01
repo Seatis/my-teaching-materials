@@ -6,7 +6,7 @@ Use the brief intro in the main readme of the preparation folder. Try to expand 
 
 Don't forget to open the spreadhseet and explain the concepts for this given time period. 
 
-## Monday
+## Monday 
 
 Add a one liner about this day, what is the goal? What's the purpose?
 

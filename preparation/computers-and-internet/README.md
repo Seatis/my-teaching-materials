@@ -12,7 +12,19 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA) | 10:06 |
+| [Representing Numbers and Letters with Binary](https://www.youtube.com/watch?v=1GSjbWt0c9M) | 10:45 |
+| [How Computers Calculate - the ALU](https://www.youtube.com/watch?v=1I5ZMmrOfnA) | 11:09 |
+| [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU) | 12:16 |
+
+### Optional
+
+If you got hooked on the series, don't be shy to watch two more videos about the history of computing.
+
+| Title             | Duration |
+| :---------------- | --------:|
+| [Early Computing](https://www.youtube.com/watch?v=O5nskjZ_GoI) | 11:52 |
+| [Electronic Computing](https://www.youtube.com/watch?v=LN0ucKNX0hc) | 10:43 |
 
 ## Tuesday: How the CPU works?
 
@@ -20,8 +32,9 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
-| [See the 6502 CPU Simulation](http://visual6502.org/JSSim/index.html)        | - |
+| [In one lesson: How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
+| [The Central Processing Unit (CPU): Crash Course Computer Science](https://www.youtube.com/watch?v=FZGugFqdr60) | 11:37 |
+| [See the 6502 CPU Simulation](http://visual6502.org/JSSim/index.html) | - |
 
 ### Optional
 
