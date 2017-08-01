@@ -50,3 +50,112 @@ Before you submit your changes consider the following guidelines:
  -  The pull request must be reviewed by an other mentor
  -  Delete your branches after the pull request is merged
 
+
+## Folder structure of Workshops:
+
+Every workshop's folder structure needs to follow the example below. Doing so, our exercises can be validated with the use of our validator software.  
+All of the workshop foldres include language related ```.md``` files, which are containing the material of the actual day.
+Every exercise has an own folder, in which there is the exercise's description in files with the needed language extensions or in an ```.md``` file. Also a ```tests``` folder is needed, where all the necessary test files are collected.
+
+```example-workshop
+    ├ hello-me
+    | ├ tests
+    | | └ test_hellome.json
+    | ├ c.md
+    | ├ java.md
+    | ├ python.md
+    | └ javascript.md
+    ├ draw-pyramid
+    | ├ tests
+    | | └ test_draw_pyramid.json
+    | ├ draw_pyramid.c
+    | ├ DrawPyramid.java
+    | ├ draw_pyramind.py
+    | └ draw-pyramid.js
+    ├ motionless
+    | ├ tests    
+    | | ├ test_motionless.c
+    | | ├ TestMotionless.java
+    | | ├ test_motionless.py
+    | | └ motionless.test.js
+    | ├ motionless.c
+    | ├ Motionless.java
+    | ├ motionless.py
+    | └ motionless.js
+    ├ c.md
+    ├ java.md
+    ├ python.md
+    └ javascript.md
+```
+
+## Writing tests
+
+There are two different style of testing that we use: unittests and "IO-tests".
+The meaning of IO-tests:
+There are exercises where students don't need to write functions. These contains very basic tasks, such as declare a variable and print it or ask for a user input and print it. To test the solutions for these kind of tasks, we write IO tests which are looking for outputs which are fitting with defined regex's.
+These IO "tests" need to be written in ```json``` files in a specified strucutre. To understand better how tests should be look like, check out the examples below.
+
+### IO tests with no input
+
+#### **Exercise:**
+
+```hello_me.py
+```
+
+```# Modify this program to greet you instead of the World!
+print("Hello, World!")
+```
+#### **Test:**
+
+```test_hello_me.json
+```
+
+```{
+  "cases": [
+    {
+      "ex_input" : [],
+      "ex_output" : "^Hello, (?!World)[a-zA-Z]+!$"
+    }
+  ]
+}
+```
+
+### IO tests with input
+
+#### **Exercise:**
+
+```draw_trianlge.py
+```
+
+```# Write a program that reads a number from the standard input, then draws a
+# triangle like this:
+#
+# *
+# **
+# ***
+# ****
+#
+# The triangle should have as many lines as the number was
+```
+#### **Test:**
+
+```test_draw_triangle.json
+```
+
+```{
+  "cases": [
+    {
+      "ex_input" : ["1"],
+      "ex_output" : ["^\\*$"]
+    }
+    {
+      "ex_input" : ["2"],
+      "ex_output" : ["^\\*$", "^\\*{2}$"]
+    }
+    {
+      "ex_input" : ["5"],
+      "ex_output" : ["^\\*$", "^\\*{2}$", "^\\*{3}$", "^\\*{4}$", "^\\*{5}$"]
+    }
+  ]
+}
+```
