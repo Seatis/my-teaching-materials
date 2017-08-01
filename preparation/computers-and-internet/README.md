@@ -33,7 +33,7 @@ Add a one liner about this day, what is the goal? What's the purpose?
 | Title             | Duration |
 | :---------------- | --------:|
 | [In one lesson: How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
-| [The Central Processing Unit (CPU): Crash Course Computer Science](https://www.youtube.com/watch?v=FZGugFqdr60) | 11:37 |
+| [Instructions & Programs](https://www.youtube.com/watch?v=zltgXvg6r3k) | 10:35 |
 | [See the 6502 CPU Simulation](http://visual6502.org/JSSim/index.html) | - |
 
 ### Optional
