@@ -51,11 +51,46 @@ Before you submit your changes consider the following guidelines:
  -  Delete your branches after the pull request is merged
 
 
-## Folder structure of Workshops:
+## Directory structure of this repository
 
-Every workshop's folder structure needs to follow the example below. Doing so, our exercises can be validated with the use of our validator software.  
-All of the workshop foldres include language related ```.md``` files, which are containing the material of the actual day.
-Every exercise has an own folder, in which there is the exercise's description in files with the needed language extensions or in an ```.md``` file. Also a ```tests``` folder is needed, where all the necessary test files are collected.
+### Description of root folders
+
+We have several type of materials each of them go in their separate folder:
+-  [workshop](workshop): full or half day workshops containing the homework materials, the materials review and the exercises
+-  [cognitive-apprenticeship](cognitive-apprenticeship): 1-2 hour long coding practice for experienced mentors in front of mentees
+-  [dojo](dojo): half day workshop containing only exercises without any new lectural material
+-  [project](project): multiple day long single person exercise containing specification, user stories / mockups / design
+-  [team-project](team-project): multiple week long multiple person exercise containing specification, user stories, api documentation
+-  [material](material): only lectural materials without any exercises
+-  [interview](interview): job interview related materials and exercises
+-  [by-language](by-language): currently contains all deprecated workshops in a previous structure
+-  [styleguide](styleguide): coding styleguide rules
+
+### Lower level directory structure
+
+#### Any workshop folder
+- The folder name is the title of the workshop
+-  If the outline and the exercises are language independent:
+    -  **README.md**: materials and outline
+    -  **exercises**:
+        -  **README.md**: exercise specification
+        -  **tests**:
+            -  If unittest:
+                -  **test_exercise-name.ext**
+            -  If IO test:
+                -  **test_exercise-name.json**
+-  If not language independent:
+    -  **language.md**: materials and outline for the language
+    -  **exercises**:
+        -  **exercise-name**:
+            -  **language.ext**: a language specific boilerplate containing the exercise specification as comments
+        -  **tests**:
+            -  If unittest:
+                -  **test_exercise-name.ext**
+            -  If IO test:
+                -  **test_exercise-name.json**
+
+**For example**:
 
 ```
 example-workshop
@@ -100,9 +135,7 @@ These IO "tests" need to be written in ```json``` files in a specified strucutre
 
 #### **Exercise:**
 
-```
-hello_me.py
-```
+**hello_me.py**
 
 ```
 # Modify this program to greet you instead of the World!
@@ -110,9 +143,8 @@ print("Hello, World!")
 ```
 #### **Test:**
 
-```
-test_hello_me.json
-```
+**test_hello_me.json**
+
 
 ```
 {
@@ -129,9 +161,7 @@ test_hello_me.json
 
 #### **Exercise:**
 
-```
-draw_trianlge.py
-```
+**draw_trianlge.py**
 
 ```
 # Write a program that reads a number from the standard input, then draws a
@@ -146,9 +176,7 @@ draw_trianlge.py
 ```
 #### **Test:**
 
-```
-test_draw_triangle.json
-```
+**test_draw_triangle.json**
 
 ```
 {
