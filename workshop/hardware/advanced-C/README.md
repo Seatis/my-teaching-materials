@@ -21,6 +21,8 @@
 | [Stack](https://www.youtube.com/watch?v=FNZ5o9S9prU)   |5:58 |
 | [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)   |8:36 |
 | [Call stack](https://www.youtube.com/watch?v=Q2sFmqvpBe0)     | 6:25 |  
+| [Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=75s)     | 6:25 |  
+| [Memoization](https://www.youtube.com/watch?v=a7EjmdQzPqY)     | 6:25 | 
 
 | Additional Material        | Duration    |
 | ------------- |:-------------|
@@ -73,6 +75,8 @@
     - call stack
         - store return address
         - recurion
+        - memoization
+            - dynamic programming
 
 ##### Exercises
 ##### 1
