@@ -49,13 +49,18 @@ http://www.buthowdoitknow.com/cpu_model_intro.html
  - Try different clock speeds, see 1000Hz for example  
  - Do you notice where the counting is displayed?
 
-## Wednesday: The internet intro
+## Wednesday: The Internet intro
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Wires, cables, and WiFi | Internet 101](https://www.youtube.com/watch?v=iV-YqG70wbQ) | 6:40 |
+| [IP addresses and DNS](https://www.youtube.com/watch?v=MwxMsaFFycg) | 6:44 |
+| [Packet, routers, and reliability](https://www.youtube.com/watch?v=aD_yi5VjF78) | 6:25 |
+| [HTTP and HTML](https://www.youtube.com/watch?v=1K64fWX5z4U) | 7:06 |
+| [Encryption and public keys](https://www.youtube.com/watch?v=6-JjHa-qLPk) | 6:39 |
+| [Cybersecurity and crime](https://www.youtube.com/watch?v=1K64fWX5z4U) | 5:01 |
 
 ## Thursday: The internet more
 
@@ -63,7 +68,6 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
 
 ## Firday: The internet in a nutshell
 
@@ -71,4 +75,3 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
