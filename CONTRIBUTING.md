@@ -57,35 +57,36 @@ Every workshop's folder structure needs to follow the example below. Doing so, o
 All of the workshop foldres include language related ```.md``` files, which are containing the material of the actual day.
 Every exercise has an own folder, in which there is the exercise's description in files with the needed language extensions or in an ```.md``` file. Also a ```tests``` folder is needed, where all the necessary test files are collected.
 
-```example-workshop
-    ├ hello-me
-    | ├ tests
-    | | └ test_hellome.json
-    | ├ c.md
-    | ├ java.md
-    | ├ python.md
-    | └ javascript.md
-    ├ draw-pyramid
-    | ├ tests
-    | | └ test_draw_pyramid.json
-    | ├ draw_pyramid.c
-    | ├ DrawPyramid.java
-    | ├ draw_pyramind.py
-    | └ draw-pyramid.js
-    ├ motionless
-    | ├ tests    
-    | | ├ test_motionless.c
-    | | ├ TestMotionless.java
-    | | ├ test_motionless.py
-    | | └ motionless.test.js
-    | ├ motionless.c
-    | ├ Motionless.java
-    | ├ motionless.py
-    | └ motionless.js
-    ├ c.md
-    ├ java.md
-    ├ python.md
-    └ javascript.md
+```
+example-workshop
+  ├ hello-me
+  | ├ tests
+  | | └ test_hellome.json
+  | ├ c.md
+  | ├ java.md
+  | ├ python.md
+  | └ javascript.md
+  ├ draw-pyramid
+  | ├ tests
+  | | └ test_draw_pyramid.json
+  | ├ draw_pyramid.c
+  | ├ DrawPyramid.java
+  | ├ draw_pyramind.py
+  | └ draw-pyramid.js
+  ├ motionless
+  | ├ tests    
+  | | ├ test_motionless.c
+  | | ├ TestMotionless.java
+  | | ├ test_motionless.py
+  | | └ motionless.test.js
+  | ├ motionless.c
+  | ├ Motionless.java
+  | ├ motionless.py
+  | └ motionless.js
+  ├ c.md
+  ├ java.md
+  ├ python.md
+  └ javascript.md
 ```
 
 ## Writing tests
@@ -99,18 +100,22 @@ These IO "tests" need to be written in ```json``` files in a specified strucutre
 
 #### **Exercise:**
 
-```hello_me.py
+```
+hello_me.py
 ```
 
-```# Modify this program to greet you instead of the World!
+```
+# Modify this program to greet you instead of the World!
 print("Hello, World!")
 ```
 #### **Test:**
 
-```test_hello_me.json
+```
+test_hello_me.json
 ```
 
-```{
+```
+{
   "cases": [
     {
       "ex_input" : [],
@@ -124,10 +129,12 @@ print("Hello, World!")
 
 #### **Exercise:**
 
-```draw_trianlge.py
+```
+draw_trianlge.py
 ```
 
-```# Write a program that reads a number from the standard input, then draws a
+```
+# Write a program that reads a number from the standard input, then draws a
 # triangle like this:
 #
 # *
@@ -139,10 +146,12 @@ print("Hello, World!")
 ```
 #### **Test:**
 
-```test_draw_triangle.json
+```
+test_draw_triangle.json
 ```
 
-```{
+```
+{
   "cases": [
     {
       "ex_input" : ["1"],
