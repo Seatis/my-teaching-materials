@@ -133,17 +133,13 @@ These IO "tests" need to be written in ```json``` files in a specified strucutre
 
 ### IO tests with no input
 
-#### **Exercise:**
-
-**hello_me.py**
+#### **Exercise: hello_me.py**
 
 ```
 # Modify this program to greet you instead of the World!
 print("Hello, World!")
 ```
-#### **Test:**
-
-**test_hello_me.json**
+#### **Test: test_hello_me.json**
 
 
 ```
@@ -159,9 +155,7 @@ print("Hello, World!")
 
 ### IO tests with input
 
-#### **Exercise:**
-
-**draw_trianlge.py**
+#### **Exercise: draw_trianlge.py**
 
 ```
 # Write a program that reads a number from the standard input, then draws a
@@ -174,9 +168,7 @@ print("Hello, World!")
 #
 # The triangle should have as many lines as the number was
 ```
-#### **Test:**
-
-**test_draw_triangle.json**
+#### **Test: test_draw_triangle.json**
 
 ```
 {
