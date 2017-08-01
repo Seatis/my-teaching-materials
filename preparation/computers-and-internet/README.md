@@ -26,7 +26,7 @@ If you got hooked on the series, don't be shy to watch two more videos about the
 | [Early Computing](https://www.youtube.com/watch?v=O5nskjZ_GoI) | 11:52 |
 | [Electronic Computing](https://www.youtube.com/watch?v=LN0ucKNX0hc) | 10:43 |
 
-## Tuesday: How the CPU works?
+## Tuesday: How does the CPU work?
 
 How exactly does the brain of the computer work?
 
@@ -57,7 +57,7 @@ Learn about how the Internet came to be and how data travels through the network
 | :---------------- | --------:|
 | [History of the Internet](https://www.youtube.com/watch?v=h8K49dD52WA) | 3:40 | 
 | [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | 3:44 | 
-| [Wires, cables, and WiFi | Internet 101](https://www.youtube.com/watch?v=iV-YqG70wbQ) | 6:40 |
+| [Wires, cables, and WiFi > Internet 101](https://www.youtube.com/watch?v=iV-YqG70wbQ) | 6:40 |
 | [Packet, routers, and reliability](https://www.youtube.com/watch?v=aD_yi5VjF78) | 6:25 |
 
 ## Thursday: The Internet: domains and DNS
