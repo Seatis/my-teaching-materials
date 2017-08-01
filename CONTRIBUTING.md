@@ -124,6 +124,10 @@ example-workshop
   └ javascript.md
 ```
 
+#### Any other subfolder
+ -  Where possible follow the structure of the workshop folders
+ -  Simplifying is permitted where possible, for language independent specification use the **README.md** file
+
 ## Writing tests
 
 There are two different style of testing that we use: unittests and "IO-tests".
