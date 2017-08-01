@@ -2,7 +2,7 @@
 
 Use the brief intro in the main readme of the preparation folder. Try to expand it to 2-4 sentences.
 
-# Self assesment
+# Self assessment
 
 Don't forget to open the spreadhseet and explain the concepts for this given time period. 
 
@@ -12,7 +12,7 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Video title](https://www.youtube.com/watch?v=) | mm:ss |
 
 ## Tuesday
 
@@ -20,7 +20,7 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Video title](https://www.youtube.com/watch?v=) | mm:ss |
 
 ## Wednesday
 
@@ -28,7 +28,7 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Video title](https://www.youtube.com/watch?v=) | mm:ss |
 
 ## Thursday
 
@@ -36,12 +36,12 @@ Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Video title](https://www.youtube.com/watch?v=) | mm:ss |
 
-## Firday
+## Friday
 
 Add a one liner about this day, what is the goal? What's the purpose?
 
 | Title             | Duration |
 | :---------------- | --------:|
-| [Crash course computer science](https://www.youtube.com/watch?v=tpIctyqH29Q) | 2:11 |
+| [Video title](https://www.youtube.com/watch?v=) | mm:ss |
