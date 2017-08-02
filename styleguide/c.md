@@ -12,7 +12,7 @@ switch (suffix) {
 case 'G':
 case 'g':
 	mem <<= 30;
-    break;
+   	reak;
 case 'M':
 case 'm':
     mem <<= 20;
@@ -28,7 +28,7 @@ default:
 - Don’t put multiple statements on a single line unless you have something to hide:
 ```
 if (condition) do_this;
-    do_something_everytime;
+	do_something_everytime;
 ```
 - Don’t put multiple assignments on a single line either. Avoid tricky expressions.
 
@@ -77,7 +77,7 @@ Note that the closing brace is empty on a line of its own, except in the cases w
 
 ```
 do {
-    body of do-loop
+	body of do-loop
 } while (condition);
 ```
 and
