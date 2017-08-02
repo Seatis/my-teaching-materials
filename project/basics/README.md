@@ -96,7 +96,7 @@ There are two additional solutions to this Problem:
 
 ### What the hell is Josephus Problem?
 
-> Flavius Josephus was a famous historian of the first century. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and to kill every third remaining person until no one was left. But Josephus, along with an unindicted conspirator, wanted none of this suicide nonsense and therefore quickly calculated where he and his friend should stand in the circle so that they can survive..
+> Flavius Josephus was a famous historian of the first century. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and to kill every remaining person until no one was left. But Josephus, wanted none of this suicide nonsense and therefore quickly calculated where he should stand in the circle so that he can survive.
 > *[for more detail check [Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem) on Wikipedia]*
 
 ### Examples
