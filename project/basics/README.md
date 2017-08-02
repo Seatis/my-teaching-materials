@@ -84,3 +84,9 @@ Write a program where the program chooses a number between 1 and 100. The player
 > 15
 
 `Congratulations. You won!`
+
+## Josephus Problem
+Write a function to solve Josephus Problem. The return value should be the number of the "winning" seat. The program should ask for a number, this number represents how many people are in the "game".
+There are two additional solutions to this Problem:
+- first one is when you use arrays and some basic mathematics
+- second one is with binary operations
