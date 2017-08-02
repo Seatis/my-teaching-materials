@@ -5,6 +5,7 @@
  - [Palindrome builder](#palindrome-builder)
  - [Palindrome searcher](#palindrome-searcher)
  - [Guess my number](#guess-my-number)
+ - [Josephus Problem](#josephus-problem)
 
 ### Experience points
 - Each project has a certain amount of experience points (XP) that can be earned by completing the project
