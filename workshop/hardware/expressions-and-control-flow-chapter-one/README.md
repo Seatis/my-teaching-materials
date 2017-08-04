@@ -248,6 +248,8 @@ else
 
 - [23.c](Workshop/23.c)
 - [24.c](Workshop/24.c)
+- [25.c](Workshop/25.c)
+- [26.c](Workshop/26.c)
 - [27.c](Workshop/27.c)
 
 ## Individual Workshop Review
