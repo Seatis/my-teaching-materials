@@ -22,4 +22,11 @@ https://typing.io/lesson/c/redis/db.c/1
  |[hardware part 1](https://www.youtube.com/watch?v=JLrK_NNekh0&list=PL46_gdBNZZpTZ2YmU1gt7H_UC_5fptZgy&index=1)|1:41:16|
  |[hardware part 2](https://www.youtube.com/watch?v=-i23I4SMiVM&index=2&list=PL46_gdBNZZpTZ2YmU1gt7H_UC_5fptZgy)|1:46:23|
  |[Computer & Muppets](https://www.youtube.com/watch?v=8d4RtvMQp10)|1:34|
- |||
+ |[programming](https://www.youtube.com/watch?v=cZYnPHeRa4Q&list=PL46_gdBNZZpTZ2YmU1gt7H_UC_5fptZgy&index=9)|1:45:37|
+ |[How a CPU works?](https://www.youtube.com/watch?v=cNN_tTXABUA)|20:41|
+
+ | **microprocessors, microcontrollers and system-on-chips**  | Duration |
+ |:---------|-------:|
+ |[What is a microcontroller](https://www.youtube.com/watch?v=jKT4H0bstH8&t=155s)|6:47|
+ |[system-on-chips](https://www.youtube.com/watch?v=L4XemL7t6hg)|6:51|
+ |[ARM CPUs](https://www.youtube.com/watch?v=X4BxUiqWq8E&t=214s)|5:46|
