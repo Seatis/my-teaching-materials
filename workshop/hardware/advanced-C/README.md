@@ -91,20 +91,20 @@
             - dynamic programming
 
 ##### Exercises
-##### 1
+##### Euclid's algorithm
 First implement Euclid's algorithm to find the greatest common divisor. Don't use modulus. When you have a functional algorithm:
 - check out the values that the program computes when *x* and *y* are not positive
 - try to count how many statements are executed when you run the program with two positive numbers, print out or store  the values of *x* and *y*
 - **Advanced task:** compute the greatest common divisor of three integers (*x, y and z*)
 
-##### 2
+##### Moving average
 Cearte an array and fill it with integers:
 - find the minimum value of the array
 - find the maximum value of the array
 - calculate the average and the moving average
 
-##### 3
+##### Linked lists
 Implement a linked list using some resources from the internet, your goal is to understand how they work. Take your time don't rush just to finish this exercise.
 
-##### 4
+##### Josephus problem
 Write a program to solve Josephus problem using arrays.
