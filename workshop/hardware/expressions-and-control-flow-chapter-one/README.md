@@ -14,6 +14,7 @@
 ## Materials & Resources
 ### Environment
   - Make sure that Code::Blocks is installed on your machine
+    - For installation instructons see the syllabus
 
 ### Training
 
