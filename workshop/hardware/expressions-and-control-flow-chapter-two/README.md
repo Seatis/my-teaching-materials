@@ -18,7 +18,6 @@
 
 ### Training
 
-
 #### C programming language
 
 | Material | Duration |
@@ -36,7 +35,9 @@
 | [break](https://www.youtube.com/watch?v=JKVc02-GmGs) | 6:26 |
 | [continue](https://www.youtube.com/watch?v=4XaaIGBdhaw) | 4:47 |
 | [Loop control statements](http://www.w3schools.in/c-tutorial/loops/) | - |
-| [Why never use goto](https://tr1.cbsistatic.com/hub/i/2015/05/07/294fc704-f487-11e4-940f-14feb5cc3d2a/goto.png) | - |
+
+#### Why never use goto
+![Why never use goto](IMG/goto.png)
 
 ## Material Review
 
