@@ -26,10 +26,6 @@
 | [switch statement](https://www.youtube.com/watch?v=qZRP5hKGHrs) | 7:30 |
 | [switch statement](http://www.w3schools.in/c-tutorial/decision-making/switch/) | - |
 | [switch vs if](http://www.geeksforgeeks.org/switch-vs-else/) | - |
-| Logical operators |-|
-| [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
-| [Or](https://www.youtube.com/watch?v=brC8O7AeCFA) | 5:44 |
-| [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
 | Loops |-|
 | [while loop](https://www.youtube.com/watch?v=7pAXm7WEA2I) | 8:28 |
 | [while loop](http://www.w3schools.in/c-tutorial/loops/while/) | - |
