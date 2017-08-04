@@ -9,6 +9,19 @@
 
 ### Materials & Resources
 
+#### Call stack
+| Material        | Duration    |
+| ------------- |:-------------:|
+| [Call stack](https://www.youtube.com/watch?v=Q2sFmqvpBe0)     | 6:25 |  
+| [Stack vs heap](https://www.youtube.com/watch?v=_8-ht2AKyH4)     | 17:25 |  
+
+#### Data storing techniques
+| Material        | Duration    |
+| ------------- |:-------------:|
+| [Linked list](https://www.youtube.com/watch?v=NobHlGUjV3g)   |17:12 |
+| [Stack](https://www.youtube.com/watch?v=FNZ5o9S9prU)   |5:58 |
+
+#### Algorithms
 | Material        | Duration    |
 | ------------- |:-------------:|
 | [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)    | 8:06|
@@ -17,14 +30,12 @@
 | [Euclid's method](https://www.youtube.com/watch?v=JUzYl1TYMcU&t=102s)   | 4:09    |   
 | [Cocktail shaker sort](https://www.youtube.com/watch?v=njClLBoEbfI)   | 0:41 |   
 | [The sieve of Eratosthenes](https://www.youtube.com/watch?v=V08g_lkKj6Q)   |5:30 |
-| [Linked list](https://www.youtube.com/watch?v=NobHlGUjV3g)   |17:12 |
-| [Stack](https://www.youtube.com/watch?v=FNZ5o9S9prU)   |5:58 |
-| [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)   |8:36 |
-| [Call stack](https://www.youtube.com/watch?v=Q2sFmqvpBe0)     | 6:25 |  
 | [Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=75s)     | 6:25 |  
 | [Memoization](https://www.youtube.com/watch?v=a7EjmdQzPqY)     | 6:25 | 
+| [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)   |8:36 |
 
-| Additional Material        | Duration    |
+#### Advanced - if you are very interested in the algorithms topic
+| Material        | Duration    |
 | ------------- |:-------------|
 | [Brute-force search](https://www.youtube.com/watch?v=vtnpzDPgaU0)     | 6:43 |  
 | [Binary search](https://www.youtube.com/watch?v=P3YID7liBug)     | 6:21 |
@@ -43,6 +54,7 @@
 | *quadratic* | when N doubles the running time is fourfold |    bubble sort, selection sort |
 | *cubic* | when N doubles the running time is eightfold     | triple nested loop |
 | *exponential* | when N doubles the running time squares     | brute-force search |
+
 
 
 #### Material review
