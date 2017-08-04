@@ -95,7 +95,7 @@ Also, note that this brace-placement also **minimizes the number of empty (or al
 Do not unnecessarily use braces where a single statement will do.
 ```
 if (condition)
-    action();
+	action();
 ```
 
 and
@@ -216,22 +216,22 @@ int fun(int a)
 {
 	int result = 0;
 	char *buffer;
-	
+
 	buffer = kmalloc(SIZE, GFP_KERNEL);
 	if (!buffer)
 		return -ENOMEM;
 
-	if (condition1) {
-		while (loop1) {
-			...
-		}
-		result = 1;
-		goto out_free_buffer;
-	}
+		if (condition1) {
+			while (loop1) {
+				...
+			}
+			result = 1;
+			goto out_free_buffer;
+        }
         ...
 	out_free_buffer:
-        kfree(buffer);
-        return result;
+		kfree(buffer);
+		return result;
 }
 ```
 
@@ -385,10 +385,10 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 - Generally, inline functions are preferable to macros **resembling functions**.
 - Macros with multiple statements should be **enclosed in a do - while block**:
 ```
-#define macrofun(a, b, c)		\
-	do {						\
-		if (a == 5)				\
-			do_this(b, c);		\
+#define macrofun(a, b, c)				\
+	do {								\
+		if (a == 5)						\
+			do_this(b, c);				\
 	} while (0)
 ```
 **Things to avoid when using macros:**
@@ -412,11 +412,11 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 ```
 - namespace collisions when defining local variables in macros resembling functions:
 ```
-#define FOO(x)						\
-({									\
-	typeof(x) ret;                  \
-	ret = calc_ret(x);              \
-	(ret);                          \
+#define FOO(x)							\
+({										\
+	typeof(x) ret;						\
+	ret = calc_ret(x);					\
+	(ret);								\
 })
 ```
 ret is a common name for a local variable - __foo_ret is less likely to collide with an existing variable.
