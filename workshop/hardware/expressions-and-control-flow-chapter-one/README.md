@@ -48,6 +48,10 @@
 | [Increment Operator](https://www.youtube.com/watch?v=nNSn1uVNyiU) | 5:11 |
 | [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
 | [Using braces](https://www.youtube.com/watch?v=rubhV7Bu34E) | 4:58 |
+| Logical operators |-|
+| [Basics](https://www.youtube.com/watch?v=PO3BibcbkK8) | 5:44 |
+| [Or](https://www.youtube.com/watch?v=brC8O7AeCFA) | 5:44 |
+| [List of operators](http://www.w3schools.in/c-tutorial/operators/) | - |
 | Decision making |
 | [if statement](https://www.youtube.com/watch?v=PXwWoL0IG5A) | 7:53 |
 | [if statement](http://www.w3schools.in/c-tutorial/decision-making/if/) | - |
