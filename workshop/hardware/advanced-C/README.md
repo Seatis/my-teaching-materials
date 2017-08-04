@@ -31,8 +31,8 @@
 | [Cocktail shaker sort](https://www.youtube.com/watch?v=njClLBoEbfI)   | 0:41 |   
 | [The sieve of Eratosthenes](https://www.youtube.com/watch?v=V08g_lkKj6Q)   |5:30 |
 | [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)   |8:36 |
-| [Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=75s)     | 6:25 |  
-| [Memoization](https://www.youtube.com/watch?v=a7EjmdQzPqY)     | 6:25 | 
+| [Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=75s)     | 5:40 |  
+| [Memoization](https://www.youtube.com/watch?v=a7EjmdQzPqY)     | 5:48 | 
 
 #### Advanced - if you are very interested in the algorithms topic
 | Material        | Duration    |
