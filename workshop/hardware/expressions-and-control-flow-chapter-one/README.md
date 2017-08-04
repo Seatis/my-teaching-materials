@@ -249,8 +249,6 @@ else
 - [23.c](Workshop/23.c)
 - [24.c](Workshop/24.c)
 - [27.c](Workshop/27.c)
-- [28.c](Workshop/28.c)
-- [29.c](Workshop/29.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
