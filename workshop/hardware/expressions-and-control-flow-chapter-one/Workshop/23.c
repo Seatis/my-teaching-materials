@@ -1,4 +1,4 @@
-/* Write a program that has to int variables girls_number, and boys_number
+/* Write a program that has two int variables girls_number, and boys_number
 The first number represents the number of girls that comes to a party, the
 second the boys.
 
