@@ -1,8 +1,7 @@
 'use strict';
 
 /* Acme corp is planning a vacation and the employee ID's are messed up. 
- Write a simple sorting function that orders the employees 
- in the correct order so HR can distribute benefits easier.
+ Write a simple sorting function that orders the employees ids in increasing numerical order so that the HR can distribute benefits easier.
 
  Use the insertion sort algorithm 
  Display the results to the console */
