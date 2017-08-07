@@ -28,8 +28,7 @@ Watch and read the following materials on C functions:
 `1, 1, 2, 3, 5, 8, 13`
 > *[for more detail check [Fibonacci Number](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia]*
 
-
-
+We can say a number is a Fibonacci number if `Fn = Fn-1 + Fn-2` and `F1 = 1` and `F2 = 1`
 
 ## Material Review
 - Functions
