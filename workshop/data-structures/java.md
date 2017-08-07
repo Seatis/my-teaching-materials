@@ -98,4 +98,4 @@ Maps are key-value pairs. If you think of it, the list or array is also a map, j
 
 ### Sorting
  
- - [Vacation fixer](sorting/vacation.java)
+ - [Vacation fixer](sorting/Vacation.java)
