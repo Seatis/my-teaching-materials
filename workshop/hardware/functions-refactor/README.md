@@ -8,7 +8,6 @@
 
 ### Training
 #### Functions in C
-#### Functions in C
 Watch and read the following materials on C functions:
 
 | Material | Time |
@@ -21,6 +20,15 @@ Watch and read the following materials on C functions:
 | [Summary of Functions](http://www.w3schools.in/c-tutorial/functions/) | - |
 |[Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=76s)|5:40|
 |[Memoization](https://en.wikipedia.org/wiki/Memoization)|-|
+|[Header file](https://www.youtube.com/watch?v=1EeetMPACMI)|9:51|
+
+#### Fibonacci sequence with recursion
+
+> What is a Fibonacci sequence? In mathematics a number is a Fibonacci number if it is equal to the sum of the two number before it. This is a sequence it's first element is 1. the second is 1. so the thrid element must be 2. Here is the beginning of the Fibonacci sequence:
+`1, 1, 2, 3, 5, 8, 13`
+> *[for more detail check [Fibonacci Number](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia]*
+
+
 
 
 ## Material Review
@@ -48,6 +56,8 @@ Watch and read the following materials on C functions:
             - play with it with different types
             - char, short, int, long, longlong
             - uint8_t, int8_t, float, double
+
+- Indcluse
 
 
 
