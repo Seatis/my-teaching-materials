@@ -10,7 +10,7 @@
 switch (suffix) {
 case 'G':
 case 'g':
-	mem <<= 30;
+    mem <<= 30;
     break;
 case 'M':
 case 'm':
@@ -46,7 +46,7 @@ Statements **longer than 80 columns** will be **broken into sensible chunks**, u
 The other issue that always comes up in C styling is the placement of braces. Unlike the indent size, there are few technical reasons to choose one placement strategy over the other, but the preferred way, as shown to us by the prophets Kernighan and Ritchie, is to **put the opening brace last on the line, and put the closing brace first**, thusly:
 ```
 if (x is true) {
-	we do y
+    we do y
 }
 ```
 
@@ -94,7 +94,7 @@ Also, note that this brace-placement also **minimizes the number of empty (or al
 Do not unnecessarily use braces where a single statement will do.
 ```
 if (condition)
-	action();
+    action();
 ```
 
 and
@@ -213,24 +213,24 @@ saves the compiler work to optimize redundant code away.
 ```
 int fun(int a)
 {
-	int result = 0;
-	char *buffer;
+    int result = 0;
+    char *buffer;
 
-	buffer = kmalloc(SIZE, GFP_KERNEL);
-	if (!buffer)
-		return -ENOMEM;
+    buffer = kmalloc(SIZE, GFP_KERNEL);
+    if (!buffer)
+        return -ENOMEM;
 
-		if (condition1) {
-			while (loop1) {
-				...
-			}
-			result = 1;
-			goto out_free_buffer;
+        if (condition1) {
+            while (loop1) {
+                ...
+            }
+            result = 1;
+            goto out_free_buffer;
         }
         ...
-	out_free_buffer:
-		kfree(buffer);
-		return result;
+    out_free_buffer:
+        kfree(buffer);
+        return result;
 }
 ```
 
@@ -280,9 +280,9 @@ So it's recommended to **get invalid cases out of the way first, either simply e
 - Your struct should look like this:
 ```
 struct car {
-	enum car_type type;
-	double km;
-	double gas;
+    enum car_type type;
+    double km;
+    double gas;
 };
 ```
 and use this way:
@@ -320,31 +320,31 @@ Lots of people think that typedefs help readability. Not always. They are useful
 Compare the 2 below examples, one wich uses typedef (and mark that the ```_t``` ending in the type name, refering to the fact that this is a type), and one wich doesn't.
 ```
 typedef struct {
-	//data members
+    //data members
 } student_t;
 
 typedef struct {
-	//data members
+    //data members
 } grade_t;
 
 grade_t get_worst_grade_subjet(student_t *student)
 {
-	...
+    ...
 }
 ```
 and
 ```
 struct student {
-	//data members
+    //data members
 }
 
 struct grade {
-	//data members
+    //data members
 }
 
 struck grade get_worst_grade_subjet(struct student *student)
 {
-	...
+    ...
 }
 ```
 
@@ -385,19 +385,19 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 - Macros with multiple statements should be **enclosed in a do - while block**:
 ```
 #define macrofun(a, b, c)				\
-	do {								\
-		if (a == 5)						\
-			do_this(b, c);				\
-	} while (0)
+    do {								\
+        if (a == 5)						\
+            do_this(b, c);				\
+    } while (0)
 ```
 **Things to avoid when using macros:**
 - macros that **affect control flow** is a very bad idea. It looks like a function call but exits the calling function; don’t break the internal parsers of those who will read the code.:
 ```
 #define FOO(x)							\
-	do {								\
-		if (blah(x) < 0)				\
-			return -EBUGGERED;			\
-	} while (0)
+    do {								\
+        if (blah(x) < 0)				\
+            return -EBUGGERED;			\
+    } while (0)
 ```
 - macros that **depend on having a local variable with a magic name** (might look like a good thing, but it’s confusing as hell when one reads the code and it’s prone to breakage from seemingly innocent changes.):
 ```
@@ -413,9 +413,9 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 ```
 #define FOO(x)							\
 ({										\
-	typeof(x) ret;						\
-	ret = calc_ret(x);					\
-	(ret);								\
+    typeof(x) ret;						\
+    ret = calc_ret(x);					\
+    (ret);								\
 })
 ```
 ret is a common name for a local variable - __foo_ret is less likely to collide with an existing variable.
