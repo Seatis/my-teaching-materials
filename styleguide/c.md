@@ -384,19 +384,19 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 - Generally, inline functions are preferable to macros **resembling functions**.
 - Macros with multiple statements should be **enclosed in a do - while block**:
 ```
-#define macrofun(a, b, c)				\
-    do {								\
-        if (a == 5)						\
-            do_this(b, c);				\
+#define macrofun(a, b, c)        \
+    do {                         \
+        if (a == 5)              \
+            do_this(b, c);       \
     } while (0)
 ```
 **Things to avoid when using macros:**
 - macros that **affect control flow** is a very bad idea. It looks like a function call but exits the calling function; don’t break the internal parsers of those who will read the code.:
 ```
-#define FOO(x)							\
-    do {								\
-        if (blah(x) < 0)				\
-            return -EBUGGERED;			\
+#define FOO(x)                    \
+    do {                          \
+        if (blah(x) < 0)          \
+            return -EBUGGERED;    \
     } while (0)
 ```
 - macros that **depend on having a local variable with a magic name** (might look like a good thing, but it’s confusing as hell when one reads the code and it’s prone to breakage from seemingly innocent changes.):
@@ -411,11 +411,11 @@ enum weekday {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY};
 ```
 - namespace collisions when defining local variables in macros resembling functions:
 ```
-#define FOO(x)							\
-({										\
-    typeof(x) ret;						\
-    ret = calc_ret(x);					\
-    (ret);								\
+#define FOO(x)                \
+({                            \
+    typeof(x) ret;            \
+    ret = calc_ret(x);        \
+    (ret);                    \
 })
 ```
 ret is a common name for a local variable - __foo_ret is less likely to collide with an existing variable.
