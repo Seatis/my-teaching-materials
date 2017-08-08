@@ -55,7 +55,7 @@ int fibonacci(int number)
 
 In this code we have created our own function which returns the asked Fibonacci number. As you can see it has one parameter (an integer) which stands for the number of element we want to access. Because we have declared this integer in our function parameter we can call that function with an integer written in it.
 
-For the first two element we made two simple statements, we don't need to count those (also with this method we can't), simply we tell our code that is the parameter is one or two it should return one! There is one more interesting thing, which is we can have multiple return values in one function. That will be useful for *error handling*. 
+For the first two element we made two simple statements, we don't need to count those (also with this method we can't), simply we tell our code that is the parameter is one or two it should return one! There is one more interesting thing, which is we can have multiple return values in one function. That will be useful for *error handling*.
 
 ## Material Review
 - Functions
@@ -92,6 +92,26 @@ For the first two element we made two simple statements, we don't need to count 
 Today we are going to learn how to use functions in C language.
 
 ### Functions
-#### Example
 
-#### Tasks
+ - [sum.c](Workshop/sum.c)
+ - [printer.c](Workshop/printer.c)
+ - [greet.c](Workshop/greet.c)
+ - [factorio.c](Workshop/factorio.c)
+ - [double.c](Workshop/double.c)
+
+
+### Includes
+
+
+## Individual Workshop Review
+Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
+
+ - Is the directory structure and the name of the files correct?
+ - Are the includes placed on the top of the files?
+ - Is the indentation good in each file?
+ - Is there unnecessary code?
+ - Can you find unnecessary code in comments?
+ - Is there unnecessary code duplication?
+ - Are there unnecessary empty blocks?
+ - Can you spot unused variables?
+ - Is the commit message meaningful?
