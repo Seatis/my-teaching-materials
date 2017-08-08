@@ -443,4 +443,3 @@ Conditional compilation is very useful when building a library. E.g. you want a 
 #ifdef CONFIG_SOMETHING
 ...
 #endif /* CONFIG_SOMETHING */
->>>>>>> new-c-styleguide
