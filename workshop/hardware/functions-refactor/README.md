@@ -106,7 +106,10 @@ Today we are going to learn how to use functions in C language.
 
 ### Advanced exercises
 
-
+ - [memoization.c](Workshop/memoization.c)
+ - [gcd.c](Workshop/gcd.c)
+ - [factorial.c](Workshop/factorial.c)
+ - [power.c](Workshop/power.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
