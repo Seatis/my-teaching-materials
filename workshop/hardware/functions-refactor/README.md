@@ -30,6 +30,33 @@ Watch and read the following materials on C functions:
 
 We can say a number is a Fibonacci number if `Fn = Fn-1 + Fn-2` and `F1 = 1` and `F2 = 1`
 
+Let's have a look at this implemention of the Fibonacci sequence:
+
+```c_cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("%d", fibonacci(12));
+    return 0;
+}
+
+int fibonacci(int number)
+{
+    if (number == 1)
+        return 1;
+    else if (number == 2)
+        return 1;
+    else
+        return fibonacci(number - 1) + fibonacci(number - 2);
+}
+```
+
+In this code we have created our own function which returns the asked Fibonacci number. As you can see it has one parameter (an integer) which stands for the number of element we want to access. Because we have declared this integer in our function parameter we can call that function with an integer written in it.
+
+For the first two element we made two simple statements, we don't need to count those (also with this method we can't), simply we tell our code that is the parameter is one or two it should return one! There is one more interesting thing, which is we can have multiple return values in one function. That will be useful for *error handling*. 
+
 ## Material Review
 - Functions
     - syntax
@@ -56,7 +83,8 @@ We can say a number is a Fibonacci number if `Fn = Fn-1 + Fn-2` and `F1 = 1` and
             - char, short, int, long, longlong
             - uint8_t, int8_t, float, double
 
-- Indcluse
+- Indcluses
+    - syntax
 
 
 
