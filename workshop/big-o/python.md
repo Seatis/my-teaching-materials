@@ -22,6 +22,8 @@ How to describe the complexity of an algorithm?
  - `O(2ᴺ)`
  - `O(log N)`
 
+![Big O chart](plot.jpg "Big O chart")
+
 ## Workshop
 
 It might come handy to Google first `how to kill a process + [insert your platform here]` if you are not aware of it.
