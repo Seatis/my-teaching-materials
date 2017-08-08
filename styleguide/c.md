@@ -1,6 +1,4 @@
-
 # Styleguide for C
-
 
 ## 1) Indentation
 - The whole idea behind indentation is to clearly **define where a block of control starts and ends**.
