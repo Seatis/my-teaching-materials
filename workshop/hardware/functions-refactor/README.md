@@ -21,6 +21,7 @@ Watch and read the following materials on C functions:
 |[Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=76s)|5:40|
 |[Memoization](https://en.wikipedia.org/wiki/Memoization)|-|
 |[Header file](https://www.youtube.com/watch?v=1EeetMPACMI)|9:51|
+|[C Header file](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)|-|
 
 #### Fibonacci sequence with recursion
 
@@ -85,6 +86,8 @@ For the first two element we made two simple statements, we don't need to count 
 
 - Indcluses
     - syntax
+    - why do we use it
+    why it is good
 
 
 
@@ -93,7 +96,7 @@ Today we are going to learn how to use functions in C language.
 
 ### Creating .h and .c files
 
-- [includes](/MultipleFiles)
+- [includes](MultipleFiles)
 
 ### Functions
 
