@@ -91,6 +91,10 @@ For the first two element we made two simple statements, we don't need to count 
 ## Workshop
 Today we are going to learn how to use functions in C language.
 
+### Creating .h and .c files
+
+- [includes](/MultipleFiles)
+
 ### Functions
 
  - [sum.c](Workshop/sum.c)
@@ -100,7 +104,8 @@ Today we are going to learn how to use functions in C language.
  - [double.c](Workshop/double.c)
 
 
-### Includes
+### Advanced exercises
+
 
 
 ## Individual Workshop Review
