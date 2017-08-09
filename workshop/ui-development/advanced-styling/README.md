@@ -8,7 +8,7 @@ Get familiar with advanced CSS styling techniques through some CSS3 properties a
 |:---------|-----:|
 | [CSS Tutorial For Beginners 47 - Color](https://www.youtube.com/watch?v=YYMCcm4EM2M) | 6:28 |
 | [CSS Tutorial For Beginners 48 - Opacity](https://www.youtube.com/watch?v=tYXQHuoaihU) | 7:11 |
-| [CSS Tutorial For Beginners 49 - CSS Gradients](https://www.youtube.com/watch?v=wTk4Wuckd0U) | 9:06 |
+| [CSS Tutorial for Beginners - 57 - Linear gradients](https://www.youtube.com/watch?v=n-pFwN16dr8) | 6:01 |
 | [CSS Tutorial For Beginners 50 - Box Shadow](https://www.youtube.com/watch?v=Q1uowGztXGs) | 4:25 |
 | [CSS Tutorial For Beginners 43 - Rounded Corners](https://www.youtube.com/watch?v=7WPgQVMayWI) | 7:20 |
 | [CSS Tutorial For Beginners 20 - Hover, Active & Visited Effects](https://www.youtube.com/watch?v=XT2PFpOyDzY) | 4:17 |
