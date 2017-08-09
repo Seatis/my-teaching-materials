@@ -62,13 +62,30 @@
 
 ## Workshop
 ### Arrays
-- [Arrays/1.c](workshop/arrays_1.c)
-- [Arrays/2.c](workshop/arrays_2.c)
-- [Arrays/3.c](workshop/arrays_3.c)
+- [Arrays/1.c](Workshop/arrays_1.c)
+- [Arrays/2.c](Workshop/arrays_2.c)
+- [Arrays/3.c](Workshop/arrays_3.c)
 
 ### User input
-- [UserInput/1.c](workshop/input_1.c)
-- [UserInput/2.c](workshop/input_1.c)
+- [UserInput/1.c](Workshop/input_1.c)
+- [UserInput/2.c](Workshop/input_2.c)
+
+### Advanced Excercises
+
+- [Advanced/1.c](Workshop/advanced_1.c)
+- [Advanced/2.c](Workshop/advanced_2.c)
+- [Advanced/3.c](Workshop/advanced_3.c)
+
+#### The sieve of Eratosthenes
+
+Implement The sieve of Eratosthenes using arrays and functions.
+
+
+> The sieve of Eratosthenes is one of the most efficient ways to find all primes smaller than n when n is smaller than 10 million
+> *[for more detail check [The sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) on Wikipedia]*
+
+### Examples
+
 
 
 ## Individual Workshop Review
