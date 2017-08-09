@@ -1,4 +1,4 @@
-# Coding Dojo
+# Coding Dojo: Tennis game
 Get more familiar with refactoring.
 
 ## Materials & Resources
