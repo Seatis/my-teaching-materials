@@ -35,6 +35,21 @@
 | A little bit [fun](https://www.youtube.com/watch?v=nKlKYYMCXc8) | 13:43 |
 
 ## Material Review
+- arrays
+    - syntax
+    - char arrays = strings
+    - int, float
+    - `string.h` functions
+    - why it it good?
+    - why we use it?
+
+- user input
+    - syntax
+    - `scanf`, `gets`
+    - `stdio.h` other functions
+    - why it it good?
+    - why we use it?
+
 ### C programming language
 #### Arrays
 - char arrays = strings
@@ -47,13 +62,13 @@
 
 ## Workshop
 ### Arrays
-- [Arrays/1.c](workshop/CodeBlocks/Arrays/1.c)
-- [Arrays/2.c](workshop/CodeBlocks/Arrays/2.c)
-- [Arrays/3.c](workshop/CodeBlocks/Arrays/3.c)
+- [Arrays/1.c](workshop/arrays_1.c)
+- [Arrays/2.c](workshop/arrays_2.c)
+- [Arrays/3.c](workshop/arrays_3.c)
 
 ### User input
-- [UserInput/1.c](workshop/CodeBlocks/UserInput/1.c)
-- [UserInput/2.c](workshop/CodeBlocks/UserInput/2.c)
+- [UserInput/1.c](workshop/input_1.c)
+- [UserInput/2.c](workshop/input_1.c)
 
 
 ## Individual Workshop Review
