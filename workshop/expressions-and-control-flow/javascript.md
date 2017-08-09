@@ -59,6 +59,12 @@ Learn your second programming language, get used to the new syntax of JavaScript
    - `break`
    - `continue`
 
+## Bookmark
+
+We recommend you to bookmark this online tool: http://pythontutor.com/
+
+It helps you to visualize code execution.
+
 ## Workshop
 
 Your best friend in the next few weeks will be Mozilla's JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript
