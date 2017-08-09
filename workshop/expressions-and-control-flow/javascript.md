@@ -262,7 +262,7 @@ console.log(f); // Prints 13
 
 var g = 12;
 g--;
-console.log(g); // Prints 13
+console.log(g); // Prints 11
 
 var h = 10;
 console.log(h); // Prints 10
