@@ -1,6 +1,4 @@
-# Command
-# Line
-# Interface
+# Command Line Interface
 
 Nowdays most of the people thinks noone use CLI, except the hackers in movies.
 http://hackertyper.com/
@@ -26,4 +24,4 @@ But the truth is, they are underrestimate this hidden power...
 - 4linux https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/ (-)
 - 4mac http://www.makeuseof.com/tag/4-fun-and-simple-things-you-can-do-using-terminal-mac/ (-)
 - 4windows https://www.howtogeek.com/168896/10-useful-windows-commands-you-should-know/ (-)
-- We can browse in command line `apt-get install w3m`
+- We can browse on the web in command line `apt-get install w3m`
