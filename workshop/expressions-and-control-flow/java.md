@@ -65,6 +65,12 @@ Get into *real* programming, installing a development environment and then runni
      -  `nextLine()`
      -  `nextInt()`
 
+## Bookmark
+
+We recommend you to bookmark this online tool: http://pythontutor.com/
+
+It helps you to visualize code execution.
+
 ## Workshop
 
 ### Printing to the terminal window
