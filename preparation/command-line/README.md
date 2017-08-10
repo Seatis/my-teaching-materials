@@ -36,7 +36,7 @@ But the truth is, they are underrestimate this hidden power...
 | [Typing practice](http://www.how-to-type.com/typing-practice/quote/) | - | (least 5 quotes)
 
 ### optional
-If you want to learn how to type blindly or practice more directly
+#### If you want to learn how to type blindly or practice more directly
 | Title             | Duration |
 | :---------------- | --------:|
 | [Type home keys](http://www.how-to-type.com/touch-typing-lessons/how-to-type-home-keys/) | - |
