@@ -13,15 +13,15 @@ But the truth is, they are underrestimate this hidden power...
 ### Basic commands
 | Title             | Duration |
 | :---------------- | --------:|
-| [-](https://www.youtube.com/watch?v=TdWPEN_57mI) | 7:47 |
+| [Command line trics](https://www.youtube.com/watch?v=TdWPEN_57mI) | 7:47 |
 | [Most important commands](https://codingsec.net/2016/06/7-basic-cmd-commands-everyone-must-know/) | - |
 
 ## Tuesday
 ### Go deeper in commands and speed up your typing speed and moving
 | Title             | Duration |
 | :---------------- | --------:|
-| [](https://www.youtube.com/watch?v=cBokz0LTizk) | 20:23 |
-| [](https://www.youtube.com/watch?v=sqX6hu7oEew) | 9:27 |
+| [Using command line](https://www.youtube.com/watch?v=cBokz0LTizk) | 20:23 |
+| [Relative and Absolute path](https://www.youtube.com/watch?v=sqX6hu7oEew) | 9:27 |
 | [Command help](https://www.youtube.com/watch?v=E2HbFD5kNNk) | 3:29 |
 | [Typing basics](http://www.ratatype.com/learn/) | - |
 | [How to increase typing speed](https://latesthackingnews.com/2016/11/24/increase-typing-speed/) | - |
