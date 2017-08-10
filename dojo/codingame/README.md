@@ -22,4 +22,12 @@ https://www.codingame.com/
   - Power of Thor
   - The Descent
   - Mars Lander - Episode 1
+    - __Note: this first episode is not complicated at all, just have to descend the lander in a straight line, so read the actual exercise and don't get frightened of the possibilities those are for the next episodes__
+  - Choose any another one from the EASY projects:
+    - ASCII Art (recommended)
+    - Temperatures
+    - Chuck Norris
+    - Mime Type
+    - Defibrillators
+    - Horse-racing Duals
 - Somewhere in the middle (after 2 hours) show and tell how everyone is proceeding
