@@ -8,13 +8,13 @@ But the truth is, they are underrestimate this hidden power...
 | Title             | Duration |
 | :---------------- | --------:|
 | [What is CLI?](https://www.youtube.com/watch?v=3WddgzyhHk8) | 7:11 |
-| [Why do we use CLI?](http://vivapinkfloyd.blogspot.hu/2008/07/5-reasons-to-use-cli-over-gui.html) | - |
+| [Why do we use CLI?](http://vivapinkfloyd.blogspot.hu/2008/07/5-reasons-to-use-cli-over-gui.html) | reading 3 mins |
 
 ### Basic commands
 | Title             | Duration |
 | :---------------- | --------:|
 | [Command line trics](https://www.youtube.com/watch?v=TdWPEN_57mI) | 7:47 |
-| [Most important commands](https://codingsec.net/2016/06/7-basic-cmd-commands-everyone-must-know/) | - |
+| [Most important commands](https://codingsec.net/2016/06/7-basic-cmd-commands-everyone-must-know/) | reading 4 mins |
 
 ## Tuesday
 ### Go deeper in commands and speed up your typing speed and moving
@@ -23,8 +23,8 @@ But the truth is, they are underrestimate this hidden power...
 | [Using command line](https://www.youtube.com/watch?v=cBokz0LTizk) | 20:23 |
 | [Relative and Absolute path](https://www.youtube.com/watch?v=sqX6hu7oEew) | 9:27 |
 | [Command help](https://www.youtube.com/watch?v=E2HbFD5kNNk) | 3:29 |
-| [Typing basics](http://www.ratatype.com/learn/) | - |
-| [How to increase typing speed](https://latesthackingnews.com/2016/11/24/increase-typing-speed/) | - |
+| [Typing basics](http://www.ratatype.com/learn/) | reading 4 mins |
+| [How to increase typing speed](https://latesthackingnews.com/2016/11/24/increase-typing-speed/) | reading 5 mins |
 | [Typing practice](https://www.typing.com/student/lessons/384/paragraph-practice) | - | (least 4 paragraphs)
 
 
@@ -32,7 +32,7 @@ But the truth is, they are underrestimate this hidden power...
 ### practice, practice, practice
 | Title             | Duration |
 | :---------------- | --------:|
-| [Command line practice](https://www.codecademy.com/learn/learn-the-command-line) | - | (dond skip quizes)
+| [Command line practice](https://www.codecademy.com/learn/learn-the-command-line) | - | (don't skip quizes)
 | [Typing practice](http://www.how-to-type.com/typing-practice/quote/) | - | (least 5 quotes)
 
 ### optional
@@ -48,8 +48,8 @@ But the truth is, they are underrestimate this hidden power...
 ### Some fun 'n stuff in command line
 | Title             | Duration |
 | :---------------- | --------:|
-| [Linux](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/) | - |
-| [Mac](http://www.makeuseof.com/tag/4-fun-and-simple-things-you-can-do-using-terminal-mac/) | - |
-| [Windows](https://www.howtogeek.com/168896/10-useful-windows-commands-you-should-know/) | - |
-| [#Bonus We can browse on the web in command line](http://w3m.sourceforge.net/) | - |
+| [Linux](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/) | reading 10 mins |
+| [Mac](http://www.makeuseof.com/tag/4-fun-and-simple-things-you-can-do-using-terminal-mac/) | reading 4 mins |
+| [Windows](https://www.howtogeek.com/168896/10-useful-windows-commands-you-should-know/) | reading 6 mins |
+| [#Bonus We can browse on the web in command line](https://www.howtogeek.com/103574/how-to-browse-from-the-linux-terminal-with-w3m/) | reading 4 mins |
 
