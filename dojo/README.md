@@ -4,5 +4,5 @@ Recommended order of the dojos:
 
  -  [codingame](codingame) (before learning unit testing)
  -  [first-katas](first-katas) (after learnt unit testing)
- -  [sudoku-kata](sudoku-kata)
+ -  [poker-kata](poker-kata)
  -  [tennis-game](tennis-game)
