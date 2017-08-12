@@ -23,7 +23,6 @@
 
 | Material | Duration |
 |:---------|-----:|
-| **Instruction** |
 | [Instructions & Programs](https://www.youtube.com/watch?v=zltgXvg6r3k) | 10:35 |
 | [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA) | 6:03 |
 | [Compilers, Assemblers, Linkers, Loaders: A Short Course](https://courses.cs.washington.edu/courses/cse378/97au/help/compilation.html) (only the "Compiling a Program" section)| - |
@@ -60,6 +59,14 @@
 | [if-else statement](http://www.w3schools.in/c-tutorial/decision-making/if-else/) | - |
 | [else-if statement](https://www.youtube.com/watch?v=DZ0ZXipUx-A) | 8:47 |
 | [else-if statement](http://www.w3schools.in/c-tutorial/decision-making/else-if/) | - |
+
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Early Computing](https://www.youtube.com/watch?v=O5nskjZ_GoI&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=2) | 11:52 |
+| [Electronic Computing](https://www.youtube.com/watch?v=LN0ucKNX0hc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=3) | 10:43 |
+| [Boolean Logic](https://www.youtube.com/watch?v=gI-qXk7XojA&index=4&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 10:06 |
 
 ## Material Review
 

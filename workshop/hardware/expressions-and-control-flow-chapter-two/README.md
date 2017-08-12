@@ -39,6 +39,14 @@
 #### Why never use goto
 ![Why never use goto](IMG/goto.png)
 
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Binary Numbers](https://www.youtube.com/watch?v=1GSjbWt0c9M&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=5) | 10:45 |
+| [The ALU](https://www.youtube.com/watch?v=1I5ZMmrOfnA&index=6&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 11:09 |
+| [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=7) | 12:16 |
+
 ## Material Review
 
 
