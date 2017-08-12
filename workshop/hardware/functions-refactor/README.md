@@ -23,6 +23,14 @@ Watch and read the following materials on C functions:
 |[Header file](https://www.youtube.com/watch?v=1EeetMPACMI)|9:51|
 |[C Header file](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)|-|
 
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [CPU](https://www.youtube.com/watch?v=FZGugFqdr60&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=8) | 11:37 |
+| [Instructions and  Programs](https://www.youtube.com/watch?v=zltgXvg6r3k&index=9&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 10:35 |
+| [CPU Desings](https://www.youtube.com/watch?v=rtAlC5J1U40&index=10&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 12:22 |
+
 #### Fibonacci sequence with recursion
 
 > What is a Fibonacci sequence? In mathematics a number is a Fibonacci number if it is equal to the sum of the two number before it. This is a sequence it's first element is 1. the second is 1. so the thrid element must be 2. Here is the beginning of the Fibonacci sequence:
