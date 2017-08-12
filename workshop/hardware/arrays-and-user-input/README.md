@@ -34,6 +34,14 @@
 | [conio.h function reference](http://www.programmingsimplified.com/c/conio.h) | - |
 | A little bit [fun](https://www.youtube.com/watch?v=nKlKYYMCXc8) | 13:43 |
 
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Early programming](https://www.youtube.com/watch?v=nwDq4adJwzM&index=11&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 9:25 |
+| [The First Programming Languages ](https://www.youtube.com/watch?v=RU1u-js7db8&index=12&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 11:51 |
+| [Statements and  Functions](https://www.youtube.com/watch?v=l26oaHV7D40&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=13) | 11:56 |
+
 ## Material Review
 - arrays
     - syntax
