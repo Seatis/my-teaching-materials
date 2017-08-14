@@ -3,6 +3,19 @@
 ## Objectives
 - learn how to troubleshoot others code
 
+## Materials & Resources
+### Environment
+  - Make sure that Code::Blocks is installed on your machine
+    - For installation instructons see the syllabus
+
+### Training
+
+#### C programming language
+
+| Material | Duration |
+|:---------|-----:|
+| [Debugger in Code::Blocks](https://www.youtube.com/watch?v=Jab1qj_QR8s) | 9:20 |
+
 ## Workshop
 Look at the codes below! They are not working properly. Can you help us to find
 the problems and correct them?
