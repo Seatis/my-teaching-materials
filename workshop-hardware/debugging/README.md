@@ -98,6 +98,14 @@ int main()
 
 Get familiar with the code above. This is a working program, this will be representative during the material review. Run it a few times. Maybe you can change the code to understand it better.
 
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Algorithms](https://www.youtube.com/watch?v=rL8X2mlNHPM&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=14) | 11:43 |
+| [Data structures](https://www.youtube.com/watch?v=DuDz6B4cqVc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=15) | 10:06 |
+| [Alan Turing](https://www.youtube.com/watch?v=7TycxwFmdB0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=16) | 13:04 |
+
 ## Material Review
 
 ### C programming language
@@ -115,13 +123,7 @@ Get familiar with the code above. This is a working program, this will be repres
     - memory dump
     - watches
 
-#### Computer Science
 
-| Material | Duration |
-|:---------|-----:|
-| [Algorithms](https://www.youtube.com/watch?v=rL8X2mlNHPM&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=14) | 11:43 |
-| [Data structures](https://www.youtube.com/watch?v=DuDz6B4cqVc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=15) | 10:06 |
-| [Alan Turing](https://www.youtube.com/watch?v=7TycxwFmdB0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=16) | 13:04 |
 
 ## Workshop
 Look at the codes below! They are not working properly. Can you help us to find
