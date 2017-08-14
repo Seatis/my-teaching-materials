@@ -96,7 +96,24 @@ int main()
 
 ```
 
-Get familiar with the code above. This is a working program, this will be representative during the material review. Run it a few times. Maybe you can change the code to understand it better. 
+Get familiar with the code above. This is a working program, this will be representative during the material review. Run it a few times. Maybe you can change the code to understand it better.
+
+## Material Review
+
+### C programming language
+
+- debug/continue
+    - run to cursor
+    - next line
+    - step into
+    - step out
+- breakpoints
+-debugging windows
+    - breakpoints
+    - call stack
+        - what is a stack?
+    - memory dump
+    - watches
 
 ## Workshop
 Look at the codes below! They are not working properly. Can you help us to find
