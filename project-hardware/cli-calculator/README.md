@@ -9,6 +9,7 @@
 ## Materials & Resources
 
 - [string.h](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
+- [file I/O](https://www.tutorialspoint.com/cprogramming/c_file_io.htm)
 
 ## Workshop
 This is a quite long project, at first read the whole specification. Try to figure out
@@ -23,11 +24,15 @@ application.
 - [/](#)
 - [modulus](#)
 - [squaring](#)
-- [root](#)
+- [square root](#)
 - [error handling](#)
 
 
 ### Advanced tasks
+- [logarithm](#)
+- [roots](#)
+- [file I/O](#)
+-
 
 ### Print usage
  - At application startup the following message should be shown:
@@ -35,13 +40,14 @@ application.
 ```
 Calculator
 ====================
+usage: [number][operation][number]
 Commands:
  +  summation
  -  subtraction
  *  multiplication
  /  division
  ^  squaring
- <  root
+ <  square root
  %  division with remainder
  ```
 
@@ -109,7 +115,6 @@ For example the content is:
 
 ```
 
-
 ### error handling
 
 For example the content is:
@@ -117,6 +122,25 @@ For example the content is:
 ```
 
 ```
+### logarithm
+
+For example the content is:
+
+```
+log2(8) = 3
+
+```
+
+### roots
+
+For example the content is:
+
+```
+3<8 = 2
+
+```
+
+### file I/O
 
 ## Solution
 [Solution](#)
