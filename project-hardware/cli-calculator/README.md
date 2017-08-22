@@ -9,46 +9,49 @@
 ## Materials & Resources
 
 - [string.h](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
-- [file I/O](https://www.tutorialspoint.com/cprogramming/c_file_io.htm)
 
 ## Workshop
-This is a quite long project, at first read the whole specification. Try to figure out
-what kind of data storing technique (for example structure, array etc.) would fit
-for this project. Try to make a concept in your head about how you will implement the
-application.
+This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands.
 
 ### Basics (mandatory) tasks
 - [+](#)
 - [-](#)
 - [*](#)
 - [/](#)
-- [modulus](#)
-- [squaring](#)
-- [square root](#)
+- [% (modulus)](#)
+- [power](https://en.wikipedia.org/wiki/Exponentiation)
+- [extracting the root (square root)](#)
+- [logarithm](https://en.wikipedia.org/wiki/Logarithm)
 - [error handling](#)
 
-
 ### Advanced tasks
-- [logarithm](#)
-- [roots](#)
-- [file I/O](#)
--
+- [decimal to binary conversion](http://www.wikihow.com/Convert-from-Decimal-to-Binary)
+- [binary to decimal conversion](http://www.wikihow.com/Convert-from-Binary-to-Decimal)
+- [nth roots](https://en.wikipedia.org/wiki/Nth_root)
 
 ### Print usage
  - At application startup the following message should be shown:
 
 ```
-Calculator
-====================
-usage: [number][operation][number]
+	CLI Calculator
+====================================
+usage: [number] [operation] [number]
 Commands:
- +  summation
- -  subtraction
- *  multiplication
- /  division
- ^  squaring
- <  square root
- %  division with remainder
+ +		summation
+ -		subtraction
+ *		multiplication
+ /		division
+ % 		division with remainder
+ ^		squaring
+ <		square root
+ log	logarithm
+ ====================================
+ exit	exiting from the program
+ clear	clear the screen
+ help	print usage
+ ====================================
+ Hit enter to start!
+ ====================================
  ```
 
 ### +
@@ -102,7 +105,7 @@ For example the content is:
 For example the content is:
 
 ```
-< 4 = 2
+2 < 4 = 2
 
 ```
 
@@ -111,7 +114,7 @@ For example the content is:
 For example the content is:
 
 ```
-3 % 2 = 1,5
+3 % 2 = 1
 
 ```
 
@@ -120,14 +123,26 @@ For example the content is:
 For example the content is:
 
 ```
-
+5 / 0 = Division by zero is undefined.
 ```
+if you give incorrect operators (alphabetic characters), you should see:
+```
+a + b = Invalid operands.
+```
+if you leave out spaces, or use an unknown operator, like @, you should get:
+```
+5 + @
+Invalid command
+Hit enter to continue.
+```
+
+
 ### logarithm
 
 For example the content is:
 
 ```
-log2(8) = 3
+2log8 = 3
 
 ```
 
@@ -136,11 +151,10 @@ log2(8) = 3
 For example the content is:
 
 ```
-3<8 = 2
+2 < 9 = 3
 
 ```
 
-### file I/O
 
 ## Solution
-[Solution](#)
+[Solution]()
