@@ -15,6 +15,9 @@ Watch and read the following materials on C functions:
 | [Introduction to Functions](https://www.youtube.com/watch?v=lv5IDF7dmBk) | 8:22 |
 | [Local, Global Variable Scopes](https://www.youtube.com/watch?v=sAj_Jrqrg5g) | 3:36 |
 | [Local, Global Variable Scopes](http://www.w3schools.in/c-tutorial/variable-scope/) | - |
+| [Static variables part 1](https://www.youtube.com/watch?v=kz2lQdYXsKE)| 5:12 |
+|[Static variables part 2](https://www.youtube.com/watch?v=gr90KDyLQdc)|7:07|
+|[More about variables](http://gd.tuwien.ac.at/languages/c/programming-bbrown/c_046.htm)|-|
 | [Function Parameters](https://www.youtube.com/watch?v=_oyuKw3vBf8) | 6:19 |
 | [Return Values](https://www.youtube.com/watch?v=ye2tvFir65g) | 7:13 |
 | [Summary of Functions](http://www.w3schools.in/c-tutorial/functions/) | - |
@@ -85,6 +88,9 @@ For the first two element we made two simple statements, we don't need to count 
         - global
             - it can be evil
         - local
+    - static variables
+        - why we use them
+        - usage
     - standard library functions
         - printf
         - sizeof
@@ -113,6 +119,7 @@ Today we are going to learn how to use functions in C language.
  - [greet.c](Workshop/greet.c)
  - [factorio.c](Workshop/factorio.c)
  - [double.c](Workshop/double.c)
+ - [variables.c](Workshop/variables.c)
 
 
 ### Advanced exercises
