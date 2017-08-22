@@ -66,7 +66,6 @@
 
 #### User input
 - `stdio.h` functions (`gets`, `scanf` and others)
-- `conio.h` functions (`kbhit`, `delline`, `clrscr`)
 
 ## Workshop
 ### Arrays
