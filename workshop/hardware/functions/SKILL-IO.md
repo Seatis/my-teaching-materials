@@ -7,3 +7,5 @@
 
 ## Output skills
 - C expressions and controll flow knowladge
+- understanding how to define custom data types in C language
+- understanding the functions in C language

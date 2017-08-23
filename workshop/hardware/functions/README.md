@@ -15,12 +15,24 @@ Watch and read the following materials on C functions:
 | [Introduction to Functions](https://www.youtube.com/watch?v=lv5IDF7dmBk) | 8:22 |
 | [Local, Global Variable Scopes](https://www.youtube.com/watch?v=sAj_Jrqrg5g) | 3:36 |
 | [Local, Global Variable Scopes](http://www.w3schools.in/c-tutorial/variable-scope/) | - |
+| [Static variables part 1](https://www.youtube.com/watch?v=kz2lQdYXsKE)| 5:12 |
+|[Static variables part 2](https://www.youtube.com/watch?v=gr90KDyLQdc)|7:07|
+|[More about variables](http://gd.tuwien.ac.at/languages/c/programming-bbrown/c_046.htm)|-|
 | [Function Parameters](https://www.youtube.com/watch?v=_oyuKw3vBf8) | 6:19 |
 | [Return Values](https://www.youtube.com/watch?v=ye2tvFir65g) | 7:13 |
 | [Summary of Functions](http://www.w3schools.in/c-tutorial/functions/) | - |
 |[Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms&t=76s)|5:40|
 |[Memoization](https://en.wikipedia.org/wiki/Memoization)|-|
 |[Header file](https://www.youtube.com/watch?v=1EeetMPACMI)|9:51|
+|[C Header file](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)|-|
+
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [CPU](https://www.youtube.com/watch?v=FZGugFqdr60&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=8) | 11:37 |
+| [Instructions and  Programs](https://www.youtube.com/watch?v=zltgXvg6r3k&index=9&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 10:35 |
+| [CPU Desings](https://www.youtube.com/watch?v=rtAlC5J1U40&index=10&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 12:22 |
 
 #### Fibonacci sequence with recursion
 
@@ -76,6 +88,9 @@ For the first two element we made two simple statements, we don't need to count 
         - global
             - it can be evil
         - local
+    - static variables
+        - why we use them
+        - usage
     - standard library functions
         - printf
         - sizeof
@@ -85,6 +100,8 @@ For the first two element we made two simple statements, we don't need to count 
 
 - Indcluses
     - syntax
+    - why do we use it
+    why it is good
 
 
 
@@ -93,7 +110,7 @@ Today we are going to learn how to use functions in C language.
 
 ### Creating .h and .c files
 
-- [includes](/MultipleFiles)
+- [includes](MultipleFiles)
 
 ### Functions
 
@@ -102,6 +119,9 @@ Today we are going to learn how to use functions in C language.
  - [greet.c](Workshop/greet.c)
  - [factorio.c](Workshop/factorio.c)
  - [double.c](Workshop/double.c)
+ - [global_local.c](Workshop/global_local.c)
+ - [more_global_local.c](Workshop/more_global_local.c)
+ - [variables.c](Workshop/variables.c)
 
 
 ### Advanced exercises
