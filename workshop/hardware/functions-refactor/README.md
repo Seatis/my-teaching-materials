@@ -119,6 +119,8 @@ Today we are going to learn how to use functions in C language.
  - [greet.c](Workshop/greet.c)
  - [factorio.c](Workshop/factorio.c)
  - [double.c](Workshop/double.c)
+ - [global_local.c](Workshop/global_local.c)
+ - [more_global_local.c](Workshop/more_global_local.c)
  - [variables.c](Workshop/variables.c)
 
 
