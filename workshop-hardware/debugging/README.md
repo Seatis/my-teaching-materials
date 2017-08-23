@@ -3,6 +3,128 @@
 ## Objectives
 - learn how to troubleshoot others code
 
+## Materials & Resources
+### Environment
+  - Make sure that Code::Blocks is installed on your machine
+    - For installation instructons see the syllabus
+
+### Training
+
+#### C programming language
+
+| Material | Duration |
+|:---------|-----:|
+| [Debugger in Code::Blocks](https://www.youtube.com/watch?v=Jab1qj_QR8s) | 9:20 |
+|[wiki](http://wiki.codeblocks.org/index.php/Debugging_with_Code::Blocks)|-|
+
+*note: you are not going to use all of the functions that the wiki page is talking about*
+
+```
+#include <stdio.h>
+#include <stdint.h>
+
+int summation(int a, int b){
+
+    return a + b;
+}
+
+int subtraction(int a, int b){
+
+    return a - b;
+}
+
+int multiplication(int a, int b){
+
+    return a * b;
+}
+
+int division(int a, int b){
+
+    return a / b;
+}
+
+int main()
+{
+    int choice = 0;
+    int num_1 = 0;
+    int num_2 = 0;
+
+    int num_1_watcher = 0;
+    int num_2_watcher = 0;
+
+    printf("Hello this is a calculator!\n");
+    printf("Please add two number (hit enter between them):\n");
+    scanf("%d %d", &num_1, &num_2);
+
+    num_1_watcher = &num_1;
+    num_2_watcher = &num_2;
+
+	printf("Please choose from the following options:\n\n");
+	printf("\tpress 1 for summation\n");
+	printf("\tpress 2 for subtraction\n");
+	printf("\tpress 3 for multiplication\n");
+	printf("\tpress 4 for division\n");
+	printf("\tpress 9 to exit the program\n");
+
+    while(choice != 9){
+        scanf("%d", &choice);
+
+        switch(choice){
+        case 1:
+            printf("%d + %d = %d\n",num_1, num_2, summation(num_1, num_2));
+            continue;
+        case 2:
+            printf("%d - %d = %d\n",num_1, num_2, subtraction(num_1, num_2));
+            continue;
+        case 3:
+            printf("%d * %d = %d\n",num_1, num_2, multiplication(num_1, num_2));
+            continue;
+        case 4:
+            printf("%d / %d = %d\n",num_1, num_2, division(num_1, num_2));
+            continue;
+        case 9:
+            printf("program is over\n");
+            continue;
+        default:
+            printf("wrong user input, you have played your only one chance you son of a bit*h!\n");
+            continue;
+        }
+    }
+
+	return 0;
+}
+
+```
+
+Get familiar with the code above. This is a working program, this will be representative during the material review. Run it a few times. Maybe you can change the code to understand it better.
+
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Algorithms](https://www.youtube.com/watch?v=rL8X2mlNHPM&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=14) | 11:43 |
+| [Data structures](https://www.youtube.com/watch?v=DuDz6B4cqVc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=15) | 10:06 |
+| [Alan Turing](https://www.youtube.com/watch?v=7TycxwFmdB0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=16) | 13:04 |
+
+## Material Review
+
+### C programming language
+
+- debug/continue
+    - run to cursor
+    - next line
+    - step into
+    - step out
+- breakpoints
+-debugging windows
+    - breakpoints
+    - call stack
+        - what is a stack?
+    - memory dump
+    - watches
+
+
+
 ## Workshop
 Look at the codes below! They are not working properly. Can you help us to find
 the problems and correct them?
