@@ -28,10 +28,6 @@
 | [`scanf` usage](https://www.youtube.com/watch?v=hSHFjPvqFjw) | 5:21 |
 | [`puts` and `gets` usage](https://www.youtube.com/watch?v=yvpCxgV3AZo) | 6:15 |
 | [stdio.h function reference](http://www.cplusplus.com/reference/cstdio/) | - |
-| [`kbhit` usage](https://www.youtube.com/watch?v=DFOwUqsl36A) | 4:06 |
-| [`clrscr` usage](http://www.programmingsimplified.com/c/conio.h/clrscr) | - |
-| [`delline`](http://www.programmingsimplified.com/c/conio.h/delline) | - |
-| [conio.h function reference](http://www.programmingsimplified.com/c/conio.h) | - |
 | A little bit [fun](https://www.youtube.com/watch?v=nKlKYYMCXc8) | 13:43 |
 
 #### Computer Science
