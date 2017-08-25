@@ -151,7 +151,7 @@ print("Hello, World!")
   "cases": [
     {
       "ex_input" : [],
-      "ex_output" : "^Hello, (?!World)[a-zA-Z]+!$"
+      "ex_output" : ["^Hello, (?!World)[a-zA-Z]+!$"]
     }
   ]
 }
@@ -183,11 +183,20 @@ print("Hello, World!")
     }
     {
       "ex_input" : ["2"],
-      "ex_output" : ["^\\*$", "^\\*{2}$"]
+      "ex_output" : [
+        "^\\*$",
+        "^\\*{2}$"
+      ]
     }
     {
       "ex_input" : ["5"],
-      "ex_output" : ["^\\*$", "^\\*{2}$", "^\\*{3}$", "^\\*{4}$", "^\\*{5}$"]
+      "ex_output" : [
+        "^\\*$",
+        "^\\*{2}$",
+        "^\\*{3}$",
+        "^\\*{4}$",
+        "^\\*{5}$"
+      ]
     }
   ]
 }

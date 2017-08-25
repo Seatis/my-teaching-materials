@@ -2,9 +2,11 @@
   "cases": [
     {
       "ex_input" : [],
-      "ex_output" : ["^Hello, (?!World)[a-zA-Z]+!$",
-                     "^Hello, (?!World)[a-zA-Z]+!$",
-                     "^Hello, (?!World)[a-zA-Z]+!$"]
+      "ex_output" : [
+        "^Hello, (?!World)[a-zA-Z]+!$",
+        "^Hello, (?!World)[a-zA-Z]+!$",
+        "^Hello, (?!World)[a-zA-Z]+!$"
+      ]
     }
 
   ]

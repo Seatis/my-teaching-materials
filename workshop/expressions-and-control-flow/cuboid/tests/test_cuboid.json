@@ -2,8 +2,10 @@
   "cases": [
     {
       "ex_input" : [],
-      "ex_output" : ["^Surface Area: [1-9][0-9]{0,}$",
-                     "^Volume: [1-9][0-9]{0,}$"]
+      "ex_output" : [
+        "^Surface Area: [1-9][0-9]{0,}$",
+        "^Volume: [1-9][0-9]{0,}$"
+      ]
     }
   ]
 }
