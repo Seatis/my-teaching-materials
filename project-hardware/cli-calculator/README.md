@@ -55,9 +55,9 @@ Commands:
  hexto		hexadecimal to bin or dec
  decto		decimal to bin or hex
  ====================================
- exit	exiting from the program
- clear	clear the screen
- help	print usage
+ exit		exiting from the program
+ clear		clear the screen
+ help		print usage
  ====================================
  Hit enter to start!
  ====================================
