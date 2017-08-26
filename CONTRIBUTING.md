@@ -55,6 +55,7 @@ Before you submit your changes consider the following guidelines:
      -  The review should include completing (or reviewing if already completed) the solutions for the exercises in the [solutions repository](https://github.com/greenfox-academy/solutions)
  -  Delete your branches after the pull request is merged
 
+
 ## Directory structure of this repository
 
 ### Description of root folders
@@ -73,17 +74,135 @@ We have several type of materials each of them go in their separate folder:
 ### Lower level directory structure
 
 #### Any workshop folder
- - The folder name is the title of the workshop
+ -  The folder name is the title of the workshop
  -  If the outline and the exercises are language independent:
      -  **README.md**: materials and outline
      -  **exercises**:
          -  **README.md**: exercise specification
+         -  **tests**:
+             -  If unittest:
+                 -  **test_exercise-name.ext**
+             -  If IO test:
+                 -  **test_exercise-name.json**
  -  If not language independent:
      -  **language.md**: materials and outline for the language
      -  **exercises**:
          -  **exercise-name**:
              -  **language.ext**: a language specific boilerplate containing the exercise specification as comments
+         -  **tests**:
+             -  If unittest:
+                 -  **test_exercise-name.ext**
+             -  If IO test:
+                 -  **test_exercise-name.json**
+
+**For example**:
+
+```
+example-workshop
+  ├ hello-me
+  | ├ tests
+  | | └ test_hellome.json
+  | ├ c.md
+  | ├ java.md
+  | ├ python.md
+  | └ javascript.md
+  ├ draw-pyramid
+  | ├ tests
+  | | └ test_draw_pyramid.json
+  | ├ draw_pyramid.c
+  | ├ DrawPyramid.java
+  | ├ draw_pyramind.py
+  | └ draw-pyramid.js
+  ├ motionless
+  | ├ tests    
+  | | ├ test_motionless.c
+  | | ├ TestMotionless.java
+  | | ├ test_motionless.py
+  | | └ motionless.test.js
+  | ├ motionless.c
+  | ├ Motionless.java
+  | ├ motionless.py
+  | └ motionless.js
+  ├ c.md
+  ├ java.md
+  ├ python.md
+  └ javascript.md
+```
 
 #### Any other subfolder
  -  Where possible follow the structure of the workshop folders
  -  Simplifying is permitted where possible, for language independent specification use the **README.md** file
+
+## Writing tests
+
+There are two different style of testing that we use: unittests and "IO-tests".
+The meaning of IO-tests:
+There are exercises where students don't need to write functions. These contains very basic tasks, such as declare a variable and print it or ask for a user input and print it. To test the solutions for these kind of tasks, we write IO tests which are looking for outputs which are fitting with defined regex's.
+These IO "tests" need to be written in ```json``` files in a specified strucutre. To understand better how tests should be look like, check out the examples below.
+
+### IO tests with no input
+
+#### **Exercise: hello_me.py**
+
+```
+# Modify this program to greet you instead of the World!
+print("Hello, World!")
+```
+#### **Test: test_hello_me.json**
+
+
+```
+{
+  "cases": [
+    {
+      "ex_input" : [],
+      "ex_output" : ["^Hello, (?!World)[a-zA-Z]+!$"]
+    }
+  ]
+}
+```
+
+### IO tests with input
+
+#### **Exercise: draw_trianlge.py**
+
+```
+# Write a program that reads a number from the standard input, then draws a
+# triangle like this:
+#
+# *
+# **
+# ***
+# ****
+#
+# The triangle should have as many lines as the number was
+```
+#### **Test: test_draw_triangle.json**
+
+```
+{
+  "cases": [
+    {
+      "ex_input" : ["1"],
+      "ex_output" : ["^\\*$"]
+    }
+    {
+      "ex_input" : ["2"],
+      "ex_output" : [
+        "^\\*$",
+        "^\\*{2}$"
+      ]
+    }
+    {
+      "ex_input" : ["5"],
+      "ex_output" : [
+        "^\\*$",
+        "^\\*{2}$",
+        "^\\*{3}$",
+        "^\\*{4}$",
+        "^\\*{5}$"
+      ]
+    }
+  ]
+}
+```

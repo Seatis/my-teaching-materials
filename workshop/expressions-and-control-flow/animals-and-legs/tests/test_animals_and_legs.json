@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "ex_input": [2, 3],
+      "ex_output": ["16"]
+    },
+    {
+      "ex_input": [0, 1],
+      "ex_output": ["4"]
+    },
+    {
+      "ex_input": [1, 0],
+      "ex_output": ["2"]
+    }
+  ]
+}

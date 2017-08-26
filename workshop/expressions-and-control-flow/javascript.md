@@ -69,6 +69,10 @@ It helps you to visualize code execution.
 
 Your best friend in the next few weeks will be Mozilla's JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+💪: If you see this emoji, it means that you can skip the exercise if you are
+in lack of time. You can practice with these exercises later to deepen your
+knowledge (or to prepare for the exam).
+
 ### Printing to the terminal window
 
 #### Hello World
@@ -80,9 +84,9 @@ console.log('Hello world');
 ```
 
 #### Exercises
- - [01](hello-me/hello-me.js)
- - [02](hello-others/hello-others.js)
- - [03](humpty-dumpty/humpty-dumpty.js)
+ - [01 - hello-me](hello-me/hello-me.js)
+ - [02 - humpty-dumpty](humpty-dumpty/humpty-dumpty.js)
+ - [03 - hello-others](hello-others/hello-others.js)
 
 ### Comments
 ```javascript
@@ -204,9 +208,9 @@ console.log('My favorite number is: ' + 8); // Prints My favorite number is: 8
 ```
 
 #### Exercises
- -  [04](introduce-yourself/introduce-yourself.js)
- -  [05](two-numbers/two-numbers.js)
- -  [06](coding-hours/coding-hours.js)
+ -  [04 - introduce-yourself](introduce-yourself/introduce-yourself.js)
+ -  [05 - two-numbers](two-numbers/two-numbers.js)
+ -  [06 - coding-hours](coding-hours/coding-hours.js)
 
 ### Variables
 
@@ -283,13 +287,14 @@ console.log(i); // Prints 11
 ```
 
 #### Exercises
- -  [07](favorite-number/favorite-number.js)
- -  [08](define-basic-info/define-basic-info.js)
- -  [09](bmi/bmi.js)
- -  [10](cuboid/cuboid.js)
- -  [11](seconds-in-a-day/seconds-in-a-day.js)
- -  [12](swap/swap.js)
- -  [13](variable-mutation/variable-mutation.js)
+
+ -  [07 - favorite-number](favorite-number/favorite-number.js)
+ -  [08 - swap](swap/swap.js)
+ -  [09 - bmi 💪](bmi/bmi.js)
+ -  [10 - define-basic-info](define-basic-info/define-basic-info.js)
+ -  [11 - variable-mutation](variable-mutation/variable-mutation.js)
+ -  [12 - cuboid 💪](cuboid/cuboid.js)
+ -  [13 - seconds-in-a-day](seconds-in-a-day/seconds-in-a-day.js)
 
 
 ### Nothings
@@ -366,7 +371,8 @@ if (thirsty && hungry) {
 ```
 
 #### Exercises
- -  [22](conditional-variable-mutation/conditional-variable-mutation.js)
+
+ -  [22 - conditional-variable-mutation](conditional-variable-mutation/conditional-variable-mutation.js)
 
 ### Loops
 
@@ -385,16 +391,17 @@ for (var j = 0; j < 100; j++) {
 ```
 
 #### Exercises
- -  [23](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.js)
- -  [24](print-even/print-even.js)
- -  [26](multiplication-table/multiplication-table.js)
- -  [27](draw-triangle/draw-triangle.js)
- -  [28](draw-pyramid/draw-pyramid.js)
- -  [29](draw-diamond/draw-diamond.js)
- -  [30](draw-square/draw-square.js)
- -  [31](draw-diagonal/draw-diagonal.js)
- -  [32](fizz-buzz/fizz-buzz.js)
- -  [35](draw-chess-table/draw-chess-table.js)
+
+ -  [23 - i-wont-cheat-on-the-exams](i-wont-cheat-on-the-exams/i-wont-cheat-on-the-exams.js)
+ -  [24 - print-even](print-even/print-even.js)
+ -  [25 - multiplication-table](multiplication-table/multiplication-table.js)
+ -  [27 - fizz-buzz](fizz-buzz/fizz-buzz.js)
+ -  [28 - draw-triangle](draw-triangle/draw-triangle.js)
+ -  [29 - draw-pyramid 💪](draw-pyramid/draw-pyramid.js)
+ -  [30 - draw-diamond 💪](draw-diamond/draw-diamond.js)
+ -  [31 - draw-square 💪](draw-square/draw-square.js)
+ -  [32 - draw-diagonal](draw-diagonal/draw-diagonal.js)
+ -  [35 - draw-chess-table](draw-chess-table/draw-chess-table.js)
 
 
 ## Individual Workshop Review
