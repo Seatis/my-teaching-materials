@@ -50,10 +50,10 @@ Commands:
  % 		division with remainder
  ^		squaring
  <		square root
- log	logarithm
- binto	binary to hex or dec
- hexto	hexadecimal to bin or dec
- decto	decimal to bin or hex
+ log		logarithm
+ binto		binary to hex or dec
+ hexto		hexadecimal to bin or dec
+ decto		decimal to bin or hex
  ====================================
  exit	exiting from the program
  clear	clear the screen
