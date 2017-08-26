@@ -5,6 +5,11 @@ Get familiar with the TDD process through a strict Coding Dojo practice.
 - Functions
 - Unit Testing
 
+## Schedule
+- Talk about red-green-refactoring
+- Do the first exercise together with mentor guidance
+- Make pairs
+
 ![red-green-refactor](red_green_refactor.jpg)
 
 ## Red - Green - Refactor
@@ -22,8 +27,21 @@ Create a function that takes a list and a value, and returns the index of that v
 ### Anagram
 Create a function that takes two strings, and returns a boolean that should be `True` if the strings are anagrams and `False` otherwise.
 
-### FizzBuzz
-Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+### Number converter
+It occurs now and then in real life that people want to write about
+money, especially about a certain amount of money. If it comes to
+cheques or contracts for example some nations have laws that state that
+you should write out the amount in words additionally to the amount in
+numbers to avoid fraud and mistakes. So if you want to transfer 745 \$
+to someone via cheque you have to fill out to fields:
+
+745.00 \$ (amount in numbers)
+
+seven hundred and fourty five dollars (amount in words)
+
+ -  The Kata is now to write a little converter class or function (depends
+on your favourite language and flavour) to convert numbers into words.
+ -  Convert it back.
 
 ### Potter
 Once upon a time there was a series of 5 books about a very English hero called Harry. (At least when this Kata was invented, there were only 5. Since then they have multiplied) Children all over the world thought he was fantastic, and, of course, so did the publisher. So in a gesture of immense generosity to mankind, (and to increase sales) they set up the following pricing model to take advantage of Harry's magical powers.
@@ -36,11 +54,11 @@ Potter mania is sweeping the country and parents of teenagers everywhere are que
 
 For example, how much does this basket of books cost?
 
- - 2 copies of the first book
- - 2 copies of the second book
- - 2 copies of the third book
- - 1 copy of the fourth book
- - 1 copy of the fifth book
+ -  2 copies of the first book
+ -  2 copies of the second book
+ -  2 copies of the third book
+ -  1 copy of the fourth book
+ -  1 copy of the fifth book
 (answer: 51.20 EUR)
 
 #### Clues

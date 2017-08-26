@@ -1,9 +1,10 @@
 # Green Fox Academy Teaching Materials
 A mono-repository for all learning materials for Green Fox Academy courses.
 
-## Modules
-One to few week long modules designed for full time participation in various topics.
+## Reporting issues
+If you find a logical, spelling mistake or anything confusing in the material, please [open an issue](issues) and describe the problem.
 
- - [Introduction to tools and coding](tools-and-coding)
-   *One week long module to get experience using some basic tools and languages.*
-
+Make sure you:
+ - Add enough context why the problem exists
+ - Link to the problematic material
+ - Add some detail what you would expected

@@ -21,7 +21,8 @@ Learn your second programming language, get used to the new syntax of JavaScript
 | [JavaScript Tutorial For Beginners #15 - Logical Operators](https://www.youtube.com/watch?v=mbT7sSmVUS8) | 6:01 |
 | [JavaScript Tutorial For Beginners #16 - While Loops](https://www.youtube.com/watch?v=PpbFyLTtpWI) | 4:09 |
 | [JavaScript Tutorial For Beginners #17 - For Loops](https://www.youtube.com/watch?v=U87UmD-5h4o) | 7:49 |
-| [JavaScript Tutorial For Beginners 19 - Practical Example using Loops](https://www.youtube.com/watch?v=eZBTLsv2ktM) | 4:02 |
+| [JavaScript Tutorial For Beginners #18 - Break & Continue](https://www.youtube.com/watch?v=QSuTH0C_3_Y) | 4:13 |
+| [JavaScript Tutorial For Beginners #19 - Practical Example using Loops](https://www.youtube.com/watch?v=eZBTLsv2ktM) | 4:02 |
 | [JavaScript Tutorial For Beginners #22 - Numbers](https://www.youtube.com/watch?v=TD3Pfuxgnuc) | 6:09 |
 | [JavaScript Tutorial For Beginners - NaN (Not a Number)](https://www.youtube.com/watch?v=0ZiltZDg9Gg) | 6:34 |
 | [JavaScript Tutorial For Beginners #24 - Strings](https://www.youtube.com/watch?v=k8MIbEVXhE0) | 9:37 |
@@ -57,6 +58,12 @@ Learn your second programming language, get used to the new syntax of JavaScript
    - `for`
    - `break`
    - `continue`
+
+## Bookmark
+
+We recommend you to bookmark this online tool: http://pythontutor.com/
+
+It helps you to visualize code execution.
 
 ## Workshop
 
@@ -266,7 +273,7 @@ console.log(f); // Prints 13
 
 var g = 12;
 g--;
-console.log(g); // Prints 13
+console.log(g); // Prints 11
 
 var h = 10;
 console.log(h); // Prints 10

@@ -64,6 +64,12 @@ Get into *real* programming, installing a development environment and then runni
  -  `int()`
  -  `float()`
 
+## Bookmark
+
+We recommend you to bookmark this online tool: http://pythontutor.com/
+
+It helps you to visualize code execution.
+
 ## Workshop
 
 💪 : If you see this emoji, it means that you can skip the exercise if you are in lack of time. You can pracitce with these exercises later to deepen your knowledge (or to prepare for the exam).
