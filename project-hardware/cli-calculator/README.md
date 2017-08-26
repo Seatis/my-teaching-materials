@@ -22,6 +22,12 @@ This is a quite long project, at first read the whole specification. Try to figu
 - [power](https://en.wikipedia.org/wiki/Exponentiation)
 - [extracting the root (square root)](#)
 - [logarithm](https://en.wikipedia.org/wiki/Logarithm)
+- [hex to bin converter](#)
+- [bin to hex converter](#)
+- [dec to bin converter](#)
+- [bin to dec converter](#)
+- [hex to dec converter](#)
+- [dec to hex converter](#)
 - [error handling](#)
 
 ### Advanced tasks
@@ -45,6 +51,9 @@ Commands:
  ^		squaring
  <		square root
  log	logarithm
+ binto	binary to hex or dec
+ hexto	hexadecimal to bin or dec
+ decto	decimal to bin or hex
  ====================================
  exit	exiting from the program
  clear	clear the screen
@@ -116,6 +125,19 @@ For example the content is:
 ```
 3 % 2 = 1
 
+```
+
+### binto, hexto, decto
+```
+0110 binto 10 = 6
+```
+or
+```
+aa hexto 10 = 170
+```
+or
+```
+13 decto 2 = 1101
 ```
 
 ### error handling
