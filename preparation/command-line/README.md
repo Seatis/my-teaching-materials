@@ -2,7 +2,7 @@
 
 Nowdays most of the people thinks noone use CLI, except the hackers in movies.
 http://hackertyper.com/
-But the truth is, they are underrestimate this hidden power...
+But the truth is, they underrestimate this hidden power...
 
 ## Monday
 | Title             | Duration |
@@ -53,3 +53,16 @@ But the truth is, they are underrestimate this hidden power...
 | [Windows](https://www.howtogeek.com/168896/10-useful-windows-commands-you-should-know/) | reading 6 mins |
 | [#Bonus We can browse on the web in command line](https://www.howtogeek.com/103574/how-to-browse-from-the-linux-terminal-with-w3m/) | reading 4 mins |
 
+
+## Self Assesment
+We believe being able to assess how well You know something and what is left for You to learn is the foundation of being good in any profession. And this is especially true for software development, where we need to constantly keep up with new technologies and concepts. Also, this is a prerequisite for self driven learning. Here are some questions to help You get a gauge on how well You know this part:
+  - What is Your current typing speed?
+    - How does this compare to an avarage coder's?
+  - Do You feel awkward typing some things? (e.g.: special characters like '$' or punctuation like ';') Which ones?
+  - If You don't know how to operate a given command, how woould You find out?
+    - What if You don't have access to the internet?
+  - What is the relative path of a folder where You are standing right now in CLI?
+    - What is the absolute path of it?
+      - If You don't know that by heart, how could You find out? (Can You name 2 different solutions to this?)
+  - Let's say, You want to gather all the doc files from the three levels of folders beneath where You are into a single folder. How would You do that?
+  - If You wanted to gather all doc files from beneath the folder You are at - not just three levels, but everything - how would You do that?
