@@ -14,6 +14,7 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 | [JavaScript Tutorial For Beginners #24 - Strings](https://www.youtube.com/watch?v=k8MIbEVXhE0) | 9:37 |
 | [JavaScript Tutorial For Beginners #25 - Slice and Split Strings](https://www.youtube.com/watch?v=HEdikBHsMag) | 6:38 |
 | [Insertion sort](https://www.youtube.com/watch?v=DFG-XuyPYUQ) | 9:04 |
+| [Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 #### Reading
 
@@ -73,6 +74,13 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/ob
     - keys
     - values
     - hasOwnProperty
+- Hash Tables
+  - hash function
+  - hash table
+  - collision
+    - clustering
+    - separate chaining
+- Insertion Sort
 
 
 ## Workshop
@@ -118,7 +126,7 @@ Objects are "container" like structures for storing various kinds of data in a s
 
 
 ### Sorting
- 
+
  - [Vacation fixer](sorting/vacation.py)
 
 
@@ -134,7 +142,7 @@ Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javas
 - Are there unnecessary empty blocks?
 - Can you spot unused variables?
 - Is the commit message meaningful?
-- Can iterating over lists and arrays simplifed? 
+- Can iterating over lists and arrays simplifed?
 - Are the names of things following the styleguide?
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
