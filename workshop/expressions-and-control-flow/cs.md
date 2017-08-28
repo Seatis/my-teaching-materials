@@ -4,14 +4,11 @@ Get into *real* programming, installing a development environment and then runni
 ## Materials
 | Material | Time |
 |:---------|-----:|
-|[Historic background leading to Java (Guru-01)](https://www.youtube.com/watch?v=2Xa3Y4xz8_s)| 6:01|
-|[Installing Java & IntelliJ IDEA (Koets)](https://www.youtube.com/watch?v=qscQ3XT6qu4)| 15:58|
-|[Basic Syntax](https://www.youtube.com/watch?v=SSEpAsKqRqA)|10:35|
-|[Strings & Scanner Input](https://www.youtube.com/watch?v=aNm8DK_1ApU)|14:43|
-|[Boolean Operators & IF Statement](https://www.youtube.com/watch?v=6O_lwNnWFR0)|10:29|
-|[Else/Else If Statements & AND/OR Operators](https://www.youtube.com/watch?v=3J4jCSXA1Pw)|14:22|
-|[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
+|[title](url)| length|
+|TODO| length|
 |[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
+|[Big-O notation in 5 minutes](https://www.youtube.com/watch?v=__vX2sjlpXU)|5:12|
+
 
 ## Optional materials
 | Material | Time |
@@ -19,16 +16,14 @@ Get into *real* programming, installing a development environment and then runni
 |[Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA)|10:06|
 |[Algorithms: Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)|9:05|
 
+
 ### Environment
- -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
- -  if *jre* (Java Runtime Environment) didn't download, get that too
- -  download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
- -  activate IntelliJ IDEA following [this activation guide](intellij-activation.md)
+ -  TODO
 
 
 ## Material Review
- -  Java
- -  IntelliJ IDEA
+ -  C#
+ -  Visual Studio
  -  statement
  -  variables
      -  declaration
@@ -59,48 +54,60 @@ Get into *real* programming, installing a development environment and then runni
      -  `&&`
      -  `!`
  -  difference between variable declaration and statements
- -  `System.out.println()`
+ -  `Console.WriteLine("");`
  -  Hello World
  -  escape character
- -  `"Java's stuff"` and `'stuff of Java'`
  -  concatenation
  -  condition, `if`, `else`
- -  loops: `for`, `while`
+ -  loops: `for`, `while`, `do while`
  -  block
- -  scanner
-     -  `System.in`
-     -  `nextLine()`
-     -  `nextInt()`
+ -  big O notation
+    -   What is a cost?
+    -   O(1)
+    -   O(N)
+    -   O(N²)
+    -   O(2ᴺ)
+    -   O(log N)
+ -  Console input
+     -  `System`
+     -  `Console.ReadLine()`
 
-## Bookmark
+Optional materials:
+- bitwise operators
+    - `&`
+    - `|`
+    - `>>`
+    - `<<`
+    - `~`
+    - `^`
+    - logical vs arithmetical shifting
 
-We recommend you to bookmark this online tool: http://pythontutor.com/
-
-It helps you to visualize code execution.
 
 ## Workshop
-
-💪: If you see this emoji, it means that you can skip the exercise if you are
-in lack of time. You can practice with these exercises later to deepen your
-knowledge (or to prepare for the exam).
 
 ### Printing to the terminal window
 
 #### Hello World
 
-```java
-public class HelloWorld {
-  public static void main(String[] args) {
-    // Prints "Hello, World!" to the terminal window.
-    System.out.println("Hello, World!");
-  }
+```csharp
+using System;
+
+namespace HelloWorld
+{
+    class HelloWorld
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }
 ```
 
 #### Exercises
- -  [01 - HelloMe](hello-me/HelloMe.java)
- -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.java)
- -  [03 - HelloOthers](hello-others/HelloOthers.java)
+ -  [01](hello-me/HelloMe.cs)
+ -  [02](hello-others/HelloOthers.java)
+ -  [03](humpty-dumpty/HumptyDumpty.java)
 
 ### Types
 
@@ -230,9 +237,9 @@ public class Strings {
 ```
 
 #### Exercises
- -  [04 - IntroduceYourself](introduce-yourself/IntroduceYourself.java)
- -  [05 - TwoNumbers](two-numbers/TwoNumbers.java)
- -  [06 - CodingHours](coding-hours/CodingHours.java)
+ -  [04](introduce-yourself/IntroduceYourself.java)
+ -  [05](two-numbers/TwoNumbers.java)
+ -  [06](coding-hours/CodingHours.java)
 
 ### Variables
 
@@ -323,13 +330,13 @@ public class Variables {
 ```
 
 #### Exercises
- -  [07 - FavoriteNumber](favorite-number/FavoriteNumber.java)
- -  [08 - Swap](swap/Swap.java)
- -  [09 - Bmi 💪](bmi/Bmi.java)
- -  [10 - DefineBasicInfo](define-basic-info/DefineBasicInfo.java)
- -  [11 - VariableMutation](variable-mutation/VariableMutation.java)
- -  [12 - Cuboid 💪](cuboid/Cuboid.java)
- -  [13 - SecondsInADay](seconds-in-a-day/SecondsInADay.java)
+ -  [07](favorite-number/FavoriteNumber.java)
+ -  [08](define-basic-info/DefineBasicInfo.java)
+ -  [09](bmi/Bmi.java)
+ -  [10](cuboid/Cuboid.java)
+ -  [11](seconds-in-a-day/SecondsInADay.java)
+ -  [12](swap/Swap.java)
+ -  [13](variable-mutation/VariableMutation.java)
 
 ### User input (scanner)
 
@@ -357,10 +364,10 @@ public class UserInput {
 }
 ```
 #### Exercises
- -  [14 - HelloUser](hello-user/HelloUser.java)
- -  [15 - MileToKmConverter](mile-to-km-converter/MileToKmConverter.java)
- -  [16 - AnimalsAndLegs 💪](animals-and-legs/AnimalsAndLegs.java)
- -  [17 - AverageOfInput 💪](average-of-input/AverageOfInput.java)
+ -  [14](hello-user/HelloUser.java)
+ -  [15](mile-to-km-converter/MileToKmConverter.java)
+ -  [16](animals-and-legs/AnimalsAndLegs.java)
+ -  [17](average-of-input/AverageOfInput.java)
 
 ### Conditionals
 
@@ -413,11 +420,11 @@ public class Conditionals {
 ```
 
 #### Exercises
- -  [18 - OddEven](odd-even/OddEven.java)
- -  [19 - OneTwoALot](one-two-a-lot/OneTwoALot.java)
- -  [20 - PrintBigger 💪](print-bigger/PrintBigger.java)
- -  [21 - PartyIndicator](party-indicator/PartyIndicator.java)
- -  [22 - ConditionalVariableMutation 💪](conditional-variable-mutation/ConditionalVariableMutation.java)
+ -  [18](odd-even/OddEven.java)
+ -  [19](one-two-a-lot/OneTwoALot.java)
+ -  [20](print-bigger/PrintBigger.java)
+ -  [21](party-indicator/PartyIndicator.java)
+ -  [22](conditional-variable-mutation/ConditionalVariableMutation.java)
 
 ### Loops
 
@@ -438,19 +445,19 @@ public class Conditionals {
 ```
 
 #### Exercises
- -  [23 - IWontCheatOnTheExams](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
- -  [24 - PrintEven](print-even/PrintEven.java)
- -  [25 - MultiplicationTable](multiplication-table/MultiplicationTable.java)
- -  [26 - CountFromTo](count-from-to/CountFromTo.java)
- -  [27 - FizzBuzz](fizz-buzz/FizzBuzz.java)
- -  [28 - DrawTriangle](draw-triangle/DrawTriangle.java)
- -  [29 - DrawPyramid 💪](draw-pyramid/DrawPyramid.java)
- -  [30 - DrawDiamond 💪](draw-diamond/DrawDiamond.java)
- -  [31 - DrawSquare 💪](draw-square/DrawSquare.java)
- -  [32 - DrawDiagonal](draw-diagonal/DrawDiagonal.java)
- -  [33 - GuessTheNumber](guess-the-number/GuessTheNumber.java)
- -  [34 - ParametricAverage 💪](parametric-average/ParametricAverage.java)
- -  [35 - DrawChessTable](draw-chess-table/DrawChessTable.java)
+ -  [23](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
+ -  [24](print-even/PrintEven.java)
+ -  [25](count-from-to/CountFromTo.java)
+ -  [26](multiplication-table/MultiplicationTable.java)
+ -  [27](draw-triangle/DrawTriangle.java)
+ -  [28](draw-pyramid/DrawPyramid.java)
+ -  [29](draw-diamond/DrawDiamond.java)
+ -  [30](draw-square/DrawSquare.java)
+ -  [31](draw-diagonal/DrawDiagonal.java)
+ -  [32](fizz-buzz/FizzBuzz.java)
+ -  [33](guess-the-number/GuessTheNumber.java)
+ -  [34](parametric-average/ParametricAverage.java)
+ -  [35](draw-chess-table/DrawChessTable.java)
 
 
 ## Individual Workshop Review
