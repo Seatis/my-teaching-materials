@@ -17,8 +17,13 @@ Focus on text styling, basic layout and header image.
  - Register to [Github](https://github.com/)
 
 ## Workshop
-__Build a simple medium article.__
-https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp
+
+TODO: create a sample website as simple as: http://sophieadams.me/
+
+ - Write a basic txt file on how the computer works with paragraphs
+ - Leave a placeholder for each block empty
+ - Task is to figure out what the block is about
+ - Follow the design
 
 Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p
 
