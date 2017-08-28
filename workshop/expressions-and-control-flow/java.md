@@ -11,6 +11,14 @@ Get into *real* programming, installing a development environment and then runni
 |[Boolean Operators & IF Statement](https://www.youtube.com/watch?v=6O_lwNnWFR0)|10:29|
 |[Else/Else If Statements & AND/OR Operators](https://www.youtube.com/watch?v=3J4jCSXA1Pw)|14:22|
 |[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
+|[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
+|[Big-O notation in 5 minutes](https://www.youtube.com/watch?v=__vX2sjlpXU)|5:12|
+
+## Optional materials
+| Material | Time |
+|:---------|-----:|
+|[Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA)|10:06|
+|[Algorithms: Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)|9:05|
 
 ### Environment
  -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
@@ -60,10 +68,21 @@ Get into *real* programming, installing a development environment and then runni
  -  condition, `if`, `else`
  -  loops: `for`, `while`
  -  block
+ -	big O notation
  -  scanner
      -  `System.in`
      -  `nextLine()`
      -  `nextInt()`
+
+Optional materials:
+- bitwise operators
+	- `&`
+	- `|`
+	- `>>`
+	- `<<`
+	- `~`
+	- `^`
+	- logical vs arithmetical shifting
 
 ## Bookmark
 
