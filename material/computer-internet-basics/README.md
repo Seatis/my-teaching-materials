@@ -5,6 +5,15 @@ How does the computer work on a basic level? How does multiple computer work tog
  - Get to know the underlying platform we all use
 
 ## Training
+### Computer
+| Material | Time |
+|:---------|-----:|
+| [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
+| [Lecture 2: Hardware, Continued - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=-i23I4SMiVM) | 1:46:23 |
+| [Computer, Button](https://www.youtube.com/watch?v=8d4RtvMQp10) | 1:34 |
+| [Lecture 9: Programming - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=cZYnPHeRa4Q) | 1:45:37 |
+| [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
+
 ### Internet
 | Material | Time |
 |:---------|-----:|
@@ -16,16 +25,10 @@ How does the computer work on a basic level? How does multiple computer work tog
 | [The Internet: Cybersecurity and crime](https://www.youtube.com/watch?v=5k24We8pED8) | 5:01 |
 | [How the DNS works?](https://www.youtube.com/watch?v=2ZUxoi7YNgs) | 2:26 |
 
-### Computer
-| Material | Time |
-|:---------|-----:|
-| [Lecture 1: Hardware - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=JLrK_NNekh0) | 1:41:16 |
-| [Lecture 2: Hardware, Continued - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=-i23I4SMiVM) | 1:46:23 |
-| [Computer, Button](https://www.youtube.com/watch?v=8d4RtvMQp10) | 1:34 |
-| [Lecture 9: Programming - CSCI E-1 2010 - Harvard Extension School](https://www.youtube.com/watch?v=cZYnPHeRa4Q) | 1:45:37 |
-| [How a CPU Works](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20:41 |
-
 # Material Review
+
+Todo: add subheadlines for topics
+
 ## Internet
  - Bit, Byte, MegaBit, MegaByte, KiloByte
  - Yip, Yip, Yip!
@@ -35,15 +38,19 @@ How does the computer work on a basic level? How does multiple computer work tog
  - IP (IPv4, IPv6, bits, layout)
  - IP address
  - DNS
+
+### Data
  - Packet
  - Router
  - Fault tolerant, Redundancy
  - TCP
  - URL
  - HTTP
+ - HTTPS
  - HTTP methods
  - HTML
- - HTTPS
+
+### Security
  - Public Key
  - Private Key
  - SSL
@@ -78,5 +85,4 @@ How does the computer work on a basic level? How does multiple computer work tog
  - ALU
  - Register
  - BUS
-
  
