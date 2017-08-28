@@ -11,6 +11,16 @@ Recap these videos, they might come handy again.
 | [Python Programming Tutorial - 5 - Lists](https://www.youtube.com/watch?v=1yUn-ydsgKk) | 7:43 |
 | [Python Programming Tutorial - 20 - Dictionary](https://www.youtube.com/watch?v=BSNFRKG1MfE) | 5:23 |
 | [Insertion sort](https://www.youtube.com/watch?v=DFG-XuyPYUQ) | 9:04 |
+| [Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
+
+## Material Review
+- Hash Tables
+  - hash function
+  - hash table
+  - collision
+    - clustering
+    - separate chaining
+- Insertion Sort
 
 ## Workshop
 
@@ -46,7 +56,7 @@ Let's play more with list manipulation
 
 ### Dictonaries
 
-Dictonaries are "dumb" structures for storing various kinds of data in a single structure. 
+Dictonaries are "dumb" structures for storing various kinds of data in a single structure.
 
  -  [01](hashes/student-counter/student-counter.py)
  -  [02](hashes/student-filter/student-filter.py)
@@ -55,7 +65,7 @@ Dictonaries are "dumb" structures for storing various kinds of data in a single 
  -  [05](hashes/table-printer/table-printer.py)
 
 ### Sorting
- 
+
  - [Vacation fixer](sorting/vacation.py)
 
 ## Individual Workshop Review
@@ -70,7 +80,7 @@ Please follow the styleguide: [Our Python styleguide](../../styleguide/python.md
 - Are there unnecessary empty blocks?
 - Can you spot unused variables?
 - Is the commit message meaningful?
-- Can iterating over lists and arrays simplifed? 
+- Can iterating over lists and arrays simplifed?
 - Are the names of things following the styleguide?
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
