@@ -38,13 +38,13 @@ This is a quite long project, at first read the whole specification. Try to figu
 ====================================
 usage: [number] [operation] [number]
 Commands:
- +		summation
- -		subtraction
- *		multiplication
- /		division
- % 		division with remainder
- ^		squaring
- <		square root
+ +	summation
+ -	subtraction
+ *	multiplication
+ /	division
+ %	division with remainder
+ ^	squaring
+ <	square root
  log	logarithm
  binto	binary to hex or dec
  hexto	hexadecimal to bin or dec
