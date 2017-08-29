@@ -11,8 +11,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |[ArrayLists with types (Fudge.14)](https://www.youtube.com/watch?v=FhqdMFJbsxs) __until 11:42 only!!!__|11:42|
 |[Java HashMap Example](https://www.youtube.com/watch?v=J-klDVEtwkM)|3:21|
 |[Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
-|[Insertion sort](https://www.youtube.com/watch?v=DFG-XuyPYUQ) | 9:04 |
-
 
 
 ## Material Review
@@ -104,7 +102,3 @@ Maps are key-value pairs. If you think of it, the list or array is also a map, j
 
 - [01](strings/hewillnever/hewillnever.java)
 - [02](hashes/student-counter/student-counter.java)
-
-### Sorting
-
- - [Vacation fixer](sorting/Vacation.java)

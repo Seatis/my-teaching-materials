@@ -13,7 +13,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |:---------|-----:|
 | [JavaScript Tutorial For Beginners #24 - Strings](https://www.youtube.com/watch?v=k8MIbEVXhE0) | 9:37 |
 | [JavaScript Tutorial For Beginners #25 - Slice and Split Strings](https://www.youtube.com/watch?v=HEdikBHsMag) | 6:38 |
-| [Insertion sort](https://www.youtube.com/watch?v=DFG-XuyPYUQ) | 9:04 |
 | [Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 #### Reading
@@ -123,11 +122,6 @@ Objects are "container" like structures for storing various kinds of data in a s
  -  [03](hashes/bank-transfer/bank-transfer.js)
  -  [04](hashes/festival-entry/festival-entry.js)
  -  [05](hashes/table-printer/table-printer.js)
-
-
-### Sorting
-
- - [Vacation fixer](sorting/vacation.py)
 
 
 ## Individual Workshop Review
