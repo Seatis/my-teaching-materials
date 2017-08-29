@@ -5,7 +5,6 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 ## Materials & Resources
 | Material | Time |
 |:-------- |-----:|
-|[What is an Array?](https://www.youtube.com/watch?v=NptnmWvkbTw) *(It has some objects and stuff we haven't covered yet, but just focus on the idea here, not the specifics)*|7:08|
 |[Introduction to Arrays](https://www.youtube.com/watch?v=L06uGnF4IpY)|7:25|
 |[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
 |[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
@@ -13,13 +12,12 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 
 
 ### Optional
-If unclear only.
+Reading material only, if the above is still unclear.
 
 | Material | Time |
 |:-------- |-----:|
-|[Arrays & For Loop (LearningLad.29)](https://www.youtube.com/watch?v=UZOxpbtlVWg)|4:54|
-|[2 dimensional arrays (LearningLad.30)](https://www.youtube.com/watch?v=udHgmxK9oAI)|10:55|
-|[2 dimensional arrays, more (LearningLad.31)](https://www.youtube.com/watch?v=w40VcpGWHBM)|11:00|
+|[Arrays (official Oracle docs)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)|reading|
+|[Java methods (TutorialsPoint)](https://www.tutorialspoint.com/java/java_methods.htm)|reading|
 
 
 ## Material Review
@@ -39,8 +37,12 @@ If unclear only.
   - toString
   - copyOf
   - sort
-  - binarySearch
   - foreach statement
+- Debugging
+  - breakpoint
+  - step over
+  - watches
+  - evaluate expression
 
 
 ## Workshop
