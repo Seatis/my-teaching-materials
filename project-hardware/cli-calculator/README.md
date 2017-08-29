@@ -14,17 +14,17 @@
 This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a little bit of [help](#help).
 
 ### Basics (mandatory) tasks
-- [+](#plus)
-- [-](#minus)
-- [*](#mul)
-- [/](#div)
-- [%](#mod)
-- [^](#power)
-- [<](#square-root)
+- [+](#+)
+- [-](#-)
+- [*](#*)
+- [/](#/)
+- [%](#%)
+- [^](#^)
+- [<](#<)
 - [log](#logarithm)
-- [binto](#binary-converter)
-- [hexto](#hex-converter)
-- [decto](#dec-converter)
+- [binto](#binto)
+- [hexto](#binto)
+- [decto](#binto)
 - [error handling](#error-handling)
 
 ### Advanced tasks
@@ -122,6 +122,16 @@ For example the content is:
 
 ```
 
+### logarithm
+
+For example the content is:
+
+```
+2log8 = 3
+
+```
+
+
 ### binto, hexto, decto
 ```
 0110 binto 10 = 6
@@ -134,6 +144,7 @@ or
 ```
 13 decto 2 = 1101
 ```
+
 
 ### error handling
 
@@ -152,25 +163,7 @@ if you leave out spaces, or use an unknown operator, like @, you should get:
 Invalid command
 Hit enter to continue.
 ```
-
-
-### logarithm
-
-For example the content is:
-
-```
-2log8 = 3
-
-```
-
-### roots
-
-For example the content is:
-
-```
-2 < 9 = 3
-
-```
+---
 
 ### help
 positioning the console cursor in Windows:
