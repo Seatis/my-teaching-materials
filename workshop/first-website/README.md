@@ -97,6 +97,9 @@ Create a html file using your editor called `index.html` and open it in your bro
  - What semantic role do these paragraphs fill? Divide it into a few separate HTML tags
  - Try to figure out what HTML tags desribe the content the best
 
+#### Design
+ - Check out [the design](first-website-design) that you'll recreate
+
 #### Add in style
  - Create a `style.css` file and link it to your HTML
  - Keep on eye on paddings, margins, line heights, font-sizes
