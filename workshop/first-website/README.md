@@ -55,11 +55,13 @@ Start the [Web basics](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48
  - Stack Overflow: http://stackoverflow.com/
  - MDN: https://developer.mozilla.org/en-US/
 
+## First CA session
+
+Mentors perform cognitive apprenticeship sessions from time to time during the course. 
+
+This time they will show their way of [building something simple](workshop) from scratch.
+
 ## Workshop
-
-### Your first CA session
-
-Mentors will perform cognitive apprenticeship sessions from time to time. This time they will show their way of [building something simple](workshop).
 
 ### Start to plan your work
 
