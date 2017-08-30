@@ -14,6 +14,7 @@ Get into *real* programming, installing a development environment and then runni
 
 | Material | Time |
 |:---------|-----:|
+|[Declaring Variables](https://www.youtube.com/watch?v=jB3cWjnWpwc)|20:25|
 |[Console Input/Output](https://www.youtube.com/watch?v=wrl_OOgAjj0)|4:52|
 |[Boolean Operators and variables](https://www.youtube.com/watch?v=u0JPMd8KSaU)|9:23|
 |[If, Else and Else If Statements](https://www.youtube.com/watch?v=cIaMFKxxHj8)|5:44|
@@ -28,26 +29,23 @@ Get into *real* programming, installing a development environment and then runni
 |[Boolean Logic & Logic Gates](https://www.youtube.com/watch?v=gI-qXk7XojA)|10:06|
 |[Algorithms: Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)|9:05|
 
-### Environment
- -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
- -  if *jre* (Java Runtime Environment) didn't download, get that too
- -  download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
- -  activate IntelliJ IDEA following [this activation guide](intellij-activation.md)
-
-
 ## Material Review
- -  Java
- -  IntelliJ IDEA
- -  statement
+ -  C#
+ -  Visual Studio
  -  variables
      -  declaration
      -  giving value
      -  byte
      -  int
-     -  float
+     -  double
      -  boolean
      -  char
-     -  String
+     -  string
+ -  statements
+    - if
+    - else if
+    - else
+    - switch
  -  operators
      -  `+`
      -  `-`
