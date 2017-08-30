@@ -1,9 +1,9 @@
-# Arrays and pointers with functions
-*Learn how to use pointers and functions with pointers in C programs*
+# Pointers
+*Learn how to use pointers in C programs*
 
 ## Objectives
 - Know how to use pointers in C language
-- Understanding how functions and pointers work
+- Understand how functions and pointers work together
 
 ## Materials & Resources
 ### Environment
