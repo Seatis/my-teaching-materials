@@ -63,13 +63,6 @@ This time they will show their way of [building something simple](workshop) from
 
 ## Workshop
 
-### Start to plan your work
-
- - Write a basic txt file on how the computer works with paragraphs
- - Leave a placeholder for each block empty
- - Task is to figure out what the block is about
- - Follow the design
-
 ### Follow these steps
 
 #### Keep things tidy
