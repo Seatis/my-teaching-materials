@@ -86,7 +86,7 @@ Create a html file using your editor called `index.html` and open it in your bro
  - Write two sentences about yourself and place it under your name
 
 #### Make sure you have all these prepared
- - Navigation bar with links (more on this later)
+ - Navigation bar with links
  - Name
  - Title
  - Two short sentences
@@ -110,3 +110,5 @@ Create a html file using your editor called `index.html` and open it in your bro
 
 #### Use these definitions in the wiki section _(ding dong)_
  - Your task is to figure out what the title should be
+ - [Open the wiki] and try to guess the titles
+ - Copy these to your page
