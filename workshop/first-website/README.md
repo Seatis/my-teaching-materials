@@ -14,7 +14,7 @@ Focus on text styling (fonts, size, line height), basic layout and images.
 
 ## Material review
 
-Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p
+Start the [Web basics](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p) presentation.
 
 ### HTML
  - Doctype
@@ -22,6 +22,8 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
  - body
  - headings
  - anchors
+ - p
+ - strong
  - div
  - img
     - image formats
@@ -37,6 +39,7 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
  - selectors
  - color
  - box model
+ - block vs. inline
  - webfonts
  - units (px, %, em, rem)
  - font-size
@@ -48,32 +51,60 @@ Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzM
  - Download and install [Visual Studio Code](https://code.visualstudio.com/)
  - Download and install [Google Chrome](https://www.google.com/chrome)
 
+### Tools
+ - Stack Overflow: http://stackoverflow.com/
+ - MDN: https://developer.mozilla.org/en-US/
+
 ## Workshop
 
-TODO: create a sample website as simple as: http://sophieadams.me/
+### Your first CA session
+
+Mentors will perform cognitive apprenticeship sessions from time to time. This time they will show their way of [building something simple](workshop).
+
+### Start to plan your work
 
  - Write a basic txt file on how the computer works with paragraphs
  - Leave a placeholder for each block empty
  - Task is to figure out what the block is about
  - Follow the design
 
-### Tools
- - Stack Overflow: http://stackoverflow.com/
- - MDN: https://developer.mozilla.org/en-US/
+### Follow these steps
 
-### Steps
- - **Keep things tidy.**
-   Create a folder for all your Green Fox materials. Then within that, a folder for the first week, and within that a folder for the first day's assignment.
-   Check the recommended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it.
- - **Create your first page**
-   Create a html file using your editor called `index.html`, and open it in your browser.
- - **Start with the content.**
-   Copy-paste the headings and the first 3 paragraphs of text from [the article above](https://medium.com/galleys/how-she-got-there-3a64d89ba112#.8eknq2olp) to start with.
- - **Give it some structure.**
-   What semantic role do these paragraphs fill? Divide it into a few separate HTML tags.
- - **Add a header image.**
-   Download the image from the medium site, and save it next to your html file.
- - **Add in style.**
-   Create a style.css file and link it to your HTML.
-   How do you center content on the page?
-   Try adding a custom font via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather).
+#### Keep things tidy
+ - Create a folder for all your Green Fox materials. 
+ - Then within that, a folder for the first week
+    - within that a folder for the first day's assignment
+ - Check the recommended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it
+
+#### Create your first page
+Create a html file using your editor called `index.html` and open it in your browser.
+
+#### Start with the content
+ - Recreate the contents seen on the design, but use your own name
+ - Write two sentences about yourself and place it under your name
+
+#### Make sure you have all these prepared
+ - Navigation bar with links (more on this later)
+ - Name
+ - Title
+ - Two short sentences
+ - A separator (just three dashes)
+ - The wiki definitions
+
+#### Give it some structure
+ - What semantic role do these paragraphs fill? Divide it into a few separate HTML tags
+ - Try to figure out what HTML tags desribe the content the best
+
+#### Add in style
+ - Create a `style.css` file and link it to your HTML
+ - Keep on eye on paddings, margins, line heights, font-sizes
+ - The page should have a `10%` padding on the sides
+ - How do you center content on the page?
+ - Add a custom font for headers via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather)
+ - Base text font should be `consolas, courier`
+ - Header background color is `#333333`
+ - Link and subtitle color is `#ff0099`
+ - Download the [page background pattern](https://www.toptal.com/designers/subtlepatterns/topography/)
+
+#### Use these definitions in the wiki section _(ding dong)_
+ - Your task is to figure out what the title should be
