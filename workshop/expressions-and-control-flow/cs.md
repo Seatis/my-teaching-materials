@@ -14,11 +14,12 @@ Get into *real* programming, installing a development environment and then runni
 
 | Material | Time |
 |:---------|-----:|
-|[Basic Syntax](https://www.youtube.com/watch?v=SSEpAsKqRqA)|10:35|
-|[Console Input/Output](https://www.youtube.com/watch?v=gh32BnTo_mM)|6:34|
-|[Boolean Operators & IF Statement](https://www.youtube.com/watch?v=6O_lwNnWFR0)|10:29|
-|[Else/Else If Statements & AND/OR Operators](https://www.youtube.com/watch?v=3J4jCSXA1Pw)|14:22|
-|[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
+|[Console Input/Output](https://www.youtube.com/watch?v=wrl_OOgAjj0)|4:52|
+|[Boolean Operators and variables](https://www.youtube.com/watch?v=u0JPMd8KSaU)|9:23|
+|[If, Else and Else If Statements](https://www.youtube.com/watch?v=cIaMFKxxHj8)|5:44|
+|[Switch statement](https://www.youtube.com/watch?v=soKhwNYxs2I)|7:55|
+|[While and Do... While Loops](https://www.youtube.com/watch?v=A5P8sQSOWgI)|7:57|
+|[For Loop](https://www.youtube.com/watch?v=IuTDC7FkPRI)|8:42|
 |[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
 
 ## Optional materials
