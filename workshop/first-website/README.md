@@ -98,7 +98,7 @@ Create a html file using your editor called `index.html` and open it in your bro
  - Keep on eye on paddings, margins, line heights, font-sizes
  - The page should have a `10%` padding on the sides
  - How do you center content on the page?
- - Add a custom font for headers via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Lato|Merriweather)
+ - Add a custom font for headers via [Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Merriweather)
  - Base text font should be `consolas, courier`
  - Header background color is `#333333`
  - Link and subtitle color is `#ff0099`
