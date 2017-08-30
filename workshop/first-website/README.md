@@ -1,20 +1,52 @@
-# Getting Started
-Get a feel of basic HTML and CSS while recreating a simple and nice Medium article design.
-Focus on text styling, basic layout and header image.
+# First website workshop
+
+Get a feel of basic HTML and CSS while creating a simple personal landing page.
+
+Focus on text styling (fonts, size, line height), basic layout and images.
 
 ## Objectives
  - Using an editor
  - Understanding how the browser opens a page
  - Writing first HTML and CSS file
- - Basic HTML structure
- - CSS selector
+ - Practicing basic HTML structure
+ - Using CSS
  - Indentation and formatting
 
-## Materials & Resources
+## Material review
+
+Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p
+
+### HTML
+ - Doctype
+ - head
+ - body
+ - headings
+ - anchors
+ - div
+ - img
+    - image formats
+ - semantic tags
+ - article
+ - nav
+ - main
+
+### CSS
+ - properties
+ - values
+ - shorthand values
+ - selectors
+ - color
+ - box model
+ - webfonts
+ - units (px, %, em, rem)
+ - font-size
+ - line-height
+ - background
+ - background-image
+
 ### Environment
  - Download and install [Visual Studio Code](https://code.visualstudio.com/)
  - Download and install [Google Chrome](https://www.google.com/chrome)
- - Register to [Github](https://github.com/)
 
 ## Workshop
 
@@ -24,8 +56,6 @@ TODO: create a sample website as simple as: http://sophieadams.me/
  - Leave a placeholder for each block empty
  - Task is to figure out what the block is about
  - Follow the design
-
-Slides: https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48t3FmDc9-NapYVzMBxz5c_HR_5o/edit#slide=id.p
 
 ### Tools
  - Stack Overflow: http://stackoverflow.com/
