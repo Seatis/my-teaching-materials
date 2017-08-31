@@ -1,5 +1,6 @@
-# Workshop
-*A simple guide for facilitating*
+# First website
+
+*A simple guide for facilitating website creation*
 
 ## Goals
 The main goal of the workshop to show them how easy is to create something.
