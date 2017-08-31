@@ -8,7 +8,7 @@ How does the computer work on a basic level? How does multiple computer work tog
 
 ## Training
 
-This review depends on the [computers and basics](../preparation/computers-and-internet) materials sent out for month zero.
+This review depends on the [computers and basics](../../preparation/computers-and-internet) materials sent out for month zero.
 
 # Material Review
 
