@@ -22,6 +22,7 @@ Get into *real* programming, installing a development environment and then runni
 |[While and Do... While Loops](https://www.youtube.com/watch?v=A5P8sQSOWgI)|7:57|
 |[For Loop](https://www.youtube.com/watch?v=IuTDC7FkPRI)|8:42|
 |[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
+|[Operators](https://www.tutorialspoint.com/csharp/csharp_operators.htm)|Miscellaneous and Bitwise Operators are not needed |
 
 ## Optional materials
 | Material | Time |
@@ -32,6 +33,7 @@ Get into *real* programming, installing a development environment and then runni
 ## Material Review
  -  C#
  -  Visual Studio
+ -  basic syntax
  -  variables
      -  declaration
      -  giving value
@@ -52,11 +54,14 @@ Get into *real* programming, installing a development environment and then runni
      -  `*`
      -  `/`
      -  `%`
-     -  `=`
+     -  `++`
+     -  `--`
+     -  `!=`
      -  `+=`
      -  `-=`
      -  `*=`
      -  `/=`
+     -  `%=`
      -  `==`
      -  `>=`
      -  `<=`
@@ -66,24 +71,18 @@ Get into *real* programming, installing a development environment and then runni
      -  `&&`
      -  `!`
  -  difference between variable declaration and statements
- -  `System.out.println()`
+ -  `Console.WriteLine("Hello World");`
  -  Hello World
- -  escape character
- -  `"Java's stuff"` and `'stuff of Java'`
- -  concatenation
  -  condition, `if`, `else`
- -  loops: `for`, `while`
- -  block
- -  scanner
-     -  `System.in`
-     -  `nextLine()`
-     -  `nextInt()`
+ -  loops: `for`, `while`, `do while `
+ -  Console I/O
+     -  `using System`
+     -  `ReadLine()`
+     -  `ReadKey()`
+ - C# interactive
 
 ## Bookmark
 
-We recommend you to bookmark this online tool: http://pythontutor.com/
-
-It helps you to visualize code execution.
 
 ## Workshop
 
@@ -95,37 +94,50 @@ knowledge (or to prepare for the exam).
 
 #### Hello World
 
-```java
-public class HelloWorld {
-  public static void main(String[] args) {
-    // Prints "Hello, World!" to the terminal window.
-    System.out.println("Hello, World!");
-  }
+```c#
+using System;
+
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }
 ```
 
 #### Exercises
- -  [01 - HelloMe](hello-me/HelloMe.java)
- -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.java)
- -  [03 - HelloOthers](hello-others/HelloOthers.java)
+ -  [01 - HelloMe](hello-me/HelloMe.c)
+ -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.c)
+ -  [03 - HelloOthers](hello-others/HelloOthers.c)
 
 ### Types
 
 #### Print values with different types
 
-```java
-public class PrintValues {
-  public static void main(String[] args) {
-    // Prints a string to the terminal window.
-    System.out.println("Hello, World!");
+```c#
+using System;
 
-    // Prints an integer to the terminal window.
-    System.out.println(42);
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
 
-    // Prints a floating point number to the terminal window.
-    System.out.println(3.141592);
-  }
+            Console.WriteLine(42);
+
+            Console.Write(3.1415);
+
+            Console.Read();
+        }
+    }
 }
+
 ```
 
 #### Integers
