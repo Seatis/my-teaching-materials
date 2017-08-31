@@ -94,7 +94,7 @@ knowledge (or to prepare for the exam).
 
 #### Hello World
 
-```c#
+```csharp
 using System;
 
 namespace GreenFox
@@ -118,7 +118,7 @@ namespace GreenFox
 
 #### Print values with different types
 
-```c#
+```csharp
 using System;
 
 namespace GreenFox
@@ -142,41 +142,33 @@ namespace GreenFox
 
 #### Integers
 
-```java
-public class Integers {
-  public static void main(String[] args) {
-    // Positive, negative and zero
-    System.out.println(42); // Prints 42
-    System.out.println(-1); // Prints -1
-    System.out.println(0); // Prints 0
+```csharp
+using System;
 
-    // Maximum and minimum value
-    // A simple integer is represented in 4 bytes (32bit)
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
 
-    // Maximum value:  2 147 483 647
-    System.out.println(2147483647);
-    // Minimum value: -2 147 483 648
-    System.out.println(-2147483648);
+            Console.WriteLine(42);
 
-    System.out.println(2147483648); // Compilation error
-  }
-}
-```
+            Console.Write(3.1415);
 
-#### Floats
+            // Maximum and minimum value
+            // A simple integer is represented in 4 bytes (32bit)
 
-```java
-public class Floats {
-  public static void main(String[] args) {
-    // Positive, negative and zero
-    System.out.println(3.1415); // Prints 3.1415
-    System.out.println(-1.5); // Prints -1.5
-    System.out.println(0.0); // Prints 0.0
+            // Maximum value:  2 147 483 647
+            Console.WriteLine(2147483647);
 
-    // Leading and closing zero is not mandatory
-    System.out.println(.5); // Prints 0.5
-    System.out.println(5.); // Prints 5.0
-  }
+            // Minimum value: -2 147 483 648
+            Console.WriteLine(-2147483648);
+
+            Console.Read();
+        }
+    }
 }
 ```
 
