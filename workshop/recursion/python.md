@@ -66,8 +66,8 @@ print('5! is', factorial(5))
 ### workshop
 
  - [01 Counter](counter/counter.py)
- - [02 Numberadder](numberadder/numberadder.py)
- - [03 Sumdigit](sumdigit/sumdigit.py)
+ - [02 Numberadder](numberadder/number_adder.py)
+ - [03 Sumdigit](sumdigit/sum_digit.py)
  - [04 Power](power/power.py)
  - [05 Bunnies](bunnies/bunny1.py)
  - [06 Bunnies again](bunnies2/bunny2.py)

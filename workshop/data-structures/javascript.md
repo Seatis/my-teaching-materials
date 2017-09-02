@@ -81,25 +81,25 @@ As strategy to progress, pick one from each section as you go along with the exe
 
 Strings are basic data structures, they can be treated like lists / arrays.
 
- -  [01](strings/simplereplace/simplereplace.js)
+ -  [01](strings/simplereplace/simple-replace.js)
  -  [02](strings/reverse/reverse.js)
- -  [03](strings/urlfixer/urlfixer.js)
- -  [04](strings/takeslonger/takeslonger.js)
- -  [05](strings/todoprint/todoprint.js)
- -  [06](strings/hewillnever/hewillnever.js)
+ -  [03](strings/urlfixer/url-fixer.js)
+ -  [04](strings/takeslonger/takes-longer.js)
+ -  [05](strings/todoprint/todo-print.js)
+ -  [06](strings/hewillnever/he-will-never.js)
 
 
 ### Arrays
 
 Let's play more with array manipulation:
 
- -  [01](lists/solarsystem/solarsystem.js)
+ -  [01](lists/solarsystem/solar-system.js)
  -  [02](lists/matchmaking/matchmaking.js)
- -  [03](lists/appendletter/appendletter.js)
+ -  [03](lists/appendletter/append-letter.js)
  -  [04](lists/candyshop/candyshop.js)
- -  [05](lists/elementfinder/elementfinder.js)
- -  [06](lists/isinlist/isinlist.js)
- -  [07](lists/quoteswap/quoteswap.js)
+ -  [05](lists/elementfinder/element-finder.js)
+ -  [06](lists/isinlist/is-in-list.js)
+ -  [07](lists/quoteswap/quote-swap.js)
  -  [08](lists/calculator/calculator.js)
 
 
@@ -127,7 +127,7 @@ Please follow the styleguide: [Our JavaScript styleguide](../../styleguide/javas
 - Are there unnecessary empty blocks?
 - Can you spot unused variables?
 - Is the commit message meaningful?
-- Can iterating over lists and arrays simplifed? 
+- Can iterating over lists and arrays simplifed?
 - Are the names of things following the styleguide?
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
