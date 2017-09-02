@@ -49,6 +49,7 @@ Start the [Web basics](https://docs.google.com/presentation/d/1xzn3PqVKyysVTnL48
 
 ### Environment
  - Download and install [Visual Studio Code](https://code.visualstudio.com/)
+     - If you use hungarian keyboard layout, you might want to keep your sanity and change the default code running shortcut from `CTRL-ALT-B` to `CTRL-R` because the `}` symbol happens to be on the `B` key on hungarian layouts. To do this, go to `File -> Preferences -> Keyboard shortcuts` and search for `run code`.
  - Download and install [Google Chrome](https://www.google.com/chrome)
 
 ### Tools
