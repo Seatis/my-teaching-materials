@@ -1,0 +1,8 @@
+{
+  "cases": [
+    {
+      "ex_input" : [],
+      "ex_output" : ["^My favorite number is: [0-9]{1,}$"]
+    }
+  ]
+}

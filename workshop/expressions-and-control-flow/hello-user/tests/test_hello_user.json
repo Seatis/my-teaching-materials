@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "ex_input" : ["Apple"],
+      "ex_output" : ["^Hello, Apple!$"]
+    }
+    {
+      "ex_input" : ["Tom"],
+      "ex_output" : ["^Hello, Tom!$"]
+    }
+  ]
+}

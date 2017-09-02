@@ -1,6 +1,8 @@
 # Strings and ArrayLists
+
 Get familiar with Java String functions and a new data structure: Arraylist.
 
+Make sure you finish the sorting assignment, rewatch the video if needed.
 
 ## Materials & Resources
 | Material | Time |
@@ -8,6 +10,7 @@ Get familiar with Java String functions and a new data structure: Arraylist.
 |[String Methods](https://www.youtube.com/watch?v=Hb_IVskG_Ck)|11:39|
 |[ArrayLists with types (Fudge.14)](https://www.youtube.com/watch?v=FhqdMFJbsxs) __until 11:42 only!!!__|11:42|
 |[Java HashMap Example](https://www.youtube.com/watch?v=J-klDVEtwkM)|3:21|
+|[Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 
 ## Material Review
@@ -49,6 +52,13 @@ Get familiar with Java String functions and a new data structure: Arraylist.
   - `.put()`
   - `.get()`
 - Object
+- Hash Tables
+  - hash function
+  - hash table
+  - collision
+    - clustering
+    - separate chaining
+- Insertion Sort
 
 ## Workshop
 
@@ -92,8 +102,3 @@ Maps are key-value pairs. If you think of it, the list or array is also a map, j
 
 - [01](strings/hewillnever/HeWillNever.java)
 - [02](hashes/student-counter/StudentCounter.java)
-
-### Project
-
-If you're done with everything and understand everything so far, then go ahead to the week's project exercises
-- [Project](../project-exercises)

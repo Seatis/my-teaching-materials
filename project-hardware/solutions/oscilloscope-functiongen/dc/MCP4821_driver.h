@@ -1,0 +1,44 @@
+// Multiple inclusion guard
+#ifndef _MCP4821_DRIVER_H
+#define _MCP4821_DRIVER_H
+
+#include <stdint.h>
+
+#define SPI_MOSI_PORT		PORTB
+#define SPI_MOSI_PORT_POS	PORTB3
+#define SPI_MOSI_DDR		DDRB
+#define SPI_MOSI_DDR_POS	DDRB3
+
+#define SPI_SCK_PORT		PORTB
+#define SPI_SCK_PORT_POS	PORTB5
+#define SPI_SCK_DDR			DDRB
+#define SPI_SCK_DDR_POS		DDRB5
+
+#define SPI_SS_PORT			PORTB
+#define SPI_SS_PORT_POS		PORTB2
+#define SPI_SS_DDR			DDRB
+#define SPI_SS_DDR_POS		DDRB2
+
+#define SPI_CPOL		0		// Clock polarity
+#define SPI_CPHA		0		// Clock edge
+#define SPI_SPR			0b11	// Speed of SPI clock
+
+#define MCP4821_DATA_MAX	4095
+#define U_MAX	4.096
+#define U_MIN	0
+
+// The "data" member will be stored at first in the memory
+// The "shutdown" bit will come after that, and so on
+typedef struct {
+	uint16_t data: 12;
+	uint16_t shutdown: 1;
+	uint16_t gain: 1;
+	uint16_t dont_care: 1;
+	uint16_t start_zero: 1;
+} MCP4821_data_t;
+
+void MCP4821_init();
+void MCP4821_send_raw_data(uint16_t data);
+void MCP4821_send_data(MCP4821_data_t *data);
+
+#endif // _MCP4821_DRIVER_H

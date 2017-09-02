@@ -15,6 +15,8 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 | [Python Programming Tutorial - 18 - Unpacking Arguments](https://www.youtube.com/watch?v=DJ2HSCT6Z8w) | 4:16 |
 | [Python Programming Tutorial - 5 - Lists](https://www.youtube.com/watch?v=1yUn-ydsgKk) | 7:43 |
 | [Python Programming Tutorial - 20 - Dictionary](https://www.youtube.com/watch?v=BSNFRKG1MfE) | 5:23 |
+| [Python: Debugger](https://www.youtube.com/watch?v=ChuU3NlYRLQ) | 6:11 |
+| [Debugging your Python Applications with pdb](https://www.youtube.com/watch?v=bZZTeKPRSLQ) | 8:18 |
 
 ### Optional
 *If you've got time and/or want to dig deeper, consider the following:*

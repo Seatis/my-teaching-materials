@@ -22,7 +22,7 @@ All the aircrafts should be created with empty ammo store
 ### Methods:
 
 #### fight
-- It should use all the ammos (set it to 0) and it should return the damage it took
+- It should use all the ammos (set it to 0) and it should return the damage it deals
 - The damage is the multiplication of the base damage and the ammos
 
 #### refill
@@ -31,10 +31,10 @@ All the aircrafts should be created with empty ammo store
 - It should return the remaining ammo
 - Eg. Filling an empty F35 with `300` would completely fill the storage of the aircraft and would return the remaining `288`
 
-#### get_type
+#### getType
 - It should return it's type as a string
 
-#### get_status
+#### getStatus
 - It should return a string like: `Type F35, Ammo: 10, Base Damage: 50, All Damage: 500`
 
 ## Carrier
@@ -43,13 +43,13 @@ Create a class that represents an aircraft-carrier
 
 - The carrier should be able to store aircrafts
 - Each carrier should have a store of ammo represented as number
-- The inital ammo should be give by a parameter in it's constructor
-- It should store a health point as a number
+- The inital ammo should be given by a parameter in it's constructor
+- The carrier also has a health point given in it's constructor as well
 
 ### Methods:
 
 
-#### add_aircraft
+#### addAircraft
 - It should take a string as the type of the aircraft (`F16` / `F35`) and add a new aircraft to its store
 
 #### fill
@@ -60,10 +60,10 @@ Create a class that represents an aircraft-carrier
 #### fight
 - It should take another carrier as a refrence parameter and fire all the ammo from the aircrafts to it, than substract all the damage from it's health points
 
-#### get_status
+#### getStatus
 It should give back a string about it's and all of its aircrafts status like:
 ```
-Aircraft count: 4, Ammo Storage: 2300, Total damage: 2280
+HP: 5000, Aircraft count: 4, Ammo Storage: 2300, Total damage: 2280
 Aircrafts:
 Type F35, Ammo: 12, Base Damage: 50, All Damage: 600
 Type F35, Ammo: 12, Base Damage: 50, All Damage: 600

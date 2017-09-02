@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "ex_input": [2, 2],
+      "ex_output": ["The party is excellent!"]
+    },
+    {
+      "ex_input": [1, 20],
+      "ex_output": ["Quite cool party!"]
+    },
+    {
+      "ex_input": [5, 10],
+      "ex_output": ["Average party..."]
+    },
+    {
+      "ex_input": [0, 21],
+      "ex_output": ["Sausage party"]
+    },
+  ]
+}

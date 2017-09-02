@@ -64,7 +64,15 @@ Get into *real* programming, installing a development environment and then runni
  -  `int()`
  -  `float()`
 
+## Bookmark
+
+We recommend you to bookmark this online tool: http://pythontutor.com/
+
+It helps you to visualize code execution.
+
 ## Workshop
+
+💪 : If you see this emoji, it means that you can skip the exercise if you are in lack of time. You can pracitce with these exercises later to deepen your knowledge (or to prepare for the exam).
 
 ### Printing to the terminal window
 
@@ -76,9 +84,11 @@ print("Hello, World!")
 ```
 
 #### Exercises
- - [01](hello-me/hello_me.py)
- - [02](hello-others/hello_others.py)
- - [03](humpty-dumpty/humpty_dumpty.py)
+
+ - [01 hello_me](hello-me/hello_me.py)
+ - [02 humpty_dumpty](humpty-dumpty/humpty_dumpty.py)
+ - [03 hello_others](hello-others/hello_others.py)
+
 
 ### Types
 
@@ -172,9 +182,11 @@ print("My favorite number is: " + str(8)) # Prints My favorite number is: 8
 ```
 
 #### Exercises
- -  [04](introduce-yourself/introduce_yourself.py)
- -  [05](two-numbers/two_numbers.py)
- -  [06](coding-hours/coding_hours.py)
+
+ -  [04 intorduce_yourself](introduce-yourself/introduce_yourself.py)
+ -  [05 two_numbers](two-numbers/two_numbers.py)
+ -  [06 coding_hours](coding-hours/coding_hours.py)
+
 
 ### Variables
 
@@ -229,13 +241,15 @@ print(e) # Prints 5
 ```
 
 #### Exercises
- -  [07](favorite-number/favorite_number.py)
- -  [08](define-basic-info/define_basic_info.py)
- -  [09](bmi/bmi.py)
- -  [10](cuboid/cuboid.py)
- -  [11](seconds-in-a-day/seconds_in_a_day.py)
- -  [12](swap/swap.py)
- -  [13](variable-mutation/variable_mutation.py)
+
+ -  [07 favorite_number](favorite-number/favorite_number.py)
+ -  [08 swap](swap/swap.py)
+ -  [09 bmi 💪](bmi/bmi.py)
+ -  [10 define_basic_info](define-basic-info/define_basic_info.py)
+ -  [11 variable_mutation](variable-mutation/variable_mutation.py)
+ -  [12 cuboid 💪](cuboid/cuboid.py)
+ -  [13 seconds_in_a_day](seconds-in-a-day/seconds_in_a_day.py)
+
 
 ### User input (scanner)
 
@@ -254,10 +268,12 @@ print(user_input_3)
 ```
 
 #### Exercises
- -  [14](hello-user/hello_user.py)
- -  [15](mile-to-km-converter/mile_to_km_converter.py)
- -  [16](animals-and-legs/animals_and_legs.py)
- -  [17](average-of-input/average_of_input.py)
+
+ -  [14 hello_user](hello-user/hello_user.py)
+ -  [15 mile_to_km_converter](mile-to-km-converter/mile_to_km_converter.py)
+ -  [16 animals_and_legs 💪](animals-and-legs/animals_and_legs.py)
+ -  [17 average_of_input 💪](average-of-input/average_of_input.py)
+
 
 ### Conditionals
 
@@ -301,11 +317,13 @@ else:
 ```
 
 #### Exercises
- -  [18](odd-even/odd_even.py)
- -  [19](one-two-a-lot/one_two_a_lot.py)
- -  [20](print-bigger/print_bigger.py)
- -  [21](party-indicator/party_indicator.py)
- -  [22](conditional-variable-mutation/conditional_variable_mutation.py)
+
+ -  [18 odd_even](odd-even/odd_even.py)
+ -  [19 one_two_a_lot](one-two-a-lot/one_two_a_lot.py)
+ -  [20 print_bigger 💪](print-bigger/print_bigger.py)
+ -  [21 party_indicator](party-indicator/party_indicator.py)
+ -  [22 conditional_variable_mutation 💪](conditional-variable-mutation/conditional_variable_mutation.py)
+
 
 ### Loops
 
@@ -320,19 +338,21 @@ for i in range(0, 100):
 ```
 
 #### Exercises
- -  [23](i-wont-cheat-on-the-exams/i_wont_cheat_on_the_exams.py)
- -  [24](print-even/print_even.py)
- -  [25](count-from-to/count_from_to.py)
- -  [26](multiplication-table/multiplication_table.py)
- -  [27](draw-triangle/draw_triangle.py)
- -  [28](draw-pyramid/draw_pyramid.py)
- -  [29](draw-diamond/draw_diamond.py)
- -  [30](draw-square/draw_square.py)
- -  [31](draw-diagonal/draw_diagonal.py)
- -  [32](fizz-buzz/fizz_buzz.py)
- -  [33](guess-the-number/guess_the_number.py)
- -  [34](parametric-average/parametric_average.py)
- -  [35](draw-chess-table/draw_chess_table.py)
+
+ -  [23 i_wont_cheat_on_the_exams](i-wont-cheat-on-the-exams/i_wont_cheat_on_the_exams.py)
+ -  [24 print_even](print-even/print_even.py)
+ -  [25 multiplication_table](multiplication-table/multiplication_table.py)
+ -  [26 count_from_to](count-from-to/count_from_to.py)
+ -  [27 fizz_buzz](fizz-buzz/fizz_buzz.py)
+ -  [28 draw_triangle](draw-triangle/draw_triangle.py)
+ -  [29 draw_pyramid 💪](draw-pyramid/draw_pyramid.py)
+ -  [30 draw_diamond 💪](draw-diamond/draw_diamond.py)
+ -  [31 draw_square 💪](draw-square/draw_square.py)
+ -  [32 draw_diagonal](draw-diagonal/draw_diagonal.py)
+ -  [33 guess_the_number](guess-the-number/guess_the_number.py)
+ -  [34 parametric_average 💪](parametric-average/parametric_average.py)
+ -  [35 draw_chess_table](draw-chess-table/draw_chess_table.py)
+
 
 
 ## Individual Workshop Review

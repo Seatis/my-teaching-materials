@@ -192,12 +192,34 @@ The goal is to make a circle from each of the applications written by the Green 
 
 Make the main page pretty using bootsrap.
 Your page should look like this:
+
 ![pretty](assets/pretty.png)
 
 ## Optional Tasks
 
 ### Better looking enter page
 
+Make the enter page pretty using bootstrap.
+Your page should look like this:
+
+![pretty enter](assets/pretty-enter.png)
+- Feel free to add a specific header image for your enter page (and even your messages page)
+
 ### Auto refresh
 
+- Make your chat messages appearing every 5-10 seconds
+- Check out some javascript solution for auto refresh and copy it to your project
+
+### Auto refresh Vol 2
+
+- The refreshing every now and then is not the perfect solution, the page should refresh exactly when a new message arrives
+- In order to do that you need to have a direct connection between your server and every single browser that currently has the page open (aka client)
+- We can do that with websockets (this is exactly how web based chat applications work)
+- Check it out: https://spring.io/guides/gs/messaging-stomp-websocket/
+
 ### List of users
+
+Create a list on the main page that shows all the usernames that occured in
+the messages. All the usernames should be marked that has written a message less
+than 10 minutes ago.
+
