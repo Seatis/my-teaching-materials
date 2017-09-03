@@ -93,7 +93,7 @@ root.mainloop()
 - [14 Everything goes to center](function-to-center/function_to_center.py)
 
 -
-| [15 Line play](line-play/line-play.py) |
+| [15 Line play](line-play/line_play.py) |
 |:--------------:|
 | ![Line play](line-play/r1.png) |
 
