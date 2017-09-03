@@ -1,6 +1,6 @@
 # Week 1: Computers and the Internet
 
-Use the brief intro in the main readme of the preparation folder. Try to expand it to 2-4 sentences.
+How the computer actually works is important to understand at the fundamental level. We will also look at how multiple computers can communicate and form a network we know as the internet. 
 
 ## Self assessment
 
