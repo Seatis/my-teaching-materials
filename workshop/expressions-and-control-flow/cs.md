@@ -235,22 +235,32 @@ namespace GreenFox
 
 #### Strings
 
-```java
-public class Strings {
-  public static void main(String[] args) {
-    // String and special characters
-    System.out.println("apple"); // Prints apple
-    System.out.println("don't"); // Prints don't
-    System.out.println("\"Everything you can imagine is real.\" - Picasso"); // Prints "Everything you can imagine is real." - Picasso
+```csharp
+using System;
 
-    // String Operators
-    // Concatination
-    System.out.println("tooth" + "brush"); // Prints toothbrush
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // String and special characters
+            Console.WriteLine("hello");
+            Console.WriteLine("don't");
+            Console.WriteLine("She said, \"you deserva a treat\" ");
+            
+            // String Operators
+            // Concatination
+            Console.WriteLine("hand" + "some");
 
-    // Concat string with number
-    System.out.println("My favorite number is: " + 8); // Prints My favorite number is: 8
-  }
+            // Concat string with number
+            Console.WriteLine("My favourite number is: " + 8);
+
+            Console.Read();
+        }
+    }
 }
+
 ```
 
 #### Exercises
@@ -262,87 +272,106 @@ public class Strings {
 
 #### Creating different variables for each type
 
-```java
-public class Variables {
-  public static void main(String[] args) {
-    // String
-    String welcome = "Hello, World";
-    System.out.println(welcome);
+```csharp
+using System;
 
-    // Boolean
-    boolean isAwesome = true;
-    System.out.println(isAwesome);
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // String
+            string greeting = "Hello my friend";
+            var bye = "It was good to see you friend";
+            Console.WriteLine(greeting);
+            Console.WriteLine(bye);
 
-    // Whole number
-    // integer (32 bit; min: -2 147 483 648; max: 2 147 483 647)
-    int theMeaningOfLifeAndTheUniverseAndEverything = 42;
-    System.out.println(theMeaningOfLifeAndTheUniverseAndEverything);
+            // Boolean
+            bool running = true;
+            var working = false;
+            Console.WriteLine(running);
+            Console.WriteLine(working);
 
-    // Floating point number
-    // Double (64 bit, double precision IEEE 754)
-    double pi = 3.141592;
-    System.out.println(pi);
+            // Whole number
+            int a = 11;
+            var b = 12;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(a + b);
 
-    // Other mentioned types
-    byte b = 2;     // Byte (8 bit; min:-128; max: +127)
-    short s = 567;  // Short (16 bit; min: -32768 ; max: +32 767)
-    long l = 30000000000000L; // long (64 bit; min: -9 223 372 036 854 775 808 ;max: 9 223 372 036 854 775 807)
-    float f = 1.3f;
-    float f2 = 45f; // Float (32 bit single precision IEEE 754)
+            // Floating point number
+            double pi = 3.141592;
+            var e = 2.718;
+            Console.WriteLine(pi);
+            Console.WriteLine(e);
 
-    // Declaring a variable
-    int number;
+            // Declaring a variable
+            int number;
 
-    // Assigning a variable, (define its value)
-    number = 12;
+            // Assigning a variable, (define its value)
+            number = 12;
 
-    // Mutate a variable, (redefine its value)
-    number = 23;
-  }
+            // Mutate a variable, (redefine its value)
+            number = 23;
+
+            Console.Read();
+        }
+    }
 }
+
 ```
 
 #### Arithmetic Assignment Operators
 
-```java
-public class Variables {
-  public static void main(String[] args) {
-    int a = 12;
-    a += 4;
-    System.out.println(a); // Prints 16
+```csharp
+using System;
 
-    int b = 12;
-    b -= 4;
-    System.out.println(b); // Prints 8
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 12;
+            a += 4;
+            Console.WriteLine(a); // Prints 16
 
-    int c = 12;
-    System.out.println(c++); // Prints 12
-    System.out.println(c); // Prints 13
+            int b = 12;
+            b -= 4;
+            Console.WriteLine(b); // Prints 8
 
-    int d = 12;
-    System.out.println(++d); // Prints 13
-    System.out.println(d); // Prints 13
+            int c = 12;
+            Console.WriteLine(c++); // Prints 12
+            Console.WriteLine(c); // Prints 13
 
-    int e = 12;
-    System.out.println(e--); // Prints 12
-    System.out.println(e); // Prints 11
+            int d = 12;
+            Console.WriteLine(++d); // Prints 13
+            Console.WriteLine(d); // Prints 13
 
-    int f = 12;
-    System.out.println(--f); // Prints 11
-    System.out.println(f); // Prints 11
+            int e = 12;
+            Console.WriteLine(e--); // Prints 12
+            Console.WriteLine(e); // Prints 11
 
-    int g = 12;
-    g *= 3;
-    System.out.println(g); // Prints 36
+            int f = 12;
+            Console.WriteLine(--f); // Prints 11
+            Console.WriteLine(f); // Prints 11
 
-    int h = 12;
-    h /= 3;
-    System.out.println(h); // Prints 4
+            int g = 12;
+            g *= 3;
+            Console.WriteLine(g); // Prints 36
 
-    int i = 12;
-    i %= 7;
-    System.out.println(i); // Prints 5
-  }
+            int h = 12;
+            h /= 3;
+            Console.WriteLine(h); // Prints 4
+
+            int i = 12;
+            i %= 7;
+            Console.WriteLine(i); // Prints 5
+
+            Console.Read();
+        }
+    }
 }
 ```
 
@@ -357,27 +386,26 @@ public class Variables {
 
 ### User input (scanner)
 
-```java
-// Loads the scanner to the file
-import java.util.Scanner;
+```csharp
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello user what is your name?");
+            string name = Console.ReadLine();
 
-public class UserInput {
-  public static void main(String[] args) {
-    // Creates a scanner
-    Scanner scanner = new Scanner(System.in);
+            Console.WriteLine("Hello, " + name);
+            Console.WriteLine("How old are you? ");
 
-		// The program stops and waits for user input and to press enter
-		String userInput1 = scanner.nextLine();
+            string age = Console.ReadLine();
+            Console.WriteLine(age + " is a nice age");
 
-		// It prints the whole line that was given by the user
-		System.out.println(userInput1);
+            Console.Read();
 
-		// The program stops and waits for user input that is an integer and to press enter
-		int userInput2 = scanner.nextInt();
-
-		// It prints the integer
-		System.out.println(userInput2);
-  }
+        }
+    }
 }
 ```
 #### Exercises
@@ -388,52 +416,77 @@ public class UserInput {
 
 ### Conditionals
 
-```java
-public class Conditionals {
-  public static void main(String[] args) {
-    int a = 13;
+```csharp
+using System;
 
-    if (a == 13) {
-      System.out.println("Yaaay! The value of the \"a\" variable is 13"); // This block will run
-    }
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 13;
 
-    if (a == 8) {
-      System.out.println("Yaaay! The value of the \"a\" variable is 8"); // This block will NOT run
-    }
+            if (a == 13)
+            {
+                Console.WriteLine("Yaaay! The value of the \"a\" variable is 13"); // This block will run
+            }
 
-
-    int b = 20;
-
-    if (b < 10) {
-      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
-    } else {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
-    }
-
-
-    int c = 15;
-
-    if (c < 10) {
-      System.out.println("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
-    } else if (c < 20) {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
-    } else {
-      System.out.println("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run
-    }
+            if (a == 8)
+            {
+                Console.WriteLine("Yaaay! The value of the \"a\" variable is 8"); // This block will NOT run
+            }
 
 
-    boolean thirsty = true;
-    boolean hungry = false;
+            int b = 20;
 
-    if (thirsty && hungry) {
-      System.out.println("Lunch time!");
-    } else if (thirsty || hungry) {
-      System.out.println("Snack time!");
-    } else {
-      System.out.println("No food for you, little fatty.");
-    }
-  }
+            if (b < 10)
+            {
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+            }
+            else
+            {
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
+            }
+
+
+            int c = 15;
+
+            if (c < 10)
+            {
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+            }
+            else if (c < 20)
+            {
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10 but less then 20"); // This block will run
+            }
+            else
+            {
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run
+            }
+
+
+            bool thirsty = true;
+            bool hungry = false;
+
+            if (thirsty && hungry)
+            {
+                Console.WriteLine("Lunch time!");
+            }
+            else if (thirsty || hungry)
+            {
+                Console.WriteLine("Snack time!");
+            }
+            else
+            {
+                Console.WriteLine("No food for you, little fatty.");
+            }
+
+            Console.Read();
+        }
+    }    
 }
+
 ```
 
 #### Exercises
@@ -445,20 +498,41 @@ public class Conditionals {
 
 ### Loops
 
-```java
-public class Conditionals {
-  public static void main(String[] args) {
-    int a = 0;
-    while (a < 10) {
-      System.out.println(a); // Prints the numbers from 0 to 9
-      a += 1;
-    }
+```csharp
+using System;
 
-    for (int i = 0; i < 100; i++) {
-      System.out.println(i); // Prints the numbers from 0 to 99
-    }
-  }
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("while loop");
+            int a = 0;
+            while (a < 10)
+            {
+                Console.WriteLine(a++);
+            }
+
+            Console.WriteLine("\n\n do while loop:");
+            int b = 0;
+            do
+            {
+                Console.WriteLine(b++);
+            } while (b < 10);
+
+            Console.WriteLine("\n\n for loop:");
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.Read();
+        }
+    }    
 }
+
+
 ```
 
 #### Exercises
@@ -478,7 +552,7 @@ public class Conditionals {
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+Please follow the styleguide: [Our C# styleguide](#)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
