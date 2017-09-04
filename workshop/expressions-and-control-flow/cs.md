@@ -568,4 +568,3 @@ Please follow the styleguide: [Our C# styleguide](#)
     - variables: lowerCamelCase
 - Are all of the brackets in the perfect place?
 - Whitespaces, where they should be, where shouldn't?
-- Are your solutions optimized? What are their big O values?
