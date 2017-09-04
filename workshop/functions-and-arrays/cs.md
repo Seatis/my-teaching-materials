@@ -129,7 +129,7 @@ namespace Example
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+Please follow the styleguide: [Our C# styleguide](../../styleguide/cs.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
