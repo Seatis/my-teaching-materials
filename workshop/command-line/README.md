@@ -15,17 +15,15 @@ Introduction to version control systems and Git.
 
 ## Materials & Resources
 ### Environment
- - Install git on your system:
-  - Windows (*portable* is good however the *installed* version is better)
-    - Ensure you have the command-line, bash version also which you can find at
+ -  Install git on your system:
+    -  Windows (*portable* is good however the *installed* version is better)
+       -  Ensure you have the command-line, bash version also which you can find at
     http://cmder.net/ or https://git-scm.com/download/win
-  - Linux
-    - `sudo apt-get install git` (Ubuntu)
-    - `sudo yum install git` (Fedora)
-  - Mac
-    - http://git-scm.com/download/mac or `brew install git`
-
- - Windows users might enjoy [Total Commander](https://www.ghisler.com/)
+    -  Linux
+       -  `sudo apt-get install git` (Ubuntu)
+       -  `sudo yum install git` (Fedora)
+    -  Mac
+       -  http://git-scm.com/download/mac or `brew install git`
 
 ### Training
 | Material | Duration |
@@ -92,7 +90,7 @@ Introduction to version control systems and Git.
   - Create a css directory
   - Change into the images directory
   - Go back to the parent directory
-  - Create at least one file to every directory
+  - Create at least one file to every directory using the command line
 
 ---
   - Fork this git repository: https://github.com/greenfox-academy/git-lesson-repository.git
@@ -148,7 +146,7 @@ Introduction to version control systems and Git.
               - other_visible_directories
 
 ---
-  - change in to your githubusername directory
+  - change in to your `githubusername` directory
   - see the changes
   - set to staged
   - commit with a nice understandable commit message
@@ -157,7 +155,7 @@ Introduction to version control systems and Git.
       - ...create my working directory for greenfox lessons
       - ...create a new directory for task 1
       - ...
-  - change in to your week-02/day-1 directory
+  - change in to your `week-01/day-2` or `day-3` directory
   - create 5 directory and 5 file with content
   - see the changes
   - add these files as staged files
