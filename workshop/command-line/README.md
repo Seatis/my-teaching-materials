@@ -40,6 +40,7 @@ Introduction to version control systems and Git.
  - Try https://try.github.io/
  - GIT, the simple guide: http://rogerdudler.github.io/git-guide/
  - Bookmark: http://ohshitgit.com/
+ - Windows users might enjoy [Total Commander](https://www.ghisler.com/)
 
 ## Material Review
  - `cd`
