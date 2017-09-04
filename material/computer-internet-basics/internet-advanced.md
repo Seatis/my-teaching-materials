@@ -12,15 +12,22 @@ This review depends on the [computers and basics](../../preparation/computers-an
 
 # Material Review
 
-## Computer
-
-### [Computer basics](computer-basics.md)
-
-### [Computer advanced](computer-advanced.md)
-
-
 ## Internet
 
-### [Internet basics](internet-basics.md)
+### HTTP
+ - HTTP
+ - HTTPS
+ - HTTP methods
+ - HTTP status codes
+ - HTML
 
-### [Internet advanced](internet-advanced.md)
+### Security
+ - Public Key
+ - Private Key
+ - SSL
+ - Backdoor
+ - Bot Net
+ - DDoS
+ - Virus
+ - Phishing
+ - What is your password?

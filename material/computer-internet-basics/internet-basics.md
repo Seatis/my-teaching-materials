@@ -12,15 +12,22 @@ This review depends on the [computers and basics](../../preparation/computers-an
 
 # Material Review
 
-## Computer
-
-### [Computer basics](computer-basics.md)
-
-### [Computer advanced](computer-advanced.md)
-
-
 ## Internet
 
-### [Internet basics](internet-basics.md)
+### Fundamentals
+ - Yip, Yip, Yip!
+ - Internet
+ - IP (IPv4, IPv6, bits, layout)
+ - Domain names
+ - ISP
+ - DNS
+ - Protocol
 
-### [Internet advanced](internet-advanced.md)
+### Data transport
+ - How is data transmitted? (wire, air, wifi)
+ - TCP
+ - Packet
+ - [Tracing packets](http://www.monitis.com/traceroute/index.jsp?url=index.hu&testId=1808158)
+ - URL
+ - Router
+ - Fault tolerant, Redundancy

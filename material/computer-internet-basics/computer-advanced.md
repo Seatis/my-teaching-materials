@@ -14,13 +14,21 @@ This review depends on the [computers and basics](../../preparation/computers-an
 
 ## Computer
 
-### [Computer basics](computer-basics.md)
+### Instructions & memory
+ - Memory Address
+ - Instruction
+ - Instruction Set
+ - Jump
+ - Register
+ - BUS
+ - Input
+ - Output
 
-### [Computer advanced](computer-advanced.md)
-
-
-## Internet
-
-### [Internet basics](internet-basics.md)
-
-### [Internet advanced](internet-advanced.md)
+### Code
+ - [Programming languages](programming-language-comparison.png)
+    - Compiled vs. Interpreted
+    - Staticvs. Dynamic
+    - Imperative vs. Functional
+ - Source code
+ - Machine code
+ - Compiler
