@@ -67,10 +67,7 @@ This time they will show their way of [building something simple](workshop) from
 ### Follow these steps
 
 #### Keep things tidy
- - Create a folder for all your Green Fox materials. 
- - Then within that, a folder for the first week
-    - within that a folder for the first day's assignment
- - Check the recommended [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) and please follow it
+ - Create a folder for todays exercise and only create any file or folder inside that directory
 
 #### Create your first page
 Create a html file using your editor called `index.html` and open it in your browser.

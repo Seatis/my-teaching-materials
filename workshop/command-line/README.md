@@ -156,6 +156,11 @@ Introduction to version control systems and Git.
                               - contents created on your first day
                           - **day-3**
               - other_visible_directories
+      - create the folder structure for the first week and a days that passed
+        - you don't need a folder for the training day ;)
+      - you can revisit the [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) anytime in the definitions as well
+      - move the first day contents to `day-1`
+      - move the `first-task` folder to `day-2` or `day-3`
 
 #### Practice a little more
   - change in to your `githubusername` directory
