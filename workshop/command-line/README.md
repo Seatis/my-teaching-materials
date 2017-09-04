@@ -59,6 +59,10 @@ Introduction to version control systems and Git.
  - `grep`
  - `sed`
  - `git` `init`, `clone`, `add`, `rm`, `commit`, `push`, `pull`, `remote`, `fork`
+ - useful keyboard shortcuts
+    - ALT+tab, CTRL+tab, CTRL+1-9
+    - Command history (`up`, CTRL+r)
+    - how to exit the Vi editor
 
 ## Workshop
   - Try to work without using your mouse; only use it if there's no other way (try to force yourself to learn the keyboard shortcuts; this improves your productivity)
