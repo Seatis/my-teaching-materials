@@ -161,6 +161,14 @@ Introduction to version control systems and Git.
       - you can revisit the [folder structure](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md#folder-structure) anytime in the definitions as well
       - move the first day contents to `day-1`
       - move the `first-task` folder to `day-2` or `day-3`
+      - **repository folder inside repository folder won't work!**
+        - so don't move the `git-lesson-repository` inside this folder structure, that's a different repo
+        - or any other cloned folders
+        - the different repositories should be under the `greenfox` folder sitting next to each other:
+        - `greenfox`
+          - `githubusername`
+          - `git-lesson-repository`
+          - `patchwork`
 
 #### Practice a little more
   - change in to your `githubusername` directory
