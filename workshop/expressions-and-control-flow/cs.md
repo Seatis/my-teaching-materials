@@ -174,49 +174,62 @@ namespace GreenFox
 
 #### Number Operations
 
-```java
-public class NumberOperations {
-  public static void main(String[] args) {
-    // Arithmetric operations
-    System.out.println(1 + 1); // Prints 2
-    System.out.println(5 - 2); // Prints 3
-    System.out.println(3 * 4); // Prints 12
-    System.out.println(6 * 2); // Prints 3
-    System.out.println(5 / 2); // Prints 2
-    System.out.println(5. / 2); // Prints 2
-    System.out.println(5 / 2.); // Prints 2.5
-    System.out.println(5. / 2.); // Prints 2.5
-    System.out.println(5 % 2); // Prints 1
-  }
+```csharp
+using System;
+
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(2 + 2);
+            Console.WriteLine(7 - 2);
+            Console.WriteLine(3 * 2);
+            Console.WriteLine(5 / 2);
+            Console.WriteLine(7 % 2);
+            Console.WriteLine(7 / 2.0);
+
+            Console.Read();
+        }
+    }
 }
 ```
 
 #### Booleans
 
-```java
-public class Booleans {
-  public static void main(String[] args) {
-    // true, false
-    System.out.println(true); // Prints true
-    System.out.println(false); // Prints false
+```csharp
+using System;
 
-    // Boolean Operators
-    // Negation
-    System.out.println(!true); // Prints false
-    System.out.println(!false); // Prints true
+namespace GreenFox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //true, false
+            Console.WriteLine(true);
+            Console.WriteLine(false);
 
-    // And
-    System.out.println(true && true); // Prints true
-    System.out.println(true && false); // Prints false
-    System.out.println(false && true); // Prints false
-    System.out.println(false && false); // Prints false
+            //negation
+            Console.WriteLine(!true);
+            Console.WriteLine(!false);
 
-    // Or
-    System.out.println(true || true); // Prints true
-    System.out.println(true || false); // Prints true
-    System.out.println(false || true); // Prints true
-    System.out.println(false || false); // Prints false
-  }
+            //and
+            Console.WriteLine(true && true);
+            Console.WriteLine(true && false);
+            Console.WriteLine(false && true);
+            Console.WriteLine(false && false);
+
+            //or
+            Console.WriteLine(true || true);
+            Console.WriteLine(true || false);
+            Console.WriteLine(false || true);
+            Console.WriteLine(false || false);
+
+            Console.Read();
+        }
+    }
 }
 ```
 
