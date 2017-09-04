@@ -5,24 +5,25 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 ## Materials & Resources
 | Material | Time |
 |:-------- |-----:|
-|[Introduction to Arrays](https://www.youtube.com/watch?v=L06uGnF4IpY)|7:25|
-|[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-|[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
-|[Debugging in IntelliJ](https://www.youtube.com/watch?v=1bCgzjatcr4)|17:39|
+|[Introduction to Arrays](https://www.youtube.com/watch?v=7sqUaw4g_iQ)|9:35|
+|[Arrays](https://www.youtube.com/watch?v=RQ0JHMGiobo)|24:20|
+|[Methods & Using Functions](https://www.youtube.com/watch?v=QwygwfqOHsI)|17:07| 
+|[Constant & ReadOnly](https://www.youtube.com/watch?v=cPrcVeTEQXI)|2:09|
+|[Debugging in VisualStudio](https://www.youtube.com/watch?v=7ab4z9u7Q_I)|16:15|
 
 
 ### Optional
-Reading material only, if the above is still unclear.
+Additional material, if the above is still unclear.
 
 | Material | Time |
 |:-------- |-----:|
-|[Arrays (official Oracle docs)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)|reading|
-|[Java methods (TutorialsPoint)](https://www.tutorialspoint.com/java/java_methods.htm)|reading|
+|[Arrays again](https://www.youtube.com/watch?v=3UcJGikWJxs)|7:25|
 
 
 ## Material Review
 - Declaring
-  - constants
+  - const
+  - readonly
   - initial values of arrays `{}`
   - `new` keyword
 - Functions
@@ -31,11 +32,10 @@ Reading material only, if the above is still unclear.
   - have own variables
   - take parameters
 - Arrays
-  - can be measured (have `length`)
+  - can be measured (have `Length`)
   - can be iterated through
   - type definition (e.g. `String[]`)
-  - toString
-  - copyOf
+  - CopyTo
   - sort
   - foreach statement
 - Debugging
@@ -49,17 +49,27 @@ Reading material only, if the above is still unclear.
 
 ### Functions
 
-```java
-public class HelloWorld {
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-  public static void main(String[] args) {
-    greetFunction();
-  }
-
-  public static void greetFunction() {
-    // Prints "Hello Green Fox!" to the terminal window.
-    System.out.println("Hello Green Fox!");
-  }
+namespace Example
+{
+    class Program
+    {
+        public static void GreetingFunction(){
+            Console.WriteLine("hello");
+        }
+        
+        static void Main(string[] args)
+        {
+            GreetingFunction();
+            Console.ReadKey();
+        }
+    }
 }
 ```
 
@@ -73,19 +83,32 @@ public class HelloWorld {
 
 ### Arrays
 
-```java
-public class Arrays {
-  public static void main(String[] args) {
-    int[] myList = {1, 2, 3, 6};
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-    // Print the second element of the array
-    System.out.println("The second element is " + myList[1]);
-
-    // Print all the array elements
-    for (int i = 0; i < myList.length; i++) {
-      System.out.println(myList[i] + " ");
+namespace Example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = {1, 2, 3 , 8};
+            
+            //  Print the second element of the array
+            Console.WriteLine(array[1]);
+            
+            // Print all the array elements
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+            Console.ReadKey();
+        }
     }
-  }
 }
 ```
 
