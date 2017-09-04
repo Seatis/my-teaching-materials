@@ -31,8 +31,8 @@ What happens when a function calls itself?
 
 ### Factorial with loop
 
-```java
-public static int factorialWithLoop(int n) {
+```c#
+public static int FactorialWithLoop(int n) {
   int factorial = 1;
   for (int i = 1; i  < n + 1; i++) {
     factorial *= i;
@@ -44,28 +44,28 @@ public static int factorialWithLoop(int n) {
 
 ### Factorial with recursion
 
-```java
-public static int factorialWithRecursion(int n) {
+```c#
+public static int FactorialWithRecursion(int n) {
   if (n == 1) {
     return 1;
   } else {
-    return n * factorialWithRecursion(n - 1);
+    return n * FactorialWithRecursion(n - 1);
   }
 }
 ```
 
 ### Exercises
 
- - [01 Counter](counter/Counter.java)
- - [02 Numberadder](numberadder/Numberadder.java)
- - [03 Sumdigit](sumdigit/Sumdigit.java)
- - [04 Power](power/Power.java)
- - [05 Bunnies](bunnies/Bunny1.java)
- - [06 Bunnies again](bunnies2/Bunny2.java)
- - [07 Strings](strings/String1.java)
- - [08 Strings again](strings2/String2.java)
- - [09 Strings again and again](strings3/String3.java)
- - [10 Fibonacci](fibonacci/Fibonacci.java)
+ - [01 Counter](counter/Counter.cs)
+ - [02 Numberadder](numberadder/Numberadder.cs)
+ - [03 Sumdigit](sumdigit/Sumdigit.cs)
+ - [04 Power](power/Power.cs)
+ - [05 Bunnies](bunnies/Bunny1.cs)
+ - [06 Bunnies again](bunnies2/Bunny2.cs)
+ - [07 Strings](strings/String1.cs)
+ - [08 Strings again](strings2/String2.cs)
+ - [09 Strings again and again](strings3/String3.cs)
+ - [10 Fibonacci](fibonacci/Fibonacci.cs)
  - 11: reproduce this:   
 ![11](drawing/graphic.png)
  - 12: reproduce this:   
