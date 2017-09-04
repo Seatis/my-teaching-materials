@@ -74,12 +74,12 @@ namespace Example
 ```
 
 #### Excercises
--  [Doubling](exercises/functions/doubling/Doubling.java)
--  [Greeter function](exercises/functions/greet/Greet.java)
--  [Append a](exercises/functions/append-a/AppendA.java)
--  [Summing](exercises/functions/sum/Sum.java)
--  [Factorial](exercises/functions/factorio/Factorio.java)
--  [Print arguments](exercises/functions/printer/Printer.java)
+-  [Doubling](exercises/functions/doubling/Doubling.cs)
+-  [Greeter function](exercises/functions/greet/Greet.cs)
+-  [Append a](exercises/functions/append-a/AppendA.cs)
+-  [Summing](exercises/functions/sum/Sum.cs)
+-  [Factorial](exercises/functions/factorio/Factorio.cs)
+-  [Print arguments](exercises/functions/printer/Printer.cs)
 
 ### Arrays
 
@@ -113,19 +113,19 @@ namespace Example
 ```
 
 #### Excercises
--  [Third](exercises/arrays/third/Third.java)
--  [Compare Length](exercises/arrays/compare-length/CompareLength.java)
--  [Sum elements](exercises/arrays/sum-elements/SumElements.java)
--  [Change element](exercises/arrays/change-element/ChangeElement.java)
--  [Increment element](exercises/arrays/increment-element/IncrementElement.java)
--  [Print elements](exercises/arrays/print-all/PrintAll.java)
--  [Matrix](exercises/arrays/diagonal-matrix/DiagonalMatrix.java)
--  [Double items](exercises/arrays/double-items/DoubleItems.java)
--  [Colors](exercises/arrays/colors/Colors.java)
--  [Append a](exercises/arrays/append-a/AppendA.java)
--  [Swap elements](exercises/arrays/swap-elements/SwapElements.java)
--  [Sum all elements](exercises/arrays/sum-all/SumAll.java)
--  [Reverse list](exercises/arrays/reverse/Reverse.java)
+-  [Third](exercises/arrays/third/Third.cs)
+-  [Compare Length](exercises/arrays/compare-length/CompareLength.cs)
+-  [Sum elements](exercises/arrays/sum-elements/SumElements.cs)
+-  [Change element](exercises/arrays/change-element/ChangeElement.cs)
+-  [Increment element](exercises/arrays/increment-element/IncrementElement.cs)
+-  [Print elements](exercises/arrays/print-all/PrintAll.cs)
+-  [Matrix](exercises/arrays/diagonal-matrix/DiagonalMatrix.cs)
+-  [Double items](exercises/arrays/double-items/DoubleItems.cs)
+-  [Colors](exercises/arrays/colors/Colors.cs)
+-  [Append a](exercises/arrays/append-a/AppendA.cs)
+-  [Swap elements](exercises/arrays/swap-elements/SwapElements.cs)
+-  [Sum all elements](exercises/arrays/sum-all/SumAll.cs)
+-  [Reverse list](exercises/arrays/reverse/Reverse.cs)
 
 
 ## Individual Workshop Review
