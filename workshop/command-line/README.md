@@ -24,6 +24,10 @@ Introduction to version control systems and Git.
        -  `sudo yum install git` (Fedora)
     -  Mac
        -  http://git-scm.com/download/mac or `brew install git`
+ -  Download Git-it for your system:
+    -  [Windows](https://github.com/jlord/git-it-electron/releases/download/4.3.3/Git-it-Win-ia32.zip)
+    -  [Linux](https://github.com/jlord/git-it-electron/releases/download/4.3.3/Git-it-Linux-x64.zip)
+    -  [Mac](https://github.com/jlord/git-it-electron/releases/download/4.3.3/Git-it-Mac-x64.zip)
 
 ### Training
 | Material | Duration |
@@ -87,8 +91,8 @@ Introduction to version control systems and Git.
 #### Basic terminal operations
   - Check the current working directory
   - Check the files and directories in your working directory
-  - Create a Greenfox directory
-  - Change into the Greenfox directory
+  - Create a `greenfox` directory
+  - Change into the `greenfox` directory
   - Check the files and directories in your working directory
   - Create an empty index.html file
   - Create an images directory
@@ -96,13 +100,21 @@ Introduction to version control systems and Git.
   - Change into the images directory
   - Go back to the parent directory
   - Create at least one file to every directory using the command line
+  - Create a `first-task` directory into `greenfox`
+  - Move every file and folder from `greenfox` to `first-task`
+  - From this point do everything in the `greenfox` directory
 
----
+### Starting up Git
+  - Run the downloaded Git-it App
+  - Do the Challenges until `Branches Aren't Just For Birds` (you don't need to start this one)
+    - We won't need branches at this point
+    - If you finished all the challenges including `Forkes and Clones` as the last one, proceed with the following:
   - Fork this git repository: https://github.com/greenfox-academy/git-lesson-repository.git
       - Visit the page
       - Fork it!
-  - Clone your greenfox repository
+  - Clone your `git-lesson-repository` into your `greenfox` directory
       - `git clone <repository>`
+      - Clone the forked version, not the original! (The url should be ...yourgithub/git-lesson-repository... not greenfox-academy/git-lesson-repository...)
 
 #### Manipulations
   - Change into the project directory
@@ -114,6 +126,7 @@ Introduction to version control systems and Git.
   - Move 6.jpg file from css into images directory
   - Delete 7.jpg from css directory
   - Navigate up one directory from project/css/ to project/
+  - Commit your changes and push (check it on github if you like)
 
 #### Redirections
   - Echo a string to a file
@@ -126,18 +139,12 @@ Introduction to version control systems and Git.
   - remove the duplicated lines from tasks.txt
   - cat task.txt and filter basic tasks
   - cat task.txt and filter out with -v the basic tasks
+  - Commit your changes and push (check it on github if you like)
 
-### Git
-
-#### Basics
-  - setup your environtment
-  - `git config --global user.name "Your Name"`
-  - `git config --global user.email "yourname@example.com"`
-
----
-  - create a repo on github
-      - under the [greenfox-academy](https://github.com/greenfox-academy) organisation and the repo name should be your github username
-  - clone it on your system using command line
+#### Your working environment
+  - create a repo on github (repo = short for repository)
+      - under the [greenfox-academy](https://github.com/greenfox-academy) organisation and the repo's name should be your github username
+  - clone it on your system using command line into your `greenfox` folder
   - your working directory should look like this
       - home
           - user (your username if you're using mac or linux, on windows its git env username)
@@ -150,7 +157,7 @@ Introduction to version control systems and Git.
                           - **day-3**
               - other_visible_directories
 
----
+#### Practice a little more
   - change in to your `githubusername` directory
   - see the changes
   - set to staged
@@ -160,7 +167,7 @@ Introduction to version control systems and Git.
       - ...create my working directory for greenfox lessons
       - ...create a new directory for task 1
       - ...
-  - change in to your `week-01/day-2` or `day-3` directory
+  - change in to your `week-01/day-2` or `day-3` directory (depending on which day it is currently)
   - create 5 directory and 5 file with content
   - see the changes
   - add these files as staged files
@@ -174,12 +181,10 @@ Introduction to version control systems and Git.
   - git push origin master
   - check it on github
 
----
+#### And some more
   - change the content of two file
   - use git status
   - remove from staged git reset HEAD file
-
----
   - change the content of two file
   - use git status
   - set to staged
@@ -189,11 +194,6 @@ Introduction to version control systems and Git.
 
 #### Build Habits
 *Get used to saving your work!*
-  - Save the Command-line edits
-    - change back to the directory where you completed the Command-line phase
-    - this should be a git repository as well
-    - stage and commit the changes, and push it to your remote repo
-    - see it on Github
   - From tomorrow you'll only work in one repository found under the [greenfox-academy](https://github.com/greenfox-academy)  organisation
     - easier to track everything related to your progress in one repository
     - we won't learn how to create git repositories inside other git repositories, but a link would be nice for today's learning curves ;)
