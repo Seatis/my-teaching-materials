@@ -7,7 +7,7 @@ Get into *real* programming, installing a development environment and then runni
 
 | Material | Time |
 |:---------|-----:|
-|[C#-wiki](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)| - |
+|[C# wiki](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)| - |
 |[Install Guide](https://www.youtube.com/watch?v=IwxkVL5DGg8)|6:28|
 
 ### Materials
