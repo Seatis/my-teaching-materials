@@ -4,9 +4,9 @@ What happens when a function calls itself?
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
-| [How Recursion Works](https://www.youtube.com/watch?v=EpU0opEeP6g) | 6:24 |
+| [What on Earth is Recursion?](https://www.youtube.com/watch?v=Mv9NEXX1VHc) | till 8:40 |
 | [Algorithms: Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms)| 5:40 |
-| [c# Recursion](https://www.youtube.com/watch?v=wXvJSv3lS1c) 16:41 |
+| [c# Recursion](https://www.youtube.com/watch?v=wXvJSv3lS1c) | 16:41 |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | 4:12 |
 | [Green Fox Teaching Materials on Recursion](cs.md) | ∞ |
 
