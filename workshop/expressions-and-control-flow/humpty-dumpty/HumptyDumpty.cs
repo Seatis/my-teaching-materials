@@ -1,9 +1,16 @@
-public class HumptyDumpty {
-  public static void main(String[] args) {
-    // Modify this program to print Humpty Dumpty riddle correctly
-    System.out.println("All the king's horses and all the king's men");
-    System.out.println("Humpty Dumpty had a great fall.");
-    System.out.println("Humpty Dumpty sat on a wall,");
-    System.out.println("Couldn't put Humpty together again.");
-  }
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Modify this program to print Humpty Dumpty riddle correctly
+            Console.WriteLine("All the king's horses and all the king's men");
+            Console.WriteLine("Humpty Dumpty had a great fall.");
+            Console.WriteLine("Humpty Dumpty sat on a wall,");
+            Console.WriteLine("Couldn't put Humpty together again.");
+        }
+    }
 }

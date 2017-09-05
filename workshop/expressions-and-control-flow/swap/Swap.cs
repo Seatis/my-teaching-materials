@@ -1,13 +1,15 @@
-public class Swap {
-  public static void main(String[] args) {
-    int a = 123;
-    int b = 526;
-    // Swap the values of the wariables
-    
+using System;
 
-
-
-    System.out.println(a);
-    System.out.println(b);
-  }
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 123;
+            int b = 526;
+            // Swap the values of the wariables
+            
+        }
+    }
 }
