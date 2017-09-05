@@ -283,28 +283,19 @@ namespace GreenFox
         {
             // String
             string greeting = "Hello my friend";
-            var bye = "It was good to see you friend";
             Console.WriteLine(greeting);
-            Console.WriteLine(bye);
 
             // Boolean
             bool running = true;
-            var working = false;
             Console.WriteLine(running);
-            Console.WriteLine(working);
 
             // Whole number
             int a = 11;
-            var b = 12;
             Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.WriteLine(a + b);
 
             // Floating point number
             double pi = 3.141592;
-            var e = 2.718;
             Console.WriteLine(pi);
-            Console.WriteLine(e);
 
             // Declaring a variable
             int number;
