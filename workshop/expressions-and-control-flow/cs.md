@@ -110,9 +110,9 @@ namespace GreenFox
 ```
 
 #### Exercises
- -  [01 - HelloMe](hello-me/HelloMe.c)
- -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.c)
- -  [03 - HelloOthers](hello-others/HelloOthers.c)
+ -  [01 - HelloMe](hello-me/HelloMe.cs)
+ -  [02 - HumptyDumpty](humpty-dumpty/HumptyDumpty.cs)
+ -  [03 - HelloOthers](hello-others/HelloOthers.cs)
 
 ### Types
 
@@ -264,9 +264,9 @@ namespace GreenFox
 ```
 
 #### Exercises
- -  [04 - IntroduceYourself](introduce-yourself/IntroduceYourself.java)
- -  [05 - TwoNumbers](two-numbers/TwoNumbers.java)
- -  [06 - CodingHours](coding-hours/CodingHours.java)
+ -  [04 - IntroduceYourself](introduce-yourself/IntroduceYourself.cs)
+ -  [05 - TwoNumbers](two-numbers/TwoNumbers.cs)
+ -  [06 - CodingHours](coding-hours/CodingHours.cs)
 
 ### Variables
 
@@ -367,13 +367,13 @@ namespace GreenFox
 ```
 
 #### Exercises
- -  [07 - FavoriteNumber](favorite-number/FavoriteNumber.java)
- -  [08 - Swap](swap/Swap.java)
- -  [09 - Bmi 💪](bmi/Bmi.java)
- -  [10 - DefineBasicInfo](define-basic-info/DefineBasicInfo.java)
- -  [11 - VariableMutation](variable-mutation/VariableMutation.java)
- -  [12 - Cuboid 💪](cuboid/Cuboid.java)
- -  [13 - SecondsInADay](seconds-in-a-day/SecondsInADay.java)
+ -  [07 - FavoriteNumber](favorite-number/FavoriteNumber.cs)
+ -  [08 - Swap](swap/Swap.cs)
+ -  [09 - Bmi 💪](bmi/Bmi.cs)
+ -  [10 - DefineBasicInfo](define-basic-info/DefineBasicInfo.cs)
+ -  [11 - VariableMutation](variable-mutation/VariableMutation.cs)
+ -  [12 - Cuboid 💪](cuboid/Cuboid.cs)
+ -  [13 - SecondsInADay](seconds-in-a-day/SecondsInADay.cs)
 
 ### User input (scanner)
 
@@ -400,10 +400,10 @@ namespace GreenFox
 }
 ```
 #### Exercises
- -  [14 - HelloUser](hello-user/HelloUser.java)
- -  [15 - MileToKmConverter](mile-to-km-converter/MileToKmConverter.java)
- -  [16 - AnimalsAndLegs 💪](animals-and-legs/AnimalsAndLegs.java)
- -  [17 - AverageOfInput 💪](average-of-input/AverageOfInput.java)
+ -  [14 - HelloUser](hello-user/HelloUser.cs)
+ -  [15 - MileToKmConverter](mile-to-km-converter/MileToKmConverter.cs)
+ -  [16 - AnimalsAndLegs 💪](animals-and-legs/AnimalsAndLegs.cs)
+ -  [17 - AverageOfInput 💪](average-of-input/AverageOfInput.cs)
 
 ### Conditionals
 
@@ -481,11 +481,11 @@ namespace GreenFox
 ```
 
 #### Exercises
- -  [18 - OddEven](odd-even/OddEven.java)
- -  [19 - OneTwoALot](one-two-a-lot/OneTwoALot.java)
- -  [20 - PrintBigger 💪](print-bigger/PrintBigger.java)
- -  [21 - PartyIndicator](party-indicator/PartyIndicator.java)
- -  [22 - ConditionalVariableMutation 💪](conditional-variable-mutation/ConditionalVariableMutation.java)
+ -  [18 - OddEven](odd-even/OddEven.cs)
+ -  [19 - OneTwoALot](one-two-a-lot/OneTwoALot.cs)
+ -  [20 - PrintBigger 💪](print-bigger/PrintBigger.cs)
+ -  [21 - PartyIndicator](party-indicator/PartyIndicator.cs)
+ -  [22 - ConditionalVariableMutation 💪](conditional-variable-mutation/ConditionalVariableMutation.cs)
 
 ### Loops
 
@@ -527,19 +527,19 @@ namespace GreenFox
 ```
 
 #### Exercises
- -  [23 - IWontCheatOnTheExams](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.java)
- -  [24 - PrintEven](print-even/PrintEven.java)
- -  [25 - MultiplicationTable](multiplication-table/MultiplicationTable.java)
- -  [26 - CountFromTo](count-from-to/CountFromTo.java)
- -  [27 - FizzBuzz](fizz-buzz/FizzBuzz.java)
- -  [28 - DrawTriangle](draw-triangle/DrawTriangle.java)
- -  [29 - DrawPyramid 💪](draw-pyramid/DrawPyramid.java)
- -  [30 - DrawDiamond 💪](draw-diamond/DrawDiamond.java)
- -  [31 - DrawSquare 💪](draw-square/DrawSquare.java)
- -  [32 - DrawDiagonal](draw-diagonal/DrawDiagonal.java)
- -  [33 - GuessTheNumber](guess-the-number/GuessTheNumber.java)
- -  [34 - ParametricAverage 💪](parametric-average/ParametricAverage.java)
- -  [35 - DrawChessTable](draw-chess-table/DrawChessTable.java)
+ -  [23 - IWontCheatOnTheExams](i-wont-cheat-on-the-exams/IWontCheatOnTheExams.cs)
+ -  [24 - PrintEven](print-even/PrintEven.cs)
+ -  [25 - MultiplicationTable](multiplication-table/MultiplicationTable.cs)
+ -  [26 - CountFromTo](count-from-to/CountFromTo.cs)
+ -  [27 - FizzBuzz](fizz-buzz/FizzBuzz.cs)
+ -  [28 - DrawTriangle](draw-triangle/DrawTriangle.cs)
+ -  [29 - DrawPyramid 💪](draw-pyramid/DrawPyramid.cs)
+ -  [30 - DrawDiamond 💪](draw-diamond/DrawDiamond.cs)
+ -  [31 - DrawSquare 💪](draw-square/DrawSquare.cs)
+ -  [32 - DrawDiagonal](draw-diagonal/DrawDiagonal.cs)
+ -  [33 - GuessTheNumber](guess-the-number/GuessTheNumber.cs)
+ -  [34 - ParametricAverage 💪](parametric-average/ParametricAverage.cs)
+ -  [35 - DrawChessTable](draw-chess-table/DrawChessTable.cs)
 
 
 ## Individual Workshop Review
