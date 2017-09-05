@@ -4,11 +4,11 @@ What happens when a function calls itself?
 ## Materials & Resources
 | Material | Time |
 |:---------|-----:|
-| [How Recursion Works](https://www.youtube.com/watch?v=ozmE8G6YKww) | 11:40 |
+| [How Recursion Works](https://www.youtube.com/watch?v=EpU0opEeP6g) | 6:24 |
 | [Algorithms: Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms)| 5:40 |
 | [Java Recursion](https://www.youtube.com/watch?v=neuDuf_i8Sg)| 14:11 |
 | [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
-| [Green Fox Teaching Materials on Recursion](java.md) | ∞ |
+| [Green Fox Teaching Materials on Recursion](cs.md) | ∞ |
 
 
 
