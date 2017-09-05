@@ -6,8 +6,8 @@ What happens when a function calls itself?
 |:---------|-----:|
 | [How Recursion Works](https://www.youtube.com/watch?v=EpU0opEeP6g) | 6:24 |
 | [Algorithms: Recursion](https://www.youtube.com/watch?v=KEEKn7Me-ms)| 5:40 |
-| [Java Recursion](https://www.youtube.com/watch?v=neuDuf_i8Sg)| 14:11 |
-| [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | |
+| [c# Recursion](https://www.youtube.com/watch?v=wXvJSv3lS1c) 16:41 |
+| [Fractals](https://www.youtube.com/watch?v=WFtTdf3I6Ug) | 4:12 |
 | [Green Fox Teaching Materials on Recursion](cs.md) | ∞ |
 
 
@@ -18,7 +18,7 @@ What happens when a function calls itself?
 
 | Material | Time |
 |:---------|-----:|
-|[Hanoi-tower](https://www.youtube.com/watch?v=5_6nsViVM00)| 7:18 |
+| [Hanoi-tower](https://www.youtube.com/watch?v=5_6nsViVM00)| 7:18 |
 | [Benoit BM Mandelbrot: Fractals and the art of roughness](https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en) | 17:09 |
 
 
