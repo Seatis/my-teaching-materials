@@ -83,8 +83,10 @@ Font size: 36 pixels
 ### Exercise 5
 ![fifth](5.jpg)
 
+Do NOT use classes!
+
 ### Exercise 6
-![sixth](6.jpg)
+![sixth](6.png)
 
 Font size: 18 pixels
 
