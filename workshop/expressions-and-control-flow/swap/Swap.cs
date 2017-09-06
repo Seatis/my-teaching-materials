@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp4
+namespace GreenFox
 {
     class Program
     {
@@ -9,7 +9,6 @@ namespace ConsoleApp4
             int a = 123;
             int b = 526;
             // Swap the values of the wariables
-            
         }
     }
 }

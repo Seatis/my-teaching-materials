@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp4
+namespace GreenFox
 {
     class Program
     {
@@ -16,7 +16,6 @@ namespace ConsoleApp4
             //  John Doe
             //  31
             //  1.87
-
         }
     }
 }
