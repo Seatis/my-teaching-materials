@@ -78,7 +78,7 @@ Get into *real* programming, installing a development environment and then runni
  -  Console I/O
      -  `using System`
      -  `ReadLine()`
-     -  `ReadKey()`
+     -  `ReadLine()`
  - C# interactive
 
 ## Bookmark
@@ -166,7 +166,7 @@ namespace GreenFox
             // Minimum value: -2 147 483 648
             Console.WriteLine(-2147483648);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -190,7 +190,7 @@ namespace GreenFox
             Console.WriteLine(7 % 2);
             Console.WriteLine(7 / 2.0);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -227,7 +227,7 @@ namespace GreenFox
             Console.WriteLine(false || true);
             Console.WriteLine(false || false);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -244,19 +244,19 @@ namespace GreenFox
     {
         static void Main(string[] args)
         {
-            // String and special characters
+            // string and special characters
             Console.WriteLine("hello");
             Console.WriteLine("don't");
             Console.WriteLine("She said, \"you deserva a treat\" ");
-            
-            // String Operators
+
+            // string Operators
             // Concatination
             Console.WriteLine("hand" + "some");
 
-            // Concat string with number
+            // concat string with number
             Console.WriteLine("My favourite number is: " + 8);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -281,32 +281,32 @@ namespace GreenFox
     {
         static void Main(string[] args)
         {
-            // String
+            // string
             string greeting = "Hello my friend";
             Console.WriteLine(greeting);
 
-            // Boolean
+            // boolean
             bool running = true;
             Console.WriteLine(running);
 
-            // Whole number
+            // whole number
             int a = 11;
             Console.WriteLine(a);
 
-            // Floating point number
+            // floating point number
             double pi = 3.141592;
             Console.WriteLine(pi);
 
-            // Declaring a variable
+            // declaring a variable
             int number;
 
-            // Assigning a variable, (define its value)
+            // assigning a variable, (define its value)
             number = 12;
 
-            // Mutate a variable, (redefine its value)
+            // mutate a variable, (redefine its value)
             number = 23;
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -326,41 +326,54 @@ namespace GreenFox
         {
             int a = 12;
             a += 4;
-            Console.WriteLine(a); // Prints 16
+            // prints 16
+            Console.WriteLine(a);
 
             int b = 12;
             b -= 4;
-            Console.WriteLine(b); // Prints 8
+            // prints 8
+            Console.WriteLine(b);
 
             int c = 12;
-            Console.WriteLine(c++); // Prints 12
-            Console.WriteLine(c); // Prints 13
+            // prints 12
+            Console.WriteLine(c++);
+            // prints 13
+            Console.WriteLine(c);
 
             int d = 12;
-            Console.WriteLine(++d); // Prints 13
-            Console.WriteLine(d); // Prints 13
+            // prints 13
+            Console.WriteLine(++d);
+             // prints 13
+            Console.WriteLine(d);
 
             int e = 12;
-            Console.WriteLine(e--); // Prints 12
-            Console.WriteLine(e); // Prints 11
+            // prints 12
+            Console.WriteLine(e--);
+            // prints 11
+            Console.WriteLine(e);
 
             int f = 12;
-            Console.WriteLine(--f); // Prints 11
-            Console.WriteLine(f); // Prints 11
+            // prints 11
+            Console.WriteLine(--f);
+             // prints 11
+            Console.WriteLine(f);
 
             int g = 12;
             g *= 3;
-            Console.WriteLine(g); // Prints 36
+            // prints 36
+            Console.WriteLine(g);
 
             int h = 12;
             h /= 3;
-            Console.WriteLine(h); // Prints 4
+            // prints 4
+            Console.WriteLine(h);
 
             int i = 12;
             i %= 7;
-            Console.WriteLine(i); // Prints 5
+            // prints 5
+            Console.WriteLine(i);
 
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
@@ -393,7 +406,7 @@ namespace GreenFox
             string age = Console.ReadLine();
             Console.WriteLine(age + " is a nice age");
 
-            Console.Read();
+            Console.ReadLine();
 
         }
     }
@@ -420,12 +433,14 @@ namespace GreenFox
 
             if (a == 13)
             {
-                Console.WriteLine("Yaaay! The value of the \"a\" variable is 13"); // This block will run
+                // this block will run
+                Console.WriteLine("Yaaay! The value of the \"a\" variable is 13");
             }
 
             if (a == 8)
             {
-                Console.WriteLine("Yaaay! The value of the \"a\" variable is 8"); // This block will NOT run
+                // this block will NOT run
+                Console.WriteLine("Yaaay! The value of the \"a\" variable is 8");
             }
 
 
@@ -433,11 +448,13 @@ namespace GreenFox
 
             if (b < 10)
             {
-                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+                // this block will NOT run
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10");
             }
             else
             {
-                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will run
+                // this block will run
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10");
             }
 
 
@@ -445,15 +462,18 @@ namespace GreenFox
 
             if (c < 10)
             {
-                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10"); // This block will NOT run
+                // this block will NOT run
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is lower than 10");
             }
             else if (c < 20)
             {
-                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10 but less then 20"); // This block will run
+                // this block will run
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10 but less then 20");
             }
             else
             {
-                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10"); // This block will NOT run
+                // this block will NOT run
+                Console.WriteLine("Yaaay! The value of the \"b\" variable is higher than 10");
             }
 
 
@@ -473,7 +493,7 @@ namespace GreenFox
                 Console.WriteLine("No food for you, little fatty.");
             }
 
-            Console.Read();
+            Console.ReadLine();
         }
     }    
 }
@@ -518,7 +538,7 @@ namespace GreenFox
                 Console.WriteLine(i);
             }
 
-            Console.Read();
+            Console.ReadLine();
         }
     }    
 }
