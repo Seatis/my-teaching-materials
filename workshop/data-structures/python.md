@@ -31,25 +31,25 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 
 Strings are basic data structures, they can be treated like lists / arrays.
 
- -  [01](strings/simplereplace/simplereplace.py)
+ -  [01](strings/simplereplace/simple_replace.py)
  -  [02](strings/reverse/reverse.py)
- -  [03](strings/urlfixer/urlfixer.py)
- -  [04](strings/takeslonger/takeslonger.py)
- -  [05](strings/todoprint/todoprint.py)
- -  [06](strings/hewillnever/hewillnever.py)
+ -  [03](strings/urlfixer/url_fixer.py)
+ -  [04](strings/takeslonger/takes_longer.py)
+ -  [05](strings/todoprint/todo_print.py)
+ -  [06](strings/hewillnever/he_will_never.py)
 
 
 ### Lists
 
 Let's play more with list manipulation
 
- -  [01](lists/solarsystem/solarsystem.py)
+ -  [01](lists/solarsystem/solar_system.py)
  -  [02](lists/matchmaking/matchmaking.py)
- -  [03](lists/appendletter/appendletter.py)
+ -  [03](lists/appendletter/append_letter.py)
  -  [04](lists/candyshop/candyshop.py)
- -  [05](lists/elementfinder/elementfinder.py)
- -  [06](lists/isinlist/isinlist.py)
- -  [07](lists/quoteswap/quoteswap.py)
+ -  [05](lists/elementfinder/element_finder.py)
+ -  [06](lists/isinlist/is_in_list.py)
+ -  [07](lists/quoteswap/quote_swap.py)
  -  [08](lists/calculator/calculator.py)
 
 
@@ -57,11 +57,11 @@ Let's play more with list manipulation
 
 Dictonaries are "dumb" structures for storing various kinds of data in a single structure.
 
- -  [01](hashes/student-counter/student-counter.py)
- -  [02](hashes/student-filter/student-filter.py)
- -  [03](hashes/bank-transfer/bank-transfer.py)
- -  [04](hashes/festival-entry/festival-entry.py)
- -  [05](hashes/table-printer/table-printer.py)
+ -  [01](hashes/student-counter/student_counter.py)
+ -  [02](hashes/student-filter/student_filter.py)
+ -  [03](hashes/bank-transfer/bank_transfer.py)
+ -  [04](hashes/festival-entry/festival_entry.py)
+ -  [05](hashes/table-printer/table_printer.py)
 
 
 ## Individual Workshop Review
