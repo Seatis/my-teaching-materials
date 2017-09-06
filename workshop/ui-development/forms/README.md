@@ -61,7 +61,9 @@ Center a box on the page. Swtich to `border-box` box model for easier layout bui
 
 ### Step two
 
-Create the boxes that will hold the input fields. Try to look up from previous workshops, how to you place boxes next to each other.
+ - Create the boxes that will hold the input fields
+ - Try to look up from previous workshops, how to you place boxes next to each other
+ - The red borders are paddings, use them to your benefit
 
 !(add inner boxes)[s2.png]
 
