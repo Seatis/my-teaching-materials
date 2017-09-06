@@ -157,13 +157,13 @@ namespace GreenFox
 
             Console.Write(3.1415);
 
-            // Maximum and minimum value
-            // A simple integer is represented in 4 bytes (32bit)
+            // maximum and minimum value
+            // a simple integer is represented in 4 bytes (32bit)
 
-            // Maximum value:  2 147 483 647
+            // maximum value:  2 147 483 647
             Console.WriteLine(2147483647);
 
-            // Minimum value: -2 147 483 648
+            // minimum value: -2 147 483 648
             Console.WriteLine(-2147483648);
 
             Console.ReadLine();
