@@ -57,21 +57,24 @@
 
 Center a box on the page. Swtich to `border-box` box model for easier layout building.
 
-!(center a box)[s1.png]
+!(center a box)[center-boxes.png]
 
 ### Step two
 
- - Create the boxes that will hold the input fields
+ - Create the boxes that will contain the input fields
  - Try to look up from previous workshops, how to you place boxes next to each other
  - The red borders are paddings, use them to your benefit
 
-!(add inner boxes)[s2.png]
+!(add columns)[create-columns.png]
 
 ### Step three
 
-Fill the boxes with inputs and labels. Notice that the same logic applies that you used in step two.
+ - Add inner boxes
+ - Fill the boxes with inputs and labels
+ - Notice that the same logic applies that you used in step two
+ - You can follow your own logic, there are more than one good solutions
 
-!(add moar inner boxes)[s3.png]
+!(add inner boxes)[inner-boxes.png]
 
 ### Check the final design
 
