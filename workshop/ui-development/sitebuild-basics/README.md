@@ -81,14 +81,12 @@ Font size: 36 pixels
 ![fourth](4.jpg)
 
 ### Exercise 5
-![fifth](5.jpg)
+![fifth](selector.png)
 
 Do NOT use classes!
 
 ### Exercise 6
 ![sixth](6.png)
-
-Font size: 18 pixels
 
 ### Exercise 7
 Given the following HTML structure:
