@@ -48,10 +48,33 @@
  - validation
 
 ## Workshop
- - Build a following design
- - Make sure you are using the simpliest selectors as possible.
- - Try to avoid code duplication.
- - Use paint, gimp, or something similar to figure out the sizes and colors.
+ - Build the following design
+ - Make sure you are using the simpliest selectors as possible
+ - Try to avoid code duplication
+ - Use Paint, Gimp, IrfanView or something similar to figure out the sizes and colors
+
+### Step one
+
+Center a box on the page. Swtich to `border-box` box model for easier layout building.
+
+!(center a box)[s1.png]
+
+### Step two
+
+Create the boxes that will hold the input fields. Try to look up from previous workshops, how to you place boxes next to each other.
+
+!(add inner boxes)[s2.png]
+
+### Step three
+
+Fill the boxes with inputs and labels. Notice that the same logic applies that you used in step two.
+
+!(add moar inner boxes)[s3.png]
+
+### Check the final design
+
+ - input field sizes, inner padding should match
+ - input fields should not be exactly formatted as seen on the design
 
 ![first problem](1.png)
 
