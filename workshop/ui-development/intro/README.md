@@ -43,7 +43,8 @@ Create small layouts with HTML and CSS.
 | [CSS Tutorial For Beginners 37 - Margins](https://www.youtube.com/watch?v=ggo0di5L6sA) | 10:38 |
 | [CSS Tutorial For Beginners 38 - Padding](https://www.youtube.com/watch?v=4YF-eaX4P0k) | 4:41 |
 | [CSS Tutorial For Beginners 40 - Borders](https://www.youtube.com/watch?v=sdn5p4kf91c) | 6:47 |
-
+| [CSS Tutorial For Beginners 41 - Block - inline - inline block](https://www.youtube.com/watch?v=HuiPIK-0-_A) | 11:08 |
+| [CSS Tutorial For Beginners 42 - Width and height](https://www.youtube.com/watch?v=b9lWNg8lwW4) | 6:26 |
 
 ### Optional
 *If you've got time, consider the following:*
@@ -91,6 +92,11 @@ Create small layouts with HTML and CSS.
  - The Box model
  - Shorthand
  - Default browser styles
+ - Display: inline
+ - Display: block
+ - Display: inline-block
+ - width & height
+
 
 ## Workshop
 In the sections that follow are a list of Exercises for you to build using simple layouts in HTML and CSS.
@@ -147,6 +153,9 @@ for each task, figure out the simplest selector possible.
 the result should look like this:
 
 ![prince](prince.png)
+
+### Exercise 8
+![boxes](04.png)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our HTML & CSS styleguide](../../../styleguide/html-css.md)
