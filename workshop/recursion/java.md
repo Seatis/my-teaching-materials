@@ -57,8 +57,8 @@ public static int factorialWithRecursion(int n) {
 ### Exercises
 
  - [01 Counter](counter/Counter.java)
- - [02 Numberadder](numberadder/Numberadder.java)
- - [03 Sumdigit](sumdigit/Sumdigit.java)
+ - [02 Numberadder](numberadder/NumberAdder.java)
+ - [03 Sumdigit](sumdigit/SumDigit.java)
  - [04 Power](power/Power.java)
  - [05 Bunnies](bunnies/Bunny1.java)
  - [06 Bunnies again](bunnies2/Bunny2.java)

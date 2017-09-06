@@ -66,45 +66,45 @@ root.mainloop()
 
 ### Exercises
 
-- [01 Middle lines](line-in-the-middle/line-in-the-middle.py)
-- [02 Colored box](colored-box/colored-box.py)
+- [01 Middle lines](line-in-the-middle/line_in_the_middle.py)
+- [02 Colored box](colored-box/colored_box.py)
 - [03 Diagonals](diagonals/diagonals.py)
-- [04 To the center](go-to-center/go-to-center.py)
-- [05 Horizontal](horizontal-lines/horizontal-lines.py)
+- [04 To the center](go-to-center/go_to_center.py)
+- [05 Horizontal](horizontal-lines/horizontal_lines.py)
 
 
-- [06 Square in the center](centered-square/centered-square.py)
-- [07 Fill with rectangles](four-rectangles/four-rectangles.py)
-- [08 Square positioning](position-square/position-square.py)
-- [09 Centered boxes](center-box-function/center-box-function.py)
-- [10 Rainbow boxes](rainbow-box-function/rainbow-box-function.py)
+- [06 Square in the center](centered-square/centered_square.py)
+- [07 Fill with rectangles](four-rectangles/four_rectangles.py)
+- [08 Square positioning](position-square/position_square.py)
+- [09 Centered boxes](center-box-function/center_box_function.py)
+- [10 Rainbow boxes](rainbow-box-function/rainbow_box_function.py)
 
 
 -
-| [11 Purple steps](purple-steps/purple-steps.py) |
+| [11 Purple steps](purple-steps/purple_steps.py) |
 |:--------------:|
 | ![Purple steps](purple-steps/r3.png) |
 -
-| [12 Purple steps 3d](purple-steps-3d/purple-steps-3d.py) |
+| [12 Purple steps 3d](purple-steps-3d/purple_steps_3d.py) |
 |:--------------:|
 | ![Purple steps 3d](purple-steps-3d/r4.png) |
 
 - [13 Checkerboard](checkerboard/checkerboard.py)
-- [14 Everything goes to center](function-to-center/function-to-center.py)
+- [14 Everything goes to center](function-to-center/function_to_center.py)
 
 -
-| [15 Line play](line-play/line-play.py) |
+| [15 Line play](line-play/line_play.py) |
 |:--------------:|
 | ![Line play](line-play/r1.png) |
 
-- [16 Line play quarters](line-play-quarters/line-play-quarters.py)
+- [16 Line play quarters](line-play-quarters/line_play_quarters.py)
 -
-| [17 Envelope star](envelope-star/envelope-star.py) |
+| [17 Envelope star](envelope-star/envelope_star.py) |
 |:--------------:|
 | ![Envelope star](envelope-star/r2.png) |
 
-- [18 Connect the dots](connect-the-dots/connect-the-dots.py)
-- [19 Starry night](starry-night/starry-night.py)
+- [18 Connect the dots](connect-the-dots/connect_the_dots.py)
+- [19 Starry night](starry-night/starry_night.py)
 
 -
 | [20 Triangles](triangles/triangles.py) |
@@ -112,7 +112,7 @@ root.mainloop()
 | ![Triangles](triangles/r5.png) |
 
 -
-| [21 Super Hexagon](super-hexagon/super-hexagon.py) |
+| [21 Super Hexagon](super-hexagon/super_hexagon.py) |
 |:--------------:|
 | ![Super Hexagon](super-hexagon/r6.gif) |
 
