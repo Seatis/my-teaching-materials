@@ -565,7 +565,7 @@ namespace GreenFox
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our C# styleguide](#)
+Please follow the styleguide: [Our C# styleguide](https://github.com/greenfox-academy/alpaga-syllabus/blob/master/Styleguide/cs.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
