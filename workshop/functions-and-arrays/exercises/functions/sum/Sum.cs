@@ -1,5 +1,14 @@
-//  Create the usual class wrapper
-//  and main method on your own.
+using System;
 
-// - Write a function called `sum` that sum all the numbers
-//   until the given parameter
+namespace Sum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // - Write a function called `sum` that sum all the numbers
+            //   until the given parameter
+			Console.ReadLine();
+		}
+	}
+}

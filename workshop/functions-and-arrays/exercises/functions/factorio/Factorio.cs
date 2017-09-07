@@ -1,5 +1,14 @@
-//  Create the usual class wrapper
-//  and main method on your own.
+using System;
 
-// - Create a function called `factorio`
-//   that returns it's input's factorial
+namespace Factorio
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // - Create a function called `factorio`
+            //   that returns it's input's factorial
+			Console.ReadLine();
+		}
+	}
+}
