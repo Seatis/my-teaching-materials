@@ -57,7 +57,7 @@
 
 Center a box on the page. Swtich to `border-box` box model for easier layout building.
 
-!(center a box)[center-boxes.png]
+![center a box](center-boxes.png)
 
 ### Step two
 
@@ -65,7 +65,7 @@ Center a box on the page. Swtich to `border-box` box model for easier layout bui
  - Try to look up from previous workshops, how to you place boxes next to each other
  - The red borders are paddings, use them to your benefit
 
-!(add columns)[create-columns.png]
+![add columns](create-columns.png)
 
 ### Step three
 
@@ -74,7 +74,7 @@ Center a box on the page. Swtich to `border-box` box model for easier layout bui
  - Notice that the same logic applies that you used in step two
  - You can follow your own logic, there are more than one good solutions
 
-!(add inner boxes)[inner-boxes.png]
+![add inner boxes](inner-boxes.png)
 
 ### Check the final design
 
