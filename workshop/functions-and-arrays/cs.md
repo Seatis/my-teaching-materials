@@ -8,6 +8,7 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 |[Introduction to Arrays](https://www.youtube.com/watch?v=7sqUaw4g_iQ)|9:35|
 |[Arrays](https://www.youtube.com/watch?v=RQ0JHMGiobo)|24:20|
 |[Methods & Using Functions](https://www.youtube.com/watch?v=QwygwfqOHsI)|17:07| 
+|[Foreach](https://www.youtube.com/watch?v=Vlhcgb9Co4s)|7:40|
 |[Constant & ReadOnly](https://www.youtube.com/watch?v=cPrcVeTEQXI)|2:09|
 |[Debugging in VisualStudio](https://www.youtube.com/watch?v=7ab4z9u7Q_I)|16:15|
 
@@ -18,6 +19,7 @@ Additional material, if the above is still unclear.
 | Material | Time |
 |:-------- |-----:|
 |[Arrays again](https://www.youtube.com/watch?v=3UcJGikWJxs)|7:25|
+|[Jagged/Multidimensional array](https://www.youtube.com/watch?v=T0Zg7kQ3RVE)|8:11|
 
 
 ## Material Review
