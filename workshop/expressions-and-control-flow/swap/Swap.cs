@@ -6,9 +6,9 @@ namespace GreenFox
     {
         static void Main(string[] args)
         {
+            // Swap the values of the wariables
             int a = 123;
             int b = 526;
-            // Swap the values of the wariables
         }
     }
 }
