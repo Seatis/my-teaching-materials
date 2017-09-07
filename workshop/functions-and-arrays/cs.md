@@ -34,7 +34,7 @@ Additional material, if the above is still unclear.
 - Arrays
   - can be measured (have `Length`)
   - can be iterated through
-  - type definition (e.g. `String[]`)
+  - type definition (e.g. `string[]`)
   - CopyTo
   - sort
   - foreach statement
@@ -51,10 +51,6 @@ Additional material, if the above is still unclear.
 
 ```c#
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Example
 {
@@ -67,7 +63,7 @@ namespace Example
         static void Main(string[] args)
         {
             GreetingFunction();
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
@@ -85,10 +81,6 @@ namespace Example
 
 ```c#
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Example
 {
@@ -98,7 +90,7 @@ namespace Example
         {
             int[] array = {1, 2, 3 , 8};
             
-            //  Print the second element of the array
+            // Print the second element of the array
             Console.WriteLine(array[1]);
             
             // Print all the array elements
@@ -106,7 +98,7 @@ namespace Example
             {
                 Console.WriteLine(array[i]);
             }
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
