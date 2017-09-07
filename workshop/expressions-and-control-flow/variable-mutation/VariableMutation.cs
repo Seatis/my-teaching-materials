@@ -23,7 +23,7 @@ namespace GreenFox
         Console.WriteLine(c);
 
         int d = 125;
-    	  // please divide by 5 d's value
+    	// please divide by 5 d's value
 
         Console.WriteLine(d);
 

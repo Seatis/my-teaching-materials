@@ -3,7 +3,7 @@ Get into *real* programming, installing a development environment and then runni
 
 ## Materials & Resources
 ### Environment
-- Make sure that *Microsoft Visual Studio* is installed on your machine
+- Make sure that *Microsoft Visual Studio Community Edition or Microsoft Visual Studio for Mac* is installed on your machine
 
 | Material | Time |
 |:---------|-----:|
@@ -39,6 +39,7 @@ Get into *real* programming, installing a development environment and then runni
      -  giving value
      -  byte
      -  int
+     - float
      -  double
      -  boolean
      -  char
@@ -77,7 +78,7 @@ Get into *real* programming, installing a development environment and then runni
  -  loops: `for`, `while`, `do while `
  -  Console I/O
      -  `using System`
-     -  `ReadLine()`
+     -  `WriteLine()`
      -  `ReadLine()`
  - C# interactive
 
