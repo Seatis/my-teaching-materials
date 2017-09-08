@@ -1,13 +1,3 @@
-using System;
-
-namespace GreenFox
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-using System;
-
 namespace GreenFox
 {
     class Program
@@ -62,10 +52,6 @@ namespace GreenFox
         //fill the k variable with its cotnent 4 times
 
         Console.WriteLine(k);
-        }
-    }
-}
-
         }
     }
 }
