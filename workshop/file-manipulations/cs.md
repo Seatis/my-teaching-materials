@@ -13,6 +13,7 @@
 | Material | Time |
 |:---------|------:|
 |[File read n write advanced](https://www.youtube.com/watch?v=HKqMqFJr4SY)|20:44|
+|[File read with exception and fun](https://www.youtube.com/watch?v=LkpODZE2vmk)|5:26|
 
 ## Material Review
 
@@ -34,6 +35,7 @@
  - exception types
  - `throw`
  - `finally`
+ - `Parse()`
 
 ## Workshop
 
