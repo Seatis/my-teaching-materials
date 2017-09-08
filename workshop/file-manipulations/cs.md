@@ -6,7 +6,7 @@
 |:---------|-----:|
 |[File read and write](https://www.youtube.com/watch?v=kGZD_k1M938)||
 |[using keyword](https://www.youtube.com/watch?v=Dxbbtx-8MKw)|5:35|
-|[exceptions]()||
+|[exceptions](https://www.youtube.com/watch?v=DzUFm2FNeyo)|6:56|
 
 ## Optionals
 
@@ -16,10 +16,14 @@
 
 ## Material Review
 
- - `Path` and `Paths.get()`
+
  - `Files`
- - `readAllLines()`
+ - `ReadAllLines()` / `ReadAllText()`
+ - `WriteAllLines()` / `WriteAllText()`
  - `write()`
+ - `StreamWriter`
+ - `using`
+ - `Dispose()`
  - Exception
  - Compile time error
  - Runtime error
@@ -28,6 +32,7 @@
  - `try`
  - `catch`
  - exception types
+ - `throw`
  - `finally`
 
 ## Workshop
