@@ -4,9 +4,15 @@
 
 | Material | Time |
 |:---------|-----:|
-|[File read and write]()||
+|[File read and write](https://www.youtube.com/watch?v=kGZD_k1M938)||
 |[using keyword](https://www.youtube.com/watch?v=Dxbbtx-8MKw)|5:35|
 |[exceptions]()||
+
+## Optionals
+
+| Material | Time |
+|:---------|------:|
+|[File read n write advanced](https://www.youtube.com/watch?v=HKqMqFJr4SY)|20:44|
 
 ## Material Review
 
