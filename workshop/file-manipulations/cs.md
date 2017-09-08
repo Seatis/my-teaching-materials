@@ -4,7 +4,9 @@
 
 | Material | Time |
 |:---------|-----:|
-|[Handling Basic Exceptions and File Reading with Java 8](https://www.youtube.com/watch?v=b1A9kI2zSe4)| 31:56 |
+|[File read and write]()||
+|[using keyword](https://www.youtube.com/watch?v=Dxbbtx-8MKw)|5:35|
+|[exceptions]()||
 
 ## Material Review
 
