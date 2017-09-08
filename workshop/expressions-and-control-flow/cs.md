@@ -14,6 +14,7 @@ Get into *real* programming, installing a development environment and then runni
 
 | Material | Time |
 |:---------|-----:|
+|[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
 |[Declaring Variables](https://www.youtube.com/watch?v=jB3cWjnWpwc)|20:25|
 |[Console Input/Output](https://www.youtube.com/watch?v=wrl_OOgAjj0)|4:52|
 |[Boolean Operators and variables](https://www.youtube.com/watch?v=u0JPMd8KSaU)|9:23|
@@ -21,7 +22,6 @@ Get into *real* programming, installing a development environment and then runni
 |[Switch statement](https://www.youtube.com/watch?v=soKhwNYxs2I)|7:55|
 |[While and Do... While Loops](https://www.youtube.com/watch?v=A5P8sQSOWgI)|7:57|
 |[For Loop](https://www.youtube.com/watch?v=IuTDC7FkPRI)|8:42|
-|[Programming Basics: Statements & Functions](https://www.youtube.com/watch?v=l26oaHV7D40)|only until 7:34|
 |[Operators](https://www.tutorialspoint.com/csharp/csharp_operators.htm)|Miscellaneous and Bitwise Operators are not needed |
 
 ## Optional materials
