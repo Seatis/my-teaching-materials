@@ -13,7 +13,7 @@
 | [Styling HTML 5 Forms #5 - Styling Select Boxes](https://www.youtube.com/watch?v=IPtyr11fjcI) | 3:37 |
 | [Styling HTML 5 Forms #6 - Validation Styles](https://www.youtube.com/watch?v=nO94Y1YgQUo) | 6:05 |
 | [My First HTML Form](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form) | read |
-| [HTML5 form types](https://css-tricks.com/video-screencasts/99-overview-of-html5-forms-types-attributes-and-elements/) | read |
+| [HTML5 form types](https://css-tricks.com/video-screencasts/99-overview-of-html5-forms-types-attributes-and-elements/) | 49:12 |
 | [Web form usability](http://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/) | read |
 
 #### [Full playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g5_p_BVUGWykHfqx6bb7qK)
