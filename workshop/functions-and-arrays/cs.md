@@ -5,24 +5,27 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 ## Materials & Resources
 | Material | Time |
 |:-------- |-----:|
-|[Introduction to Arrays](https://www.youtube.com/watch?v=L06uGnF4IpY)|7:25|
-|[Arrays (Bana.09)](https://www.youtube.com/watch?v=eNPX2pTiaHI)|18:08|
-|[Methods & Fields, Using Functions (Bana.05)](https://www.youtube.com/watch?v=1HTsLK_m2ao)|14:06|
-|[Debugging in IntelliJ](https://www.youtube.com/watch?v=1bCgzjatcr4)|17:39|
+|[Introduction to Arrays](https://www.youtube.com/watch?v=7sqUaw4g_iQ)|9:35|
+|[Arrays](https://www.youtube.com/watch?v=RQ0JHMGiobo)|24:20|
+|[Methods & Using Functions](https://www.youtube.com/watch?v=QwygwfqOHsI)|17:07| 
+|[Foreach](https://www.youtube.com/watch?v=Vlhcgb9Co4s)|7:40|
+|[Constant & ReadOnly](https://www.youtube.com/watch?v=cPrcVeTEQXI)|2:09|
+|[Debugging in VisualStudio](https://www.youtube.com/watch?v=7ab4z9u7Q_I)|16:15|
 
 
 ### Optional
-Reading material only, if the above is still unclear.
+Additional material, if the above is still unclear.
 
 | Material | Time |
 |:-------- |-----:|
-|[Arrays (official Oracle docs)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)|reading|
-|[Java methods (TutorialsPoint)](https://www.tutorialspoint.com/java/java_methods.htm)|reading|
+|[Arrays again](https://www.youtube.com/watch?v=3UcJGikWJxs)|7:25|
+|[Jagged/Multidimensional array](https://www.youtube.com/watch?v=T0Zg7kQ3RVE)|8:11|
 
 
 ## Material Review
 - Declaring
-  - constants
+  - const
+  - readonly
   - initial values of arrays `{}`
   - `new` keyword
 - Functions
@@ -31,11 +34,10 @@ Reading material only, if the above is still unclear.
   - have own variables
   - take parameters
 - Arrays
-  - can be measured (have `length`)
+  - can be measured (have `Length`)
   - can be iterated through
-  - type definition (e.g. `String[]`)
-  - toString
-  - copyOf
+  - type definition (e.g. `string[]`)
+  - CopyTo
   - sort
   - foreach statement
 - Debugging
@@ -49,64 +51,79 @@ Reading material only, if the above is still unclear.
 
 ### Functions
 
-```java
-public class HelloWorld {
+```c#
+using System;
 
-  public static void main(String[] args) {
-    greetFunction();
-  }
-
-  public static void greetFunction() {
-    // Prints "Hello Green Fox!" to the terminal window.
-    System.out.println("Hello Green Fox!");
-  }
+namespace Example
+{
+    class Program
+    {
+        public static void GreetingFunction(){
+            Console.WriteLine("hello");
+        }
+        
+        static void Main(string[] args)
+        {
+            GreetingFunction();
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
 #### Excercises
--  [Doubling](exercises/functions/doubling/Doubling.java)
--  [Greeter function](exercises/functions/greet/Greet.java)
--  [Append a](exercises/functions/append-a/AppendA.java)
--  [Summing](exercises/functions/sum/Sum.java)
--  [Factorial](exercises/functions/factorio/Factorio.java)
--  [Print arguments](exercises/functions/printer/Printer.java)
+-  [Doubling](exercises/functions/doubling/Doubling.cs)
+-  [Greeter function](exercises/functions/greet/Greet.cs)
+-  [Append a](exercises/functions/append-a/AppendA.cs)
+-  [Summing](exercises/functions/sum/Sum.cs)
+-  [Factorial](exercises/functions/factorio/Factorio.cs)
+-  [Print arguments](exercises/functions/printer/Printer.cs)
 
 ### Arrays
 
-```java
-public class Arrays {
-  public static void main(String[] args) {
-    int[] myList = {1, 2, 3, 6};
+```c#
+using System;
 
-    // Print the second element of the array
-    System.out.println("The second element is " + myList[1]);
-
-    // Print all the array elements
-    for (int i = 0; i < myList.length; i++) {
-      System.out.println(myList[i] + " ");
+namespace Example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = {1, 2, 3 , 8};
+            
+            // Print the second element of the array
+            Console.WriteLine(array[1]);
+            
+            // Print all the array elements
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+            Console.ReadLine();
+        }
     }
-  }
 }
 ```
 
 #### Excercises
--  [Third](exercises/arrays/third/Third.java)
--  [Compare Length](exercises/arrays/compare-length/CompareLength.java)
--  [Sum elements](exercises/arrays/sum-elements/SumElements.java)
--  [Change element](exercises/arrays/change-element/ChangeElement.java)
--  [Increment element](exercises/arrays/increment-element/IncrementElement.java)
--  [Print elements](exercises/arrays/print-all/PrintAll.java)
--  [Matrix](exercises/arrays/diagonal-matrix/DiagonalMatrix.java)
--  [Double items](exercises/arrays/double-items/DoubleItems.java)
--  [Colors](exercises/arrays/colors/Colors.java)
--  [Append a](exercises/arrays/append-a/AppendA.java)
--  [Swap elements](exercises/arrays/swap-elements/SwapElements.java)
--  [Sum all elements](exercises/arrays/sum-all/SumAll.java)
--  [Reverse list](exercises/arrays/reverse/Reverse.java)
+-  [Third](exercises/arrays/third/Third.cs)
+-  [Compare Length](exercises/arrays/compare-length/CompareLength.cs)
+-  [Sum elements](exercises/arrays/sum-elements/SumElements.cs)
+-  [Change element](exercises/arrays/change-element/ChangeElement.cs)
+-  [Increment element](exercises/arrays/increment-element/IncrementElement.cs)
+-  [Print elements](exercises/arrays/print-all/PrintAll.cs)
+-  [Matrix](exercises/arrays/diagonal-matrix/DiagonalMatrix.cs)
+-  [Double items](exercises/arrays/double-items/DoubleItems.cs)
+-  [Colors](exercises/arrays/colors/Colors.cs)
+-  [Append a](exercises/arrays/append-a/AppendA.cs)
+-  [Swap elements](exercises/arrays/swap-elements/SwapElements.cs)
+-  [Sum all elements](exercises/arrays/sum-all/SumAll.cs)
+-  [Reverse list](exercises/arrays/reverse/Reverse.cs)
 
 
 ## Individual Workshop Review
-Please follow the styleguide: [Our Java styleguide](../../styleguide/java.md)
+Please follow the styleguide: [Our C# styleguide](../../styleguide/cs.md)
 
 - Is the directory structure and the name of the files correct?
 - Are the includes palced on the top of the files?
