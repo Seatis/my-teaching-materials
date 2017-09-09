@@ -13,10 +13,23 @@ Get into *real* programming, installing a development environment and then runni
 |[While, Do While & For Loops](https://www.youtube.com/watch?v=6djggrlkHY8)| only until 8:35 |
 
 ### Environment
+#### Java
  -  download jdk (from Oracle, version 8) - this is the Java Development Kit; part of the challenge here is to figure out where to get this.  
  -  if *jre* (Java Runtime Environment) didn't download, get that too
  -  download the development environment tool: www.jetbrains.com - Install Intellij-IDEA; get the Ultimate edition (but ensure you get the license from a Mentor)
  -  activate IntelliJ IDEA following [this activation guide](intellij-activation.md)
+ - [Set the environment variables](http://www.codejava.net/java-core/how-to-set-environment-variables-for-java-using-command-line)
+ #### Exercise-validator-CLI
+ - open a terminal window and type "python" to find out if it is already installed and which version is installed.
+ - download [Python 3.6](https://www.python.org/)
+ 
+ This application is published on the Python  Package Index (aka PyPI) so it is easily installable with pip:
+ - pip install gf-ev-cli
+ 
+ and also easily upgradeable:
+ - pip install gf-ev-cli --upgrade
+ - [Find on Github](https://github.com/greenfox-academy/exercise-validator-cli)
+ - [Set up PATH as environment variable](https://www.tutorialspoint.com/python/python_environment.htm) - check out from "Setting up PATH"
 
 
 ## Material Review
