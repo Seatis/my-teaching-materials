@@ -21,6 +21,17 @@ Get into *real* programming, installing a development environment and then runni
  -  Please install the latest Python from the 3.* version
     [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
+#### Exercise-validator-CLI
+ - open a terminal window and type "python --version" to find out if it is already installed and which version is installed.
+ 
+ This application is published on the Python  Package Index (aka PyPI) so it is easily installable with pip:
+ - pip install gf-ev-cli
+ 
+ and also easily upgradeable:
+ - pip install gf-ev-cli --upgrade
+ - [Find on Github](https://github.com/greenfox-academy/exercise-validator-cli)
+ - [Set up PATH as environment variable](https://www.tutorialspoint.com/python/python_environment.htm) - check out from "Setting up PATH"
+
 ## Material Review
  -  Python
  -  statement
