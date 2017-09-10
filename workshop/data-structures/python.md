@@ -10,16 +10,9 @@ Recap these videos, they might come handy again.
 | [Python Programming Tutorial - 4 - Slicing up Strings](https://www.youtube.com/watch?v=YbipxqSKx-E) | 5:40 |
 | [Python Programming Tutorial - 5 - Lists](https://www.youtube.com/watch?v=1yUn-ydsgKk) | 7:43 |
 | [Python Programming Tutorial - 20 - Dictionary](https://www.youtube.com/watch?v=BSNFRKG1MfE) | 5:23 |
-| [Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 ## Material Review
-- Hash Tables
-  - hash function
-  - hash table
-  - collision
-    - clustering
-    - separate chaining
-- Insertion Sort
+
 
 ## Workshop
 
