@@ -3,14 +3,14 @@
     {
       "ex_input" : ["1"],
       "ex_output" : ["^\\*$"]
-    }
+    },
     {
       "ex_input" : ["2"],
       "ex_output" : [
         "^\\*$",
         "^\\*{2}$"
       ]
-    }
+    },
     {
       "ex_input" : ["5"],
       "ex_output" : [
