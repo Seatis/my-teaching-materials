@@ -15,6 +15,7 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 
 ## Material Review
 - ArrayLists
+  - Object
   - means to *add* and *remove*
   - initialize
     - what are the situation? empty, with values
@@ -48,7 +49,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
   - value
   - `.put()`
   - `.get()`
-- Object
 - Hash Tables
   - hash function
   - hash table
