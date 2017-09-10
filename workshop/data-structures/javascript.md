@@ -13,7 +13,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |:---------|-----:|
 | [JavaScript Tutorial For Beginners #24 - Strings](https://www.youtube.com/watch?v=k8MIbEVXhE0) | 9:37 |
 | [JavaScript Tutorial For Beginners #25 - Slice and Split Strings](https://www.youtube.com/watch?v=HEdikBHsMag) | 6:38 |
-| [Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 #### Reading
 
@@ -73,13 +72,6 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/ob
     - keys
     - values
     - hasOwnProperty
-- Hash Tables
-  - hash function
-  - hash table
-  - collision
-    - clustering
-    - separate chaining
-- Insertion Sort
 
 
 ## Workshop
