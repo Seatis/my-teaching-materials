@@ -1,4 +1,4 @@
-public class VariableMutation {
+public class ConditionalVariableMutation {
   public static void main(String[] args) {
     double a = 24;
     int out = 0;
@@ -23,7 +23,7 @@ public class VariableMutation {
 
     int c = 123;
     int credits = 100;
-    boolean isBonus = False;
+    boolean isBonus = false;
     // if credits are at least 50,
     // and isBonus is false decrement c by 2
     // if credits are smaller than 50,
