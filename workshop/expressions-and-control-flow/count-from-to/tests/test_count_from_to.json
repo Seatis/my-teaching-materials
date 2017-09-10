@@ -2,11 +2,11 @@
   "cases": [
     {
       "ex_input": [1, 0],
-      "ex_outout": ["The second number should be bigger"]
+      "ex_output": ["The second number should be bigger"]
     },
     {
       "ex_input": [3, 6],
-      "ex_outout": [
+      "ex_output": [
         "3",
         "4",
         "5"
