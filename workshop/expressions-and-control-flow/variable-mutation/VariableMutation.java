@@ -60,7 +60,7 @@ public class VariableMutation {
 
 
 
-		int h = 1357988018575474;
+		int h = 135798745;
 	  // tell if it has 11 as a divisor (print as a boolean)
 
 
