@@ -1,12 +1,12 @@
 {
   "cases": [
     {
-      "ex_input": [2, 3],
-      "ex_output": [3]
+      "ex_input": ["2", "3"],
+      "ex_output": ["3"]
     },
     {
-      "ex_input": [-1, -5],
-      "ex_output": [-1]
+      "ex_input": ["-1", "-5"],
+      "ex_output": ["-1"]
     }
   ]
 }
