@@ -16,19 +16,16 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 ## Material Review
 - ArrayLists
   - means to *add* and *remove*
-  - `.addAll()`
-  - `.contains()`
-  - `.containsAll()`
-  - `.clear()`
-  - `.isEmpty()`
   - initialize
     - what are the situation? empty, with values
     - how does one use such; loops
   - `.add()` (to the next position, at an index)
+  - `.addAll()`
   - `.remove()` (by index, by value)
   - `.set()`
   - `.size()`
   - `.isEmpty()`
+  - `.clear()`
   - searching: `.contains()`, `.containsAll()`
   - assigning between arrays (*copying* `.toArray()`, `.addAll()`)
   - casting as string `.toString()`
