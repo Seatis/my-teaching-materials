@@ -49,13 +49,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
   - value
   - `.put()`
   - `.get()`
-- Hash Tables
-  - hash function
-  - hash table
-  - collision
-    - clustering
-    - separate chaining
-- Insertion Sort
 
 ## Workshop
 
