@@ -1,9 +1,9 @@
-# Pointers
-*Learn how to use pointers in C programs*
+# Arrays and pointers with functions
+*Learn how to use pointers and functions with pointers in C programs*
 
 ## Objectives
 - Know how to use pointers in C language
-- Understand how functions and pointers work together
+- Understanding how functions and pointers work
 
 ## Materials & Resources
 ### Environment
@@ -33,6 +33,14 @@ but they are very useful tools in C.
 | [`sizeof()` inside vs outside a function](http://www.geeksforgeeks.org/using-sizof-operator-with-array-paratmeters/) | - |
 | [Returning multiple values with 'output' parameters](https://softwareengineering.stackexchange.com/questions/274934/returning-multiple-values-from-a-c-function-using-pointers-style-of-parameter-l) | - |
 | [Returning a pointer](http://www.techcrashcourse.com/2015/08/c-programming-returning-pointer-function.html) | - |
+
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Software Engineering](https://www.youtube.com/watch?v=O753uuutqH8&index=17&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 10:34 |
+| [IC's and Moore's Law](https://www.youtube.com/watch?v=6-tKOHICqrI&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=18) | 13:49 |
+| [Operating Systems](https://www.youtube.com/watch?v=26QPDBe-NB8&index=19&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 13:35 |
 
 
 ## Material Review
@@ -97,4 +105,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
-[Solutions]()
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop-hardware/solutions/solutions/pointers)
