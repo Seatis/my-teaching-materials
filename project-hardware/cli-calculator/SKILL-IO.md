@@ -3,6 +3,7 @@
 - knowledge of C
     - expressions and control flow
     - functions
-    - header files
-	- user input handling
     - arrays and pointers
+    - user input handling
+    - buffering techniques
+- debugging

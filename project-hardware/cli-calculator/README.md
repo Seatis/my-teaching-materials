@@ -166,27 +166,25 @@ Hit enter to continue.
 ---
 
 ### help
-positioning the console cursor in Windows:
+positioning the console cursor in Windows (you have to include Windows.h):
 ```
-void set_cursor_pos(int x_pos, int y_pos)
+COORD coord = {0,0};
+void set_cursor_pos(int x, int y)
 {
-   COORD coord;
-
-   coord.X = x_pos;
-   coord.Y = y_pos;
-
-   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+	coord.X = x;
+	coord.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 ```
 
-positioning the console cursor in Linux:
+positioning the console cursor in Linux or OSX:
 ```
-void set_cursor_pos(int x_pos, int y_pos)
+void set_cursor_pos(int x, int y)
 {
-   printf("\033[%d;%dH", y_pos+1, x_pos+1);
+	printf("\033[%d;%dH", y+1, x+1);
 }
 ```
 
 
 ## Solution
-[Solution]()
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project-hardware/solutions/solutions/cli-calculator)
