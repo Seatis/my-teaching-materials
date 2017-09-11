@@ -1,24 +1,25 @@
-#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 
-#include "sin_gen.h"
+void time_diff(struct tm t1, struct tm t2, struct tm *diff);
 
-typedef struct
+struct tm start(time_t raw_tm);
+struct tm stop(time_t raw_tm);
+
+//TODO: write a stopwatch program. If you hit enter start the stopwatch, if you hit enter again stop the watch. If you hit escape, the program should exit.
+//use the time.h header: https://www.tutorialspoint.com/c_standard_library/c_function_localtime.htm
+//it's enough if you can measure the elapsed seconds, and minutes
+
+int main()
 {
-    int peak_to_peak;
-    float avarage;
-} meas_t;
+    struct tm start_time, stop_time, diff;
+	time_t raw_time;
 
+	
 
-//TODO: write a program which can calculate the mean value, and the peak to peak value of an oscilloscope measurement sequence
-//the gen_sine_512_sample() function generates 512 integer sample.
-//it's in the libsine_gen.a so it is precompiled, because if you'd see the source code you could easily guess the solution
-//you should copy and include the sin_gen.h file and link the library (in CodeBlocks: Project->Build options...->Linker settings->Add, and browse the library.
-
-int main() {
-
-    int meas[512];
-    gen_sine_512_sample(&meas);
-
+    do {
+		
+	} while(c != 27);
 
     return 0;
 }

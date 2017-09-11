@@ -1,25 +1,46 @@
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
 
-void time_diff(struct tm t1, struct tm t2, struct tm *diff);
+typedef struct
+{
+    float x;
+    float y;
 
-struct tm start(time_t raw_tm);
-struct tm stop(time_t raw_tm);
+} point_t;
 
-//TODO: write a stopwatch program. If you hit enter start the stopwatch, if you hit enter again stop the watch. If you hit escape, the program should exit.
-//use the time.h header: https://www.tutorialspoint.com/c_standard_library/c_function_localtime.htm
-//it's enough if you can measure the elapsed seconds, and minutes
+typedef struct
+{
+    point_t start;
+    point_t end;
+
+} section_t;
+
+typedef struct
+{
+    point_t p;
+    float right_side;
+} equation_t;
+
+point_t intersection_point(section_t sec1, section_t sec2);
+
+//TODO: write a C program which can find the intersection point of two section
 
 int main()
 {
-    struct tm start_time, stop_time, diff;
-	time_t raw_time;
+    section_t first_sect, second_sect;
 
-	
+    first_sect.start.x = -8;
+    first_sect.start.y = 1;
+    first_sect.end.x = 2;
+    first_sect.end.y = 5;
 
-    do {
-		
-	} while(c != 27);
+    second_sect.start.x = -4;
+    second_sect.start.y = 9;
+    second_sect.end.x = 2;
+    second_sect.end.y = -3;
+
+    point_t intersect = intersection_point(first_sect, second_sect);
+    printf("Intersection point: x = %f, y = %f.\n", intersect.x, intersect.y);
 
     return 0;
 }

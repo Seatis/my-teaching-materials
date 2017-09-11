@@ -37,6 +37,14 @@
 | [A good summary of struct, union and typedef](https://www.codingunit.com/c-tutorial-structures-unions-typedef) | - |
 | [Struct member access and typedef](https://www.programiz.com/c-programming/c-structures) | - |
 
+#### Computer Science
+
+| Material | Duration |
+|:---------|-----:|
+| [Memory and Storage](https://www.youtube.com/watch?v=TQCr9RV7twk&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=20) | 12:16 |
+| [Files and File Systems](https://www.youtube.com/watch?v=KN8YgJnShPM&index=21&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 12:02 |
+| [Compression](https://www.youtube.com/watch?v=OtDxDvCpPL4&index=22&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 12:47 |
+
 
 ## Material Review
 
@@ -104,7 +112,6 @@
 - [09.c](Workshop/07.c)
 - [10.c](Workshop/07.c)
 - [11.c](Workshop/07.c)
-- [12.c](Workshop/07.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
@@ -120,4 +127,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
-[Solutions]()
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop-hardware/solutions/solutions/struct-union-enum-typedef)
