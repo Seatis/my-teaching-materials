@@ -6,7 +6,7 @@ Dive deeper into *real* programming, reuse code and get to know more complex dat
 | Material | Time |
 |:-------- |-----:|
 |[Introduction to Arrays](https://www.youtube.com/watch?v=7sqUaw4g_iQ)|9:35|
-|[Arrays](https://www.youtube.com/watch?v=RQ0JHMGiobo)|24:20|
+|[Arrays](https://www.youtube.com/watch?v=RQ0JHMGiobo)|only until 11:10|
 |[Methods & Using Functions](https://www.youtube.com/watch?v=QwygwfqOHsI)|17:07| 
 |[Foreach](https://www.youtube.com/watch?v=Vlhcgb9Co4s)|7:40|
 |[Constant & ReadOnly](https://www.youtube.com/watch?v=cPrcVeTEQXI)|2:09|
