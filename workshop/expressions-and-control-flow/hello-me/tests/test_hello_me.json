@@ -2,7 +2,7 @@
   "cases": [
     {
       "ex_input" : [],
-      "ex_output" : ["^Hello, (?!World)[a-z-A-Z]+!$"]
+      "ex_output" : ["^Hello, (?!World)[a-zA-Z]+!"]
     }
   ]
 }
