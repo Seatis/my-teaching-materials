@@ -17,26 +17,46 @@
 | [Typecasting](https://www.youtube.com/watch?v=ohVRskLlHqM) | 5:35 |
 | [C Typecasting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm) | - |
 | [C Typecasting](http://www.w3schools.in/c-tutorial/type-casting/) | - |
-| [stdlib.h](http://www.cplusplus.com/reference/cstdlib/) where typecast functions are located | - |
+
+
+#### Transforming between number systems
+| Material | Duration |
+|:---------|-----:|
+| [`atoi`](https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm) | - |
+| [`strtol`](https://www.tutorialspoint.com/c_standard_library/c_function_strtol.htm) | - |
+| [stdlib.h](http://www.cplusplus.com/reference/cstdlib/) | - |
+
 
 #### Parsing
 | Material | Duration |
 |:---------|-----:|
 | [How C strings work](https://www.programiz.com/c-programming/c-strings) | - |
-| [`strstr`](https://www.tutorialspoint.com/c_standard_library/c_function_strstr.htm) | - | [`strcmp`](https://www.programiz.com/c-programming/library-function/string.h/strcmp) | - |
+| [`strstr`](https://www.tutorialspoint.com/c_standard_library/c_function_strstr.htm) | - |
+| [`strcmp`](https://www.programiz.com/c-programming/library-function/string.h/strcmp) | - |
 | [`strtok`](https://www.youtube.com/watch?v=LsWxVwCqVO4) | 3:33 |
 | [string.h function reference](http://www.cplusplus.com/reference/cstring/) | - |
 
+#### Computer Science
+| Material | Duration |
+|:---------|-----:|
+| [Intro to Algorithms](https://www.youtube.com/watch?v=rL8X2mlNHPM&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=14) | 11:43 |
+| [Data Structures](https://www.youtube.com/watch?v=DuDz6B4cqVc&index=15&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 10:06 |
+| [Turing Machine](https://www.youtube.com/watch?v=7TycxwFmdB0&index=16&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) | 13:04 |
+
+
 ## Material Review
 ### Type-casting
-- Inbuilt typecast functions in C: `atof(), atoi(), atol(), itoa(), ltoa()`
 - any implicit type conversions made from a lower size type to a higher size type: `char -> int -> unsigned int -> long -> unsigned long -> long -> long -> unsigned long long -> float -> double -> long double`
+
+### Transforming
+- Inbuilt transforming functions in C: `atof(), atoi(), atol(), itoa(), ltoa(), strtod(), strtol()`
 
 ### Parsing
 - `string.h` functions
 - tokenizing strings
 - checking if a string is contained by another string
 - finding a character's position in a string
+- comparing two strings
 
 ## Workshop
 ### Typecasting
@@ -46,12 +66,15 @@
 - [04.c](Workshop/04.c)
 - [05.c](Workshop/05.c)
 
-### Parsing
+### Transforming
 - [06.c](Workshop/06.c)
 - [07.c](Workshop/07.c)
+
+### Parsing
 - [08.c](Workshop/08.c)
 - [09.c](Workshop/09.c)
 - [10.c](Workshop/10.c)
+- [11.c](Workshop/10.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)

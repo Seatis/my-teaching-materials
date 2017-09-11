@@ -1,16 +1,25 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+
+void transform (char str[], int original_base, int new_base);
+
+//TODO: write a program, which transforms a number from a number system to another.
+//use the stdlib.h functions, and take care of error handling (see the reference)
+//the transform() function should print out the result.
+
 int main()
 {
-    #define MAXNUMOFWORDS 10
+    char str[20];
+    int original_base;
+    int new_base;
+	
+    printf("Give me a number to transform it in an other system: ");
+    scanf("%s", str);
+    printf("Give me the original base: ");
+    scanf("%d", &original_base);
+    printf("Give me the number of the new base: ");
+    scanf("%d", &new_base);
 
-	char str1[MAXNUMOFWORDS*MAXNUMOFWORDS];
-    char new_string[MAXNUMOFWORDS][MAXNUMOFWORDS];
-    printf("Type in a sentence, i will split into words by space:\n");
-
-    //TODO: write a c program which, splits a string to words by space
-    //it's enough, if you are able to handle maximum 10 words, and each are maximum 10 characters long.
-	//solve the problem without any string.h functions
-
-    return 0;
+    transform(str, original_base, new_base);
+    return(0);
 }

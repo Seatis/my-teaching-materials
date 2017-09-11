@@ -1,16 +1,14 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-	char command[256];
-    char logged_in = 0;
-    char registered = 0;
+    printf("Type in a sentence:\n\n");
+    char string[256];
 
-    //TODO: write a register-login-logout program
-    //if you type in register print out "Registration..." or "You are already registered." if you are registered.
-    //if you type in login print out "Logging in..." or "Already logged in." if are logged in.
-    //if you type in logout print out "Logging out..." or "Already logged out." if are logged out.
-	
+    //TODO: write a c program which, splits a string to words by space
+	//solve the problem with the proper string.h function
+
+
+    return(0);
 }
