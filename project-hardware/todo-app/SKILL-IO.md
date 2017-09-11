@@ -6,6 +6,6 @@
     - arrays and pointers
     - user input handling
     - buffering techniques
-    - preprocessor macros
     - data structures
     - custom data types
+- debugging

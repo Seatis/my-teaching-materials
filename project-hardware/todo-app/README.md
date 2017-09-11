@@ -48,7 +48,7 @@ Commands:
  -rd  Read todos from a file
  -l   Lists all the tasks
  -e   Empty the list
- -r   Removes a task
+ -rm   Removes a task
  -c   Completes a task
  -p   Add priority to a task
  -lp  Lists all the tasks by priority
@@ -189,4 +189,4 @@ Num | Tasks | Prio
 - Then it should show an error message like: `Unable to check: Index is not a number`
 
 ## Solution
-[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project/hardware/solutions/todo-app)
+[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project-hardware/solutions/solutions/todo-app)
