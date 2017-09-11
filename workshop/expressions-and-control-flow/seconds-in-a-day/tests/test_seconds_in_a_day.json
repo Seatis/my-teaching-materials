@@ -2,7 +2,7 @@
   "cases": [
     {
       "ex_input" : [],
-      "ex_output" : ["^33918$"]
+      "ex_output" : ["^33918"]
     }
   ]
 }

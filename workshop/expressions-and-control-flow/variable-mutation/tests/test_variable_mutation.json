@@ -3,17 +3,17 @@
     {
       "ex_input" : [],
       "ex_output" : [
-        "^13$",
-        "^93$",
-        "^88$",
-        "^25$",
-        "^512$",
-         "^[Ff][Aa][Ll][Ss][Ee]$",
-         "^[Tt][Rr][Uu][Ee]$",
-         "^[Tt][Rr][Uu][Ee]$",
-         "^[Tt][Rr][Uu][Ee]$",
-         "^[Tt][Rr][Uu][Ee]$",
-         "^AppleAppleAppleApple$"
+        "^13",
+        "^93",
+        "^88",
+        "^25",
+        "^512",
+         "^[Ff][Aa][Ll][Ss][Ee]",
+         "^[Tt][Rr][Uu][Ee]",
+         "^[Tt][Rr][Uu][Ee]",
+         "^[Tt][Rr][Uu][Ee]",
+         "^[Tt][Rr][Uu][Ee]",
+         "^AppleAppleAppleApple"
        ]
     }
   ]
