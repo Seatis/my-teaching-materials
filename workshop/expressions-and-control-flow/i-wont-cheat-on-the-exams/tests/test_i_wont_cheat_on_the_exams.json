@@ -3,7 +3,7 @@
     {
       "ex_input": [],
       "ex_output": [
-        "^(I won't cheat on the exam!\\s){100}\\s*$"
+        "^(I won't cheat on the exam!\\s){100}\\s*"
       ]
     }
   ]

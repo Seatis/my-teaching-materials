@@ -3,9 +3,9 @@
     {
       "ex_input": [3, 10, 8],
       "ex_output": [
-        "^The stored number is lower$",
-        "^The stored number is higher$",
-        "^You found the number: 8$"
+        "^The stored number is lower",
+        "^The stored number is higher",
+        "^You found the number: 8"
       ]
     }
   ]
