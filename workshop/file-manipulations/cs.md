@@ -41,47 +41,56 @@
 
 ### Exceptions
 
-```java
-import java.util.Scanner;
+```c#
+using System;
 
-public class UnhandledException {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int divisor = scanner.nextInt();
-
-    int result = 12 / divisor; // If the input value for divisor was 0 the program breaks
-    System.out.println(result); // The program doesn't reach this line if the input was 0
-  }
+namespace Example
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            var divisor = Constole.ReadLine();
+            int result = 12 / divisor; // If the input value for divisor was 0 the program breaks
+            Console.WriteLine(result); // The program doesn't reach this line if the input was 0
+            Console-ReadLine();
+        }
+    }
 }
-
 ```
 
 The result if the input value was zero:
 
 ```
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-    at UnhandledException.main(UnhandledException.java:8)
+Exception unhandled!
+System.DivideByZeroException: 'Attempted to divide by zero.'
 ```
 
 Handle the exception:
 
-```java
-import java.util.Scanner;
+```c#
+using System;
 
-public class ErrorHandling {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int divisor = scanner.nextInt();
-
-    try { // Prevents the program breaking when attempting dividing by zero
-      int result = 12 / divisor; // If the input value for divisor was 0 it stops the try block
-      System.out.println(result); // The program doesn't reach this line if the input was 0
-    } catch (ArithmeticException e) {
-      System.out.println("Can't divide by zero!"); // This line only runs if the input was 0
+namespace Example
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            var divisor = Constole.ReadLine();
+            try  // Prevents the program breaking when attempting dividing by zero
+            {
+                int result = 12 / divisor; // If the input value for divisor was 0 the program breaks
+                Console.WriteLine(result); // The program doesn't reach this line if the input was 0
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Can't divide by zero!"); // This line only runs if the input was 0
+            }
+            Console-ReadLine();
+        }
     }
-  }
 }
-
 ```
 
 #### Exercises
@@ -90,22 +99,32 @@ public class ErrorHandling {
 
 ### Reading files
 
-```java
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
+```c#
+using System;
+using System.IO;
 
-public class ReadFile {
-  public static void main(String[] args) {
-    try { // Required by Files.readAllLines(filePath);
-      // Reads the content from `lorem-psum.txt` in the `assets` folder line by line to a String List
-      Path filePath = Paths.get("assets/lorem-ipsum.txt");
-      List<String> lines = Files.readAllLines(filePath);   
-      System.out.println(lines.get(0)); // Prints the first line of the file
-    } catch (Exception e) {
-      System.out.println("Uh-oh, could not read the file!");
+namespace Example
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string path = @"./assets/lorem-psum.txt";
+            try
+            {
+                // Reads the content from `lorem-psum.txt` in the `assets` folder line by line to a string List
+                var content = File.ReadAllLines(path);
+                Console.WriteLine(content[0]); // Prints the first line of the file
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Uh-oh, could not read the file!");
+            }
+
+            Console.ReadLine();
+        }
     }
-  }
 }
 ```
 
@@ -116,24 +135,23 @@ public class ReadFile {
 
 ### Writing files
 
-```java
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
+```c#
+using System;
+using System.IO;
 
-public class WriteFile {
-  public static void main(String[] args) {
-    List<String> content = new ArrayList();
-    content.add("First line of my file");
-    try { // Required by Files.write(filePath, content)
-      // Creates a new file if not exists and overwrites it's content
-      // The elements of the content lists will become the lines of the file
-      Path filePath = Paths.get("assets/new-file.txt");
-      Files.write(filePath, content);
-    } catch (Exception e) {
-      System.out.println("Uh-oh, could not write the file!");
+namespace Example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string path = @"./lorem-psum.txt";
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteLine("juhu");
+            }
+        }
     }
-  }
 }
 ```
 
