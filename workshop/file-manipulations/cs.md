@@ -103,7 +103,7 @@ namespace Example
 
 #### Exercises
 
- - [01 - DivideByZero.java](divide-by-zero/DivideByZero.java)
+ - [01 - DivideByZero.cs](divide-by-zero/DivideByZero.cs)
 
 ### Reading files
 
@@ -138,8 +138,8 @@ namespace Example
 
 #### Exercises
 
- - [02 - PrintEachLine.java](print-each-line/PrintEachLine.java)
- - [03 - CountLines.java](count-lines/CountLines.java)
+ - [02 - PrintEachLine.cs](print-each-line/PrintEachLine.cs)
+ - [03 - CountLines.cs](count-lines/CountLines.cs)
 
 ### Writing files
 
@@ -165,21 +165,21 @@ namespace Example
 
 #### Exercises
 
- - [04 - WriteSingleLine.java](write-single-line/WriteSingleLine.java)
- - [05 - WriteMultipleLines.java](write-multiple-lines/WriteMultipleLines.java)
- - [06 - CopyFile.java](copy-file/CopyFile.java)
+ - [04 - WriteSingleLine.cs](write-single-line/WriteSingleLine.cs)
+ - [05 - WriteMultipleLines.cs](write-multiple-lines/WriteMultipleLines.cs)
+ - [06 - CopyFile.cs](copy-file/CopyFile.cs)
 
 ### Decryption
 
 #### Exercise
 
- - [07 - Doubled.java](decrypt-doubled/Doubled.java) | [duplicated-chars.txt](decrypt-doubled/duplicated-chars.txt)
- - [08 - ReversedLines.java](decrypt-reversed-lines/ReversedLines.java) | [reversed-lines.txt](decrypt-reversed-lines/reversed-lines.txt)
- - [09 - ReversedOrder.java](decrypt-reversed-order/ReversedOrder.java) | [reversed-order.txt](decrypt-reversed-order/reversed-order.txt)
+ - [07 - Doubled.cs](decrypt-doubled/Doubled.cs) | [duplicated-chars.txt](decrypt-doubled/duplicated-chars.txt)
+ - [08 - ReversedLines.cs](decrypt-reversed-lines/ReversedLines.cs) | [reversed-lines.txt](decrypt-reversed-lines/reversed-lines.txt)
+ - [09 - ReversedOrder.cs](decrypt-reversed-order/ReversedOrder.cs) | [reversed-order.txt](decrypt-reversed-order/reversed-order.txt)
 
 
 #### Optional Hard Exercises
 
- - [10 - EncodedLines.java](decrypt-encoded/EncodedLines.java) | [encoded-lines.txt](decrypt-encoded/encoded-lines.txt)
- - [11 - Lottery.java](lottery/Lottery.java) | [otos.csv](lottery/otos.csv)
+ - [10 - EncodedLines.cs](decrypt-encoded/EncodedLines.cs) | [encoded-lines.txt](decrypt-encoded/encoded-lines.txt)
+ - [11 - Lottery.cs](lottery/Lottery.cs) | [otos.csv](lottery/otos.csv)
 
