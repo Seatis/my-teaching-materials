@@ -8,10 +8,10 @@ var accounts = [
 
 // Create function that returns the name and balance of cash on an account
 
-// Create function that transfers an balance of cash from one account to another
+// Create function that transfers an amount of cash from one account to another
 // it should have three parameters:
 //  - from account_number
 //  - to account_number
-//  - balance
+//  - amount of cash to transfer
 //
 // Log "404 - account not found" if any of the account numbers don't exist to the console.
