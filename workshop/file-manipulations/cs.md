@@ -15,6 +15,7 @@
 |[File read n write advanced](https://www.youtube.com/watch?v=HKqMqFJr4SY)|20:44|
 |[File read with exception and fun](https://www.youtube.com/watch?v=LkpODZE2vmk)|5:26|
 |[Runtime vs Compile time](https://stackoverflow.com/questions/846103/runtime-vs-compile-time)|1:30|
+|[💪💪💪Custom exception](https://www.youtube.com/watch?v=ybd7nHiDCCY)|7:37|
 
 ## Material Review
 
