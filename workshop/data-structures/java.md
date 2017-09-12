@@ -9,7 +9,7 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |:-------- |-----:|
 |[String Methods](https://www.youtube.com/watch?v=Hb_IVskG_Ck)|11:39|
 |[ArrayLists with types (Fudge.14)](https://www.youtube.com/watch?v=FhqdMFJbsxs) __until 11:42 only!!!__|11:42|
-|[Using ArrayLists](https://www.youtube.com/watch?v=e7U-wWdsp78)|14:07|
+|[ArrayList(Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)|11:47|
 |[Java HashMap Example](https://www.youtube.com/watch?v=J-klDVEtwkM)|3:21|
 
 ## Optional
