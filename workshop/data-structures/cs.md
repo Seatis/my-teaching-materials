@@ -11,6 +11,10 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |[Working with Strings in C#](https://www.youtube.com/watch?v=CLsmRBmteas)|25:47|
 |[C# List & Generics](https://www.youtube.com/watch?v=Kx8ij3WZpSg)|6:52| 
 |[C# Dictionary Tutorial](https://www.youtube.com/watch?v=UG8s4sWDOqI)|2:26
+
+## Optional
+| Material | Time |
+|:-------- |-----:|
 |[Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA)|7:41|
 
 
