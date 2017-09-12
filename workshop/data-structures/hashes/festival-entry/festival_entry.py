@@ -1,7 +1,7 @@
 
 watchlist = []
 
-security_alchol_loot = 0
+security_alcohol_loot = 0
 
 queue = [
 	{ 'name': 'Amanda', 'alcohol': 10, 'guns': 1 },
