@@ -138,12 +138,12 @@ print(whale)
 ```
 
 #### Excercises
+-  [Print elements](exercises/arrays/print-all/print_all.py)
 -  [Third](exercises/arrays/third/third.py)
 -  [Compare Length](exercises/arrays/compare-length/compare_length.py)
 -  [Sum elements](exercises/arrays/sum-elements/sum_elements.py)
 -  [Change element](exercises/arrays/change-element/change_element.py)
 -  [Increment element](exercises/arrays/increment-element/increment_element.py)
--  [Print elements](exercises/arrays/print-all/print_all.py)
 -  [Matrix](exercises/arrays/diagonal-matrix/diagonal_matrix.py)
 -  [Double items](exercises/arrays/double-items/double_items.py)
 -  [Colors](exercises/arrays/colors/colors.py)
