@@ -37,6 +37,7 @@
  - `throw`
  - `finally`
  - `Parse()`
+ - `@` and `\`
 
 ## Workshop
 
