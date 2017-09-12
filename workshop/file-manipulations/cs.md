@@ -21,7 +21,6 @@
  - `Files`
  - `ReadAllLines()` / `ReadAllText()`
  - `WriteAllLines()` / `WriteAllText()`
- - `write()`
  - `StreamWriter`
  - `using`
  - `Dispose()`
@@ -77,9 +76,9 @@ namespace Example
     {
         public static void Main(string[] args)
         {
-            var divisor = Constole.ReadLine();
             try  // Prevents the program breaking when attempting dividing by zero
             {
+                var divisor = int.Parse(Console.ReadLine());
                 int result = 12 / divisor; // If the input value for divisor was 0 the program breaks
                 Console.WriteLine(result); // The program doesn't reach this line if the input was 0
             }
@@ -87,7 +86,14 @@ namespace Example
             {
                 Console.WriteLine("Can't divide by zero!"); // This line only runs if the input was 0
             }
-            Console-ReadLine();
+            catch (Exception e)
+            {
+                Console.WriteLine("uuups, some serious thing happened!"); // This line only runs if uncatched exception generated
+            }
+            finally
+            {
+                Console.ReadLine();
+            }
         }
     }
 }
@@ -148,7 +154,7 @@ namespace Example
             string path = @"./lorem-psum.txt";
             using (StreamWriter writer = new StreamWriter(path))
             {
-                writer.WriteLine("juhu");
+                writer.WriteLine("Hello Alpaga!");
             }
         }
     }
