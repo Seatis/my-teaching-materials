@@ -7,6 +7,7 @@
 |[File read and write](https://www.youtube.com/watch?v=kGZD_k1M938)|5:09|
 |[using keyword](https://www.youtube.com/watch?v=Dxbbtx-8MKw)|5:35|
 |[exceptions](https://www.youtube.com/watch?v=DzUFm2FNeyo)|6:56|
+|[exceptions(reading)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/exception-handling)|3:00|
 
 ## Optionals
 
