@@ -1,4 +1,4 @@
-# Practicing of Basic concepts
+# Practice of Basic concepts
 
 ## Materials & Resources
 *Feel free to revisit any helpful materials from the previous days.*
