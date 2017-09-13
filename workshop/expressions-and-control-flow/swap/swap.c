@@ -1,12 +1,9 @@
 main()
 {
-    int a = 123;
-    int b = 526;
-    // Swap the values of the wariables
-    
+  // Swap the values of the variables
+  int a = 123;
+  int b = 526;
 
-
-
-    printf(a);
-    printf(b);
+  printf(a);
+  printf(b);
 }
