@@ -10,7 +10,6 @@ namespace Reverse
             
             // Create a function that can reverse a String, which is passed as the parameter
             // Use it on this reversed string to check it!
-            // Try to solve this using ElementAt() first, and optionally anything else after.
 
             Console.WriteLine(reversed);
         }
