@@ -61,8 +61,8 @@ You should not have more than 2 stories in the doing phase. If you already have 
  - Then it should print the usage information
 
 ```
-Python Todo application
-=======================
+Command Line Todo application
+=============================
 
 Command line arguments:
  -l   Lists all the tasks
