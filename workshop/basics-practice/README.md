@@ -10,7 +10,8 @@
 
 ## Workshop
 *Finish all the exercises from previous days if you have any unfinished ones!*
-_Only begin to work on these if those are finished._
+
+__Only begin to work on these if those are finished.__
  -  [Unique](exercises/unique.md)
  -  [Sort that list](exercises/bubble.md)
  -  [Find the substring](exercises/substr.md)
