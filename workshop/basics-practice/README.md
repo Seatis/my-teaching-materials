@@ -2,6 +2,7 @@
 
 ## Materials & Resources
 *Feel free to revisit any helpful materials from the previous day!*
+
 | Material | Time |
 |:---------|-----:|
 |[What's an algorithm? - David J. Malan](https://www.youtube.com/watch?v=6hfOvs8pY1k)| 4:57 |
