@@ -10,8 +10,8 @@
 
 ### Experience points
 - Each project has a certain amount of experience points (XP) that can be earned by completing the project
-- To level up and journey safely to the next week's challenges make sure you earn at least 2 XP
-- *Tip: Go with 3XP if you're on __insane__ difficulty setting.*
+- To level up and journey safely to the next week's challenges make sure you earn at least 3 XP
+- *Tip: Go with 4XP if you're on __insane__ difficulty setting.*
 
 ## Anagram
 *1XP*
@@ -90,16 +90,16 @@ Write a program where the program chooses a number between 1 and 100. The player
 ## Josephus Problem
 *2XP*
 
+### What the hell is Josephus Problem?
+
+> Flavius Josephus was a famous historian of the first century. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and to kill every remaining person until no one was left. But Josephus, wanted none of this suicide nonsense and therefore quickly calculated where he should stand in the circle so that he can survive.
+> *[for more detail check [Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem) on Wikipedia]*
+
 ### Exercise
 Write a function to solve Josephus Problem. The return value should be the number of the "winning" seat. The program should ask for a number, this number represents how many people are in the "game".
 There are two additional solutions to this Problem:
 - first one is when you use arrays and some basic mathematics
 - second one is with binary numbers (here you can also use arrays but in this case it it optional)
-
-### What the hell is Josephus Problem?
-
-> Flavius Josephus was a famous historian of the first century. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and to kill every remaining person until no one was left. But Josephus, wanted none of this suicide nonsense and therefore quickly calculated where he should stand in the circle so that he can survive.
-> *[for more detail check [Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem) on Wikipedia]*
 
 ### Examples
 
