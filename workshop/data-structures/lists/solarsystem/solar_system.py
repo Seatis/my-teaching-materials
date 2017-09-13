@@ -1,4 +1,4 @@
-# Saturn is missing from the planetList
+# Saturn is missing from the planet_list
 # Insert it into the correct position
 
-planetList = ["Mercury","Venus","Earth","Mars","Jupiter","Uranus","Neptune"]
+planet_list = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune"]

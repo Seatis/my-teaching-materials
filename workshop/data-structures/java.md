@@ -9,7 +9,12 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
 |:-------- |-----:|
 |[String Methods](https://www.youtube.com/watch?v=Hb_IVskG_Ck)|11:39|
 |[ArrayLists with types (Fudge.14)](https://www.youtube.com/watch?v=FhqdMFJbsxs) __until 11:42 only!!!__|11:42|
+|[ArrayList(Bana.11)](https://www.youtube.com/watch?v=IEqvmsqjpT0)|11:47|
 |[Java HashMap Example](https://www.youtube.com/watch?v=J-klDVEtwkM)|3:21|
+
+## Optional
+| Material | Time |
+|:-------- |-----:|
 |[Hash Tables](https://www.youtube.com/watch?v=h2d9b_nEzoA) | 7:41 |
 
 
@@ -18,8 +23,6 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
   - Object
   - means to *add* and *remove*
   - initialize
-    - what are the situation? empty, with values
-    - how does one use such; loops
   - `.add()` (to the next position, at an index)
   - `.addAll()`
   - `.remove()` (by index, by value)
