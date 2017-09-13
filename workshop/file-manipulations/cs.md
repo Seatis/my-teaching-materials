@@ -53,7 +53,7 @@ namespace Example
     {
         public static void Main(string[] args)
         {
-            var divisor = Constole.ReadLine();
+            int divisor = int.Parse(Constole.ReadLine());
             // If the input value for divisor was 0 the program breaks
             int result = 12 / divisor;
             // The program doesn't reach this line if the input was 0
@@ -84,7 +84,7 @@ namespace Example
         {
             try  // Prevents the program breaking when attempting dividing by zero
             {
-                var divisor = int.Parse(Console.ReadLine());
+                int divisor = int.Parse(Console.ReadLine());
                 // If the input value for divisor was 0 the program breaks
                 int result = 12 / divisor;
                 // The program doesn't reach this line if the input was 0
@@ -125,11 +125,11 @@ namespace Example
     {
         public static void Main(string[] args)
         {
-            string path = @"./assets/lorem-psum.txt";
+            string path = @"./assets/lorem-ipsum.txt";
             try
             {
                 // Reads the content from `lorem-psum.txt` in the `assets` folder line by line to a string List
-                var content = File.ReadAllLines(path);
+                String content = File.ReadAllLines(path);
                 // Prints the first line of the file
                 Console.WriteLine(content[0]);
             }
@@ -162,7 +162,7 @@ namespace Example
     {
         static void Main(string[] args)
         {
-            string path = @"./lorem-psum.txt";
+            string path = @"./lorem-ipsum.txt";
             using (StreamWriter writer = new StreamWriter(path))
             {
                 writer.WriteLine("Hello Alpaga!");
