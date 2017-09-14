@@ -64,7 +64,7 @@ Create a function named **search palindrome** following your current language's 
 |:---:|:---:|
 |"dog goat dad duck doodle never"|["og go", "g g", " dad ", "dad", "d d", "dood", "eve"]|
 |"apple"|[]|
-|"racecar"|"racecar"|
+|"racecar"|["racecar"]|
 |""|[]|
 
 ## Guess my number
