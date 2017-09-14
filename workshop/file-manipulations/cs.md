@@ -4,7 +4,8 @@
 
 | Material | Time |
 |:---------|-----:|
-|[File read and write](https://www.youtube.com/watch?v=kGZD_k1M938)|5:09|
+|[Very Basic File read and write](https://www.youtube.com/watch?v=kGZD_k1M938)|5:09|
+|[File read and write](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners/while-Iterations-and-Reading-Data-from-a-Text-File-11)|11:38|
 |[using keyword](https://www.youtube.com/watch?v=Dxbbtx-8MKw)|5:35|
 |[exceptions](https://www.youtube.com/watch?v=DzUFm2FNeyo)|6:56|
 |[exceptions(reading)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/exception-handling)|3:00|
@@ -25,6 +26,7 @@
  - `ReadAllLines()` / `ReadAllText()`
  - `WriteAllLines()` / `WriteAllText()`
  - `StreamWriter`
+ - `StreamReader`
  - `using`
  - `Dispose()`
  - Exception
