@@ -108,7 +108,7 @@ Introduction to version control systems and Git.
   - Run the downloaded Git-it App
   - Do the Challenges until `Branches Aren't Just For Birds` (you don't need to start this one)
     - We won't need branches at this point
-    - If you finished all the challenges including `Forkes and Clones` as the last one, proceed with the following:
+    - If you finished all the challenges including `Forks and Clones` as the last one, proceed with the following:
   - Fork this git repository: https://github.com/greenfox-academy/git-lesson-repository.git
       - Visit the page
       - Fork it!
@@ -137,8 +137,8 @@ Introduction to version control systems and Git.
   - sort a file
   - sort a file and redirect the input to a file
   - remove the duplicated lines from tasks.txt
-  - cat task.txt and filter basic tasks
-  - cat task.txt and filter out with -v the basic tasks
+  - cat tasks.txt and filter basic tasks
+  - cat tasks.txt and filter out with -v the basic tasks
   - Commit your changes and push (check it on github if you like)
 
 #### Your working environment

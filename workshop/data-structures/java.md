@@ -35,7 +35,7 @@ Make sure you finish the sorting assignment, rewatch the video if needed.
   - casting as string `.toString()`
 - String
   - `.length()`
-  - `.subString()`
+  - `.substring()`
   - `.replace()`
   - `.charAt()`
   - `.equals()`
