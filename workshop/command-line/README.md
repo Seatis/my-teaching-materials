@@ -119,26 +119,26 @@ Introduction to version control systems and Git.
 #### Manipulations
   - Change into the project directory
   - List the detailed file and directory informations
-  - Copy the index.html into about.html
-  - Create a temp_images directory
-  - Copy 1.jpg and 2.jpg into temp_images directory
-  - Copy every jpg file into temp_images directory
-  - Move 6.jpg file from css into images directory
-  - Delete 7.jpg from css directory
-  - Navigate up one directory from project/css/ to project/
+  - Copy the `index.html` into `about.html`
+  - Create a `temp_images` directory
+  - Copy `1.jpg` and `2.jpg` into `temp_images` directory from `images`
+  - Copy every `jpg` file into `temp_images` directory from `images`
+  - Move `6.jpg` file from `css` into `images` directory
+  - Delete `7.jpg` from `css` directory
+  - Navigate up one directory from `project/css/` to `project/`
   - Commit your changes and push (check it on github if you like)
 
 #### Redirections
   - Echo a string to a file
   - cat a file content and redirect the content to another file
   - redirect a file content to cat command
-  - count the words in index.html
+  - count the words in `index.html`
   - cat a file content and pipe to wc
   - sort a file
   - sort a file and redirect the input to a file
-  - remove the duplicated lines from tasks.txt
-  - cat tasks.txt and filter basic tasks
-  - cat tasks.txt and filter out with -v the basic tasks
+  - remove the duplicated lines from `tasks.txt`
+  - cat `tasks.txt` and filter basic tasks
+  - cat `tasks.txt` and filter out with -v the basic tasks
   - Commit your changes and push (check it on github if you like)
 
 #### Your working environment
