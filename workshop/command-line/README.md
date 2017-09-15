@@ -210,7 +210,7 @@ Introduction to version control systems and Git.
   - From tomorrow you'll only work in one repository found under the [greenfox-academy](https://github.com/greenfox-academy)  organisation
     - easier to track everything related to your progress in one repository
     - we won't learn how to create git repositories inside other git repositories, but a link would be nice for today's learning curves ;)
-    - create a README.md file in your main greenfox repository root
+    - create a README.md file in your main greenfox repository root with URLs pointing to your other repositories you have created today
     - check out how to create a link in Markdown syntax: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
     - create a link for your syllabus repo with a nice title (stage, commit and push)
     - for more details check out [github-usage](https://github.com/greenfox-academy/definitions/blob/master/github-usage.md) in definitions
