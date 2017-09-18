@@ -1,4 +1,5 @@
 # Greenfox Academy Syllabus Templates
+These are templates for making our daily lives easier. You can use these templates as a base of a class' syllabus. When creating a syllabus extend the template with the actual schedule of the days, correct the order within any week and add specific dates.
 
 ## Foundation
 The foundation phase should be the same regardless the technologies. The workshops are in the same order for every technology, the links differ, since the materials, the examples and the exercise boilerplates differ.
