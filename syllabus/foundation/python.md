@@ -80,10 +80,14 @@ Create a fractal from a variety of examples.
 
 ## Week 5 - Wanderer, The Game
 
-## Goals
+### Goals
 - Learn the concept of sprints and the Kanban board
 - Create a big application through separated small tasks
 - Deeper understanding and usage of OOP (classes, objects and inheritance)
 
-## Project for the week
-[Build a hero based walking on tiles and killing monsters type of game](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/wanderer)
+### Days
+- [Wanderer](https://github.com/greenfox-academy/teaching-materials/tree/master/project/wanderer)
+- Training / [DOJO](https://github.com/greenfox-academy/teaching-materials/tree/master/dojo/first-katas)
+
+### Project for the week
+[Build a hero based walking on tiles and killing monsters type of game](https://github.com/greenfox-academy/teaching-materials/tree/master/project/wanderer)
