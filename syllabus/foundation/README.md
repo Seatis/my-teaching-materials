@@ -1,5 +1,12 @@
 # Foundation Language independent template
 
+## Weekly schedule
+ -  [Week 1 - HTML and CSS](#week-1---html-and-css)
+ -  [Week 2 - Basics](#week-2---basics)
+ -  [Week 3 - Files and drawing](#week-3---files-and-drawing)
+ -  [Week 4 - Object Orientation](#week-4---object-orientation)
+ -  [Week 5 - Wanderer, The Game](#week-5---wanderer-the-game)
+
 ## Week 1 - HTML and CSS
 
 ### Goals:
@@ -61,7 +68,7 @@ Using the basic concepts of programming implement a more complex function to sol
 ### Project for the week
 Create a fractal from a variety of examples.
 
-## Object Orientation
+## Week 4 - Object Orientation
 
 ### Goals
 - Learn the concept of Object Oriented Programming
