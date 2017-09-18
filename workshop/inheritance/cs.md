@@ -4,7 +4,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 ## Materials & Resources
 
 ### Training
-- Before starting the materials do this little exercise: [Exercise before materials](green-fox/java/green-fox-shorter-java.md)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/c-sharp/green-fox-shorter-c#.md)
 
 
 | Material | Time |
