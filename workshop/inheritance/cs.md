@@ -9,19 +9,18 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 
 | Material | Time |
 |:-------- |-----:|
-|[Java Inheritance Tutorials Theory (slidenerd 46)](https://www.youtube.com/watch?v=i2ghIckPZfE)|14:06|
-|[Java Inheritance Tutorials Example (slidenerd 47)](https://www.youtube.com/watch?v=PHden2Po8YU)|10:16|
-|[Inheritance & Polymorphism (Bana.14)](https://www.youtube.com/watch?v=Lsdaztp3_lw)|13:04|
-|[Usage of super keyword](http://www.javatpoint.com/super-keyword)||
-|[Access modifiers (Public, Protected, Private, Default) (EJ Media 17)](https://www.youtube.com/watch?v=aRQRV2PMHtk)|7:53|
-|[Getters and setters (Rakshith Vasudev 11)](https://www.youtube.com/watch?v=Z12IEPyh0fc)|24:04|
+|[Inheritance, What? 'n Why?](https://www.youtube.com/watch?v=18f41HX2gHk)|5:28|
+|[Inheritance Example with Cats 'n Dogs](https://www.youtube.com/watch?v=EiBCF7rYRtI)|14:07|
+|[Inheritance & Polymorphism](https://www.youtube.com/watch?v=18D8R3hwYW8)|4:49|
+|[Usage of base keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base)|-|
+|[Access modifiers (Public, Protected, Private, internal, protected internal)](https://www.youtube.com/watch?v=-pcbDvUh4e0)|2:57|
+|[Getters and setters](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)||
 
 
 ### Optional
 | Material | Time |
 |:-------- |-----:|
-|[Java Package Example (slidernerd 69)](https://www.youtube.com/watch?v=FjgnIYMBhDA)|11:43|
-|[Access Modifiers (Javadocs)](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)||
+|[Access Modifiers](http://www.msdotnet.co.in/2012/06/access-specifier-or-modifier-in-c.html#.Wb-wnGeCyV4)|-|
 
 ## Material Review
 - `extends`
