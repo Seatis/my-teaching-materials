@@ -1,5 +1,12 @@
 # Orientation Java Spring Template
 
+## Weekly schedule
+ -  [Week 6 - Java Essentials](#week-6---java-essentials)
+ -  [Week 7 - Spring Basics](#week-7---spring-basics)
+ -  [Week 8 - Data persistence](#week-8---data-persistence)
+ -  [Week 9 - REST](#week-9---rest)
+ -  [Week 10 - P2P Rest Chat](#week-10---p2p-rest-chat)
+
 ## Week 6 - Java Essentials
 
 ### Goals
@@ -34,11 +41,12 @@
 [Create a simple website where you are able to manage a tamagochi](https://github.com/greenfox-academy/teaching-materials/tree/master/project/programmer-fox-club)
 
 
-## Week 8 - SQL
+## Week 8 - Data persistence
 
 ### Goals
-- Learn how to use a relational DB with SQL
+- Learn how to use a relational DB and manage data with SQL
 - Learn how to use a database from Spring
+- Managing persistent (saving and loading) data in database
 - Create a simple backend application
 
 ### Days
@@ -65,7 +73,7 @@
 ### Project of the week
 
 
-## Week 10 - Project
+## Week 10 - P2P Rest Chat
 
 ### Goals
 
