@@ -8,11 +8,8 @@ These are templates for making our daily lives easier. You can use these templat
   - where there is a language specific `md` extend the link of the day
 
 ## Foundation
-The foundation phase should be the same regardless the technologies. The workshops are in the same order for every technology, the links differ, since the materials, the examples and the exercise boilerplates differ.
+The foundation phase should be the same regardless the technologies. The workshops are in the same order for every technology, the links can differ, since the materials, the examples and the exercise boilerplates differ.
  -  [Language independently](foundation/README.md)
- -  [Python](foundation/python.md)
- -  [Java](foundation/java.md)
- -  [C#](foundation/cs.md)
 
 ## Orientation
 The orientation phase can totally differ. The main focus is to orient towards a useful backend/frontend framework in the class' main language. What could need different preparatory materials and workshops.
