@@ -37,4 +37,4 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 ## Individual Workshop Review
 As always neatness counts in coding.
 
-Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's Java Styleguide](../../styleguide/java.md)
+Please be sure you're well acquainted with the guidelines on coding: [GreenFox Academy's C# Styleguide](https://github.com/greenfox-academy/alpaga-syllabus/blob/master/Styleguide/cs.md)
