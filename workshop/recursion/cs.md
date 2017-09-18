@@ -32,12 +32,14 @@ What happens when a function calls itself?
 ### Factorial with loop
 
 ```c#
-public static int FactorialWithLoop(int n) {
-  int factorial = 1;
-  for (int i = 1; i  < n + 1; i++) {
-    factorial *= i;
-  }
-  return factorial;
+public static int FactorialWithLoop(int n) 
+{
+    int factorial = 1;
+    for (int i = 1; i  < n + 1; i++) 
+    {
+      factorial *= i;
+    }
+    return factorial;
 }
 ```
 
@@ -45,12 +47,16 @@ public static int FactorialWithLoop(int n) {
 ### Factorial with recursion
 
 ```c#
-public static int FactorialWithRecursion(int n) {
-  if (n == 1) {
-    return 1;
-  } else {
-    return n * FactorialWithRecursion(n - 1);
-  }
+public static int FactorialWithRecursion(int n) 
+{
+    if (n == 1) 
+    {
+        return 1;
+    } 
+    else 
+    {
+        return n * FactorialWithRecursion(n - 1);
+    }
 }
 ```
 
