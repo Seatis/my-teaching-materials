@@ -73,7 +73,7 @@
 ### Days
   - [REST](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/rest-backend/java.md)
   - [REST tests](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/java-spring-rest-test)
-  - [Bootstrap](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/bootstrap) and [P2P Chat Project(https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
+  - [Bootstrap](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/bootstrap) and [P2P Chat Project](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
   - [P2P Chat Project](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
   - [P2P Chat Project](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
 
