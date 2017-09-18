@@ -29,7 +29,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - casting subClass as Class
 
 ## Workshop
-- [Green Fox organization](green-fox/java/green-fox-java.md)
+- [Green Fox organization](green-fox/c-sharp/green-fox-c#.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 
