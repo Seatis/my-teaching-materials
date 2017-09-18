@@ -35,7 +35,7 @@
 - [Thymeleaf, Models, Views](https://github.com/greenfox-academy/teaching-materials/tree/suvi-thymeleaf/workshop/java-thymeleaf)
 - [Beans](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/java-beans)
 - [Hosting](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/hosting) and [TTC](https://github.com/greenfox-academy/teaching-materials/tree/master/project/programmer-fox-club)
-- Friday (05 May): [TTC](https://github.com/greenfox-academy/teaching-materials/tree/master/project/programmer-fox-club)
+- [TTC](https://github.com/greenfox-academy/teaching-materials/tree/master/project/programmer-fox-club)
 
 ### Project for the week
 [Create a simple website where you are able to manage a tamagochi](https://github.com/greenfox-academy/teaching-materials/tree/master/project/programmer-fox-club)
