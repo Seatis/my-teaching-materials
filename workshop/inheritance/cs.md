@@ -23,23 +23,10 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 |[Access Modifiers](http://www.msdotnet.co.in/2012/06/access-specifier-or-modifier-in-c.html#.Wb-wnGeCyV4)|-|
 
 ## Material Review
-- `extends`
-- `super()` and `super`
-- relationships
-  - is-a
-  - has-a
-- &lt;variable&gt; `instanceof` &lt;Class&gt;
-- access modifiers: `public`, `protected`, `default`, `private`
-- getters, setters
-- `final`
+- `base`
+- access modifiers: `public`, `protected`, `private`, `internal`, `internal protected`, `default`
+- `get`, `set`, `value`
 - casting subClass as Class
-
-Optional
-- Packages
-  -  `package` keyword
-  - resolve to a type
-  - `import` &lt;package&gt;.&lt;class&gt;
-  - `import` &lt;package&gt;.*
 
 ## Workshop
 - [Green Fox organization](green-fox/java/green-fox-java.md)
