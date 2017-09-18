@@ -10,8 +10,12 @@
 ## Week 6 - Java Essentials
 
 ### Goals
-- Learn excluded and not mentioned topics in Java
-- Get to know the basic build system of gradle and dependency management
+ -  Learn excluded and not mentioned topics in Java:
+    - function headers
+    - implementation of predefined methods
+    - syntax sugars
+    - concept of enums, generic classes and annotations
+ -  Get to know the basic build system of gradle and dependency management
 
 ### Days
 - Monday (17 April): Easter Monday
@@ -57,11 +61,15 @@
 - [Reddit project](https://github.com/greenfox-academy/teaching-materials/tree/master/project/reddit/java.md)
 
 ### Project of the week
+[Create a simple Reddit clone where the posts and votes are stored in the database](https://github.com/greenfox-academy/teaching-materials/tree/master/project/reddit/java.md)
 
 
 ## Week 9 - REST
 
 ### Goals
+  - Understand what an API is
+  - Create and absorb JSON information
+  - Create and test Restful endpoints
 
 ### Days
 - [REST](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/rest-backend/java.md)
@@ -71,11 +79,12 @@
 - [P2P Chat Project](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
 
 ### Project of the week
-
+[Create a P2P Chat application where multiple server instances are able to forward the incoming messages to each other in a predefined circle](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
 
 ## Week 10 - P2P Rest Chat
 
 ### Goals
+  - Deep understanding and usage of controllers, endpoints and endpoint tests.
 
 ### Days
 - Training / [DOJO](https://github.com/greenfox-academy/teaching-materials/tree/master/dojo/tennis-game)
@@ -85,3 +94,5 @@
 - Android + project
 
 ### Project of the week
+[Create a P2P Chat application where multiple server instances are able to forward the incoming messages to each other in a predefined circle](https://github.com/greenfox-academy/teaching-materials/blob/master/project/p2p-chat/README.md)
+[Create an Android client communicating with the server instance you've just implemented](#)
