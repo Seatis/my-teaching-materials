@@ -9,7 +9,7 @@ These are templates for making our daily lives easier. You can use these templat
 
 ## Foundation
 The foundation phase should be the same regardless the technologies. The workshops are in the same order for every technology, the links can differ, since the materials, the examples and the exercise boilerplates differ.
- -  [Language independently](foundation/README.md)
+ -  [Language independent](foundation/README.md)
 
 ## Orientation
 The orientation phase can totally differ. The main focus is to orient towards a useful backend/frontend framework in the class' main language. What could need different preparatory materials and workshops.
