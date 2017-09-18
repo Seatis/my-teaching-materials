@@ -11,11 +11,11 @@ Meet your mentors, classmates and the informations you need to know about the co
 - Start work the tools: the browser, the editor and the kanban board.
 ### Days
 
-- Monday: Team building
-- Tuesday: [Introduction, internet basics](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/internet-basics.md), [Your first website](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/first-website)
-- Wednesday: [GIT, CLI, Pseudo](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/command-line), [Computer basics](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/computer-basics.md)
-- Thursday: [Sitebuilding basics](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/ui-development/sitebuild-basics), [Internet advanced](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/internet-advanced.md)
-- Friday: [CSS forms](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/ui-development/forms), [Computer advanced](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/computer-advanced.md)
+- Team building
+- [Introduction, internet basics](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/internet-basics.md), [Your first website](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/first-website)
+- [GIT, CLI, Pseudo](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/command-line), [Computer basics](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/computer-basics.md)
+- [Sitebuilding basics](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/ui-development/sitebuild-basics), [Internet advanced](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/internet-advanced.md)
+- [CSS forms](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/ui-development/forms), [Computer advanced](https://github.com/greenfox-academy/teaching-materials/tree/master/material/computer-internet-basics/computer-advanced.md)
 ### Knowledge and Skills
 
 The competences that you are expected to master this week:
@@ -34,11 +34,11 @@ Build a website with HTML and CSS.
 - Get familiar with conditions and data structures
 
 ### Days
- - Monday: [Expressions and Control flow](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/expressions-and-control-flow/cs.md)
- - Tuesday: [Arrays and functions](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/functions-and-arrays/cs.md)
- - Wednesday: [Data structures and practice](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/data-structures/cs.md)
- - Thursday: [Practice](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/basics-practice)
- - Friday: [Project](https://github.com/greenfox-academy/teaching-materials/tree/master/project/basics)
+ - [Expressions and Control flow](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/expressions-and-control-flow/cs.md)
+ - [Arrays and functions](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/functions-and-arrays/cs.md)
+ - [Data structures and practice](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/data-structures/cs.md)
+ - [Practice](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop/basics-practice)
+ - [Project](https://github.com/greenfox-academy/teaching-materials/tree/master/project/basics)
 
 ### Project of the week
 Using the basic concepts of programming implement a more complex function to solve a little more complicated task. Like finding palindromes in a string or a simple guessing game.
@@ -52,11 +52,11 @@ Using the basic concepts of programming implement a more complex function to sol
 - Deep understanding and usage of variables, functions and parameters.
 
 ### Days
-- Monday: [File IO](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/file-manipulations/cs.md)
-- Tuesday: [Drawing](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/cs.md)
-- Wednesday: Training / Code game / Trial Exam
-- Thursday: [Recursion](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/recursion/cs.md)
-- Friday: [Fractals](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/fractal)
+- [File IO](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/file-manipulations/cs.md)
+- [Drawing](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/cs.md)
+- Training / Code game / Trial Exam
+- [Recursion](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/recursion/cs.md)
+- [Fractals](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/fractal)
 
 ### Project for the week
 Create a fractal from a variety of examples.
@@ -69,11 +69,11 @@ Create a fractal from a variety of examples.
 - Write your first unit tests
 
 ### Days
-- Monday: [Classes and objects](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/oo/cs.md)
-- Tuesday: [Inheritance](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/inheritance/cs.md)
-- Wednesday: [OO + Testing](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/testing/cs.md)
-- Thursday: [Todo App](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/todo-app)
-- Friday: [Todo App](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/todo-app)
+- [Classes and objects](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/oo/cs.md)
+- [Inheritance](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/inheritance/cs.md)
+- [OO + Testing](https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/testing/cs.md)
+- [Todo App](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/todo-app)
+- [Todo App](https://github.com/greenfox-academy/teaching-materials/tree/master/projects/todo-app)
 
 ### Project for the week
 [Write a command-line todo application to easily keep track of your day-to-day tasks](https://github.com/greenfox-academy/teaching-materials/tree/master/exercises/command-line-apps/todo-app)
