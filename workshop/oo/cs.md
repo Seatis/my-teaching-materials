@@ -25,12 +25,14 @@
 
 
 ## Material Review
-- struct 
+- struct
 - class
   - private
   - public
   - static
 - fields
+- properties
+- events
 - constructor
 - this
 - new
@@ -38,150 +40,104 @@
 
 ## Workshop
 
-### Data Structure
-```java
-public class Bicycle {
-   int cadence;
-   int gear;
-   int speed;
-}
-```
-```java
-  public class FamilyMember {
-    String name;
-    int age;
-    String surname;
+```csharp
+public struct Home
+{
+    string name;
+    int roomsNumber;
+    int price;
+    // Fields, properties, methods and events go here...
 }
 ```
 
-- [Post-it](post-it/java.md)
-- [BlogPost](blog-post/java.md)
+```csharp
+class FamilyMember
+{
+    string name;
+    int age;
+    string surname;
+    //Fields, properties, methods and events go here...
+}
+```
+
+#### What are the main diferences between struct and class?
+- Within a struct declaration, fields cannot be initialized unless they are declared as const or static.
+
+- A struct cannot declare a default constructor (a constructor without parameters) or a finalizer.
+
+- Structs are value types and classes are reference types.
+
+- Unlike classes, structs can be instantiated without using a `new` operator.
+
+- Structs can declare constructors that have parameters.
+
+- A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from `System.ValueType`, which inherits from `System.Object`.
+
+- A struct can implement interfaces.
+
+- A struct can be used as a nullable type and can be assigned a null value.
+
+### Data Structures
+
+- [Post-it](post-it/cs.md)
+- [BlogPost](blog-post/cs.md)
 
 ### Use Class
 
-```java
-public class Usable {
-  String status;
-  public Usable() {
-    status = "I'm not used at all";
-  }
+```csharp
+using System;
 
-  public void use() {
-    status = "Now, I was used at least once."
-  }
+namespace GreenFox
+{
+    public class Usable
+    {
+        public string status;
+        public static int count;
+        public Usable()
+        {
+            status = "I am not used at all";
+        }
+        public static void Use()
+        {
+            count++;
+            Console.WriteLine("I am used: {0} times", count);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Usable usable = new Usable();
+            Console.WriteLine(usable.status);
+
+            Usable.Use();
+
+            Usable.Use();
+
+            Console.ReadLine();
+        }
+    }
 }
 
-public class Main {
-  public static void main(String[] args) {
-    Usable firstUsable = new Usable();
-    firstUsable.use();
-  }
-}
 ```
 
-- [Dominoes](dominoes/java)
-- [Dice](dice/java)
-- [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
-```java
-public class Human {
-  String name;
-  int age;
-  int iq;
-
-  public Human() {
-    this("unkown", 0, 0);
-  }
-
-  public Human(String name, int age, int iq) {
-    this.name = name;
-    this.age = age;
-    this.iq = iq;
-  }
-
-  public boolean isSmart(){
-    return (iq > 100);
-  }
-
-  public boolean isNameless(){
-    return (this.name.equals("unkown") || this.name.equals(""));
-  }
-
-  public void beSmarter(){
-    this.iq += 20;
-  }
-
-  public static void main(String[] args) {
-    Human human = new Human();
-    Human human2 = new Human("Laci",18,110);
-
-    human.name="Hector";
-    human.age=1;
-
-    if(human.isSmart()){
-      System.out.println(human.name + " is smart, with iq: " + human.iq);
-    }
-  }
-}
+```csharp
 ```
 
-- [Animal](animal)
-- [Sharpie](sharpie/java.md)
-- [Counter](counter/java)
 
 ### Complex Architectures
 
-- [Teachers and Students](teachers-and-students)
-- [Petrol Station](petrol-station/java.md)
+
 
 ### Classes as Fields
 
-```java
-public class Page {
-  String content;
-
-  public Page() {
-    this.content = "";
-  }
-
-  public Page(String content) {
-    this.content = content;
-  }
-
-  public String getContent() {
-    return content;
-  }
-}
-
-public class Book {
-  List<Page> pages;
-
-  public Book() {
-    this.pages = new ArrayList<>();
-  }
-
-  public void add(Page page) {
-    pages.add(page);
-  }
-
-  public int countBlankPages() {
-    int counter = 0;
-    for (Page page : this.pages) {
-      if (page.getContent().isEmpty()) {
-        counter++;
-      }
-    }
-    return counter;
-  }
-}
+```csharp
 ```
 
-- [Sharpie Set](sharpie-set/java.md)
-- [Farm](farm)
-- [Blog](blog)
 
 ### Alltogether
 
-- [Pirates](pirates/java.md)
+
 - Redo the 5 trees homework (with classes)
