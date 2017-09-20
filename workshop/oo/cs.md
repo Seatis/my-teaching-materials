@@ -124,6 +124,55 @@ namespace GreenFox
 
 ### Encapsulation and Constructor
 ```csharp
+using System;
+
+namespace GreenFox
+{
+    class Program
+    {
+        public class Human
+        {
+            public string name;
+            public int age;
+            public int iq;
+
+            public Human(string nm, int a, int iQ)
+            {
+                name = nm;
+                age = a;
+                iq = iQ;
+            }
+            public bool IsSmart()
+            {
+                return (iq > 100);
+            }
+            public bool IsNameLess()
+            {
+                return (this.name.Equals("unkown") || this.name.Equals(""));
+            }
+            public void BeSmarter()
+            {
+                this.iq += 20;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Human human = new Human("John", 37, 95);
+
+            Console.WriteLine("Is our human nameless? " + human.IsNameLess());
+
+            Console.WriteLine("Our human is {0} and he is {1} old", human.name, human.age);
+
+            Console.WriteLine("Is our human smart: " + human.IsSmart());
+
+            human.BeSmarter();
+
+            Console.WriteLine("Is our human smart now? " + human.IsSmart());
+
+            Console.ReadLine();
+        }
+    }
+}
 ```
 
 
