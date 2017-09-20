@@ -12,12 +12,14 @@ Draw on a canvas using our previous knowledge about control flow and functions
 | [Polygon](https://docs.microsoft.com/en-us/dotnet/api/system.windows.shapes.polygon?view=netframework-4.7#Examples) | Example only |
 
 ## Material Review
+- WPF
 - Canvas
 - Stroke, StrokeThickness, Fill
 - Line
 - Ellipse
 - Rectangle
 - Polygon
+- Point
 
 ## Workshop
 As you saw in the examples, creating shapes and adding them to our canvas is not a few step exercise. That's why we created the [FoxDraw.cs](./boilerplate/FoxDraw.cs) to help you focus more on what we are aiming to learn today. If you are curious feel free to dig deeper into the FoxDraw.cs code!
