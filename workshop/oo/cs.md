@@ -121,6 +121,9 @@ namespace GreenFox
 
 ```
 
+- [Dominoes](dominoes/java)
+- [Dice](dice/java)
+- [Fleet of Things](fleet-of-things/java)
 
 ### Encapsulation and Constructor
 ```csharp
@@ -175,18 +178,28 @@ namespace GreenFox
 }
 ```
 
+- [Animal](animal)
+- [Sharpie](sharpie/java.md)
+- [Counter](counter/java)
 
 ### Complex Architectures
 
 
+- [Teachers and Students](teachers-and-students)
+- [Petrol Station](petrol-station/java.md)
 
 ### Classes as Fields
 
 ```csharp
+
 ```
+
+- [Sharpie Set](sharpie-set/java.md)
+- [Farm](farm)
+- [Blog](blog)
 
 
 ### Alltogether
 
-
+- [Pirates](pirates/java.md)
 - Redo the 5 trees homework (with classes)
