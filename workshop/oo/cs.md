@@ -131,9 +131,9 @@ namespace GreenFox
 
 ```
 
-- [Dominoes](dominoes/cs.md)
-- [Dice](dice/cs.md)
-- [Fleet of Things](fleet-of-things/cs.md)
+- [Dominoes](dominoes/cs)
+- [Dice](dice/cs)
+- [Fleet of Things](fleet-of-things/cs)
 
 ### Encapsulation and Constructor
 ```csharp
@@ -191,7 +191,7 @@ namespace GreenFox
 
 - [Animal](animal)
 - [Sharpie](sharpie/cs.md)
-- [Counter](counter/cs.md)
+- [Counter](counter/cs)
 
 ### Complex Architectures
 

@@ -1,9 +1,9 @@
 # BlogPost
-- Create a `BlogPost` class and a struct that has
-  - an `authorName`
-  - a `title`
-  - a `text`
-  - a `publicationDate`
+- Create a `BlogPost` class that has
+  - an `AuthorName`
+  - a `Title`
+  - a `Text`
+  - a `PublicationDate`
 - Create a few blog post objects:
   - "Lorem Ipsum" titled by John Doe posted at "2000.05.04."
     - Lorem ipsum dolor sit amet.
