@@ -8,13 +8,16 @@
 
 | Material | Time |
 |:---------|-----:|
-|[Struct](https://www.youtube.com/watch?v=1UV1Pd20akM)|7.59|
 |[Classes and Objects](https://www.youtube.com/watch?v=FCjoioi6xvM)|4:33|
+|[Object Oriented Programming Basics](https://www.youtube.com/watch?v=0K2EsvAz5Pg)|8:08|
 |[Fields](https://www.youtube.com/watch?v=jcHBfa36gz0)|3:44|
+|[Propertis](https://www.youtube.com/watch?v=7jD_T04XfpE)|10:51|
 |[Constructor](https://www.youtube.com/watch?v=MyWBU6IKl5U)|6:19|
+|[Static vs Non Static](https://www.youtube.com/watch?v=86ymhq54V5k)|13:33|
 |[This keyword](https://www.youtube.com/watch?v=m8hRUP1WL28)|2:28|
+|[Struct](https://www.youtube.com/watch?v=1UV1Pd20akM)|7:59|
+|[Structs](https://www.youtube.com/watch?v=4yoAojPY5aI)|6:24|
 |[Struct vs Classes (only from 4:19)](https://youtu.be/4eDFpuDGosA?t=259)| 10:39|
-|[Static(reading)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)|3:00|
 
 
 
@@ -22,17 +25,17 @@
 | Material | Time |
 |:---------|-----:|
 |[Overloading](https://www.youtube.com/watch?v=F9ygaxxbbz4)|11:17|
+|[Static(reading)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)|3:00|
 
 
 ## Material Review
 - struct
 - class
   - private
-  - public
-  - static
+  - public 
+- static
 - fields
 - properties
-- events
 - constructor
 - this
 - new
@@ -46,7 +49,6 @@ public struct Home
     string name;
     int roomsNumber;
     int price;
-    // Fields, properties, methods and events go here...
 }
 ```
 
@@ -56,7 +58,6 @@ class FamilyMember
     string name;
     int age;
     string surname;
-    //Fields, properties, methods and events go here...
 }
 ```
 
@@ -89,30 +90,39 @@ using System;
 
 namespace GreenFox
 {
-    public class Usable
+    public class FishTank
     {
-        public string status;
-        public static int count;
-        public Usable()
+        public static int FishCount = 0;
+
+        public string Status;
+
+        public FishTank()
         {
-            status = "I am not used at all";
+            Status = "There is no fish in the tank!";
         }
-        public static void Use()
+
+        public static void Add()
         {
-            count++;
-            Console.WriteLine("I am used: {0} times", count);
+            FishCount++;
+            Console.WriteLine("There is {0} fish in the tank.", FishCount);
+        }
+
+        public void HowMuchIsTheFish()
+        {
+            Console.WriteLine("Hyper! Hyper!");
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Usable usable = new Usable();
-            Console.WriteLine(usable.status);
+            var tank = new FishTank();
+            Console.WriteLine(tank.Status);
 
-            Usable.Use();
+            FishTank.Add();
 
-            Usable.Use();
+            tank.HowMuchIsTheFish();
 
             Console.ReadLine();
         }
@@ -121,9 +131,9 @@ namespace GreenFox
 
 ```
 
-- [Dominoes](dominoes/java)
-- [Dice](dice/java)
-- [Fleet of Things](fleet-of-things/java)
+- [Dominoes](dominoes/cs.md)
+- [Dice](dice/cs.md)
+- [Fleet of Things](fleet-of-things/cs.md)
 
 ### Encapsulation and Constructor
 ```csharp
@@ -135,41 +145,42 @@ namespace GreenFox
     {
         public class Human
         {
-            public string name;
-            public int age;
-            public int iq;
+            private string Name;
+            private int Age;
+            private int IQ;
 
-            public Human(string nm, int a, int iQ)
+            public Human(string name, int age, int iq)
             {
-                name = nm;
-                age = a;
-                iq = iQ;
+                Name = name;
+                Age = age;
+                IQ = iq;
             }
+            
             public bool IsSmart()
             {
-                return (iq > 100);
+                return (IQ > 100);
             }
+            
             public bool IsNameLess()
             {
-                return (this.name.Equals("unkown") || this.name.Equals(""));
+                return (this.Name.Equals("unkown") || this.Name.Equals(""));
             }
+            
             public void BeSmarter()
             {
-                this.iq += 20;
+                this.IQ += 20;
             }
         }
+        
         static void Main(string[] args)
         {
-            Human human = new Human("John", 37, 95);
+            var human = new Human("John", 37, 95);
 
             Console.WriteLine("Is our human nameless? " + human.IsNameLess());
-
             Console.WriteLine("Our human is {0} and he is {1} old", human.name, human.age);
-
             Console.WriteLine("Is our human smart: " + human.IsSmart());
 
             human.BeSmarter();
-
             Console.WriteLine("Is our human smart now? " + human.IsSmart());
 
             Console.ReadLine();
@@ -179,27 +190,59 @@ namespace GreenFox
 ```
 
 - [Animal](animal)
-- [Sharpie](sharpie/java.md)
-- [Counter](counter/java)
+- [Sharpie](sharpie/cs.md)
+- [Counter](counter/cs.md)
 
 ### Complex Architectures
 
 
 - [Teachers and Students](teachers-and-students)
-- [Petrol Station](petrol-station/java.md)
+- [Petrol Station](petrol-station/cs.md)
 
 ### Classes as Fields
 
 ```csharp
+public class Page 
+{
+    public string Content { get; set; }
+}
 
+public class Book 
+{
+    private List<Page> Pages;
+
+    public Book() 
+    {
+        this.Content = new List<Page>();
+    }
+
+    public void Add(Page page) 
+    {
+        Pages.Add(page);
+    }
+
+    public int CountBlankPages() 
+    {
+        int counter = 0;
+        for (var page in Pages) 
+        {
+            if (page.Content.isEmpty()) 
+            {
+                counter++;
+            }
+        }
+
+        return counter;
+    }
+}
 ```
 
-- [Sharpie Set](sharpie-set/java.md)
+- [Sharpie Set](sharpie-set/cs.md)
 - [Farm](farm)
 - [Blog](blog)
 
 
 ### Alltogether
 
-- [Pirates](pirates/java.md)
+- [Pirates](pirates/cs.md)
 - Redo the 5 trees homework (with classes)
