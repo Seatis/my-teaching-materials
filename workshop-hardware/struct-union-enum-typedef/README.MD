@@ -108,10 +108,10 @@
 - [05.c](Workshop/05.c)
 - [06.c](Workshop/06.c)
 - [07.c](Workshop/07.c)
-- [08.c](Workshop/07.c)
-- [09.c](Workshop/07.c)
-- [10.c](Workshop/07.c)
-- [11.c](Workshop/07.c)
+- [08.c](Workshop/08.c)
+- [09.c](Workshop/09.c)
+- [10.c](Workshop/10.c)
+- [11.c](Workshop/11.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
