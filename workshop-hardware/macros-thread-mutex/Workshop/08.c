@@ -1,22 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <semaphore.h>
 #include <pthread.h>
-#include <unistd.h>
 
-//TODO: write 2 functions which prints out numbers from 0 to 10
-//In the first function use random generated 250-500 ms delay.
-//In the second function use random generated 125-250 ms delay.
-//use delay with calling usleep() function.
-//in the main() function create 2 threads with the 2 functions and after they're terminated, join to the main thread and print out: "Both threads are ready."
+void thread_function();
 
-//hint: random number within a range: int r = (rand() % (max + 1 - min)) + min
+int shared = 0;
 
-void printer_1();
-void printer_2();
+//TODO: Implement the former exercise, but this time don't use mutex. Use semaphore instead.
+
 
 int main()
 {
-    srand(time(NULL));
 
     return 0;
 }
