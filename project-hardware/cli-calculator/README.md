@@ -165,7 +165,7 @@ Hit enter to continue.
 ```
 ---
 
-### help
+### Some help for the positioning of the cursor in order to see the result in the same row as the operands
 positioning the console cursor in Windows (you have to include Windows.h):
 ```
 COORD coord = {0,0};
