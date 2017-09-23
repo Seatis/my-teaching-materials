@@ -93,17 +93,17 @@
 
 ## Workshop
 ### Preprocessor macros
-- [`#define`](Workshop/1_define.c)
-- [`#ifdef/#ifndef`](Workshop/2_ifnded_ifdef.c)
-- [`#if/#elif/#else`](Workshop/3_if_elif_else.c)
-- [`#error`](Workshop/Macros/4_error.c)
+- [`#define`](Workshop/01.c)
+- [`#ifdef/#ifndef`](Workshop/02.c)
+- [`#if/#elif/#else`](Workshop/03.c)
+- [`#error`](Workshop/Macros/04.c)
 
 ### Threads and mutex
-- [joining_to_main_thread.c](Workshop/joining_to_main_thread.c)
-- [two_threads_with_delay.c](Workshop/two_threads_with_delay.c)
-- [mutex.c](Workshop/mutex.c)
-- [semaphore.c](Workshop/semaphore.c)
-
+- [joining_to_main_thread](Workshop/05.c)
+- [color printer](Workshop/06.c)
+- [mutex](Workshop/07.c)
+- [semaphore](Workshop/08.c)
+- [two_threads_with_delay](Workshop/09.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
