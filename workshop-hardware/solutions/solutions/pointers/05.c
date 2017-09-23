@@ -1,27 +1,15 @@
 #include <stdio.h>
 
-void string_copy(char *dest, char *source);
-
 int main()
 {
-    char my_string[] = "to be copied";
-    char dest[50];
+	int numbers[] = {5, 6, 7, 8, 9};
+	int *number_pointer = &numbers[0];
+	//TODO:
+	// The "number_pointer" should point to the third element of the array called "numbers",
+	// than please print its value with it. Solve the problem without reusiong the "&" operator
+	// for geting the address of the third element.
+	number_pointer += 2;
+	printf("%d", *number_pointer);
 
-   //TODO: write a function, which copies a string to the 'dest' array, then print out in string format
-
-
-    string_copy(dest, my_string);
-
-    printf("The new array's content: %s", dest);
-
-    return 0;
-}
-
-void string_copy(char *dest, char *source)
-{
-    int i;
-
-    for (i = 0; source[i] != '\0'; ++i)
-        dest[i] = source[i];
-    dest[i] = '\0';
+	return 0;
 }

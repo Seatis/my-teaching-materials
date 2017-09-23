@@ -1,32 +1,20 @@
 #include <stdio.h>
 
-void reverse_name(char *name, char *reversed_name);
-
-int main(void) {
-	char name[] = "Gipsz Jakab";
-
-    char reversed[50];
-    
-    //write a function which reverse a name's last name and first name. Use a void function. Put your 'return' value in the second parameter.
-
-    reverse_name(name, reversed);
-
-    printf("The reversed name: %s", reversed);
-}
-
-void reverse_name(char *name, char *reversed_name)
+int main()
 {
-    int i;
+	int high_number = 6655;
+	int low_number = 2;
 
-    for (i = 0; name[i] != ' '; ++i)            //finding the position of space
-        ;
-    int space = i;
+	int *hight_number_pointer = &high_number;
+	int *other_high_number_pointer;
+	//TODO:
+	// The "other_high_number_pointer" should point to the same memory address
+	// without using the "&" operator.
+	other_high_number_pointer = hight_number_pointer;
+	printf("%p\n", hight_number_pointer);
+	printf("%p\n", other_high_number_pointer);
+	printf("%d\n", *hight_number_pointer);
+	printf("%d\n", *other_high_number_pointer);
 
-    int dest = 0;
-    for (i = space + 1; name[i] != '\0'; ++i)   //first name
-        reversed_name[dest++] = name[i];
-    reversed_name[dest++] = ' ';
-    for (i = 0; i != space; ++i)               //last name
-        reversed_name[dest++] = name[i];
-    reversed_name[dest++] = '\0';
+	return 0;
 }

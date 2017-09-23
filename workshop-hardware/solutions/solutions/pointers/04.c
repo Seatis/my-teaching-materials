@@ -1,24 +1,14 @@
 #include <stdio.h>
 
-int my_strlen(char *string);
-
 int main()
 {
-	char my_string[50] = "Hello world!";
-
-	//TODO: implement your own strlen function.
-
-	int length = my_strlen(my_string);
-
-	printf("%d", length);
+	int numbers[] = {5, 6, 7, 8, 9};
+	int *number_pointer;
+	//TODO:
+	// The "number_pointer" should point to the first element of the array called "numbers",
+	// than please print its value with it.
+	number_pointer = &numbers[0];   // Same as number_pointer = numbers;
+	printf("%d", *number_pointer);
 
 	return 0;
-}
-
-int my_strlen(char *string)
-{
-	int i;
-	for (i = 0; string[i] != '\0'; ++i)
-		;
-	return i;
 }
