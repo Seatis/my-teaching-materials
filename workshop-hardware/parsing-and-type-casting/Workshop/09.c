@@ -1,16 +1,23 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+void binary_adder (char *bin_op_1, char *bin_op_2);
+
+//TODO: write a program which asks for two binary numbers.
+//write a function, which prints out the sum of the 2 binary numbers.
 
 int main()
 {
-	char command[256];
-    char logged_in = 0;
-    char registered = 0;
 
-    //TODO: write a register-login-logout program
-    //if you type in register print out "Registration..." or "You are already registered." if you are registered.
-    //if you type in login print out "Logging in..." or "Already logged in." if are logged in.
-    //if you type in logout print out "Logging out..." or "Already logged out." if are logged out.
+    char a[20];
+    char b[20];
 	
+    printf("Give me a binary number: ");
+    scanf("%s", &a);
+    printf("Give me another binary number: ");
+    scanf("%s", &b);
+
+    binary_adder(a, b);
+
+    return(0);
 }

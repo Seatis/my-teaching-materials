@@ -1,47 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void transform (char str[], int original_base, int new_base);
-
-//TODO: write a program, which transforms a number from a number system to another.
-//use the stdlib.h functions, and take care of error handling (see the reference)
-//the transform() function should print out the result.
-
 int main()
 {
-    char str[20];
-    int original_base;
-    int new_base;
-    printf("Give me a number to transform it in an other system: ");
-    scanf("%s", str);
-    printf("Give me the original base: ");
-    scanf("%d", &original_base);
-    printf("Give me the number of the new base: ");
-    scanf("%d", &new_base);
+    float f_array[10] = {5.6, 8.73, 0.15, 0.99, 1.5, 6.3589, 10.01, -33.0, 0, 15};
+    int i_array[10];
 
-    transform(str, original_base, new_base);
-    return(0);
-}
-
-void transform (char str[], int original_base, int new_base)
-{
-    char error = 1;
-    if (original_base >= 36 || original_base <=2) {
-        error = 1;
-    }
-    if (new_base < 0) {
-        error = 2;
+	//TODO: write a program, which copies the values from the given array to an integer array
+    //print out the elements of the integer array, with the "%d" format specifier
+    //what do you see?
+	
+    int i;
+    for(i = 0; i<10; i++) {
+        i_array[i] = f_array[i];
+        printf("%d\n", i_array[i]);
     }
 
-    if (error == 1) {
-        printf("The original base can be between 2 and 36.\n");
-    } else if (error == 2) {
-        printf("The new base should be a positive number.\n");
-    }
-    else {
-        long num = strtol(str, NULL, original_base);
-        char result[20];
-        itoa(num, result, new_base);
-        printf("The number in %d base is: %s.", new_base, result);
-    }
+    return 0;
 }

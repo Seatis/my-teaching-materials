@@ -1,45 +1,33 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+void binary_adder (char *bin_op_1, char *bin_op_2);
+
+//TODO: write a program which asks for two binary numbers.
+//write a function, which prints out the sum of the 2 binary numbers.
 
 int main()
 {
-	char command[256];
-    char logged_in = 0;
-    char registered = 0;
 
-    //TODO: write a register -login -logout program
-    //if you type in register print out "Registration..." or "You are already registered." if you are registered.
-    //if you type in login print out "Logging in..." or "Already logged in." if are logged in.
-    //if you type in logout print out "Logging out..." or "Already logged out." if are logged out.
-	while (1) {
-        int r = rand() % 3;
-		gets(command);
-		if (strstr(command, "register") != NULL) {
-			if (registered == 0) {
-                printf("Registration...\n");
-                registered++;
-			} else {
-                printf("You are already registered.\n");
-			}
-		} else if (strstr(command, "login") != NULL) {
-			if (logged_in == 0) {
-                printf("Logging in...\n");
-                logged_in = 1;
-			}
-			else {
-                printf("Already logged in.\n");
-			}
-        } else if (strstr(command, "logout") != NULL) {
-			if (logged_in == 1) {
-                printf("Logging out...\n");
-                logged_in = 0;
-			}
-			else {
-                printf("Already logged out.\n");
-			}
-        } else {
+    char a[20];
+    char b[20];
+    printf("Give me a binary number: ");
+    scanf("%s", &a);
+    printf("Give me another binary number: ");
+    scanf("%s", &b);
 
-		}
-	}
+    binary_adder(a, b);
+
+    return(0);
+}
+
+void binary_adder (char *bin_op_1, char *bin_op_2)
+{
+    long num_1 = strtol(bin_op_1, NULL, 2);
+    long num_2 = strtol(bin_op_2, NULL, 2);
+
+    char buffer[20];
+    long res = num_1 + num_2;
+    itoa(res, buffer, 2);
+    printf("%s", buffer);
 }

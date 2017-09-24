@@ -1,23 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void binary_adder (char *bin_op_1, char *bin_op_2);
-
-//TODO: write a program which asks for two binary numbers.
-//write a function, which prints out the sum of the 2 binary numbers.
-
 int main()
 {
+    int i_array[10] = {260, 259, 258, 257, 256, 255, 254, 253, 252, 251};
+    unsigned char uc_array[10];
 
-    char a[20];
-    char b[20];
+	//TODO: write a program, which copies the values from the given array to an unsigned char array
+    //print out the elements of the unsigned char array, with the "%d" format specifier
+    //what do you see?
 	
-    printf("Give me a binary number: ");
-    scanf("%s", &a);
-    printf("Give me another binary number: ");
-    scanf("%s", &b);
-
-    binary_adder(a, b);
-
-    return(0);
+	
+    return 0;
 }
