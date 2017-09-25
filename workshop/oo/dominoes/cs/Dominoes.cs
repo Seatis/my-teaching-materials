@@ -7,7 +7,7 @@ namespace Domino
     {
         public static void Main(string[] args)
         {
-            var dominoes = initializeDominoes();
+            var dominoes = InitializeDominoes();
             // You have the list of Dominoes
             // Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides
             // Create a function to write the dominous to the console in the following format
