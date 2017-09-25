@@ -61,8 +61,8 @@ The `Sponsor` class has the following constructors:
 - `Sponsor()`: sets `name` to Jane Doe, `age` to 30, `gender` to female, `company` to Google and `hiredStudents` to 0
 
 
-## LagopusClass
-Create a `LagopusClass` class that has the following
+## PallidaClass
+Create a `PallidaClass` class that has the following
 - fields:
     - `className`: the name of the class
     - `students`: a list of `Student`s
