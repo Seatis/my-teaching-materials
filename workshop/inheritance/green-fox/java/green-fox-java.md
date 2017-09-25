@@ -70,11 +70,11 @@ Create a `PallidaClass` class that has the following
 - methods:
 	- `addStudent(Student)`: adds the given `Student` to `students` list
 	- `addMentor(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `info()`: prints out "Lagopus `className` class has `students.size` students and `mentors.size` mentors."
+	- `info()`: prints out "Pallida `className` class has `students.size` students and `mentors.size` mentors."
 
 
-The `LagopusClass` class has the following constructors:
-- `LagopusClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
+The `PallidaClass` class has the following constructors:
+- `PallidaClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
 
 ## Result
 - Your program should result [this output](green-fox-java_output.md) if you run it with [this input](green-fox-java_input.md)

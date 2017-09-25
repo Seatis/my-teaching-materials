@@ -61,8 +61,8 @@ The `Sponsor` class has the following constructors:
 - `Sponsor()`: sets `name` to Jane Doe, `age` to 30, `gender` to female, `company` to Google and `hiredStudents` to 0
 
 
-## LagopusClass
-Create a `LagopusClass` class that has the following
+## PallidaClass
+Create a `PallidaClass` class that has the following
 - fields:
     - `className`: the name of the class
     - `students`: a list of `Student`s
@@ -70,11 +70,11 @@ Create a `LagopusClass` class that has the following
 - methods:
 	- `AddStudent(Student)`: adds the given `Student` to `students` list
 	- `AddMentor(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `Info()`: prints out "Lagopus `className` class has `students.size` students and `mentors.size` mentors."
+	- `Info()`: prints out "Pallida `className` class has `students.size` students and `mentors.size` mentors."
 
 
-The `LagopusClass` class has the following constructors:
-- `LagopusClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
+The `PallidaClass` class has the following constructors:
+- `PallidaClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
 
 ## Result
 - Your program should result [this output](green-fox-java_output.md) if you run it with [this input](green-fox-c#_input.md)
