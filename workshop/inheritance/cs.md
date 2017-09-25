@@ -4,7 +4,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 ## Materials & Resources
 
 ### Training
-- Before starting the materials do this little exercise: [Exercise before materials](green-fox/c-sharp/green-fox-shorter-c#.md)
+- Before starting the materials do this little exercise: [Exercise before materials](green-fox/c-sharp/green-fox-shorter-c%23.md)
 
 
 | Material | Time |
@@ -33,7 +33,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - casting subClass as Class
 
 ## Workshop
-- [Green Fox organization](green-fox/c-sharp/green-fox-c#.md)
+- [Green Fox organization](green-fox/c-sharp/green-fox-c%23.md)
 - [Garden Application](garden-app/garden-app.md)
 - [Aircraft Carrier](aircraft-carrier/aircraft-carrier.md)
 
