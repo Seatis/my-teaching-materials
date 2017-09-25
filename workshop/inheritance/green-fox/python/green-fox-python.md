@@ -1,5 +1,7 @@
 # Green Fox inheritance exercise
 
+Before you begin, [read the expected result](#result) first.
+
 ## Person
 Create a `Person` class with the following fields:
 - `name`: the name of the person
