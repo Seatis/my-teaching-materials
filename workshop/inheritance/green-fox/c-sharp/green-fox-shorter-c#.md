@@ -61,4 +61,4 @@ The `Sponsor` class has the following constructors:
 - `Sponsor()`: sets `name` to Jane Doe, `age` to 30, `gender` to female, `company` to Google and `hiredStudents` to 0
 
 ## Result
-- Your program should result [this output](green-fox-shorter-java_output.md) if you run it with [this input](green-fox-shorter-c#_input.md)
+- Your program should result [this output](green-fox-shorter-c%23_output.md) if you run it with [this input](green-fox-shorter-c%23_input.md)
