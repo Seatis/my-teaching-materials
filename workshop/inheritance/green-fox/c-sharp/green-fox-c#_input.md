@@ -15,7 +15,9 @@ people.Add(gandhi);
 Mentor mentor = new Mentor();
 people.Add(mentor);
 Sponsor sponsor = new Sponsor();
+people.Add(sponsor);
 Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
+people.Add(elon);
 
 student.SkipDays(3);
 
