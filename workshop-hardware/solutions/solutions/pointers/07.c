@@ -1,37 +1,22 @@
 #include <stdio.h>
 
-int assort_odd_elements(int *array, int size);
-
-int main(void) {
-	int num_array[] = {8, 7, 9, 20, 3, 81, 79, 66};
-
-    //TODO: write a function which filters out the odd elements of an integer array
-    //do it in the original array
-    //your return value should be the real size of the filtered array
-    //print out the filtered array's elements
-
-    int array_size = sizeof(num_array)/sizeof(num_array[0]);
-
-    int real_size = assort_odd_elements(num_array, array_size);
-
-    int i;
-    for(i = 0; i < real_size; i++) {
-        printf("%d\n", num_array[i]);
-    }
-
-    return 0;
-}
-
-int assort_odd_elements(int *array, int size)
+int main()
 {
-    int pos = 0;
+	int high_number = 6655;
+	int low_number = 2;
 
-    int i;
-    for(i = 0; i < size; i++) {
-        if (array[i] % 2 == 1) {
-            array[pos] = array[i];
-            pos++;
-        }
-    }
-    return pos;
+	int *hight_number_pointer = &low_number;
+	int *low_number_pointer = &high_number;
+	//TODO:
+	// Please fix the problem and swap where the pointers point,
+	// without using the "&" operator.
+	int *temporary_variable = low_number_pointer;
+	low_number_pointer = hight_number_pointer;
+	hight_number_pointer = temporary_variable;
+
+	printf("%d\n", *hight_number_pointer);
+	printf("%d", *low_number_pointer);
+
+
+	return 0;
 }

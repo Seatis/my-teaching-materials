@@ -130,7 +130,7 @@ namespace Example
             try
             {
                 // Reads the content from `lorem-psum.txt` in the `assets` folder line by line to a string List
-                String content = File.ReadAllLines(path);
+                string[] content = File.ReadAllLines(path);
                 // Prints the first line of the file
                 Console.WriteLine(content[0]);
             }

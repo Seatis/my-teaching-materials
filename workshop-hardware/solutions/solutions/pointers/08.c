@@ -1,50 +1,21 @@
 #include <stdio.h>
-#define MAX_CHARS 255 // Maximum characters allowed
-
 
 int main()
 {
-    //TODO: write a function which finds the maximum occurrence of a character in a given string.
-    //return with the most frequent character
-    //the number of occurrence should be an output parameter
+	int high_number = 2;
+	int low_number = 6655;
 
-    char str[] = "e is the most frequent element.";
+	int *hight_number_pointer = &high_number;
+	int *low_number_pointer = &low_number;
+	//TODO:
+	// Please fix the problem and swap the value of the variables,
+	// without using the "high_number" and the "low_number" variables.
+	int temporary_variable = *hight_number_pointer;
+	*hight_number_pointer = *low_number_pointer;
+	*low_number_pointer = temporary_variable;
 
-    int occurrence = 0;
-    int character = freq(str, &occurrence);
-    printf("Maximum occurring character is %c.\n", character);
-    printf("Number of occurrence: %d.", occurrence);
+	printf("%d\n", high_number);
+	printf("%d", low_number);
 
-    return 0;
-}
-
-int freq(char *string, int *occurrence)
-{
-    int freq[MAX_CHARS]; // Store frequency of each character
-    int ascii;
-
-    //Initializes frequency of all characters to 0
-    int i;
-    for(i=0; i<MAX_CHARS; i++) {
-        freq[i] = 0;
-    }
-
-    //Finds frequency of each characters
-    i=0;
-    while(string[i] != '\0') {
-        ascii = (int)string[i];
-        freq[ascii]++;
-        i++;
-    }
-
-    //Finds maximum frequency
-    int max = 0;
-    for(i=0; i<MAX_CHARS; i++) {
-        if(freq[i] > freq[max])
-            max = i;
-    }
-
-    *occurrence = freq[max];
-
-    return max;
+	return 0;
 }

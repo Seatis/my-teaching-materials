@@ -1,42 +1,40 @@
 # Test input
-```java
-ArrayList<Person> people = new ArrayList<>();
+```c#
+ArrayList people = new ArrayList();
 
 Person mark = new Person("Mark", 46, "male");
-people.add(mark);
+people.Add(mark);
 Person jane = new Person();
-people.add(jane);
+people.Add(jane);
 Student john = new Student("John Doe", 20, "male", "BME");
-people.add(john);
+people.Add(john);
 Student student = new Student();
-people.add(student);
+people.Add(student);
 Mentor gandhi = new Mentor("Gandhi", 148, "male", "senior");
-people.add(gandhi);
+people.Add(gandhi);
 Mentor mentor = new Mentor();
-people.add(mentor);
+people.Add(mentor);
 Sponsor sponsor = new Sponsor();
-people.add(sponsor);
 Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
-people.add(elon);
 
-student.skipDays(3);
+student.SkipDays(3);
 
 for (int i = 0; i < 5; i++) {
-	elon.hire();
+	elon.Hire();
 }
 for (int i = 0; i < 3; i++) {
-	sponsor.hire();
+	sponsor.Hire();
 }
 
 for(Person person : people) {
-	person.introduce();
-	person.getGoal();
+	person.Introduce();
+	person.GetGoal();
 }
 
-PallidaClass badass = new PallidaClass("BADA55");
-badass.addStudent(student);
-badass.addStudent(john);
-badass.addMentor(mentor);
-badass.addMentor(gandhi);
-badass.info();
+LagopusClass badass = new LagopusClass("BADA55");
+badass.AddStudent(student);
+badass.AddStudent(john);
+badass.AddMentor(mentor);
+badass.AddMentor(gandhi);
+badass.Info();
 ```

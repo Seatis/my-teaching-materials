@@ -17,7 +17,7 @@ namespace Dice
         {
             for (int i = 0; i < Dices.Length; i++)
             {
-                Dices[i] = RandomValue.Next(1, 6);
+                Dices[i] = RandomValue.Next(1, 7);
             }
             return Dices;
         }
@@ -36,13 +36,13 @@ namespace Dice
         {
             for (int i = 0; i < Dices.Length; i++)
             {
-                Dices[i] = RandomValue.Next(1, 6);
+                Dices[i] = RandomValue.Next(1, 7);
             }
         }
 
         public void Reroll(int k)
         {
-            Dices[k] = new Random().Next(1, 6);
+            Dices[k] = new Random().Next(1, 7);
         }
 
         public static void Main(string[] args)

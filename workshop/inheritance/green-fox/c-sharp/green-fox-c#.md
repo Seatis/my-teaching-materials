@@ -8,8 +8,8 @@ Create a `Person` class with the following fields:
 
 
 And the following methods:
-- `introduce()`: prints out "Hi, I'm `name`, a `age` year old `gender`."
-- `getGoal()`: prints out "My goal is: Live for the moment!"
+- `Introduce()`: prints out "Hi, I'm `name`, a `age` year old `gender`."
+- `GetGoal()`: prints out "My goal is: Live for the moment!"
 
 
 And the following constructors:
@@ -23,9 +23,9 @@ Create a `Student` class that has the same fields and methods as the `Person` cl
     - `previousOrganization`: the name of the student’s previous company / school
     - `skippedDays`: the number of days skipped from the course
 - methods:
-    - `getGoal()`: prints out "Be a junior software developer."
-    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` from `previousOrganization` who skipped `skippedDays` days from the course already."
-    - `skipDays(numberOfDays)`: increases `skippedDays` by `numberOfDays`
+    - `GetGoal()`: prints out "Be a junior software developer."
+    - `Introduce()`: "Hi, I'm `name`, a `age` year old `gender` from `previousOrganization` who skipped `skippedDays` days from the course already."
+    - `SkipDays(numberOfDays)`: increases `skippedDays` by `numberOfDays`
 
 The `Student` class has the following constructors:
 - `Student(name, age, gender, previousOrganization)`: beside the given parameters, it sets `skippedDays` to 0
@@ -36,8 +36,8 @@ Create a `Mentor` class that has the same fields and methods as the `Person`clas
 - fields:
     - `level`: the level of the mentor (junior / intermediate / senior)
 - methods:
-    - `getGoal()`: prints out "Educate brilliant junior software developers."
-    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` `level` mentor."
+    - `GetGoal()`: prints out "Educate brilliant junior software developers."
+    - `Introduce()`: "Hi, I'm `name`, a `age` year old `gender` `level` mentor."
 
 
 The `Mentor` class has the following constructors:
@@ -51,9 +51,9 @@ Create a `Sponsor` class that has the same fields and methods as the `Person`cla
     - `company`: name of the company
     - `hiredStudents`: number of students hired
 - method:
-    - `introduce()`: "Hi, I'm `name`, a `age` year old `gender` who represents `company` and hired `hiredStudents` students so far."
-    - `hire()`: increase `hiredStudents` by 1
-    - `getGoal()`: prints out "Hire brilliant junior software developers."
+    - `Introduce()`: "Hi, I'm `name`, a `age` year old `gender` who represents `company` and hired `hiredStudents` students so far."
+    - `Hire()`: increase `hiredStudents` by 1
+    - `GetGoal()`: prints out "Hire brilliant junior software developers."
 
 
 The `Sponsor` class has the following constructors:
@@ -68,13 +68,13 @@ Create a `PallidaClass` class that has the following
     - `students`: a list of `Student`s
     - `mentors`: a list of `Mentor`s
 - methods:
-	- `addStudent(Student)`: adds the given `Student` to `students` list
-	- `addMentor(Mentor)`: adds the given `Mentor` to `mentors` list
-	- `info()`: prints out "Pallida `className` class has `students.size` students and `mentors.size` mentors."
+	- `AddStudent(Student)`: adds the given `Student` to `students` list
+	- `AddMentor(Mentor)`: adds the given `Mentor` to `mentors` list
+	- `Info()`: prints out "Pallida `className` class has `students.size` students and `mentors.size` mentors."
 
 
 The `PallidaClass` class has the following constructors:
 - `PallidaClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
 
 ## Result
-- Your program should result [this output](green-fox-java_output.md) if you run it with [this input](green-fox-java_input.md)
+- Your program should result [this output](green-fox-java_output.md) if you run it with [this input](green-fox-c#_input.md)
