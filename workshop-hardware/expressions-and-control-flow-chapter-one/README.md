@@ -129,7 +129,7 @@ int b = 20;
 - `?:` ternary operator
 
 ### Computer Science
-## Early Computing
+#### Early Computing
 - large need of computing in manufacturing and agriculture
 	- more food	
 	- cheap and fast travel and communication
@@ -150,7 +150,7 @@ Herrmann Hollerith
 	- punch cards
 Business's begun recognizing the value of computing
 
-## Electronic computing
+#### Electronic computing
 - One of the largest electromechanical computer: Harvard Mark I
 	- millions of connections and wires
 	- using in simulations of Manhattan-project
@@ -172,7 +172,7 @@ Business's begun recognizing the value of computing
 - today
 	- a transistor is smaller than 50 nm
 
-## Boolean Logic
+#### Boolean Logic
 - binary computing:
 	- on and off state (1 and 0)
 - George Boole
