@@ -77,4 +77,4 @@ The `PallidaClass` class has the following constructors:
 - `PallidaClass(className)`: beside the given parameter, it sets `students` and `mentors` as empty lists
 
 ## Result
-- Your program should result [this output](green-fox-java_output.md) if you run it with [this input](green-fox-c#_input.md)
+- Your program should result [this output](green-fox-c%23_output.md) if you run it with [this input](green-fox-c%23_input.md)
