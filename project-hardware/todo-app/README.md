@@ -14,7 +14,7 @@
 ## Workshop
 This is a quite long project, at first read the whole specification. Try to figure out
 what kind of data storing technique (for example structure, array etc.) would fit
-for this project. Try to make a concept in your head about how you will implement the
+for this project. It's enough to store 10 tasks. Try to make a concept in your head about how you will implement the
 application.
 
 ### Basics (mandatory) tasks
@@ -188,5 +188,10 @@ Num | Tasks | Prio
 - While the application is running and `-c apple` is entered
 - Then it should show an error message like: `Unable to check: Index is not a number`
 
+4)
+- If your storage is full and you try to add more tasks
+- Then it should show an error message like: `Unable to add more task`
+
 ## Solution
 [Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project-hardware/solutions/solutions/todo-app)
+
