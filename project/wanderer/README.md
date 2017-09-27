@@ -2,8 +2,9 @@
 
 Build a hero based walking on tiles and killing monsters type of game. Heroes and monsters have levels and stats depending on their levels.
 
-### Workshop: Plan your work
+### Workshop: Plan your works
 #### 1. Go through the language specific notes first
+- [C# focus](cs.md)
 - [Java focus](java.md)
 - [Python focus](python.md)
 
