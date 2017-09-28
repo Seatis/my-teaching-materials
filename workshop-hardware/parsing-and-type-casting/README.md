@@ -46,7 +46,7 @@
 
 ## Material Review
 ### Type-casting
-- any implicit type conversions made from a lower size type to a higher size type: `char -> int -> unsigned int -> long -> unsigned long -> long -> long -> unsigned long long -> float -> double -> long double`
+- any implicit type conversions made from a lower size type to a higher size type: `char -> int -> unsigned int -> long -> unsigned long -> long long -> unsigned long long -> float -> double -> long double`
 
 ### Transforming
 - Inbuilt transforming functions in C: `atof(), atoi(), atol(), itoa(), ltoa(), strtod(), strtol()`
