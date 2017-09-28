@@ -11,8 +11,7 @@ int main()
 	//TODO: print out the value of pi, first as a string, then a float value.
 
 	val = atof(str);
-	printf("String value = %s", str);
-	printf("\n");
+	printf("String value = %s\n", str);
 	printf("Float value = %f\n", val);
 
 	return(0);
