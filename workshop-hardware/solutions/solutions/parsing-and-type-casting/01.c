@@ -11,7 +11,7 @@ main()
 	//QUESTION: do you need explicit conversion?
 	//ANSWER: no
 
-	result = f/i;
+	result = f / i;
 	printf("Quotient of %f/%d = %f\n", f, i, result);
 
 	return 0;
