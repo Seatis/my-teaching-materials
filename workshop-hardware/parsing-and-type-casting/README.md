@@ -62,13 +62,13 @@
 ### Typecasting
 - [01.c](Workshop/01.c)
 - [02.c](Workshop/02.c)
+
+### Transforming
 - [03.c](Workshop/03.c)
 - [04.c](Workshop/04.c)
 - [05.c](Workshop/05.c)
 - [06.c](Workshop/06.c)
 - [07.c](Workshop/07.c)
-
-### Transforming
 - [08.c](Workshop/06.c)
 - [09.c](Workshop/07.c)
 
