@@ -13,14 +13,14 @@ int main()
 	char *found;
 
     found = strtok(string," ");
-    if(found==NULL) {
-        printf("%s\n",string);
+    if(found == NULL) {
+        printf("%s\n", string);
         puts("No separators found");
         return(1);
     }
     while(found) {
-        printf("%s\n",found);
-        found = strtok(NULL," ");
+        printf("%s\n", found);
+        found = strtok(NULL, " ");
     }
 
     return(0);
