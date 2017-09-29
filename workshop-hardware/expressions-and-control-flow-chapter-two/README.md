@@ -76,6 +76,40 @@ for (a = 0; a < 5; a++) {
 }
 ```
 
+### Computer Science
+- Binary Numbers
+	- place-values are the powers of 2 and not ten
+	- addition, substraction can be easlily interpreted
+		- 0 + 0 = 0
+		- 0 + 1 = 1
+		- 1 + 1 = 1 and carry: 1
+	- bit and byte
+	- number representation: the first digit represents the sign
+		- floating point numbers: sign, exponent and significand
+	- text, and letters are represented by numbers (extended ASCII, Unicode)
+
+- The ALU
+	- sub-unit inside the CPU
+	- arithmetic unit
+		- addition, substraction
+		- half adder, full adder, carry-look-ahead-adder
+	- logic unit
+		- and, or, not
+	- operation code
+	- 3 basic flags: overflow, zero, negative
+
+- Registers and RAM
+	- RAM (SRAM/DRAM/Flash)
+	- combined from logic gates (and-or-latch)
+		- latches onto a particular value and stays that way	
+	- gated latch:
+		- input: data line and write enable line
+		- output data
+	- Register
+		- a group of latches
+		- width: bits in the registers
+	- latch matrix
+
 #### Excercises
 Please do the excercises with while && do-while && for
  - [01.c](Workshop/01.c)
