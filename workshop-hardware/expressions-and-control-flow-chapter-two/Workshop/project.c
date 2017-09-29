@@ -2,9 +2,9 @@
 
 /*
 your project for this week it to create a lotto application
-first you give your five number to the program then you compile and run it
-when the program finishes it should write out how many matches did you have 
-and how much money did you won (the prive pool is 1000Ft)
+first, give five number to the program then the program should write out
+how many matches did you have and how much money did you won
+(the prive pool is 1000Ft)
 */
 
 int main()
