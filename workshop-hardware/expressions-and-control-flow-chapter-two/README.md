@@ -165,7 +165,6 @@ Please do the excercises with while && do-while && for
 - [15.c](Workshop/15.c)
 - [euclid.c](Workshop/euclid.c)
 - [pascal.c](Workshop/pascal.c)
-- [project.c](Workshop/project.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
