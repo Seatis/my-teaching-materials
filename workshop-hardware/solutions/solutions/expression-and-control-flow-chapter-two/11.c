@@ -11,8 +11,7 @@ int main()
 	float height = 1.83;
 	unsigned char age = 22;
 
-	printf("My age is: %d.\n", age);
-	printf("My age is: %.2f.", height);
+	printf("My age is: %d, my height is: %.2f.\n", age, height);
 
 	return 0;
 }

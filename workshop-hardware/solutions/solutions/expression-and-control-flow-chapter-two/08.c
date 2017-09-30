@@ -14,11 +14,17 @@ int main()
 {
     int temperature;
     temperature = 23;
-	
-	if (temperature <= 20) {
-		printf("it is too cold for the AC");
-	} else if ((temperature >= 21) && (temperature <= 24)) {
-		printf("it is up to you to turn on the AC");
+
+	switch ((temperature >= 21) && (temperature <= 24)) {
+    case 1:
+        printf("it is up to you to turn on the AC");
+        break;
+	case !1:
+	    switch (temperature <= 20) {
+        case 1:
+            printf("it is too cold for the AC");
+            break;
+	    }
 	}
 
     return 0;

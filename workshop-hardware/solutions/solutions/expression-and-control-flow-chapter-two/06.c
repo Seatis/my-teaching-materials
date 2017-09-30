@@ -10,12 +10,14 @@ int main()
 {
 	int i;
 	for (i = 0; i < 100; i++) {
-		if (i%2==0) {
-			printf("Even!\n");
-		} else {
-			printf("Odd!\n");
-		}
+        switch (i%2==0) {
+        case 1:
+            printf("Even!\n");
+            break;
+        case !1:
+            printf("Odd!\n");
+            break;
+        }
 	}
-
     return 0;
 }

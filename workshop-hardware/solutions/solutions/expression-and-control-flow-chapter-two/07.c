@@ -14,9 +14,7 @@ int main()
     num1 = 85;
     num2 = 96;
 
-	char logical_value;
-	logical_value = num1>num2;
-	switch (logical_value) {
+	switch (num1>num2) {
 	case 0:
 		printf("num2 is bigger.");
 		break;
