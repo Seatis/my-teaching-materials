@@ -2,17 +2,13 @@
 #include <stdlib.h>
 
 /*
-write a program that decides which number is bigger
-use switch-statement
+create a simple program which checks if the num is odd or even 
 */
 
 int main()
 {
-    int num1;
-    int num2;
-
-    num1 = 85;
-    num2 = 96;
+    int num;
+    num = 13;
 
     return 0;
 }

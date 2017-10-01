@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
-	// print the even numbers till 20
+	uint8_t ad = 6;
+	// print the numbers till ad from 0
 	return 0;
 }

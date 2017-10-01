@@ -1,13 +1,19 @@
 #include <stdio.h>
-#include <stdint.h>
+#include <stdlib.h>
 
-int main() {
-	uint8_t ae = 4;
-	// print "yeeeeeeeey" ae times
+/*
+write a program to check whether a given number is positive or negative
+*/
 
-	int i;
-	for (i = 0; i < ae; i++) {
-		printf("yeeeeeeeey\n");
+int main()
+{
+    int a = 212;
+	
+	if (a >= 0) {
+		printf("a is positive");
+	} else {
+		printf("a is negative");
 	}
-	return 0;
+    
+    return 0;
 }

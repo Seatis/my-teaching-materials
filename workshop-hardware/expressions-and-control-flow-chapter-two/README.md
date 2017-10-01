@@ -116,6 +116,8 @@ Please do the excercises with while && do-while && for
  - [02.c](Workshop/02.c)
  - [03.c](Workshop/03.c)
  - [04.c](Workshop/04.c)
+ - [05.c](Workshop/05.c)
+ - [06.c](Workshop/06.c)
 
 ### Switch
 
@@ -134,11 +136,11 @@ Please do the excercises with while && do-while && for
 
 #### Excercises
 
- - [05.c](Workshop/05.c)
- - [06.c](Workshop/06.c)
  - [07.c](Workshop/07.c)
  - [08.c](Workshop/08.c)
  - [09.c](Workshop/09.c)
+ - [10.c](Workshop/10.c)
+ - [11.c](Workshop/11.c)
 
 ### If vs. Switch
  Programming languages provide various constructs to support this
@@ -154,17 +156,15 @@ Please do the excercises with while && do-while && for
 
 #### Excercise
 
- - [10.c](Workshop/10.c)
+ - [12.c](Workshop/12.c)
 
 ##### Advanced
 
-- [11.c](Workshop/11.c)
-- [12.c](Workshop/12.c)
-- [13.c](Workshop/13.c)
-- [14.c](Workshop/14.c)
-- [15.c](Workshop/15.c)
-- [euclid.c](Workshop/euclid.c)
-- [pascal.c](Workshop/pascal.c)
+ - [13.c](Workshop/13.c)
+ - [14.c](Workshop/14.c)
+ - [15.c](Workshop/15.c)
+ - [euclid.c](Workshop/euclid.c)
+ - [pascal.c](Workshop/pascal.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)

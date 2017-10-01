@@ -1,23 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-/*
-create a simple program which checks if the num is odd or even
-*/
+int main() {
+	// print the even numbers till 20
 
-int main()
-{
-    int num;
-    num = 13;
-
-	switch (num%2 == 0) {
-	case 1:
-		printf("Even!");
-		break;
-	case !1:
-		printf("Odd!");
-		break;
+	int i;
+	for (i = 0; i < 20; i++) {
+		if (i%2==0) {
+			printf("%d\n", i);
+		}
 	}
-
-    return 0;
+	return 0;
 }

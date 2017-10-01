@@ -1,17 +1,28 @@
 #include <stdio.h>
 
-/*
-store your age, height(for example: 1.85 in meters) as different variables
-print them out, using only one printf function
-use correct variables for each
-*/
-
 int main()
 {
-	float height = 1.83;
-	unsigned char age = 22;
-
-	printf("My age is: %d, my height is: %.2f.\n", age, height);
-
+	int a = 1;
+	while (a <= 100) {
+        switch (a % 15) {
+        case 0:
+            printf("Fizzbuzz\n");
+            break;
+        case 5:
+        case 10:
+            printf("Buzz\n");
+            break;
+        case 3:
+        case 6:
+        case 9:
+        case 12:
+            printf("Fizz\n");
+            break;
+        default:
+            printf("%d\n", a);
+            break;
+        }
+		a++;
+	}
 	return 0;
 }

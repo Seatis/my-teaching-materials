@@ -1,13 +1,13 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
-	// print the even numbers till 20
+	uint8_t ad = 6;
+	// print the numbers till ad from 0
 
 	int i;
-	for (i = 0; i < 20; i++) {
-		if (i%2==0) {
-			printf("%d\n", i);
-		}
+	for (i = 0; i < ad; i++) {
+		printf("%d\n", i);
 	}
 	return 0;
 }

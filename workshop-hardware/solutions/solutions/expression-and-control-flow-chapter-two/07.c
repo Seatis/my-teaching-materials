@@ -2,24 +2,20 @@
 #include <stdlib.h>
 
 /*
-write a program that decides which number is bigger
-use switch-statement
+create a simple program which checks if the num is odd or even
 */
 
 int main()
 {
-    int num1;
-    int num2;
+    int num;
+    num = 13;
 
-    num1 = 85;
-    num2 = 96;
-
-	switch (num1>num2) {
-	case 0:
-		printf("num2 is bigger.");
+	switch (num%2 == 0) {
+	case 1:
+		printf("Even!");
 		break;
-    case !0:
-		printf("num1 is bigger.");
+	case !1:
+		printf("Odd!");
 		break;
 	}
 
