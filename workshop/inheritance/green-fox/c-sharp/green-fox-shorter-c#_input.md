@@ -1,6 +1,6 @@
 # Test input
 ```c#
-ArrayList people = new ArrayList();
+List<Person> people = new List<Person>();
 
 Person mark = new Person("Mark", 46, "male");
 people.Add(mark);
@@ -15,7 +15,9 @@ people.Add(gandhi);
 Mentor mentor = new Mentor();
 people.Add(mentor);
 Sponsor sponsor = new Sponsor();
+people.Add(sponsor);
 Sponsor elon = new Sponsor("Elon Musk", 46, "male", "SpaceX");
+people.Add(elon);
 
 student.SkipDays(3);
 
@@ -26,7 +28,7 @@ for (int i = 0; i < 3; i++) {
 	sponsor.Hire();
 }
 
-for(Person person : people) {
+foreach (Person person in people) {
 	person.Introduce();
 	person.GetGoal();
 }

@@ -12,7 +12,7 @@ Testing generally involves running a method to see that such returns expected re
 ### Material
 | Material | Time |
 |:-------- |-----:|
-|[C# Tutorial - How to create NUnit Test | FoxLearn](https://www.youtube.com/watch?v=f2NrKazjWes)|4:16|
+|[C# Tutorial - How to create NUnit Test - FoxLearn](https://www.youtube.com/watch?v=f2NrKazjWes)|4:16|
 |[NUNIT](https://www.youtube.com/watch?v=ogIJHX-HcYs)|17:10|
 |[Test-Driven Developement](https://www.youtube.com/watch?v=dWayn0QsJr8)|11:11|
 |[TDD Basics with C#](https://www.youtube.com/watch?v=l4xhTq4qmC0)|23:27|

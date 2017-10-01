@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+create a program which draws a diamond, like this:
+      *
+    * * *
+  * * * * *
+* * * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+*/
+
 int main()
 {
     int rows = 5;

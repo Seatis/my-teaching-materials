@@ -128,6 +128,77 @@ int b = 20;
 - else-if
 - `?:` ternary operator
 
+### Computer Science
+#### Early Computing
+- large need of computing in manufacturing and agriculture
+	- more food	
+	- cheap and fast travel and communication
+	- mass produced goods
+- abacus: 2700 B.C.
+	- basic mathematical operations
+	- place-values
+- astrolabe
+	- calculating sunrise time
+- mechanical calculators
+	- able to multiplicate and divide
+- huge need mainly in millitary
+- Charles Babbage
+	- invented the difference engine, and then the analytical engine
+	- for logarithmic and trigonometric calculations
+Herrmann Hollerith
+	- electromechanical machine
+	- punch cards
+Business's begun recognizing the value of computing
+
+#### Electronic computing
+- One of the largest electromechanical computer: Harvard Mark I
+	- millions of connections and wires
+	- using in simulations of Manhattan-project
+- realys
+	- current-controlled switches
+	- large and slow
+	- frequent malfunction: bugs
+- vacuum tubes
+	- instead of relays with many advantages
+	- electronic computing: Colossus MK1 for code-breaking  (1600 vacuum tubes inside)
+- ENIAC
+	- first general purpose , programmable, electronic computer
+	- 5000 additions or subtractions/sec
+- large need of a new electronic switch: transistors
+	- reducing cost and size
+	- incredible speed
+	- material to create transistors is silicon
+	- Silicon valley
+- today
+	- a transistor is smaller than 50 nm
+
+#### Boolean Logic
+- binary computing:
+	- on and off state (1 and 0)
+- George Boole
+	- boolean algebra
+	- logical statements: not, and, or
+- easlily implementable with transistors (logic gates)
+- logic tables
+	- not
+		- not 0 = 1
+		- not 1 = 0
+	- and
+		- 0 and 0 = 0
+		- 0 and 1 = 0
+		- 1 and 0 = 0
+		- 1 and 1 = 1
+	- or
+		- 0 or 0 = 0
+		- 0 or 1 = 1
+		- 1 or 0 = 1
+		- 1 or 1 = 1
+	- xor
+		- 0 xor 0 = 0
+		- 0 xor 1 = 1
+		- 1 xor 0 = 1
+		- 1 xor 1 = 0
+
 ## Workshop
 
 ### Hello World
