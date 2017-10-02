@@ -11,7 +11,7 @@
 - [string.h](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
 
 ## Workshop
-This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a [little bit of help](#Help-for-the-positioning).
+This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a [little bit of help](#help-for-the-positioning).
 
 ### Basics (mandatory) tasks
 - [summation](#+)
@@ -25,7 +25,7 @@ This is a quite long project, at first read the whole specification. Try to figu
 - [binto](#binto,-hexto,-decto)
 - [hexto](#binto,-hexto,-decto)
 - [decto](#binto,-hexto,-decto)
-- [error handling](#Error-handling)
+- [error handling](#error-handling)
 
 ### Advanced tasks
 - [nth roots](https://en.wikipedia.org/wiki/Nth_root)
@@ -138,7 +138,7 @@ or
 ```
 
 
-### Error handling
+### error handling
 
 For example the content is:
 
@@ -156,7 +156,7 @@ Invalid command
 Hit enter to continue.
 ```
 ---
-### Help for the positioning
+### help for the positioning
 
 Some help for the positioning of the cursor in order to see the result in the same row as the operands in Windows (you have to include Windows.h):
 ```
