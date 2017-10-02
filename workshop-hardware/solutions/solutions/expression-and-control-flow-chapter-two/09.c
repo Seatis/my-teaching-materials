@@ -14,5 +14,14 @@ int main()
     num1 = 85;
     num2 = 96;
 
+	switch (num1>num2) {
+	case 0:
+		printf("num2 is bigger.");
+		break;
+    case !0:
+		printf("num1 is bigger.");
+		break;
+	}
+
     return 0;
 }

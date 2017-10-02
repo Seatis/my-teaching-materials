@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /*
-store your age, height(for example: 1.85 in meters) as different variables
-print them out, using only one printf function
-use correct variables for each
+Write a program that prints the numbers from 1 to 100.
+But for multiples of three print "Fizz" instead of the number
+and for the multiples of five print "Buzz".
+For numbers which are multiples of both three and five print "FizzBuzz".
+But this time, use switch
 */
 
 int main() {
-
-	return 0;
+ 
+    return 0;    
 }

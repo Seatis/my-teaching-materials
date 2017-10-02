@@ -76,12 +76,48 @@ for (a = 0; a < 5; a++) {
 }
 ```
 
+### Computer Science
+- Binary Numbers
+	- place-values are the powers of 2 and not ten
+	- addition, substraction can be easlily interpreted
+		- 0 + 0 = 0
+		- 0 + 1 = 1
+		- 1 + 1 = 1 and carry: 1
+	- bit and byte
+	- number representation: the first digit represents the sign
+		- floating point numbers: sign, exponent and significand
+	- text, and letters are represented by numbers (extended ASCII, Unicode)
+
+- The ALU
+	- sub-unit inside the CPU
+	- arithmetic unit
+		- addition, substraction
+		- half adder, full adder, carry-look-ahead-adder
+	- logic unit
+		- and, or, not
+	- operation code
+	- 3 basic flags: overflow, zero, negative
+
+- Registers and RAM
+	- RAM (SRAM/DRAM/Flash)
+	- combined from logic gates (and-or-latch)
+		- latches onto a particular value and stays that way	
+	- gated latch:
+		- input: data line and write enable line
+		- output data
+	- Register
+		- a group of latches
+		- width: bits in the registers
+	- latch matrix
+
 #### Excercises
 Please do the excercises with while && do-while && for
  - [01.c](Workshop/01.c)
  - [02.c](Workshop/02.c)
  - [03.c](Workshop/03.c)
  - [04.c](Workshop/04.c)
+ - [05.c](Workshop/05.c)
+ - [06.c](Workshop/06.c)
 
 ### Switch
 
@@ -100,11 +136,11 @@ Please do the excercises with while && do-while && for
 
 #### Excercises
 
- - [05.c](Workshop/05.c)
- - [06.c](Workshop/06.c)
  - [07.c](Workshop/07.c)
  - [08.c](Workshop/08.c)
  - [09.c](Workshop/09.c)
+ - [10.c](Workshop/10.c)
+ - [11.c](Workshop/11.c)
 
 ### If vs. Switch
  Programming languages provide various constructs to support this
@@ -120,18 +156,15 @@ Please do the excercises with while && do-while && for
 
 #### Excercise
 
- - [10.c](Workshop/10.c)
+ - [12.c](Workshop/12.c)
 
 ##### Advanced
 
-- [11.c](Workshop/11.c)
-- [12.c](Workshop/12.c)
-- [13.c](Workshop/13.c)
-- [14.c](Workshop/14.c)
-- [15.c](Workshop/15.c)
-- [euclid.c](Workshop/euclid.c)
-- [pascal.c](Workshop/pascal.c)
-- [project.c](Workshop/project.c)
+ - [13.c](Workshop/13.c)
+ - [14.c](Workshop/14.c)
+ - [15.c](Workshop/15.c)
+ - [euclid.c](Workshop/euclid.c)
+ - [pascal.c](Workshop/pascal.c)
 
 ## Individual Workshop Review
 Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-academy/teaching-materials/blob/master/styleguide/c.md)
@@ -147,3 +180,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
+[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop-hardware/solutions/solutions/expression-and-control-flow-chapter-two)
