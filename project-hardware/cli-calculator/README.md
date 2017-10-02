@@ -14,7 +14,7 @@
 This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a [little bit of help](#help-for-the-positioning).
 
 ### Basics (mandatory) tasks
-- [summation](#+)
+- [summation](#user-content-+)
 - [subtraction](#-)
 - [multiplication](#*)
 - [division](#/)
