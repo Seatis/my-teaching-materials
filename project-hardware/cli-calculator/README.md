@@ -11,7 +11,7 @@
 - [string.h](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
 
 ## Workshop
-This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a little bit of [help](#help).
+This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a little bit of [help](#Some help for the positioning of the cursor in order to see the result in the same row as the operands).
 
 ### Basics (mandatory) tasks
 - [+](#+)
@@ -187,4 +187,4 @@ void set_cursor_pos(int x, int y)
 
 
 ## Solution
-[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project-hardware/solutions/solutions/cli-calculator)
+[Solution](#)
