@@ -67,6 +67,28 @@ but they are very useful tools in C.
 - output parameters
 - returning pointer
 
+### Computer Science
+- Software Engineering
+	- Object Oriented Programming: public (other objects can call it), private functions.
+	- Application Programming Interface (API)
+	- Integrated Development Environments (IDE)
+	- Good documentation helps other programmers to read the codes
+	- Version Control: repository, commiting
+	- Quality Assurance testing (QA)
+
+- Integrated Circuits & Moore’s Law
+	- Transitorized Computers (IBM 7090)
+	- Integrated Circuits (IC)
+	- Printed Circuit Board (PCB)
+	- Photolitography: goodbye discrete components
+	- Moore's Law: TWICE the number of transistors into the same amount of space
+	- Microprocessor: Processor in an IC		
+- Operating Systems
+	- Batch processing
+	- Peripherals, device drivers, I/O
+	- Multitasking, virtual memory, memory protection, time sharing
+	- Kernel
+
 ## Workshop
 
 ### Pointers
