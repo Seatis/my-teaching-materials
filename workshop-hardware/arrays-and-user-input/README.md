@@ -63,6 +63,45 @@
 #### User input
 - `stdio.h` functions (`gets`, `scanf` and others)
 
+
+### Computer Science
+- Early Programming
+	- Programmable textile run
+		- by punch card
+	- Hollerith tabulating machine
+		- not really computers
+	- evolution of plugboards
+	- stored-program computers
+		- stores program instructions in electronic memory
+	- Von Neumann architecture
+	- Panel programming
+
+- The First Programming Languages
+	- Pseudo-code: high-level description of the operating principle of a program
+	- Assembler: reusable helper programs in binary
+		- text-based intructions
+	- first compiler: transforms source code into a low-level language like assembly
+	- Fortran: Formula Translation
+		- made easier to write programs
+	- Cobol: COmmon Business Oriented Language
+		- worked in every computers
+	- 60s: ALGOL, LISP, BASIC
+	- 70s: Pascal, C, Smalltalk
+	- 80s: C++, Objective-C, Perl
+	- 90s: Python, Ruby, Java
+	- 2000s: Swift, C#, Go
+
+- Statements & Functions
+	- syntax: the set of rules that govern the structure and composition of statements in a language
+	- variable
+		- initializing and assigning a value to a variable
+	- conditional statements
+	- loops
+	- functions, methods, subroutin
+		- to hide complexity (function can call another functions)
+		- return statement
+	- libraries: huge bundles of pre-written functions
+
 ## Workshop
 ### Arrays
 - [Arrays/1.c](Workshop/arrays_1.c)
