@@ -11,7 +11,7 @@
 - [string.h](https://www.tutorialspoint.com/c_standard_library/string_h.htm)
 
 ## Workshop
-This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a little bit of [help](#Help-for-the-positioning).
+This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a [little bit of help](#Help-for-the-positioning).
 
 ### Basics (mandatory) tasks
 - [summation](#+)
@@ -22,10 +22,10 @@ This is a quite long project, at first read the whole specification. Try to figu
 - [square](#^)
 - [square root](#<)
 - [log](#logarithm)
-- [binto](#binto)
-- [hexto](#binto)
-- [decto](#binto)
-- [error handling](#error-handling)
+- [binto](#binto,-hexto,-decto)
+- [hexto](#binto,-hexto,-decto)
+- [decto](#binto,-hexto,-decto)
+- [error handling](#Error-handling)
 
 ### Advanced tasks
 - [nth roots](https://en.wikipedia.org/wiki/Nth_root)
@@ -64,7 +64,6 @@ For example the content is:
 
 ```
 3 + 2 = 5
-
 ```
 
 ### -
@@ -74,7 +73,6 @@ For example the content is:
 
 ```
 3 - 2 = 1
-
 ```
 
 ### *
@@ -83,7 +81,6 @@ For example the content is:
 
 ```
 3 * 2 = 6
-
 ```
 
 ### /
@@ -92,7 +89,6 @@ For example the content is:
 
 ```
 6 / 2 = 3
-
 ```
 
 ### ^
@@ -101,7 +97,6 @@ For example the content is:
 
 ```
 3 ^ 2 = 9
-
 ```
 
 ### <
@@ -110,7 +105,6 @@ For example the content is:
 
 ```
 2 < 4 = 2
-
 ```
 
 ### %
@@ -119,7 +113,6 @@ For example the content is:
 
 ```
 3 % 2 = 1
-
 ```
 
 ### logarithm
@@ -128,7 +121,6 @@ For example the content is:
 
 ```
 2log8 = 3
-
 ```
 
 
