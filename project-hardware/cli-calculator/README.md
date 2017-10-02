@@ -22,9 +22,9 @@ This is a quite long project, at first read the whole specification. Try to figu
 - [squaring](#user-content-squaring)
 - [square root](#user-content-square-root)
 - [logarithm](#user-content-logarithm)
-- [binary to](#user-content-binto,-hexto,-decto)
-- [hexadecimal to](#user-content-binto,-hexto,-decto)
-- [decimal to](#user-content-binto,-hexto,-decto)
+- [binary to](#user-content-binto)
+- [hexadecimal to](#user-content-hexto)
+- [decimal to](#user-content-decto)
 - [error handling](#user-content-error-handling)
 
 ### Advanced tasks
