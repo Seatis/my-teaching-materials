@@ -124,15 +124,26 @@ For example the content is:
 ```
 
 
-### binto, hexto, decto
+### binto
+
+For example the content is:
+
 ```
 0110 binto 10 = 6
 ```
-or
+
+### hexto
+
+For example the content is:
+
 ```
 aa hexto 10 = 170
 ```
-or
+
+### decto
+
+For example the content is:
+
 ```
 13 decto 2 = 1101
 ```
