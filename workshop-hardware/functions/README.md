@@ -103,6 +103,34 @@ For the first two element we made two simple statements, we don't need to count 
     - why do we use it
     why it is good
 
+### Computer Science
+- CPU
+	- executing operations
+	- registers
+		- instruction register
+	- fetching, decoding, and executing phase
+		- fetching: the next instruction is fetched from the memory address that is currently stored in the program counter
+		- decoding: the encoded instruction present in the instruction register is interpreted by the decoder
+		- executing: CPU performs the actions required by the instruction
+
+- Instructions and Programs
+	- Opcode: textual representation of 0's and 1's
+	- Instruction table
+		- data transfer instructions (LOAD, STORE...)
+		- arithmetic instructions (ADD, SUBB...)
+		- logic instructions (AND, OR, SHIFT...)
+		- branch instructions (JUMP)
+		- halt
+	- instruction length
+		- more bits -> more instructions
+
+- CPU Designs
+	- idea: boosting performance (clock-cycle)
+	- bus: datawires between CPU and RAM
+	- idle state when waiting for the slow RAM
+	- cache: RAM's state stored in the faster cache
+		- close to the CPU: faster than RAM
+	- instruction pipelining: paralellize operations (fetch, decode, execute)
 
 
 ## Workshop
