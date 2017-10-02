@@ -14,18 +14,18 @@
 This is a quite long project, at first read the whole specification. Try to figure out what kind of error handling technique would fit for each operation. Try to make a concept in your head about how you will implement the application. Work with floating point numbers and convert it if necessary. Take care of the spaces between the operator and operands. The result should be seen on the same row, where the operands are. For this you get a [little bit of help](#help-for-the-positioning).
 
 ### Basics (mandatory) tasks
-- [summation](#user-content-+)
-- [subtraction](#-)
-- [multiplication](#*)
-- [division](#/)
-- [division with remainder](#%)
-- [square](#^)
-- [square root](#<)
-- [log](#logarithm)
-- [binto](#binto,-hexto,-decto)
-- [hexto](#binto,-hexto,-decto)
-- [decto](#binto,-hexto,-decto)
-- [error handling](#error-handling)
+- [+](#user-content-summation)
+- [-](#user-content-subtraction)
+- [*](#user-content-multiplication)
+- [/](#user-content-division)
+- [%](#user-content-division-with-remainder)
+- [squaring](#user-content-squaring)
+- [square root](#user-content-square-root)
+- [logarithm](#user-content-logarithm)
+- [binary to](#user-content-binto,-hexto,-decto)
+- [hexadecimal to](#user-content-binto,-hexto,-decto)
+- [decimal to](#user-content-binto,-hexto,-decto)
+- [error handling](#user-content-error-handling)
 
 ### Advanced tasks
 - [nth roots](https://en.wikipedia.org/wiki/Nth_root)
@@ -58,7 +58,7 @@ Commands:
  ====================================
  ```
 
-### +
+### summation
 
 For example the content is:
 
@@ -66,7 +66,7 @@ For example the content is:
 3 + 2 = 5
 ```
 
-### -
+### subtraction
 
 
 For example the content is:
@@ -75,7 +75,7 @@ For example the content is:
 3 - 2 = 1
 ```
 
-### *
+### multiplication
 
 For example the content is:
 
@@ -83,7 +83,7 @@ For example the content is:
 3 * 2 = 6
 ```
 
-### /
+### division
 
 For example the content is:
 
@@ -91,7 +91,7 @@ For example the content is:
 6 / 2 = 3
 ```
 
-### ^
+### squaring
 
 For example the content is:
 
@@ -99,7 +99,7 @@ For example the content is:
 3 ^ 2 = 9
 ```
 
-### <
+### square root
 
 For example the content is:
 
@@ -107,7 +107,7 @@ For example the content is:
 2 < 4 = 2
 ```
 
-### %
+### division with remainder
 
 For example the content is:
 
