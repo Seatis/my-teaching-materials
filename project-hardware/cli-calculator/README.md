@@ -39,7 +39,7 @@ Implement a function to calculate the [`n`th roots.](https://en.wikipedia.org/wi
 ====================================
 usage: [number] [operation] [number]
 Commands:
-ú
+
  +	summation
  -	subtraction
  *	multiplication
