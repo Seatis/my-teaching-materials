@@ -16,7 +16,8 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 |[Sealed classes](https://www.youtube.com/watch?v=CanZ-1AW3jU)|3:42|
 |[Inheritance & Polymorphism with other example](https://www.youtube.com/watch?v=18D8R3hwYW8)|4:49|
 |[Usage of base keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base)|-|
-|[Access modifiers (Public, Protected, Private, internal, protected internal)](https://www.youtube.com/watch?v=-pcbDvUh4e0)|2:57|
+|[Access modifiers (Public, Protected, Private, internal, p:rotected internal)](https://www.youtube.com/watch?v=-pcbDvUh4e0)|2:57|
+|[Overriding](https://www.youtube.com/watch?v=yGQxNb077bA)|8:38|
 |[Getters and setters](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)||
 
 
@@ -30,6 +31,7 @@ Objects can extend other objects allowing programs to re-use code and set defaul
 - `base`
 - access modifiers: `public`, `protected`, `private`, `internal`, `internal protected`, `default`
 - `get`, `set`, `value`
+- `virtual` vs `override` vs `new`
 - casting subClass as Class
 
 ## Workshop
