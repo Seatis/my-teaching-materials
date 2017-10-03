@@ -193,5 +193,4 @@ Num | Tasks | Prio
 - Then it should show an error message like: `Unable to add more task`
 
 ## Solution
-[Solution](https://github.com/greenfox-academy/teaching-materials/tree/master/project-hardware/solutions/solutions/todo-app)
-
+[Solution](#)
