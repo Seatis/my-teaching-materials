@@ -28,7 +28,8 @@ This is a quite long project, at first read the whole specification. Try to figu
 - [error handling](#user-content-error-handling)
 
 ### Advanced tasks
-- [nth roots](https://en.wikipedia.org/wiki/Nth_root)
+
+Implement a function to calculate the [`n`th roots.](https://en.wikipedia.org/wiki/Nth_root)
 
 ### Print usage
  - At application startup the following message should be shown:
@@ -38,6 +39,7 @@ This is a quite long project, at first read the whole specification. Try to figu
 ====================================
 usage: [number] [operation] [number]
 Commands:
+ú
  +	summation
  -	subtraction
  *	multiplication
