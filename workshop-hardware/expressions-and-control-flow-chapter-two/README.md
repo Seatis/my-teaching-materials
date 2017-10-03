@@ -101,7 +101,7 @@ for (a = 0; a < 5; a++) {
 - Registers and RAM
 	- RAM (SRAM/DRAM/Flash)
 	- combined from logic gates (and-or-latch)
-		- latches onto a particular value and stays that way	
+		- latches onto a particular value and stays that way
 	- gated latch:
 		- input: data line and write enable line
 		- output data
@@ -180,4 +180,4 @@ Please follow the styleguide: [Our C styleguide](https://github.com/greenfox-aca
  - Is the commit message meaningful?
 
 ## Solutions
-[Solutions](https://github.com/greenfox-academy/teaching-materials/tree/master/workshop-hardware/solutions/solutions/expression-and-control-flow-chapter-two)
+[Solutions](#)
